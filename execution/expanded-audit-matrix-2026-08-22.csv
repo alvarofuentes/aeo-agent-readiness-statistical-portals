@@ -1,6 +1,6 @@
-portal,score,bots,discovery,rendering,structured_data,api,citability,common_core_score,common_core_max,status,confidence,principal_evidence
-World Bank Open Data,77,7,12,13,7,24,14,50,55,verified-baseline,high,"Existing audit evidence and public API baseline"
-WHO Data,77,7,12,16,8,21,13,46,55,updated,high,"WHO data description schema; persistent indicator identifiers/URI design; robots policy; existing audit evidence"
-CEPALSTAT,48,3,3,8,4,21,9,33,55,updated,high,"Public OAS3 API; indicator data endpoint combines data/metadata/dimensions/sources/notes; JS DataBank and weak discovery/structured-data signals"
-UN Data Commons (UNSD),78,8,15,14,6,17,18,50,55,new,medium,"Official natural-language search; thematic areas; authoritative UN-system data; comparison workflows; API not yet scored as equivalent to a documented public indicator API"
-UN SDG Indicators,88,8,15,14,8,25,18,58,55,new,high,"Global SDG Data Platform; SDG API/OpenAPI; machine-readable SDMX metadata; series dimensions/attributes; authoritative metadata and data access"
+portal,score,bots,discovery,rendering,structured_data,api,citability,status,confidence,principal_evidence
+World Bank Open Data,77,7,12,13,7,24,14,verified-baseline,high,"Existing audit evidence and public API baseline"
+WHO Data,77,7,12,16,8,21,13,updated,high,"WHO data description schema; persistent indicator identifiers/URI design; robots policy; existing audit evidence"
+CEPALSTAT,48,3,3,8,4,21,9,updated,high,"Public OAS3 API; indicator data endpoint combines data/metadata/dimensions/sources/notes; JS DataBank and weak discovery/structured-data signals"
+UN Data Commons (UNSD),78,8,15,14,6,17,18,new,medium,"Official natural-language search; thematic areas; authoritative UN-system data; comparison workflows; public API equivalence not established"
+UN SDG Indicators,88,8,15,14,8,25,18,new,high,"Global SDG Data Platform; SDG API/OpenAPI; machine-readable SDMX metadata; series dimensions/attributes; authoritative metadata and data access"
