@@ -1,99 +1,132 @@
-#!/usr/bin/env python3
-"""Analyze independent agent benchmark results against technical AEO scores.
+"""Analyze Ollama benchmark results against technical AEO scores.
 
-Expected input columns:
-portal, query_id, repeat, discovery_success, retrieval_success,
-semantic_correctness, metadata_correctness, citation_correctness, final_answer_score
-
-The script deliberately keeps the benchmark outcome independent from the AEO score.
+The benchmark outcome is independent of the AEO score. Repeated query runs are
+summarized at portal level, while permutation inference uses only the five
+portal-level observations.
 """
 from __future__ import annotations
+
 import csv
-import math
 import itertools
+import math
 import sys
 from collections import defaultdict
 
 AEO = {
-    "World Bank Open Data": 77.0,
-    "WHO Data": 77.0,
-    "CEPALSTAT": 48.0,
-    "UN Data Commons (UNSD)": 78.0,
-    "UN SDG Indicators": 88.0,
+    "worldbank": 77.0,
+    "who": 77.0,
+    "cepalstat": 48.0,
+    "undata": 78.0,
+    "sdg": 88.0,
 }
+REQUIRED = [
+    "discovery_success", "retrieval_success", "temporal_geographic_correctness",
+    "semantic_correctness", "metadata_correctness", "citation_correctness",
+]
 
-def mean(xs):
-    return sum(xs) / len(xs) if xs else float("nan")
 
-def rank(xs):
-    order = sorted(range(len(xs)), key=lambda i: xs[i])
-    out = [0.0] * len(xs)
+def mean(values):
+    return sum(values) / len(values) if values else float("nan")
+
+
+def rank(values):
+    order = sorted(range(len(values)), key=lambda i: values[i])
+    out = [0.0] * len(values)
     i = 0
-    while i < len(xs):
+    while i < len(order):
         j = i
-        while j + 1 < len(xs) and xs[order[j+1]] == xs[order[i]]:
+        while j + 1 < len(order) and values[order[j + 1]] == values[order[i]]:
             j += 1
         r = (i + j + 2) / 2
-        for k in range(i, j + 1): out[order[k]] = r
+        for k in range(i, j + 1):
+            out[order[k]] = r
         i = j + 1
     return out
 
-def corr(xs, ys):
-    mx, my = mean(xs), mean(ys)
-    num = sum((x-mx)*(y-my) for x,y in zip(xs,ys))
-    den = math.sqrt(sum((x-mx)**2 for x in xs) * sum((y-my)**2 for y in ys))
-    return num/den if den else float("nan")
 
-def spearman(xs, ys): return corr(rank(xs), rank(ys))
+def corr(x, y):
+    mx, my = mean(x), mean(y)
+    den = math.sqrt(sum((a - mx) ** 2 for a in x) * sum((b - my) ** 2 for b in y))
+    return sum((a - mx) * (b - my) for a, b in zip(x, y)) / den if den else float("nan")
 
-def kendall(xs, ys):
-    c = d = 0
-    for i in range(len(xs)):
-        for j in range(i+1, len(xs)):
-            dx = xs[i] - xs[j]; dy = ys[i] - ys[j]
-            if dx == 0 or dy == 0: continue
-            if dx * dy > 0: c += 1
-            else: d += 1
-    return (c-d) / (c+d) if c+d else float("nan")
 
-def exact_permutation_p(xs, ys, statistic):
-    observed = abs(statistic(xs, ys))
-    idx = list(range(len(ys)))
+def spearman(x, y):
+    return corr(rank(x), rank(y))
+
+
+def kendall(x, y):
+    concordant = discordant = 0
+    for i in range(len(x)):
+        for j in range(i + 1, len(x)):
+            dx, dy = x[i] - x[j], y[i] - y[j]
+            if dx == 0 or dy == 0:
+                continue
+            if dx * dy > 0:
+                concordant += 1
+            else:
+                discordant += 1
+    total = concordant + discordant
+    return (concordant - discordant) / total if total else float("nan")
+
+
+def exact_permutation_p(x, y, statistic):
+    observed = abs(statistic(x, y))
     extreme = 0
     total = 0
-    for perm in itertools.permutations(idx):
-        yp = [ys[i] for i in perm]
-        val = abs(statistic(xs, yp))
-        extreme += val >= observed - 1e-12
+    for perm in itertools.permutations(y):
+        extreme += abs(statistic(x, list(perm))) >= observed - 1e-12
         total += 1
-    return extreme / total
+    return extreme / total if total else float("nan")
+
+
+def numeric(value):
+    try:
+        v = float(value)
+    except (TypeError, ValueError):
+        return None
+    return v if math.isfinite(v) else None
+
 
 def main(path):
     with open(path, encoding="utf-8", newline="") as fh:
         rows = list(csv.DictReader(fh))
+    if not rows:
+        raise SystemExit("No benchmark rows found")
+    required = {"portal_id", "query_id", "repeat", "overall_0_100", *REQUIRED}
+    missing = required - set(rows[0].keys())
+    if missing:
+        raise SystemExit("Missing benchmark columns: " + ", ".join(sorted(missing)))
+
     by_portal = defaultdict(list)
-    for r in rows:
-        required = ["discovery_success","retrieval_success","semantic_correctness","metadata_correctness","citation_correctness","final_answer_score"]
-        vals = []
-        for col in required:
-            try: vals.append(float(r[col]))
-            except Exception: vals.append(float("nan"))
-        score = mean([v for v in vals if not math.isnan(v)])
-        by_portal[r["portal"]].append(score)
+    by_stratum = defaultdict(list)
+    for row in rows:
+        vals = [numeric(row.get(col)) for col in REQUIRED]
+        vals = [v for v in vals if v is not None]
+        overall = numeric(row.get("overall_0_100"))
+        if overall is None and vals:
+            overall = 100 * mean(vals)
+        if overall is not None:
+            by_portal[row["portal_id"]].append(overall)
+            by_stratum[(row["portal_id"], row["stratum"])].append(overall)
+
     portals = [p for p in AEO if p in by_portal and by_portal[p]]
     outcome = [mean(by_portal[p]) for p in portals]
     x = [AEO[p] for p in portals]
-    print("portal,aeo_score,mean_AIRSC")
-    for p,a,o in zip(portals,x,outcome): print(f"{p},{a:.1f},{o:.4f}")
+    print("portal_id,aeo_score,mean_airsc,n_runs")
+    for p, a, o in zip(portals, x, outcome):
+        print(f"{p},{a:.1f},{o:.4f},{len(by_portal[p])}")
     if len(portals) >= 3:
-        print(f"spearman_rho,{spearman(x,outcome):.4f}")
-        print(f"kendall_tau,{kendall(x,outcome):.4f}")
+        rho = spearman(x, outcome); tau = kendall(x, outcome)
+        print(f"spearman_rho,{rho:.4f}")
+        print(f"kendall_tau,{tau:.4f}")
         if len(portals) <= 8:
-            print(f"spearman_exact_p,{exact_permutation_p(x,outcome,spearman):.4f}")
+            print(f"spearman_exact_p,{exact_permutation_p(x, outcome, spearman):.4f}")
     else:
         print("insufficient_portals_for_rank_test,1")
+    print("note,Repeated executions are clustered by query; portal-level n is number of portals.")
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        raise SystemExit("Usage: analyze_agent_benchmark.py results.csv")
+        raise SystemExit("Usage: analyze_agent_benchmark.py benchmark/results/results.csv")
     main(sys.argv[1])
