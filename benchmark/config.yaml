@@ -1,0 +1,55 @@
+project: aeo-agent-readiness-statistical-portals
+version: 1.0
+ollama:
+  base_url: http://127.0.0.1:11434
+  temperature: 0.0
+  timeout_seconds: 180
+  max_context_chars: 18000
+  repeat_runs: 3
+roles:
+  orchestrator: auto
+  discovery: auto
+  semantic: auto
+  retrieval: auto
+  metadata: auto
+  citation: auto
+  judge: auto
+  adversarial: auto
+portals:
+  - id: worldbank
+    name: World Bank Open Data
+    home: https://data.worldbank.org/
+    search_hint: site:data.worldbank.org GDP Chile
+  - id: who
+    name: WHO Data
+    home: https://data.who.int/
+    search_hint: site:data.who.int GDP Chile
+  - id: cepalstat
+    name: CEPALSTAT
+    home: https://statistics.cepal.org/portal/cepalstat/
+    search_hint: site:statistics.cepal.org/portal/cepalstat PIB Chile
+  - id: undata
+    name: UN Data Commons
+    home: https://unstats.un.org/UNSDWebsite/undatacommons/
+    search_hint: site:unstats.un.org/UNSDWebsite/undatacommons GDP Chile
+  - id: sdg
+    name: UN SDG Indicators
+    home: https://unstats.un.org/sdgs/dataportal/
+    search_hint: site:unstats.un.org/sdgs GDP Chile
+benchmark:
+  total_templates: 120
+  strata:
+    discovery: 20
+    exact_indicator: 20
+    semantic_disambiguation: 25
+    dimensions: 15
+    comparison: 15
+    temporal: 10
+    metadata: 10
+    citation: 5
+  gold_standard: benchmark/gold_standards.json
+output:
+  dir: benchmark/results
+  runs_manifest: benchmark/results/run_manifest.json
+  row_file: benchmark/results/results.jsonl
+  flat_csv: benchmark/results/results.csv
