@@ -1,0 +1,33 @@
+{
+  "purpose": "Human-audited reference cases for semantic disambiguation. Expand before production scoring.",
+  "cases": [
+    {
+      "case_id": "GDP_CHL_001",
+      "query": "¿Cuál fue el PIB de Chile en 2024?",
+      "acceptable": ["GDP total annual", "current-price GDP if user means nominal economic size"],
+      "reject": ["GDP per capita", "GDP growth rate", "GDP by activity"],
+      "note": "Query is intentionally under-specified; a rigorous agent should state the interpretation or ask for clarification."
+    },
+    {
+      "case_id": "GDP_CHL_002",
+      "query": "¿Cuál fue el PIB real de Chile en 2024?",
+      "acceptable": ["GDP at constant prices / volume measure"],
+      "reject": ["GDP current prices", "GDP per capita current prices"],
+      "note": "Real should not be mapped to current-price nominal GDP."
+    },
+    {
+      "case_id": "GDP_CHL_003",
+      "query": "¿Cuánto PIB generó Chile por habitante en 2024?",
+      "acceptable": ["GDP per capita"],
+      "reject": ["GDP total", "GDP growth"],
+      "note": "Per-capita dimension is explicit."
+    },
+    {
+      "case_id": "GDP_CHL_004",
+      "query": "¿Cuánto creció el PIB de Chile en 2024?",
+      "acceptable": ["GDP growth rate / annual percentage change"],
+      "reject": ["GDP level", "GDP per capita level"],
+      "note": "The target is a rate, not a level."
+    }
+  ]
+}
