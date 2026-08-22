@@ -1,0 +1,363 @@
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12" id="breadcrumb">
+        Inicio &nbsp;&raquo;&nbsp;
+      </div>
+    </div>
+    </div>
+
+    <link href="iframe/assets/planning_style.css?v=2025" rel="stylesheet">
+    <link href="iframe/assets/table_style.css?v=2025b" rel="stylesheet">
+    <link href="iframe/assets/multiselect.css?v=2025" rel="stylesheet">
+    <script src="iframe/funciones_ficha.js?v=2"></script>
+
+    <div class="row" style="width:101%">
+        <div class="col-md-12" id="panel_1">
+
+
+            <div id="content_list">
+              <div style="float:right;margin-top:8px;"><a href="es/geoportal" id="link_view_map" class="btn btn-primary"><span id="label_ver_en_mapa">Ver en el mapa</span> <img src="iframe/img/icon_map.png" height="24px" style="margin-top:-3px;" /></a></div>
+              <div id="general_title"></div>
+
+              <div id="general_description"></div>
+
+
+
+
+
+              <div class="row" id="div_select_filters2" style="display:none">
+
+                <div class="col-md-4" style="padding-top:5px;" id="multiselect1-div">
+                  <!-- Multiselect1 -->
+                  <div class="multiselect" role="group" aria-labelledby="multiselect1-label">
+                    <div class="multiselect-header">
+                      <div class="multiselect-title" id="multiselect1-label">Países</div>
+                      <button class="clear-button" id="clear-multiselect1" onclick="clearSelections('multiselect1')" aria-label="Quitar filtros" aria-describedby="multiselect1-label" >Quitar filtros<img src='images/quitar_filtro.png' style="margin-left:2px;" /></button>
+                    </div>
+                    <button class="multiselect-toggle" onclick="toggleMultiselect('multiselect1')" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect1-menu" id="multiselect1-button">
+                      Seleccionar
+                      <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M1.5 5.5l6 6 6-6"/>
+                      </svg>
+                    </button>
+                    <div class="multiselect-menu" id="multiselect1-menu" role="listbox" aria-multiselectable="true">
+
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-4" style="padding-top:5px;">
+                  <div class="multiselect-header">
+                    <div class="multiselect-title" id="multiselect5-label">Buscador</div>
+                    <button class="clear-button" id="clear-multiselect5" onclick="clearSelections('multiselect5')" aria-label="Quitar filtros" aria-describedby="multiselect5-label">Quitar filtros<img src='images/quitar_filtro.png' style="margin-left:2px;" /></button>
+                  </div>
+
+                </div>
+
+                <div id="output" aria-live="polite" style="display:none;">Seleccionados: ninguno</div>
+
+              </div>
+
+
+
+
+
+
+
+
+
+              <div class="row" id="div_select_filters">
+
+                <div class="col-md-4" style="padding-top:5px" id="cell_select_theme">
+                  <h5 id="filter_title_1"></h5>
+                  <select id="select_theme" class="form-select" style="font-size:17px; " onchange="visualizaThemes()">
+                      <option value="0"></option>
+                  </select>
+                </div>
+
+                <div class="col-md-4" style="padding-top:5px;display:none;" id="cell_select_ppi">
+                  <h5 id="filter_title_1c"></h5>
+                  <select id="select_ppi" class="form-select" style="font-size:17px; " onchange="visualizaPPI()">
+                      <option value="0"></option>
+                  </select>
+                </div>
+
+                <div class="col-md-4" style="padding-top:5px;display:none;" id="cell_select_paises">
+                  <h5 id="filter_title_1b"></h5>
+                  <select id="select_paises" class="form-select" style="font-size:17px;" onchange="visualizaPaises()">
+                      <option value="0">...</option>
+                      <option value="0">-----------</option>
+                  </select>
+
+                </div>
+
+
+                <div class="col-md-4" style="padding-top:10px; ">
+                  <table width="100%">
+                    <tr>
+                      <td width="95%">
+                        <input type="text" id="search_by_words" placeholder="Buscar por palabra" onclick="seleccionarTexto()" class="form-control" style="margin-top:5px;" />
+                      </td>
+                      <td>
+                        <button id="busca_btn" style="margin-top:5px;" onclick="buscadorListado()" class="btn   btn-success">Buscar</button>
+                      </td>
+                    </tr>
+                  </table>
+
+                </div>
+
+              </div>
+
+
+
+              <div class="row" style="margin-top:10px;">
+                  <div class="col-md-12">
+
+<!-- Se quitó display none -->
+              <div style="float:right;margin-top:0px; display:none;" id="opt_export_excel"><button id="btnExport" class="btn btn-sm btn-success">Excel ⭳</button></div>
+              <h5 class="count_resultados"><span id="ficha_listado_iniciativas">Resultados</span>     (<span id="count_content2"></span>)</h5>
+
+              <input type="hidden" id="filter_selected" class="form-control" value="0" />
+              <div style="display:none" id="display_filters" ></div>
+
+              <table width="100%" id="filtros_tabla" style="margin-bottom:10px; ">
+
+
+              </table>
+
+
+
+
+
+              <div id="cargando_datos"><img src="images/loading.gif" alt="" />&nbsp;&nbsp;<span id="general_layout_title_loading"></span>...</div>
+                <div>
+                  <table width="100%" border="0" cellpadding="5" id="content_list_table">
+                  </table>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div id="content_detail" style="display: none;margin-top:10px;">
+
+                          <div class="borde_ficha_gaussian_0">
+
+
+                            <div class="row col_3_row" id="option_back_list">
+                                <div class="col-md-12 col_3_div"  >
+                                    <div class="col_3 ">
+
+                                      <p onclick="view_list_detail(1,0)" class="view_iapt" id="view_iapt"><span class="view_iapt_arrow"><</span> <span id="ficha_volver"></span></p>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+                            <div class="row col_3_row">
+                                <div class="col-md-12 col_3_div"  >
+                                    <div id="col_bg_grey" class="col_3 " style="padding: 0px 0%;">
+
+                                      <div id="detail_country" style="margin-top:-15px; margin-bottom:10px;"></div>
+                                      <div id="detail_name"></div>
+                                      <div id="detail_institution"></div>
+                                      <div id="detail_instrumento_legal"></div>
+
+
+                                      <div id="detail_year_temp_scale" style="display:none">
+                                        <div class="row">
+                                          <div class="col-md-3" id="detail_date">
+                                          </div>
+                                          <div class="col-md-5" id="detail_temp">
+                                          </div>
+                                          <div class="col-md-4" id="detail_scale">
+                                          </div>
+                                        </div>
+
+                                        <div class="row" style="margin-top:20px;">
+                                          <div class="col-md-3" id="detail_vigen">
+                                          </div>
+                                          <div class="col-md-5" id="detail_down">
+                                          </div>
+                                          <div class="col-md-4" id="detail_map">
+                                          </div>
+                                        </div>
+
+                                      </div>
+
+
+
+                                      <div class="detail_content_title" id="detail_ods" style="display:none">
+                                      </div>
+
+
+
+
+                                      <div id="tabs_all"></div>
+
+                                      <br/>
+                                      <br/>
+                                      <div class="row">
+                                        <div class="col-md-12">
+                               <!--           <div id="detail_planes_vigentes">Planes vigentes:</div> -->
+
+                                        </div>
+                                      </div>
+                                      <br/>
+                                      <div class="row">
+                                        <div class="col-md-3">
+                                          <div id="detail_url_snip"></div>
+                                          <div id="detail_ver_todos_planes"></div>
+                                          <div id="detail_ver_todas_normativas"></div>
+                                        </div>
+                                      </div>
+
+
+
+                                      <br/><br/><br/>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                            <br />
+
+                          </div>
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <div id="precarga_iconos"></div>
+    <div id="precarga_iconos_withe"></div>
+
+<script>
+  const path = window.location.pathname;
+  const btn = document.getElementById("opt_export_excel");
+
+  if (
+    path.includes("/es/sistemas-nacionales-de-inversion-publica/") ||
+    path.includes("/en/national-public-investment-systems/")
+  ) {
+    btn.style.display = "block";
+  }
+</script>
+
+    <script>
+        let itime = d.getTime();
+        var scriptElm = document.createElement('script');
+        scriptElm.src = `iframe/sistemas/sistemas.js?v=${itime}`;
+        document.body.appendChild(scriptElm);
+    </script>
+
+
+
+
+    <script>
+
+
+    function seleccionarTexto() {
+      let plzField = document.getElementById("search_by_words");
+      plzField.select();
+      document.getElementById("if_selected").value=1;
+    }
+
+
+    $(document).ready(function() {
+      let plzField = document.getElementById("search_by_words");
+      plzField.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          buscadorListado();
+        }
+
+        if (event.keyCode === 46 || event.keyCode === 8) {
+            let if_selected = document.getElementById("if_selected").value;
+            if(if_selected==1) {
+              buscadorListado();
+            }
+        }
+        document.getElementById("if_selected").value=0;
+      });
+
+    });
+
+
+
+    document.querySelector('#general_title').addEventListener('mouseenter', () => {
+      document.querySelectorAll('select').forEach(select => {
+        select.blur();
+      });
+    });
+
+
+  </script>
+
+
+<style>
+  .bloque_links_separador { border-top:1px solid #777; margin-top:15px; }
+  .bloque_links { border-bottom:1px dotted #BBB; padding:5px 0px; }
+  .tab-pane { padding-top:10px; }
+  .xsvg_blinks { filter: invert(46%) sepia(72%) saturate(820%) hue-rotate(176deg) brightness(70%) contrast(95%); }
+  .snp_title_autoridades { margin-top:10px; margin-bottom:-10px; font-size:18px; font-family: "RobotoCondensed-Medium", sans-serif !important; color:#111; text-transform:uppercase; }
+  .listado_box_planes { font-size:18px; }
+  .nav1-link_t1, .nav1-link_t2, .nav1-link_t5 { margin-left:0px !important; }
+  .nav-pills { margin-left:0px !important; }
+  .item_por_pais { border-bottom:1px dotted #eee; }
+  .title_planes_vigentes { font-family: "RobotoCondensed-Medium", sans-serif !important; font-size:18px; color:#111; text-transform:uppercase;  }
+  .title_banco_proyectos { font-family: "RobotoCondensed-Medium", sans-serif !important; font-size:16px; color:#111; text-transform:uppercase; margin-top:15px; margin-bottom:-5px;  }
+  .ver_fich_pais { font-size:13px; font-family: "RobotoCondensed-Regular", sans-serif !important; margin-left:10px; }
+</style>
+
+<input type="hidden" id="if_selected" value="0" />

@@ -1,0 +1,17 @@
+# Local/runtime artifacts
+.tmp/
+tmp/
+_to_delete/
+.agents/
+node_modules/
+__pycache__/
+*.pyc
+*.log
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Environment-specific generated inspection folders
+outputs/*-render/

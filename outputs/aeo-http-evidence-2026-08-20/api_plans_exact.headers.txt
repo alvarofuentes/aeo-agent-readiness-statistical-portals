@@ -1,0 +1,7 @@
+HTTP/1.1 502 BAD GATEWAY
+Server: nginx
+Date: Thu, 20 Aug 2026 16:23:16 GMT
+Content-Type: application/json
+Content-Length: 43
+Connection: keep-alive
+

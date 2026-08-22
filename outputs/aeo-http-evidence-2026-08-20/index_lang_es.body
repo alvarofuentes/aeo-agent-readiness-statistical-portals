@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirección por idioma</title>
+  <script>
+    window.onload = function() {
+      // Detectar el idioma del navegador
+      const idioma = navigator.language || navigator.userLanguage;
+
+      // Normalizar y redirigir según el idioma
+      if (idioma.startsWith('es')) {
+        window.location.href = 'es/'; // Carpeta español
+      } else {
+        window.location.href = 'en/'; // Carpeta inglés (por defecto)
+      }
+    };
+  </script>
+</head>
+<body style="text-align:center">
+  <p><img src="images/loading.gif" /></p>
+  <p>Detectando idioma y redirigiendo...</p>
+</body>
+</html>

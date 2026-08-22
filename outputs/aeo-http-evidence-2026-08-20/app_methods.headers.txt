@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 55093
+Server: nginx/1.29.8
+Content-Type: application/javascript
+Last-Modified: Mon, 17 Aug 2026 19:35:07 GMT
+ETag: "6a83626b-d735"
+Accept-Ranges: bytes
+Age: 0
+Date: Thu, 20 Aug 2026 16:21:35 GMT
+Via: 1.1 varnish
+X-Served-By: cache-scl2220066-SCL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1787242896.643472,VS0,VE19
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=300
+

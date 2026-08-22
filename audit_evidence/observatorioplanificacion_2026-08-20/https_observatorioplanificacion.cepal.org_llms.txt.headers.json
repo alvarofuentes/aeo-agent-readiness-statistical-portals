@@ -1,0 +1,16 @@
+{
+  "connection": "close",
+  "content-length": "153",
+  "server": "nginx/1.29.8",
+  "content-type": "text/html",
+  "accept-ranges": "bytes",
+  "age": "0",
+  "date": "Thu, 20 Aug 2026 15:51:44 GMT",
+  "via": "1.1 varnish",
+  "x-served-by": "cache-scl2220040-SCL",
+  "x-cache": "MISS",
+  "x-cache-hits": "0",
+  "x-timer": "S1787241104.046053,VS0,VE26",
+  "vary": "Accept-Encoding",
+  "strict-transport-security": "max-age=300"
+}

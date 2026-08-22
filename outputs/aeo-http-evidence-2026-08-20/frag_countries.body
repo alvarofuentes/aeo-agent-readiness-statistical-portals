@@ -1,0 +1,128 @@
+
+
+<div id="theme_banner_1" style="display:none">
+  <div class="container">
+    <span id="theme_name"></span>
+  </div>
+</div>
+
+
+  <script>
+    const theme_titles = ['Planificación para el desarrollo','Inversión pública','Gobierno abierto','Desarrollo territorial','Ordenamiento territorial','Desarrollo urbano','Movilidad urbana sostenible'];
+    const theme_colors = ['#00BBD4','#BA2E53','#173668','#93B54E','#39855A','#EA8B35','#E0BB31'];
+
+    let number_theme = theme-1;
+
+    if(theme>0) {
+      document.getElementById('theme_banner_1').style.display = "block";
+    }
+
+    document.getElementById('theme_name').innerHTML = theme_titles[number_theme];
+    document.getElementById('theme_banner_1').style.backgroundColor = theme_colors[number_theme];
+
+
+    if(lang=='en') {
+      document.getElementById('country_title').innerHTML = 'Countries';
+    }
+
+
+  </script>
+
+  <style>
+    #theme_banner_1 { padding:30px 0px; text-align:left; font-size:26px;
+      font-family: "SourceSansSemibold", sans-serif !important;
+      color:white;
+      text-transform:uppercase;
+    }
+    .theme_cell { color:white; font-weight:bold; xborder-right:5px solid white; padding:20px; border-radius:5px; margin:5px;  }
+    .theme_cell a {color:white; text-decoration:underline;}
+    h1 { font-family: "SourceSansSemibold", sans-serif; font-size:26px; padding:0 30px; }
+    .layout_1 { border-radius:0 0 5px 5px; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); }
+
+    .country_item { font-size:20px; border:1px none #ccc; float:left; width:140px; height:140px;
+      text-align:center; font-family: "RobotoCondensed-Medium",sans-serif !important;
+      padding:10px; border-radius:5px; margin-right:10px; margin-bottom:10px;  }
+    .country_item img { margin-bottom:10px;  }
+
+    .country_item:hover { background-color:#DAEDF1; cursor:pointer; }
+
+    .border_flag { border: 1px solid #c3c3c3; border-radius:60px; padding:2px; }
+    #country_title { font-size: 38px;  font-family: "RobotoCondensed-Medium",sans-serif !important; color:#103B58;  }
+
+  </style>
+
+
+
+<div class="container layout_1">
+
+<br>
+
+<h1 id="country_title">Países</h1>
+
+<br>
+
+<div id="country_list"></div>
+
+<br clear="all" />
+
+
+<br><br>
+</div>
+
+
+
+
+
+<script>
+
+  async function fetchCountries() {
+      try {
+          const response = await fetch('include/json_data/json_countries.json');
+          if (!response.ok) {
+              throw new Error('Error al cargar el archivo JSON');
+          }
+          const countries = await response.json();
+          displayCountries(countries);
+      } catch (error) {
+          console.error('Error:', error);
+      }
+  }
+
+
+  function displayCountries(countries) {
+      let countryList='';
+
+      let icon = '<img style="xmargin-top:-20px;background-color:blue;border-radius:8px;height:30px;" src="images/svg/icon1.svg" height="100px" />';
+      icon = '';
+
+      countries.forEach(country => {
+
+        let country_name = country.name_es;
+        if(lang=='en'){
+          country_name = country.name_en;
+        }
+
+        let iso = country.iso3;
+
+        let url_pais=`es/paises/?country=${iso}`;
+        if(lang=="en") {
+          url_pais=`en/countries/?country=${iso}`;
+        }
+        countryList+=`
+        <div class="country_item" onclick="window.open('${url_pais}','_self');"  >
+          <a href='${url_pais}'><img src="iframe/img/flags/${country.iso3}.png" height="50px" class="border_flag"></a>
+          <br> ${country_name}
+        </div>
+        `;
+
+
+      });
+      document.getElementById('country_list').innerHTML= countryList;
+
+  }
+
+  fetchCountries();
+
+
+
+</script>

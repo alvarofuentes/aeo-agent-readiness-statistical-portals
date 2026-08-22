@@ -1,0 +1,101 @@
+[
+  {
+    "requested_url": "https://observatorioplanificacion.cepal.org/iframe/planes/web.html?lang=es",
+    "redirect_chain": [],
+    "status": 200,
+    "final_url": "https://observatorioplanificacion.cepal.org/iframe/planes/web.html?lang=es",
+    "content_type": "text/html",
+    "headers": {
+      "connection": "close",
+      "content-length": "25271",
+      "server": "nginx/1.29.8",
+      "content-type": "text/html",
+      "last-modified": "Mon, 17 Aug 2026 19:35:07 GMT",
+      "etag": "\"6a83626b-62b7\"",
+      "accept-ranges": "bytes",
+      "age": "0",
+      "date": "Thu, 20 Aug 2026 15:53:28 GMT",
+      "via": "1.1 varnish",
+      "x-served-by": "cache-scl2220032-SCL",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "x-timer": "S1787241209.722373,VS0,VE14",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=300"
+    },
+    "bytes": 25271,
+    "sha256": "c9b3125492f51e9a2a70e639a21cfb2149d66bbe6d5b1eeaf50ab1d5f3464fc1",
+    "error": null,
+    "body_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\planes\\iframe\\https_observatorioplanificacion.cepal.org_iframe_planes_web.html.body",
+    "headers_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\planes\\iframe\\https_observatorioplanificacion.cepal.org_iframe_planes_web.html.headers.json",
+    "html": {
+      "title": "",
+      "meta": {},
+      "canonical": [],
+      "alternates": [],
+      "headings": [
+        {
+          "level": "h5",
+          "text": ""
+        },
+        {
+          "level": "h5",
+          "text": ""
+        },
+        {
+          "level": "h5",
+          "text": ""
+        },
+        {
+          "level": "h5",
+          "text": ""
+        },
+        {
+          "level": "h5",
+          "text": ""
+        },
+        {
+          "level": "h5",
+          "text": ""
+        },
+        {
+          "level": "h5",
+          "text": ""
+        },
+        {
+          "level": "h5",
+          "text": "Resultados ( )"
+        }
+      ],
+      "text_length": 2870,
+      "links_count": 1,
+      "links": [
+        {
+          "href": "https://observatorioplanificacion.cepal.org/iframe/planes/es/geoportal",
+          "text": ""
+        }
+      ],
+      "forms": 0,
+      "tables": 5,
+      "iframes": 0,
+      "canvas": 0,
+      "svg": 6,
+      "noscript": 0,
+      "jsonld": [],
+      "microdata_items": [],
+      "rdfa_markers": [],
+      "script_count": 4,
+      "external_scripts": [
+        "https://observatorioplanificacion.cepal.org/iframe/planes/iframe/funciones_ficha.js",
+        "https://observatorioplanificacion.cepal.org/iframe/planes/iframe/funciones_ficha_plan.js?v=2"
+      ],
+      "framework_markers": {
+        "next_data": false,
+        "react": false,
+        "angular": false,
+        "vue": false,
+        "drupal": false
+      }
+    }
+  }
+]

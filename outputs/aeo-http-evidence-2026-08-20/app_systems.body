@@ -1,0 +1,2219 @@
+
+let languageGlobal = "es"; // idioma por defecto
+
+//let get_lang = getQueryVariable('lang');
+let get_lang = lang;
+if(get_lang) {
+  languageGlobal = get_lang;
+}
+
+const title_page = document.title;
+
+const theme_colors = ['#00BBD4','#BA2E53','#173668','#93B54E','#39855A','#EA8B35','#DDA31C'];
+const theme_colors_2 = ['#66D5E5','#EDBCCB','#A4B6D5','#C9D79F','#A8C8B5','#F3C8AB','#ECD994'];
+const theme_colors_3 = ['#DEF6F8','#F1DCE2','#C5D2E9','#DAE3C6','#CCDDD2','#F3E0D1','#F0EACE'];
+const theme_code = ["development_planning","public_investment","open_government","territorial_development","territorial_planning","urban_development","mobility"];
+
+const array_char_label = ['Marco regulatorio','Participación','Seguimiento','Indicadores','Plan de acción','Presupuesto','Mecanismos de inversión','Otros instrumentos de planificación'];
+
+const array_theme_label = ['desarrollo','inversión pública','','','Mecanismos de articulación'];
+
+let theme_titles = ['Sistemas nacionales de planificación','Sistemas Nacionales de Inversión Pública','Foros multiactor de gobierno abierto','','Mecanismos de articulación territorial'];
+if(get_lang=="en") {
+  theme_titles = ['National planning systems','National Public Investment Systems','Multi-stakeholder open government forums','','Territorial coordination mechanisms'];
+}
+
+let theme_titles_areas = ['Planificación para el desarrollo','Inversión pública','Gobierno abierto','Desarrollo territorial','Ordenamiento territorial','Desarrollo urbano','Movilidad urbana'];
+if(get_lang=="en") {
+  theme_titles_areas = ['Planning for development','Public investment','Open government','Territorial development','Land-use planning','Urban development','Urban mobility'];
+}
+
+let language_number = 0;
+if(languageGlobal=="es") {
+   language_number = 0;
+} else if(languageGlobal=="en") {
+  language_number = 1;
+}
+
+
+
+let load_one_time=0;
+let load_one_time_function=0;
+
+let enFicha = false;
+
+
+var ficha_iapt_filters_labels = {
+  filter_opt_1: ['Filtros', 'Filters', 'Filtros'],
+  //filter_opt_2: ['Quitar filtros', 'Remove filters', 'Remover filtros'],
+  filter_opt_2_v2: ['Borrar todos los filtros', 'Remove all filters', 'Remover todos os filtros'],
+  //filter_opt_3: ['Volver', 'Back', 'Retornar']
+}
+
+
+
+
+
+var ficha_iapt = {
+    ficha_listado_iniciativas: ['Resultados', 'Results', 'Resultados'],
+    ficha_volver: ['Volver al listado', 'Back to List', 'Voltar à lista'],
+    ficha_pais: ['País', 'Country', 'País'],
+    ficha_ver_en_mapa: ['Ver en el mapa.', 'See on the map.', 'Ver no mapa.'],
+    ficha_t1a: ['Nombre', 'Name', 'Nompre'],
+
+    general_layout_title_loading: ['Cargando datos','Loading data','Carregando dados'],
+
+
+    busca_btn: ['Buscar', 'Search', 'Buscar'],
+    filter_title_5_info: ['Buscar por título, descripción o división subnacional', 'Search by title, description or subnational division', 'Pesquise por título, descrição ou divisão subnacional'],
+    ficha_pesona_responsable: ['Persona responsable','Responsible person','Pessoa responsável'],
+
+    label_ver_en_mapa: ['Ver en el mapa','View on map'],
+
+}
+
+$.each(ficha_iapt, function (i, html_content) {
+    $("#" + i).html(html_content[0 + language_number]);
+});
+
+
+
+if(lang=="en") {
+  document.getElementById("search_by_words").placeholder = "Search by words";
+}
+
+
+
+
+
+//Traducciones
+let tabla_title = ["País","Nombre","Ver ficha"];
+if(get_lang=="en") {
+tabla_title = ["Country","Name","View Detail"];
+}
+
+let tabla_snip_title = ["País","SNIP","Instrumento legal primario","Institucionalidad","Banco de proyectos","Planes vigentes","Ver ficha"];
+if(get_lang=="en") {
+tabla_snip_title = ["Country","SNIP","Primary Legal Instrument","Institutional Framework","Project Bank","Active plans","View Detail"];
+}
+
+
+
+
+
+
+
+let get_id = getQueryVariable('id');
+
+if(get_id>0) {
+  document.getElementById('general_title').style.display = "none";
+  document.getElementById('general_description').style.display = "none";
+  document.getElementById('div_select_filters').style.display = "none";
+  document.getElementById('filtros_tabla').style.display = "none";
+  document.querySelector('.count_resultados').style.display = "none";
+}
+
+
+let get_id_iso = verificarIsoPais(get_id);
+
+if(get_id_iso || country) {
+  document.getElementById('div_select_filters').style.display = "none";
+}
+
+
+let theme_name = '';
+let color_table_head='#103B58';
+//let get_url_theme = getQueryVariable('theme');
+let get_url_theme = theme;
+
+if(get_url_theme>0) {
+  let theme_number = get_url_theme-1;
+  theme_name = theme_code[theme_number];
+  color_table_head=theme_colors[theme_number];
+  //$("#filter_selected").val("0;theme,"+theme_name);
+  //$("#display_filters").show();
+  //displayFilters();
+
+  $("#cell_select_theme").hide();
+  $("#cell_select_paises").show();
+
+  let icon_theme_title = '<img style="margin-top:0px;margin-right:10px;margin-top:-5px;" src="images/icon_menu/icon'+get_url_theme+'.png"  />';
+
+  let num_theme_array=get_url_theme-1;
+  document.getElementById('general_title').innerHTML = "<div class='general_title'>"+icon_theme_title+theme_titles[num_theme_array]+"</div>";
+
+} else {
+  get_url_theme=0;
+  $("#cell_select_ppi").show();
+  $("#cell_select_paises").show();
+  document.getElementById('general_title').innerHTML = "<div class='general_title'>Sistemas nacionales</div>";
+}
+
+
+
+
+let breadcrumb_area = '';
+let breadcrumb_system = '';
+
+if(get_url_theme==1){
+  breadcrumb_area = '&nbsp;&raquo;&nbsp;  <a href="es/planificacion-para-el-desarrollo/">Planificación para el desarrollo</a>';
+  breadcrumb_system = '&nbsp;&raquo;&nbsp; <a href="es/sistemas-nacionales-de-planificacion/">Sistemas nacionales de planificación</a>';
+} else if(get_url_theme==2){
+  breadcrumb_area = '&nbsp;&raquo;&nbsp;  <a href="es/inversion-publica/">Inversión pública</a>';
+  breadcrumb_system = '&nbsp;&raquo;&nbsp; <a href="es/sistemas-nacionales-de-inversion-publica/">Sistemas nacionales de inversión pública</a>';
+} else if(get_url_theme==5){
+  breadcrumb_area = '&nbsp;&raquo;&nbsp;  <a href="es/desarrollo-y-ordenamiento-territorial/">Desarrollo y Ordenamiento territorial</a>';
+  breadcrumb_system = '&nbsp;&raquo;&nbsp; <a href="es/mecanismos-de-articulacion-institucional/">Mecanismos de articulación territorial</a>';
+}
+
+document.getElementById('breadcrumb').innerHTML = '<a href="es">Inicio</a> '+breadcrumb_area+' &nbsp;&raquo;&nbsp; Institucionalidad'+breadcrumb_system;
+
+if(lang=="en") {
+
+  if(get_url_theme==1){
+    breadcrumb_area = '&nbsp;&raquo;&nbsp;  <a href="en/planning-for-development/">Planning for development</a>';
+    breadcrumb_system = '&nbsp;&raquo;&nbsp; <a href="en/national-planning-systems/">National planning systems</a>';
+  } else if(get_url_theme==2){
+    breadcrumb_area = '&nbsp;&raquo;&nbsp;  <a href="en/public-investment/">Public investment</a>';
+    breadcrumb_system = '&nbsp;&raquo;&nbsp; <a href="en/national-public-investment-systems/">National public investment systems</a>';
+  } else if(get_url_theme==5){
+    breadcrumb_area = '&nbsp;&raquo;&nbsp;  <a href="en/land-use-planning/">Land-use planning</a>';
+    breadcrumb_system = '&nbsp;&raquo;&nbsp; <a href="en/institutional-coordination-mechanisms/">Institutional coordination mechanisms</a>';
+  }
+
+  document.getElementById('breadcrumb').innerHTML = '<a href="en">Home</a> '+breadcrumb_area+' &nbsp;&raquo;&nbsp; Institutionality'+breadcrumb_system;
+}
+
+
+
+let theme_code_api = theme_code[get_url_theme-1];
+
+
+
+let responseDataInstitutions_result;
+let responseDataLegalFrameworks_result;
+let responseDataPlans_result;
+let responseDataMetodologias_result;
+let responseDataSNP_result;
+let responseDataSNIP_result;
+let responseDataMEC_result;
+
+
+// CARGA DATA PARA BLOQUE LINKS
+if(get_url_theme==2) {
+  loadAPIAllContents('sistemas_snip');
+} else {
+  loadAPIAllContents('sistemas');
+}
+
+
+
+function loadAPIContentGlobal() {
+  loadAPISistemas();
+}
+
+
+
+
+let responseDataGlobal;
+let responseDataGlobal_result;
+
+
+function loadAPISistemas() {
+
+  var hexDate = new Date().getTime();
+
+  if(get_url_theme==1) {
+    var dataset_token='auat7fCzxrGEmcpQWiTZLu';
+  } else if(get_url_theme==2) {
+    var dataset_token='aLtk2nwgLUq4A4hNcJv6xR';
+  } else if(get_url_theme==5) {
+    var dataset_token='a6VSfrLiDjiG4YYpAmdFb3';
+  }
+
+let filter_by_query='';
+if(get_id>0) {
+  filter_by_query='&query={"_id":"'+get_id+'"}';
+} else {
+  filter_by_query='&query={"_validation_status.label":"Approved"}';
+}
+
+fetch('https://api-kobo.cepal.org/api-kobo/data?dataset='+dataset_token+'&content=1&survey=1'+filter_by_query)
+    .then(response => response.json())
+    .then(json => {
+        responseDataGlobal = json;
+        responseDataGlobal_result = json.results;
+        showData('all','all');
+        editColorScroll(color_table_head);
+    })
+    .catch((error) => {
+        console.error('Error al importar el archivo', error);
+    });
+}
+
+
+
+
+
+  function showData(type_filter,filter) {
+
+      let results = responseDataGlobal_result;
+
+      if(get_url_theme==1 || get_url_theme==2 || get_url_theme==5) {
+        results.sort( function( a, b ) {
+          return a.country < b.country ? -1 : a.country > b.country ? 1 : 0;
+        });
+      }
+
+
+
+      //filta por select
+      let filtro_actual = $("#filter_selected").val();
+
+
+      const paises = extraerValoresPorClave(filtro_actual, "country"); // ["chl", "col"]
+
+
+      if(paises.length>0) {
+        results = results.filter(x =>
+          x.country?.split(' ').some(x => paises.includes(x))
+        );
+      }
+
+
+
+
+
+      let array_filters = filtro_actual.split(";");
+      array_filters.forEach((item, i) => {
+        let array_filters_type = item.split(",");
+          let type = array_filters_type[0];
+          let name = array_filters_type[1];
+
+
+          if(get_id_iso) {
+            results = results.filter(x => x.country == get_id);
+          }
+
+          if(country) {
+            results = results.filter(x => x.country == country);
+          }
+
+          if(type=="busca") {
+            var palabras = name.toLowerCase().split(" ");
+
+            results = results.filter(x =>
+                palabras.every(y =>
+                    (x.snp_name_es && x.snp_name_es.toLowerCase().includes(y)) ||
+                    (x.snp_name_es && x.snp_name_es.toLowerCase().includes(y)) ||
+                    (x.formulation_es && x.formulation_es.toLowerCase().includes(y))
+
+                )
+            );
+          }
+
+      });
+
+
+
+
+      let results_count = results.length;
+
+
+
+      if(results_count>0) {
+        let label_select_paises="Países";
+        if(get_lang=="en") { label_select_paises="Countries"; };
+        loadDataToSelect(results,'country','select_paises',label_select_paises);
+
+        loadDataToSelect_multiple(results,'country','multiselect1-menu','Todos los países');
+        load_one_time_function=1; //carga una sola vez para select multiples
+
+      }
+
+
+
+
+
+
+      let var_0 = `_id`;
+
+      let var_2;
+      let var_2_en;
+      if(get_url_theme==1) {
+        var_2 = `snp_name_es`;
+        var_2_en = `snp_name_en`;
+      } else if(get_url_theme==2) {
+        var_2 = `snip_name_es`;
+        var_2_en = `snip_name_en`;
+      } else if(get_url_theme==5) {
+        var_2 = `national/national_mechanism_es`;
+        var_2_en = `national/national_mechanism_en`;
+      }
+
+
+
+
+      let list_content='';
+      let list_char_content='';
+
+
+
+      if(get_url_theme==2) {
+        list_content += '<thead>'+
+        '<tr style="background-color:'+color_table_head+';color:white;font-size:14px;width:99.99%; display:table;border-bottom:1px solid white;">'+
+        '<td width="5%">'+tabla_snip_title[0]+'</td>'+
+        '<td width="16%">'+tabla_snip_title[1]+'</td>'+
+        '<td width="16%">'+tabla_snip_title[2]+'</td>'+
+        '<td width="16%">'+tabla_snip_title[3]+'</td>'+
+        '<td width="16%">'+tabla_snip_title[4]+'</td>'+
+        '<td width="16%">'+tabla_snip_title[5]+'</td>'+
+        '<td width="6%" style="border-left:1px none white;" id="filter_table_col_1" >'+tabla_snip_title[6]+'</td>'+
+        '</tr></thead>'+
+        '<tbody style="overflow-y: scroll;max-height:600px;display:block;width:100%;border:5px none red;" >'+
+        '';
+
+      } else {
+        list_content += '<thead><tr style="background-color:'+color_table_head+';color:white;font-size:14px;width:99.99%; display:table;border-bottom:1px solid white;">'+
+        '<td width="6%">'+tabla_title[0]+'</td>'+
+        '<td width="84%">'+tabla_title[1]+'</td>'+
+        '<td width="10%" style="border-left:1px none white;" id="filter_table_col_1" >'+tabla_title[2]+'</td>'+
+        '</tr></thead>'+
+        '<tbody style="overflow-y: scroll;max-height:600px;display:block;width:100%;border:5px none red;" >'+
+        '';
+
+      }
+
+
+
+
+
+
+      let number_theme_icon = get_url_theme;
+
+
+      let id_last_content;
+      countGlobalResultsFilter=0;
+      results.forEach((x, i) => {
+
+          //Icono 1 País
+
+          let data_iso_country = x['country'];
+          if(!data_iso_country) {
+            data_iso_country = 'lac';
+          }
+
+          let iso_lowercase = data_iso_country.toLowerCase();
+
+          let coutry_name_label = getLabelFromJson(iso_lowercase);
+
+
+          let label_icon_country = iso_lowercase;
+          let icon_1_flag = '<img src="iframe/img/flags/'+iso_lowercase+'.png" height="35px"  data-toggle="tooltip" data-placement="top" title="'+coutry_name_label+'"  />   ';
+
+
+          let nombre_plan = x[var_2];
+          if(!nombre_plan || get_lang=="en") {
+            nombre_plan = x[var_2_en];
+          }
+
+
+
+          if(get_url_theme==2) {
+
+            let t2_instr_legal = x['legal_primary_instrument'];
+            let t2_instr_id_legal = x['legal_primary_instrument_id'];
+
+            let t2_instit = x['responsible_es'];
+            let t2_banco_proy = x['project_bank_name_es'];
+            if(get_lang=="en") { t2_banco_proy = x['project_bank_name_en']; };
+            let t2_plan = x['investment_plan'];
+            let t2_banco_proy_url = x['project_bank_url'];
+
+
+            let label_href_t2_instr_legal='';
+            if(t2_instr_id_legal){
+              label_href_t2_instr_legal=buscaNombreLegalFramework(t2_instr_id_legal);
+            }
+
+
+
+
+
+            if(!t2_instr_legal) { t2_instr_legal = ''; }
+            if(!t2_instit)      { t2_instit = ''; }
+            if(!t2_banco_proy)  { t2_banco_proy = ''; }
+            if(!t2_plan)        { t2_plan = ''; }
+
+            let actores_por_pais = buscaActoresPorPais(iso_lowercase,get_lang);
+            let planes_por_pais = buscaPlanesPorPais(iso_lowercase,0);
+
+
+            list_content += '<tr class="table_initiative_name initiative_row" id="initiative_row_' + x[var_0] + '" style="width:100%; display:table;font-size:0.9em;" >'+
+            '<td valign="top" width="4%"> ' + icon_1_flag +'</td>'+
+            '<td valign="top" width="15%" style="cursor: pointer;" onclick="viewDetailContent(' + x[var_0] + ','+number_theme_icon+')" >'+nombre_plan+'</td>'+
+            '<td valign="top" width="15%"> ' + label_href_t2_instr_legal +'</td>'+
+            '<td valign="top" width="15%"> '+actores_por_pais+'</td>'+
+            '<td valign="top" width="15%"><a target="_blank" href="'+t2_banco_proy_url+'"> ' + t2_banco_proy +'</a></td>'+
+            '<td valign="top" width="15%"> '+planes_por_pais+'</td>'+
+            '<td valign="top" width="5%" align="center" style="cursor: pointer;" onclick="viewDetailContent(' + x[var_0] + ','+number_theme_icon+')"  ><img src="iframe/img/icon_list_ficha.png" /></td>'+
+            '</tr>';
+
+          } else {
+
+            list_content += '<tr class="table_initiative_name initiative_row" id="initiative_row_' + x[var_0] + '" style="width:100%; display:table;" >'+
+            '<td width="6%"> ' + icon_1_flag +'</td>'+
+            '<td width="80%" style="cursor: pointer;" onclick="viewDetailContent(' + x[var_0] + ','+number_theme_icon+')" >'+nombre_plan+'</td>'+
+            '<td width="14%" align="center" style="cursor: pointer;" onclick="viewDetailContent(' + x[var_0] + ','+number_theme_icon+')"  ><img src="iframe/img/icon_list_ficha.png" /></td>'+
+            '</tr>';
+
+          }
+
+
+
+
+
+          id_last_content=x[var_0];
+          countGlobalResultsFilter++;
+      });
+
+
+      list_content +='</tbody>';
+      list_char_content +='</tbody>';
+
+
+      if(get_id>0 && get_url_theme>0) {
+
+        document.getElementById('option_back_list').style.display = "none";
+        viewDetailContent(get_id,get_url_theme);
+
+      }
+
+      if(countGlobalResultsFilter==1 && get_id>0 && get_url_theme>0) {
+        document.getElementById('option_back_list').style.display = "none";
+        viewDetailContent(id_last_content,get_url_theme);
+      }
+
+
+
+      document.getElementById('content_list_table').innerHTML = list_content;
+
+      document.getElementById('count_content2').innerHTML = countGlobalResultsFilter;
+      document.getElementById('cargando_datos').innerHTML = "";
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //Selector
+  function loadDataToSelect(xf,node,id_select,title) {
+
+      let results;
+      if(xf=="all") {
+        results = responseDataGlobal_result;
+      } else {
+        results=xf;
+      }
+
+      let var_3 = node;
+      let themes = [];
+
+      results.forEach((x, i) => {
+          themes.push(x[var_3]);
+      });
+
+      // 02. LISTA UNICA
+      let themes_un_c = uniqueCount(themes);
+
+      //themes EN SELECT
+      if (load_one_time == 0) {
+
+        //sort a-z a z
+
+        if(node=='effective_since') {
+          themes_un_c.sort( function( a, b ) {
+            return a.label > b.label ? -1 : a.label < b.label ? 1 : 0;
+          });
+        } else if (node=='country') {
+          themes_un_c.sort( function( a, b ) {
+            return a.label < b.label ? -1 : a.label > b.label ? 1 : 0;
+          });
+        } else {
+          themes_un_c.sort( function( a, b ) {
+            //return a.label < b.label ? -1 : a.label > b.label ? 1 : 0;
+            return a.count > b.count ? -1 : a.count < b.count ? 1 : 0;
+          });
+        }
+
+
+
+
+        document.getElementById(id_select).innerHTML = '<option value="all">'+title+'</option>';
+
+        let name_label_api;
+
+        let texto="";
+        let ocurrencia=0;
+
+        let theme_general=0;
+        if(get_url_theme>0) {
+          theme_general=1;
+        }
+
+        themes_un_c.forEach(x => {
+            let label = x.label;
+            let count = x.count;
+
+            //LABEL para select
+            let x_label_2 = getLabelFromJson(label);
+            //let x_label_2 = label;
+
+            ocurrencia = buscaOcurrencia(label);
+            if(ocurrencia==1) { texto = "selected"; } else { texto = ""; };
+
+            //if(label==undefined) {} else {
+            if(label==undefined || label=='N/A') {} else {
+
+            if(x_label_2=='No_Vigente') { x_label_2="No vigente"; };
+
+            document.getElementById(id_select).insertAdjacentHTML('beforeend', `<option ${texto} value="${label}">${x_label_2} (${count})</option>`);
+            }
+        });
+
+      }
+  }
+
+
+
+
+
+  //Selector
+  function loadDataToSelect_multiple(xf,node,id_select,title) {
+
+      let results;
+      if(xf=="all") {
+        results = responseDataGlobal_result;
+      } else {
+        results=xf;
+      }
+
+      let var_3 = node;
+      let themes = [];
+
+      let countttt=1;
+      results.forEach((x, i) => {
+          //themes.push(x[var_3]);
+
+          // v2 con multi code separado espacio
+          if(x[var_3]) {
+          //x[var_3].split(" ").forEach(code => { //separa por un espacio
+          //x[var_3].split(/ {1,2}/).forEach(code => { //separa por uno o dos espacio
+          x[var_3].split(/\s+/).forEach(code => { // solucion definitiva, esto separa por cualquier tipo de espacio (incluso non-breaking space y espacios Unicode)
+            if (code.trim()) {
+              themes.push(code);
+            }
+          });
+          }
+          countttt++;
+      });
+
+
+
+      // 02. LISTA UNICA
+      let themes_un_c = uniqueCount(themes);
+
+      //themes EN SELECT
+      if (load_one_time_function == 0) {
+
+        //sort a-z a z
+        const ordenPersonalizado_temas = ["development_planning","public_investment","open_government","territorial_development","territorial_planning","urban_development","mobility"];
+        console.log(node);
+        if(node=='xxmethodologic_area') {
+          themes_un_c.sort( function( a, b ) {
+            return a.label > b.label ? -1 : a.label < b.label ? 1 : 0;
+          });
+
+        } else if (node=='theme') {
+
+          themes_un_c.sort(function(a, b) {
+
+            const indexA = ordenPersonalizado_temas.indexOf(a.label);
+            const indexB = ordenPersonalizado_temas.indexOf(b.label);
+
+            // Si no está en el patrón, lo mandamos al final
+            return (indexA === -1 ? Infinity : indexA) - (indexB === -1 ? Infinity : indexB);
+          });
+
+        } else if (node=='country') {
+          themes_un_c.sort( function( a, b ) {
+            return a.label < b.label ? -1 : a.label > b.label ? 1 : 0;
+          });
+        } else {
+          themes_un_c.sort( function( a, b ) {
+            //return a.label < b.label ? -1 : a.label > b.label ? 1 : 0;
+            return a.count > b.count ? -1 : a.count < b.count ? 1 : 0;
+          });
+        }
+
+
+
+
+        //document.getElementById(id_select).innerHTML = '<option value="all">'+title+'</option>';
+
+        let name_label_api;
+
+        let texto="";
+        let ocurrencia=0;
+
+        let theme_general=0;
+        if(get_url_theme>0) {
+          theme_general=1;
+        }
+
+        themes_un_c.forEach(x => {
+            let label = x.label;
+            let count = x.count;
+
+            //LABEL para select
+            let x_label_2 = getLabelFromJson(label);
+            if(!x_label_2) {
+               x_label_2 = label;
+            }
+            //let x_label_2 = label;
+
+            ocurrencia = buscaOcurrencia(label);
+            if(ocurrencia==1) { texto = "selected"; } else { texto = ""; };
+
+            //if(label==undefined) {} else {
+            if(label==undefined || label=='N/A') {} else {
+
+            if(x_label_2=='No_Vigente') { x_label_2="No vigente"; };
+
+            document.getElementById(id_select).insertAdjacentHTML('beforeend', `<label><input type="checkbox" value="${label}" role="option" aria-label="${x_label_2}"> ${x_label_2}</label>`);
+            }
+        });
+
+        activarMultiselectListener("multiselect1-menu", function (checkbox) {
+          updateOutput(); // función que maneja el cambio
+        });
+
+
+
+
+      }
+  }
+
+
+
+
+  function activarMultiselectListener(id_select, callback) {
+    const container = document.getElementById(id_select);
+    if (!container) return;
+
+    container.addEventListener('change', function (e) {
+      if (e.target && e.target.matches('input[type="checkbox"]')) {
+        callback?.(e.target); // Ejecuta la función que tú definas
+      }
+    });
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      //Filtra datos unicos para selectores
+      function uniqueCount(data) {
+          let unique = data.filter((value, index, array) => array.indexOf(value) === index);
+          let unique_count = [];
+          unique.forEach((x, i) => {
+              let label_original = x;
+              let count = data.filter(elem => elem == x).length;
+              unique_count.push({
+                  'label': x,
+                  'count': count
+              })
+          });
+          return unique_count;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+      function visualizaPaises() {
+        visualizaSelect('select_paises','country');
+      }
+
+
+
+
+      function visualizaSelect(id_select,node) {
+        let data_label = document.getElementById(id_select).value;
+
+        if(data_label=="all") {
+          resetFilters("all");
+          return false;
+        }
+
+        let filtro_actual = $("#filter_selected").val();
+        $("#filter_selected").val(filtro_actual+";"+node+","+data_label);
+
+        //reload list whith filter
+        showData(node,data_label);
+
+        //resetea filtros
+
+        $("#display_filters").show();
+        displayFilters();
+      }
+
+
+
+
+
+
+
+
+
+      function displayFilters() {
+        let filtro_actual = $("#filter_selected").val();
+
+        let total_filters_badge_v2 = "";
+
+        let array_filters = filtro_actual.split(";");
+        let largo_arr_filter = array_filters.length;
+        array_filters.forEach((item, i) => {
+          let array_filters_type = item.split(",");
+            let type = array_filters_type[0];
+            let name = array_filters_type[1];
+
+            if(type==0 || name==0) {}  else {
+
+              let name_lang = getLabelFromJson(name);
+              //let name_lang = name;
+
+              //horizontal version
+              total_filters_badge_v2+="<span class='badge_remove_filter_v2' style='margin-right:8px' data-filter='"+type+","+name+"'>   "+name_lang+" <span class='b_rem_close'><img src=\"iframe/img/icon_filter_reset.png\" height=\"13px\" style=\"margin-top:-4px\" /></span> </span> ";
+            }
+
+        });
+
+        document.getElementById('display_filters').innerHTML = '';
+
+        //horizontal version
+        let reset_all_filters = ` <span id="opt_remove_all_filters">|&nbsp; <span class="button_filter" onclick="resetFilters(1)" style="padding:3px 6px;" > <span id="filter_opt_2_v2">Reset</span> <img src=\"iframe/img/icon_filter_reset.png\" height=\"13px\" style=\"margin-top:-4px\" /></span> </span>  `;
+        document.getElementById('display_filters').innerHTML = '<span id="filter_opt_1">Filters</span> '+total_filters_badge_v2+reset_all_filters;
+
+        $.each(ficha_iapt_filters_labels, function (i, html_content) {
+            $("#" + i).html(html_content[0 + language_number]);
+        });
+
+        removeClickJS();
+
+        if(largo_arr_filter<3) {
+          $("#opt_remove_all_filters").hide();
+        } else {
+          $("#opt_remove_all_filters").show();
+        }
+
+
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+      function resetFilters(x) {
+
+        if(x=="allword") {
+
+          let filtro_actual = $("#filter_selected").val();
+          filtro_actual = filtro_actual.replace(/;busca,[^;]*/g, ""); //elimina busqueda anterior del filter_selected
+          $("#filter_selected").val(filtro_actual);
+
+          displayFilters();
+          showData("all","all");
+
+
+        } else {
+
+        $("#select_theme").val("all");
+
+        if(x=="word"){}else{
+        $("#search_by_words").val("");
+        }
+
+        $("#display_filters").hide();
+        $("#filter_selected").val("0");
+
+        showData("all","all");
+
+
+        //loadTheme("all");
+        loadDataToSelect('all','theme','select_theme','Temas');
+
+
+        $("#display_filters").html("");
+
+        }
+
+      }
+
+
+
+
+
+
+
+
+      function buscaOcurrencia(v) {
+        let valret=0;
+
+        if(v==undefined || v=="") {
+          //return valret;
+        }
+
+        let filtro_actual = $("#filter_selected").val();
+
+
+
+        let array_filters = filtro_actual.split(";");
+        array_filters.forEach((item, i) => {
+          let array_filters_type = item.split(",");
+            let type = array_filters_type[0];
+            let name = array_filters_type[1];
+
+            if(v==name) {
+              valret=1;
+              return valret;
+            }
+
+        });
+
+        return valret;
+      }
+
+
+
+
+
+
+
+
+
+      function buscadorListado() {
+        let keyword = document.getElementById("search_by_words").value;
+        let largo = keyword.length;
+        if(largo<1) {
+          resetFilters("allword");
+          showData("all","all");
+          return false;
+        }
+        if(largo>3) {
+
+
+          let filtro_actual = $("#filter_selected").val();
+          //evita 2 busquedas
+          filtro_actual = filtro_actual.replace(/;busca,[^;]*/g, ""); //elimina busqueda anterior del filter_selected
+          $("#filter_selected").val(filtro_actual+";busca,"+keyword);
+
+
+          //resetFilters("word");
+          showData("by_keyword",keyword);
+
+
+        } else {
+          showData("all","all");
+          document.getElementById("search_by_words").value='';
+        }
+
+        //$("#filter_selected").val("");
+        $("#display_filters").show();
+        displayFilters();
+
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+      function removeClickJS(){
+        const spans = document.querySelectorAll('.badge_remove_filter_v2');
+          spans.forEach(span => {
+              span.addEventListener('click', function() {
+                  const filterValue = span.getAttribute('data-filter');
+                  removeFilterFromList(filterValue);
+              });
+          });
+      }
+
+
+      function removeFilterFromList(x) {
+
+        if (x.includes('busca')) {
+          document.getElementById('search_by_words').value = "";
+        }
+
+
+        let input = document.getElementById('filter_selected').value;
+        let regex = new RegExp(`;?${x}`);
+        let nuevoInput = input.replace(regex, '');
+        document.getElementById('filter_selected').value = nuevoInput;
+
+        displayFilters();
+        showData('all','all');
+
+        if(nuevoInput=='0') {
+          $("#display_filters").hide();
+        }
+
+        return false;
+      }
+
+
+
+
+
+
+
+
+      //Label segun idioma desde Json Kobo nodo choices
+      function getLabelFromJson(label) {
+
+        if(label) {
+          let largo_label = label.length;
+          if(get_url_theme==5) {
+            //if(largo_label===3) { label = label.toUpperCase(); };
+          }
+          //if(largo_label===3) { label = label.toLowerCase(); };
+        }
+
+
+        name_label_api_default_multilanguage = `label`;
+        let label_from_api='';
+        let name_label_api;
+        let responseData = responseDataGlobal.choices;
+        if(languageGlobal=="es") {
+          name_label_api = `label::Espanol (es)`;
+        } else if(languageGlobal=="en") {
+          name_label_api = `label::English (en)`;
+        }
+        let x_label = responseData.filter(element=>element.name == label)[0];
+        let x_label_2;
+
+        if(x_label) {
+            x_label_2 = x_label[name_label_api];
+
+            if(!x_label_2) {
+              x_label_2 = x_label[name_label_api_default_multilanguage];
+            }
+
+        } else {
+            x_label_2 = label;
+        }
+
+        //provisorio
+        if(x_label_2=="Bolivia") {
+          x_label_2="Bolivia (Est. Plur. de)";
+          if(languageGlobal=="en") { x_label_2="Bolivia (Plur. State of)"; }
+        }
+        if(x_label_2=="Venezuela") {
+          x_label_2="Venezuela (Rep. Bol. de)";
+          if(languageGlobal=="en") { x_label_2="Venezuela (Bol. Rep. of)"; }
+        }
+
+
+        return x_label_2;
+
+      }
+
+
+
+
+
+
+
+
+
+      //Switch listado / ficha
+      function view_list_detail(x,number_theme) {
+          if (x == 1) {
+              document.getElementById("content_list").style.display = "block";
+              document.getElementById("content_detail").style.display = "none";
+              //parent.document.getElementById("iframe_content").style.height="1000px";
+
+              const urlactual = new URL(window.location.href);
+              urlactual.searchParams.delete("id");
+              window.history.pushState({}, "", urlactual);
+
+              document.title = title_page;
+
+          } else if (x == 3) {
+              window.scrollTo({top: 0});
+              document.getElementById("content_list").style.display = "none";
+              document.getElementById("content_detail").style.display = "block";
+              //parent.document.getElementById("iframe_content").style.height="2500px";
+          }
+      }
+
+
+
+
+      //Ficha de la Iniciativa
+      function viewDetailContent(x,number_theme) {
+
+        enFicha = true;
+
+          const urlactual = new URL(window.location.href);
+          if (!urlactual.searchParams.has("id")) {
+          urlactual.searchParams.set("id", x);
+          window.history.pushState({}, "", urlactual);
+          }
+
+          let results = responseDataGlobal_result;
+          let data_detail = results.filter(item => item._id == x);
+
+          console.log("id:" + x);
+          console.log(data_detail);
+
+
+
+          let data_iso_country = data_detail[0]['country'];
+          if(!data_iso_country) {
+            data_iso_country = 'lac';
+          }
+
+          let iso_lowercase = data_iso_country.toLowerCase();
+
+          let coutry_name_label = getLabelFromJson(iso_lowercase);
+
+
+          let label_icon_country = iso_lowercase;
+          let icon_1_flag = '<img src="iframe/img/flags/'+iso_lowercase+'.png" height="40px" />   ';
+
+
+          if(coutry_name_label == 'LAC') { coutry_name_label='<small>{data.country}</small>'; };
+          let link_ver_ficha_pais_label='Ver ficha país';
+          let link_ver_ficha_pais_url='es/paises';
+          if(get_lang=="en") { link_ver_ficha_pais_label='View Country Sheet'; link_ver_ficha_pais_url='en/countries'; };
+          let link_ver_ficha_pais = '<span class="ver_fich_pais"><a href="'+link_ver_ficha_pais_url+'/?country='+iso_lowercase+'">'+link_ver_ficha_pais_label+'</a></span>';
+          document.getElementById('detail_country').innerHTML = icon_1_flag + coutry_name_label+link_ver_ficha_pais;
+
+
+
+          let label_instrumento = 'plan';
+          if(!label_instrumento) {
+            label_instrumento = '...';
+          } else {
+            label_instrumento = getLabelFromJson(label_instrumento);
+            label_instrumento = determinarFrasesDesdeArticulo(label_instrumento);
+          }
+
+          let label_theme = '';
+          if(number_theme==1) {
+            label_theme = array_theme_label[0];
+          }
+
+          if(number_theme==5) {
+            label_instrumento = 'instrumentos';
+            label_theme='ordenamiento territorial';
+          }
+
+
+          document.getElementById('detail_ver_todos_planes').innerHTML = 'Ver '+label_instrumento+' de '+label_theme+' en ' + coutry_name_label;
+          document.getElementById('detail_ver_todas_normativas').innerHTML = 'Ver todas las normativas de '+label_theme+' en ' + coutry_name_label;
+
+          document.getElementById('detail_ver_todos_planes').style.display='none';
+          document.getElementById('detail_ver_todas_normativas').style.display='none';
+
+          let var_2, var_2_en;
+          if(get_url_theme==1) {
+            var_2 = `snp_name_es`;
+            var_2_en = `snp_name_en`;
+          } else if(get_url_theme==2) {
+            var_2 = `snip_name_es`;
+            var_2_en = `snip_name_en`;
+          } else if(get_url_theme==5) {
+            var_2 = `national/national_mechanism_es`;
+            var_2_en = `national/national_mechanism_en`;
+          }
+
+
+          let nombre_plan = data_detail[0][var_2];
+          if(!nombre_plan || get_lang=="en") {
+            nombre_plan = data_detail[0][var_2_en];
+          }
+
+
+          if(get_url_theme==5) {
+            //nombre_plan='Mecanismo de articulación en '+coutry_name_label;
+            document.getElementById('detail_institution').style.display = "none";
+          }
+
+
+          document.title = nombre_plan + " | " + title_page;
+
+          document.getElementById('detail_name').innerHTML = nombre_plan;
+
+
+
+          let data_instutucion_resp = data_detail[0]['responsible_es'];
+          if(!data_instutucion_resp) {
+            data_instutucion_resp = '-';
+          } else {
+            document.getElementById('detail_institution').innerHTML = '<strong id="detail_label_inst_resp">Institución responsable:</strong> ' + data_instutucion_resp;
+          }
+
+
+
+
+
+          if(get_url_theme==1) {
+
+          let intro = data_detail[0]['intro_es'];
+          if(!intro || get_lang=="en") { intro = data_detail[0]['intro_en']; }
+          if(!intro) { intro = 'ND'; }
+
+          let info_1 = data_detail[0]['formulation_es'];
+          if(!info_1 || get_lang=="en") { info_1 = data_detail[0]['formulation_en']; }
+          if(!info_1) { info_1 = 'ND'; }
+
+          let info_2 = data_detail[0]['implement_es'];
+          if(!info_2 || get_lang=="en") { info_2 = data_detail[0]['implement_en']; }
+          if(!info_2) { info_2 = 'ND'; }
+
+          let info_3 = data_detail[0]['monitor_es'];
+          if(!info_3 || get_lang=="en") { info_3 = data_detail[0]['monitor_en']; }
+          if(!info_3) { info_3 = 'ND'; }
+
+          let info_4 = data_detail[0]['link_sector_es'];
+          if(!info_4 || get_lang=="en") { info_4 = data_detail[0]['link_sector_en']; }
+          if(!info_4) { info_4 = 'ND'; }
+
+          let info_5 = data_detail[0]['link_territory_es'];
+          if(!info_5 || get_lang=="en") { info_5 = data_detail[0]['link_territory_en']; }
+          if(!info_5) { info_5 = 'ND'; }
+
+
+          info_1 = linkify(info_1);
+          info_2 = linkify(info_2);
+          info_3 = linkify(info_3);
+          info_4 = linkify(info_4);
+          info_5 = linkify(info_5);
+
+          intro=formatosTexto(intro);
+          info_1=formatosTexto(info_1);
+          info_2=formatosTexto(info_2);
+          info_3=formatosTexto(info_3);
+          info_4=formatosTexto(info_4);
+          info_5=formatosTexto(info_5);
+
+
+          let display_none = ' style="display: none;" ';
+
+          let menu_show_0=''; let tab_show_0='';
+          let menu_show_1=''; let tab_show_1='';
+          if(intro=='ND') {
+            menu_show_1='active';
+            tab_show_1='show active';
+          } else {
+            menu_show_0='active';
+            tab_show_0='show active';
+          }
+
+          let menu_display_0='';
+          let menu_display_1='';
+          let menu_display_2='';
+          let menu_display_3='';
+          let menu_display_4='';
+          let menu_display_5='';
+          if(intro=='ND') { menu_display_0=display_none; }
+          if(info_1=='ND') { menu_display_1=display_none; }
+          if(info_2=='ND') { menu_display_2=display_none; }
+          if(info_3=='ND') { menu_display_3=display_none; }
+          if(info_4=='ND') { menu_display_4=display_none; }
+          if(info_5=='ND') { menu_display_5=display_none; }
+
+
+          const secciones_snp = ['intro','formulation','implement','monitor','sector','territory'];
+          const link_block_snp = ['intro','info_1','info_2','info_3','info_4','info_5'];
+
+          intro += getLinksBlock(1,'intro',data_detail[0]);
+          info_1 += getLinksBlock(1,'formulation',data_detail[0]);
+          info_2 += getLinksBlock(1,'implement',data_detail[0]);
+          info_3 += getLinksBlock(1,'monitor',data_detail[0]);
+          info_4 += getLinksBlock(1,'sector',data_detail[0]);
+          info_5 += getLinksBlock(1,'territory',data_detail[0]);
+
+
+
+          let all_tabs = `
+          <div class="row" style="margin-top:20px;">
+            <!-- Navigation Tabs -->
+            <div class="col-lg-3 col-md-12 col-sm-12">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a ${menu_display_0} class="nav-link nav1-link nav1-link_t1 ${menu_show_0}"   data-toggle="pill" href="#v-pills-tab6"  aria-selected="true" id="detail_label_menu1_0">Introducción</a>
+                <a ${menu_display_1} class="nav-link nav1-link nav1-link_t1 ${menu_show_1}"   data-toggle="pill" href="#v-pills-tab1"  aria-selected="false" id="detail_label_menu1_1">1. Formulación</a>
+                <a ${menu_display_2} class="nav-link nav1-link nav1-link_t1"   data-toggle="pill" href="#v-pills-tab2"  aria-selected="false" id="detail_label_menu1_2">2. Implementación</a>
+                <a ${menu_display_3} class="nav-link nav1-link nav1-link_t1"   data-toggle="pill" href="#v-pills-tab3"  aria-selected="false" id="detail_label_menu1_3">3. Monitoreo y evaluación</a>
+                <a ${menu_display_4} class="nav-link nav1-link nav1-link_t1"   data-toggle="pill" href="#v-pills-tab4"  aria-selected="false" id="detail_label_menu1_4">4. Vinculación con la planificación sectorial</a>
+                <a ${menu_display_5} class="nav-link nav1-link nav1-link_t1"   data-toggle="pill" href="#v-pills-tab5"  aria-selected="false" id="detail_label_menu1_5">5. Vinculación con la planificación territorial</a>
+              </div>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="col-lg-9 col-md-12 col-sm-12">
+              <div class="tab-content" id="v-pills-tab0">
+                <div class="tab-pane fade ${tab_show_0}" id="v-pills-tab6" >
+                  ${intro}
+                </div>
+                <div class="tab-pane fade ${tab_show_1}" id="v-pills-tab1" >
+                  ${info_1}
+                </div>
+                <div class="tab-pane fade" id="v-pills-tab2" >
+                  ${info_2}
+                </div>
+                <div class="tab-pane fade" id="v-pills-tab3" >
+                  ${info_3}
+                </div>
+                <div class="tab-pane fade" id="v-pills-tab4" >
+                  ${info_4}
+                </div>
+                <div class="tab-pane fade" id="v-pills-tab5" >
+                  ${info_5}
+                </div>
+              </div>
+            </div>
+          </div>
+          `;
+
+          document.getElementById('tabs_all').innerHTML = all_tabs;
+
+
+        } else if(get_url_theme==2) {
+
+          let url_snip = data_detail[0]['url_snip'];
+
+          if(url_snip!='') {
+            document.getElementById('detail_url_snip').innerHTML = `<a class='url_snip_badge' href='${url_snip}' target='_blank'>Miembro de la red SNIP</a>`;
+
+          } else {
+            document.getElementById('detail_url_snip').innerHTML = '';
+          }
+
+          document.getElementById('detail_url_snip').innerHTML = '';
+
+
+
+          let info_1a = data_detail[0]['governing/governing_es'];
+          if(!info_1a || get_lang=="en") { info_1a = data_detail[0]['governing/governing_en']; }
+          if(!info_1a) { info_1a = 'ND'; }
+
+          let info_1b = data_detail[0]['related/related_es'];
+          if(!info_1b || get_lang=="en") { info_1b = data_detail[0]['related/related_en']; }
+          if(!info_1b) { info_1b = 'ND'; }
+
+          let info_1c = data_detail[0]['incorporated/incorporated_es'];
+          if(!info_1c || get_lang=="en") { info_1c = data_detail[0]['incorporated/incorporated_en']; }
+          if(!info_1c) { info_1c = 'ND'; }
+
+
+          let info_2 = data_detail[0]['legal_framework/legal_framework_es'];
+          if(!info_2 || get_lang=="en") { info_2 = data_detail[0]['legal_framework/legal_framework_en']; }
+          if(!info_2) { info_2 = 'ND'; }
+
+          let info_3 = data_detail[0]['methodology/methodology_es'];
+          if(!info_3 || get_lang=="en") { info_3 = data_detail[0]['methodology/methodology_en']; }
+          if(!info_3) { info_3 = 'ND'; }
+
+          let info_4 = data_detail[0]['investment/investment_es'];
+          if(!info_4 || get_lang=="en") { info_4 = data_detail[0]['investment/investment_en']; }
+          if(!info_4) { info_4 = 'ND'; }
+
+          let info_5 = data_detail[0]['investment_project_bank/investment_project_bank_es'];
+          if(!info_5 || get_lang=="en") { info_5 = data_detail[0]['investment_project_bank/investment_project_bank_en']; }
+          if(!info_5) { info_5 = 'ND'; }
+
+          let info_8 = data_detail[0]['training/training_es'];
+          if(!info_8 || get_lang=="en") { info_8 = data_detail[0]['training/training_en']; }
+          if(!info_8) { info_8 = 'ND'; }
+
+          let info_6 = data_detail[0]['project_cycle/project_cycle_es'];
+          if(!info_6 || get_lang=="en") { info_6 = data_detail[0]['project_cycle/project_cycle_en']; }
+          if(!info_6) { info_6 = 'ND'; }
+
+          // Imagen asociada al Ciclo de la Inversión Pública (Infografía)
+          // Se obtiene desde los mismos campos de la API: infog_project_cycle_es / infog_project_cycle_en
+          // Intentamos la clave en minúsculas (tal como en tu API) y hacemos fallback a la variante con mayúscula por compatibilidad.
+          let info_6_img = data_detail[0]['project_cycle/infog_project_cycle_es'] || data_detail[0]['project_cycle/Infog_project_cycle_es'];
+          if(!info_6_img || get_lang=="en") { info_6_img = data_detail[0]['project_cycle/infog_project_cycle_en'] || data_detail[0]['project_cycle/Infog_project_cycle_en']; }
+          // Si no hay valor, dejamos la variable vacía para no insertar nada
+          if(info_6_img) {
+            let imagen_src = info_6_img.trim();
+            let imagen_descarga = '';
+
+            // Si la API devuelve un nombre de archivo pero el registro tiene attachments,
+            // buscamos el attachment correspondiente y usamos su download_url.
+            if(!imagen_src.match(/^(https?:\/\/|\/|data:)/) && data_detail[0]._attachments) {
+              for(let item of data_detail[0]._attachments) {
+                let filename_name = item.filename.split('/').pop();
+                if(filename_name === imagen_src) {
+                  imagen_src = item.download_url.replace("/?format=json", "");
+                  break;
+                }
+              }
+            }
+
+            imagen_descarga = imagen_src;
+
+            // Antes se usaba solo una imagen sin enlace de descarga ni límite de altura específico.
+            // info_6_img = `<div class="project-cycle-image" style="margin-top:10px;">` +
+            //              `  <img src="${imagen_src}" alt="${get_lang=='en' ? 'Project cycle' : 'Ciclo de la inversión pública'}" style="max-width:100%;height:auto;" />` +
+            //              `</div>`;
+
+            info_6_img = `
+              <div class="project-cycle-image" style="margin-top:10px;">
+                <img
+                  src="${imagen_src}"
+                  alt="${get_lang=='en' ? 'Project cycle' : 'Ciclo de la inversión pública'}"
+                  style="max-width:100%; max-height:600px; width:auto; height:auto; display:block; margin:0 auto;"
+                />
+                <div style="margin-top:8px; text-align:center;">
+                  <a href="${imagen_descarga}" download style="font-size:0.9em; color:#0066cc; text-decoration:underline;">
+                    ${get_lang=='en' ? 'Download original image' : 'Descargar imagen original'}
+                  </a>
+                </div>
+              </div>
+            `;
+          } else {
+            info_6_img = '';
+          }
+
+          let info_7 = data_detail[0]['policy_cycle/policy_cycle_es'];
+          if(!info_7 || get_lang=="en") { info_7 = data_detail[0]['policy_cycle/policy_cycle_en']; }
+          if(!info_7) { info_7 = 'ND'; }
+
+
+
+          info_1a = linkify(info_1a);
+          info_1b = linkify(info_1b);
+          info_1c = linkify(info_1c);
+          info_2 = linkify(info_2);
+          info_3 = linkify(info_3);
+          info_4 = linkify(info_4);
+          info_5 = linkify(info_5);
+          info_6 = linkify(info_6);
+          info_7 = linkify(info_7);
+
+
+          info_1a=formatosTexto(info_1a);
+          info_1b=formatosTexto(info_1b);
+          info_1c=formatosTexto(info_1c);
+          info_2=formatosTexto(info_2);
+          info_3=formatosTexto(info_3);
+          info_4=formatosTexto(info_4);
+          info_5=formatosTexto(info_5);
+          info_6=formatosTexto(info_6);
+          info_7=formatosTexto(info_7);
+
+
+          let title_tab1_1='Entes rectores y operativos:';
+          let title_tab1_2='Entes vinculados:';
+          let title_tab1_3='Entes incorporados:';
+          if(get_lang=="en") {
+            title_tab1_1='Governing Statutory Body:';
+            title_tab1_2='Related Entities:';
+            title_tab1_3='Incorporated Entities:';
+          }
+
+          let proyb_icon = `<img class="svg_blinks" src="iframe/img/svg/links/link_type_snip.svg" width="30px" height="30px">`;
+          let proyb_name = data_detail[0]['project_bank_name_es'];
+          if(get_lang=="en") { proyb_name = data_detail[0]['project_bank_name_en']; };
+          let proyb_url = data_detail[0]['project_bank_url'];
+          let txt_banco_proyecto='';
+          if(proyb_name && proyb_url) {
+            txt_banco_proyecto = `<div class="title_banco_proyectos">${tabla_snip_title[4]}:</div><div style="padding:10px 0px;">${proyb_icon} <a href="${proyb_url}">${proyb_name}</a></div>`;
+          }
+
+
+          info_1a += getLinksBlock(2,'governing',data_detail[0]);
+          info_1b += getLinksBlock(2,'related',data_detail[0]);
+          info_1c += getLinksBlock(2,'incorporated',data_detail[0]);
+
+          info_2 += getLinksBlock(2,'legal_framework',data_detail[0]);
+          info_3 += getLinksBlock(2,'methodology',data_detail[0]);
+          info_4 += getLinksBlock(2,'investment',data_detail[0]);
+          info_5 += getLinksBlock(2,'investment_project_bank',data_detail[0]);
+          info_6 += getLinksBlock(2,'project_cycle',data_detail[0]);
+          info_7 += getLinksBlock(2,'policy_cycle',data_detail[0]);
+          info_8 += getLinksBlock(2,'training',data_detail[0]);
+
+
+
+
+          let all_tabs = `
+          <div class="row" style="margin-top:20px;">
+            <!-- Navigation Tabs -->
+            <div class="col-md-3">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link nav1-link nav-link nav1-link_t2 active"   data-toggle="pill" href="#v-pills-tab1"  aria-selected="true" id="detail_label_menu2_1" >1. Actores</a>
+                <a class="nav-link nav1-link nav-link nav1-link_t2"   data-toggle="pill" href="#v-pills-tab2"  aria-selected="false" id="detail_label_menu2_2" >2. Marcos Legales</a>
+                <a class="nav-link nav1-link nav-link nav1-link_t2"   data-toggle="pill" href="#v-pills-tab3"  aria-selected="false" id="detail_label_menu2_3" >3. Metodologías</a>
+                <a class="nav-link nav1-link nav-link nav1-link_t2"   data-toggle="pill" href="#v-pills-tab4"  aria-selected="false" id="detail_label_menu2_4" >4. Planes de Inversión Pública</a>
+                <a class="nav-link nav1-link nav-link nav1-link_t2"   data-toggle="pill" href="#v-pills-tab5"  aria-selected="false" id="detail_label_menu2_5" >5. Banco de Proyectos de Inversión/ Mapa de Inversiones</a>
+                <a class="nav-link nav1-link nav-link nav1-link_t2"   data-toggle="pill" href="#v-pills-tab8"  aria-selected="false" id="detail_label_menu2_6" >6. Capacitación</a>
+                <a class="nav-link nav1-link nav-link nav1-link_t2"   data-toggle="pill" href="#v-pills-tab6"  aria-selected="false" id="detail_label_menu2_7" >7. Ciclo de la Inversión Pública</a>
+ <!--                <a class="nav-link nav1-link nav-link nav1-link_t2"   data-toggle="pill" href="#v-pills-tab7"  aria-selected="false" id="detail_label_menu2_8" >8. Ciclo de Política de Inversión Pública</a> -->
+              </div>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="col-md-9">
+              <div class="tab-content" id="v-pills-tab0">
+                <div class="tab-pane fade show active" id="v-pills-tab1" >
+                  <div class="title_tab_pane">${title_tab1_1}</div>
+                  <div>${info_1a}</div>
+                  <div class="title_tab_pane" style="margin-top:20px">${title_tab1_2}</div>
+                  <div>${info_1b}</div>
+                  <div class="title_tab_pane" style="margin-top:20px">${title_tab1_3}</div>
+                  <div>${info_1c}</div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-tab2" >
+                  ${info_2}
+                </div>
+                <div class="tab-pane fade" id="v-pills-tab3" >
+                  ${info_3}
+                </div>
+                <div class="tab-pane fade" id="v-pills-tab4" >
+                  ${info_4}
+                </div>
+                <div class="tab-pane fade" id="v-pills-tab5" >
+                  ${info_5}
+                  ${txt_banco_proyecto}
+                </div>
+                <div class="tab-pane fade" id="v-pills-tab8" >
+                  ${info_8}
+                </div>
+                <div class="tab-pane fade" id="v-pills-tab6" >
+                  ${info_6}
+                  ${info_6_img}
+                </div>
+                <div class="tab-pane fade" id="v-pills-tab7" >
+                  ${info_7}
+                </div>
+              </div>
+            </div>
+          </div>
+          `;
+
+          document.getElementById('tabs_all').innerHTML = all_tabs;
+
+
+
+
+        } else if(get_url_theme==5) {
+
+
+            let info_1 = data_detail[0]['national/national_text_es'];
+            if(!info_1 || get_lang=="en") { info_1 = data_detail[0]['national/national_text_en']; }
+            if(!info_1) { info_1 = 'ND'; }
+
+            let info_2 = data_detail[0]['intermediate/intermediate_es'];
+            if(!info_2 || get_lang=="en") { info_2 = data_detail[0]['intermediate/intermediate_en']; }
+            if(!info_2) { info_2 = 'ND'; }
+
+            info_1 = linkify(info_1);
+            info_2 = linkify(info_2);
+
+            info_1=formatosTexto(info_1);
+            info_2=formatosTexto(info_2);
+
+
+            let all_tabs = `
+            <div class="row" style="margin-top:20px;">
+              <!-- Navigation Tabs -->
+              <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link nav1-link nav-link nav1-link_t5 active"   data-toggle="pill" href="#v-pills-tab1"  aria-selected="true" id="detail_label_menu3_1">1. Nivel nacional</a>
+                  <a class="nav-link nav1-link nav-link nav1-link_t5"   data-toggle="pill" href="#v-pills-tab2"  aria-selected="false" id="detail_label_menu3_2">2. Nivel intermedio</a>
+                </div>
+              </div>
+
+              <!-- Tab Content -->
+              <div class="col-9">
+                <div class="tab-content" id="v-pills-tab0">
+                  <div class="tab-pane fade show active" id="v-pills-tab1" >
+                    ${info_1}
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-tab2" >
+                    ${info_2}
+                  </div>
+                </div>
+              </div>
+            </div>
+            `;
+
+            document.getElementById('tabs_all').innerHTML = all_tabs;
+
+
+          }
+
+
+
+
+
+
+
+          if(get_url_theme==1 || get_url_theme==2) {
+
+            let square_margin_left = 'margin-left:0px;width:10px;height:10px;border-radius:2px;margin-top:8px;margin-right:8px;';
+            let square_1 = '<div style="background-color:#00BDD6;float:left;margin-right:3px;'+square_margin_left+'"></div>';
+            let square_2 = '<div style="background-color:#BC2F54;float:left;margin-right:3px;'+square_margin_left+'"></div>';
+            let square_5 = '<div style="background-color:#EA8E39;float:left;margin-right:3px;'+square_margin_left+'"></div>';
+
+            if(get_url_theme==2) {
+              square_1=square_2;
+            }
+
+            document.getElementById('detail_institution').innerHTML = '<img src="images/loading.gif" height="28px">';
+
+            let title='';
+            let div_title='';
+            let hexDate = 1;
+            let query_country = '&query={"country":"'+iso_lowercase+'"}';
+
+
+            link_system = 'es/instituciones';
+            let link_rednip = 'es/redsnip';
+            if(lang=="en") {
+            link_system = 'en/institutions';
+            link_rednip = 'en/redsnip';
+            }
+            tokenapi = 'aMXsEC6SyQngvcTa3fSC93';
+            loadAPIInstituciones(title,div_title,link_system,tokenapi);
+
+            let resultGlobalInstitutions;
+
+            function loadAPIInstituciones(title,div_title,link_system,tokenapi) {
+
+
+              fetch('https://api-kobo.cepal.org/api-kobo/data?dataset='+tokenapi+query_country)
+                .then(response => response.json())
+                .then(json => {
+                    let count = json.count;
+
+
+                    if(count>0) {
+                      let resultado = json.results;
+
+                      resultGlobalInstitutions=resultado;
+
+                      //filtro tema
+                      let filter_plan_1;
+
+                      if(get_url_theme==1) {
+                        filter_plan_1 = json.results.filter(item =>
+                          item.leads?.includes("development_planning") && item.territorial_scale === "national"
+                        );
+                      } else if(get_url_theme==2) {
+                        filter_plan_1 = json.results.filter(item =>
+                          item.leads?.includes("public_investment") && item.territorial_scale === "national"
+                        );
+                      }
+
+
+                      let listado_m3_1='';
+                      let cuenta_listado_m3_1=0;
+                      let title_listado_m3_1='';
+                      filter_plan_1.forEach((item, i) => {
+                        let id = item._id;
+                        let name = item.name_es;
+                        if(lang=="en") {
+                            name = item.name_en;
+                        }
+
+                        let parent_listado_m3_1='';
+                        let parent_id = item.parent_id;
+                        if(!parent_id) { parent_id=0; }
+                        let parent_name = item.parent_name;
+                        if(lang=="en") { parent_name=getParentNameEnglish(parent_id,parent_name); };
+                        if(parent_id>0) {
+                          //listado_m3_1+= '<div class="listado_box_planes_parent"><a target="_blank" href="'+link_system+'/?theme=1&id='+parent_id+'">'+parent_name+'</a></div>';
+                          parent_listado_m3_1= ', <a target="_blank" href="'+link_system+'/?theme=1&id='+parent_id+'">'+parent_name+'</a>';
+                        }
+
+                        listado_m3_1+= '<div class="listado_box_planes">'+square_1+' <a target="_blank" href="'+link_system+'/?theme=1&id='+id+'">'+name+'</a>'+parent_listado_m3_1+'</div>';
+
+                        cuenta_listado_m3_1++;
+                      });
+
+
+
+                      if(cuenta_listado_m3_1==1) {
+                        title_listado_m3_1 = "Principal autoridad nacional de " + theme_titles_areas[get_url_theme-1];
+                      } else {
+                        title_listado_m3_1 = "Principales autoridades nacionales de " + theme_titles_areas[get_url_theme-1];
+                      }
+                      if(get_lang=="en") {
+                        title_listado_m3_1='Main national authorities for '+ theme_titles_areas[get_url_theme-1];
+                      }
+
+                      document.getElementById('detail_institution').innerHTML= "<div class='snp_title_autoridades'>"+title_listado_m3_1 + "</div>" + listado_m3_1;
+
+
+                    } else {
+
+                    }
+                })
+                .catch((error) => {
+                    console.error('Error al leer json api-kobo', error);
+                });
+              }
+
+          }
+
+
+
+
+/*
+
+          if(get_url_theme==2) {
+
+            let t2_instr_legal = data_detail[0]['legal_primary_instrument'];
+
+            let label_href_t2_instr_legal = t2_instr_legal;
+            if(t2_instr_legal) {
+              let id_instr_legal=buscaIDLegalFramework(t2_instr_legal);
+              if(id_instr_legal=="no") { } else {
+                label_href_t2_instr_legal = id_instr_legal;
+              };
+            };
+
+            if(!label_href_t2_instr_legal)  {
+              label_href_t2_instr_legal = '';
+              document.getElementById('detail_instrumento_legal').innerHTML = '';
+            } else {
+              let icon_normativa = `<img class="svg_blinks" src="iframe/img/svg/links/link_type_legal.svg" width="20px" height="20px">`;
+              document.getElementById('detail_instrumento_legal').innerHTML = '<div class="snp_title_autoridades"> '+tabla_snip_title[2] +'</div>'+icon_normativa + ' ' + label_href_t2_instr_legal ;
+            }
+
+          }
+
+
+
+
+          //carga planes vigentes
+          let listado_planes_vigentes = buscaPlanesPorPais(iso_lowercase,1);
+          if(listado_planes_vigentes!='') {
+            let lpv_title = "<div class='title_planes_vigentes'>Planes, programas e instrumentos vigentes</div>";
+            if(get_lang=="en") {
+              lpv_title = "<div class='title_planes_vigentes'>Plans, policies, and instruments</div>";
+            }
+            listado_planes_vigentes=lpv_title+listado_planes_vigentes;
+          }
+          document.getElementById('detail_planes_vigentes').innerHTML= listado_planes_vigentes;
+
+*/
+
+
+
+
+
+/*
+          let bg_number=number_theme-1;
+          console.log(bg_number);
+
+          //color personalizado
+          var bg_color_1 = theme_colors[bg_number];
+          var bg_color_2 = theme_colors_2[bg_number];
+          var bg_color_3 = theme_colors_3[bg_number];
+*/
+          //document.getElementById('detail_name').style.backgroundColor = bg_color_1;
+          //document.getElementById('detail_institution').style.backgroundColor = bg_color_2;
+          //document.getElementById('detail_year_temp_scale').style.backgroundColor = bg_color_3;
+
+/*
+          setTimeout(() => {
+          document.querySelectorAll('.ficha_item_title').forEach(element => {
+              element.style.color = bg_color_1;
+          });
+          }, 50);
+*/
+
+
+
+
+
+
+          //traducciones
+
+          if(get_lang=="en") {
+          const labelsEn = {
+            detail_label_inst_resp: "Responsible Institution:",
+            detail_label_menu1_0: "Introduction",
+            detail_label_menu1_1: "1. Formulation",
+            detail_label_menu1_2: "2. Implementation",
+            detail_label_menu1_3: "3. Monitoring and Evaluation",
+            detail_label_menu1_4: "4. Linkage with Sectoral Planning",
+            detail_label_menu1_5: "5. Linkage with Territorial Planning",
+            detail_label_menu2_1: "1. Stakeholders",
+            detail_label_menu2_2: "2. Legal Frameworks",
+            detail_label_menu2_3: "3. Methodologies",
+            detail_label_menu2_4: "4. Public Investment Plans",
+            detail_label_menu2_5: "5. Public Investment Project Bank/ Investment Map",
+            detail_label_menu2_6: "6. Training",
+            detail_label_menu2_7: "7. Public Investment Cycle",
+            detail_label_menu2_8: "8. Public Investment Policy Cycle",
+            detail_label_menu3_1: "1. National Level",
+            detail_label_menu3_2: "2. Intermediate Level"
+          };
+
+          for (const [id, text] of Object.entries(labelsEn)) {
+            const element = document.getElementById(id);
+            if (element) {
+              element.innerHTML = text;
+            }
+          }
+        }
+
+
+
+
+
+
+
+
+
+          view_list_detail(3,number_theme);
+
+          return false;
+      }
+
+
+
+      function determinarFrasesDesdeArticulo(palabra) {
+          const ultimaLetra = palabra.slice(-1).toLowerCase();
+          palabra = palabra.toLowerCase();
+
+          if (ultimaLetra === 'a') {
+              return 'todas las '+palabra+'s';
+          } else if (ultimaLetra === 'o') {
+              return 'todos los '+palabra+'s';
+            } else if (ultimaLetra === 'n') {
+              return 'todos los '+palabra+'es';
+          } else {
+              return 'todas las '+palabra+'s';
+          }
+      }
+
+
+
+
+
+
+
+
+      function verificarIsoPais(dato) {
+        return typeof dato === 'string' && /^[a-zA-Z]{3}$/.test(dato);
+      }
+
+
+
+      function linkify_v1(text) {
+        const urlRegex = /(https?:\/\/[^\s]+)/g;
+        return text.replace(urlRegex, function(url) {
+          return `<a href="${url}" target="_blank">${url}</a>`;
+        });
+      }
+
+
+      //excluye los caracteres finales no deseados:
+      function linkify(text) {
+        const urlRegex = /(https?:\/\/[^\s\)]+)/g;
+
+        return text.replace(urlRegex, function(url) {
+          return `<a href="${url}" target="_blank">${url}</a>`;
+        });
+      }
+
+
+
+
+
+      function formatosTexto(texto) {
+        //Texto saltos linea
+        texto = texto.replace(/\n/g, "<br/>");
+        texto = texto.replace(/\n\n/g, "<br/>");
+        // Texto negrita: reemplaza *palabra o frase* por <b>palabra o frase</b>
+        texto = texto.replace(/\*(.*?)\*/g, '<b>$1</b>');
+        return texto;
+      }
+
+
+
+      // Crear el div si no existe
+      let divResultado = document.getElementById('resultado');
+      if (!divResultado) {
+        divResultado = document.createElement('div');
+        divResultado.id = 'resultado';
+        divResultado.className = 'resultado';
+        document.body.insertBefore(divResultado, document.body.firstChild);
+      }
+
+      // Agregar el texto procesado
+      //divResultado.innerHTML += salida + '<br>';
+
+
+
+      window.addEventListener('popstate', function (event) {
+        if (enFicha) {
+          view_list_detail(1,0);
+          enFicha = false;
+        } else {
+          history.back();
+        }
+      });
+
+
+
+
+
+
+
+
+
+
+
+
+      fetchJson('include/json_data/json_theme_description_table.json?v=3','desc');
+
+      async function fetchJson(x,y) {
+          try {
+              const response = await fetch(x);
+              if (!response.ok) {
+                  throw new Error('Error al cargar el archivo JSON');
+              }
+              const data = await response.json();
+              if(y=='desc'){
+                displayDescription(data);
+              }
+
+          } catch (error) {
+              console.error('Error:', error);
+          }
+      }
+
+
+      function displayDescription(y) {
+
+          let z = y.filter(x => x.theme == get_url_theme);
+          z.forEach(x => {
+            let description = x.description_es;
+            if(get_lang=="en") {
+              description = x.description_en;
+            }
+
+            let parrafos2 = description.split("\r\n\\n\\n\r\n").map(p => `<p>${p}</p>`).join("");
+
+            if(x.context=="system") {
+              document.getElementById('general_description').innerHTML = parrafos2;
+            }
+
+          });
+      }
+
+
+
+
+      function buscaIDLegalFramework (x) {
+        let get_item = responseDataLegalFrameworks_result.filter(item => item.legal_framework_es == x);
+        if(get_item.length==1) {
+          let id = get_item[0]['_id'];
+          let url;
+          if(get_lang=="en") {
+            url = `<a target="_blank" href='en/regulatory-frameworks/?id=${id}'>${x}</a>`;
+          } else {
+            url =  `<a target="_blank" href='es/marcos-normativos/?id=${id}'>${x}</a>`;
+          }
+          return url;
+        } else {
+          return 'no';
+        }
+      }
+
+
+      function buscaNombreLegalFramework(x) {
+        let get_item = responseDataLegalFrameworks_result.filter(item => item._id == x);
+        if(get_item.length==1) {
+          let name = get_item[0]['legal_framework_es'];
+          if(get_lang=="en") {
+            name = get_item[0]['legal_framework_en'];
+          }
+          let url;
+          if(get_lang=="en") {
+            url = `<a target="_blank" href='en/regulatory-frameworks/?id=${x}'>${name}</a>`;
+          } else {
+            url =  `<a target="_blank" href='es/marcos-normativos/?id=${x}'>${name}</a>`;
+          }
+          return url;
+        } else {
+          return 'no';
+        }
+      }
+
+
+
+      function buscaIDPlan (x) {
+        let get_item = responseDataPlans_result.filter(item => item.name_es == x);
+        if(get_item.length==1) {
+          let id = get_item[0]['_id'];
+          let url;
+          if(get_lang=="en") {
+            url = `<a target="_blank" href='en/plans-programs-and-instruments/?id=${id}'>${x}</a>`;
+          } else {
+            url =  `<a target="_blank" href='es/planes-programas-e-instrumentos/?id=${id}'>${x}</a>`;
+          }
+          return url;
+        } else {
+          return 'no';
+        }
+      }
+
+
+      function buscaActoresPorPais (x,lang) {
+
+        let link = 'es/instituciones';
+        //let link_rednip = 'es/redsnip';
+        if(lang=="en") {
+          link = 'en/institutions';
+          //link_rednip = 'en/redsnip';
+        }
+
+        let square_margin_left = 'margin-left:0px;width:3px;height:3px;border-radius:2px;margin-top:8px;margin-right:4px;';
+        let square_2 = '<div style="background-color:#BC2F54;float:left;margin-right:3px;'+square_margin_left+'"></div>';
+        console.log("AQUII"+x);console.log(responseDataInstitutions_result);
+        let actores = responseDataInstitutions_result.filter(item => item.country == x && item.territorial_scale === "national" && item.leads?.includes("public_investment") );
+        console.log(actores);
+        let listado='';
+        actores.forEach((item, i) => {
+
+          let id = item['_id'];
+          let actor_mas_parent =  buscaNombreInstitucionDesdeId(id,lang)
+          listado += `<div class="item_por_pais">${square_2} ${actor_mas_parent}</div>`;
+
+
+        });
+        if(listado!=''){
+          return listado;
+        }
+
+        return '';
+      }
+
+
+
+
+      function buscaPlanesPorPais (x,ficha) {
+
+        let link = 'es/planes-programas-e-instrumentos';
+        if(lang=="en") {
+          link = 'en/plans-programs-and-instruments';
+        }
+
+        let square_margin_left = 'margin-left:0px;width:3px;height:3px;border-radius:2px;margin-top:8px;margin-right:4px;';
+        let square_2 = '<div style="background-color:#BC2F54;float:left;margin-right:3px;'+square_margin_left+'"></div>';
+
+        let planes=[];
+        if(get_url_theme==1) {
+            planes = responseDataPlans_result.filter(item => item.country == x && item.theme == "development_planning" && item.territorial_scale === "national" && item.effective_today == "yes" );
+        } else if(get_url_theme==2) {
+          planes = responseDataPlans_result.filter(item => item.country == x && item.theme == "public_investment" && item.territorial_scale === "national" && item.effective_today == "yes" );
+        } else if(get_url_theme==5) {
+          planes = responseDataPlans_result.filter(item => item.country == x && item.theme == "territorial_planning" && item.territorial_scale === "national" && item.effective_today == "yes" );
+        }
+
+        let listado='';
+        planes.forEach((item, i) => {
+          let nombre = item['name_es'];
+          let id = item['_id'];
+          if(get_lang=="en") { nombre = item['name_en']; };
+          let icon = '';
+          if(ficha==1) {
+            icon = `<img class="svg_blinks" src="iframe/img/svg/links/link_type_plan.svg" width="20px" height="20px">`;
+            square_2='';
+          }
+          listado +=`<div class="item_por_pais">${square_2}${icon} <a href="${link}/?id=${id}">${nombre}</a></div>`;
+        });
+        if(listado!=''){
+          return listado;
+        }
+
+        return '';
+      }
+
+
+
+      function getParentNameEnglish(x,y) {
+        let name='nd';
+        let get_parent = responseDataInstitutions_result.filter(item => item._id == x);
+        if(get_parent.length==1) {
+          name = get_parent[0].name_en;
+        }
+        if(name=='nd') { name=y; }
+        return name;
+      }
+
+            // INICIO DESCARGA
+
+
+document.getElementById("btnExport").addEventListener("click", function () {
+
+    let table = document.getElementById("content_list_table");
+    let rows = table.querySelectorAll("tr");
+
+    let csv = [];
+
+    rows.forEach(row => {
+        let cols = row.querySelectorAll("td, th");
+        let rowData = [];
+
+        cols.forEach((col, index) => {
+
+    // Saltar las últimas 2 columnas (Ver ficha / Descargar)
+    if (index >= cols.length - 1) return;
+
+    let text = col.innerText || col.textContent || "";
+    text = text.trim();
+
+    // 1. Si está vacío → buscar imagen (vigencia)
+    if (!text) {
+        let img = col.querySelector("img");
+        if (img) {
+            text = img.getAttribute("title") || "";
+        }
+    }
+
+    // 2. Limpieza extra
+    text = text.replace(/\s+/g, " ").trim();
+
+    rowData.push('"' + text.replace(/"/g, '""') + '"');
+});
+
+        csv.push(rowData.join(","));
+    });
+
+  let BOM = "\uFEFF"; // clave para Excel
+
+  // Validar que hay datos
+if (rows.length === 0) {
+    alert("No hay datos para exportar");
+    return;
+}
+
+// Detectar número de columnas (usando la primera fila ya procesada)
+let totalCols = csv[0].split(",").length;
+
+//probando título dinámico según tema url
+// Obtener parámetro theme desde el URL
+let params = new URLSearchParams(window.location.search);
+let theme = params.get("theme");
+
+// Detectar idioma
+let isEnglish = window.location.href.includes("/en/");
+
+// Mapa de títulos por tema
+let titulo = isEnglish 
+    ? "National Public Investment Systems"
+    : "Sistemas Nacionales de Inversión Pública";
+
+
+let fuente_es = "Fuente: Comisión Económica para América Latina y el Caribe (CEPAL), Observatorio Regional de Planificación para el Desarrollo de América Latina y el Caribe [en línea] https://observatorioplanificacion.cepal.org";
+
+let fuente_en = "Source: Economic Commission for Latin America and the Caribbean (ECLAC), Regional Observatory on Planning for Development in Latin America and the Caribbean [online] https://observatorioplanificacion.cepal.org/en";
+  
+let fuente = isEnglish ? fuente_en : fuente_es;
+let tituloRow = Array(totalCols).fill("");
+tituloRow[0] = '"' + titulo.replace(/"/g, '""') + '"';
+
+// Crear fila de fuente
+let fuenteRow = ['"' + fuente.replace(/"/g, '""') + '"'];
+
+// Insertar título al inicio
+csv.unshift(tituloRow.join(","));
+
+// Línea vacía después del título
+//csv.splice(1, 0, "");
+
+// Línea vacía antes de la fuente
+csv.push("");
+
+// Insertar fuente al final
+csv.push(fuenteRow.join(","));
+
+// Crear archivo
+let csvFile = new Blob([BOM + csv.join("\n")], { type: "text/csv;charset=utf-8;" });
+
+    let downloadLink = document.createElement("a");
+    downloadLink.download = "datos_tabla.csv";
+    downloadLink.href = window.URL.createObjectURL(csvFile);
+    downloadLink.style.display = "none";
+
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+});
+
+   // FIN DESCARGA
+
+
+      var scriptElm = document.createElement('script');
+      scriptElm.src = `iframe/sistemas/multiselect.js?v=${itime}`;
+      document.body.appendChild(scriptElm);

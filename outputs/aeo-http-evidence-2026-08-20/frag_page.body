@@ -1,0 +1,1303 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12" id="breadcrumb">
+      Áreas de gestión pública &nbsp;&raquo;&nbsp;
+    </div>
+  </div>
+</div>
+
+
+<div id="theme_banner_1">
+  <div id="logo_circle"><a href="es/redsnip" id="link_red_snip"><img src="images/logo/redsnip.jpg" border="0" /></a>
+  </div>
+  <div class="container">
+    <div style="background-color:white;height:5px;width:55px;position:relative;top:70px;margin-left:136px;"></div>
+    <div id="card_title_tag_theme" style="display:none"></div>
+    <span id="theme_name"></span>
+    <div class="container " id="theme_introduction">
+    </div>
+  </div>
+</div>
+
+
+
+<div>
+
+  <div id="content_cells">
+
+    <div class="container">
+      <div id="title_recursos">
+        Recursos y Herramientas del Observatorio
+      </div>
+    </div>
+    <div id="boxes" class="container">
+    </div>
+
+    <br>
+    <br>
+
+    <div id="div_cifras">
+      <div class="container">
+        <div id="title_cifras">
+          Cifras clave del Observatorio
+        </div>
+      </div>
+
+
+      <div class="container">
+
+        <div class="row" class="container">
+          <div class="col-md-6" id="div_boxes_cifras">
+            <div id="boxes_cifras">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="boxes_if_cifras">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div id="boxes_if_cifras_12">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <br>
+      <br>
+      <br>
+    </div>
+
+    <br>
+
+    <div id="div_extlink">
+    </div>
+
+
+    <div id="div_recursos">
+      <div class="container">
+        <div id="title_recursos_externos">
+          Recursos externos
+        </div>
+      </div>
+
+      <div id="boxes_ext_resources" class="container">
+      </div>
+
+    </div>
+
+
+
+
+
+    <div class="container ">
+      <div class="row" id="cells_content">
+
+      </div>
+    </div>
+
+
+    <div style="display:none" id="sect_ali">
+      <div id="title_aliance"></div>
+      <div class="container ">
+        <div class="row" id="cells_aliance">
+        </div>
+      </div>
+    </div>
+
+    <div style="display:none" id="sect_res">
+      <div id="title_res"></div>
+      <div class="container ">
+        <div class="row" id="cells_res">
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+</div>
+
+<br />
+
+
+
+
+
+<br />
+<br />
+
+
+
+
+
+
+
+<script src="assets/dashboard_svg_icons.js?v=7"></script>
+
+
+
+<script>
+
+  const theme_code = ["development_planning", "public_investment", "open_government", "territorial_development", "territorial_planning", "urban_development", "mobility"];
+
+  let theme_titles = ['Planificación para el desarrollo', 'Inversión pública', 'Gobierno abierto', 'Desarrollo territorial', 'Desarrollo y Ordenamiento territorial', 'Desarrollo urbano', 'Movilidad urbana', 'Seguimiento, monitoreo y evaluación'];
+  if (lang == "en") {
+    theme_titles = ["Planning for development", "Public investment", "Open government", "Territorial development", "Land-use planning", "Urban development", "Urban mobility", 'Follow-up, monitoring and evaluation'];
+  }
+
+  //yellow v1 E0BB31  v2 DDA31C
+  const theme_colors = ['#00BBD4', '#BA2E53', '#173668', '#93B54E', '#39855A', '#EA8B35', '#DDA31C', '#28ADB5'];
+  const theme_colors_2 = ['#0092A7', '#961F3F', '#122A50', '#78913E', '#2F6A49', '#C5732B', '#B78516', '#218B91'];
+
+
+
+
+
+  var icon = '<img style="margin-left:10px;margin-top:-50px;margin-right:18px;" src="images/svg/icon' + theme + '.svg" width="100px" />';
+  let number_theme = theme - 1;
+  document.getElementById('theme_name').innerHTML = icon + ' ' + theme_titles[number_theme];
+  document.getElementById('theme_banner_1').style.backgroundColor = theme_colors[number_theme];
+
+  document.getElementById('breadcrumb').innerHTML = '<a href="index.html?lang=es">Inicio</a> &nbsp;&raquo;&nbsp; Áreas de gestión pública &nbsp;&raquo;&nbsp; ' + theme_titles[number_theme];
+  if (lang == "en") {
+    document.getElementById('breadcrumb').innerHTML = '<a href="index.html?lang=en">Home</a> &nbsp;&raquo;&nbsp; Public management areas &nbsp;&raquo;&nbsp; ' + theme_titles[number_theme];
+  }
+
+  if (lang == "en") {
+    document.getElementById('title_recursos').innerHTML = 'Resources and Tools of the Observatory';
+    document.getElementById('title_cifras').innerHTML = 'Key Data of the Observatory';
+    document.getElementById('title_recursos_externos').innerHTML = 'External resources';
+    document.getElementById('link_red_snip').href = 'en/redsnip';
+  }
+
+
+
+  if (theme == 2) {
+    document.getElementById('logo_circle').style.display = "block";
+  }
+
+
+  if (theme == 5 || theme == 6 || theme == 7) {
+    document.getElementById('card_title_tag_theme').style.display = "block";
+    document.getElementById('card_title_tag_theme').innerHTML = "Territorio";
+  }
+
+
+
+  //document.getElementById("theme_banner_1").style.backgroundImage = "url('images/bg/tema_"+theme+".jpg')";
+
+  document.getElementById("theme_banner_1").style.setProperty(
+    "--theme-banner",
+    "url('images/bg/tema_" + theme + ".jpg')"
+  );
+
+
+
+  function addHTMLtoDiv(x, y) {
+    document.getElementById(x).innerHTML = y;
+    return false;
+  }
+
+
+  async function fetchJson(x, y) {
+    try {
+      const response = await fetch(x);
+      if (!response.ok) {
+        throw new Error('Error al cargar el archivo JSON');
+      }
+      const data = await response.json();
+      if (y == 'desc') {
+        displayDescription(data);
+      }
+      if (y == 'cont') {
+        displayContent(data);
+      }
+      if (y == 'reso') {
+        displayResourcesData(data);
+      }
+      if (y == 'extlink') {
+        displayExternalLinkData(data);
+      }
+      if (y == 'cifras') {
+        displayCifrasClaveData(data);
+      }
+
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
+
+
+
+  function resaltarFrases(texto, frases) {
+    frases.forEach(frase => {
+      // Escapamos caracteres especiales para evitar errores en la expresión regular
+      let fraseEscapada = frase.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
+
+      // Creamos una expresión regular para la frase exacta
+      let regex = new RegExp(fraseEscapada, "gi");
+
+      // Reemplazamos la frase por la versión en negrita con <strong>
+      texto = texto.replace(regex, `<strong>${frase}</strong>`);
+    });
+
+    return texto;
+  }
+
+
+
+
+
+
+  function displayDescription(y) {
+
+    let z = y.filter(x => x.theme == theme);
+    z.forEach(x => {
+      let description = x.description_es;
+      if (lang == "en") {
+        description = x.description_en;
+      }
+
+      let parrafos = description.split("\r\n\\n\\n\r\n").map(p => `<p>${p}</p>`).join("");
+
+      let frasesAResaltar = ["Instituto Latinoamericano y del Caribe de Planificación Económica y Social (ILPES)", "Latin American and Caribbean Institute for Economic and Social Planning (ILPES)"];
+
+      let parrafos2 = resaltarFrases(parrafos, frasesAResaltar);
+
+      if (x.context == "lac") {
+        document.getElementById('theme_introduction').innerHTML = parrafos2;
+      }
+
+    });
+  }
+
+
+  let label_pais = 'PAISES';
+  let label_cepal = 'CEPAL';
+  let label_pais_width = '60';
+  let label_cepal_margin = '70';
+  if (lang == "en") {
+    label_pais = 'COUNTRIES';
+    label_cepal = 'ECLAC';
+    label_pais_width = '90';
+    label_cepal_margin = '100';
+  }
+
+  function displayResourcesData(y) {
+
+    let z = y.filter(x => x.theme == theme);
+    //let z = y;
+    console.log(z);
+    let cells = '<div class="row row-cols-1 row-cols-md-4 g-3" id="cards_resources">';
+
+    z.forEach(x => {
+
+      let foto = x.foto;
+      let icon_paises = '';
+      let name = x.title_es;
+      let description = x.description_es;
+      let paises = x.paises;
+      let cepal = x.cepal;
+
+      if (lang == "en") {
+        name = x.title_en;
+        description = x.description_en !== undefined ? x.description_en : description;
+      }
+
+      let color = theme_colors[number_theme];
+
+
+
+      if (paises == 1 && cepal == 0) {
+        icon_paises = `
+        <div style="font-family: 'Roboto', sans-serif;position:absolute;right:5px;top:5px;background-color:#bbb;color:#fff;font-size:13px;font-weight:normal;width:${label_pais_width}px;text-align:center;">${label_pais}</div>
+        `;
+      }
+      if (paises == 1 && cepal == 1) {
+        icon_paises = `
+        <div style="font-family: 'Roboto', sans-serif;position:absolute;right:5px;top:5px;background-color:#bbb;color:#fff;font-size:13px;font-weight:normal;width:${label_pais_width}px;text-align:center;">${label_pais}</div>
+        <div style="font-family: 'Roboto', sans-serif;position:absolute;right:${label_cepal_margin}px;top:5px;background-color:#bbb;color:#fff;font-size:13px;font-weight:normal;width:60px;text-align:center;">${label_cepal}</div>
+        `;
+      }
+      if (paises == 0 && cepal == 1) {
+        icon_paises = `
+        <div style="font-family: 'Roboto', sans-serif;position:absolute;right:5px;top:5px;background-color:#bbb;color:#fff;font-size:13px;font-weight:normal;width:60px;text-align:center;">${label_cepal}</div>
+        `;
+      }
+
+      let de_alc = '';
+      let link = x.link;
+      //let svg_icon = svg_icon_methodology;
+      let svg_icon = svg_undefined;
+
+      let num_theme = theme;
+
+      let image_icon_external_link = '';
+      let window_open_target = '_self';
+      let twoYears = new Date().getFullYear() - 2;
+
+      if (link == 'marco-conceptual') {
+        //link_f='marco-conceptual.html?lang=es&theme='+num_theme;
+        link_f = 'include/pdf/Marco_conceptual_y_analitico_SNIP_es.pdf';
+        if (lang == "en") { link_f = 'include/pdf/Marco_conceptual_y_analitico_SNIP_en.pdf'; };
+        window_open_target = '_blank';
+        svg_icon = svg_icon_methodology;
+      } else if (link == 'planes' || link == 'politicas') {
+        link_f = 'es/planes-programas-e-instrumentos/?theme=' + num_theme;
+        if (lang == "en") { link_f = 'en/plans-programs-and-instruments/?theme=' + num_theme; };
+        svg_icon = svg_icon_planes;
+      } else if (link == 'snp') {
+        link_f = 'es/sistemas-nacionales-de-planificacion';
+        if (lang == "en") { link_f = 'en/national-planning-systems'; };
+        svg_icon = svg_icon_snip;
+      } else if (link == 'snip') {
+        link_f = 'es/sistemas-nacionales-de-inversion-publica';
+        if (lang == "en") { link_f = 'en/national-public-investment-systems'; };
+        svg_icon = svg_icon_snip;
+      } else if (link == 'normativas') {
+        link_f = 'es/marcos-normativos/?theme=' + num_theme;
+        if (lang == "en") { link_f = 'en/regulatory-frameworks/?theme=' + num_theme; };
+        svg_icon = svg_icon_normativa;
+      } else if (link == 'capacitacion') {
+        link_f = 'https://www.cepal.org/es/actividades';
+        if (theme == 1) {
+          link_f = 'https://www.cepal.org/es/actividades?content_type=All&country=All&course_method=All&course_type=All&event_date_from=&event_date_to=&event_type=All&regional_office=All&related_project=All&sort_bef_combine=event_date_DESC&subsidiary_body=All&title=&topic=8360&work_area=8190#activities-list';
+        } else if (theme == 2) {
+          link_f = `https://www.cepal.org/es/actividades?content_type=All&country=All&course_method=All&course_type=All&event_date_from=${twoYears}-01-01&event_date_to=&event_type=All&regional_office=All&related_project=All&sort_bef_combine=event_date_DESC&subsidiary_body=All&title=%22inversi%C3%B3n%20p%C3%BAblica%22%20&topic=All&work_area=8190#activities-list`;
+        } else if (theme == 3) {
+          link_f = 'https://www.cepal.org/es/actividades?content_type=All&country=All&course_method=All&course_type=All&event_date_from=&event_date_to=&event_type=All&regional_office=All&related_project=All&sort_bef_combine=event_date_DESC&subsidiary_body=All&title=&topic=49&work_area=8190#activities-list';
+        } else if (theme == 5) {
+          link_f = 'https://www.cepal.org/es/actividades?content_type=All&country=All&course_method=All&course_type=All&event_date_from=&event_date_to=&event_type=All&regional_office=All&related_project=All&sort_bef_combine=event_date_DESC&subsidiary_body=All&title=%22inversi%C3%B3n%20p%C3%BAblica%22%20&topic=All&work_area=8190#activities-list';
+        } else if (theme == 6) {
+          link_f = 'https://www.cepal.org/es/actividades?content_type=All&country=All&course_method=All&course_type=All&event_date_from=&event_date_to=&event_type=All&regional_office=All&related_project=All&sort_bef_combine=event_date_DESC&subsidiary_body=All&title=%22urbano%22&topic=All&work_area=All#activities-list';
+        } else if (theme == 7) {
+          link_f = 'https://www.cepal.org/es/actividades?content_type=All&country=All&course_method=All&course_type=All&event_date_from=&event_date_to=&event_type=All&regional_office=All&related_project=All&sort_bef_combine=event_date_DESC&subsidiary_body=All&title=%25%22movilidad%20urbana%22%20&topic=All&work_area=All#activities-list';
+        }
+        svg_icon = svg_icon_capacitacion;
+        image_icon_external_link = '<img src="images/extlink.png" height="20" style="margin-top:-3px;margin-left:8px;" />';
+        window_open_target = '_blank';
+      } else if (link == 'metodologias') {
+        link_f = 'es/metodologias/?theme=' + num_theme;
+        if (lang == "en") { link_f = 'en/methodologies/?theme=' + num_theme; };
+        svg_icon = svg_icon_metodologia;
+      } else if (link == 'documentos') {
+        link_f = 'https://www.cepal.org/es/listado/cepal_publication';
+        if (theme == 1) {
+          link_f = 'https://www.cepal.org/es/listado/cepal_publication?title=&sort_bef_combine=date_DESC&date_from=&date_to=&publication_doc_type=All&publication_type=All&publication_biblevel=All&topic=8360&work_area=8190&subsidiary_body=All&country=All&related_project=All&regional_office=All';
+        } else if (theme == 2) {
+          link_f = 'https://www.cepal.org/es/listado/cepal_publication?title=%22inversi%C3%B3n+p%C3%BAblica%22&sort_bef_combine=date_DESC&date_from=&date_to=&publication_doc_type=All&publication_type=All&publication_biblevel=All&topic=All&work_area=8190&subsidiary_body=All&country=All&related_project=All&regional_office=All';
+        } else if (theme == 3) {
+          link_f = 'https://www.cepal.org/es/listado/cepal_publication?title=&sort_bef_combine=date_DESC&date_from=&date_to=&publication_doc_type=All&publication_type=All&publication_biblevel=All&topic=49&work_area=8190&subsidiary_body=All&country=All&related_project=All&regional_office=All';
+        } else if (theme == 5) {
+          link_f = 'https://www.cepal.org/es/listado/cepal_publication?title=%22territorial%22&sort_bef_combine=date_DESC&date_from=&date_to=&publication_doc_type=All&publication_type=All&publication_biblevel=All&topic=All&work_area=8190&subsidiary_body=All&country=All&related_project=All&regional_office=All';
+        } else if (theme == 6) {
+          link_f = 'https://www.cepal.org/es/listado/cepal_publication?title=urbano&sort_bef_combine=date_DESC&date_from=&date_to=&publication_doc_type=All&publication_type=All&publication_biblevel=All&topic=All&work_area=All&subsidiary_body=All&country=All&related_project=All&regional_office=All';
+        } else if (theme == 7) {
+          link_f = 'https://www.cepal.org/es/listado/cepal_publication?title=%22movilidad+urbana%22&sort_bef_combine=date_DESC&date_from=&date_to=&publication_doc_type=All&publication_type=All&publication_biblevel=All&topic=All&work_area=All&subsidiary_body=All&country=All&related_project=All&regional_office=All';
+        }
+        svg_icon = svg_icon_documentos;
+        image_icon_external_link = '<img src="images/extlink.png" height="20" style="margin-top:-3px;margin-left:8px;" />';
+        window_open_target = '_blank';
+      } else if (link == 'mec-art-pst') {
+        link_f = 'es/mecanismos-de-articulacion-institucional';
+        if (lang == "en") { link_f = 'en/institutional-coordination-mechanisms'; };
+        svg_icon = svg_mecanismos_articulacion;
+      } else if (link == 'miembros-alianza-foro') {
+        //link_f='miembros-alianza.html?lang=es&theme='+num_theme;
+        //link_f='instituciones.html?lang=es&theme='+num_theme+'&miembros=alianza-gobierno-abierto';
+        link_f = 'es/foros-multiactor-de-gobierno-abierto';
+        if (lang == "en") { link_f = 'en/multi-stakeholder-open-government-forums'; };
+        svg_icon = svg_miembros_aga;
+
+
+      } else if (link == 'guia-investigacion') {
+        //link_f='guia-iealac.html?lang=es&theme='+num_theme;
+        link_f = 'https://biblioguias.cepal.org/EstadoAbierto';
+        svg_icon = svg_guia_iea_lac;
+        image_icon_external_link = '<img src="images/extlink.png" height="20" style="margin-top:-3px;margin-left:8px;" />';
+        window_open_target = '_blank';
+
+
+      } else {
+        link_f = link;
+      }
+
+      if (link == 'planes' || link == 'normativas' || link == 'metodologias' || link == 'documentos') {
+        de_alc = 'de América Latina y el Caribe';
+
+        if (lang == "en") {
+          de_alc = 'of Latin America and the Caribbean';
+        }
+
+      }
+
+
+
+      if (!description) { description = `${name} ${de_alc}`; };
+
+      if (foto) {
+
+        cells += `
+          <div class="col" style="border:1px none green;">
+            <div class="card h-100 card_foto" style="background-image: url('images/bg_resources/${foto}.jpg'); background-size: cover; background-position: center; width: auto; height: 100vh;border:1px solid white;">
+            </div>
+          </div>
+        `;
+
+      } else {
+
+        if (lang == "en") {
+          link_f = link_f.replace("lang=es", "lang=en");
+        }
+
+
+        cells += `
+        <div class="col" style="border:1px none green;">
+          <div class="card h-100 card_resources" style="padding:20px;padding-top:30px;" <div class="miDiv" onmouseover="cambiarFondo(this)"   onclick="window.open('${link_f}','${window_open_target}');"    >
+            ${icon_paises}
+
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:-10px;">
+              <tr>
+                <td width="25%" valign="bottom">${svg_icon}</td>
+                <td width="75%" valign="bottom" class="card_title_name">${name}${image_icon_external_link}</td>
+              </tr>
+            </table>
+
+            <div class="card-body" style="margin-left:-20px;margin-right:-20px;">
+              <div class="card_line" style="height:2px;background-color:${color};margin-bottom:10px;"></div>
+              <div style="float:right;width:40px;border:1px none red;margin-right:0px; margin-left:10px;margin-top:10px;">${svg_icon_ir}</div>
+              <div class="card_description" >${description}</div>
+            </div>
+          </div>
+        </div>
+      `;
+
+      }
+
+
+    });
+
+
+    document.getElementById('boxes').innerHTML = cells + '</div>';
+
+  }
+
+
+
+
+
+
+
+
+
+
+  function displayExternalLinkData(y) {
+
+    let z = y.filter(x => x.theme == theme);
+
+    let cells = '';
+    let color = theme_colors[number_theme];
+
+    z.forEach(x => {
+
+      let logo = x.logo;
+      let title = x.title_es;
+      let subtitle = x.subtitle_es;
+      let description = x.description_es;
+      let link = x.link_es;
+
+      let text_ver = "Ver";
+      if (lang == "en") {
+        title = x.title_en;
+        subtitle = x.subtitle_en;
+        description = x.description_en;
+        link = x.link_en;
+        text_ver = "View";
+        let logo_en = x.logo_en;
+        if (logo_en) {
+          logo = logo_en;
+        }
+
+      }
+
+      if (!subtitle) { subtitle = ''; }
+
+      cells += `
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3" style="text-align:right;border-right:4px solid ${color};padding-right:30px;">
+            <img src="images/logo/${logo}.png" width="100%" style="margin-top:5px;">
+          </div>
+          <div class="col-md-9" style="padding:10px;padding-left:30px;">
+            <div class="extlink_title">${title}</div>
+            <div class="extlink_subtitle">${subtitle}</div>
+            <div class="extlink_description">${description}</div>
+            <div class="extlink_button"><a href="${link}" class="btn extlink_button_btn" target="_blank">${text_ver} &raquo;</a></div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    });
+
+    document.getElementById('div_extlink').innerHTML = cells;
+
+    if (theme == 1) {
+      const elemento = document.getElementById('div_extlink');
+      elemento.style.backgroundColor = '#fff'; // Fondo blanco
+      elemento.style.borderTop = '5px solid #ddd'; // Borde superior
+      elemento.style.borderBottom = '5px solid #ddd'; // Borde inferior
+    } else {
+      document.getElementById('div_extlink').style.backgroundColor = '#eee';
+    }
+
+
+    if (cells == '') {
+      document.getElementById('div_extlink').style.display = 'none';
+    }
+
+
+  }
+
+
+
+
+
+
+
+
+  function displayCifrasClaveData(y) {
+    console.log(y)
+
+    let z = y.filter(x => x.theme == theme);
+
+    let cells = '';
+
+    z.forEach(x => {
+
+      let type = x.type;
+      let title = x.title_es;
+      let subtitle = x.subtitle_es;
+      if (lang == "en") {
+        title = x.title_en;
+        subtitle = x.subtitle_en;
+      }
+
+
+      let cifra = '<div class="spinner-border" role="status"><span class="visually-hidden">Cargando...</span></div>';
+
+      // En Duro provisorio
+      if (theme == 1 || theme == 3) {
+        cifra = x.value;
+      }
+
+
+      let color = theme_colors[number_theme];
+
+      let margin_bottom = '';
+      if (theme == 1 || theme == 2 || theme == 3) { margin_bottom = 'margin-bottom:15px;'; }
+
+      cells += `
+      <div class="col" style="border:1px none green;${margin_bottom}">
+        <div class="card h-100" style="padding:10px 30px;border:1px none green;background-color:#eee;"  >
+          <div class="card-body" style="margin-left:-20px;margin-right:-20px;border:1px none red;">
+            <div style="height:10px;width:40%;background-color:${color};position:absolute;bottom:-5px;left:0px;"></div>
+            <div class="cifras_title" ><span id="data_key_type_${type}">${cifra}</span> ${title}</div>
+            <div class="cifras_subtitle" >${subtitle}</div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    });
+
+    if (cells == '') {
+      document.getElementById('div_cifras').style.display = 'none';
+    } else {
+      //if(theme==1 || theme==2 || theme==3) {
+      if (theme == 2) {
+        document.getElementById('boxes_cifras').innerHTML = cells;
+      } else {
+        document.getElementById('boxes_cifras').innerHTML = '<div class="row row-cols-1 row-cols-md-4 g-3" id="cards_cifras">' + cells + '</div>';
+        document.getElementById("div_boxes_cifras").className = "col-md-12";
+
+      }
+
+    }
+
+
+    agregaIFrame();
+
+
+  }
+
+
+
+
+  fetchJson('include/json_data/json_resources.json?v=3', 'reso');
+  fetchJson('include/json_data/json_extlink.json?v=3', 'extlink');
+  fetchJson('include/json_data/json_cifras_titulos.json?v=3', 'cifras');
+  fetchJson('include/json_data/json_theme_description.json?v=3', 'desc');
+
+
+
+
+
+
+  loadAPIContentGlobal();
+
+  function loadAPIContentGlobal() {
+
+    let hexDate2 = new Date().getTime();
+
+    let dataset_token = 'aGxrup3hXkyxrzf8Q3DCLt';
+
+    fetch('https://api-kobo.cepal.org/api-kobo/data?dataset=' + dataset_token)
+      //fetch('provisorio.json')
+      .then(response => response.json())
+      .then(json => {
+        let results = json.results;
+
+        let t_code = theme_code[number_theme];
+        results = results.filter(x => x.theme == t_code);
+
+        results = results.filter(x => x._validation_status.label == "Approved");
+
+        let color_th = theme_colors[number_theme];
+
+        results.sort(function (a, b) {
+          return Number(a.orden) > Number(b.orden) ? 1 : Number(a.orden) < Number(b.orden) ? -1 : 0;
+        });
+
+        let cells = '';
+
+        results.forEach((x, i) => {
+
+          let id_content = x['_id'];
+          let name = x['texto_vinculo_es'];
+          let link = x['url_es'];
+          let imagen_attach_name = x['imagen_es'];
+
+          if (lang == "en") {
+            name = x['texto_vinculo_en'];
+            link = x['url_en'];
+            imagen_attach_name = x['imagen_en'];
+          }
+
+          imagen_attach_name = imagen_attach_name.replace("@", "");
+
+          let images = x['_attachments'];
+
+          let image = '';
+          images.forEach((items, ii) => {
+            let filename = items.filename;
+            let filename_name = filename.split("/").pop();
+            if (filename_name == imagen_attach_name) {
+              image = items.download_url;
+              //image = image.slice(0, -13);
+            };
+          });
+
+          let extension_imagen = imagen_attach_name.slice(-3);
+          let style_width_auto = 'width:auto;max-width:300px;';
+          if (extension_imagen == "svg") {
+            style_width_auto = '';
+          }
+
+          if (image == 'https://kf-surveystat.cepal.org/api/v2/assets/aGxrup3hXkyxrzf8Q3DCLt/data/32904/attachments/7257' || image == 'https://kf-surveystat.cepal.org/api/v2/assets/aGxrup3hXkyxrzf8Q3DCLt/data/32904/attachments/7256') {
+            image = 'images/logo/cosefin.jpg';
+          }
+
+          cells += `
+              <div class="col">
+                <div class="card h-100" style="padding:20px;padding-top:25px;">
+                  <div align="center" class="div_bottom" style="min-height:110px;"><a href="${link}" target="_blank"><img src="${image}"  width="220px" border="0" style="max-height:90px;${style_width_auto}" ></a></div>
+                  <div class="card-body">
+                    <h5 class="card-title border_top" style="border-top:4px solid ${color_th};"><a href="${link}" target="_blank">${name}</a></h5>
+                  </div>
+                </div>
+              </div>
+            `;
+
+        });
+
+
+        document.getElementById('boxes_ext_resources').innerHTML = '<div class="row row-cols-1 row-cols-md-3 g-3" id="cards_resources">' + cells + '</div>';
+
+        if (cells == '') {
+          document.getElementById('div_recursos').style.display = 'none';
+        }
+
+
+      })
+      .catch((error) => {
+        console.error('Error al importar el archivo', error);
+      });
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function cambiarFondo(elemento) {
+    // Guarda los colores originales para restaurarlos después
+    const originalBackground = elemento.style.backgroundColor;
+    const originalColor = elemento.style.color;
+
+    // Cambia el fondo y el color del texto
+    elemento.style.backgroundColor = theme_colors[number_theme];;
+    elemento.style.color = "#ffffff";
+
+    // Cambia el color de todos los textos dentro del div
+    const textos = elemento.querySelectorAll("*");
+    textos.forEach((text) => {
+      text.dataset.originalColor = text.style.color; // Guarda el color original
+      text.style.color = "#ffffff";
+    });
+
+    // Cambia el color de los SVG dentro del div
+    const svgs = elemento.querySelectorAll("svg");
+    svgs.forEach((svg) => {
+      svg.querySelectorAll(".cls-1").forEach((element) => {
+        element.dataset.originalFill = element.style.fill; // Guarda el color original
+        element.dataset.originalStroke = element.style.stroke;
+        element.style.fill = "#ffffff";
+        element.style.stroke = "#ffffff";
+      });
+    });
+
+    const cardLines = elemento.querySelectorAll(".card_line");
+    cardLines.forEach((cardLine) => {
+      cardLine.dataset.originalBackground = cardLine.style.backgroundColor; // Guarda el color original
+      cardLine.style.backgroundColor = "#ffffff";
+    });
+
+
+    // Muestra una alerta con el nuevo color de fondo
+    //alert("El color de fondo es: " + elemento.style.backgroundColor);
+
+    // Evento para restaurar colores cuando se hace mouseout
+    elemento.addEventListener("mouseout", function () {
+      elemento.style.backgroundColor = originalBackground;
+      elemento.style.color = originalColor;
+
+      textos.forEach((text) => {
+        text.style.color = text.dataset.originalColor || "";
+      });
+
+      svgs.forEach((svg) => {
+        svg.querySelectorAll(".cls-1").forEach((element) => {
+          element.style.fill = element.dataset.originalFill || "";
+          element.style.stroke = element.dataset.originalStroke || "";
+        });
+      });
+
+      cardLines.forEach((cardLine) => {
+        cardLine.style.backgroundColor = cardLine.dataset.originalBackground || "";
+      });
+
+    }, { once: true }); // Se ejecuta solo una vez para evitar múltiples eventos
+  }
+
+
+
+
+
+  function agregaIFrame() {
+
+
+    if (theme == 1) {
+
+      let title_chart_tema_1 = 'Planes nacionales de desarrollo vigentes según temporalidad';
+      if (lang == "en") { title_chart_tema_1 = 'Current national development plans by temporality'; };
+
+      document.getElementById("boxes_if_cifras_12").innerHTML = `
+        <div class="col" style="width:100%;margin-top:50px;text-align:center;border:1px none red;">
+          <div id="title_kpi_charts" style="font-size:24px !important;">${title_chart_tema_1}</div>
+          <iframe src="include/echart_maps/chart_planning_for_development.html?v=2&lang=${lang}" scrolling="no" width="100%" height="950px" style="border:none;"></iframe>
+        </div>
+      `;
+
+    } else if (theme == 2) {
+
+      let url_ver_en_geoportal = 'es/geoportal';
+      let texto_ver_en_geoportal = 'Ver en el Geoportal';
+      if (lang == "en") {
+        url_ver_en_geoportal = 'en/geoportal';
+        texto_ver_en_geoportal = 'View in the Geoportal';
+      }
+
+      document.getElementById("boxes_if_cifras").innerHTML = `
+        <div class="col" style="width:100%">
+          <iframe src="include/echart_maps/map_chart_public_investment.html?v=5&lang=${lang}" scrolling="no" width="100%" height="610px" style="border:none;"></iframe>
+          <div style="width:100%;"><a href="${url_ver_en_geoportal}" target="_blank" class="btn btn-primary" style="width:100%;">${texto_ver_en_geoportal} <img src="iframe/img/icon_map.png" height="24px" style="margin-top:-3px;" /></a></div>
+        </div>
+      `;
+
+
+    } else if (theme == 3) {
+
+      let title_chart_tema_2 = 'Número de planes de acción de gobierno abierto elaborados en la región según escala territorial';
+      if (lang == "en") { title_chart_tema_2 = 'Number of open government action plans developed in the region, by territorial scale'; };
+
+      document.getElementById("boxes_if_cifras_12").innerHTML = `
+        <div class="col" style="width:100%;margin-top:50px;text-align:center;border:1px none red;">
+          <div id="title_kpi_charts" style="font-size:24px !important;">${title_chart_tema_2}</div>
+          <iframe src="include/echart_maps/chart_open_government.html?v=2&lang=${lang}" scrolling="no" width="100%" height="530px" style="border:none;"></iframe>
+        </div>
+      `;
+
+    }
+
+
+    cambiaColorBtn();
+
+  }
+
+
+  function cambiaColorBtn() {
+
+    // 1. Crear un estilo CSS personalizado
+    const style = document.createElement('style');
+    style.innerHTML = `
+  .custom-btn {
+    background-color: ${theme_colors[number_theme]} !important;
+    border-color: ${theme_colors[number_theme]} !important;
+    color: white !important;
+    transition: background-color 0.3s ease;
+  }
+
+  .custom-btn:hover {
+    background-color: ${theme_colors_2[number_theme]} !important;
+    border-color: ${theme_colors_2[number_theme]} !important;
+  }
+`;
+    document.head.appendChild(style);
+
+    // 2. Aplicar la clase al botón
+    const btn = document.querySelector('.btn-primary');
+    if ($('.btn-primary').length > 0) {
+      btn.classList.add('custom-btn');
+    }
+  }
+
+
+
+
+</script>
+
+
+<style>
+  #title_aliance,
+  #title_res {
+    text-align: center;
+    font-size: 38px;
+    padding: 20px 0 10px 0;
+    font-family: "SourceSansLight", sans-serif !important;
+    color: #163567;
+  }
+
+
+  #content_cells {
+    background-color: #ffffff;
+    padding: 20px 0;
+  }
+
+  #cells_content {
+    margin-top: 15px;
+  }
+
+  #theme_banner_1 {
+    padding: 35px 0px;
+    padding-top: 75px;
+    text-align: left;
+    font-size: 50px;
+    font-family: "RobotoCondensed-Regular", sans-serif !important;
+    color: white;
+    margin-top: 0px;
+
+    xbackground-image: url('images/bg/tema_2.jpg');
+    /* Reemplaza con tu imagen */
+    background-size: auto;
+    background-position: 100% top;
+    /* La alinea a la derecha */
+    background-repeat: no-repeat;
+    /* Evita que se repita */
+    z-index: 0;
+  }
+
+
+  #theme_banner_1 {
+    position: relative;
+    xwidth: 100%;
+    xheight: 100vh;
+    /* o lo que necesites */
+    overflow: hidden;
+  }
+
+  #theme_banner_1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33.33vw;
+    /* 33% de la pantalla */
+    height: 100%;
+    background-image: var(--theme-banner);
+    background-size: cover;
+    background-position: left top;
+    /* porque se alinea desde el borde derecho */
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+
+
+
+
+
+  .theme_banner_1 {
+    background-image: url('images/bg/tema_5.jpg');
+    /* Reemplaza con tu imagen */
+    background-size: auto 100%;
+    background-position: right top;
+    /* La alinea a la derecha */
+    background-repeat: no-repeat;
+    /* Evita que se repita */
+  }
+
+
+  #logo_circle {
+    position: absolute;
+    border: 4px none #0FF;
+    right: 27%;
+    width: 180px;
+    margin-top: -50px;
+    display: none;
+    z-index: 3;
+    max-width: 15%;
+  }
+
+  #logo_circle img {
+    border: 5px solid #BA2E53;
+    border-radius: 50%;
+    width: 80%;
+  }
+
+  #logo_circle img:hover {
+    border: 5px solid #D85F80;
+  }
+
+
+
+
+
+
+  #theme_introduction {
+    padding: 20px 2%;
+    text-align: justify;
+    font-family: "RobotoCondensed-Regular", sans-serif !important;
+    font-size: 20px !important;
+    color: #fff;
+    padding-right: 35%;
+    line-height: 1.3;
+    margin-top: 10px;
+    z-index: 5;
+  }
+
+  .layout_1 {
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .txt_cifras {
+    text-align: center;
+    font-size: 32px;
+    font-family: "SourceSansRegular", sans-serif !important;
+  }
+
+  .txt_cifras_sub {
+    text-align: center;
+    font-size: 28px;
+    font-family: "SourceSansLight", sans-serif !important;
+  }
+
+
+  #title_recursos,
+  #title_recursos_externos,
+  #title_cifras {
+    text-align: left;
+    font-family: "RobotoCondensed-Medium", sans-serif !important;
+    font-size: 26px !important;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #bbb;
+    padding: 0px;
+  }
+
+  #cards_resources div div:hover {
+    xbackground-color: #E7F0F1;
+  }
+
+  #cards_resources>div>div:hover {
+    box-shadow: 1px 2px 8px #aaa;
+  }
+
+  .card_foto:hover {
+    box-shadow: 1px 2px 0px #fff !important;
+  }
+
+  #cards_resources div h5 {
+    font-family: "RobotoCondensed-Regular", sans-serif !important;
+    color: #111;
+    font-size: 24px;
+    border-top: 1px solid #888;
+    padding-top: 10px;
+    margin-top: -10px;
+  }
+
+  .border_top {
+    text-align: center;
+    font-size: 19px !important;
+  }
+
+  #cards_resources div h5 a,
+  #cards_resources div h5 a:hover {
+    text-decoration: none !important;
+    color: #111;
+  }
+
+  .card_title_name {
+    font-family: "RobotoCondensed-Regular", sans-serif !important;
+    color: #111;
+    font-size: 21px;
+    height: 100px;
+    border: 1px none red;
+    padding: 0px;
+    padding-left: 5px;
+    line-height: 1.1;
+  }
+
+  .card_description {
+    font-family: "RobotoCondensed-Regular", sans-serif !important;
+    color: #111;
+    font-size: 16px;
+  }
+
+  .card_resources {
+    border: 1px solid #BBB;
+    cursor: pointer;
+  }
+
+  .div_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Alinear la imagen en la parte inferior */
+  }
+
+  #breadcrumb {
+    padding: 10px;
+    font-family: "RobotoCondensed-Regular", sans-serif !important;
+    color: #333;
+    margin-left: 9px;
+  }
+
+  #theme_name {
+    text-transform: uppercase;
+    font-size: 34px;
+    font-family: "RobotoCondensed-Medium", sans-serif !important;
+  }
+
+  #div_extlink {
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+
+  .extlink_title {
+    font-family: "RobotoCondensed-Regular", sans-serif !important;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .extlink_subtitle {
+    font-family: "RobotoCondensed-Regular", sans-serif !important;
+    font-size: 20px;
+    color: #EA8B35;
+  }
+
+  .extlink_description {
+    font-family: "RobotoCondensed-Regular", sans-serif !important;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .extlink_button {
+    font-family: "RobotoCondensed-Regular", sans-serif !important;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .extlink_button_btn {
+    font-family: "RobotoCondensed-Regular", sans-serif !important;
+    font-size: 20px;
+    background-color: white;
+    padding: 1px 7px;
+  }
+
+  .cifras_title {
+    font-family: "RobotoCondensed-Medium", sans-serif !important;
+    font-size: 30px;
+    margin-top: -1px;
+  }
+
+  .cifras_subtitle {
+    font-family: "RobotoCondensed-Regular", sans-serif !important;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  #cards_cifras>div>div:hover {
+    xbox-shadow: 1px 2px 10px #f00;
+  }
+
+
+  .desc_news_link {
+    font-family: "RobotoCondensed-Medium", sans-serif !important;
+    font-size: 18px;
+    text-align: right;
+    border: 1px none red;
+    margin-top: 30px;
+  }
+
+  .desc_news_link a {
+    color: #222;
+  }
+
+  .desc_news_link_icon {
+    width: 40px;
+    float: right;
+    margin-top: -5px;
+    margin-left: 5px;
+    margin-right: -10px;
+    border: 1px none green;
+  }
+
+  #card_title_tag_theme {
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 137px;
+    font-family: "RobotoCondensed-Regular", sans-serif !important;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  #title_kpi_charts {
+    font-family: "RobotoCondensed-Medium", sans-serif !important;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+</style>
+
+
+
+
+
+
+<style>
+  a:link {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 990px) {
+    #theme_banner_1 {
+      background-image: none;
+      /* Reemplaza con tu imagen */
+      background-size: 15% 100%;
+      background-position: right top;
+      /* La alinea a la derecha */
+      background-repeat: no-repeat;
+      /* Evita que se repita */
+    }
+
+    #theme_introduction {
+      padding-right: 5%;
+    }
+
+
+    #theme_banner_1::after {
+      width: 13.33vw;
+      /* 33% de la pantalla */
+      content: none;
+    }
+
+
+  }
+
+
+
+
+  @media (max-width: 990px) {
+
+    #cards_resources,
+    #cards_cifras {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    #cards_resources .col,
+    #cards_cifras .col {
+      flex: 0 1 calc(50% - 1rem);
+      /* Ajusta para 2 columnas */
+    }
+  }
+
+
+  @media (max-width: 520px) {
+
+    #cards_resources .col,
+    #cards_cifras .col {
+      flex: 0 1 100%;
+    }
+  }
+</style>
+
+
+
+<script>
+  console.log(theme)
+  if (theme == 1) {
+    var scriptElm = document.createElement('script');
+    scriptElm.src = `include/content/planning_development_data_keys.js?v=2`;
+    document.body.appendChild(scriptElm);
+  } else if (theme == 3) {
+    var scriptElm = document.createElement('script');
+    scriptElm.src = `include/content/open_government_data_keys.js?v=2`;
+    document.body.appendChild(scriptElm);
+  } else {
+    var scriptElm = document.createElement('script');
+    scriptElm.src = `include/content/page_data_keys_v2.js?v=3`;
+    document.body.appendChild(scriptElm);
+  }
+</script>

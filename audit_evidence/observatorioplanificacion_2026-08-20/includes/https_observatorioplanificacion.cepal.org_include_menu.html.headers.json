@@ -1,0 +1,18 @@
+{
+  "connection": "close",
+  "content-length": "17934",
+  "server": "nginx/1.29.8",
+  "content-type": "text/html",
+  "last-modified": "Mon, 17 Aug 2026 19:35:07 GMT",
+  "etag": "\"6a83626b-460e\"",
+  "accept-ranges": "bytes",
+  "age": "0",
+  "date": "Thu, 20 Aug 2026 15:52:44 GMT",
+  "via": "1.1 varnish",
+  "x-served-by": "cache-scl2220034-SCL",
+  "x-cache": "MISS",
+  "x-cache-hits": "0",
+  "x-timer": "S1787241165.640813,VS0,VE28",
+  "vary": "Accept-Encoding",
+  "strict-transport-security": "max-age=300"
+}

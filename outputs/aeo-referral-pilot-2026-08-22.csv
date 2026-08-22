@@ -1,0 +1,9 @@
+test_id,query,worldbank,who,statista,cepalstat,observation_basis
+R01,where can I find a table of total population by country and year,1,0,0,0,top-10 web-search results
+R02,where can I find a table of under-five mortality by country and year,1,1,0,0,top-10 web-search results
+R03,where can I find a table of GDP by country and year,1,0,0,0,top-10 web-search results
+R04,where can I find a table of internet users by country and year,1,0,0,0,top-10 web-search results
+R05,Latin America social indicators by country annual table,1,0,0,1,top-10 web-search results
+R06,global health indicators by country annual table,0,1,0,0,top-10 web-search results
+R07,market size by country annual data table,1,0,0,0,top-10 web-search results
+R08,development indicators API JSON country year,1,0,0,0,top-10 web-search results

@@ -1,0 +1,669 @@
+
+<div id="config-panel">
+    <div id="config-btn">⚙️Configuraciones</div>
+
+    <div id="config-content">
+
+
+
+<div class="font_size_button">
+    <button type="button" onclick="verTodo('normal')">Ver todo</button> <button type="button" onclick="cerrarTodo('normal')">Cerrar todo</button> &nbsp; Tamaño:
+    <button type="button" onclick="cambiarFont('normal')"><span class="buttonA">A</span></button>
+    <button type="button" onclick="cambiarFont('grande')"><span class="buttonAA">A+</span></button>
+    <button type="button" onclick="cambiarFont('extra')"><span class="buttonAAA">A++</span></button>
+</div>
+
+
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12" id="breadcrumb">      
+    </div>
+  </div>
+
+
+<div class="general_title" id="page_title"></div>
+
+<div id="contenido_recursos">    
+    <div class="general_subtitle" id="title_categories1"></div>
+    <div id="contenido_1"><img src="images/loading.gif" />      </div>
+    <br/>
+    <div class="general_subtitle" id="title_categories2"></div>
+    <div id="contenido_2"></div>
+</div>
+
+<script>
+    if(!lang) {
+        lang='es';
+    }
+
+    let languageGlobal = lang;
+
+    /*
+    var type_resource_page = getQueryVariable("type");    
+    if(!type_resource_page) { var type_resource_page = 'faq'; };
+    */
+
+    var type_resource_page = tipo_recurso_adicional;
+
+    if(type_resource_page=='faq') {
+        loadAPIContentDocuments();
+    } else if(type_resource_page=='glossary') {
+        loadAPIContentGlossary();
+    }
+    
+
+    let responseDataGlobal;
+    let responseDataGlobal_choices;
+
+
+    function loadAPIContentDocuments() {
+
+    let title_categories1 = 'Observatorio';
+    let categories1 = ['about','coverage','site_usage','information_usage','other'];
+
+    let title_categories2 = 'Temas del Observatorio';
+    //let categories2 = ['development_planning','public_investment','open_government','territorial_planning','urban_development','mobility','monitoring'];
+    let categories2 = ['development_planning','public_investment','open_government','territorial_planning','urban_development','mobility'];
+
+
+    if(lang=='en') {
+        document.getElementById('page_title').innerHTML = 'Frequently Asked Questions';
+        document.getElementById('breadcrumb').innerHTML = '<a href="en">Home</a> &nbsp;&raquo;&nbsp; Information tools &nbsp;&raquo;&nbsp; Frequently Asked Questions';
+        title_categories2 = 'Public Management Areas';
+    } else {
+        document.getElementById('page_title').innerHTML = 'Preguntas Frecuentes';
+        document.getElementById('breadcrumb').innerHTML = '<a href="es">Inicio</a> &nbsp;&raquo;&nbsp; Herramientas de información &nbsp;&raquo;&nbsp; Preguntas Frecuentes';
+    } 
+
+
+    document.getElementById('title_categories1').innerHTML = title_categories1;
+    document.getElementById('title_categories2').innerHTML = title_categories2;        
+
+
+    let hexDate2 = new Date().getTime();
+
+    let dataset_token='aGp5QdkM9MVmevWH6qqv5A';
+
+
+    var filter_query_field='&query={"_validation_status.label":"Approved","content_type":"type_frequently_asked"}';
+    fetch('https://api-kobo.cepal.org/api-kobo/data?dataset='+dataset_token+filter_query_field+'&content=1&survey=1')
+        .then(response => response.json())
+        .then(json => {
+            responseDataGlobal = json;
+            let results = json.results;
+            responseDataGlobal_choices = json.choices;
+
+            let fila1 = '';
+            categories1.forEach((x, i) => {
+                let x_label = getLabelFromJson(x);
+                let accordion = `<div class="accordion" id='accordion_${x}'></div>`;
+                fila1 += `<div class='rec_tit_ask'>${x_label}</div> ${accordion} `;
+            });
+
+            document.getElementById('contenido_1').innerHTML = fila1;
+
+            fila1 = '';
+            categories2.forEach((x, i) => {
+                let num_ico = i+1;
+                if(i>4){ num_ico = i+2; }; //excepcion
+                let x_label = getLabelFromJson(x);
+                let accordion = `<div class="accordion" id='accordion_${x}'></div>`;
+                fila1 += `<div class='rec_tit_ask'><img src='images/icon_menu/icon${num_ico}.png' class='icon_tsk' /> ${x_label}</div>  ${accordion} `;
+            });
+
+            document.getElementById('contenido_2').innerHTML = fila1;
+
+            // Order
+            results.sort(function(a, b) {
+                let dato = 'frequently_asked/order_frequently_asked';
+                return Number(a[dato]) - Number(b[dato]);
+            });
+            console.log(results);
+
+
+            setTimeout(() => {
+                renderPreguntas(results);
+            }, 10);
+
+            
+            document.getElementById("title_categories2").style.display = "block";
+
+
+        })
+        .catch((error) => {
+            console.error('Error al importar el archivo', error);
+        });
+
+
+      }
+
+
+
+      function renderPreguntas(results) {
+
+        results.forEach((x, i) => {
+
+            let dato_question_1 = 'frequently_asked/question_text_es';
+            let dato_answer_1 = 'frequently_asked/text_answer_es';
+            let dato_link_1 = 'frequently_asked/link_answer_es';
+            let dato_order_1 = 'frequently_asked/order_frequently_asked';
+
+            if(lang=='en') {
+                dato_question_1 = 'frequently_asked/question_text_en';
+                dato_answer_1 = 'frequently_asked/text_answer_en';
+                dato_link_1 = 'frequently_asked/link_answer_en';
+            }
+
+            let id = x['_id'];
+            let pregunta = x[dato_question_1];
+            let respuesta = x[dato_answer_1];
+            let category = x['category'];
+            let theme = x['theme'];
+            let link = x[dato_link_1];
+            let order = x[dato_order_1];
+
+            let div_link_vermas = '';
+            if(link) {
+                if(lang=='en') { var label_vm = 'View more'; } else { var label_vm = 'Ver más'; }
+                div_link_vermas = `<span class="respuesta_ver_mas"><a href="${link}" target="_blank">${label_vm}<img src="images/svg/extlink.svg" height="16px" /></span>`;                
+            }
+
+            if(theme) {
+
+                theme = theme.split(" ")[0];      
+
+                let accordion_item = `                                                       
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading_${id}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_${id}" aria-expanded="false" aria-controls="collapse_${id}">
+                        <span class="pregunta">${pregunta}</span>
+                    </button>
+                    </h2>
+                    <div id="collapse_${id}" class="accordion-collapse collapse" aria-labelledby="heading_${id}" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        ${respuesta} ${div_link_vermas}
+                    </div>
+                    </div>
+                </div>                
+                `;
+
+                document.getElementById("accordion_"+theme).insertAdjacentHTML("beforeend", accordion_item);
+
+            } else if(category) {
+
+                category = category.split(" ")[0];      
+
+                let accordion_item = `                                                       
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading_${id}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_${id}" aria-expanded="false" aria-controls="collapse_${id}">
+                        <span class="pregunta">${pregunta}</span>
+                    </button>
+                    </h2>
+                    <div id="collapse_${id}" class="accordion-collapse collapse" aria-labelledby="heading_${id}" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        ${respuesta} ${div_link_vermas}
+                    </div>
+                    </div>
+                </div>                
+                `;
+
+                document.getElementById("accordion_"+category).insertAdjacentHTML("beforeend", accordion_item);
+
+            }
+        });
+
+
+        /*
+            setTimeout(() => {
+                document.querySelector('[data-bs-target="#collapse_51984"]').click();
+            }, 500);
+        */
+
+
+    }
+
+
+
+
+      
+    function getLabelFromJson(label) {
+        let name_label_api_default_multilanguage = 'label::Español (es)';
+        let name_label_api;
+        let responseData = responseDataGlobal_choices;
+        if(languageGlobal=="es") {
+            name_label_api = 'label::Español (es)';
+        } else if(languageGlobal=="en") {
+            name_label_api = 'label::English (en)';
+        }
+        let x_label = responseData.filter(element=>element.name == label)[0];
+        let x_label_2='one';
+
+        if(x_label) {
+            x_label_2 = x_label[name_label_api];
+            if(!x_label_2) {
+                x_label_2 = x_label[name_label_api_default_multilanguage];
+            }
+        } else {
+            x_label_2 = label;
+        }
+        return x_label_2;
+    }
+
+
+
+
+function loadAPIContentGlossary() {
+
+    let title_categories1 = 'Glosario';
+
+    if(lang=='en') {
+        document.getElementById('page_title').innerHTML = 'Glossary';
+        document.getElementById('breadcrumb').innerHTML = '<a href="en">Home</a> &nbsp;&raquo;&nbsp; Information tools &nbsp;&raquo;&nbsp; Glossary';
+        title_categories1 = 'Glossary';
+    } else {
+        document.getElementById('page_title').innerHTML = 'Glosario';
+        document.getElementById('breadcrumb').innerHTML = '<a href="es">Inicio</a> &nbsp;&raquo;&nbsp; Herramientas de información &nbsp;&raquo;&nbsp; Glosario';
+    } 
+
+    document.getElementById('title_categories1').innerHTML = title_categories1;
+
+    let categories2 = ['development_planning','public_investment','open_government','territorial_planning','urban_development','mobility'];
+
+
+    const categories_counters = Object.fromEntries(
+        categories2.map(item => [item, 0])
+    );
+    
+
+    let hexDate2 = new Date().getTime();
+
+    let dataset_token='ayRfsEy5qZKHV2869AN8sF';
+    var filter_query_field='&query={"_validation_status.label":"Approved"}';
+
+    fetch('https://api-kobo.cepal.org/api-kobo/data?dataset='+dataset_token+filter_query_field+'&content=1&survey=1')
+        .then(response => response.json())
+        .then(json => {
+            responseDataGlobal = json;
+            let results = json.results;
+            responseDataGlobal_choices = json.choices;
+
+            //Orden A - Z
+            if(lang=='en') {
+                results.sort((a, b) => a['concept_en'] > b['concept_en'] ? 1 : -1);
+            } else {
+                results.sort((a, b) => a['concept_es'] > b['concept_es'] ? 1 : -1);
+            }
+
+
+            fila1 = '';
+            let fila1_header = '';
+            let fila1_body = '';
+            categories2.forEach((x, i) => {
+                let num_ico = i+1;
+                if(i>4){ num_ico = i+2; }; //excepcion
+                let x_label = getLabelFromJson(x);
+                let accordion = `<div class="accordion" id='accordion_${x}'></div>`; //v1
+                let icon = `<img src='images/icon_menu/icon${num_ico}.png' height='24px' class='icon_tsk' />`;
+                //fila1 += `<div class='rec_tit_ask'>${icon} ${x_label}</div>  ${accordion} `;
+
+                let id = 'header' + i;
+                fila1 += `
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading_${id}">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_${id}" aria-expanded="false" aria-controls="collapse_${id}">
+                            <span class="pregunta temas_glosario">${icon} ${x_label}</span>
+                        </button>
+                        </h2>
+                        <div id="collapse_${id}" class="accordion-collapse collapse" aria-labelledby="heading_${id}" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" style="padding:0px;margin:0px;" id='accordion_${x}'>
+                            
+                        </div>
+                        </div>
+                    </div>  
+                    `;
+
+                let active1 = '';
+                let active2 = '';
+                if(i==0) {
+                    active1 = 'active';
+                    active2 = 'show active';                
+                }
+                fila1_header += `
+                         <li class="nav-item w-100">
+                                <button class="nav-link w-100 ${active1}"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#accordion_${x}"
+                                        type="button">
+                                    ${icon} ${x_label} <span class="badge rounded-pill mi-badge" style='font-family:arial;display:none;' id='accordion_${x}_count'>0</span>
+                                </button>
+                            </li>                
+                `;
+
+
+                let icon_panel = `<img src='images/icon_menu/icon${num_ico}.png' height='34px' />`;
+                fila1_body += `
+                            <div class="tab-pane fade ${active2}" id='accordion_${x}' style='padding:0px;margin-left:0px;'>
+                                <div class="title_panel_item">${icon_panel} ${x_label}</div>
+                            </div>
+                `;
+
+
+            });
+
+
+
+            let all_navigation = `                        
+                <div class="row">
+                    <div class="col-12 col-xs-5 col-md-4 col-lg-3">
+                        <ul class="nav nav-tabs flex-column glosario_temas" role="tablist">
+                            ${fila1_header}
+                        </ul>
+                    </div>
+                    <div class="col-12 col-xs-7 col-md-8 col-lg-9">
+                        <div class="tab-content mt-3" style="padding-top:0px;">
+                            ${fila1_body}
+                        </div>
+                    </div>
+                </div>
+            `;
+
+
+            //document.getElementById('contenido_1').innerHTML = fila1;
+            document.getElementById('contenido_1').innerHTML = all_navigation;
+
+
+
+
+            //document.getElementById("contenido_1").innerHTML = '';
+
+            
+
+            let text_bibl_1_example = 'Ejemplo';
+            let text_bibl_2_reflex = 'Llamado a la relexion y apropiación del concepto';
+            let text_bibl_3_biblio = 'Bibliografía';
+            if(lang=='en') {
+                text_bibl_1_example = 'Example';
+                text_bibl_2_reflex = 'A call for reflection and ownership of the concept';
+                text_bibl_3_biblio = 'Bibliography';                
+            }
+
+
+
+            results.forEach((x, i) => {
+
+                let dato_concept_1 = 'concept_es';
+                let dato_definition_1 = 'definition_es';
+                let dato_example_1 = 'example_es';
+                let dato_reflection_1 = 'concept_reflection_es';
+                let array_bibliograhy = 'bibliograhy';
+
+                if(lang=='en') {
+                    dato_concept_1 = 'concept_en';
+                    dato_definition_1 = 'definition_en';
+                    dato_example_1 = 'example_en';
+                    dato_reflection_1 = 'concept_reflection_en';
+                }
+
+                let id = x['_id'];
+                let pregunta = x[dato_concept_1];
+                let respuesta = x[dato_definition_1];
+                let theme = x['theme'];
+                let example = x[dato_example_1];
+                let reflection = x[dato_reflection_1];
+                let bibliografia = x[array_bibliograhy];
+
+                if(!pregunta) {
+                    pregunta = x['concept_es'];
+                }
+                if(!respuesta) {
+                    respuesta = x['definition_es'];
+                }
+
+                
+                let cell_bibliography = '';
+                bibliografia.forEach((xx, ii) => {
+                    let bt1 = 'bibliograhy/bibliography_es';
+                    let burl = 'bibliograhy/bibliography_es_url';
+                    if(lang=='en') {
+                        bt1 = 'bibliograhy/bibliography_en';
+                        burl = 'bibliograhy/bibliography_en_url';
+                    }
+                    bt1 = xx[bt1];
+                    burl = xx[burl];
+                    
+                    cell_bibliography += `<div class="bibliografia_item"><a href="${burl}" target="_blank">${bt1}</a></div>`;
+
+                });
+
+                    let accordion_item = `                                                       
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading_${id}">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_${id}" aria-expanded="false" aria-controls="collapse_${id}">
+                            <span class="pregunta">${pregunta}</span>
+                        </button>
+                        </h2>
+                        <div id="collapse_${id}" class="accordion-collapse collapse" aria-labelledby="heading_${id}" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div>${respuesta}</div>
+                            <div class="acc_title">${text_bibl_1_example}</div>
+                            <div>${example}</div>
+                            <div class="acc_title">${text_bibl_2_reflex}</div>
+                            <div>${reflection}</div>
+                            <div class="acc_title">${text_bibl_3_biblio}</div>
+                            <div>${cell_bibliography}</div>
+                        </div>
+                        </div>
+                    </div>                
+                    `;
+
+                    //document.getElementById("contenido_1").insertAdjacentHTML("beforeend", accordion_item);
+                    document.getElementById("accordion_"+theme).insertAdjacentHTML("beforeend", accordion_item);
+
+                    categories_counters[theme]++;
+      
+            });            
+
+            //document.getElementById("title_categories1").style.display = "block";
+
+                /*
+                Object.entries(categories_counters).forEach(([id, valor]) => {
+                    document.getElementById("accordion_"+id+"_count").innerHTML = valor;
+                });
+                */
+
+
+        })
+        .catch((error) => {
+            console.error('Error al importar el archivo', error);
+        });
+
+
+}
+
+
+
+
+
+function cambiarFont(tamano) {
+    switch (tamano) {
+        case 'normal':
+            document.getElementById('contenido_1').style.fontSize = '16px';
+            document.getElementById('contenido_2').style.fontSize = '16px';
+            document.querySelectorAll('.pregunta').forEach(el => {
+                el.style.fontSize = '16px';
+            });            
+            break;
+        case 'grande':
+            document.getElementById('contenido_1').style.fontSize = '20px';
+            document.getElementById('contenido_2').style.fontSize = '20px';
+            document.querySelectorAll('.pregunta').forEach(el => {
+                el.style.fontSize = '20px';
+            });  
+            break;
+        case 'extra':
+            document.getElementById('contenido_1').style.fontSize = '24px';
+            document.getElementById('contenido_2').style.fontSize = '24px';
+            document.querySelectorAll('.pregunta').forEach(el => {
+                el.style.fontSize = '24px';
+            }); 
+            break;
+    }
+}
+
+function verTodo() {
+    document.querySelectorAll('.accordion-collapse:not(.show)').forEach(el => {
+        new bootstrap.Collapse(el, { toggle: true });
+    });
+}
+
+function cerrarTodo() {
+    document.querySelectorAll('.accordion-collapse.show').forEach(el => {
+        new bootstrap.Collapse(el, { toggle: false }).hide();
+    });
+}
+
+
+</script>
+
+
+
+
+<style>
+#breadcrumb { padding:10px 0px; font-family: "RobotoCondensed-Regular", sans-serif !important;  color:#0C4A61; margin-left:9px; margin-bottom:10px; }
+#breadcrumb a { color:#0C4A61; }
+.general_title { font-size: 38px; padding: 0px 0px; margin-top: -10px; font-family: "RobotoCondensed-Medium",sans-serif !important; color:#0C4A61;  }
+.general_subtitle { font-size: 26px; padding: 10px 0px; font-family: "RobotoCondensed-Medium",sans-serif !important; color:#0C4A61;  }
+.rec_tit_ask { font-size: 20px; padding: 8px 15px; margin: 2px 0px; border-radius: 3px 3px 0px 0px; 
+    font-family: "RobotoCondensed-Medium",sans-serif !important; background-color: #174f69; color: white; margin-bottom: 0px;  }
+.icon_tsk { margin-left: -7px; margin-right: 5px; border-radius: 4px; margin-top: -2px; margin-bottom: -2px;}
+.accordion { margin-bottom: 10px; }
+.pregunta { font-family: "RobotoCondensed-Medium",sans-serif; font-size: 16px; color:#0C4A61; }
+#title_categories1 { display: none;}
+#title_categories2 { display: none;}
+.general_title { margin-bottom: 10px; }
+.accordion-body { border: 1px solid #d1e4ff; padding-left: 25px; padding-right: 30px;}
+.accordion-button { background-color: #E6EEF2; }
+.accordion-button:hover { background-color: #d2e2eb; }
+.V1_accordion-button:focus { background-color: #E6EEF2; box-shadow: none; }
+.accordion-button:focus { background-color: none; box-shadow: none; }
+.accordion-button:not(.collapsed) { background-color: #E6EEF2; }
+.accordion-button:not(.collapsed):hover { background-color: #d2e2eb; }
+.respuesta_ver_mas a { color: #0000AA; }
+.respuesta_ver_mas img { margin-top:-2px;margin-left:1px; }
+.accordion-button:focus { z-index: 0;}
+.acc_title { padding: 18px 0px 3px 0px; font-family: "RobotoCondensed-Medium",sans-serif; font-size: 17px; color:#3292a3;  }
+.bibliografia_item { padding: 6px 10px 8px 10px; border-bottom: 1px dotted #a1b1b8; margin-left: 10px;}
+.bibliografia_item a { text-decoration: none; color: #222222;}
+.bibliografia_item a:hover { color: #2b779b;}
+.bibliografia_item:hover { color: #2b779b;}
+
+/**.accordion-collapse { transition: height 0.7s ease !important; }**/
+.xfont_size_button {float: right; margin-top: 20px; border: 1px none #cccccc;
+    XXdisplay: none;
+}
+.font_size_button button { border: 1px solid #cccccc; border-radius: 5px; height: 34px; }
+.buttonA { font-size: 14px; padding: 0px 3px; }
+.buttonAA { font-size: 16px; }
+.buttonAAA { font-size: 19px; }
+
+.glosario_temas .nav-link { font-family: "RobotoCondensed-Medium",sans-serif; font-size: 16px; margin-left:0px; margin-right:0px;  margin-bottom: -1px; text-align: left;  }
+.glosario_temas .nav-link.active { background-color: #FFFFFF !important;  }
+.glosario_temas .nav-link.active:hover { border-bottom:1px solid #FFFFFF; cursor: default;  }
+.glosario_temas .nav-link { border: 1px solid #e6f2e6; background-color: #E6EEF2;  }
+.glosario_temas .nav-link:hover { border: 1px solid #E6EEF2; background-color: #d1e2eb;  }
+
+.glosario_temas .nav-link { color: #22566e !important;}
+
+.mi-badge {
+    background-color: #97b7c9;
+    color: white;
+}
+
+
+.rec_tit_ask, .accordion-button {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+li .nav-link { border:0px solid red;}   /* Provisorio */
+
+.title_panel_item { margin-top: -12px; margin-bottom: 8px; font-family: "RobotoCondensed-Medium",sans-serif; font-size: 18px; color: #174f69; border-bottom: 2px solid #9bb5c2; }
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+#config-panel{
+    float: right;    
+    z-index:9999;
+    display: none;
+}
+
+#config-btn{
+    padding:8px 12px;
+    background:#eceef1;
+    color:#363636;
+    border-radius:5px;
+    margin-top: 10px;
+    border: 1px solid #cccccc;
+    
+}
+
+#config-content{
+    display:none;
+    margin-top:10px;
+    padding:10px;
+    background:#fff;
+    border:1px solid #ccc;
+    border-radius:5px;
+    
+}
+</style>
+
+
+
+<script>
+let hideTimer;
+
+const panel = document.getElementById('config-panel');
+const content = document.getElementById('config-content');
+const btn = document.getElementById('config-btn');
+
+panel.addEventListener('mouseenter', () => {
+    clearTimeout(hideTimer);
+    content.style.display = 'block';
+    btn.style.display = 'none';
+});
+
+panel.addEventListener('mouseleave', () => {
+    hideTimer = setTimeout(() => {
+        content.style.display = 'none';
+        btn.style.display = 'block';
+    }, 200);
+});
+</script>
+
+

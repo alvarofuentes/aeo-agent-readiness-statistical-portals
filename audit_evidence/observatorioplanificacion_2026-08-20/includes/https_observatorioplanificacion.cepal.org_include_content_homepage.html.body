@@ -1,0 +1,1492 @@
+
+<div class="container" style="display:none;">
+  <div class="row">
+    <div class="col-md-12" id="breadcrumb">
+      Áreas de gestión pública &nbsp;&raquo;&nbsp;
+    </div>
+  </div>
+</div>
+
+
+<div id="theme_banner_1">
+  <div class="container">
+
+    <div id="div_logo_orp" style="float:right; margin-left:40px; padding-right:120px; margin-top:-40px;">
+      <img src="images/logo/logo_orp_portada_ss.svg" height="260px"
+           style="filter: drop-shadow(0 0 20px white);">
+    </div>
+
+    <div id="theme_name"></div>
+
+    <div style="background-color:white; height:12px; width:10%; position:relative; top:0px; margin-left:5%;"></div>
+
+    <!-- Se agregó Acerca de -->
+    <div id="acerca_de">
+      <a href="es/acerca-de/">Más información</a>
+    </div>
+
+    <div class="container" id="theme_introduction">
+    </div>
+
+    <!-- Geoportal -->
+    <div id="acceso_geo">
+      <a href="es/geoportal/?lang=es">
+        Acceda al Geoportal del Observatorio 
+        <img src="./images/svg/flecha.svg" height="30px" />
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div>
+
+<div id="content_cells">
+
+
+
+  <div id="div_cifras" style="margin-top:25px;">
+  <div class="container" >
+    <div id="title_cifras">
+      <img src="images/black1px.png" width="16px" height="22px" style="margin-top:-5px;margin-right:5px;" /> Cifras clave del Observatorio
+    </div>
+  </div>
+  <div id="boxes_cifras" class="container">
+  </div>
+
+  </div>
+
+
+  <br>
+  <br>
+
+
+  <div class="container" >
+    <div id="title_recursos">
+      <img src="images/black1px.png" width="16px" height="22px" style="margin-top:-5px;margin-right:5px;" /> Temas del Observatorio
+    </div>
+  </div>
+  <div id="boxes_temas" class="container">
+  </div>
+
+
+  <br>
+  <br>
+
+
+  <br>
+
+
+
+  <div id="div_extlink">
+  </div>
+
+  <br>
+
+
+  <div id="div_noticias">
+    <div class="container" >
+      <div id="title_noticias">
+        <img src="images/black1px.png" width="16px" height="22px" style="margin-top:-5px;margin-right:5px;" /> Noticias y comunicados de prensa
+      </div>
+
+      <div id="boxes_noticias" >
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <br>
+  <br>
+  <br>
+
+
+
+  <div id="div_documentos">
+    <div class="container" >
+      <div id="title_documentos">
+        <img src="images/black1px.png" width="16px" height="22px" style="margin-top:-5px;margin-right:5px;" /> Documentos destacados CEPAL
+      </div>
+
+      <div id="boxes_documentos" >
+      </div>
+
+      <div id="acceso_mas_docs" style="padding-right:10px;">
+        <a target="_blank" href="https://www.cepal.org/es/listado/cepal_publication?title=&sort_bef_combine=date_DESC&date_from=&date_to=&publication_doc_type=All&publication_type=All&publication_biblevel=All&topic=All&work_area=8190&subsidiary_body=All&country=All&related_project=All&regional_office=All">Ver más documentos de la CEPAL <img src="./images/svg/flecha_blue.svg" height="30px" /></a>
+      </div>
+
+    </div>
+  </div>
+
+<!-- Se agregó bloque Biblioguías -->
+  <br>
+
+    <div id="div_biblioguias">
+    <div class="container" >
+      <div id="title_biblioguias">
+        <img src="images/black1px.png" width="16px" height="22px" style="margin-top:-5px;margin-right:5px;" /> Biblioguías
+      </div>
+
+      <div id="boxes_biblioguias" >
+      </div>
+
+    </div>
+  </div>
+
+
+  <br>
+
+  <div id="div_recursos">
+    <div class="container">
+      <div id="title_recursos_externos">
+        <img src="images/black1px.png" width="16px" height="22px" style="margin-top:-5px;margin-right:5px;" /> Recursos externos
+      </div>
+
+    <div id="boxes_ext_resources" >
+    </div>
+
+    <div id="acceso_mas_recursos" style="padding-right:10px;">
+      <a href="es/recursos-externos">Ver más <img src="./images/svg/flecha_blue.svg" height="30px" /></a>
+    </div>
+
+  </div>
+
+  </div>
+
+  <br>
+
+  <div id="div_documentos_gob">
+    <div class="container">
+      <div id="title_documentos_gob">
+        <img src="images/black1px.png" width="16px" height="22px" style="margin-top:-5px;margin-right:5px;" /> Otros documentos destacados
+      </div>
+    </div>
+
+    <div id="boxes_documentos_gob" class="container">
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+
+
+  <div id="div2_extlink_bottom">
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="container ">
+    <div class="row" id="cells_content">
+
+    </div>
+  </div>
+
+
+  <div style="display:none" id="sect_ali">
+  <div id="title_aliance"></div>
+  <div class="container ">
+    <div class="row" id="cells_aliance">
+    </div>
+  </div>
+  </div>
+
+  <div style="display:none" id="sect_res">
+  <div id="title_res"></div>
+  <div class="container ">
+    <div class="row" id="cells_res">
+    </div>
+  </div>
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+<br/>
+
+
+
+<br/>
+
+
+
+
+
+
+
+<script src="assets/dashboard_svg_icons.js?v=6"></script>
+
+
+
+<script>
+
+  if(!lang) {
+    lang='es';
+  }
+
+  theme = 0;
+
+  const theme_code = ["development_planning","public_investment","open_government","territorial_development","territorial_planning","urban_development","mobility"];
+
+  let theme_titles = ['Planificación para el desarrollo','Inversión pública','Gobierno abierto','Desarrollo territorial','Desarrollo y ordenamiento territorial','Desarrollo urbano','Movilidad urbana','Seguimiento, monitoreo y evaluación'];
+  if(lang=="en") {
+    theme_titles = ["Planning for development", "Public investment", "Open government", "Territorial development", "Land-use planning and development", "Urban development", "Urban mobility",'Follow-up, monitoring and evaluation'];
+  }
+
+  //yellow v1 E0BB31  v2 DDA31C
+  const theme_colors = ['#00BBD4','#BA2E53','#173668','#93B54E','#39855A','#EA8B35','#DDA31C','#28ADB5'];
+
+  var icon = '<img style="margin-top:-30px;margin-right:8px;" src="images/svg/icon'+theme+'.svg" height="120px" />';
+  let number_theme = theme-1;
+  document.getElementById('theme_name').innerHTML = 'El Observatorio';
+  document.getElementById('theme_banner_1').style.backgroundColor = '#03335F';
+
+  document.getElementById('breadcrumb').innerHTML = 'Inicio &nbsp;&raquo;&nbsp; Áreas de gestión pública &nbsp;&raquo;&nbsp; <strong>'+theme_titles[number_theme]+'</strong>';
+  if(lang=="en") {
+    document.getElementById('breadcrumb').innerHTML = 'Home &nbsp;&raquo;&nbsp; Public management areas &nbsp;&raquo;&nbsp; <strong>'+theme_titles[number_theme]+'</strong>';
+  }
+
+  if(lang=="en") {
+    let square = '<img src="images/black1px.png" width="16px" height="22px" style="margin-top:-5px;margin-right:5px;" />';
+    document.getElementById('title_recursos').innerHTML = square+' Areas of the Observatory';
+    document.getElementById('title_cifras').innerHTML = square+' Key Data of the Observatory';
+    document.getElementById('title_recursos_externos').innerHTML = square+' External resources';
+    document.getElementById('title_noticias').innerHTML = square+' News and press releases';
+    document.getElementById('title_documentos').innerHTML = square+' Featured ECLAC documents';
+    document.getElementById('title_documentos_gob').innerHTML = square+' Others Featured Documents';
+   //Biblioguías
+    document.getElementById('title_biblioguias').innerHTML = square+' Resource Guides';
+  }
+
+
+
+if(theme==2) {
+  document.getElementById('logo_circle').style.display = "block";
+}
+
+
+
+  function addHTMLtoDiv(x,y) {
+    document.getElementById(x).innerHTML = y;
+    return false;
+  }
+
+
+
+  //LINK areas
+    const home_menu_folders_en = [
+      "0",
+      "planning-for-development",
+      "public-investment",
+      "open-government",
+      "4",
+      "land-use-planning",
+      "urban-development",
+      "urban-mobility"
+    ];
+    const home_menu_folders_es = [
+      "0",
+      "planificacion-para-el-desarrollo",
+      "inversion-publica",
+      "gobierno-abierto",
+      "4",
+      "desarrollo-y-ordenamiento-territorial",
+      "desarrollo-urbano",
+      "movilidad-urbana"
+    ];
+
+    if(lang=="en") {
+      let url_en_documents = 'https://www.cepal.org/en/list/cepal_publication?title=&sort_bef_combine=date_DESC&date_from=&date_to=&publication_doc_type=All&publication_type=All&publication_biblevel=All&topic=All&work_area=8190&subsidiary_body=All&country=All&related_project=All&regional_office=All';
+      document.getElementById('acceso_mas_docs').innerHTML = '<a target="_blank" href="'+url_en_documents+'">Access additional ECLAC documents <img src="./images/svg/flecha_blue.svg" height="30px" /></a>';
+
+      document.getElementById('acceso_mas_recursos').innerHTML = '<a href="en/external-resources">View more <img src="./images/svg/flecha_blue.svg" height="30px" /></a>';
+    }
+
+
+  let div_themes = '';
+  theme_titles.forEach((item, i) => {
+
+    let num=i+1;
+    let stylesbg="background-image: url('images/bg/tema_"+num+".jpg'); background-size: 100% 47%; background-position: top center; background-repeat: no-repeat;";
+
+    var icon = '<img src="images/svg/icon'+num+'.svg" height="42px" />';
+
+    var icone = `<div style="padding:6px;">${icon}</div>`;
+
+    let title_territorio='';
+    if(num==5 || num==6 || num==7) { title_territorio='<div class="card_title_tag_theme"><span class="card_title_tag_theme_txt">Territorio</span></div>'; }
+
+    if(num==8 || num==4) { } else {
+
+    let link_area = "es/"+home_menu_folders_es[num];
+    if(lang=="en") {
+      link_area = "en/"+home_menu_folders_en[num];
+    }
+
+    div_themes += `
+        <div class="flip-card col">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="col" style="margin-bottom:10px;">
+                <div class="temas_cols" onclick="window.open('${link_area}','_self');" style="cursor:pointer;background-color:${theme_colors[i]};color:white;${stylesbg}">
+                  <div class="line_bg_separator"></div>
+                  <div>${icone}</div>
+                  ${title_territorio}
+                  <div style="line-height:1em;margin-top:10px;font-size:0.9em;">${item}</div>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back" style="background-color:${theme_colors[i]};padding:15px;cursor:pointer;" onclick="window.open('${link_area}','_self');"  >
+              <div style="font-weight:bold;text-align:left;text-transform:uppercase;font-family: "RobotoCondensed-Medium", sans-serif;">${item}</div>
+              <div style="background-color:white;height:4px;width:25%;opacity:0.7;margin-top:3px;margin-bottom:5px;xborder-bottom:2px dotted #FFF;"></div>
+              <p style="text-align:left;font-size:14px;" id="card_text_${num}">loading... </p>
+            </div>
+          </div>
+        </div>`;
+    };
+
+  });
+
+
+
+
+
+
+  div_themes = '<div class="row g-3" id="cards_temas">'+div_themes+'</div>';
+
+
+  addHTMLtoDiv('boxes_temas',div_themes);
+
+
+
+
+
+  let not1 = [1,2,3];
+
+  let divs = '';
+  not1.forEach((item, i) => {
+    divs += `<div class="col"><div class="examples_bg"></div> </div>`;
+  });
+
+  divs = '<div class="row">'+divs+'</div>';
+
+  //addHTMLtoDiv('boxes_noticias',divs);
+
+
+
+  not1 = [1,2,3,4];
+
+  divs = '';
+  not1.forEach((item, i) => {
+    divs += `<div class="col"><div class="examples_bg" style="height:350px;"></div> </div>`;
+  });
+
+  divs = '<div class="row">'+divs+'</div>';
+
+  //addHTMLtoDiv('boxes_documentos',divs);
+
+
+
+
+
+
+  async function fetchJson(x,y) {
+      try {
+          const response = await fetch(x);
+          if (!response.ok) {
+              throw new Error('Error al cargar el archivo JSON');
+          }
+          const data = await response.json();
+          if(y=='desc'){
+            displayDescription(data);
+          }
+          if(y=='cont'){
+            displayContent(data);
+          }
+          if(y=='reso'){
+            displayResourcesData(data);
+          }
+          if(y=='extlink'){
+            displayExternalLinkData(data);
+          }
+          if(y=='cifras'){
+            displayCifrasClaveData(data);
+          }
+          if(y=='cards'){
+            displayCardText(data);
+          }
+
+      } catch (error) {
+          console.error('Error:', error);
+      }
+  }
+
+
+
+
+
+
+
+  function displayDescription(y) {
+
+
+      let z = y.filter(x => x.theme == theme);
+      z.forEach(x => {
+        let description = x.description_es;
+        if(lang=="en") {
+          description = x.description_en;
+        }
+
+        let parrafos2 = description.split("\r\n\\n\\n\r\n").map(p => `<p>${p}</p>`).join("");
+
+
+        if(x.context=="lac") {
+          document.getElementById('theme_name').innerHTML = parrafos2;
+        }
+
+
+
+      });
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+function displayExternalLinkData(y) {
+
+  let z = y.filter(x => x.theme == 0);
+
+  let cells='';
+  let cells2='';
+  let color=theme_colors[number_theme];
+
+  z.forEach(x => {
+
+    let logo=x.logo;
+    let title=x.title_es;
+    let subtitle=x.subtitle_es;
+    let description=x.description_es;
+    let link=x.link_es;
+    let bloque=x.bloque;
+
+    let text_ver = "Únete a esta comunidad de práctica";
+    if(lang=="en") {
+      title=x.title_en;
+      subtitle=x.subtitle_en;
+      description=x.description_en;
+      link=x.link_en;
+      text_ver = "Join this community of practice";
+   
+   // se agregó text_ver_notas
+    }
+    let text_ver_notas = "Ver";
+    if(lang=="en") {
+      title=x.title_en;
+      subtitle=x.subtitle_en;
+      description=x.description_en;
+      link=x.link_en;
+      text_ver_notas = "View";
+    }
+
+    if(!subtitle) { subtitle=''; }
+//se mofificó para que traiga el texto text_ver_notas
+    if(bloque=="notas") {
+    cells+=`
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3" style="text-align:right;border-right:4px solid ${color};padding-right:30px;">
+            <img src="images/logo/${logo}.png"  style="margin-top:5px;max-width:100%;">
+          </div>
+          <div class="col-md-9" style="padding:10px;padding-left:30px;">
+            <div class="extlink_title">${title}</div>
+            <div class="extlink_subtitle">${subtitle}</div>
+            <div class="extlink_description">${description}</div>
+            <div class="extlink_button"><a href="${link}" class="btn extlink_button_btn" >${text_ver_notas} &raquo;</a></div>
+          </div>
+        </div>
+      </div>
+    `;
+    }
+
+    if(bloque=="red") {
+    cells2+=`
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5" style="padding:10px;padding-left:30px;margin-top:40px;text-align:right">
+            <div class="extlink_title_red">${title}</div>
+            <div class="extlink_button" style="margin-top:10px;"><a target="_blank" href="${link}" class="btn extlink_button_btn" >${text_ver} &raquo;</a></div>
+          </div>
+          <div class="col-md-7" style="text-align:center;border-right:4px solid ${color};padding-right:30px;">
+            <img src="images/logo/${logo}.png"  style="margin-top:5px;">
+          </div>
+        </div>
+      </div>
+    `;
+    }
+
+
+  });
+
+  document.getElementById('div_extlink').innerHTML = cells;
+
+  document.getElementById('div2_extlink_bottom').innerHTML = cells2;
+  document.getElementById('div2_extlink_bottom').style.backgroundColor = '#E2F0F6';
+
+
+  if(theme==1) {
+    const elemento = document.getElementById('div_extlink');
+    elemento.style.backgroundColor = '#fff'; // Fondo blanco
+    elemento.style.borderTop = '5px solid #ddd'; // Borde superior
+    elemento.style.borderBottom = '5px solid #ddd'; // Borde inferior
+  } else {
+    document.getElementById('div_extlink').style.backgroundColor = '#eee';
+  }
+
+
+  if(cells==''){
+    document.getElementById('div_extlink').style.display = 'none';
+  }
+
+
+}
+<!-- Se agregó para Biblioguías -->
+
+function displayBiblioguias() {
+
+  let data = [
+    {
+      titulo_es: "Desde el gobierno digital hacia un gobierno inteligente",
+      titulo_en: "From digital government to intelligent government (es)",
+       descripcion_es: "Reúne recursos, publicaciones y materiales sobre la transformación digital del Estado, abordando conceptos, estrategias y componentes del gobierno digital y su evolución hacia modelos más avanzados e inteligentes.",
+       descripcion_en: "Brings together resources, publications, and materials on the digital transformation of the State, addressing key concepts, strategies, and components of digital government and its evolution toward more advanced and intelligent models.",
+       link_es: "https://biblioguias.cepal.org/gobierno-digital", 
+       link_en: "https://biblioguias.cepal.org/gobierno-digital" 
+    },
+    {
+      titulo_es: "La planificación para el desarrollo en los 60 años del ILPES",
+      titulo_en: "Development planning over 60 years of ILPES",
+       descripcion_es: "Presenta publicaciones y contenidos que recorren la trayectoria del instituto, sus etapas y aportes a la planificación en América Latina y el Caribe.",
+        descripcion_en: "Presents publications and content that trace the institute’s trajectory, its different stages, and its contributions to development planning in Latin America and the Caribbean.",
+        link_es: "https://biblioguias.cepal.org/ilpes60-es", 
+        link_en: "https://biblioguias.cepal.org/ilpes60-en"
+    },
+    {
+      titulo_es: "Estado Abierto en América Latina y el Caribe",
+      titulo_en: "Open State in Latin America and the Caribbean (es)",
+      descripcion_es: "Presenta recursos y publicaciones sobre el enfoque de Estado abierto, sus principios e instrumentos, junto con experiencias que promueven la transparencia, la participación, la colaboración y la rendición de cuentas en la gestión pública.",
+      descripcion_en: "Presents resources and publications on the open government approach, its principles and tools, along with experiences that promote transparency, participation, collaboration, and accountability in public management.",
+      link_es: "https://biblioguias.cepal.org/EstadoAbierto",
+      link_en: "https://biblioguias.cepal.org/EstadoAbierto"  
+    }
+  ];
+
+  let html = '';
+
+  data.forEach(x => {
+    let titulo = (lang == "en") ? x.titulo_en : x.titulo_es;
+    let descripcion = (lang == "en") ? x.descripcion_en : x.descripcion_es;
+    let link = (lang == "en") ? x.link_en : x.link_es;
+    html += `
+      <div class="biblioguia_item">
+        <div class="row align-items-center">
+          
+          <div class="col-md-4 biblioguia_left">
+            <img src="images/icon_biblioguia.png" class="biblioguia_icon">
+            <div class="biblioguia_title">
+              <a href="${link}" target="_blank">${titulo}</a>
+              </div>
+          </div>
+
+          <div class="col-md-8 biblioguia_right">
+            ${descripcion}
+          </div>
+
+        </div>
+      </div>
+    `;
+  });
+
+  document.getElementById('boxes_biblioguias').innerHTML = html;
+}
+
+
+
+
+
+function displayCifrasClaveData(y) {
+
+  let z = y.filter(x => x.theme == theme);
+
+  let cells='';
+
+  z.forEach(x => {
+
+    let type=x.type;
+    let title=x.title_es;
+    let subtitle=x.subtitle_es;
+    if(lang=="en") {
+      title=x.title_en;
+      subtitle=x.subtitle_en;
+    }
+
+
+    //Cifras PROVISORIAS DE SIMULACION !!!
+    let cifra_pais = Math.floor(Math.random() * 33) + 1;
+    //let cifra = Math.floor(Math.random() * (90 - 20 + 1)) + 20;
+    let cifra = 0;
+    if(type=='paises') { cifra=cifra_pais; }
+
+    if(type=="planes" || type=="instituciones" || type=="metodologias"  || type=="normativas" ) {
+      cifra = '<div class="spinner-border" role="status"><span class="visually-hidden">Cargando...</span></div>';
+    }
+
+
+    let color = '#B8DBE8';
+
+    cells+=`
+      <div class="col" style="border:1px none green;">
+        <div class="card h-100" style="padding:10px 30px;border:1px none green;background-color:#eee;"  >
+          <div class="card-body" style="margin-left:-20px;margin-right:-20px;border:1px none red;">
+            <div style="height:10px;width:40%;background-color:${color};position:absolute;bottom:-5px;left:0px;"></div>
+            <div class="cifras_title" ><span id="data_key_type_${type}">${cifra}</span> ${title}</div>
+            <div class="cifras_subtitle" >${subtitle}</div>
+          </div>
+        </div>
+      </div>
+    `;
+
+  });
+
+  if(cells=='') {
+    document.getElementById('div_cifras').style.display = 'none';
+  } else {
+    document.getElementById('boxes_cifras').innerHTML = '<div class="row row-cols-1 row-cols-md-4 g-3" id="cards_cifras">'+cells+'</div>';
+  }
+
+
+}
+
+
+
+
+
+
+function displayCardText(y) {
+
+  y.forEach(x => {
+
+    let num=x.theme;
+    let text=x.text_es;
+    if(lang=="en") {
+      text=x.text_en;
+    }
+    if(num==4) { } else {
+      document.getElementById('card_text_'+num).innerHTML = text;
+    }
+
+
+  });
+
+
+}
+
+
+
+
+  fetchJson('include/json_data/json_extlink.json?v=3','extlink');
+  fetchJson('include/json_data/json_cifras_titulos.json?v=3','cifras');
+  fetchJson('include/json_data/json_theme_description.json?v=3','desc');
+  fetchJson('include/json_data/json_card_text.json?v=3','cards');
+
+
+  //traducciones
+  if(lang=="en") {
+    document.getElementById("acceso_geo").innerHTML = '<a href="en/geoportal/?lang=en">Access the Geoportal of the Observatory <img src="./images/svg/flecha.svg" height="30px" /></a>';
+    document.getElementById("acerca_de").innerHTML =  '<a href="en/about/">More information</a>';
+  }
+
+
+
+
+
+
+  loadAPIContentGlobal();
+
+function loadAPIContentGlobal() {
+
+  let hexDate2 = new Date().getTime();
+  let dataset_token='aGxrup3hXkyxrzf8Q3DCLt';
+
+  fetch('https://api-kobo.cepal.org/api-kobo/data?dataset='+dataset_token+'&query={"destacado":"OK"}')
+    .then(response => response.json())
+    .then(json => {
+
+        let results = json.results;
+
+        results = results.filter(x => x._validation_status.label == "Approved");
+
+        let color_th = '';
+
+        results.sort( function( a, b ) {
+          return Number(a.orden) > Number(b.orden) ? 1 : Number(a.orden) < Number(b.orden) ? -1 : 0;
+        });
+
+        let cells='';
+
+        results.forEach((x, i) => {
+
+            let id_content = x['_id'];
+            let name = x['texto_vinculo_es'];
+            let link = x['url_es'];
+            let imagen_attach_name = x['imagen_es'];
+
+            if(lang=="en"){
+              name = x['texto_vinculo_en'];
+              link = x['url_en'];
+              imagen_attach_name = x['imagen_en'];
+            }
+
+            imagen_attach_name = imagen_attach_name.replace("@", "");
+
+            let images = x['_attachments'];
+
+            let image='';
+            images.forEach((items, ii) => {
+              let filename = items.filename;
+              let filename_name = filename.split("/").pop();
+              if(filename_name==imagen_attach_name) {
+                image = items.download_url;
+                //image = image.slice(0, -13);
+              };
+            });
+
+            let extension_imagen = imagen_attach_name.slice(-3);
+            let style_width_auto='width:auto;max-width:300px;';
+            if(extension_imagen=="svg") {
+              style_width_auto='';
+            }
+
+            if(image=='https://kf-surveystat.cepal.org/api/v2/assets/aGxrup3hXkyxrzf8Q3DCLt/data/32904/attachments/7257' || image=='https://kf-surveystat.cepal.org/api/v2/assets/aGxrup3hXkyxrzf8Q3DCLt/data/32904/attachments/7256') {
+              image='images/logo/cosefin.jpg';
+            }
+
+            cells+=`
+              <div class="col">
+                <div class="card h-100" style="padding:20px;padding-top:25px;">
+                  <div align="center" class="div_bottom" style="min-height:110px;"><a href="${link}" target="_blank"><img src="${image}"  width="220px" border="0" style="max-height:80px;${style_width_auto}" ></a></div>
+                  <div class="card-body">
+                    <h5 class="card-title border_top" style="border-top:4px solid ${color_th};"><a href="${link}" target="_blank">${name}</a></h5>
+                  </div>
+                </div>
+              </div>
+            `;
+
+        });
+
+
+
+
+
+
+
+
+
+
+        document.getElementById('boxes_ext_resources').innerHTML = '<div class="row row-cols-1 row-cols-md-3 g-3" id="cards_resources">'+cells+'</div>';
+
+        if(cells=='') {
+          document.getElementById('div_recursos').style.display = 'none';
+        }
+
+
+    })
+    .catch((error) => {
+        console.error('Error al importar el archivo', error);
+    });
+
+  }
+
+
+
+
+
+
+
+
+
+
+  loadAPIContentDocuments();
+
+  function loadAPIContentDocuments() {
+
+    let hexDate2 = new Date().getTime();
+
+    let dataset_token='am53nRfLzQc7niCxsGwEJa';
+
+  fetch('https://api-kobo.cepal.org/api-kobo/data?dataset='+dataset_token)
+      .then(response => response.json())
+      .then(json => {
+          let results = json.results;
+
+          results = results.filter(x => x.destacado == "OK");
+          //console.log("checkitems",results);
+          //let color_th = theme_colors[number_theme];
+
+          results.sort( function( a, b ) {
+            return a.date < b.date ? 1 : a.date > b.date ? -1 : 0;
+          });
+
+          let cells='';
+          let cells_2='';
+
+          results.forEach((x, i) => {
+
+
+            //let iconos_theme = '<img src="images/icon_menu/icon1.png" /> <img src="images/icon_menu/icon2.png" /> <img src="images/icon_menu/icon3.png" /> <img src="images/icon_menu/icon4.png" /> <img src="images/icon_menu/icon5.png" /> <img src="images/icon_menu/icon6.png" /> <img src="images/icon_menu/icon7.png" />';
+            let theme_docs = x['theme'];
+            if(!theme_docs) {
+              theme_docs = x['tema'];
+            }
+            let iconos_theme='';
+            if(theme_docs==undefined) {
+            } else {
+              iconos_theme = generarIconos(theme_docs, theme_code);
+            }
+
+
+            if(iconos_theme=='') {
+              iconos_theme='<img src="images/icon_menu/icon_white.png" />';
+            }
+
+
+
+              let name = lang === "en" ? x['titulo_en'] || x['titulo_es'] : x['titulo_es'];
+              let link = lang === "en" ? x['url_repositorio_en'] || x['url_repositorio_es'] : x['url_repositorio_es'];
+              let image = lang === "en" ? x['url_imagen_en'] || x['url_imagen_es'] : x['url_imagen_es'];
+
+              if(!image) {
+                image = x['_attachments'][0]['download_url'];
+                if(image) {
+                  image = image.replace("/?format=json", "");
+                }
+              }
+
+
+              let date = x['date'];
+              date = date.substring(0, 4);
+
+              let tipo_doc = x['Tipo_de_publicaci_n'];
+
+              if(lang=="en"){
+
+              }
+
+
+              //orig  lang
+              let original_language = x['Idioma_original'];
+              let tag_name_lang='';
+              if(original_language) {
+                if(original_language!=lang) {
+                  tag_name_lang = "&nbsp;<span class='original_language' title='idioma original / original language: "+original_language+"'>("+original_language+")</span>";
+                }
+              }
+
+
+              if(tipo_doc=='doccepal') {
+
+              cells+=`
+                <div class="col">
+                  <div class="card h-100" style="padding:0px;padding-top:25px;box-shadow: 1px 2px 8px #aaa;">
+                    <div align="center" class="div_bottom" style="xxmin-height:110px;">
+                      <div style="border:1px none red">
+                        <a href="${link}" target="_blank">
+                          <img src="${image}" border="0" style="width:100%;max-height:350px;border:1px solid #ddd;" >
+                        </a>
+                        <div style="border:1px none green;padding:10px 0px;text-align:left;">
+                          ${iconos_theme}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-body" style="background-color:#B8DBE8;xxmargin-top:55px;">
+                      <div style="background-color:#234E5F;height:11px;width:60%;margin-left:-17px;margin-top:-15px;margin-bottom:15px;"></div>
+                      <h5 class="card-title border_top2" style="text-align:left;border:none;"><a href="${link}" target="_blank">${name}</a>${tag_name_lang}</h5>
+                      <br/>
+                      <div class="flotante">${date}</div>
+                    </div>
+                  </div>
+                </div>
+              `;
+
+            } else {
+
+              cells_2+=`
+
+              <div class="col">
+                <div class="card h-100" style="padding:0px;padding-top:25px;box-shadow: 1px 2px 8px #aaa;">
+                  <div align="center" class="div_bottom" style="xxmin-height:110px;">
+                    <div>
+                      <a href="${link}" target="_blank">
+                        <img src="${image}"  width="100%" border="0" style="min-height:300px;max-height:300px;width:auto;border:1px solid #ddd;" >
+                      </a>
+                      <div style="border:1px none red;padding:10px 0px;text-align:left;">
+                        ${iconos_theme}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body" style="background-color:#D3E0B8;xxmargin-top:55px;">
+                    <div style="background-color:#93B54E;height:12px;width:60%;margin-left:-15px;margin-top:-15px;margin-bottom:15px;"></div>
+                    <h5 class="card-title border_top2" style="text-align:left;border:none;"><a href="${link}" target="_blank">${name}</a>${tag_name_lang}</h5>
+                    <br/>
+                    <div class="flotante">${date}</div>
+                  </div>
+                </div>
+              </div>
+              `;
+
+            }
+
+          });
+
+
+          document.getElementById('boxes_documentos').innerHTML = '<div class="row row-cols-1 row-cols-md-4 g-3" id="cards_resources">'+cells+'</div>';
+
+          document.getElementById('boxes_documentos_gob').innerHTML = '<div class="row row-cols-1 row-cols-md-4 g-3" id="cards_resources_gob">'+cells_2+'</div>';
+
+          if(cells=='') {
+            //document.getElementById('div_recursos').style.display = 'none';
+          }
+
+
+      })
+      .catch((error) => {
+          console.error('Error al importar el archivo', error);
+      });
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  loadAPIContentNews();
+
+  //Se agregó para Biblioguías
+
+  displayBiblioguias();
+
+  function loadAPIContentNews() {
+
+    let hexDate2 = new Date().getTime();
+
+    let dataset_token='afB6dHysGokryFbzCBP6Fn';
+
+  fetch('https://api-kobo.cepal.org/api-kobo/data?dataset='+dataset_token)
+      .then(response => response.json())
+      .then(json => {
+          let results = json.results;
+
+          results = results.filter(x => x['_validation_status']['label'] == "Approved");
+
+          //let color_th = theme_colors[number_theme];
+
+          results.sort(function(a, b) {
+            return Number(a.order) - Number(b.order);
+          });
+
+          let cells='';
+
+          results.forEach((x, i) => {
+
+              let theme_news = x['theme'];
+              if(!theme_news) {
+                theme_news = x['Tema'];
+              }
+
+              let iconos_theme='';
+              if(theme_news==undefined) {
+              } else {
+                iconos_theme = generarIconos(theme_news, theme_code);
+              }
+
+
+              let name = x['titulo_es'];
+              let link = x['vinculo_ext'];
+              let image = x['_attachments'][0]['download_url'];
+              let date = x['fecha'];
+              //date = date.substring(0, 4);
+
+              if(!link) {
+                link = x['url_cepal'];
+              }
+
+              image = image.replace("ff248d8c-b1c5-4014-a984-fdcd20ff465e", "10021f78-e45c-4bb8-a97d-fd153ac51179");
+              //image = image.slice(0,-13);
+
+              let fecha_formato = mostrarFecha(date,lang);
+
+
+              if(lang=="en"){
+                name = x['titulo_en'] !== undefined ? x['titulo_en'] : name;
+              }
+
+              cells+=`
+                <div class="col">
+                  <div class="card " style="padding:0px;padding-top:0px;box-shadow: 1px 2px 8px #aaa;">
+                    <div class="card-body" style="min-height:160px;border:1px none red;padding-top:15px;padding-bottom:0px;">
+                      <div>${fecha_formato}</div>
+                      <h5 class="card-title border_top2" style="text-align:left;border:none;"><a href="${link}" target="_blank">${name}</a></h5>
+                    </div>
+
+                    <div class="card-body" style="border:1px none red; ">
+                      <div style="border:1px none red;padding:10px;xtext-align:center;padding-top:0px;border:1px none green;margin-top:-15px;padding-left:0px;">
+                        ${iconos_theme}
+                      </div>
+                      <div class="div_top" style="min-height:250px; position:relative; overflow:hidden;">
+                        <a href="${link}" target="_blank">
+                          <img src="${image}" alt="Canvas Image"
+                               style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0;" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              `;
+
+
+          });
+
+
+          document.getElementById('boxes_noticias').innerHTML = '<div class="row row-cols-1 row-cols-md-3 g-3" id="cards_resources">'+cells+'</div>';
+
+
+
+      })
+      .catch((error) => {
+          console.error('Error al importar el archivo', error);
+      });
+
+    }
+
+
+
+
+    function generarIconos(temaString, theme_code) {
+      const temas = temaString.split(" ");
+      const iconos = temas.map((tema) => {
+        if (tema === "no_theme") {
+          return `<img src="images/icon_menu/icon_white.png" />`;
+        }
+        const index = theme_code.indexOf(tema);
+        if (index !== -1) {
+          const numeroIcono = index + 1;
+          return `<img src="images/icon_menu/icon${numeroIcono}.png" />`;
+        }
+        return "";
+      });
+
+      return iconos.join(" ");
+    }
+
+
+
+
+
+    function mostrarFecha(fechaStr,lang) {
+      let meses = [
+        "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+        "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+      ];
+
+      if(lang=='en') {
+        meses = [
+          "January", "February", "March", "April", "May", "June",
+          "July", "August", "September", "October", "November", "December"
+        ];
+
+      }
+
+
+      const fecha = new Date(fechaStr);
+      const dia = fecha.getDate();
+      const mes = meses[fecha.getMonth()];
+      const año = fecha.getFullYear();
+
+      const html = `<div class="news_fdia">${dia}</div><div class="news_fmes">${mes} ${año}</div>`;
+      return html;
+    }
+
+
+
+
+
+</script>
+
+
+<style>
+  #title_aliance, #title_res { text-align:center; font-size:38px; padding:20px 0 10px 0; font-family: "SourceSansLight",sans-serif !important;color:#163567;
+  }
+
+
+  #content_cells { background-color:#ffffff; padding:20px 0; }
+  #cells_content { margin-top:15px; }
+  #theme_banner_1 { padding:35px 0px; padding-top:75px; text-align:left; font-size:50px;
+    font-family: "RobotoCondensed-Regular", sans-serif !important;
+    color:white;
+    margin-top:0px;
+
+        background-image: url('images/bg_portada.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index:0;
+  }
+
+
+  #theme_banner_1 {
+    position: relative;
+    xwidth: 100%;
+    xheight: 100vh; /* o lo que necesites */
+    overflow: hidden;
+  }
+
+  #theme_banner_1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33.33vw; /* 33% de la pantalla */
+    height: 100%;
+    background-image: var(--theme-banner);
+    background-size: cover;
+    background-position: left top; /* porque se alinea desde el borde derecho */
+    background-repeat: no-repeat;
+    z-index:-1;
+  }
+
+
+  .theme_banner_1 {
+        background-image: url('images/bg/tema_5.jpg'); /* Reemplaza con tu imagen */
+        background-size: auto 100% ;
+        background-position: right top; /* La alinea a la derecha */
+        background-repeat: no-repeat; /* Evita que se repita */
+  }
+
+
+  #logo_circle { position:absolute;border:4px none #0FF; right:27%; width:180px;
+    margin-top:-50px; display:none; z-index:3; max-width:15%;  }
+  #logo_circle img { border:5px solid #BA2E53;  border-radius:50%; width:80%;   }
+  #logo_circle img:hover { border:5px solid #D85F80;  }
+
+
+
+
+
+
+  #theme_introduction { padding:20px 2%; text-align:justify;
+    font-family: "RobotoCondensed-Regular", sans-serif !important; font-size:20px !important; color:#fff;
+    padding-right:35%; line-height: 1.3em !important; margin-top:10px; z-index:5;
+   }
+  .layout_1 { border-radius:0 0 5px 5px; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); }
+
+  .txt_cifras { text-align:center; font-size:32px; font-family: "SourceSansRegular", sans-serif !important; }
+  .txt_cifras_sub { text-align:center; font-size:28px; font-family: "SourceSansLight", sans-serif !important; }
+
+
+  #title_recursos, #title_recursos_externos, #title_cifras, #title_noticias, #title_documentos, #title_documentos_gob {
+    text-align:left; font-family: "RobotoCondensed-Medium", sans-serif !important; font-size:22px !important;
+    margin-top:10px; margin-bottom:20px; text-transform:uppercase; border-bottom:1px solid #bbb; padding:0px;
+   }
+
+
+  #cards_resources div div:hover { xbackground-color:#E7F0F1; }
+  #cards_resources>div>div:hover { box-shadow: 1px 2px 8px #aaa;  }
+  #cards_resources_gob>div>div:hover { box-shadow: 1px 2px 8px #aaa;  }
+  .card_foto:hover { box-shadow: 1px 2px 0px #fff !important;  }
+
+  #cards_resources div h5 {  font-family: "RobotoCondensed-Regular", sans-serif !important; color:#111; font-size:24px; border-top:1px solid #888; padding-top:10px; margin-top:-10px; }
+  #cards_resources_gob div h5 {  font-family: "RobotoCondensed-Regular", sans-serif !important; color:#111; font-size:24px; border-top:1px solid #888; padding-top:10px; margin-top:-10px; }
+  .border_top { text-align:center; font-size:19px !important; }
+  .border_top2 {  font-size:19px !important; }
+  #cards_resources div h5 a, #cards_resources div h5 a:hover { text-decoration:none !important; color:#111; }
+  #cards_resources_gob div h5 a, #cards_resources div h5 a:hover { text-decoration:none !important; color:#111; }
+
+
+
+  .card_title_name { font-family: "RobotoCondensed-Regular", sans-serif !important; color:#111; font-size:21px; height:100px; border:1px none red; padding:0px; padding-left:5px; line-height: 1.2;  }
+  .card_description { font-family: "RobotoCondensed-Regular", sans-serif !important; color:#111; font-size:16px;  }
+  .card_resources { border:1px solid #BBB; cursor:pointer; }
+
+  .div_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinear la imagen en la parte inferior */
+  }
+
+  .div_top {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start; /* Alinea verticalmente arriba */
+  }
+
+  #breadcrumb { padding:10px; font-family: "RobotoCondensed-Regular", sans-serif !important; color:#333; margin-left:9px; }
+  #theme_name {  font-size:34px; font-family: "RobotoCondensed-Medium", sans-serif !important; line-height:1.1em; padding-left:5%; padding-right:5%; }
+
+  #div_extlink { padding:20px; margin-bottom:50px; }
+  .extlink_title { font-family: "RobotoCondensed-Regular", sans-serif !important; font-size:24px; font-weight:bold; color:#92215E;  }
+  .extlink_title_red { font-family: "RobotoCondensed-Regular", sans-serif !important; font-size:28px; font-weight:normal;  }
+  .extlink_subtitle { font-family: "RobotoCondensed-Regular", sans-serif !important; font-size:20px; font-weight:bold; color:#222; }
+  .extlink_description { font-family: "RobotoCondensed-Regular", sans-serif !important; font-size:18px; margin-top:10px; }
+  .extlink_button { font-family: "RobotoCondensed-Regular", sans-serif !important; font-size:20px; margin-top:5px;  }
+  .extlink_button_btn { font-family: "RobotoCondensed-Regular", sans-serif !important; font-size:20px; background-color:#92215E; color:white; padding:2px 40px; }
+  .extlink_button_btn a, .extlink_button a { color:white; }
+  .extlink_button_btn:hover { color:white; }
+
+  .cifras_title { font-family: "RobotoCondensed-Medium", sans-serif !important; font-size:44px; margin-top:-1px; }
+  .cifras_subtitle { font-family: "RobotoCondensed-Regular", sans-serif !important; font-size:18px; margin-top:10px; margin-bottom:20px; }
+
+  #cards_cifras>div>div:hover { xbox-shadow: 1px 2px 10px #f00;  }
+
+
+  .desc_news_link { font-family: "RobotoCondensed-Medium", sans-serif !important; font-size:18px; text-align:right; border:1px none red; margin-top:30px; }
+  .desc_news_link a { color:#222; }
+  .desc_news_link_icon { width:40px; float:right; margin-top:-5px; margin-left:5px; margin-right:-10px;  border:1px none green; }
+
+  .temas_cols { text-transform:uppercase; border:1px none red; min-height:300px; text-align:center;
+   padding:0 10%;  padding-top:147px; font-family: "RobotoCondensed-Medium", sans-serif !important; font-size:20px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+ }
+ .line_bg_separator { width:130%; height:5px; background-color:white; opacity:0.5; margin:0 -15%; margin-top:-6px; margin-bottom:5px;  }
+
+ #acceso_geo { text-align:right; font-size:24px; padding-right:10%; }
+ #acceso_geo a  { color:white; }
+
+ #acerca_de { text-align:left; font-size:18px; padding-right:10%; padding-left:5%; margin-top: 10px; }
+ #acerca_de a  { color:white; }
+
+ #acceso_mas_docs, #acceso_mas_recursos { text-align:right; font-size:22px; font-family: "RobotoCondensed-Medium", sans-serif !important; margin-top:20px; margin-right:-20px; }
+ #acceso_mas_docs a, #acceso_mas_recursos a  { color:#234E5F; }
+
+ .examples_bg { background-color:#e4e4e4; height:200px; }
+
+ .news_fdia { font-family: "RobotoCondensed-Regular", sans-serif !important; font-size:28px; line-height:0.8em;  }
+ .news_fmes { font-family: "RobotoCondensed-Regular", sans-serif !important; font-size:16px;  line-height:1.9em;    }
+ .news_fdia, .news_fmes { border:1px none red; }
+
+
+ #div_noticias .card:hover,
+ #div_documentos .card:hover,
+ #div_documentos_gob .card:hover
+  { box-shadow: 1px 2px 10px #777 !important;  }
+
+.original_language { color:#555;font-size: 11px;font-weight: bold; padding: 3px;padding-bottom: 5px; }
+
+</style>
+
+
+
+
+  <style>
+
+    a:link { text-decoration:none; }
+    a:hover { text-decoration:underline; }
+
+    @media (max-width: 990px) {
+      #theme_banner_1 {
+        background-image: none; /* Reemplaza con tu imagen */
+        background-size: 15% 100%;
+        background-position: right top; /* La alinea a la derecha */
+        background-repeat: no-repeat; /* Evita que se repita */
+      }
+
+      #theme_introduction {
+        padding-right:5%;
+       }
+
+
+       #theme_banner_1::after {
+         width: 13.33vw; /* 33% de la pantalla */
+          content: none;
+       }
+
+
+    }
+
+
+
+
+    @media (max-width: 990px) {
+      #cards_resources, #cards_resources_gob, #cards_cifras, #cards_temas  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      #cards_resources .col, #cards_resources_gob .col, #cards_cifras .col, #cards_temas .col {
+        flex: 0 1 calc(50% - 1rem); /* Ajusta para 2 columnas */
+      }
+      #div_logo_orp { display:none; }
+    }
+
+
+    @media (max-width: 520px) {
+      #cards_resources .col,
+      #cards_resources_gob .col,
+      #cards_cifras .col,
+      #cards_temas .col
+      {
+        flex: 0 1 100%;
+      }
+    }
+
+
+
+    .flotante {
+      position: absolute;
+      bottom: 0;
+      left: 8px;
+      /* Opcional: estilos para que se vea bien */
+      padding: 10px;
+      font-size:18px;
+      xxbackground-color: rgba(0, 0, 0, 0.1);
+      font-family: "RobotoCondensed-Regular", sans-serif !important;
+    }
+
+
+    .flotante_top {
+      position: absolute;
+      bottom: 0;
+      left: 8px;
+      /* Opcional: estilos para que se vea bien */
+      padding: 10px;
+      font-size:18px;
+      xxbackground-color: rgba(0, 0, 0, 0.1);
+      font-family: "RobotoCondensed-Regular", sans-serif !important;
+    }
+
+
+
+
+    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      border: 1px none #f1f1f1;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 1.0s;
+      transform-style: preserve-3d;
+    }
+
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+    }
+
+    /* Style the back side */
+    .flip-card-back {
+      background-color: dodgerblue;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+
+
+    .card_title_tag_theme {
+      font-weight:normal;
+      font-size:0.7em;
+      font-family: "RobotoCondensed-Regular", sans-serif !important;
+      margin-bottom:-10px;
+
+    }
+
+
+
+
+    .undeffect1 a:hover {
+      position: relative;
+      text-decoration: none; /* Remove default underline */
+      color: blue;
+    }
+
+    .undeffect1 a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px; /* Adjust position as needed */
+      width: 0; /* Initially hidden */
+      height: 2px;
+      background-color: white;
+      transition: width 0.3s ease-in-out; /* Smooth transition */
+    }
+
+    .undeffect1 a:hover::after {
+      width: 90%; /* Expand on hover */
+    }
+
+
+
+  </style>
+
+
+
+<script src="include/content/homepage_data_keys.js?v=5"></script>

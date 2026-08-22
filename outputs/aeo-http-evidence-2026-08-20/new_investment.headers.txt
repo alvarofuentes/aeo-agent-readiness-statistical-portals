@@ -1,0 +1,34 @@
+HTTP/1.1 301 Moved Permanently
+Connection: keep-alive
+Content-Length: 169
+Server: nginx/1.29.8
+Content-Type: text/html
+Location: http://observatorioplanificacion.cepal.org/es/inversion-publica/
+Accept-Ranges: bytes
+Age: 0
+Date: Thu, 20 Aug 2026 16:19:02 GMT
+Via: 1.1 varnish
+X-Served-By: cache-scl2220025-SCL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1787242743.600687,VS0,VE14
+Strict-Transport-Security: max-age=300
+
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 1133
+Server: nginx/1.29.8
+Content-Type: text/html
+Last-Modified: Mon, 17 Aug 2026 19:35:07 GMT
+ETag: "6a83626b-46d"
+Accept-Ranges: bytes
+Age: 0
+Date: Thu, 20 Aug 2026 16:19:02 GMT
+Via: 1.1 varnish
+X-Served-By: cache-scl2220025-SCL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1787242743.618183,VS0,VE14
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=300
+

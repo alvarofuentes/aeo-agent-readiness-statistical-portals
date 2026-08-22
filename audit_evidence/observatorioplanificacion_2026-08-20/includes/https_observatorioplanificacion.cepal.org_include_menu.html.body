@@ -1,0 +1,331 @@
+<div id="menu_total_web">
+<div  style="background-color:#FFFFFF; border-top:2px solid #A6D2E2;border-bottom:3px solid #AEDAEC; margin-bottom:0px; padding-top:3px;  ">
+  <div id="header_menu" class="container" style="xpadding:0 3%; margin: 0 auto; xmax-width:1300px">
+    <nav class="navbar navbar-custom navbar-expand-md navbar-light"
+    style="margin-left:-2px;margin-right:-10px;border:1px none red;height:43px;z-index:3;
+    padding:0px; border-bottom-left-radius: 8px 8px;border-bottom-right-radius: 8px 8px; margin-left:-5px; margin-top:-3px; background-color:#FFFFFF;   display: flex;justify-content: flex-end;  " >
+      <button class="navbar-toggler navbar-expand-lg   " id="btn_showMenuMobile"  type="button" data-toggle="collapse" data-target="#navbarNavCSTAT" aria-controls="navbarNavCSTAT" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavCSTAT" style="margin:auto -20px; margin-top:0px;  ">
+        <ul class="navbar-nav  align-left" style="padding-left:5px;padding-right:20px; font-size:15px; " >
+          <li class="nav-item ppal_menu_item " >
+            <a class="nav-link" href="es" id="ppal_menu_1" >Inicio</a>
+          </li>
+
+          <li class="nav-item active ppal_menu_item  dropdown " id="menu_2">
+            <a class="nav-link dropdown-toggle" href="#" id="ppal_menu_2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Áreas de gestión pública</a>
+            <div class="dropdown-menu"  style="font-size:15px;margin-top:-5px;margin-left:20px;z-index:10;">
+              <a id="ppal_href_menu_2_1" class="dropdown-item item2" href="es/planificacion-para-el-desarrollo" style="color:#377D9B;"><table><tr><td><img clas="menu_icon" src="images/icon_menu/icon1.png" border="0" /></td><td id="ppal_menu_2_1">Planificación para el desarrollo</td></tr></table></a>
+              <a id="ppal_href_menu_2_2" class="dropdown-item item1" href="es/inversion-publica" style="color:#377D9B;"><table><tr><td><img clas="menu_icon" src="images/icon_menu/icon2.png" border="0" /></td><td id="ppal_menu_2_2">Inversión pública</td></tr></table></a>
+              <a id="ppal_href_menu_2_3" class="dropdown-item item3" href="es/gobierno-abierto" style="color:#377D9B;"><table><tr><td><img clas="menu_icon" src="images/icon_menu/icon_23.png" border="0" /></td><td id="ppal_menu_2_3">Gobierno abierto</td></tr></table></a>
+              <a class="dropdown-item item3" id="itemenu_disabled" href="#" style="color:#377D9B;"><table><tr><td><img clas="menu_icon" src="images/icon_menu/icon4.png" border="0" /></td><td id="ppal_menu_2_4">Territorio <img src="images/icon_menu/arrow_down.png" border="0" />   </td></tr></table></a>
+              <a id="ppal_href_menu_2_5" class="dropdown-item item3" href="es/desarrollo-y-ordenamiento-territorial" style="color:#377D9B;"><div class="menu_rectangle"></div><table style="margin-left:20px;margin-right:20px;"><tr><td><img clas="menu_icon" src="images/icon_menu/icon5.png" border="0" /></td><td id="ppal_menu_2_5">Desarrollo y ordenamiento territorial</td></tr></table></a>
+              <a id="ppal_href_menu_2_6" class="dropdown-item item3" href="es/desarrollo-urbano" style="color:#377D9B;"><div class="menu_rectangle"></div><table style="margin-left:20px;"><tr><td><img clas="menu_icon" src="images/icon_menu/icon6.png" border="0" /></td><td id="ppal_menu_2_6">Desarrollo urbano</td></tr></table></a>
+              <a id="ppal_href_menu_2_7" class="dropdown-item item3" href="es/movilidad-urbana" style="color:#377D9B;"><div class="menu_rectangle"></div><table style="margin-left:20px;"><tr><td><img clas="menu_icon" src="images/icon_menu/icon7.png" border="0" /></td><td id="ppal_menu_2_7">Movilidad urbana</td></tr></table></a>
+              <a id="ppal_href_menu_2_8" class="dropdown-item item3" href="es/areas/?theme=8&lang=es" style="color:#377D9B;display:none;"><table><tr><td><img clas="menu_icon" src="images/icon_menu/icon8.png" border="0" /></td><td id="ppal_menu_2_8">Seguimiento, monitoreo y evaluación</td></tr></table></a>
+            </div>
+          </li>
+
+
+
+
+
+          <li class="nav-item active ppal_menu_item  dropdown " id="menu_3">
+            <a class="nav-link dropdown-toggle" href="#" id="ppal_menu_3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recursos de gestión pública</a>
+            <div class="dropdown-menu"  style="font-size:15px;margin-top:-5px;margin-left:20px;">
+              <a id="ppal_href_menu_3_1" class="dropdown-item item2" href="es/planes-programas-e-instrumentos" style="color:#377D9B;"><table><tr><td><img clas="menu_icon" src="images/icon_menu/icon_31.png" border="0" /></td><td id="ppal_menu_3_1">Planes, programas e instrumentos</td></tr></table></a>
+              <a id="ppal_href_menu_3_2" class="dropdown-item item1" href="es/marcos-normativos" style="color:#377D9B;"><table><tr><td><img clas="menu_icon" src="images/icon_menu/icon_32a.png" border="0" /></td><td id="ppal_menu_3_2">Marcos normativos</td></tr></table></a>
+              <a id="ppal_href_menu_3_3" class="dropdown-item item3" href="es/metodologias" style="color:#377D9B;"><table><tr><td><img clas="menu_icon" src="images/icon_menu/icon_33.png" border="0" /></td><td id="ppal_menu_3_3">Metodologías</td></tr></table></a>
+            </div>
+          </li>
+
+
+
+
+
+
+          <li class="nav-item active ppal_menu_item  dropdown " id="menu_4">
+            <a class="nav-link dropdown-toggle" href="#" id="ppal_menu_4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Institucionalidad</a>
+            <div class="dropdown-menu"  style="font-size:15px;margin-top:-5px;margin-left:20px;">
+              <a id="ppal_href_menu_4_1" class="dropdown-item item2" href="es/instituciones" style="color:#377D9B;"><table><tr><td><img clas="menu_icon" src="images/icon_menu/icon_41.png" border="0" /></td><td id="ppal_menu_4_1">Instituciones</td></tr></table></a>
+              <a id="ppal_href_menu_4_2" class="dropdown-item item2" href="es/sistemas-nacionales-de-planificacion" style="color:#377D9B;"><table><tr><td><img clas="menu_icon" src="images/icon_menu/icon1.png" border="0" /></td><td id="ppal_menu_4_2">Sistemas nacionales de planificación</td></tr></table></a>
+              <a id="ppal_href_menu_4_3" class="dropdown-item item1" href="es/sistemas-nacionales-de-inversion-publica" style="color:#377D9B;"><table><tr><td><img clas="menu_icon" src="images/icon_menu/icon2.png" border="0" /></td><td id="ppal_menu_4_3">Sistemas nacionales de inversión pública</td></tr></table></a>
+              <a id="ppal_href_menu_4_4" class="dropdown-item item3" href="es/mecanismos-de-articulacion-institucional" style="color:#377D9B;"><table><tr><td><img clas="menu_icon" src="images/icon_menu/icon5.png" border="0" /></td><td id="ppal_menu_4_4">Mecanismos de articulación territorial</td></tr></table></a>
+              <a id="ppal_href_menu_4_5" class="dropdown-item item3" href="foros-multiactor-de-gobierno-abierto" style="color:#377D9B;"><table><tr><td><img clas="menu_icon" src="images/icon_menu/icon_45.png" border="0" /></td><td id="ppal_menu_4_5">Foros multiactor de gobierno abierto</td></tr></table></a>
+            </div>
+          </li>
+
+
+
+
+
+          <li class="nav-item ppal_menu_item menu_stat_1 "  >
+            <a class="nav-link" href="es/paises" id="ppal_menu_5">Países</a>
+          </li>
+
+
+          <li class="nav-item ppal_menu_item menu_stat_1 "  >
+            <a class="nav-link" href="es/geoportal" id="ppal_menu_6">Geoportal</a>
+          </li>
+
+<!--Se agregó item Notas Informativas-->
+
+          <li class="nav-item active ppal_menu_item menu_stat_1  dropdown " id="menu_7">
+            <a class="nav-link dropdown-toggle" href="#" id="ppal_menu_7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Herramientas de información</a>
+            <div class="dropdown-menu"  style="font-size:15px;margin-top:-5px;margin-left:20px;">
+              <a class="dropdown-item item2" id="ppal_href_menu_7_ar1" href="es/preguntas-frecuentes/?type=faq" style="color:#377D9B;"><table><tr><td><img class="menu_icon" src="images/icon_menu/icon_70_a.png" border="0" /></td><td id="ppal_menu_7_ar1">Preguntas frecuentes</td></tr></table></a>
+              <a class="dropdown-item item2" id="ppal_href_menu_7_ar2" href="es/glosario" style="color:#377D9B;display: none;"><table><tr><td><img class="menu_icon" src="images/icon_menu/icon_70_b3.png" border="0" /></td><td id="ppal_menu_7_ar2">Glosario</td></tr></table></a>
+              <a class="dropdown-item item2" target="_blank" href="https://www.cepal.org/es/listado/cepal_news?title=&sort_bef_combine=date_DESC&date_from=&date_to=&news_type=2&topic=All&work_area=8190&subsidiary_body=All&country=All&related_project=All&regional_office=All" style="color:#377D9B;"><table><tr><td><img class="menu_icon" src="images/icon_menu/icon_71.png" border="0" /></td><td id="ppal_menu_7_1">Noticias <img src="images/extlink.png" height="16" style="margin-top:-3px;margin-left:3px;" /> </td></tr></table></a>
+              <a class="dropdown-item item2" target="_blank" href="https://www.cepal.org/es/list/cepal_note?work_area=8190" style="color:#377D9B;"><table><tr><td><img class="menu_icon" src="images/icon_menu/icon_71.png" border="0" /></td><td id="ppal_menu_7_2">Notas informativas <img src="images/extlink.png" height="16" style="margin-top:-3px;margin-left:3px;" /> </td></tr></table></a>
+              <a class="dropdown-item item2" target="_blank" href="https://www.cepal.org/es/listado-actividades/cepal_course?title=&sort_bef_combine=event_date_DESC&event_date_from=&event_date_to=&course_type=All&event_type=All&course_method=All&topic=All&work_area=8190&subsidiary_body=All&country=All&regional_office=All&related_project=All" style="color:#377D9B;"><table><tr><td><img class="menu_icon" src="images/icon_menu/icon_72a.png" border="0" /></td><td id="ppal_menu_7_3">Cursos y talleres <img src="images/extlink.png" height="16" style="margin-top:-3px;margin-left:3px;" /> </td></tr></table></a>
+            </div>
+          </li>
+
+
+
+
+          <li class="nav-item active ppal_menu_item menu_stat_2  dropdown " >
+            <a class="nav-link dropdown-toggle" href="#" id="ppal_menu_m100" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Más</a>
+            <div class="dropdown-menu"  style="font-size:15px;margin-top:-5px;margin-left:20px;">
+              <a class="dropdown-item" href="es/paises" id="ppal_menu_m100_1" >Países</a>
+              <a class="dropdown-item" href="es/geoportal" id="ppal_menu_m100_2" >Geoportal</a>
+              <a class="dropdown-item" target="_blank" href="https://www.cepal.org/es/listado/cepal_news?title=&sort_bef_combine=date_DESC&date_from=&date_to=&news_type=2&topic=All&work_area=8190&subsidiary_body=All&country=All&related_project=All&regional_office=All" id="ppal_menu_m100_3" >Noticias <img src="images/extlink.png" height="16" style="margin-top:-3px;margin-left:3px;" /></a>
+              <a class="dropdown-item" target="_blank" href="https://www.cepal.org/es/listado-actividades/cepal_course?title=&sort_bef_combine=event_date_DESC&event_date_from=&event_date_to=&course_type=All&event_type=All&course_method=All&topic=All&work_area=8190&subsidiary_body=All&country=All&regional_office=All&related_project=All"  id="ppal_menu_m100_4" >Cursos y talleres <img src="images/extlink.png" height="16" style="margin-top:-3px;margin-left:3px;" /></a>
+            </div>
+          </li>
+
+
+
+
+
+        </ul>
+      </div>
+    </nav>
+</div>
+
+</div>
+
+<div style="background-color:#dddddd; height:0px; width:100%  "></div>
+<div style="background-color:#eeeeee; height:0px; width:100%  "></div>
+<div style="background-color:#f5f5f5; height:0px; width:100%  "></div>
+
+
+
+
+
+
+<style>
+  .ppal_menu_item {
+    margin-right:-20px !important;
+    text-transform:none !important;
+    font-size:18px !important;
+    font-family: "RobotoCondensed-Medium",sans-serif !important;
+    font-weight:400;
+  }
+
+
+  .submenu_stats {
+    position:absolute;
+    width:100%;
+    top:40px;
+    background-color:white;
+    border:1px solid #A6D2E2;
+    padding:20px;
+    left:0px;
+    display:none;
+    font-size:14px !important;
+
+  }
+  .submenu_stats li .nav-link {
+    padding-left:0px;
+    margin:0px;
+    font-size:18px !important;
+    text-transform:none !important;
+    font-family: "RobotoCondensed-Regular",sans-serif !important;
+  }
+  .submenu_stats li {
+     list-style-type: none;
+     xmargin-left:-20px;
+     xmargin-right:-20px;
+     border-bottom:1px none #A6D2E2;
+
+  }
+
+
+
+  .menu_stat_1 { display:block; }
+  .menu_stat_2 { display:none; }
+  .navbar-nav { background-color:white; }
+  @media only screen and (max-width: 1200px) {
+    .menu_stat_1 { display:none; }
+    .menu_stat_2 { display:block; }
+    .ppal_menu_item {
+      font-size:18px !important;
+      }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .menu_stat_1 { display:none; }
+    .menu_stat_2 { display:block; }
+    .ppal_menu_item {
+      font-size:15px !important;
+      }
+  }
+
+
+  @media only screen and (max-width: 765px) {
+    .menu_stat_1 { display:block; }
+    .menu_stat_2 { display:none; }
+    .ppal_menu_item {
+      font-size:18px !important;
+      }
+    .navbar-nav { background-color:#CEE2EC;
+      border-radius:10px;
+     }
+  }
+
+
+  .nav-link img, .menu_icon { float:left; margin-right:8px; }
+
+
+  nav a:hover { color:#173668 !important; background-color:#C8E7EA; text-decoration:none; }
+  .submenu_stats li .nav-link:hover { background-color:#fff;  border-left:4px solid #1D3F59; }
+
+
+
+  /* Cambiar el color al hacer clic */
+  a.dropdown-item:focus,
+  a.dropdown-item:active {
+      background-color: #C8E7EA !important; /* Color personalizado */
+  }
+
+
+
+
+  #itemenu_disabled:hover { background-color:white;cursor:default;color:#377D9B !important; }
+
+
+  .menu_rectangle { margin-top:-25px; margin-left:5px; width:15px;height:45px; position:absolute;border-left:1px dotted #ABB; border-bottom:1px dotted #ABC; }
+
+
+
+</style>
+
+<script>
+
+$(document).ready(function () {
+
+  function verSubMenuStat(x) {
+    document.querySelectorAll(".submenu_stats").forEach(function(element) {
+        element.style.display = "none";
+    });
+    if(x!=0) {
+      document.getElementById(x).style.display = 'block';
+    }
+  }
+  function ocultarSubMenuStat(x) {
+    document.getElementById(x).style.display = 'none';
+  }
+
+
+
+  //document.getElementById('btn_showMenuMobile').onclick = showMenuMobile;
+
+  function showMenuMobile(){
+    let navbar = document.getElementById('navbarNavCSTAT');
+    navbar.classList.toggle('show');
+  };
+
+
+
+  if(lang=="en") {
+
+    document.querySelectorAll(".dropdown-item").forEach(item => {
+        item.setAttribute("href", item.getAttribute("href").replace("lang=es", "lang=en"));
+    });
+
+    let theme_titles_menu_2 = ["Planning for development", "Public investment", "Open government", "Territorial development", "Land-use planning", "Urban development", "Urban mobility",'Follow-up, monitoring and evaluation'];
+
+    theme_titles_menu_2.forEach((item, i) => {
+      let num = i+1;
+      let div_name = 'ppal_menu_2_'+num;
+      document.getElementById(div_name).innerHTML = item;
+    });
+
+
+    let titles_menu_3 = ['Plans, programs, and instruments', 'Regulatory frameworks', 'Methodologies'];
+    titles_menu_3.forEach((item, i) => {
+      let num = i+1;
+      let div_name = 'ppal_menu_3_'+num;
+      document.getElementById(div_name).innerHTML = item;
+    });
+
+    let titles_menu_4 = ['Institutions', 'National planning systems', 'National public investment systems', 'Territorial coordination mechanisms', 'Multi-stakeholder open government forums'];
+    titles_menu_4.forEach((item, i) => {
+      let num = i+1;
+      let div_name = 'ppal_menu_4_'+num;
+      document.getElementById(div_name).innerHTML = item;
+    });
+
+    let titles_menu_7add = ['Frequently Asked Questions', 'Glossary'];
+    titles_menu_7add.forEach((item, i) => {
+      let num = i+1;
+      let div_name = 'ppal_menu_7_ar'+num;
+      document.getElementById(div_name).innerHTML = item;
+    });
+
+
+ //se agregó traducción a Notas Informativas;
+
+    let titles_menu_7 = ['News','Briefing Notes','Courses and workshops'];
+    titles_menu_7.forEach((item, i) => {
+      let num = i+1;
+      let div_name = 'ppal_menu_7_'+num;
+      let icon = '<img src="images/extlink.png" height="16" style="margin-top:-3px;margin-left:3px;" />';
+      document.getElementById(div_name).innerHTML = item+' '+icon;
+    });
+
+ // Cambiar URLs del menú 7 a versión en inglés, faltaba que llevaran al inglés (solo esos ítems)
+document.querySelector("#menu_7 a[href*='cepal_news']").setAttribute(
+  "href",
+  "https://www.cepal.org/en/list/cepal_news?title=&sort_bef_combine=date_DESC&date_from=&date_to=&news_type=2&topic=All&work_area=8190&subsidiary_body=All&country=All&related_project=All&regional_office=All"
+);
+
+document.querySelector("#menu_7 a[href*='cepal_note']").setAttribute(
+  "href",
+  "https://www.cepal.org/en/list/cepal_note?title=&sort_bef_combine=date_DESC&date_from=&date_to=&topic=All&work_area=8190&subsidiary_body=All&country=All&related_project=All&regional_office=All"
+);
+
+document.querySelector("#menu_7 a[href*='cepal_course']").setAttribute(
+  "href",
+  "https://www.cepal.org/en/activities?work_area=8190"
+);
+
+    let titles_menu_100 = ['Countries', 'Geoportal', 'News', 'Courses and workshops'];
+    titles_menu_100.forEach((item, i) => {
+      let num = i+1;
+      let div_name = 'ppal_menu_m100_'+num;
+      let icon = '<img src="images/extlink.png" height="16" style="margin-top:-3px;margin-left:3px;" />';
+      if(num==3 || num==4) {} else { icon =''; };
+      document.getElementById(div_name).innerHTML = item+' '+icon;
+    });
+
+
+    document.getElementById('ppal_menu_m100').innerHTML = 'More';
+
+
+  }
+
+
+});
+
+</script>
+
+
+
+
+
+
+</div>
+<input type="hidden" id="page">

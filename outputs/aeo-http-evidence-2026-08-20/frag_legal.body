@@ -1,0 +1,477 @@
+<div class="container">
+<div class="row">
+  <div class="col-md-12" id="breadcrumb">
+    Inicio &nbsp;&raquo;&nbsp;
+  </div>
+</div>
+</div>
+
+<link href="iframe/assets/planning_style.css?v=2025" rel="stylesheet">
+<link href="iframe/assets/table_style.css?v=2025" rel="stylesheet">
+<link href="iframe/assets/multiselect.css?v=2025" rel="stylesheet">
+<script src="iframe/funciones_ficha.js?v=2"></script>
+
+    <div class="row" style="width:101%">
+        <div class="col-md-12" id="panel_1">
+
+
+            <div id="content_list">
+              <div id="ver_en_mapa" style="float:right;margin-top:8px;"><a href="es/geoportal"  id="link_view_map" class="btn btn-primary"><span id="label_ver_en_mapa">Ver en el mapa</span> <img src="iframe/img/icon_map.png" height="24px" style="margin-top:-3px;" /></a></div>
+              <div id="general_title"></div>
+
+              <div id="filter_mutiple">
+
+                <div class="row" id="div_select_filters">
+
+                  <div class="col-md-4" style="padding-top:5px;" id="multiselect1-div">
+                    <!-- Multiselect1 -->
+                    <div class="multiselect" role="group" aria-labelledby="multiselect1-label">
+                      <div class="multiselect-header">
+                        <div class="multiselect-title" id="multiselect1-label">Áreas de gestión</div>
+                        <button class="clear-button" id="clear-multiselect1" onclick="clearSelections('multiselect1')" aria-label="Quitar filtros" aria-describedby="multiselect1-label" ><span id="label_quitar_filtros1">Quitar filtros</span><img src='images/quitar_filtro.png' style="margin-left:2px;" /></button>
+                      </div>
+                      <button class="multiselect-toggle" onclick="toggleMultiselect('multiselect1')" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect1-menu" id="multiselect1-button">
+                        <span class="label_seleccionar" id="label_seleccionar1">Seleccionar</span>
+                        <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                          <path d="M1.5 5.5l6 6 6-6"/>
+                        </svg>
+                      </button>
+                      <div class="multiselect-menu" id="multiselect1-menu" role="listbox" aria-multiselectable="true">
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4" style="padding-top:5px;" id="multiselect-div-country">
+                    <!-- Multiselect2 -->
+                    <div class="multiselect" role="group" aria-labelledby="multiselect2-label">
+                      <div class="multiselect-header">
+                        <div class="multiselect-title" id="multiselect2-label">Países</div>
+                        <button class="clear-button" id="clear-multiselect2" onclick="clearSelections('multiselect2')" aria-label="Quitar filtros" aria-describedby="multiselect2-label"><span id="label_quitar_filtros2">Quitar filtros</span><img src='images/quitar_filtro.png' style="margin-left:2px;" /></button>
+                      </div>
+                      <button class="multiselect-toggle" onclick="toggleMultiselect('multiselect2')" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect2-menu" id="multiselect2-button">
+                        <span class="label_seleccionar" id="label_seleccionar2">Seleccionar</span>
+                        <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                          <path d="M1.5 5.5l6 6 6-6"/>
+                        </svg>
+                      </button>
+                      <div class="multiselect-menu" id="multiselect2-menu" role="listbox" aria-multiselectable="true">
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4" style="padding-top:5px;">
+                    <!-- Multiselect3 -->
+                    <div class="multiselect" role="group" aria-labelledby="multiselect3-label">
+                      <div class="multiselect-header">
+                        <div class="multiselect-title" id="multiselect3-label">Normativa</div>
+                        <button class="clear-button" id="clear-multiselect3" onclick="clearSelections('multiselect3')" aria-label="Quitar filtros" aria-describedby="multiselect3-label"><span id="label_quitar_filtros3">Quitar filtros</span><img src='images/quitar_filtro.png' style="margin-left:2px;" /></button>
+                      </div>
+                      <button class="multiselect-toggle" onclick="toggleMultiselect('multiselect3')" aria-haspopup="listbox" aria-expanded="false" aria-controls="multiselect3-menu" id="multiselect3-button">
+                        <span class="label_seleccionar" id="label_seleccionar3">Seleccionar</span>
+                        <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                          <path d="M1.5 5.5l6 6 6-6"/>
+                        </svg>
+                      </button>
+                      <div class="multiselect-menu" id="multiselect3-menu" role="listbox" aria-multiselectable="true">
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-4" style="padding-top:5px;">
+                    <div class="multiselect-header">
+                      <div class="multiselect-title" id="multiselect5-label">Buscador</div>
+                      <button class="clear-button" id="clear-multiselect5" onclick="clearSelections('multiselect5')" aria-label="Quitar filtros" aria-describedby="multiselect5-label"><span id="label_quitar_filtros4">Quitar filtros</span><img src='images/quitar_filtro.png' style="margin-left:2px;" /></button>
+                    </div>
+                    <div style="margin-top:-6px;">
+                    <table width="100%">
+                      <tr>
+                        <td width="95%">
+                          <input type="text" id="search_by_words" placeholder="Buscar por palabra" onclick="seleccionarTexto()" class="form-control" style="margin-top:5px;" />
+                        </td>
+                        <td>
+                          <button id="busca_btn" style="margin-top:5px;" onclick="buscadorListado()" class="btn   btn-success">Buscar</button>
+                        </td>
+                      </tr>
+                    </table>
+                    </div>
+                  </div>
+
+
+
+                  <div id="output" aria-live="polite" style="display:none;">Seleccionados: ninguno</div>
+
+              </div>
+
+
+              <div class="row" id="div_select_filters" style="margin-top:-22px;display:none">
+
+
+                <div class="col-md-4" style="padding-top:5px;" id="cell_select_theme">
+                  <h5 id="filter_title_1"></h5>
+                  <select id="select_theme" class="form-select" style="font-size:17px;" onchange="visualizaThemes()">
+                      <option value="0">Áreas</option>
+                  </select>
+                </div>
+
+                <div class="col-md-4" style="padding-top:5px;display:none;" id="cell_select_ppi">
+                  <h5 id="filter_title_1c"></h5>
+                  <select id="select_ppi" class="form-select" style="font-size:17px; " onchange="visualizaPPI()">
+                      <option value="0"></option>
+                  </select>
+                </div>
+
+                <div class="col-md-4" style="padding-top:5px;" id="cell_select_paises">
+                  <h5 id="filter_title_1b"></h5>
+                  <select id="select_paises" class="form-select" style="font-size:17px;" onchange="visualizaPaises()">
+                      <option value="0">Países</option>
+                  </select>
+                </div>
+
+
+                <div class="col-md-4" style="padding-top:5px;" id="cell_select_tipodoc">
+                  <h5 id="filter_title_1d"></h5>
+                  <select id="select_tipodoc" class="form-select" style="font-size:17px;" onchange="visualizaTipoDoc()">
+                      <option value="0">Tipo de instrumento</option>
+                  </select>
+                </div>
+
+
+                <div class="col-md-4" style="padding-top:5px;display:none;" id="cell_select_areamet">
+                  <h5 id="filter_title_1e"></h5>
+                  <select id="select_areamet" class="form-select" style="font-size:17px;" onchange="visualizaAreaMet()">
+                      <option value="0">Área metodológica</option>
+                      <option value="0">-----------</option>
+                  </select>
+                </div>
+
+
+
+
+
+
+
+
+                </div>
+
+              </div>
+
+
+
+              <div class="row" style="margin-top:10px;">
+                  <div class="col-md-12">
+
+<!-- Se quitó display none -->
+              <div style="float:right;margin-top:0px;" id="opt_export_excel"><button id="btnExport" class="btn btn-sm btn-success">Excel ⭳</button></div>
+              <h5 class="count_resultados"><span class="texto_res" id="ficha_listado_iniciativas">Resultados</span>     (<span id="count_content2"></span>)</h5>
+
+              <input type="hidden" id="filter_selected" class="form-control" value="0" />
+              <div style="display:none" id="display_filters" ></div>
+
+              <table width="100%" id="filtros_tabla" style="margin-bottom:10px; ">
+
+
+              </table>
+
+
+
+
+
+              <div id="cargando_datos"><img src="images/loading.gif" alt="" />&nbsp;&nbsp;<span id="general_layout_title_loading"></span>...</div>
+                <div>
+                  <table width="100%" border="0" cellpadding="5" id="content_list_table">
+                  </table>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div id="content_detail" style="display: none;margin-top:10px;">
+
+                          <div class="borde_ficha_gaussian_0">
+
+
+                            <div class="row col_3_row" id="option_back_list">
+                                <div class="col-md-12 col_3_div"  >
+                                    <div class="col_3 ">
+                                      <p onclick="view_list_detail(1,0)" class="view_iapt" id="view_iapt"><span class="view_iapt_arrow"><</span> <span id="ficha_volver"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row col_3_row" style="padding:0px; margin-left:-5px;">
+                                <div class="col-md-12 col_3_div"  >
+                                    <div id="col_bg_grey" class="col_3 " style="padding: 0px 0%;">
+
+
+                                      <div id="detail_name"></div>
+                                      <div id="detail_date" style="margin:20px 0px"></div>
+                                      <div id="detail_institution"></div>
+                                      <div id="detail_country"></div>
+
+
+
+
+                                      <div class="row">
+                                        <div class="col-md-8">
+                                          <div id="norm_description"></div>
+
+                                          <div id="all_ciclo_fases_ip" style="display:none">
+                                          <div class="title_fases" id="title_fases_proyecto"><img src="iframe/img/icon_ficha_actores/icon_ciclo_1.png" /> &nbsp;&nbsp;&nbsp; Fases del CICLO DE PROYECTO de Inversión Pública en las que participa</div>
+                                          <div class="boxes_fases">
+                                            <div class="box_fase" id="cfpy1"><img src="iframe/img/icon_ficha_actores/ciclo_proy_1.png" /><div>Formulación</div></div>
+                                            <div class="box_fase" id="cfpy2"><img src="iframe/img/icon_ficha_actores/ciclo_proy_2.png" /><div>Evaluación Ex Ante</div></div>
+                                            <div class="box_fase" id="cfpy3"><img src="iframe/img/icon_ficha_actores/ciclo_proy_3.png" /><div>Selección</div></div>
+                                            <div class="box_fase" id="cfpy4"><img src="iframe/img/icon_ficha_actores/ciclo_proy_4.png" /><div>Ejecución</div></div>
+                                            <div class="box_fase" id="cfpy5"><img src="iframe/img/icon_ficha_actores/ciclo_proy_5.png" /><div>Evaluación Ex Post</div></div>
+                                          </div>
+                                          <br clear="all" />
+
+                                          <div class="title_fases" id="title_fases_politica"><img src="iframe/img/icon_ficha_actores/icon_ciclo_2.png" /> &nbsp;&nbsp;&nbsp;Fases del CICLO DE POLÍTICA de Inversión Pública en las que participa</div>
+                                          <div class="boxes_fases">
+                                            <div class="box_fase" id="cfpl1"><img src="iframe/img/icon_ficha_actores/ciclo_pol_1.png" /><div>Planeación</div></div>
+                                            <div class="box_fase" id="cfpl2"><img src="iframe/img/icon_ficha_actores/ciclo_pol_2.png" /><div>Presupuestación</div></div>
+                                            <div class="box_fase" id="cfpl3"><img src="iframe/img/icon_ficha_actores/ciclo_pol_3.png" /><div>Auditoría Ex Post</div></div>
+                                          </div>
+                                        </div>
+
+
+                                        </div>
+                                        <div class="col-md-4" style="padding-left:40px;">
+
+
+                                          <div class="bg_lateral_derecho">
+                                            <div class="bg_lateral_derecho_title" id="detail_label_pais">País</div>
+                                            <div class="bg_lateral_content" id="bg_lateral_content_pais"></div>
+                                            <div class="bg_lateral_content" id="bg_lateral_content_ver_ficha_pais"></div>
+
+                                            <div class="bg_lateral_derecho_title" style="margin-top:10px;" id="detail_label_tema">Temas</div>
+                                            <div class="bg_lateral_content" id="bg_lateral_content_temas"></div>
+                                            <div class="bg_lateral_content" id="bg_lateral_content_subtemas"></div>
+
+                                            <div class="bg_lateral_derecho_title" id="detail_label_tipo_instr">Tipo instrumento</div>
+                                            <div class="bg_lateral_content" id="bg_lateral_content_tipo_inst"></div>
+                                            <div class="bg_lateral_content" id="bg_lateral_content_ver_todas_inst"></div>
+
+
+                                            <div class="bg_lateral_derecho_title" id="detail_label_extlink">Link externo</div>
+                                            <div class="bg_lateral_content" id="bg_lateral_content_link_externo"></div>
+
+                                            <div class="bg_lateral_derecho_title" id="detail_label_down">Descarga</div>
+                                            <div class="bg_lateral_content" id="bg_lateral_content_link_descarga"></div>
+
+                                            <br/>
+                                            <br/>
+                                          </div>
+
+                                          <div id="inst_theme"></div>
+                                        </div>
+                                      </div>
+
+
+
+
+
+
+                                      <div id="detail_year_temp_scale" style="display:none">
+                                        <div class="row">
+
+                                          <div class="col-md-5" id="detail_temp">
+                                          </div>
+                                          <div class="col-md-4" id="detail_scale">
+                                          </div>
+                                        </div>
+
+                                        <div class="row" style="margin-top:20px;">
+                                          <div class="col-md-3" id="detail_vigen">
+                                          </div>
+                                          <div class="col-md-5" id="detail_down">
+                                          </div>
+                                          <div class="col-md-4" id="detail_map">
+                                          </div>
+                                        </div>
+
+                                      </div>
+
+
+
+                                      <div class="detail_content_title" id="detail_ods" style="display:none">
+                                      </div>
+
+
+
+
+                                      <div id="tabs_all"></div>
+
+                                      <br/>
+                                      <br/>
+                                      <br/>
+                                      <div class="row">
+                                        <div class="col-md-3">
+                                          <div id="detail_url_snip"></div>
+                                          <div id="detail_ver_todos_planes"></div>
+                                          <div id="detail_ver_todas_normativas"></div>
+                                        </div>
+                                      </div>
+
+
+
+                                      <br/><br/><br/>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                            <br />
+
+                          </div>
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <div id="precarga_iconos"></div>
+    <div id="precarga_iconos_withe"></div>
+
+
+
+    <script>
+        const d1 = new Date();
+        let itime = d1.getTime();
+        var scriptElm = document.createElement('script');
+        scriptElm.src = `iframe/marcos-normativos/normativas.js?v=${itime}`;
+        document.body.appendChild(scriptElm);
+
+
+    </script>
+
+
+
+
+
+
+
+    <script>
+
+
+    function seleccionarTexto() {
+      let plzField = document.getElementById("search_by_words");
+      plzField.select();
+      document.getElementById("if_selected").value=1;
+    }
+
+
+    $(document).ready(function() {
+      let plzField = document.getElementById("search_by_words");
+      plzField.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          buscadorListado();
+        }
+
+        if (event.keyCode === 46 || event.keyCode === 8) {
+            let if_selected = document.getElementById("if_selected").value;
+            if(if_selected==1) {
+              buscadorListado();
+            }
+        }
+        document.getElementById("if_selected").value=0;
+      });
+
+
+
+
+
+
+
+    });
+
+
+
+
+
+    document.querySelector('#general_title').addEventListener('mouseenter', () => {
+      document.querySelectorAll('select').forEach(select => {
+        select.blur();
+      });
+    });
+
+
+
+
+  </script>
+
+
+
+
+  <script>
+    function iluminarTexto() {
+      const texto = document.getElementById('count_content2');
+
+
+      // Aplica clase para iluminar
+      texto.classList.add('iluminar');
+
+      // Espera un momento y luego inicia el fade a blanco
+      setTimeout(() => {
+        texto.classList.remove('iluminar');
+      }, 800); // tiempo que permanece iluminado antes de iniciar el fade
+    }
+  </script>
+
+
+
+<input type="hidden" id="if_selected" value="0" />

@@ -1,0 +1,91 @@
+<span id="link_lang3"></span>
+<div class="bg_dotted">
+<div class="topline" style="background-color:#ffffff;border-bottom:1px none #eee;" >
+  <div id="header_links" class="container" >
+    <div class="row">
+        <div class="col-sm-5 top-item" style="padding-left:20px;"  >
+           <img src="images/isotipo-un.png" style="margin-top:-3px;" width="22" height="22" /> <span id="header_top_l"></span>
+        </div>
+        <div class="col-sm-7 top-item" align="right" id="header_top_r" >
+
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="header_shadow">
+
+<div id="header_logo" class="container" style="padding-bottom:10px;">
+  <div class="row">
+      <div class="col-sm-12">
+        <div class="logo-r" id="logo_r"><a href='https://www.cepal.org/es'><img id="logo_cepal" src="images/eclac-logo-es.svg" height="40px" border='0'  /></a> <img src="images/logo-ilpes60-es.svg" height="80px" style="margin-left:15px;display:none" /> </div>
+        <div class="logo-l"><img src="images/logo_orp_bgt.png"  height="70px"  border='0'  /></div>
+
+
+
+        <div class="cabecera-titulo-3" id="header_title_2">Observatorio Regional de Planificación para el Desarrollo de América Latina y el Caribe</div>
+
+
+      </div>
+  </div>
+</div>
+</div>
+
+
+</div>
+
+<style type="text/css">
+
+.header_bg {
+  background: url('images/bg23.jpg') repeat center ;
+  background-size: auto 100% ;
+}
+
+.header_shadow {
+  background: url('images/bg/div.jpg') repeat-x;
+
+}
+
+
+
+
+@font-face { font-family: "SourceSansSemibold"; src: url(assets/SourceSansPro-Semibold.otf); }
+@font-face { font-family: "SourceSansRegular"; src: url(assets/SourceSansPro-Regular.otf); }
+@font-face { font-family: "OswaldRegular"; src: url(assets/Oswald-Regular.ttf); }
+@font-face { font-family: "OswaldLight"; src: url(assets/Oswald-Light.otf); }
+@font-face { font-family: "OswaldExtraLight"; src: url(assets/Oswald-ExtraLight.ttf); }
+@font-face { font-family: "SourceSansLight"; src: url(assets/SourceSansPro-Light.ttf); }
+@font-face { font-family: "RobotoCondensed-Regular"; src: url(assets/RobotoCondensed-Regular.ttf); }
+@font-face { font-family: "RobotoCondensed-Medium"; src: url(assets/RobotoCondensed-Medium.ttf); }
+@font-face { font-family: "RobotoCondensed-SemiBold"; src: url(assets/RobotoCondensed-SemiBold.ttf); }
+
+
+
+li.dropdown:hover .dropdown-menu{ display: block; }
+.topline{ font-family: "SourceSansRegular",sans-serif !important; background-color:#FFFFFF; font-size:13px;font-weight:400; border-bottom:1px none #d6d6d6;  }
+.top-item { padding:5px 0px 8px 0px; }
+.top-item a { color:#244E60; text-decoration:none; }
+.top-item a:hover { color:#244E60; text-decoration:underline;}
+.top-item .activo { color:#A21C43; text-decoration:none; }
+
+
+.cabecera-titulo-map { font-family: "SourceSansRegular",sans-serif !important;
+font-weight: normal; font-size:20px; margin-left:0px; margin-top:0px; color:#0C4A61;}
+.cabecera-titulo, .cabecera-titulo a { font-family: "SourceSansRegular",sans-serif !important;
+font-weight: normal; font-size:16px; margin-left:0px; margin-top:-5px; color:#346; text-decoration:none;}
+.cabecera-titulo-3 { font-family: "RobotoCondensed-Medium",sans-serif !important;
+font-size:30px; margin-left:0px; margin-top:19px; color:#0C4A61; margin-bottom:10px;}
+
+.cabecera-subtitulo { font-family: "OswaldRegular",sans-serif !important; font-weight: 400; font-size:30px; margin-left:20px; color: #019E9A;margin-top:-10px; margin-top: -5px;}
+.logo-r { float:right; margin-top:19px; margin-right:-20px; }
+.logo-l { float:left; margin-right:15px; margin-left:0px; margin-top:5px; }
+
+
+
+.navbar-nav {  border:0px solid #ff0000;  }
+.nav-item {   font-size:0.9em; xbackground-color:#FFFFFF; color:#0E314B !important;   font-family: "SourceSansRegular",sans-serif !important; text-transform:uppercase !important;  }
+.nav-link a { color:#0E314B !important;  }
+
+</style>

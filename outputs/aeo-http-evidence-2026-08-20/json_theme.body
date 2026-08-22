@@ -1,0 +1,50 @@
+[
+  {
+      "theme": "0",
+      "context": "lac",
+      "description_es": "El Observatorio Regional de Planificación para el Desarrollo es un espacio dinámico de análisis, información y construcción colectiva de conocimiento para los gobiernos, la academia, el sector privado y la sociedad civil, acerca de la planificación y la gestión pública para el desarrollo en América Latina y el Caribe.",
+      "description_en": "The Regional Observatory for Development Planning is a dynamic space for analysis, information, and collective knowledge-building for governments, academia, the private sector, and civil society on planning and public management for development in Latin America and the Caribbean."
+  },
+  {
+      "theme": "1",
+      "context": "lac",
+      "description_es": "La planificación en América Latina y el Caribe ha cobrado un renovado impulso en los últimos años, reflejándose en la puesta en marcha de procesos exitosos de planificación para el desarrollo en todos los niveles del Estado.\r\n\\n\\n\r\nLa planificación gubernamental constituye un ejercicio técnico y político que permite definir prioridades, coordinar acciones y orientar recursos hacia metas comunes. A través de ella se trazan rutas para transformar la realidad y enfrentar los desafíos del desarrollo. Planificar es una apuesta estratégica por el presente y el futuro de nuestras sociedades.",
+      "description_en": "Planning in Latin America and the Caribbean has experienced significant progress in recent years, reflected in the implementation of successful development planning processes at all levels of government. \r\n\\n\\n\r\n Government planning is both a technical and political exercise that makes it possible to define priorities, coordinate actions, and allocate resources toward common goals. It outlines pathways to transform reality and address development challenges. To plan is to make a strategic commitment to the present and future of our societies."
+  },
+  {
+      "theme": "2",
+      "context": "lac",
+      "description_es": "La inversión pública es un motor clave para el desarrollo económico y social, ya que impulsa la creación de infraestructura básica, contribuye al acceso a servicios esenciales y promueve el crecimiento inclusivo. \r\n\\n\\n\r\n La inversión contribuye al crecimiento económico y a la generación de empleo, además de reforzar la resiliencia económica frente a crisis externas y la resiliencia ambiental frente a la crisis del cambio climático. En un contexto de desigualdad, la inversión pública es una herramienta estratégica para reducir brechas estructurales,  territoriales, sociales y de género, permitiendo avanzar hacia un desarrollo inclusivo y sostenible.",
+      "description_en": "Public investment is a key driver of economic and social development, as it promotes the creation of basic infrastructure, fosters access to essential services, and supports inclusive growth. \r\n\\n\\n\r\n This type of investment not only contributes to job creation but also strengthens economic resilience to external shocks by reinforcing national productive systems. In a context of inequality, public investment can serve as a strategic tool to reduce territorial, social, and gender gaps, improving the living conditions of the most vulnerable populations."
+  },
+  {
+      "theme": "3",
+      "context": "lac",
+      "description_es": "América Latina y el Caribe está llevando a cabo una profunda modernización de la gestión pública para lograr gobiernos más efectivos, eficientes y abiertos para el beneficio de la ciudadanía.  \r\n\\n\\n\r\n Un gobierno abierto se caracteriza por ser transparente y promover participación y esquemas de colaboración, con el fin de mejorar la calidad de los servicios públicos. ",
+      "description_en": "Latin America and the Caribbean are carrying out a deep modernization of public management to achieve more effective, efficient and open governments for the benefit of citizens.  \r\n\\n\\n\r\n An open government is characterized by being transparent and promoting participation and collaboration schemes, in order to improve the quality of public services. "
+  },
+  {
+      "theme": "4",
+      "context": "lac",
+      "description_es": "El desarrollo territorial se entiende como un proceso de construcción social del entorno, impulsado por la interacción entre las características geofísicas, las iniciativas individuales y colectivas de distintos actores y la operación de las fuerzas económicas, tecnológicas, sociopolíticas, culturales y ambientales en el territorio.",
+      "description_en": "Territorial Development is conceptualized as a social construct of the environment, propelled by the interplay between geophysical attributes, the individual and collective initiatives of diverse actors, and the dynamics operating within the territory: economic, technological, sociopolitical, cultural, and environmental."
+  },
+  {
+      "theme": "5",
+      "context": "lac",
+      "description_es": "En América Latina y el Caribe, el desarrollo y el ordenamiento territorial han cobrado creciente relevancia como pilares para alcanzar un desarrollo sostenible, equilibrado e inclusivo. El ordenamiento territorial permite gestionar de manera integrada el uso del suelo y los recursos sociales, económicos y ambientales de un territorio, mientras que el desarrollo territorial desde una mirada nacional tiene el objetivo de reducir brechas inter e intrarregionales en materia económica, social, medioambiental y política.  \r\n\\n\\n\r\n Juntos, permiten reducir desigualdades espaciales, mejorar la calidad de vida y fortalecer la resiliencia frente a desafíos como la urbanización acelerada y el cambio climático.",
+      "description_en": "In Latin America and the Caribbean, territorial development and land-use planning have gained increasing relevance as pillars for achieving sustainable, balanced, and inclusive development. Land-use planning allows for the integrated management of land and the social, economic, and environmental resources of a territory, while territorial development, from a national perspective, aims to reduce inter- and intraregional gaps in economic, social, environmental, and political dimensions. \r\n\\n\\n\r\n Together, they contribute to reducing spatial inequalities, improving quality of life, and strengthening resilience to challenges such as accelerated urbanization and climate change."
+  },
+  {
+      "theme": "6",
+      "context": "lac",
+      "description_es": "El 80% de la población de América Latina y el Caribe vive hoy en ciudades. Este espacio es el ámbito territorial en el cual se ven reflejadas las relaciones económicas, sociales y políticas que establece la población que lo habita.  \r\n\\n\\n\r\n La planificación urbana es clave para enfrentar los desafíos de las ciudades de la región, como la desigualdad, la expansión desordenada y el cambio climático. Promover una planificación inclusiva y sostenible permite mejorar la calidad de vida, garantizar el acceso equitativo a servicios e infraestructura, y avanzar hacia ciudades resilientes, en línea con la Agenda 2030 y la Nueva Agenda Urbana.",
+      "description_en": "An 80% of the population of Latin America and the Caribbean now lives in cities. These urban spaces are the territorial setting where the economic, social, and political relationships established by the population are reflected. \r\n\\n\\n\r\n Urban planning is key to addressing the challenges faced by cities in the region, such as inequality, unplanned expansion, and climate change. Promoting inclusive and sustainable planning helps improve quality of life, ensure equitable access to services and infrastructure, and move toward resilient cities, in line with the 2030 Agenda and the New Urban Agenda."
+  },
+  {
+      "theme": "7",
+      "context": "lac",
+      "description_es": "La movilidad urbana sostenible se entiende como un enfoque integral que busca garantizar el acceso seguro, eficiente y equitativo a los sistemas de transporte en las ciudades, minimizando el impacto ambiental y promoviendo la inclusión social. \r\n\\n\\n\r\n Este concepto reconoce la movilidad como un derecho fundamental para el desarrollo urbano, que debe facilitar la conectividad de las personas con oportunidades laborales, educativas y servicios esenciales, especialmente para los sectores más vulnerables.",
+      "description_en": "Sustainable urban mobility is understood as a comprehensive approach that seeks to ensure safe, efficient, and equitable access to transportation systems in cities, while minimizing environmental impact and promoting social inclusion. \r\n\\n\\n\r\n This concept recognizes mobility as a fundamental right for urban development, aimed at enabling people e-especially the most vulnerable groups— to connect with job opportunities, education, and essential services."
+  }
+]

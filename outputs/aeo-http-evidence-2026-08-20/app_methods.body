@@ -1,0 +1,1838 @@
+
+let languageGlobal = "es"; // idioma por defecto
+
+//let get_lang = getQueryVariable('lang');
+let get_lang = lang;
+if(get_lang) {
+  languageGlobal = get_lang;
+}
+
+if(country) { document.getElementById('multiselect-div-country').style.display = "none"; };
+
+const theme_colors = ['#00BBD4','#BA2E53','#173668','#93B54E','#39855A','#EA8B35','#DDA31C','#28ADB5'];
+const theme_colors_light = ['#1A345F','#0AB0C7','#B43A5C','#1A345F','#8DA64D','#3A7B58','#E6873D','#D79B1E'];
+
+const theme_code = ["development_planning","public_investment","open_government","territorial_development","territorial_planning","urban_development","mobility"];
+
+const theme_titles = ['Metodologías','Methodologies','Metodologías'];
+
+let theme_areas_titles = ['Planificación para el desarrollo','Inversión pública','Gobierno abierto','Desarrollo territorial','Ordenamiento territorial','Desarrollo urbano','Movilidad urbana','Seguimiento, monitoreo y evaluación'];
+if(get_lang=="en") {
+  theme_areas_titles = ["Planning for development", "Public investment", "Open government", "Territorial development", "Land-use planning", "Urban development", "Urban mobility",'Follow-up, monitoring and evaluation'];
+}
+
+let link_areas_folder = ["planificacion-para-el-desarrollo","inversion-publica","gobierno-abierto","desarrollo-y-ordenamiento-territorial","desarrollo-urbano","movilidad-urbana"];
+if(lang=="en") {
+link_areas_folder = ["planning-for-development","public-investment","open-government","land-use-planning","urban-development","urban-mobility"];
+}
+
+
+let language_number = 0;
+if(languageGlobal=="es") {
+   language_number = 0;
+} else if(languageGlobal=="en") {
+  language_number = 1;
+}
+
+
+
+let load_one_time=0;
+let load_one_time_function=0;
+
+let enFicha = false;
+
+var ficha_iapt_filters_labels = {
+  filter_opt_1: ['Filtros', 'Filters', 'Filtros'],
+  filter_opt_2_v2: ['Borrar todos los filtros', 'Remove all filters', 'Remover todos os filtros'],
+
+
+}
+
+
+
+
+
+var ficha_iapt = {
+    ficha_listado_iniciativas: ['Resultados', 'Results', 'Resultados'],
+    ficha_volver: ['Volver al listado', 'Back to List', 'Voltar à lista'],
+    ficha_pais: ['País', 'Country', 'País'],
+    ficha_ver_en_mapa: ['Ver en el mapa.', 'See on the map.', 'Ver no mapa.'],
+    ficha_t1a: ['Nombre', 'Name', 'Nompre'],
+
+    general_layout_title_loading: ['Cargando datos','Loading data','Carregando dados'],
+
+
+    busca_btn: ['Buscar', 'Search', 'Buscar'],
+    filter_title_5_info: ['Buscar por título, descripción o división subnacional', 'Search by title, description or subnational division', 'Pesquise por título, descrição ou divisão subnacional'],
+    ficha_pesona_responsable: ['Persona responsable','Responsible person','Pessoa responsável'],
+
+
+
+    label_ver_en_mapa: ['Ver en el mapa','View on map'],
+
+    "multiselect1-label": ['Áreas de gestión pública','Public Management Areas'],
+    "multiselect2-label": ['Países','Countries'],
+    "multiselect3-label": ['Áreas metodológicas','Methodology Areas'],
+    "multiselect4-label": ['Tipo de documento','Document Type'],
+    "multiselect5-label": ['Buscador','Search by words'],
+
+
+
+}
+
+$.each(ficha_iapt, function (i, html_content) {
+    $("#" + i).html(html_content[0 + language_number]);
+});
+
+
+if(lang=="en") {
+  document.getElementById("search_by_words").placeholder = "Search by words";
+
+
+  document.querySelectorAll(".label_quitar_filtros").forEach(function(span) {
+    span.innerHTML = "Clear filters";
+  });
+
+  document.querySelectorAll(".label_seleccionar").forEach(function(span) {
+    span.innerHTML = "Select";
+  });
+
+}
+
+
+//Traducciones
+let tabla_title = ["País","Área","Documento","Fecha","Autor Institucional","Área metodológica","Link externo","Descarga"];
+if(get_lang=="en") {
+tabla_title = ["Country","Areas.","Document","Date","Authoring institution","Methodology Area","External Link","Download"];
+}
+
+
+
+
+
+
+let get_id = getQueryVariable('id');
+
+let get_id_iso = verificarIsoPais(get_id);
+
+if(get_id_iso) {
+  document.getElementById('div_select_filters').style.display = "none";
+}
+
+
+let theme_name = '';
+let color_table_head='#103B58';
+let get_url_theme = getQueryVariable('theme');
+
+
+if(get_url_theme>0) {
+  let theme_number = get_url_theme-1;
+  theme_name = theme_code[theme_number];
+  color_table_head=theme_colors[theme_number];
+
+
+  $("#cell_select_theme").hide();
+  //$("#cell_select_paises").show();
+
+  let icon_theme_title = '<img style="margin-top:0px;margin-right:10px;margin-top:-5px;" src="images/icon_menu/icon'+get_url_theme+'.png"  />';
+
+
+  document.getElementById('general_title').innerHTML = "<div class='general_title'>"+icon_theme_title+theme_titles[language_number]+"</div>";
+
+  $("#multiselect1-div").hide();
+
+
+
+  let link_teme_breadcrumb=link_areas_folder[theme_number];
+  document.getElementById('breadcrumb').innerHTML = '<a href="es">Inicio</a> &nbsp;&raquo;&nbsp; Áreas de gestión pública &nbsp;&raquo;&nbsp; <a target="_parent" href="es/'+link_teme_breadcrumb+'">'+theme_areas_titles[theme_number]+'</a>  &nbsp;&raquo;&nbsp;  <a href="es/metodologias">Metodologías</a>';
+
+  if(get_lang=="en") {
+    document.getElementById('breadcrumb').innerHTML = '<a href="en">Home</a> &nbsp;&raquo;&nbsp; Public management areas &nbsp;&raquo;&nbsp; <a target="_parent" href="en/'+link_teme_breadcrumb+'">'+theme_areas_titles[theme_number]+'</a>  &nbsp;&raquo;&nbsp;  <a href="en/methodologies">Methodologies</a>';
+  }
+
+
+
+
+
+} else {
+  get_url_theme=0;
+
+  document.getElementById('general_title').innerHTML = "<div class='general_title'>Metodologías</div>";
+
+  if(get_lang=="en") {
+    document.getElementById('general_title').innerHTML = "<div class='general_title'>Methodologies</div>";
+  }
+
+
+  document.getElementById('breadcrumb').innerHTML = 'Inicio &nbsp;&raquo;&nbsp; Recursos de gestión pública &nbsp;&raquo;&nbsp; <a href="es/metodologias">Metodologías</a>';
+
+  if(lang=="en") {
+    document.getElementById('breadcrumb').innerHTML = 'Home &nbsp;&raquo;&nbsp; Public management areas &nbsp;&raquo;&nbsp;  <a href="en/methodologies">Methodologies</a> ';
+  }
+
+
+}
+
+
+
+
+let responseDataInstitutions_result;
+
+loadAPIInstitutionsMetodologias();
+
+function loadAPIInstitutionsMetodologias() {
+let hexDate_inst = new Date().getTime();
+let dataset_token='aMXsEC6SyQngvcTa3fSC93';
+let filtros_fields='&fields=["_id","name_es","name_en","has_parent","parent_id"]';
+
+fetch('https://api-kobo.cepal.org/api-kobo/data?dataset='+dataset_token+filtros_fields)
+  .then(response => response.json())
+  .then(json => {
+      responseDataInstitutions_result = json.results; // para bloque links (function nombreDesdeID())
+      loadAPIContentGlobal();
+  })
+  .catch((error) => {
+      console.error('Error al leer api instituciones', error);
+  });
+};
+
+
+
+let responseDataGlobal;
+let responseDataGlobal_result;
+
+
+
+function loadAPIContentGlobal() {
+
+var hexDate = new Date().getTime();
+var dataset_token='agFKiPAwFWfTF2Zfeh9UN9';
+var filter_by_query='&query={"_validation_status.label":"Approved"}';
+
+fetch('https://api-kobo.cepal.org/api-kobo/data?dataset='+dataset_token+'&content=1&survey=1'+filter_by_query)
+    .then(response => response.json())
+    .then(json => {
+        responseDataGlobal = json;
+        responseDataGlobal_result = json.results;
+        responseDataGlobal_result = calculationJson(responseDataGlobal_result);
+
+        showData('all','all');
+
+        editColorScroll(color_table_head);
+
+    })
+    .catch((error) => {
+        console.error('Error al importar el archivo', error);
+    });
+
+  }
+
+
+
+
+
+
+  function showData(type_filter,filter) {
+
+      let results = responseDataGlobal_result;
+
+
+        //ordena por pais a-z con alc al final y, como segundo criterio, por fecha reciente
+        results.sort(function(a, b) {
+
+          const dateA = new Date(a.date);
+          const dateB = new Date(b.date);
+          return dateB - dateA; // más reciente primero
+        });
+
+
+
+      if(get_url_theme>0) {
+        let code_theme_filter = theme_code[get_url_theme-1];
+        //results = results.filter(x => x.thematic == code_theme_filter);
+
+        results = results.filter(x =>
+          x.thematic?.split(' ').includes(code_theme_filter)
+        );
+
+
+
+      }
+
+
+
+
+
+      //filta por select
+      let filtro_actual = $("#filter_selected").val();
+
+      //puse || [] en el filtro que de desabilitó en el html
+      const option_temas = extraerValoresPorClave(filtro_actual, "thematic");
+      const paises = extraerValoresPorClave(filtro_actual, "country"); // ["chl", "col"]
+      //const option_areas_met = extraerValoresPorClave(filtro_actual, "methodologic_area")|| [];
+      const option_typedoc = extraerValoresPorClave(filtro_actual, "publication_type");
+
+
+      if(option_temas.length>0) {
+        results = results.filter(x =>
+          x.thematic?.split(' ').some(x => option_temas.includes(x))
+        );
+      }
+
+      if(paises.length>0) {
+        results = results.filter(x =>
+          x.country?.split(' ').some(x => paises.includes(x))
+        );
+      }
+
+      /* if(option_areas_met.length>0) {
+        results = results.filter(x =>
+          x.methodologic_area?.split(' ').some(x => option_areas_met.includes(x))
+        );
+      }
+ */
+      if(option_typedoc.length>0) {
+        results = results.filter(x =>
+          x.publication_type?.split(' ').some(x => option_typedoc.includes(x))
+        );
+      }
+
+
+
+
+
+      let array_filters = filtro_actual.split(";");
+      array_filters.forEach((item, i) => {
+        let array_filters_type = item.split(",");
+          let type = array_filters_type[0];
+          let name = array_filters_type[1];
+
+
+          if(get_id>0) {
+            //results = results.filter(x => x._id == get_id);
+          }
+
+
+          if(country) {
+            results = results.filter(x => x.country == country);
+          }
+
+
+
+          if(type=="busca") {
+            var palabras = name.toLowerCase().split(" ");
+
+            results = results.filter(x =>
+                palabras.every(y =>
+                    (x.title_es && x.title_es.toLowerCase().includes(y)) ||
+                    (x.title_en && x.title_en.toLowerCase().includes(y)) ||
+                    (x.autor_es && x.autor_es.toLowerCase().includes(y))
+
+                )
+            );
+          }
+
+      });
+
+
+
+
+      let results_count = results.length;
+
+
+
+      if(results_count>0) {
+
+      }
+      loadDataToSelect(results,'thematic','select_theme','Todas las áreas de gestión pública');
+
+      loadDataToSelect(results,'country','select_paises','Países');
+
+      loadDataToSelect(results,'publication_type','select_tipodoc','Tipo Documento');
+
+      //loadDataToSelect(results,'methodologic_area','select_areamet','Áreas metodológicas');
+
+
+      loadDataToSelect_multiple(results,'thematic','multiselect1-menu','Todas las áreas de gestión pública');
+      loadDataToSelect_multiple(results,'country','multiselect2-menu','Todos los países');
+      //loadDataToSelect_multiple(results,'methodologic_area','multiselect3-menu','Todas las áreas metodológicas');
+      loadDataToSelect_multiple(results,'publication_type','multiselect4-menu','Todas los tipos de documento');
+      load_one_time_function=1; //carga una sola vez para select multiples
+
+
+
+      let var_0 = `_id`;
+
+      let var_2;
+      let var_2_en;
+
+      var_2 = `title_es`;
+      var_2_en = `title_en`;
+
+
+      let list_content='';
+      let list_char_content='';
+
+
+      let td_theme = '<td width="4%">'+tabla_title[1]+'</td>';
+      if(get_url_theme>0) {
+         td_theme = '';
+      }
+      td_theme = '';
+
+
+        list_content += '<thead><tr style="background-color:'+color_table_head+';color:white;font-size:14px;width:99.99%;font-weight:bold; display:table;border-bottom:1px solid white;">'+
+        '<td width="4%">'+tabla_title[0]+'</td>'+
+        td_theme+
+        '<td width="35%">'+tabla_title[2]+'</td>'+
+        '<td width="11%">'+tabla_title[3]+'</td>'+
+        '<td width="19%">'+tabla_title[4]+'</td>'+
+        '<td width="12%">'+tabla_title[5]+'</td>'+
+        '<td width="7%">'+tabla_title[6]+'</td>'+
+        '<td width="7%">'+tabla_title[7]+'</td>'+
+
+
+        '</tr></thead>'+
+        '<tbody style="overflow-y: scroll;max-height:600px;display:block;width:100%;border:5px none red;" >'+
+        '';
+
+
+
+
+
+
+
+
+      let number_theme_icon = get_url_theme;
+
+
+      let id_last_content;
+      countGlobalResultsFilter=0;
+      results.forEach((x, i) => {
+
+          //Icono 1 País
+
+          let data_iso_country = x['country'];
+          if(!data_iso_country) {
+            data_iso_country = 'lac';
+          }
+
+          let iso_lowercase = data_iso_country.toLowerCase();
+
+          let coutry_name_label = getLabelFromJson(iso_lowercase);
+
+
+          let label_icon_country = iso_lowercase;
+          let icon_1_flag = '<img src="iframe/img/flags/'+iso_lowercase+'.png" height="35px"  data-toggle="tooltip" data-placement="top" title="'+coutry_name_label+'"  />   ';
+
+          let nombre_plan = x[var_2];
+
+          if(!nombre_plan || get_lang=="en") {
+            nombre_plan = x[var_2_en];
+          }
+
+
+          let original_language = x['document_lang'];
+          let tag_name_lang='';
+          if(original_language) {
+            if(original_language!=get_lang) {
+              tag_name_lang = "&nbsp;<span class='original_language' title='idioma original / original language'>("+original_language+")</span>";
+            }
+          }
+
+
+
+            let theme_td_label = x['thematic'];
+            if(theme_td_label) {
+
+              theme_td_label = theme_td_label.trim();
+
+              let toma_primer_valor_label = theme_td_label.split(" ")[0];
+
+              //var number_index_theme = theme_code.indexOf(theme_td_label);
+              var number_index_theme = theme_code.indexOf(toma_primer_valor_label);
+
+
+              var name_theme_label_td = getMultiCodeFromJsonTags(theme_td_label);
+
+              var number_index_theme=number_index_theme+1;
+
+              var data_instrumento = '<td width="4%" valign="top" style="text-align:center;">'+
+              '<div class="contenedor-imagen">'+
+              '<img src="images/icon_menu/icon'+number_index_theme+'.png" height="36px" style="border-radius:20px"   />'+
+              '<img src="images/icon_menu/icon_transparent.png" height="36px" class="imagen-superpuesta"  data-toggle="tooltip" data-placement="top"  >'+
+              '</div>'+
+              '</td>';
+
+
+            } else {
+              var number_index_theme = 0;
+              var name_theme_label_td = '';
+              var data_instrumento = '<td width="4%"></td>';
+            }
+
+            var data_instrumento = '';
+
+
+            if(get_url_theme>0) {
+              var data_instrumento = '';
+            }
+
+
+            let publication_type = x['publication_type'];
+
+            let fecha = x['date'];
+            if(fecha) {
+              if(languageGlobal=="en") {
+                fecha = formatDateToMonthYear(fecha,"en");
+              } else {
+                fecha = formatDateToMonthYear(fecha);
+              }
+            }
+            let autor = x['autor_es'];
+            if(get_lang=='en') {
+              autor = x['autor_en'] ?? autor;
+            }
+
+            /* let area_met = x['methodologic_area'];
+            if(area_met) {
+              area_met = getLabelFromJson(area_met);
+            } else {
+              area_met='';
+            } */
+
+            let tipo_met = x['methodologic_type'];
+            let tipo_met_label='';
+            if(tipo_met) {
+              //console.log(tipo_met);
+              tipo_met_label = getMultiCodeFromJson(tipo_met);
+              //console.log("getMultiCodeFromJson:"+tipo_met_label);    //exante expost
+              //tipo_met = getLabelFromJson(tipo_met);
+              tipo_met_label = ` (${tipo_met_label})`;
+            }
+
+
+            let label_doc_type ='';
+            if(publication_type=="docgob") {
+              label_doc_type ='Gobierno';
+            } else if(publication_type=="doccepal") {
+              label_doc_type ='CEPAL';
+            }
+
+
+
+
+            let link_documento='';
+            let link_documento_0 = x['link'];
+            if(link_documento_0) {
+              link_documento = x['link'][0]['link/link_url'];
+            }
+
+            let tooltip_link = ' data-bs-toggle="tooltip" data-bs-placement="top" title="'+link_documento+'" ';
+
+            let style_link='';
+            if(link_documento!='') {
+              link_documento = `<td class="this_hover_last_td" width="7%" valign="top" align="center" style="cursor: pointer;"   oxxnclick="window.open('${link_documento}', '_blank')"   >
+              <a href="${link_documento}" target="_blank" ${tooltip_link}>
+                <svg height="34px" style="transform: rotate(-55deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.65 38.64">
+                  <path fill="#1565EA"  d="M19.32,0C8.65,0,0,8.65,0,19.32s8.65,19.32,19.32,19.32,19.32-8.65,19.32-19.32S29.99,0,19.32,0ZM21.36,27.5l-1.36-1.46,6.15-5.71H8.49v-2h17.66l-6.15-5.71,1.36-1.46,8.8,8.18-8.8,8.18Z" />
+                </svg>
+              </a>
+              </td>`;
+
+            } else {
+              link_documento =` <td width="7%" valign="top" align="center"  >
+              <svg height="34px" style="transform: rotate(-55deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.65 38.64">
+                <path fill="#cccccc"  d="M19.32,0C8.65,0,0,8.65,0,19.32s8.65,19.32,19.32,19.32,19.32-8.65,19.32-19.32S29.99,0,19.32,0ZM21.36,27.5l-1.36-1.46,6.15-5.71H8.49v-2h17.66l-6.15-5.71,1.36-1.46,8.8,8.18-8.8,8.18Z" />
+              </svg>
+               </td> `;
+            }
+
+
+
+
+
+
+            let descarga_documento='';
+            let descarga_documento_0 = x['repository'];
+            if(descarga_documento_0) {
+              descarga_documento = x?.['repository']?.[0]?.['repository/repository_url'] ?? '';
+              if(descarga_documento!='') {
+
+                if (descarga_documento.includes("/repositorio.cepal.org/")) {
+                  descarga_documento = descarga_documento;
+                } else {
+                  descarga_documento = 'https://documentosexternos.cepal.org/bitstreams/'+descarga_documento+'/download';
+                }
+
+              }
+            }
+
+            let tooltip_link2 = ' data-bs-toggle="tooltip"      data-bs-placement="top"      title="'+descarga_documento+'" ';
+
+            if(descarga_documento!='') {
+              descarga_documento = `<td valign="top"  class="this_hover_last_td" width="7%" align="center" style="cursor: pointer;"    >
+              <a href="${descarga_documento}" target="_blank" ${tooltip_link2}>
+                <svg height="34px" style="transform: rotate(90deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.65 38.64">
+                  <path fill="#1565EA"  d="M19.32,0C8.65,0,0,8.65,0,19.32s8.65,19.32,19.32,19.32,19.32-8.65,19.32-19.32S29.99,0,19.32,0ZM21.36,27.5l-1.36-1.46,6.15-5.71H8.49v-2h17.66l-6.15-5.71,1.36-1.46,8.8,8.18-8.8,8.18Z" />
+                </svg>
+              </a>
+              </td>`;
+
+            } else {
+              descarga_documento =` <td width="7%" valign="top" align="center" >
+                <svg height="34px" style="transform: rotate(90deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.65 38.64">
+                  <path fill="#cccccc"  d="M19.32,0C8.65,0,0,8.65,0,19.32s8.65,19.32,19.32,19.32,19.32-8.65,19.32-19.32S29.99,0,19.32,0ZM21.36,27.5l-1.36-1.46,6.15-5.71H8.49v-2h17.66l-6.15-5.71,1.36-1.46,8.8,8.18-8.8,8.18Z" />
+                </svg>
+              </td> `;
+            }
+
+
+
+
+
+            let autor_observatory = x['autor_observatory'];
+
+            if(!autor || autor_observatory=="yes") {
+              autor='-';
+
+              //busca autor
+
+              if(autor_observatory=="yes") {
+                var link_inst_sheet="es/instituciones";
+                if(get_lang=='en') { var link_inst_sheet="en/institutions"; }
+                //let actor_name = x?.related_institutions?.[0]?.['related_institutions/autor_actor_name'];
+                let actor_id_item = x?.related_institutions?.[0]?.['related_institutions/autor_actor_id'];
+
+                //autor = `<a target="_blank" href='${link_inst_sheet}/?id=${actor_id_item}'>${actor_name}</a>`
+
+                if(actor_id_item) {
+                  autor ='<small>'+ buscaNombreInstitucionDesdeId(actor_id_item,get_lang)+'</small>';
+                }
+
+              }
+
+            }
+
+            let label_tabla_documento = 'Documento';
+            if(get_lang=="en") { label_tabla_documento = 'Document'; }
+
+            //let label_tabla_tema = 'Tema';
+            //if(get_lang=="en") { label_tabla_tema = 'Tema'; }
+
+
+            list_content += '<tr class="table_initiative_name initiative_row" id="initiative_row_' + x[var_0] + '" style="width:100%; display:table;" >'+
+            '<td width="4%" valign="top"> ' + icon_1_flag +'</td>'+
+            data_instrumento+
+
+            '<td width="35%" valign="top">'+nombre_plan+tag_name_lang+'<div class="region_data">' +name_theme_label_td+ '  '   +label_tabla_documento+': '+label_doc_type+'   '+tipo_met_label+'</div> </td>'+
+            '<td width="10%" valign="top" style="font-size:0.9em;">'+fecha+'</td>'+
+            '<td width="20%" valign="top" style="font-size:0.9em;">'+autor+'</td>'+
+            //'<td width="10%" valign="top" style="font-size:0.9em;">'+area_met+'</td>'+
+
+
+            link_documento+
+            descarga_documento+
+
+            '</tr>';
+
+
+
+
+
+
+
+          id_last_content=x[var_0];
+          countGlobalResultsFilter++;
+      });
+
+
+      list_content +='</tbody>';
+      list_char_content +='</tbody>';
+
+
+      if(get_id>0 && get_url_theme>0) {
+
+        document.getElementById('option_back_list').style.display = "none";
+        viewDetailContent(get_id,get_url_theme);
+
+      }
+
+      if(countGlobalResultsFilter==1 && get_id>0) {
+        document.getElementById('option_back_list').style.display = "none";
+        viewDetailContent(id_last_content,get_url_theme);
+      }
+
+
+
+      document.getElementById('content_list_table').innerHTML = list_content;
+
+      document.getElementById('count_content2').innerHTML = countGlobalResultsFilter;
+      document.getElementById('cargando_datos').innerHTML = "";
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+  //Selector
+  function loadDataToSelect(xf,node,id_select,title) {
+
+      let results;
+      if(xf=="all") {
+        results = responseDataGlobal_result;
+      } else {
+        results=xf;
+      }
+
+      let var_3 = node;
+      let themes = [];
+
+      results.forEach((x, i) => {
+          //themes.push(x[var_3]);
+
+          // v2 con multi code separado espacio
+          if(x[var_3]) {
+          //x[var_3].split(" ").forEach(code => {
+          x[var_3].split(/\s+/).forEach(code => {
+            if (code.trim()) {
+              themes.push(code);
+            }
+          });
+          }
+
+      });
+
+
+
+      // 02. LISTA UNICA
+      let themes_un_c = uniqueCount(themes);
+
+      themes_un_c.forEach((x, i) => {
+        let code = x.label;
+        x.title = getLabelFromJson(code);
+      });
+
+
+      //themes EN SELECT
+      if (load_one_time == 0) {
+
+        //sort a-z a z
+
+        const ordenPersonalizado_temas = ["development_planning","public_investment","open_government","territorial_development","territorial_planning","urban_development","mobility"];
+        console.log(node);
+        /* if(node=='methodologic_area') {
+
+          themes_un_c.sort( function( a, b ) {
+            return a.title < b.title ? -1 : a.title > b.title ? 1 : 0;
+          });
+
+          console.log(themes_un_c);
+
+        } else */ if (node=='thematic') {
+
+          themes_un_c.sort(function(a, b) {
+            const indexA = ordenPersonalizado_temas.indexOf(a.label);
+            const indexB = ordenPersonalizado_temas.indexOf(b.label);
+
+            // Si no está en el patrón, lo mandamos al final
+            return (indexA === -1 ? Infinity : indexA) - (indexB === -1 ? Infinity : indexB);
+          });
+
+        } else if (node=='country') {
+          themes_un_c.sort( function( a, b ) {
+            return a.label < b.label ? -1 : a.label > b.label ? 1 : 0;
+          });
+        } else {
+          themes_un_c.sort( function( a, b ) {
+            //return a.label < b.label ? -1 : a.label > b.label ? 1 : 0;
+            return a.count > b.count ? -1 : a.count < b.count ? 1 : 0;
+          });
+        }
+
+
+
+
+        document.getElementById(id_select).innerHTML = '<option value="all">'+title+'</option>';
+
+        let name_label_api;
+
+        let texto="";
+        let ocurrencia=0;
+
+        let theme_general=0;
+        if(get_url_theme>0) {
+          theme_general=1;
+        }
+
+        themes_un_c.forEach(x => {
+            let label = x.label;
+            let count = x.count;
+
+            //LABEL para select
+            let x_label_2 = getLabelFromJson(label);
+            if(!x_label_2) {
+               x_label_2 = label;
+            }
+            //x_label_2 = label;
+
+            ocurrencia = buscaOcurrencia(label);
+            if(ocurrencia==1) { texto = "selected"; } else { texto = ""; };
+
+            //if(label==undefined) {} else {
+            if(label==undefined || label=='N/A') {} else {
+
+            if(x_label_2=='No_Vigente') { x_label_2="No vigente"; };
+
+            document.getElementById(id_select).insertAdjacentHTML('beforeend', `<option ${texto} value="${label}">${x_label_2} (${count})</option>`);
+            }
+        });
+
+      }
+  }
+
+
+
+
+
+
+
+
+
+      //Selector
+      function loadDataToSelect_multiple(xf,node,id_select,title) {
+
+          let results;
+          if(xf=="all") {
+            results = responseDataGlobal_result;
+          } else {
+            results=xf;
+          }
+
+          let var_3 = node;
+          let themes = [];
+
+          let countttt=1;
+          results.forEach((x, i) => {
+              //themes.push(x[var_3]);
+
+              // v2 con multi code separado espacio
+              if(x[var_3]) {
+              //x[var_3].split(" ").forEach(code => { //separa por un espacio
+              //x[var_3].split(/ {1,2}/).forEach(code => { //separa por uno o dos espacio
+              x[var_3].split(/\s+/).forEach(code => { // solucion definitiva, esto separa por cualquier tipo de espacio (incluso non-breaking space y espacios Unicode)
+                if (code.trim()) {
+                  themes.push(code);
+                }
+              });
+              }
+              countttt++;
+          });
+
+
+
+          // 02. LISTA UNICA
+          let themes_un_c = uniqueCount(themes);
+
+          themes_un_c.forEach((x, i) => {
+            let code = x.label;
+            x.title = getLabelFromJson(code);
+          });
+
+
+          //themes EN SELECT
+          if (load_one_time_function == 0) {
+
+            //sort a-z a z
+            const ordenPersonalizado_temas = ["development_planning","public_investment","open_government","territorial_development","territorial_planning","urban_development","mobility"];
+            console.log(node);
+            /* if(node=='methodologic_area') {
+              themes_un_c.sort( function( a, b ) {
+                return a.title < b.title ? -1 : a.title > b.title ? 1 : 0;
+              });
+
+            } else */ if (node=='thematic') {
+
+              themes_un_c.sort(function(a, b) {
+
+                const indexA = ordenPersonalizado_temas.indexOf(a.label);
+                const indexB = ordenPersonalizado_temas.indexOf(b.label);
+
+                // Si no está en el patrón, lo mandamos al final
+                return (indexA === -1 ? Infinity : indexA) - (indexB === -1 ? Infinity : indexB);
+              });
+
+            } else if (node=='country') {
+              themes_un_c.sort( function( a, b ) {
+                return a.label < b.label ? -1 : a.label > b.label ? 1 : 0;
+              });
+            } else {
+              themes_un_c.sort( function( a, b ) {
+                //return a.label < b.label ? -1 : a.label > b.label ? 1 : 0;
+                return a.count > b.count ? -1 : a.count < b.count ? 1 : 0;
+              });
+            }
+
+
+
+
+            //document.getElementById(id_select).innerHTML = '<option value="all">'+title+'</option>';
+
+            let name_label_api;
+
+            let texto="";
+            let ocurrencia=0;
+
+            let theme_general=0;
+            if(get_url_theme>0) {
+              theme_general=1;
+            }
+
+            themes_un_c.forEach(x => {
+                let label = x.label;
+                let count = x.count;
+
+                //LABEL para select
+                let x_label_2 = getLabelFromJson(label);
+                if(!x_label_2) {
+                   x_label_2 = label;
+                }
+                //let x_label_2 = label;
+
+                ocurrencia = buscaOcurrencia(label);
+                if(ocurrencia==1) { texto = "selected"; } else { texto = ""; };
+
+                //if(label==undefined) {} else {
+                if(label==undefined || label=='N/A') {} else {
+
+                if(x_label_2=='No_Vigente') { x_label_2="No vigente"; };
+
+                document.getElementById(id_select).insertAdjacentHTML('beforeend', `<label><input type="checkbox" value="${label}" role="option" aria-label="${x_label_2}"> ${x_label_2}</label>`);
+                }
+            });
+
+            activarMultiselectListener("multiselect1-menu", function (checkbox) {
+              updateOutput(); // función que maneja el cambio
+            });
+
+            activarMultiselectListener("multiselect2-menu", function (checkbox) {
+              updateOutput();
+            });
+
+            /* activarMultiselectListener("multiselect3-menu", function (checkbox) {
+              updateOutput();
+            }); */
+
+            activarMultiselectListener("multiselect4-menu", function (checkbox) {
+              updateOutput();
+            });
+
+
+          }
+      }
+
+
+
+
+      function activarMultiselectListener(id_select, callback) {
+        const container = document.getElementById(id_select);
+        if (!container) return;
+
+        container.addEventListener('change', function (e) {
+          if (e.target && e.target.matches('input[type="checkbox"]')) {
+            callback?.(e.target); // Ejecuta la función que tú definas
+          }
+        });
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      //Filtra datos unicos para selectores
+      function uniqueCount(data) {
+          let unique = data.filter((value, index, array) => array.indexOf(value) === index);
+          let unique_count = [];
+          unique.forEach((x, i) => {
+              let label_original = x;
+              let count = data.filter(elem => elem == x).length;
+              if(x) {
+              unique_count.push({
+                  'label': x,
+                  'count': count
+              })
+              }
+          });
+          return unique_count;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+      function visualizaPaises() {
+        visualizaSelect('select_paises','country');
+      }
+
+
+      function visualizaTipoDoc() {
+        visualizaSelect('select_tipodoc','publication_type');
+      }
+
+      function visualizaAreaMet() {
+        visualizaSelect('select_areamet','methodologic_area');
+      }
+
+      function visualizaThemes() {
+        visualizaSelect('select_theme','thematic');
+      }
+
+
+
+
+
+
+
+      function visualizaSelect(id_select,node) {
+        let data_label = document.getElementById(id_select).value;
+
+        if(data_label=="all") {
+          resetFilters("all");
+          return false;
+        }
+
+        let filtro_actual = $("#filter_selected").val();
+        $("#filter_selected").val(filtro_actual+";"+node+","+data_label);
+
+        //reload list whith filter
+        showData(node,data_label);
+
+        //resetea filtros
+
+        $("#display_filters").show();
+        displayFilters();
+      }
+
+
+
+
+
+
+
+
+
+      function displayFilters() {
+        let filtro_actual = $("#filter_selected").val();
+
+        let total_filters_badge_v2 = "";
+
+        let array_filters = filtro_actual.split(";");
+        let largo_arr_filter = array_filters.length;
+        array_filters.forEach((item, i) => {
+          let array_filters_type = item.split(",");
+            let type = array_filters_type[0];
+            let name = array_filters_type[1];
+
+            if(type==0 || name==0 || type!='busca') {}  else {
+
+              let name_lang = getLabelFromJson(name);
+              //let name_lang = name;
+
+              //horizontal version
+              total_filters_badge_v2+="<span class='badge_remove_filter_v2' style='margin-right:8px' data-filter='"+type+","+name+"'>   "+name_lang+" <span class='b_rem_close'><img src=\"iframe/img/icon_filter_reset.png\" height=\"13px\" style=\"margin-top:-4px\" /></span> </span> ";
+            }
+
+        });
+
+        document.getElementById('display_filters').innerHTML = '';
+
+        //horizontal version
+        let reset_all_filters = ` <span id="opt_remove_all_filters">|&nbsp; <span class="button_filter" onclick="resetFilters(1)" style="padding:3px 6px;" > <span id="filter_opt_2_v2">Reset</span> <img src=\"iframe/img/icon_filter_reset.png\" height=\"13px\" style=\"margin-top:-4px\" /></span> </span>  `;
+        document.getElementById('display_filters').innerHTML = '<span id="filter_opt_1">Filters</span> '+total_filters_badge_v2+reset_all_filters;
+
+        $.each(ficha_iapt_filters_labels, function (i, html_content) {
+            $("#" + i).html(html_content[0 + language_number]);
+        });
+
+        removeClickJS();
+
+        if(largo_arr_filter<3) {
+          $("#opt_remove_all_filters").hide();
+        } else {
+          $("#opt_remove_all_filters").show();
+        }
+
+
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+      function resetFilters(x) {
+
+        if(x=="allword") {
+
+          let filtro_actual = $("#filter_selected").val();
+          filtro_actual = filtro_actual.replace(/;busca,[^;]*/g, ""); //elimina busqueda anterior del filter_selected
+          $("#filter_selected").val(filtro_actual);
+
+          displayFilters();
+          showData("all","all");
+
+
+        } else {
+
+        $("#select_theme").val("all");
+
+        if(x=="word"){}else{
+        $("#search_by_words").val("");
+        }
+
+        $("#display_filters").hide();
+        $("#filter_selected").val("0");
+
+        showData("all","all");
+
+
+        clearSelections('multiselect1');
+        clearSelections('multiselect2');
+        clearSelections('multiselect3');
+        clearSelections('multiselect4');
+
+
+        $("#display_filters").html("");
+
+        }
+
+      }
+
+
+
+
+
+
+
+
+      function buscaOcurrencia(v) {
+        let valret=0;
+
+        if(v==undefined || v=="") {
+          //return valret;
+        }
+
+        let filtro_actual = $("#filter_selected").val();
+
+
+
+        let array_filters = filtro_actual.split(";");
+        array_filters.forEach((item, i) => {
+          let array_filters_type = item.split(",");
+            let type = array_filters_type[0];
+            let name = array_filters_type[1];
+
+            if(v==name) {
+              valret=1;
+              return valret;
+            }
+
+        });
+
+        return valret;
+      }
+
+
+
+
+
+
+
+
+
+      function buscadorListado() {
+        let keyword = document.getElementById("search_by_words").value;
+        let largo = keyword.length;
+        if(largo<1) {
+          resetFilters("allword");
+          showData("all","all");
+          return false;
+        }
+        if(largo>3) {
+
+
+          let filtro_actual = $("#filter_selected").val();
+          //evita 2 busquedas
+          filtro_actual = filtro_actual.replace(/;busca,[^;]*/g, ""); //elimina busqueda anterior del filter_selected
+          $("#filter_selected").val(filtro_actual+";busca,"+keyword);
+
+
+          //resetFilters("word");
+          showData("by_keyword",keyword);
+
+
+        } else {
+          showData("all","all");
+          document.getElementById("search_by_words").value='';
+        }
+
+        //$("#filter_selected").val("");
+        $("#display_filters").show();
+        displayFilters();
+
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+      function removeClickJS(){
+        const spans = document.querySelectorAll('.badge_remove_filter_v2');
+          spans.forEach(span => {
+              span.addEventListener('click', function() {
+                  const filterValue = span.getAttribute('data-filter');
+                  removeFilterFromList(filterValue);
+              });
+          });
+      }
+
+
+      function removeFilterFromList(x) {
+
+        if (x.includes('busca')) {
+          document.getElementById('search_by_words').value = "";
+          document.getElementById('display_filters').style.display = "none";
+        }
+
+
+        let input = document.getElementById('filter_selected').value;
+        let regex = new RegExp(`;?${x}`);
+        let nuevoInput = input.replace(regex, '');
+        document.getElementById('filter_selected').value = nuevoInput;
+
+        displayFilters();
+        showData('all','all');
+
+        if(nuevoInput=='0') {
+          $("#display_filters").hide();
+        }
+
+        return false;
+      }
+
+
+
+
+
+
+
+
+
+
+
+      //Label segun idioma desde Json Kobo nodo choices
+      function getLabelFromJson(label) {
+
+        if(label) {
+          let largo_label = label.length;
+          //if(largo_label===3) { label = label.toUpperCase(); };
+        }
+
+
+        name_label_api_default_multilanguage = `label`;
+        let label_from_api='';
+        let name_label_api;
+        let responseData = responseDataGlobal.choices;
+        if(languageGlobal=="es") {
+           name_label_api = `label::Espanol (es)`;
+        } else if(languageGlobal=="en") {
+           name_label_api = `label::English (en)`;
+        }
+        let x_label = responseData.filter(element=>element.name == label)[0];
+        let x_label_2;
+
+        if(x_label) {
+            x_label_2 = x_label[name_label_api];
+
+            if(!x_label_2) {
+              x_label_2 = x_label[name_label_api_default_multilanguage];
+            }
+
+        } else {
+            x_label_2 = label;
+        }
+
+        //provisorio
+        if(x_label_2=="Bolivia") {
+          x_label_2="Bolivia (Est. Plur. de)";
+          if(languageGlobal=="en") { x_label_2="Bolivia (Plur. State of)"; }
+        }
+        if(x_label_2=="Venezuela") {
+          x_label_2="Venezuela (Rep. Bol. de)";
+          if(languageGlobal=="en") { x_label_2="Venezuela (Bol. Rep. of)"; }
+        }
+
+        return x_label_2;
+
+      }
+
+
+
+
+
+
+
+
+
+      //Switch listado / ficha
+      function view_list_detail(x,number_theme) {
+          if (x == 1) {
+              document.getElementById("content_list").style.display = "block";
+              document.getElementById("content_detail").style.display = "none";
+              parent.document.getElementById("iframe_content").style.height="1000px";
+
+              // Obtiene la parte del path + parámetros
+              let path = window.parent.location.pathname;
+              let search = window.parent.location.search;
+              search = search.replace(/([&?])id=[^&]*$/, '').replace(/^&/, '?');
+              if (search === '?') search = '';
+              const resultado = path + search;
+              //window.parent.history.pushState({}, '', resultado);
+
+
+
+          } else if (x == 3) {
+              document.getElementById("content_list").style.display = "none";
+              document.getElementById("content_detail").style.display = "block";
+              parent.document.getElementById("iframe_content").style.height="2500px";
+          }
+      }
+
+
+
+      const todas_las_fases_ip_proyecto = "formulation ex_ante selection execution ex_post";
+      const fases_ciclo_py = todas_las_fases_ip_proyecto.split(" ");
+      const todas_las_fases_ip_politica = "planning budgeting expost_audit";
+      const fases_ciclo_pl = todas_las_fases_ip_politica.split(" ");
+
+
+      //Ficha de la Iniciativa
+      function viewDetailContent(x,number_theme) {
+
+        enFicha = true;
+        history.pushState({ ficha: x }, '', '');
+
+        // Obtener la ruta actual
+        const pathCompleto = window.parent.location.pathname;
+        const pathSearch = window.parent.location.search;
+        const rutaExtra = '&id='+x;
+        // Construir la nueva ruta respetando el path actual
+        const nuevaRuta = `${pathCompleto}${pathSearch}${rutaExtra}`;
+        window.parent.history.pushState({}, '', nuevaRuta);
+
+
+
+
+
+          let results = responseDataGlobal_result;
+          let data_detail = results.filter(item => item._id == x);
+
+          console.log("id:" + x);
+          console.log(data_detail);
+
+
+
+          let data_iso_country = data_detail[0]['country'];
+          if(!data_iso_country) {
+            data_iso_country = 'lac';
+          }
+
+          let iso_lowercase = data_iso_country.toLowerCase();
+
+          let coutry_name_label = getLabelFromJson(iso_lowercase);
+
+
+          let label_icon_country = iso_lowercase;
+          let icon_1_flag = '<img src="iframe/img/flags/'+iso_lowercase+'.png" height="40px" />   ';
+
+
+          if(coutry_name_label == 'LAC') { coutry_name_label='<small>{data.country}</small>'; };
+          document.getElementById('detail_country').innerHTML = icon_1_flag + coutry_name_label;
+
+
+
+          let label_instrumento = 'plan';
+          if(!label_instrumento) {
+            label_instrumento = '...';
+          } else {
+            label_instrumento = getLabelFromJson(label_instrumento);
+            label_instrumento = determinarFrasesDesdeArticulo(label_instrumento);
+          }
+
+          let label_theme = '';
+          if(number_theme==1) {
+            label_theme = array_theme_label[0];
+          }
+
+          if(number_theme==5) {
+            label_instrumento = 'instrumentos';
+            label_theme='ordenamiento territorial';
+          }
+
+
+
+          let var_2, var_2_en;
+          if(get_url_theme==1) {
+            var_2 = `name_es`;
+            var_2_en = `name_en`;
+          } else if(get_url_theme==2) {
+            var_2 = `snip_name_es`;
+            var_2_en = `snip_name_en`;
+          }
+
+
+          let nombre_plan = data_detail[0][var_2];
+          if(!nombre_plan) {
+            nombre_plan = data_detail[0][var_2_en];
+          }
+
+
+          if(get_url_theme==5) {
+            nombre_plan='Mecanismo de articulación en '+coutry_name_label;
+            document.getElementById('detail_institution').style.display = "none";
+          }
+
+
+          document.getElementById('detail_name').innerHTML = nombre_plan;
+
+
+
+          let data_instutucion_resp = data_detail[0]['parent_name'];
+          if(!data_instutucion_resp) {
+            data_instutucion_resp = '';
+          }
+
+          //document.getElementById('detail_institution').innerHTML = '<strong>Institución responsable:</strong> ' + data_instutucion_resp;
+          document.getElementById('detail_institution').innerHTML = '' + data_instutucion_resp;
+
+
+          let descode1='open_gov_responsible/r_og_description_es';
+          let descode2='open_gov_coordinator/c_og_description_es';
+          let descode3='public_investment/pi_description_es';
+
+
+
+          let data_instutucion_description = data_detail[0][descode1];
+          if(!data_instutucion_description) {
+            data_instutucion_description = data_detail[0][descode2];
+          }
+          if(!data_instutucion_description) {
+            data_instutucion_description = data_detail[0][descode3];
+          }
+
+          if(data_instutucion_description) {
+            data_instutucion_description = data_instutucion_description.replace(/\n/g, "<br/>");
+          } else {
+            data_instutucion_description='';
+          }
+
+          document.getElementById('inst_description').innerHTML = data_instutucion_description;
+
+
+
+          //contenido conformacion y actividades open_government
+
+          let data_open_government_0 = data_detail[0]['open_gov_coordinator/c_og_description_es'];
+          if(data_open_government_0) {
+            data_open_government_0 = data_open_government_0.replace(/\n/g, "<br/>");
+            var newContent = document.createElement('div');
+            newContent.innerHTML = '<div class="title_og_subtitle">Coordinador</div><div class="title_og_subtitle_desc">'+data_open_government_0+'</div>';
+            document.getElementById('inst_description').appendChild(newContent);
+          }
+
+          let data_open_government_1 = data_detail[0]['open_gov_coordinator/c_og_conformation_es'];
+          if(data_open_government_1) {
+            data_open_government_1 = data_open_government_1.replace(/\n/g, "<br/>");
+            var newContent = document.createElement('div');
+            newContent.innerHTML = '<div class="title_og_subtitle">Conformación</div><div class="title_og_subtitle_desc">'+data_open_government_1+'</div>';
+            document.getElementById('inst_description').appendChild(newContent);
+          }
+
+          let data_open_government_2 = data_detail[0]['open_gov_coordinator/c_og_conformation_tags'];
+          if(data_open_government_2) {
+            let tags_words = data_open_government_2.split(" ");
+            let data_open_government_2_format = '';
+            tags_words.forEach((item, i) => {
+              data_open_government_2_format+=` <span style="background-color:#173668;color:white;padding:3px;border-radius:4px;font-size:14px;font-weight:normal;">${item}</span> `;
+            });
+
+            var newContent = document.createElement('div');
+            newContent.innerHTML = '<div class="title_og_subtitle_desc"><b>Tags:</b> '+data_open_government_2_format+'</div>';
+            document.getElementById('inst_description').appendChild(newContent);
+          }
+
+          let data_open_government_3 = data_detail[0]['open_gov_coordinator/c_og_activities_es'];
+          if(data_open_government_3) {
+            data_open_government_3 = data_open_government_3.replace(/\n/g, "<br/>");
+            var newContent = document.createElement('div');
+            newContent.innerHTML = '<div class="title_og_subtitle">Actividades</div><div class="title_og_subtitle_desc">'+data_open_government_3+'</div>';
+            document.getElementById('inst_description').appendChild(newContent);
+          }
+
+
+
+
+
+          //leyenda derecha
+          let data_left_theme = data_detail[0]["theme"];
+
+          var number_index_theme = theme_code.indexOf(data_left_theme)+1;
+          var bg_color_theme = theme_colors[number_index_theme];
+          document.getElementById("bg_lateral_content_temas").style.backgroundColor = bg_color_theme;
+          var icon = '<img style="margin-top:-3px;margin-right:8px;" src="../../images/svg/icon'+number_index_theme+'.svg" height="40px" />';
+          var flecha = '<img style="float:right;margin-top:3px;margin-right:10px;" src="../../images/svg/flecha.svg" height="30px" />';
+
+          data_left_theme = getLabelFromJson(data_left_theme);
+          document.getElementById('bg_lateral_content_temas').innerHTML = icon+data_left_theme+" "+flecha;
+
+          document.getElementById("bg_lateral_content_temas").onclick = function() {
+            //window.location.href = "page.html?lang=es&theme="+number_index_theme; // Reemplaza con tu URL deseada
+            window.open("../../page.html?lang=es&theme="+number_index_theme, "_blank");
+          };
+
+
+
+          let data_left_c21 = data_detail[0]["institution_type"];
+          let data_left_c21b = data_detail[0]["authority_type"];
+          let data_left_c21c = data_detail[0]["territorial_scale"];
+          data_left_c21 = getLabelFromJson(data_left_c21);
+          data_left_c21b = getLabelFromJson(data_left_c21b);
+          data_left_c21c = getLabelFromJson(data_left_c21c);
+          document.getElementById('bg_lateral_content_tipo_inst').innerHTML = data_left_c21+"<br/>"+data_left_c21b+"<br/>Escala territorial: "+data_left_c21c;
+
+          document.getElementById('bg_lateral_content_ver_todas_inst').innerHTML = "Ver todas las instituciones de "+coutry_name_label;
+
+          document.getElementById('bg_lateral_content_pais').innerHTML = icon_1_flag + coutry_name_label;
+          document.getElementById('bg_lateral_content_ver_ficha_pais').innerHTML = "  Ver ficha país";
+
+
+
+          //Inv Publica , fases del ciclo proyecto/politica
+
+          document.getElementById("all_ciclo_fases_ip").style.display = "none";
+
+          let fases_proyecto='public_investment/pi_project_phases';
+          let fases_politica='public_investment/pi_policy_phases';
+
+          let data_fase_proy = data_detail[0][fases_proyecto];
+          if(data_fase_proy) {
+            document.getElementById("all_ciclo_fases_ip").style.display = "block";
+            let icon1="0.2", icon2="0.2", icon3="0.2", icon4="0.2", icon5="0.2";
+            if (data_fase_proy.includes(fases_ciclo_py[0])) { icon1="1"; };
+            if (data_fase_proy.includes(fases_ciclo_py[1])) { icon2="1"; };
+            if (data_fase_proy.includes(fases_ciclo_py[2])) { icon3="1"; };
+            if (data_fase_proy.includes(fases_ciclo_py[3])) { icon4="1"; };
+            if (data_fase_proy.includes(fases_ciclo_py[4])) { icon5="1"; };
+
+            document.getElementById("cfpy1").style.opacity = icon1;
+            document.getElementById("cfpy2").style.opacity = icon2;
+            document.getElementById("cfpy3").style.opacity = icon3;
+            document.getElementById("cfpy4").style.opacity = icon4;
+            document.getElementById("cfpy5").style.opacity = icon5;
+
+          }
+
+
+          let data_fase_politica = data_detail[0][fases_politica];
+          if(data_fase_politica) {
+            document.getElementById("all_ciclo_fases_ip").style.display = "block";
+            let iconp1="0.2", iconp2="0.2", iconp3="0.2";
+            if (data_fase_politica.includes(fases_ciclo_pl[0])) { iconp1="1"; };
+            if (data_fase_politica.includes(fases_ciclo_pl[1])) { iconp2="1"; };
+            if (data_fase_politica.includes(fases_ciclo_pl[2])) { iconp3="1"; };
+
+            document.getElementById("cfpl1").style.opacity = iconp1;
+            document.getElementById("cfpl2").style.opacity = iconp2;
+            document.getElementById("cfpl3").style.opacity = iconp3;
+
+          }
+
+
+
+
+          let bg_number=number_theme-1;
+          console.log(bg_number);
+
+          //color personalizado
+          var bg_color_1 = theme_colors[bg_number];
+          var bg_color_2 = theme_colors_2[bg_number];
+          var bg_color_3 = theme_colors_3[bg_number];
+
+          setTimeout(() => {
+
+          document.querySelectorAll('.ficha_item_title').forEach(element => {
+              element.style.color = bg_color_1;
+          });
+
+          }, 50);
+
+
+
+          document.getElementById("detail_country").style.display = "none";
+
+
+          view_list_detail(3,number_theme);
+
+          return false;
+      }
+
+
+
+      function determinarFrasesDesdeArticulo(palabra) {
+          const ultimaLetra = palabra.slice(-1).toLowerCase();
+          palabra = palabra.toLowerCase();
+
+          if (ultimaLetra === 'a') {
+              return 'todas las '+palabra+'s';
+          } else if (ultimaLetra === 'o') {
+              return 'todos los '+palabra+'s';
+            } else if (ultimaLetra === 'n') {
+              return 'todos los '+palabra+'es';
+          } else {
+              return 'todas las '+palabra+'s';
+          }
+      }
+
+
+
+
+
+
+
+
+      function verificarIsoPais(dato) {
+        return typeof dato === 'string' && /^[a-zA-Z]{3}$/.test(dato);
+      }
+
+
+
+
+      function formatearFechaDiaMesAgno(fechaStr) {
+        const [anio, mes, dia] = fechaStr.split("-");
+        return `${dia}-${mes}-${anio}`;
+      }
+
+
+
+
+      function formatDateToMonthYear(dateString, language = 'es') {
+        const date = new Date(dateString);
+        date.setHours(date.getHours() + 12);
+
+        const monthNames = {
+          es: [
+            'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+            'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
+          ],
+          en: [
+            'January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'
+          ]
+        };
+
+        const month = monthNames[language]?.[date.getMonth()];
+        const year = date.getFullYear();
+
+        return `${month} ${year}`;
+      }
+
+
+
+
+
+      function getMultiCodeFromJson(valor) {
+        return valor
+          .split(/\s+/)                      // separa en array
+          .map(getLabelFromJson)         // transforma cada uno
+          .join(", ");                     // une con espacio
+      }
+
+
+      function getMultiCodeFromJsonTags(valor) {
+        return [...new Set( valor
+          .split(/\s+/) // separa por espacios
+          .map(tag => {
+            const cssClass = getCssClassForValue(tag); // función que decide la clase CSS
+            const label = getLabelFromJson(tag); // tu función que transforma el valor
+            return `<span class="badge bg-secondary" style="background-color:${cssClass} !important;font-size:0.9em;">${label}</span>`;
+          }))]
+          .join(", ");
+      }
+
+      // Función que asigna clase CSS según el valor
+      function getCssClassForValue(tag) {
+
+        let number_index_theme = theme_code.indexOf(tag)+1;
+        let bg_color_theme = theme_colors_light[number_index_theme];
+
+        return bg_color_theme;
+
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+      function levenshteinDistance(a, b) {
+        const matrix = Array.from({ length: a.length + 1 }, () => Array(b.length + 1).fill(0));
+
+        for (let i = 0; i <= a.length; i++) matrix[i][0] = i;
+        for (let j = 0; j <= b.length; j++) matrix[0][j] = j;
+
+        for (let i = 1; i <= a.length; i++) {
+          for (let j = 1; j <= b.length; j++) {
+            const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+            matrix[i][j] = Math.min(
+              matrix[i - 1][j] + 1,      // eliminación
+              matrix[i][j - 1] + 1,      // inserción
+              matrix[i - 1][j - 1] + cost // sustitución
+            );
+          }
+        }
+
+        return matrix[a.length][b.length];
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+      let get_geo = getQueryVariable('geo');
+      if(get_geo==1) {
+
+        $("#div_select_filters").hide();
+        $("#general_title").hide();
+
+
+        setTimeout(() => {
+          const tbody = document.querySelector('table tbody');
+          if (tbody) {
+            tbody.style.overflowY = '';
+          }
+        }, 1000);
+
+      }
+
+
+
+
+
+      window.addEventListener('popstate', function (event) {
+        if (enFicha) {
+          view_list_detail(1,0);
+          enFicha = false;
+        } else {
+          history.back();
+        }
+      });
+
+
+
+
+
+
+
+
+
+      function calculationJson(json){
+
+        json.forEach((item, i) => {
+
+            // renombramiento tema
+            let theme = item.thematic;
+            // renombrar territorial_development por territorial_planning
+            item.thematic = theme.replace(/territorial_development/g, "territorial_planning");
+
+        });
+
+        return json;
+      }
+
+
+
+
+      // Función que asigna clase CSS según el valor
+      function getCssClassForValue(tag) {
+
+        let number_index_theme = theme_code.indexOf(tag)+1;
+        let bg_color_theme = theme_colors_light[number_index_theme];
+
+        return bg_color_theme;
+
+      }
+
+
+
+
+
+
+
+
+
+      var scriptElm = document.createElement('script');
+      scriptElm.src = `iframe/metodologias/multiselect.js?v=${itime}`;
+      document.body.appendChild(scriptElm);

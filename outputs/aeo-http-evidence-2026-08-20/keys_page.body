@@ -1,0 +1,257 @@
+console.log("data key loading v2");
+console.log("theme:" + theme);
+let get_lang = lang;
+
+const theme_code_3 = [
+  "development_planning",
+  "public_investment",
+  "open_government",
+  "territorial_development",
+  "territorial_planning",
+  "urban_development",
+  "mobility",
+];
+const number_theme_code = theme - 1;
+let theme_code_area = theme_code_3[number_theme_code];
+let filter_by_theme = `&query={"thematic":{"$regex":"${theme_code_area}"},"_validation_status.label":"Approved"}`;
+let filter_plans_by_theme = `&query={"theme":{"$regex":"${theme_code_area}"},"_validation_status.label":"Approved"}`;
+
+loadAPIContentGlobal();
+
+function loadAPIContentGlobal() {
+  var hexDate = new Date().getTime();
+
+  fetch(
+    "https://api-kobo.cepal.org/api-kobo/data?dataset=aPJUaqc6gbHKCdcXQV3bYh&content=1&survey=1" +
+      filter_plans_by_theme,
+  )
+    .then((response) => response.json())
+    .then((json) => {
+      responseDataGlobal = json;
+      responseDataGlobal_result = json.results;
+
+      responseDataGlobal_result = calculationJson(responseDataGlobal_result);
+
+      showData("all", "all");
+    })
+    .catch((error) => {
+      console.error("Error al importar el archivo", error);
+    });
+}
+
+function showData(x, y) {
+  let paises = [];
+
+  let results = responseDataGlobal_result;
+  let theme_label = theme_code[number_theme];
+
+  results = results.filter((x) => x.theme == theme_label);
+
+  let countGlobalResultsFilter = 0;
+  let count_temp_largo = 0;
+  let count_temp_mediano = 0;
+  let count_temp_corto = 0;
+  let count_escala_nacional = 0;
+  let count_escala_subnacional = 0;
+
+  results.forEach((x, i) => {
+    //Icono 1 País
+
+    let data_iso_country = x["country"];
+    if (data_iso_country) {
+      paises.push(data_iso_country);
+    }
+
+    let data_temp_calc = x["temporality_calc"];
+    if (data_temp_calc == "long_term") {
+      count_temp_largo++;
+    } else if (data_temp_calc == "medium_term") {
+      count_temp_mediano++;
+    } else if (data_temp_calc == "short_term") {
+      count_temp_corto++;
+    }
+
+    let data_territ = x["territorial_scale"];
+    if (data_territ == "national") {
+      count_escala_nacional++;
+    } else if (data_territ == "subnational") {
+      count_escala_subnacional++;
+    }
+
+    countGlobalResultsFilter++;
+  });
+
+  // 01.  PAISES LISTA UNICA
+  let paises_un_c = uniqueCount(paises);
+  let paises_un_c_tot = paises_un_c.length;
+
+  if (document.getElementById("data_key_type_paises")) {
+    document.getElementById("data_key_type_paises").innerHTML = paises_un_c_tot;
+    if (theme == 3) {
+      //document.getElementById('data_key_type_paises').innerHTML = 16;  //provisorio
+    }
+  }
+
+  if (document.getElementById("data_key_type_planes")) {
+    document.getElementById("data_key_type_planes").innerHTML =
+      countGlobalResultsFilter;
+  }
+
+  if (document.getElementById("data_key_type_politicas")) {
+    document.getElementById("data_key_type_politicas").innerHTML =
+      countGlobalResultsFilter;
+  }
+
+  if (document.getElementById("data_key_type_gobsubnac")) {
+    let calcula = count_escala_subnacional;
+    document.getElementById("data_key_type_gobsubnac").innerHTML = calcula;
+  }
+
+  if (theme == 3) {
+    leeJsonCompromisos();
+  }
+}
+
+function leeJsonCompromisos() {
+  fetch(
+    `https://api-kobo.cepal.org/api-kobo/data?dataset=aeZ5KFGUWe33kaWnowRHH9&query={"_validation_status.label":"Approved"}`,
+  )
+    .then((response) => response.json())
+    .then((json) => {
+      let data = json.results[0];
+      let count = json.count;
+
+      if (document.getElementById("data_key_type_compromisos")) {
+        document.getElementById("data_key_type_compromisos").innerHTML = count;
+      }
+    })
+    .catch((error) => {
+      console.error("Error al importar el archivo", error);
+    });
+}
+
+function calculationJson(json) {
+  json.forEach((item, i) => {
+    //se elimina el calculo temporalidad
+    json[i].temporality_calc = item.temporality;
+    //se elimina el calculo vigencia
+    let effective_today = item.effective_today;
+    if (effective_today == "no") {
+      json[i].effective_today_calc = "No_Vigente";
+      if (get_lang == "en") {
+        json[i].effective_today_calc = "Inactive";
+      }
+    } else if (effective_today == "yes") {
+      json[i].effective_today_calc = "Vigente";
+      if (get_lang == "en") {
+        json[i].effective_today_calc = "Active";
+      }
+    } else {
+      json[i].effective_today_calc = "";
+    }
+
+    //format fechas
+    if (
+      item?.effective_since &&
+      /^\d{4}-\d{2}-\d{2}$/.test(item.effective_since)
+    ) {
+      item.effective_since = item.effective_since.slice(0, 4);
+    }
+
+    if (
+      item?.effective_until &&
+      /^\d{4}-\d{2}-\d{2}$/.test(item.effective_until)
+    ) {
+      item.effective_until = item.effective_until.slice(0, 4);
+    }
+
+    //si es local o si es intermediate ponerl subnacional
+    //provisorio
+    let escala_renombrar = item.territorial_scale;
+    if (escala_renombrar == "local" || escala_renombrar == "intermediate") {
+      item.territorial_scale = "subnational";
+    }
+  });
+
+  return json;
+}
+
+function uniqueCount(data) {
+  let unique = data.filter(
+    (value, index, array) => array.indexOf(value) === index,
+  );
+
+  let unique_count = [];
+  unique.forEach((x, i) => {
+    let label_original = x;
+    let count = data.filter((elem) => elem == x).length;
+    unique_count.push({
+      label: x,
+      count: count,
+    });
+  });
+
+  return unique_count;
+}
+
+if (theme != 2) {
+  loadAPIMetodology();
+}
+
+
+function loadAPIMetodology() {
+  var hexDate = new Date().getTime();
+  fetch(
+    "https://api-kobo.cepal.org/api-kobo/data?dataset=agFKiPAwFWfTF2Zfeh9UN9" +
+      filter_by_theme,
+  )
+    .then((response) => response.json())
+    .then((json) => {
+      let count = json.count;
+      document.getElementById("data_key_type_metodologias").innerHTML = count;
+    })
+    .catch((error) => {
+      console.error("Error al importar el archivo", error);
+    });
+}
+
+loadAPILegalFrameworks();
+
+function loadAPILegalFrameworks() {
+  var hexDate = new Date().getTime();
+
+  fetch(
+    "https://api-kobo.cepal.org/api-kobo/data?dataset=aqpKMBhQZJ7QXra8gcyJnn" +
+      filter_by_theme,
+  )
+    .then((response) => response.json())
+    .then((json) => {
+      let count = json.count;
+      document.getElementById("data_key_type_normativas").innerHTML = count;
+    })
+    .catch((error) => {
+      console.error("Error al importar el archivo", error);
+    });
+}
+
+
+function loadMembersSNIP() {
+  //var hexDate = new Date().getTime();
+  fetch(
+    "https://api-kobo.cepal.org/api-kobo/data?dataset=aMXsEC6SyQngvcTa3fSC93&query={%22public_investment/pi_network_member%22:%22yes%22}",
+  )
+    .then((response) => response.json())
+    .then((json) => {
+      let count = json.count;
+      document.getElementById("data_key_type_member_snip").innerHTML =
+        count;
+    })
+    .catch((error) => {
+      console.error("Error al importar el archivo", error);
+    });
+}
+
+
+if(theme==2) {
+  loadMembersSNIP();
+}

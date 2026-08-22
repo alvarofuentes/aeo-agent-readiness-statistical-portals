@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="../../">
+    <title>Observatorio Regional de Planificación para el Desarrollo de América Latina y el Caribe</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/style-5column-boxes.css?v=20220506" >
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" >
+    <script src="assets/jquery.min.js?v=3.6.0"></script>
+    <script src="assets/bootstrap.min.js"></script>
+    <script src="assets/portal-actions.js"></script>
+    <script>
+        lang="es";
+        theme=2;
+        $(document).ready(function () {
+            $("header").load(`include/header.html?lang=${lang}&v=${time}`);
+            $("nav").load(`include/menu.html?lang=${lang}&v=${time}`);
+            $("section").load(`include/content/page.html?lang=${lang}&v=${time}`);
+            $("footer").load(`include/footer.html?lang=${lang}&v=${time}`);
+            scrollTopPage();
+        });
+    </script>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <section></section>
+    <footer></footer>
+  </body>
+</html>

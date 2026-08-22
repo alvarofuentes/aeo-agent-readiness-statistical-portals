@@ -1,0 +1,26 @@
+QA de presentación — 2026-08-22
+
+Builder
+- Comando: RUNTIME_NODE=.../node.exe node tmp/aeo-ppt-2026-08-22/aeo-comparison-deck.mjs
+- Resultado: éxito.
+- PPTX: C:\Users\afuentes\Documents\Codex\2026-08-20\outputs\aeo-comparative-deck-2026-08-22.pptx
+- Inspección: C:\Users\afuentes\Documents\Codex\2026-08-20\outputs\aeo-comparative-deck-2026-08-22.pptx.inspect.ndjson
+- Slide count en inspección: 10.
+
+Render
+- Script: presentations/container_tools/render_slides.py
+- Resultado: generó 10 PNG en C:\Users\afuentes\Documents\Codex\2026-08-20\outputs\aeo-comparative-deck-2026-08-22\
+- Contact sheet: C:\Users\afuentes\Documents\Codex\2026-08-20\outputs\aeo-comparative-deck-2026-08-22-montage.png
+- Error devuelto: "Failed to render presentation with artifact-tool". El JSON del error confirma slideCount=10 y paths para slide-1.png ... slide-10.png; los archivos existen.
+- No se encontró soffice/libreoffice como fallback local.
+
+Overflow
+- Script: presentations/container_tools/slides_test.py
+- Resultado: no concluyente; falla al renderizar enlarged.pptx con el mismo error de artifact-tool.
+- Inspección estructural: todos los bboxes listados caen dentro del canvas observado (x máximo 1238, y máximo 688; canvas nominal 1280x720). No aparecen placeholders pendientes ni advertencias de overlap en el NDJSON.
+- QA visual de píxel completo no pudo completarse porque el helper view_image también falló por CryptUnprotectData en el sandbox. El montage fue creado y abierto en la interfaz, pero no se pudo recuperar como imagen al agente.
+
+Conclusión
+- El PPTX es utilizable y el builder/inspección estructural pasan.
+- Render/overflow quedan con estado parcial debido a fallo ambiental del renderer, no atribuido al contenido del deck.
+

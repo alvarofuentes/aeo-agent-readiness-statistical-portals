@@ -1,0 +1,470 @@
+[
+  {
+    "requested_url": "http://observatorioplanificacion.cepal.org/",
+    "redirect_chain": [
+      {
+        "status": 301,
+        "from": "http://observatorioplanificacion.cepal.org/",
+        "to": "https://observatorioplanificacion.cepal.org/es"
+      },
+      {
+        "status": 301,
+        "from": "https://observatorioplanificacion.cepal.org/es",
+        "to": "http://observatorioplanificacion.cepal.org/es/"
+      },
+      {
+        "status": 301,
+        "from": "http://observatorioplanificacion.cepal.org/es/",
+        "to": "https://observatorioplanificacion.cepal.org/es/"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://observatorioplanificacion.cepal.org/es/",
+    "content_type": "text/html",
+    "headers": {
+      "connection": "close",
+      "content-length": "1036",
+      "server": "nginx/1.29.8",
+      "content-type": "text/html",
+      "last-modified": "Mon, 17 Aug 2026 19:35:07 GMT",
+      "etag": "\"6a83626b-40c\"",
+      "accept-ranges": "bytes",
+      "age": "0",
+      "date": "Thu, 20 Aug 2026 15:51:43 GMT",
+      "via": "1.1 varnish",
+      "x-served-by": "cache-scl2220040-SCL",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "x-timer": "S1787241104.675283,VS0,VE19",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=300"
+    },
+    "bytes": 1036,
+    "sha256": "b652deb803247b72ed9a865afc3f76566bcff2d156b4f84dc4d1e7d5c09bf85a",
+    "error": null,
+    "body_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\http_observatorioplanificacion.cepal.org_root.body",
+    "headers_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\http_observatorioplanificacion.cepal.org_root.headers.json",
+    "html": {
+      "title": "Observatorio Regional de Planificación para el Desarrollo de América Latina y el Caribe",
+      "meta": {},
+      "canonical": [],
+      "alternates": [],
+      "headings": [],
+      "text_length": 407,
+      "links_count": 0,
+      "links": [],
+      "forms": 0,
+      "tables": 0,
+      "iframes": 0,
+      "canvas": 0,
+      "svg": 0,
+      "noscript": 0,
+      "jsonld": [],
+      "microdata_items": [],
+      "rdfa_markers": [],
+      "script_count": 3,
+      "external_scripts": [
+        "https://observatorioplanificacion.cepal.org/es/assets/jquery.min.js",
+        "https://observatorioplanificacion.cepal.org/es/assets/portal-actions.js?v=1"
+      ],
+      "framework_markers": {
+        "next_data": false,
+        "react": false,
+        "angular": false,
+        "vue": false,
+        "drupal": false
+      }
+    }
+  },
+  {
+    "requested_url": "https://observatorioplanificacion.cepal.org/",
+    "redirect_chain": [
+      {
+        "status": 301,
+        "from": "https://observatorioplanificacion.cepal.org/",
+        "to": "http://observatorioplanificacion.cepal.org/es/"
+      },
+      {
+        "status": 301,
+        "from": "http://observatorioplanificacion.cepal.org/es/",
+        "to": "https://observatorioplanificacion.cepal.org/es/"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://observatorioplanificacion.cepal.org/es/",
+    "content_type": "text/html",
+    "headers": {
+      "connection": "close",
+      "content-length": "1036",
+      "server": "nginx/1.29.8",
+      "content-type": "text/html",
+      "last-modified": "Mon, 17 Aug 2026 19:35:07 GMT",
+      "etag": "\"6a83626b-40c\"",
+      "accept-ranges": "bytes",
+      "date": "Thu, 20 Aug 2026 15:51:43 GMT",
+      "via": "1.1 varnish",
+      "age": "0",
+      "x-served-by": "cache-scl2220054-SCL",
+      "x-cache": "HIT",
+      "x-cache-hits": "1",
+      "x-timer": "S1787241104.755777,VS0,VE1",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=300"
+    },
+    "bytes": 1036,
+    "sha256": "b652deb803247b72ed9a865afc3f76566bcff2d156b4f84dc4d1e7d5c09bf85a",
+    "error": null,
+    "body_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\https_observatorioplanificacion.cepal.org_root.body",
+    "headers_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\https_observatorioplanificacion.cepal.org_root.headers.json",
+    "html": {
+      "title": "Observatorio Regional de Planificación para el Desarrollo de América Latina y el Caribe",
+      "meta": {},
+      "canonical": [],
+      "alternates": [],
+      "headings": [],
+      "text_length": 407,
+      "links_count": 0,
+      "links": [],
+      "forms": 0,
+      "tables": 0,
+      "iframes": 0,
+      "canvas": 0,
+      "svg": 0,
+      "noscript": 0,
+      "jsonld": [],
+      "microdata_items": [],
+      "rdfa_markers": [],
+      "script_count": 3,
+      "external_scripts": [
+        "https://observatorioplanificacion.cepal.org/es/assets/jquery.min.js",
+        "https://observatorioplanificacion.cepal.org/es/assets/portal-actions.js?v=1"
+      ],
+      "framework_markers": {
+        "next_data": false,
+        "react": false,
+        "angular": false,
+        "vue": false,
+        "drupal": false
+      }
+    }
+  },
+  {
+    "requested_url": "https://observatorioplanificacion.cepal.org/es/",
+    "redirect_chain": [],
+    "status": 200,
+    "final_url": "https://observatorioplanificacion.cepal.org/es/",
+    "content_type": "text/html",
+    "headers": {
+      "connection": "close",
+      "content-length": "1036",
+      "server": "nginx/1.29.8",
+      "content-type": "text/html",
+      "last-modified": "Mon, 17 Aug 2026 19:35:07 GMT",
+      "etag": "\"6a83626b-40c\"",
+      "accept-ranges": "bytes",
+      "date": "Thu, 20 Aug 2026 15:51:43 GMT",
+      "via": "1.1 varnish",
+      "age": "0",
+      "x-served-by": "cache-scl2220039-SCL",
+      "x-cache": "HIT",
+      "x-cache-hits": "1",
+      "x-timer": "S1787241104.793204,VS0,VE1",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=300"
+    },
+    "bytes": 1036,
+    "sha256": "b652deb803247b72ed9a865afc3f76566bcff2d156b4f84dc4d1e7d5c09bf85a",
+    "error": null,
+    "body_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\https_observatorioplanificacion.cepal.org_es.body",
+    "headers_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\https_observatorioplanificacion.cepal.org_es.headers.json",
+    "html": {
+      "title": "Observatorio Regional de Planificación para el Desarrollo de América Latina y el Caribe",
+      "meta": {},
+      "canonical": [],
+      "alternates": [],
+      "headings": [],
+      "text_length": 407,
+      "links_count": 0,
+      "links": [],
+      "forms": 0,
+      "tables": 0,
+      "iframes": 0,
+      "canvas": 0,
+      "svg": 0,
+      "noscript": 0,
+      "jsonld": [],
+      "microdata_items": [],
+      "rdfa_markers": [],
+      "script_count": 3,
+      "external_scripts": [
+        "https://observatorioplanificacion.cepal.org/es/assets/jquery.min.js",
+        "https://observatorioplanificacion.cepal.org/es/assets/portal-actions.js?v=1"
+      ],
+      "framework_markers": {
+        "next_data": false,
+        "react": false,
+        "angular": false,
+        "vue": false,
+        "drupal": false
+      }
+    }
+  },
+  {
+    "requested_url": "https://www.observatorioplanificacion.cepal.org/",
+    "redirect_chain": [],
+    "status": null,
+    "final_url": "https://www.observatorioplanificacion.cepal.org/",
+    "content_type": "",
+    "headers": {},
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "error": "URLError: <urlopen error [Errno 11001] getaddrinfo failed>",
+    "body_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\https_www.observatorioplanificacion.cepal.org_root.body",
+    "headers_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\https_www.observatorioplanificacion.cepal.org_root.headers.json",
+    "body_excerpt": ""
+  },
+  {
+    "requested_url": "https://observatorioplanificacion.cepal.org/robots.txt",
+    "redirect_chain": [],
+    "status": 404,
+    "final_url": "https://observatorioplanificacion.cepal.org/robots.txt",
+    "content_type": "text/html",
+    "headers": {
+      "connection": "close",
+      "content-length": "153",
+      "server": "nginx/1.29.8",
+      "content-type": "text/html",
+      "accept-ranges": "bytes",
+      "age": "0",
+      "date": "Thu, 20 Aug 2026 15:51:43 GMT",
+      "via": "1.1 varnish",
+      "x-served-by": "cache-scl2220057-SCL",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "x-timer": "S1787241104.859910,VS0,VE21",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=300"
+    },
+    "bytes": 153,
+    "sha256": "49ce3fd4d2f22fdc9530e58b85a927d0eeb4b7985db41dd90a901bc49f72483d",
+    "error": "HTTPError: HTTP Error 404: Not Found",
+    "body_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\https_observatorioplanificacion.cepal.org_robots.txt.body",
+    "headers_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\https_observatorioplanificacion.cepal.org_robots.txt.headers.json",
+    "html": {
+      "title": "404 Not Found",
+      "meta": {},
+      "canonical": [],
+      "alternates": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "404 Not Found"
+        }
+      ],
+      "text_length": 40,
+      "links_count": 0,
+      "links": [],
+      "forms": 0,
+      "tables": 0,
+      "iframes": 0,
+      "canvas": 0,
+      "svg": 0,
+      "noscript": 0,
+      "jsonld": [],
+      "microdata_items": [],
+      "rdfa_markers": [],
+      "script_count": 0,
+      "external_scripts": [],
+      "framework_markers": {
+        "next_data": false,
+        "react": false,
+        "angular": false,
+        "vue": false,
+        "drupal": false
+      }
+    }
+  },
+  {
+    "requested_url": "https://observatorioplanificacion.cepal.org/sitemap.xml",
+    "redirect_chain": [],
+    "status": 404,
+    "final_url": "https://observatorioplanificacion.cepal.org/sitemap.xml",
+    "content_type": "text/html",
+    "headers": {
+      "connection": "close",
+      "content-length": "153",
+      "server": "nginx/1.29.8",
+      "content-type": "text/html",
+      "accept-ranges": "bytes",
+      "age": "0",
+      "date": "Thu, 20 Aug 2026 15:51:43 GMT",
+      "via": "1.1 varnish",
+      "x-served-by": "cache-scl2220038-SCL",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "x-timer": "S1787241104.926473,VS0,VE13",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=300"
+    },
+    "bytes": 153,
+    "sha256": "49ce3fd4d2f22fdc9530e58b85a927d0eeb4b7985db41dd90a901bc49f72483d",
+    "error": "HTTPError: HTTP Error 404: Not Found",
+    "body_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\https_observatorioplanificacion.cepal.org_sitemap.xml.body",
+    "headers_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\https_observatorioplanificacion.cepal.org_sitemap.xml.headers.json",
+    "html": {
+      "title": "404 Not Found",
+      "meta": {},
+      "canonical": [],
+      "alternates": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "404 Not Found"
+        }
+      ],
+      "text_length": 40,
+      "links_count": 0,
+      "links": [],
+      "forms": 0,
+      "tables": 0,
+      "iframes": 0,
+      "canvas": 0,
+      "svg": 0,
+      "noscript": 0,
+      "jsonld": [],
+      "microdata_items": [],
+      "rdfa_markers": [],
+      "script_count": 0,
+      "external_scripts": [],
+      "framework_markers": {
+        "next_data": false,
+        "react": false,
+        "angular": false,
+        "vue": false,
+        "drupal": false
+      }
+    }
+  },
+  {
+    "requested_url": "https://observatorioplanificacion.cepal.org/sitemap_index.xml",
+    "redirect_chain": [],
+    "status": 404,
+    "final_url": "https://observatorioplanificacion.cepal.org/sitemap_index.xml",
+    "content_type": "text/html",
+    "headers": {
+      "connection": "close",
+      "content-length": "153",
+      "server": "nginx/1.29.8",
+      "content-type": "text/html",
+      "accept-ranges": "bytes",
+      "age": "0",
+      "date": "Thu, 20 Aug 2026 15:51:43 GMT",
+      "via": "1.1 varnish",
+      "x-served-by": "cache-scl2220047-SCL",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "x-timer": "S1787241104.970870,VS0,VE18",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=300"
+    },
+    "bytes": 153,
+    "sha256": "49ce3fd4d2f22fdc9530e58b85a927d0eeb4b7985db41dd90a901bc49f72483d",
+    "error": "HTTPError: HTTP Error 404: Not Found",
+    "body_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\https_observatorioplanificacion.cepal.org_sitemap_index.xml.body",
+    "headers_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\https_observatorioplanificacion.cepal.org_sitemap_index.xml.headers.json",
+    "html": {
+      "title": "404 Not Found",
+      "meta": {},
+      "canonical": [],
+      "alternates": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "404 Not Found"
+        }
+      ],
+      "text_length": 40,
+      "links_count": 0,
+      "links": [],
+      "forms": 0,
+      "tables": 0,
+      "iframes": 0,
+      "canvas": 0,
+      "svg": 0,
+      "noscript": 0,
+      "jsonld": [],
+      "microdata_items": [],
+      "rdfa_markers": [],
+      "script_count": 0,
+      "external_scripts": [],
+      "framework_markers": {
+        "next_data": false,
+        "react": false,
+        "angular": false,
+        "vue": false,
+        "drupal": false
+      }
+    }
+  },
+  {
+    "requested_url": "https://observatorioplanificacion.cepal.org/llms.txt",
+    "redirect_chain": [],
+    "status": 404,
+    "final_url": "https://observatorioplanificacion.cepal.org/llms.txt",
+    "content_type": "text/html",
+    "headers": {
+      "connection": "close",
+      "content-length": "153",
+      "server": "nginx/1.29.8",
+      "content-type": "text/html",
+      "accept-ranges": "bytes",
+      "age": "0",
+      "date": "Thu, 20 Aug 2026 15:51:44 GMT",
+      "via": "1.1 varnish",
+      "x-served-by": "cache-scl2220040-SCL",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "x-timer": "S1787241104.046053,VS0,VE26",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=300"
+    },
+    "bytes": 153,
+    "sha256": "49ce3fd4d2f22fdc9530e58b85a927d0eeb4b7985db41dd90a901bc49f72483d",
+    "error": "HTTPError: HTTP Error 404: Not Found",
+    "body_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\https_observatorioplanificacion.cepal.org_llms.txt.body",
+    "headers_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\https_observatorioplanificacion.cepal.org_llms.txt.headers.json",
+    "html": {
+      "title": "404 Not Found",
+      "meta": {},
+      "canonical": [],
+      "alternates": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "404 Not Found"
+        }
+      ],
+      "text_length": 40,
+      "links_count": 0,
+      "links": [],
+      "forms": 0,
+      "tables": 0,
+      "iframes": 0,
+      "canvas": 0,
+      "svg": 0,
+      "noscript": 0,
+      "jsonld": [],
+      "microdata_items": [],
+      "rdfa_markers": [],
+      "script_count": 0,
+      "external_scripts": [],
+      "framework_markers": {
+        "next_data": false,
+        "react": false,
+        "angular": false,
+        "vue": false,
+        "drupal": false
+      }
+    }
+  }
+]

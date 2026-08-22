@@ -1,0 +1,59 @@
+
+function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] == variable) {
+            return pair[1];
+        }
+    }
+    return false;
+}
+
+
+
+function scrollTopPage (){
+  $("body").append("<span class='ir-arriba icon-arrow-up2'><img src='images/icon-top.png' width='55px' /></span>");
+	$('.ir-arriba').click(function(){
+		$('body, html').animate({
+			scrollTop: '0px'
+		}, 300);
+	});
+
+	$(window).scroll(function(){
+		if($(this).scrollTop()>0){
+			$('.ir-arriba').slideDown(300);
+		} else {
+			$('.ir-arriba').fadeOut(300);
+		}
+	});
+}
+
+
+const d = new Date();
+let time = d.getTime();
+if(!Number(time)) { time=Math.floor(Math.random() * 100000000000) + 1; };
+
+$(document).ready(function () {
+//$("section").first().addClass("container");
+//$("section").first().attr( 'id', 'web-content' );
+});
+
+var lang = getQueryVariable("lang");
+var theme = getQueryVariable("theme");
+//var plan_id_number = getQueryVariable("plan_id");
+var id = getQueryVariable("id");
+var miembros = getQueryVariable("miembros");
+var country = getQueryVariable("country");
+//var program = getQueryVariable("program");
+
+if(!lang) {
+  //infiere desde URL
+  const langURL = window.location.href;
+  if (langURL.includes("en/")) {
+    var lang = "en";
+  } else {
+    var lang = "es";
+  }
+}

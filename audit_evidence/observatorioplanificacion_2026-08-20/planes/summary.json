@@ -1,0 +1,137 @@
+[
+  {
+    "requested_url": "https://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos",
+    "redirect_chain": [
+      {
+        "status": 301,
+        "from": "https://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos",
+        "to": "http://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos/"
+      },
+      {
+        "status": 301,
+        "from": "http://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos/",
+        "to": "https://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos/"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos/",
+    "content_type": "text/html",
+    "headers": {
+      "connection": "close",
+      "content-length": "1150",
+      "server": "nginx/1.29.8",
+      "content-type": "text/html",
+      "last-modified": "Mon, 17 Aug 2026 19:35:07 GMT",
+      "etag": "\"6a83626b-47e\"",
+      "accept-ranges": "bytes",
+      "age": "0",
+      "date": "Thu, 20 Aug 2026 15:52:58 GMT",
+      "via": "1.1 varnish",
+      "x-served-by": "cache-scl2220023-SCL",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "x-timer": "S1787241178.359648,VS0,VE21",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=300"
+    },
+    "bytes": 1150,
+    "sha256": "a675dc98343332c1cd266638dff20e24fe7a038258f71a2f692ee5830600cdcf",
+    "error": null,
+    "body_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\planes\\https_observatorioplanificacion.cepal.org_es_planes-programas-e-instrumentos.body",
+    "headers_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\planes\\https_observatorioplanificacion.cepal.org_es_planes-programas-e-instrumentos.headers.json",
+    "html": {
+      "title": "Observatorio Regional de Planificación para el Desarrollo de América Latina y el Caribe",
+      "meta": {},
+      "canonical": [],
+      "alternates": [],
+      "headings": [],
+      "text_length": 439,
+      "links_count": 0,
+      "links": [],
+      "forms": 0,
+      "tables": 0,
+      "iframes": 0,
+      "canvas": 0,
+      "svg": 0,
+      "noscript": 0,
+      "jsonld": [],
+      "microdata_items": [],
+      "rdfa_markers": [],
+      "script_count": 4,
+      "external_scripts": [
+        "https://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos/assets/jquery.min.js?v=3.6.0",
+        "https://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos/assets/bootstrap.min.js",
+        "https://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos/assets/portal-actions.js"
+      ],
+      "framework_markers": {
+        "next_data": false,
+        "react": false,
+        "angular": false,
+        "vue": false,
+        "drupal": false
+      }
+    }
+  },
+  {
+    "requested_url": "https://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos/",
+    "redirect_chain": [],
+    "status": 200,
+    "final_url": "https://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos/",
+    "content_type": "text/html",
+    "headers": {
+      "connection": "close",
+      "content-length": "1150",
+      "server": "nginx/1.29.8",
+      "content-type": "text/html",
+      "last-modified": "Mon, 17 Aug 2026 19:35:07 GMT",
+      "etag": "\"6a83626b-47e\"",
+      "accept-ranges": "bytes",
+      "date": "Thu, 20 Aug 2026 15:52:58 GMT",
+      "via": "1.1 varnish",
+      "age": "0",
+      "x-served-by": "cache-scl2220032-SCL",
+      "x-cache": "HIT",
+      "x-cache-hits": "1",
+      "x-timer": "S1787241178.426211,VS0,VE1",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=300"
+    },
+    "bytes": 1150,
+    "sha256": "a675dc98343332c1cd266638dff20e24fe7a038258f71a2f692ee5830600cdcf",
+    "error": null,
+    "body_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\planes\\https_observatorioplanificacion.cepal.org_es_planes-programas-e-instrumentos.body",
+    "headers_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\planes\\https_observatorioplanificacion.cepal.org_es_planes-programas-e-instrumentos.headers.json",
+    "html": {
+      "title": "Observatorio Regional de Planificación para el Desarrollo de América Latina y el Caribe",
+      "meta": {},
+      "canonical": [],
+      "alternates": [],
+      "headings": [],
+      "text_length": 439,
+      "links_count": 0,
+      "links": [],
+      "forms": 0,
+      "tables": 0,
+      "iframes": 0,
+      "canvas": 0,
+      "svg": 0,
+      "noscript": 0,
+      "jsonld": [],
+      "microdata_items": [],
+      "rdfa_markers": [],
+      "script_count": 4,
+      "external_scripts": [
+        "https://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos/assets/jquery.min.js?v=3.6.0",
+        "https://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos/assets/bootstrap.min.js",
+        "https://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos/assets/portal-actions.js"
+      ],
+      "framework_markers": {
+        "next_data": false,
+        "react": false,
+        "angular": false,
+        "vue": false,
+        "drupal": false
+      }
+    }
+  }
+]

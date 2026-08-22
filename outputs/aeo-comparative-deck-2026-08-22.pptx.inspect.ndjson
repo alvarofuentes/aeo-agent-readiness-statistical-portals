@@ -1,0 +1,233 @@
+{"kind":"deck","id":"pr/axhc5u","name":"Deck"}
+{"kind":"layout","layoutId":"eca94c22-c4a3-416a-8834-d55a4eb10528","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"4fef37bd-453b-49c9-ba44-29290be8cad6","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/d90pg6","slide":1,"title":"AUDITORÍA COMPARADA","textShapes":6}
+{"kind":"shape","id":"sh/kbuxcby1","slide":1,"bbox":[720,42,518,574]}
+{"kind":"shape","id":"sh/jq1w36xg","slide":1,"bbox":[760,84,438,4]}
+{"kind":"textbox","id":"sh/ypsfa1gv","slide":1,"text":"AUDITORÍA COMPARADA","textPreview":"AUDITORÍA COMPARADA","textChars":19,"textLines":1,"bbox":[42,46,560,26]}
+{"kind":"textbox","id":"sh/xoje1wfa","slide":1,"text":"AEO y preparación\npara agentes de IA","textPreview":"AEO y preparación | para agentes de IA","textChars":36,"textLines":2,"bbox":[42,112,600,150]}
+{"kind":"textbox","id":"sh/cnax8byp","slide":1,"text":"Banco Mundial · WHO Data · Statista · CEPALSTAT","textPreview":"Banco Mundial · WHO Data · Statista · CEPALSTAT","textChars":47,"textLines":1,"bbox":[42,302,580,44]}
+{"kind":"textbox","id":"sh/bm1wz6x4","slide":1,"text":"Seis dimensiones, evidencia primaria y un piloto de direccionamiento.","textPreview":"Seis dimensiones, evidencia primaria y un piloto de direccionamiento.","textChars":69,"textLines":1,"bbox":[42,370,560,72]}
+{"kind":"textbox","id":"sh/alsv61gj","slide":1,"text":"22 agosto 2026","textPreview":"22 agosto 2026","textChars":14,"textLines":1,"bbox":[42,598,300,26]}
+{"kind":"textbox","id":"sh/hkned0fe","slide":1,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1168,665,54,24]}
+{"kind":"notes","id":"nt/d90pg6","slide":1,"text":"[Sources]\nhttps://data.worldbank.org/\nhttps://data.who.int/\nhttps://www.statista.com/\nhttps://statistics.cepal.org/portal/cepalstat/"}
+{"kind":"slide","id":"sl/5lqwyp","slide":2,"title":"LECTURA EJECUTIVA","textShapes":15}
+{"kind":"textbox","id":"sh/alkn6t0j","slide":2,"text":"LECTURA EJECUTIVA","textPreview":"LECTURA EJECUTIVA","textChars":17,"textLines":1,"bbox":[42,32,500,24]}
+{"kind":"textbox","id":"sh/x8bm1oja","slide":2,"text":"La preparación técnica no garantiza el direccionamiento","textPreview":"La preparación técnica no garantiza el direccionamiento","textChars":55,"textLines":1,"bbox":[42,62,1180,68]}
+{"kind":"textbox","id":"sh/c7258jip","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1184,665,54,24]}
+{"kind":"shape","id":"sh/ni94ve18","slide":2,"bbox":[42,650,1196,1]}
+{"kind":"textbox","id":"sh/2h0n290n","slide":2,"text":"AEO / AI readiness · 22 agosto 2026","textPreview":"AEO / AI readiness · 22 agosto 2026","textChars":35,"textLines":1,"bbox":[42,662,400,22]}
+{"kind":"textbox","id":"sh/pkrmxojy","slide":2,"text":"El Banco Mundial y WHO Data lideran el puntaje integral; el piloto de búsqueda favorece al Banco Mundial por cobertura y ajuste a consultas generalistas.","textPreview":"El Banco Mundial y WHO Data lideran el puntaje integral; el piloto de búsqueda favorece al Banco Mundial por cobertura y ajuste a consult...","textChars":153,"textLines":1,"bbox":[42,142,1160,58]}
+{"kind":"shape","id":"sh/oji54jit","slide":2,"bbox":[42,248,374,210]}
+{"kind":"textbox","id":"sh/fe94re1w","slide":2,"text":"77/100","textPreview":"77/100","textChars":6,"textLines":1,"bbox":[70,278,320,70]}
+{"kind":"textbox","id":"sh/ed0ny90b","slide":2,"text":"Banco Mundial y WHO Data","textPreview":"Banco Mundial y WHO Data","textChars":24,"textLines":1,"bbox":[70,364,320,62]}
+{"kind":"shape","id":"sh/8bu5c3u5","slide":2,"bbox":[446,248,374,210]}
+{"kind":"textbox","id":"sh/tc3m58vq","slide":2,"text":"60/100","textPreview":"60/100","textChars":6,"textLines":1,"bbox":[474,278,320,70]}
+{"kind":"textbox","id":"sh/6pcnatcz","slide":2,"text":"Statista: citabilidad con acceso restringido","textPreview":"Statista: citabilidad con acceso restringido","textChars":44,"textLines":1,"bbox":[474,364,320,62]}
+{"kind":"shape","id":"sh/7ql43ydk","slide":2,"bbox":[850,248,374,210]}
+{"kind":"textbox","id":"sh/kna58ju9","slide":2,"text":"45/100","textPreview":"45/100","textChars":6,"textLines":1,"bbox":[878,278,320,70]}
+{"kind":"textbox","id":"sh/lojm1ove","slide":2,"text":"CEPALSTAT: API fuerte, capa web frágil","textPreview":"CEPALSTAT: API fuerte, capa web frágil","textChars":38,"textLines":1,"bbox":[878,364,320,62]}
+{"kind":"shape","id":"sh/yls36tw3","slide":2,"bbox":[42,504,10,10]}
+{"kind":"textbox","id":"sh/jm14zydo","slide":2,"text":"Fortaleza transversal","textPreview":"Fortaleza transversal","textChars":21,"textLines":1,"bbox":[64,500,538,26]}
+{"kind":"textbox","id":"sh/4je5knud","slide":2,"text":"Las cuatro páginas tienen una vía de datos o metadatos que puede servir a un agente.","textPreview":"Las cuatro páginas tienen una vía de datos o metadatos que puede servir a un agente.","textChars":84,"textLines":1,"bbox":[64,530,538,76]}
+{"kind":"shape","id":"sh/5knmdsvy","slide":2,"bbox":[650,504,10,10]}
+{"kind":"textbox","id":"sh/d0jmxsn2","slide":2,"text":"Brecha transversal","textPreview":"Brecha transversal","textChars":18,"textLines":1,"bbox":[672,500,538,26]}
+{"kind":"textbox","id":"sh/cza5onmh","slide":2,"text":"Las observaciones exactas siguen siendo menos descubribles que las definiciones y las portadas.","textPreview":"Las observaciones exactas siguen siendo menos descubribles que las definiciones y las portadas.","textChars":95,"textLines":1,"bbox":[672,530,538,76]}
+{"kind":"notes","id":"nt/5lqwyp","slide":2,"text":"[Sources]\noutputs/aeo-comparative-matrix-2026-08-22.csv\noutputs/aeo-comparative-report-2026-08-22.md"}
+{"kind":"slide","id":"sl/ybdv1y","slide":3,"title":"PUNTAJES","textShapes":7}
+{"kind":"textbox","id":"sh/zuh4nep8","slide":3,"text":"PUNTAJES","textPreview":"PUNTAJES","textChars":8,"textLines":1,"bbox":[42,32,500,24]}
+{"kind":"textbox","id":"sh/kvqlgj6t","slide":3,"text":"El ranking cambia cuando se iguala la evidencia","textPreview":"El ranking cambia cuando se iguala la evidencia","textChars":47,"textLines":1,"bbox":[42,62,1180,68]}
+{"kind":"textbox","id":"sh/lwzmpo7e","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1184,665,54,24]}
+{"kind":"shape","id":"sh/a5o3a9or","slide":3,"bbox":[42,650,1196,1]}
+{"kind":"textbox","id":"sh/bqx4jepc","slide":3,"text":"AEO / AI readiness · 22 agosto 2026","textPreview":"AEO / AI readiness · 22 agosto 2026","textChars":35,"textLines":1,"bbox":[42,662,400,22]}
+{"kind":"shape","id":"sh/xszmlo7i","slide":3,"bbox":[764,170,450,348]}
+{"kind":"textbox","id":"sh/u1snmtov","slide":3,"text":"Qué significa","textPreview":"Qué significa","textChars":13,"textLines":1,"bbox":[798,204,360,34]}
+{"kind":"textbox","id":"sh/vm14vypg","slide":3,"text":"El núcleo comparable conserva solo descubrimiento, API y citabilidad —las dimensiones que sí pudimos observar de forma más uniforme.","textPreview":"El núcleo comparable conserva solo descubrimiento, API y citabilidad —las dimensiones que sí pudimos observar de forma más uniforme.","textChars":132,"textLines":1,"bbox":[798,258,360,100]}
+{"kind":"textbox","id":"sh/nihwnidw","slide":3,"text":"World Bank sube a 90,9 por su API y URLs reproducibles. CEPALSTAT sube, pero permanece último: su problema central es la conexión entre descubrimiento web y dato observable.","textPreview":"World Bank sube a 90,9 por su API y URLs reproducibles. CEPALSTAT sube, pero permanece último: su problema central es la conexión entre d...","textChars":173,"textLines":1,"bbox":[798,386,360,100]}
+{"kind":"chart","id":"ch/gvq9gbap","slide":3,"name":"","chartType":"bar","bbox":[42,142,670,450]}
+{"kind":"notes","id":"nt/ybdv1y","slide":3,"text":"[Sources]\noutputs/aeo-comparative-matrix-2026-08-22.csv\nhttps://datahelpdesk.worldbank.org/knowledgebase/articles/889392\nhttps://data.who.int/products/data-description-schema\nhttps://www.statista.com/getting-started/more-statista-services-what-is-statista-connect\nhttps://api-cepalstat.cepal.org/apispec_1.json"}
+{"kind":"slide","id":"sl/ak1t6q","slide":4,"title":"DIMENSIONES","textShapes":41}
+{"kind":"textbox","id":"sh/2t03alsv","slide":4,"text":"DIMENSIONES","textPreview":"DIMENSIONES","textChars":11,"textLines":1,"bbox":[42,32,500,24]}
+{"kind":"textbox","id":"sh/pwrm50r6","slide":4,"text":"La API es la ventaja más consistente; el descubrimiento es la brecha más desigual","textPreview":"La API es la ventaja más consistente; el descubrimiento es la brecha más desigual","textChars":81,"textLines":1,"bbox":[42,62,1180,68]}
+{"kind":"textbox","id":"sh/ovilcval","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1184,665,54,24]}
+{"kind":"shape","id":"sh/bit47q9c","slide":4,"bbox":[42,650,1196,1]}
+{"kind":"textbox","id":"sh/qxk3e5sr","slide":4,"text":"AEO / AI readiness · 22 agosto 2026","textPreview":"AEO / AI readiness · 22 agosto 2026","textChars":35,"textLines":1,"bbox":[42,662,400,22]}
+{"kind":"textbox","id":"sh/dkbm90ri","slide":4,"text":"Puntaje por dimensión","textPreview":"Puntaje por dimensión","textChars":21,"textLines":1,"bbox":[42,118,300,24]}
+{"kind":"textbox","id":"sh/cj2lgvax","slide":4,"text":"Banco Mundial","textPreview":"Banco Mundial","textChars":13,"textLines":1,"bbox":[352,118,200,24]}
+{"kind":"textbox","id":"sh/r2pkv698","slide":4,"text":"WHO Data","textPreview":"WHO Data","textChars":8,"textLines":1,"bbox":[562,118,200,24]}
+{"kind":"textbox","id":"sh/61g321sn","slide":4,"text":"Statista","textPreview":"Statista","textChars":8,"textLines":1,"bbox":[772,118,200,24]}
+{"kind":"textbox","id":"sh/w729sn69","slide":4,"text":"CEPALSTAT","textPreview":"CEPALSTAT","textChars":9,"textLines":1,"bbox":[982,118,200,24]}
+{"kind":"shape","id":"sh/x8bqlsnu","slide":4,"bbox":[42,150,300,58]}
+{"kind":"textbox","id":"sh/a5krqdoj","slide":4,"text":"Bots","textPreview":"Bots","textChars":4,"textLines":1,"bbox":[58,167,270,28]}
+{"kind":"shape","id":"sh/b6t8ji54","slide":4,"bbox":[352,150,200,58]}
+{"kind":"textbox","id":"sh/kb29wn6l","slide":4,"text":"7/10","textPreview":"7/10","textChars":4,"textLines":1,"bbox":[352,164,200,30]}
+{"kind":"shape","id":"sh/lcvqpsn6","slide":4,"bbox":[562,150,200,58]}
+{"kind":"textbox","id":"sh/y9krudof","slide":4,"text":"7/10","textPreview":"7/10","textChars":4,"textLines":1,"bbox":[562,164,200,30]}
+{"kind":"shape","id":"sh/jat8ni50","slide":4,"bbox":[772,150,200,58]}
+{"kind":"textbox","id":"sh/0fipk36h","slide":4,"text":"4/10","textPreview":"4/10","textChars":4,"textLines":1,"bbox":[772,164,200,30]}
+{"kind":"shape","id":"sh/1grqd8nm","slide":4,"bbox":[982,150,200,58]}
+{"kind":"textbox","id":"sh/1wj6hkfq","slide":4,"text":"3/10","textPreview":"3/10","textChars":4,"textLines":1,"bbox":[982,164,200,30]}
+{"kind":"shape","id":"sh/gva5ofy5","slide":4,"bbox":[42,216,300,58]}
+{"kind":"textbox","id":"sh/fa1ofuhk","slide":4,"text":"Descubrimiento","textPreview":"Descubrimiento","textChars":14,"textLines":1,"bbox":[58,233,270,28]}
+{"kind":"shape","id":"sh/e9snmpgz","slide":4,"bbox":[352,216,200,58]}
+{"kind":"textbox","id":"sh/p036l4fm","slide":4,"text":"12/15","textPreview":"12/15","textChars":5,"textLines":1,"bbox":[352,230,200,30]}
+{"kind":"shape","id":"sh/ozapszy1","slide":4,"bbox":[562,216,200,58]}
+{"kind":"textbox","id":"sh/3y1ojuxg","slide":4,"text":"12/15","textPreview":"12/15","textChars":5,"textLines":1,"bbox":[562,230,200,30]}
+{"kind":"shape","id":"sh/2xs7qpgb","slide":4,"bbox":[772,216,200,58]}
+{"kind":"textbox","id":"sh/d436p4fy","slide":4,"text":"10/15","textPreview":"10/15","textChars":5,"textLines":1,"bbox":[772,230,200,30]}
+{"kind":"shape","id":"sh/c3upwzyd","slide":4,"bbox":[982,216,200,58]}
+{"kind":"textbox","id":"sh/ax4vuhsj","slide":4,"text":"2/15","textPreview":"2/15","textChars":4,"textLines":1,"bbox":[982,230,200,30]}
+{"kind":"shape","id":"sh/bydc3mt4","slide":4,"bbox":[42,282,300,58]}
+{"kind":"textbox","id":"sh/wzmdw7ap","slide":4,"text":"Renderizado","textPreview":"Renderizado","textChars":11,"textLines":1,"bbox":[58,299,270,28]}
+{"kind":"shape","id":"sh/x0vu5cru","slide":4,"bbox":[352,282,200,58]}
+{"kind":"textbox","id":"sh/y14vyhsf","slide":4,"text":"13/20","textPreview":"13/20","textChars":5,"textLines":1,"bbox":[352,296,200,30]}
+{"kind":"shape","id":"sh/j2dc7m90","slide":4,"bbox":[562,282,200,58]}
+{"kind":"textbox","id":"sh/k3md0ral","slide":4,"text":"16/20","textPreview":"16/20","textChars":5,"textLines":1,"bbox":[562,296,200,30]}
+{"kind":"shape","id":"sh/l4fu9wr6","slide":4,"bbox":[772,282,200,58]}
+{"kind":"textbox","id":"sh/65ov21sr","slide":4,"text":"13/20","textPreview":"13/20","textChars":5,"textLines":1,"bbox":[772,296,200,30]}
+{"kind":"shape","id":"sh/7qxcb69c","slide":4,"bbox":[982,282,200,58]}
+{"kind":"textbox","id":"sh/fmtcvm1g","slide":4,"text":"8/20","textPreview":"8/20","textChars":4,"textLines":1,"bbox":[982,296,200,30]}
+{"kind":"shape","id":"sh/ulkbm1kv","slide":4,"bbox":[42,348,300,58]}
+{"kind":"textbox","id":"sh/1obuxwj6","slide":4,"text":"Datos estructurados","textPreview":"Datos estructurados","textChars":19,"textLines":1,"bbox":[58,365,270,28]}
+{"kind":"shape","id":"sh/gn2dor21","slide":4,"bbox":[352,348,200,58]}
+{"kind":"textbox","id":"sh/3qdcz61c","slide":4,"text":"7/15","textPreview":"7/15","textChars":4,"textLines":1,"bbox":[352,362,200,30]}
+{"kind":"shape","id":"sh/2pkvq1kr","slide":4,"bbox":[562,348,200,58]}
+{"kind":"textbox","id":"sh/pcvu1gji","slide":4,"text":"8/15","textPreview":"8/15","textChars":4,"textLines":1,"bbox":[562,362,200,30]}
+{"kind":"shape","id":"sh/obmdsb2x","slide":4,"bbox":[772,348,200,58]}
+{"kind":"textbox","id":"sh/ju9cn218","slide":4,"text":"7/15","textPreview":"7/15","textChars":4,"textLines":1,"bbox":[772,362,200,30]}
+{"kind":"shape","id":"sh/it0bexkn","slide":4,"bbox":[982,348,200,58]}
+{"kind":"textbox","id":"sh/8ze9o3il","slide":4,"text":"2/15","textPreview":"2/15","textChars":4,"textLines":1,"bbox":[982,362,200,30]}
+{"kind":"shape","id":"sh/907ax8z6","slide":4,"bbox":[42,414,300,58]}
+{"kind":"textbox","id":"sh/mxwrmd0f","slide":4,"text":"API","textPreview":"API","textChars":3,"textLines":1,"bbox":[58,431,270,28]}
+{"kind":"shape","id":"sh/ny58vyh0","slide":4,"bbox":[352,414,200,58]}
+{"kind":"textbox","id":"sh/0ve9k3i9","slide":4,"text":"24/25","textPreview":"24/25","textChars":5,"textLines":1,"bbox":[352,428,200,30]}
+{"kind":"shape","id":"sh/lwnqt8zu","slide":4,"bbox":[562,414,200,58]}
+{"kind":"textbox","id":"sh/ytwrit0j","slide":4,"text":"21/25","textPreview":"21/25","textChars":5,"textLines":1,"bbox":[562,428,200,30]}
+{"kind":"shape","id":"sh/zu58ryho","slide":4,"bbox":[772,414,200,58]}
+{"kind":"textbox","id":"sh/kri9wnit","slide":4,"text":"14/25","textPreview":"14/25","textChars":5,"textLines":1,"bbox":[772,428,200,30]}
+{"kind":"shape","id":"sh/5srapszy","slide":4,"bbox":[982,414,200,58]}
+{"kind":"textbox","id":"sh/t8nq9sri","slide":4,"text":"21/25","textPreview":"21/25","textChars":5,"textLines":1,"bbox":[982,428,200,30]}
+{"kind":"shape","id":"sh/s7e9gnax","slide":4,"bbox":[42,480,300,58]}
+{"kind":"textbox","id":"sh/r6587i9c","slide":4,"text":"Citabilidad","textPreview":"Citabilidad","textChars":11,"textLines":1,"bbox":[58,497,270,28]}
+{"kind":"shape","id":"sh/65credsr","slide":4,"bbox":[352,480,200,58]}
+{"kind":"textbox","id":"sh/5k3q5sr6","slide":4,"text":"14/15","textPreview":"14/15","textChars":5,"textLines":1,"bbox":[352,494,200,30]}
+{"kind":"shape","id":"sh/4ju9cnal","slide":4,"bbox":[562,480,200,58]}
+{"kind":"textbox","id":"sh/jil83i90","slide":4,"text":"13/15","textPreview":"13/15","textChars":5,"textLines":1,"bbox":[562,494,200,30]}
+{"kind":"shape","id":"sh/ihcradsv","slide":4,"bbox":[772,480,200,58]}
+{"kind":"textbox","id":"sh/hg3q18ra","slide":4,"text":"12/15","textPreview":"12/15","textChars":5,"textLines":1,"bbox":[772,494,200,30]}
+{"kind":"shape","id":"sh/wfu983ap","slide":4,"bbox":[982,480,200,58]}
+{"kind":"textbox","id":"sh/m9ofm54b","slide":4,"text":"9/15","textPreview":"9/15","textChars":4,"textLines":1,"bbox":[982,494,200,30]}
+{"kind":"textbox","id":"sh/nahgvalw","slide":4,"text":"Verde = fortaleza relativa · amarillo = funcional con brechas · rojo = fricción relevante","textPreview":"Verde = fortaleza relativa · amarillo = funcional con brechas · rojo = fricción relevante","textChars":89,"textLines":1,"bbox":[42,590,820,28]}
+{"kind":"textbox","id":"sh/8bqxofmh","slide":4,"text":"La lectura debe combinar puntaje con confianza de evidencia.","textPreview":"La lectura debe combinar puntaje con confianza de evidencia.","textChars":60,"textLines":1,"bbox":[860,590,350,28]}
+{"kind":"notes","id":"nt/ak1t6q","slide":4,"text":"[Sources]\noutputs/aeo-comparative-matrix-2026-08-22.csv"}
+{"kind":"slide","id":"sl/ddsdvr","slide":5,"title":"PORTALES PÚBLICOS","textShapes":14}
+{"kind":"textbox","id":"sh/r29kjexs","slide":5,"text":"PORTALES PÚBLICOS","textPreview":"PORTALES PÚBLICOS","textChars":17,"textLines":1,"bbox":[42,32,500,24]}
+{"kind":"textbox","id":"sh/s3ilsjyd","slide":5,"text":"Banco Mundial y WHO Data: dos caminos distintos hacia la citabilidad","textPreview":"Banco Mundial y WHO Data: dos caminos distintos hacia la citabilidad","textChars":68,"textLines":1,"bbox":[42,62,1180,68]}
+{"kind":"textbox","id":"sh/t4r2lofi","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1184,665,54,24]}
+{"kind":"shape","id":"sh/ixgjm9gv","slide":5,"bbox":[42,650,1196,1]}
+{"kind":"textbox","id":"sh/jypkfuxg","slide":5,"text":"AEO / AI readiness · 22 agosto 2026","textPreview":"AEO / AI readiness · 22 agosto 2026","textChars":35,"textLines":1,"bbox":[42,662,400,22]}
+{"kind":"shape","id":"sh/4zylozy1","slide":5,"bbox":[42,152,544,438]}
+{"kind":"textbox","id":"sh/5072h4fm","slide":5,"text":"BANCO MUNDIAL","textPreview":"BANCO MUNDIAL","textChars":13,"textLines":1,"bbox":[68,178,490,28]}
+{"kind":"textbox","id":"sh/2tk3ytwf","slide":5,"text":"Destacable","textPreview":"Destacable","textChars":10,"textLines":1,"bbox":[68,236,160,28]}
+{"kind":"textbox","id":"sh/3utkryx0","slide":5,"text":"API v2 pública, sin clave, con JSON/JSON-stat/CSV/XML/Excel y filtros reproducibles.","textPreview":"API v2 pública, sin clave, con JSON/JSON-stat/CSV/XML/Excel y filtros reproducibles.","textChars":84,"textLines":1,"bbox":[68,276,480,96]}
+{"kind":"shape","id":"sh/rqp0fuho","slide":5,"bbox":[68,400,488,1]}
+{"kind":"textbox","id":"sh/qpgzmp03","slide":5,"text":"Mejora prioritaria","textPreview":"Mejora prioritaria","textChars":18,"textLines":1,"bbox":[68,430,220,28]}
+{"kind":"textbox","id":"sh/dsrih4ze","slide":5,"text":"Hacer visibles los valores sin JavaScript; publicar política de crawlers y structured data verificable.","textPreview":"Hacer visibles los valores sin JavaScript; publicar política de crawlers y structured data verificable.","textChars":103,"textLines":1,"bbox":[68,470,480,90]}
+{"kind":"shape","id":"sh/crihozi9","slide":5,"bbox":[650,152,544,438]}
+{"kind":"textbox","id":"sh/zu90jehk","slide":5,"text":"WHO DATA","textPreview":"WHO DATA","textChars":8,"textLines":1,"bbox":[676,178,490,28]}
+{"kind":"textbox","id":"sh/et0jq90z","slide":5,"text":"Destacable","textPreview":"Destacable","textChars":10,"textLines":1,"bbox":[676,236,160,28]}
+{"kind":"textbox","id":"sh/1wril4zq","slide":5,"text":"Fichas con identificador, unidad, cobertura, periodicidad, método, licencia y texto de cita.","textPreview":"Fichas con identificador, unidad, cobertura, periodicidad, método, licencia y texto de cita.","textChars":92,"textLines":1,"bbox":[676,276,480,96]}
+{"kind":"shape","id":"sh/0vi1sji5","slide":5,"bbox":[676,400,488,1]}
+{"kind":"textbox","id":"sh/ny90nehw","slide":5,"text":"Mejora prioritaria","textPreview":"Mejora prioritaria","textChars":18,"textLines":1,"bbox":[676,430,220,28]}
+{"kind":"textbox","id":"sh/mx0ju90b","slide":5,"text":"Mapear cada indicador a un endpoint OData estable; aclarar sitemap, agentes IA y JSON-LD.","textPreview":"Mapear cada indicador a un endpoint OData estable; aclarar sitemap, agentes IA y JSON-LD.","textChars":89,"textLines":1,"bbox":[676,470,480,90]}
+{"kind":"notes","id":"nt/ddsdvr","slide":5,"text":"[Sources]\noutputs/aeo-agent-readiness-data.worldbank.org-2026-08-22.md\noutputs/aeo-agent-readiness-data.who.int-2026-08-22.md\nhttps://datahelpdesk.worldbank.org/knowledgebase/articles/898581-api-basic-call-structures\nhttps://data.who.int/products/data-description-schema"}
+{"kind":"slide","id":"sl/0nr15n","slide":6,"title":"PORTALES CON FRICCIÓN","textShapes":14}
+{"kind":"textbox","id":"sh/atwb2p0n","slide":6,"text":"PORTALES CON FRICCIÓN","textPreview":"PORTALES CON FRICCIÓN","textChars":21,"textLines":1,"bbox":[42,32,500,24]}
+{"kind":"textbox","id":"sh/xwnuxkze","slide":6,"text":"Statista y CEPALSTAT: citabilidad editorial frente a acceso programático","textPreview":"Statista y CEPALSTAT: citabilidad editorial frente a acceso programático","textChars":72,"textLines":1,"bbox":[42,62,1180,68]}
+{"kind":"textbox","id":"sh/wvet4fit","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1184,665,54,24]}
+{"kind":"shape","id":"sh/nqlcrahc","slide":6,"bbox":[42,650,1196,1]}
+{"kind":"textbox","id":"sh/mpcby50r","slide":6,"text":"AEO / AI readiness · 22 agosto 2026","textPreview":"AEO / AI readiness · 22 agosto 2026","textChars":35,"textLines":1,"bbox":[42,662,400,22]}
+{"kind":"shape","id":"sh/9snutkz2","slide":6,"bbox":[42,152,544,438]}
+{"kind":"textbox","id":"sh/8ret0fix","slide":6,"text":"STATISTA","textPreview":"STATISTA","textChars":8,"textLines":1,"bbox":[68,178,490,28]}
+{"kind":"textbox","id":"sh/7mpc3ehg","slide":6,"text":"Destacable","textPreview":"Destacable","textChars":10,"textLines":1,"bbox":[68,236,160,28]}
+{"kind":"textbox","id":"sh/6lgba90v","slide":6,"text":"Las fichas públicas muestran fuente, período, fecha, autor y formatos de cita.","textPreview":"Las fichas públicas muestran fuente, período, fecha, autor y formatos de cita.","textChars":78,"textLines":1,"bbox":[68,276,480,96]}
+{"kind":"shape","id":"sh/gbux8769","slide":6,"bbox":[68,400,488,1]}
+{"kind":"textbox","id":"sh/hc3e1c7e","slide":6,"text":"Mejora prioritaria","textPreview":"Mejora prioritaria","textChars":18,"textLines":1,"bbox":[68,430,220,28]}
+{"kind":"textbox","id":"sh/u9cf6ho3","slide":6,"text":"Paywall/registro y API autorizada reducen la llegada; ofrecer evidencia mínima pública y documentación OpenAPI de muestra.","textPreview":"Paywall/registro y API autorizada reducen la llegada; ofrecer evidencia mínima pública y documentación OpenAPI de muestra.","textChars":122,"textLines":1,"bbox":[68,470,480,90]}
+{"kind":"shape","id":"sh/valwz2po","slide":6,"bbox":[650,152,544,438]}
+{"kind":"textbox","id":"sh/87ux476x","slide":6,"text":"CEPALSTAT","textPreview":"CEPALSTAT","textChars":9,"textLines":1,"bbox":[676,178,490,28]}
+{"kind":"textbox","id":"sh/t83exc7i","slide":6,"text":"Destacable","textPreview":"Destacable","textChars":10,"textLines":1,"bbox":[676,236,160,28]}
+{"kind":"textbox","id":"sh/6lsf2x8r","slide":6,"text":"REST/OpenAPI público, metadatos de fuentes, notas y dimensiones.","textPreview":"REST/OpenAPI público, metadatos de fuentes, notas y dimensiones.","textChars":64,"textLines":1,"bbox":[676,276,480,96]}
+{"kind":"shape","id":"sh/7mlwv2pc","slide":6,"bbox":[676,400,488,1]}
+{"kind":"textbox","id":"sh/kjax0nq1","slide":6,"text":"Mejora prioritaria","textPreview":"Mejora prioritaria","textChars":18,"textLines":1,"bbox":[676,430,220,28]}
+{"kind":"textbox","id":"sh/lkjets7m","slide":6,"text":"Sitemap, `llms.txt`, tablas HTML planas, URLs canónicas por indicador y reparación de OpenAPI.","textPreview":"Sitemap, `llms.txt`, tablas HTML planas, URLs canónicas por indicador y reparación de OpenAPI.","textChars":94,"textLines":1,"bbox":[676,470,480,90]}
+{"kind":"notes","id":"nt/0nr15n","slide":6,"text":"[Sources]\noutputs/aeo-agent-readiness-www.statista.com-2026-08-22.md\noutputs/auditoria-aeo-agent-readiness-cepalstat-2026-08-20.md\nhttps://www.statista.com/getting-started/more-statista-services-what-is-statista-connect\nhttps://api-cepalstat.cepal.org/apispec_1.json"}
+{"kind":"slide","id":"sl/7okq5w","slide":7,"title":"HOJA DE RUTA","textShapes":13}
+{"kind":"textbox","id":"sh/kfql0zu9","slide":7,"text":"HOJA DE RUTA","textPreview":"HOJA DE RUTA","textChars":12,"textLines":1,"bbox":[42,32,500,24]}
+{"kind":"textbox","id":"sh/jeh4rudo","slide":7,"text":"Las mejoras prioritarias son repetibles entre portales","textPreview":"Las mejoras prioritarias son repetibles entre portales","textChars":54,"textLines":1,"bbox":[42,62,1180,68]}
+{"kind":"textbox","id":"sh/id83ypc3","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1184,665,54,24]}
+{"kind":"shape","id":"sh/t4jmxobq","slide":7,"bbox":[42,650,1196,1]}
+{"kind":"textbox","id":"sh/s3al4ju5","slide":7,"text":"AEO / AI readiness · 22 agosto 2026","textPreview":"AEO / AI readiness · 22 agosto 2026","textChars":35,"textLines":1,"bbox":[42,662,400,22]}
+{"kind":"shape","id":"sh/7i14vetk","slide":7,"bbox":[42,156,116,104]}
+{"kind":"textbox","id":"sh/6hs329cf","slide":7,"text":"P0","textPreview":"P0","textChars":2,"textLines":1,"bbox":[42,186,116,42]}
+{"kind":"textbox","id":"sh/h8jm1ob2","slide":7,"text":"Hacer descubrible el acceso","textPreview":"Hacer descubrible el acceso","textChars":27,"textLines":1,"bbox":[194,170,360,34]}
+{"kind":"textbox","id":"sh/g7al8juh","slide":7,"text":"robots.txt accesible, sitemap declarado, enlaces directos a datos y política clara para crawlers IA.","textPreview":"robots.txt accesible, sitemap declarado, enlaces directos a datos y política clara para crawlers IA.","textChars":100,"textLines":1,"bbox":[194,210,940,52]}
+{"kind":"shape","id":"sh/2d0z2h8v","slide":7,"bbox":[100,264,2,34]}
+{"kind":"shape","id":"sh/ne9gvm9g","slide":7,"bbox":[42,298,116,104]}
+{"kind":"textbox","id":"sh/ofih4rq1","slide":7,"text":"P1","textPreview":"P1","textChars":2,"textLines":1,"bbox":[42,328,116,42]}
+{"kind":"textbox","id":"sh/p0byxwrm","slide":7,"text":"Hacer citable la observación","textPreview":"Hacer citable la observación","textChars":28,"textLines":1,"bbox":[194,312,360,34]}
+{"kind":"textbox","id":"sh/a1kz6187","slide":7,"text":"Dataset/JSON-LD, tabla HTML inicial, unidad-período-geografía visibles y URL canónica por indicador.","textPreview":"Dataset/JSON-LD, tabla HTML inicial, unidad-período-geografía visibles y URL canónica por indicador.","textChars":100,"textLines":1,"bbox":[194,352,940,52]}
+{"kind":"shape","id":"sh/b2tgz69c","slide":7,"bbox":[100,406,2,34]}
+{"kind":"shape","id":"sh/c32h8bqx","slide":7,"bbox":[42,440,116,104]}
+{"kind":"textbox","id":"sh/x4by1wri","slide":7,"text":"P2","textPreview":"P2","textChars":2,"textLines":1,"bbox":[42,470,116,42]}
+{"kind":"textbox","id":"sh/q5gfux8n","slide":7,"text":"Hacerlo reproducible a escala","textPreview":"Hacerlo reproducible a escala","textChars":29,"textLines":1,"bbox":[194,454,360,34]}
+{"kind":"textbox","id":"sh/r6pgn298","slide":7,"text":"OpenAPI validado, versionado, identificadores persistentes, checksums, monitoreo y pruebas de paridad.","textPreview":"OpenAPI validado, versionado, identificadores persistentes, checksums, monitoreo y pruebas de paridad.","textChars":102,"textLines":1,"bbox":[194,494,940,52]}
+{"kind":"notes","id":"nt/7okq5w","slide":7,"text":"[Sources]\noutputs/aeo-comparative-report-2026-08-22.md"}
+{"kind":"slide","id":"sl/h6o6l5","slide":8,"title":"DIRECCIONAMIENTO","textShapes":9}
+{"kind":"textbox","id":"sh/mpwvqh83","slide":8,"text":"DIRECCIONAMIENTO","textPreview":"DIRECCIONAMIENTO","textChars":16,"textLines":1,"bbox":[42,32,500,24]}
+{"kind":"textbox","id":"sh/9snulw7u","slide":8,"text":"El piloto sugiere relación, pero también revela un fuerte efecto de tema","textPreview":"El piloto sugiere relación, pero también revela un fuerte efecto de tema","textChars":72,"textLines":1,"bbox":[42,62,1180,68]}
+{"kind":"textbox","id":"sh/8redsrq9","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1184,665,54,24]}
+{"kind":"shape","id":"sh/vu5cnmp0","slide":8,"bbox":[42,650,1196,1]}
+{"kind":"textbox","id":"sh/atwvu18f","slide":8,"text":"AEO / AI readiness · 22 agosto 2026","textPreview":"AEO / AI readiness · 22 agosto 2026","textChars":35,"textLines":1,"bbox":[42,662,400,22]}
+{"kind":"shape","id":"sh/wvedwrq5","slide":8,"bbox":[748,172,464,348]}
+{"kind":"textbox","id":"sh/jypcr6pw","slide":8,"text":"Resultado estadístico","textPreview":"Resultado estadístico","textChars":21,"textLines":1,"bbox":[780,208,380,32]}
+{"kind":"textbox","id":"sh/ixgvy18b","slide":8,"text":"rho = 0,80","textPreview":"rho = 0,80","textChars":10,"textLines":1,"bbox":[780,258,380,64]}
+{"kind":"textbox","id":"sh/cfuhgbuh","slide":8,"text":"n = 4 portales · 8 consultas neutrales","textPreview":"n = 4 portales · 8 consultas neutrales","textChars":38,"textLines":1,"bbox":[780,334,380,28]}
+{"kind":"textbox","id":"sh/dgnipgv2","slide":8,"text":"El Banco Mundial domina las consultas generalistas. WHO aparece en salud; CEPALSTAT en América Latina; Statista no aparece en este banco de estadísticas oficiales.","textPreview":"El Banco Mundial domina las consultas generalistas. WHO aparece en salud; CEPALSTAT en América Latina; Statista no aparece en este banco ...","textChars":163,"textLines":1,"bbox":[780,388,380,100]}
+{"kind":"textbox","id":"sh/qdcze1cb","slide":8,"text":"Lectura correcta: señal descriptiva, no causalidad.","textPreview":"Lectura correcta: señal descriptiva, no causalidad.","textChars":51,"textLines":1,"bbox":[780,520,380,28]}
+{"kind":"chart","id":"ch/9c7mp83u","slide":8,"name":"","chartType":"bar","bbox":[42,160,650,410]}
+{"kind":"notes","id":"nt/h6o6l5","slide":8,"text":"[Sources]\noutputs/aeo-referral-pilot-2026-08-22.csv\noutputs/aeo-referral-pilot-analysis-2026-08-22.py\nhttps://data.worldbank.org/indicator/SP.POP.TOTL\nhttps://data.who.int/indicators/i/E3CAF2B/2322814\nhttps://statistics.cepal.org/portal/cepalstat/dashboard.html?area_id=930&indicator_id=5554&lang=en"}
+{"kind":"slide","id":"sl/1fafvj","slide":9,"title":"LECTURA METODOLÓGICA","textShapes":12}
+{"kind":"textbox","id":"sh/apgvixwj","slide":9,"text":"LECTURA METODOLÓGICA","textPreview":"LECTURA METODOLÓGICA","textChars":20,"textLines":1,"bbox":[42,32,500,24]}
+{"kind":"textbox","id":"sh/xs7etcvu","slide":9,"text":"La conclusión es accionable, pero debe conservar sus límites","textPreview":"La conclusión es accionable, pero debe conservar sus límites","textChars":60,"textLines":1,"bbox":[42,62,1180,68]}
+{"kind":"textbox","id":"sh/crydk7ep","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1184,665,54,24]}
+{"kind":"shape","id":"sh/n25wn2ds","slide":9,"bbox":[42,650,1196,1]}
+{"kind":"textbox","id":"sh/21wvexw7","slide":9,"text":"AEO / AI readiness · 22 agosto 2026","textPreview":"AEO / AI readiness · 22 agosto 2026","textChars":35,"textLines":1,"bbox":[42,662,400,22]}
+{"kind":"shape","id":"sh/po7epcvy","slide":9,"bbox":[42,164,10,10]}
+{"kind":"textbox","id":"sh/o3ydg7ed","slide":9,"text":"Puntaje","textPreview":"Puntaje","textChars":7,"textLines":1,"bbox":[64,160,538,26]}
+{"kind":"textbox","id":"sh/fy5wjidw","slide":9,"text":"El puntaje integral sigue la rúbrica de seis dimensiones. El núcleo comparable excluye bots, DOM y JSON-LD para igualar la evidencia.","textPreview":"El puntaje integral sigue la rúbrica de seis dimensiones. El núcleo comparable excluye bots, DOM y JSON-LD para igualar la evidencia.","textChars":133,"textLines":1,"bbox":[64,190,538,76]}
+{"kind":"shape","id":"sh/exwvadwb","slide":9,"bbox":[42,314,10,10]}
+{"kind":"textbox","id":"sh/8zi1cfqt","slide":9,"text":"Entorno","textPreview":"Entorno","textChars":7,"textLines":1,"bbox":[64,310,538,26]}
+{"kind":"textbox","id":"sh/90r2lk7e","slide":9,"text":"El navegador interactivo local falló por cifrado de Windows; no se convirtió ese fallo en una penalización del sitio.","textPreview":"El navegador interactivo local falló por cifrado de Windows; no se convirtió ese fallo en una penalización del sitio.","textChars":117,"textLines":1,"bbox":[64,340,538,76]}
+{"kind":"shape","id":"sh/mx0jap8n","slide":9,"bbox":[42,464,10,10]}
+{"kind":"textbox","id":"sh/7y9kjap8","slide":9,"text":"Direccionamiento","textPreview":"Direccionamiento","textChars":16,"textLines":1,"bbox":[64,460,538,26]}
+{"kind":"textbox","id":"sh/kvy18fqh","slide":9,"text":"La búsqueda web funciona como proxy de descubrimiento. El piloto debe ampliarse con más consultas, agentes y un panel mayor para inferencia.","textPreview":"La búsqueda web funciona como proxy de descubrimiento. El piloto debe ampliarse con más consultas, agentes y un panel mayor para inferencia.","textChars":140,"textLines":1,"bbox":[64,490,538,76]}
+{"kind":"shape","id":"sh/lwr2hk72","slide":9,"bbox":[688,166,526,354]}
+{"kind":"textbox","id":"sh/y9gj658r","slide":9,"text":"Siguiente fase recomendada","textPreview":"Siguiente fase recomendada","textChars":26,"textLines":1,"bbox":[724,204,430,32]}
+{"kind":"textbox","id":"sh/zupkfapw","slide":9,"text":"1. Separar readiness técnico de apertura comercial.\n\n2. Igualar el paquete mínimo por portal (home, catálogo, indicador, API).\n\n3. Repetir con 40–60 consultas estratificadas y 3 agentes navegadores.\n\n4. Recalcular con controles por tema, autoridad y paywall; reportar IC.","textPreview":"1. Separar readiness técnico de apertura comercial. |  | 2. Igualar el paquete mínimo por portal (home, catálogo, indicador, API). |  | 3...","textChars":271,"textLines":7,"bbox":[724,258,430,220]}
+{"kind":"notes","id":"nt/1fafvj","slide":9,"text":"[Sources]\noutputs/aeo-comparative-report-2026-08-22.md\noutputs/aeo-referral-pilot-analysis-2026-08-22.py"}
+{"kind":"slide","id":"sl/pm9nyx","slide":10,"title":"APÉNDICE","textShapes":11}
+{"kind":"textbox","id":"sh/9k7edgju","slide":10,"text":"APÉNDICE","textPreview":"APÉNDICE","textChars":8,"textLines":1,"bbox":[42,32,500,24]}
+{"kind":"textbox","id":"sh/mhwf21k3","slide":10,"text":"Método y fuentes primarias","textPreview":"Método y fuentes primarias","textChars":26,"textLines":1,"bbox":[42,62,1180,68]}
+{"kind":"textbox","id":"sh/7i5wb61o","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1184,665,54,24]}
+{"kind":"shape","id":"sh/wnyx8v25","slide":10,"bbox":[42,650,1196,1]}
+{"kind":"textbox","id":"sh/ho7yh0jq","slide":10,"text":"AEO / AI readiness · 22 agosto 2026","textPreview":"AEO / AI readiness · 22 agosto 2026","textChars":35,"textLines":1,"bbox":[42,662,400,22]}
+{"kind":"textbox","id":"sh/ulgf6lkz","slide":10,"text":"Seis dimensiones ponderadas","textPreview":"Seis dimensiones ponderadas","textChars":27,"textLines":1,"bbox":[42,146,430,30]}
+{"kind":"textbox","id":"sh/vmpwfq1k","slide":10,"text":"Bots 10 · Descubrimiento 15 · Renderizado 20\nDatos estructurados 15 · API 25 · Citabilidad 15","textPreview":"Bots 10 · Descubrimiento 15 · Renderizado 20 | Datos estructurados 15 · API 25 · Citabilidad 15","textChars":93,"textLines":2,"bbox":[42,194,470,110]}
+{"kind":"textbox","id":"sh/4bixcv2h","slide":10,"text":"Evidencia y entregables","textPreview":"Evidencia y entregables","textChars":23,"textLines":1,"bbox":[42,340,430,30]}
+{"kind":"textbox","id":"sh/5cryl0jm","slide":10,"text":"Tres informes AEO fechados por subagentes especializados · revisión adversarial · informe base CEPALSTAT · matriz comparativa · CSV y script del piloto · notebook no ejecutado por falta de Jupyter en el entorno.","textPreview":"Tres informes AEO fechados por subagentes especializados · revisión adversarial · informe base CEPALSTAT · matriz comparativa · CSV y scr...","textChars":211,"textLines":1,"bbox":[42,388,500,120]}
+{"kind":"shape","id":"sh/dwvi5cn6","slide":10,"bbox":[650,146,564,386]}
+{"kind":"textbox","id":"sh/cvmhc76l","slide":10,"text":"Fuentes primarias","textPreview":"Fuentes primarias","textChars":17,"textLines":1,"bbox":[686,178,480,30]}
+{"kind":"textbox","id":"sh/bud0325g","slide":10,"text":"World Bank Data / API\ndata.who.int / Data Description Schema\nStatista / Statista Connect\nCEPALSTAT / OpenAPI\nRFC 9309 — Robots Exclusion Protocol","textPreview":"World Bank Data / API | data.who.int / Data Description Schema | Statista / Statista Connect | CEPALSTAT / OpenAPI | RFC 9309 — Robots Ex...","textChars":145,"textLines":5,"bbox":[686,232,480,170]}
+{"kind":"textbox","id":"sh/qtkzaxov","slide":10,"text":"Todos los informes y datos de apoyo quedan en outputs/.","textPreview":"Todos los informes y datos de apoyo quedan en outputs/.","textChars":55,"textLines":1,"bbox":[686,454,480,28]}
+{"kind":"notes","id":"nt/pm9nyx","slide":10,"text":"[Sources]\noutputs/aeo-agent-readiness-data.worldbank.org-2026-08-22.md\noutputs/aeo-agent-readiness-data.who.int-2026-08-22.md\noutputs/aeo-agent-readiness-www.statista.com-2026-08-22.md\noutputs/auditoria-aeo-agent-readiness-cepalstat-2026-08-20.md\nhttps://www.rfc-editor.org/rfc/rfc9309"}

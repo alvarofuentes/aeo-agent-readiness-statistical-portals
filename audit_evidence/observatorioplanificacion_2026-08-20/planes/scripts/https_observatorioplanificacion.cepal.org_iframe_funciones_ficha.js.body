@@ -1,0 +1,609 @@
+
+function getLinksBlock(type_system,x,data) {
+
+  let var_link='';
+
+  if(type_system==100 && x=='planes') {
+    var_link = 'link_block';
+  } else if(type_system==100 && x=='normativas') {
+    var_link = 'link_block';
+  } else if(type_system==1) {
+    var_link = 'link_block_'+x;
+  } else {
+    if(x=='legal_framework'){
+      var_link = x+'/link_block_legal';
+    } else if (x=='investment_project_bank') {
+      var_link = x+'/link_block_projectbank';
+    } else if (x=='project_cycle') {
+      var_link = x+'/link_block_projectcycle';
+    } else if (x=='investment_project_bank') {
+      var_link = x+'/link_block_projectbank';
+    } else if (x=='policy_cycle') {
+      var_link = x+'/link_block_policycycle';
+    } else {
+      var_link = x+'/link_block_'+x;
+    }
+
+  }
+  console.log('---------------var_link;');
+  console.log(var_link);
+  console.log(type_system);
+  console.log(x);
+
+
+  let array_links = data[var_link];
+  console.log('array_links',array_links);
+  let contenido = '';
+  if(array_links){
+    let contenido = '<div class="bloque_links_separador"></div>';
+    array_links.forEach((item, i) => {
+      let largo=Object.values(item).length;
+
+      console.log("***LARGO: "+largo+"****");
+
+      let obj1,obj2,obj3,obj4,obj5='';
+      if(largo==5) {
+        obj1 = Object.values(item)[0];
+        obj2 = Object.values(item)[1];
+        obj3 = Object.values(item)[2];
+        obj4 = Object.values(item)[3];
+        obj5 = Object.values(item)[4];
+      } else if(largo==4) {
+        obj1 = Object.values(item)[0];
+        obj2 = Object.values(item)[1];
+        obj3 = Object.values(item)[2];
+        obj4 = Object.values(item)[3];
+        obj5 = obj4;
+      } else if(largo<4) {
+        obj1 = Object.values(item)[0];
+        obj2 = Object.values(item)[1];
+        obj3 = Object.values(item)[2];
+        obj4 = obj3
+        obj5 = obj4;
+      }
+
+      let target='';
+      if(obj1=='internal') {} else { target=' target="_blank" '; };
+
+      let url_type_es=['inicio','planes-programas-e-instrumentos','instituciones','marcos-normativos','metodologias','sistemas-nacionales-de-planificacion','sistemas-nacionales-de-inversion-publica','mecanismos-de-articulacion-institucional'];
+      if(get_lang=="en") {
+        url_type_es=['home','plans-programs-and-instruments','institutions','regulatory-frameworks','methodologies','national-planning-systems','national-public-investment-systems','institutional-coordination-mechanisms'];
+      }
+
+      let url=url_type_es[0];
+      if(obj2=='plan') {
+        url=url_type_es[1];
+      } else if(obj2=="actor") {
+        url=url_type_es[2];
+      } else if(obj2=="legal") {
+        url=url_type_es[3];
+      } else if(obj2=="methodology") {
+        url=url_type_es[4];
+      } else if(obj2=="snp") {
+        url=url_type_es[5];
+      } else if(obj2=="snip") {
+        url=url_type_es[6];
+      } else if(obj2=="articulation") {
+        url=url_type_es[7];
+      }
+
+      let icon = `<img class="svg_blinks" src="iframe/img/svg/links/link_type_${obj2}.svg" width="20px" height="20px">`;
+
+      if(obj5) {
+      if(obj5.includes("https://observatorioplanificacion.cepal.org")) {
+        obj5 = obj5.replace("https://observatorioplanificacion.cepal.org", "http://sgo-ub20-web-d3/portal/preview/observatorio-planificacion/v9"); // provisorio, en produccion quitar esta linea
+      }
+      }
+
+      if(largo<4) {
+        contenido += `<div class="bloque_links">
+        ${icon} ${obj3}
+        </div>`;
+
+      } else {
+
+        if(obj1=='internal') {
+
+          //busqueda nombre desde ID
+          let nombre_desde_id=nombreDesdeID(obj2,obj4,get_lang);
+          if(nombre_desde_id!='') {
+            obj3=nombre_desde_id;
+          }
+
+
+          if(obj2=="methodology") {
+            // Va al documento del repositorio
+            let link_pdf_repositorio=buscaLinkRepositorio(obj2,obj3,obj4,get_lang);
+            //console.log('method#####: 1) '+obj1+'  2)'+obj2+' --- 3)' +obj3+' ---' +get_lang);
+            //console.log(link_pdf_repositorio);
+            if(link_pdf_repositorio!='') {
+              contenido += `<div class="bloque_links">
+              ${icon} <a target="_blank" href="${link_pdf_repositorio}">${obj3} <img src="images/pdf.png" height="16px"></a>
+              </div>`;
+            } else {
+              contenido += `<div class="bloque_links">
+              ${icon} ${obj3}
+              </div>`;
+            }
+
+
+          } else {
+            // Va a la Ficha
+            contenido += `<div class="bloque_links">
+            ${icon} <a href="${get_lang}/${url}/?id=${obj4}">${obj3}</a>
+            </div>`;
+
+          }
+
+
+
+        } else {
+          if(get_lang=="en") { obj3=obj4; }
+          contenido += `<div class="bloque_links">
+          ${icon}  <a ${target} href="${obj5}">${obj3} <img src="images/extlink.png" height="16px"></a>
+          </div>`;
+        }
+
+      }
+
+
+    });
+    return contenido;
+
+  }
+
+  return '';
+}
+
+
+
+
+
+
+
+
+
+function nombreDesdeID(type,id,lang) {
+
+  let name='';
+  let obj2=type;
+  let get_name='';
+
+  if(obj2=='plan') {
+
+    get_name = responseDataPlans_result.filter(item => item._id == id);
+    if(get_name.length==1) {
+      if(lang=="en") {
+        name = get_name[0].name_en;
+      } else {
+        name = get_name[0].name_es;
+      }
+    }
+
+  } else if(obj2=="actor") {
+
+    get_name = responseDataInstitutions_result.filter(item => item._id == id);
+    if(get_name.length==1) {
+      if(lang=="en") {
+        name = get_name[0].name_en;
+      } else {
+        name = get_name[0].name_es;
+      }
+    }
+
+  } else if(obj2=="legal") {
+
+    get_name = responseDataLegalFrameworks_result.filter(item => item._id == id);
+    if(get_name.length==1) {
+      if(lang=="en") {
+        name = get_name[0].legal_framework_en;
+      } else {
+        name = get_name[0].legal_framework_es;
+      }
+    }
+
+  } else if(obj2=="methodology") {
+
+    get_name = responseDataMetodologias_result.filter(item => item._id == id);
+    if(get_name.length==1) {
+      if(lang=="en") {
+        name = get_name[0].title_en;
+      } else {
+        name = get_name[0].title_es;
+      }
+    }
+
+  } else if(obj2=="snp") {
+
+    get_name = responseDataSNP_result.filter(item => item._id == id);
+    if(get_name.length==1) {
+      if(lang=="en") {
+        name = get_name[0].snp_name_en;
+      } else {
+        name = get_name[0].snp_name_es;
+      }
+    }
+
+  } else if(obj2=="snip") {
+
+    get_name = responseDataSNIP_result.filter(item => item._id == id);
+    if(get_name.length==1) {
+      if(lang=="en") {
+        name = get_name[0].snip_name_en;
+      } else {
+        name = get_name[0].snip_name_es;
+      }
+    }
+
+  } else if(obj2=="articulation") {
+
+    get_name = responseDataMEC_result.filter(item => item._id == id);
+    if(get_name.length==1) {
+      if(lang=="en") {
+        name = get_name[0]['national/national_mechanism_en'];
+      } else {
+        name = get_name[0]['national/national_mechanism_es'];
+      }
+    }
+
+  }
+
+
+
+
+
+  console.log("*****"+type+id+lang+' name:'+name+"*****");
+
+  return name;
+}
+
+
+
+
+
+
+
+
+
+
+function buscaLinkRepositorio(type,metname,id,lang) {
+
+  let name='';
+  let obj2=type;
+  let get_name='';
+
+  if(type=="methodology") {
+
+    get_name = responseDataMetodologias_result.filter(item => item._id == id);
+    if(get_name.length==1) {
+
+      let descarga_documento='';
+      let descarga_documento_0 = get_name[0]['repository'];
+      if(descarga_documento_0) {
+        descarga_documento = get_name[0]?.['repository']?.[0]?.['repository/repository_url'] ?? '';
+        if(descarga_documento!='') {
+        descarga_documento = 'https://documentosexternos.cepal.org/bitstreams/'+descarga_documento+'/download';
+        }
+      }
+
+
+
+        name = descarga_documento;
+
+    }
+
+  }
+
+
+  return name;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function loadAPIAllContents(x) {
+  if(x=='planes' || x=='normativas' || x=='sistemas' || x=='sistemas_snip') {
+    loadAPIInstitutions(x);
+  }
+}
+
+
+const filter_query_approved='&query={"_validation_status.label":"Approved"}';
+
+
+function loadAPIInstitutions(x) {
+let hexDate_inst = new Date().getTime();
+let dataset_token='aMXsEC6SyQngvcTa3fSC93';
+let filtros_fields='&fields=["_id","name_es","name_en","has_parent","parent_id"]';
+if(x=='sistemas_snip') {
+  filtros_fields='&fields=["_id","name_es","name_en","has_parent","parent_id","country","territorial_scale","leads"]';
+}
+
+fetch('https://api-kobo.cepal.org/api-kobo/data?dataset='+dataset_token+filtros_fields+filter_query_approved)
+  .then(response => response.json())
+  .then(json => {
+      responseDataInstitutions_result = json.results; // para bloque links (function nombreDesdeID())
+      loadAPILegal()
+  })
+  .catch((error) => {
+      console.error('Error al leer api instituciones', error);
+  });
+};
+
+
+function loadAPILegal() {
+    let hexDate = new Date().getTime();
+    var dataset_token='aqpKMBhQZJ7QXra8gcyJnn';
+    let filtros_fields='&fields=["_id","legal_framework_es","legal_framework_en"]';
+    fetch('https://api-kobo.cepal.org/api-kobo/data?dataset='+dataset_token+filtros_fields+filter_query_approved)
+    .then(response => response.json())
+    .then(json => {
+        responseDataLegalFrameworks_result = json.results;
+        loadAPIPlanes();
+    })
+    .catch((error) => {
+        console.error('Error al importar el archivo', error);
+    });
+}
+
+
+function loadAPIPlanes() {
+    let hexDate = new Date().getTime();
+    var dataset_token='aPJUaqc6gbHKCdcXQV3bYh';
+    let filtros_fields='&fields=["_id","name_es","name_en","country","theme","territorial_scale","effective_today"]';
+    fetch('https://api-kobo.cepal.org/api-kobo/data?dataset='+dataset_token+filtros_fields+filter_query_approved)
+    .then(response => response.json())
+    .then(json => {
+        responseDataPlans_result = json.results;
+        loadAPIMetodologias();
+    })
+    .catch((error) => {
+        console.error('Error al importar el archivo', error);
+    });
+}
+
+
+function loadAPIMetodologias() {
+    let hexDate = new Date().getTime();
+    var dataset_token='agFKiPAwFWfTF2Zfeh9UN9';
+    let filtros_fields='&fields=["_id","title_es","title_en","repository"]';
+    fetch('https://api-kobo.cepal.org/api-kobo/data?dataset='+dataset_token+filtros_fields+filter_query_approved)
+    .then(response => response.json())
+    .then(json => {
+        responseDataMetodologias_result = json.results;
+        loadApiSNP();
+    })
+    .catch((error) => {
+        console.error('Error al importar el archivo', error);
+    });
+}
+
+function loadApiSNP() {
+    let hexDate = new Date().getTime();
+    var dataset_token='auat7fCzxrGEmcpQWiTZLu';
+    let filtros_fields='&fields=["_id","snp_name_es","snp_name_en"]';
+    fetch('https://api-kobo.cepal.org/api-kobo/data?dataset='+dataset_token+filtros_fields+filter_query_approved)
+    .then(response => response.json())
+    .then(json => {
+        responseDataSNP_result = json.results;
+        loadApiSNIP();
+    })
+    .catch((error) => {
+        console.error('Error al importar el archivo', error);
+    });
+}
+
+
+function loadApiSNIP() {
+    let hexDate = new Date().getTime();
+    var dataset_token='aLtk2nwgLUq4A4hNcJv6xR';
+    let filtros_fields='&fields=["_id","snip_name_es","snip_name_en"]';
+    fetch('https://api-kobo.cepal.org/api-kobo/data?dataset='+dataset_token+filtros_fields+filter_query_approved)
+    .then(response => response.json())
+    .then(json => {
+        responseDataSNIP_result = json.results;
+        loadApiMEC();
+    })
+    .catch((error) => {
+        console.error('Error al importar el archivo', error);
+    });
+}
+
+
+function loadApiMEC() {
+    let hexDate = new Date().getTime();
+    var dataset_token='a6VSfrLiDjiG4YYpAmdFb3';
+    let filtros_fields='&fields=["_id","national/national_mechanism_es","national/national_mechanism_en"]';
+    fetch('https://api-kobo.cepal.org/api-kobo/data?dataset='+dataset_token+filtros_fields+filter_query_approved)
+    .then(response => response.json())
+    .then(json => {
+        responseDataMEC_result = json.results;
+        loadAPIContentGlobal();
+    })
+    .catch((error) => {
+        console.error('Error al importar el archivo', error);
+    });
+}
+
+
+
+
+
+
+
+
+document.addEventListener("keydown", function (event) {
+  if (event.ctrlKey) {
+    if (event.key.toLowerCase() === "m") {
+      event.preventDefault(); // opcional
+      procesarSiguienteItem();
+    }
+  }
+});
+
+
+document.addEventListener("keydown", function (event) {
+  if (event.ctrlKey) {
+    if (event.key.toLowerCase() === "j") {
+      event.preventDefault(); // opcional
+      procesarAnteriorItem();
+    }
+  }
+});
+
+function procesarSiguienteItem() {
+    let largo = items_mn.length;
+    largo = largo-1;
+
+    if(largo<indiceActual) {
+      console.log("finlistado");
+      return false;
+    }
+    //console.log(largo);
+    const x = items_mn[indiceActual];
+    let n = x.id;
+    let m = x.name;
+    //console.log(n+' '+m);
+    viewDetailContent(n,0);
+    indiceActual++;
+}
+
+function procesarAnteriorItem() {
+    indiceActual--;
+    if(indiceActual<0) {
+      console.log("iniciolistado");
+      indiceActual=0;
+      return false;
+    }
+    const x = items_mn[indiceActual];
+    let n = x.id;
+    let m = x.name;
+    viewDetailContent(n,0);
+}
+
+
+
+
+
+
+
+function buscaNombreInstitucionDesdeId(x,lang,nivel) {
+  let get_item = responseDataInstitutions_result.filter(item => item._id == x);
+  //console.log("get_item "+x);
+  //console.log(get_item);
+  if(get_item.length==1) {
+    let name = get_item[0]['name_es'];
+    if(lang=="en") {
+      name = get_item[0]['name_en'];
+    }
+
+    let parent_name='';
+    if(nivel==1) { } else {
+      let has_parent = get_item[0]['has_parent'];
+      if(has_parent=="yes") {
+        let parent_id = get_item[0]['parent_id'];
+        parent_name=", "+buscaNombreInstitucionDesdeId(parent_id,lang,1);  // con 1 toma un padre, si se deja vacio toma el padre, del padre
+      }
+    }
+
+    let url;
+    if(lang=="en") {
+      url = `<a target="_blank" href='en/institutions/?id=${x}'>${name}</a>${parent_name}`;
+    } else {
+      url =  `<a target="_blank" href='es/instituciones/?id=${x}'>${name}</a>${parent_name}`;
+    }
+    return url;
+  } else {
+    return 'no';
+  }
+}
+
+
+
+
+
+
+function editColorScroll(color) {
+
+  //var color = '#ff0000';
+  var colorBar = ajustarColor(color, 10);
+  var colorMasClaro = ajustarColor(color, 50);
+  var colorMasOscuro = ajustarColor(color, -5);
+
+  const style = document.createElement('style');
+  style.textContent = `
+    tbody::-webkit-scrollbar-track {
+      background: ${colorMasClaro};
+    }
+    tbody::-webkit-scrollbar-thumb {
+      background: ${colorBar};
+    }
+    tbody::-webkit-scrollbar-thumb:hover {
+      background: ${colorMasOscuro};
+    }
+  `;
+  document.head.appendChild(style);
+
+}
+
+
+
+
+
+
+
+function ajustarColor(color, porcentaje) {
+  const num = parseInt(color.slice(1), 16),
+    amt = Math.round(2.55 * porcentaje),
+    R = (num >> 16) + amt,
+    G = ((num >> 8) & 0x00FF) + amt,
+    B = (num & 0x0000FF) + amt;
+  return (
+    '#' +
+    (0x1000000 +
+      (R < 255 ? (R < 1 ? 0 : R) : 255) * 0x10000 +
+      (G < 255 ? (G < 1 ? 0 : G) : 255) * 0x100 +
+      (B < 255 ? (B < 1 ? 0 : B) : 255))
+      .toString(16)
+      .slice(1)
+  );
+}
+
+
+
+
+
+
+function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] == variable) {
+            return pair[1];
+        }
+    }
+    return false;
+};
+
+
+
+
+
+
+// data

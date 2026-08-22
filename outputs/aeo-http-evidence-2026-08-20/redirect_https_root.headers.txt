@@ -1,0 +1,16 @@
+HTTP/1.1 301 Moved Permanently
+Connection: keep-alive
+Content-Length: 169
+Server: nginx/1.29.8
+Content-Type: text/html
+Location: http://observatorioplanificacion.cepal.org/es/
+Accept-Ranges: bytes
+Age: 1986
+Date: Thu, 20 Aug 2026 16:24:49 GMT
+Via: 1.1 varnish
+X-Served-By: cache-scl2220020-SCL
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1787243089.232708,VS0,VE1
+Strict-Transport-Security: max-age=300
+

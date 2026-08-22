@@ -1,0 +1,90 @@
+console.log("data key loading");
+
+var hexDate = new Date().getTime();
+
+
+
+loadAPIContentGlobal();
+
+function loadAPIContentGlobal() {
+
+  let filtros_fields='&fields=["_id","name_es","name_en"]&query={"_validation_status.label":"Approved"}';
+
+  fetch('https://api-kobo.cepal.org/api-kobo/data?dataset=aPJUaqc6gbHKCdcXQV3bYh'+filtros_fields)
+    .then(response => response.json())
+    .then(json => {
+        let count = json.count;
+        let results = json.results;
+        //console.log(results);
+        document.getElementById('data_key_type_planes').innerHTML = count;
+    })
+    .catch((error) => {
+        console.error('Error al importar el archivo', error);
+    });
+  }
+
+
+
+
+
+  loadAPIInstituciones();
+
+  function loadAPIInstituciones() {
+
+    let filtros_fields='&fields=["_id","name_es","name_en"]&query={"has_parent":"no","record_type":"unique","visible_in_table":"yes","_validation_status.label":"Approved"}';
+
+    fetch('https://api-kobo.cepal.org/api-kobo/data?dataset=aMXsEC6SyQngvcTa3fSC93'+filtros_fields)
+      .then(response => response.json())
+      .then(json => {
+          let count = json.count;
+          let results = json.results;
+          //console.log(results);
+          document.getElementById('data_key_type_instituciones').innerHTML = count;
+      })
+      .catch((error) => {
+          console.error('Error al importar el archivo', error);
+      });
+    }
+
+
+
+
+  loadAPIMetodology();
+
+  function loadAPIMetodology() {
+
+    let filtros_fields='&fields=["_id","title_es","title_en"]&query={"_validation_status.label":"Approved"}';
+
+    fetch('https://api-kobo.cepal.org/api-kobo/data?dataset=agFKiPAwFWfTF2Zfeh9UN9'+filtros_fields)
+      .then(response => response.json())
+      .then(json => {
+          let count = json.count;
+          let results = json.results;
+          //console.log(results);
+          document.getElementById('data_key_type_metodologias').innerHTML = count;
+      })
+      .catch((error) => {
+          console.error('Error al importar el archivo', error);
+      });
+    }
+
+
+
+    loadAPILegalFrameworks();
+
+    function loadAPILegalFrameworks() {
+
+      let filtros_fields='&fields=["_id","legal_framework_es","legal_framework_en"]&query={"_validation_status.label":"Approved"}';
+
+      fetch('https://api-kobo.cepal.org/api-kobo/data?dataset=aqpKMBhQZJ7QXra8gcyJnn'+filtros_fields)
+        .then(response => response.json())
+        .then(json => {
+            let count = json.count;
+            let results = json.results;
+            //console.log(results);
+            document.getElementById('data_key_type_normativas').innerHTML = count;
+        })
+        .catch((error) => {
+            console.error('Error al importar el archivo', error);
+        });
+      }

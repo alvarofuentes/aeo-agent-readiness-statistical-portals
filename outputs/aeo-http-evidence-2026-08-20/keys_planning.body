@@ -1,0 +1,125 @@
+console.log("data key loading - development planning KPIs");
+function loadDataMembers() {}
+
+var hexDate = new Date().getTime();
+
+const API_BASE = 'https://api-kobo.cepal.org/api-kobo/data?dataset=aPJUaqc6gbHKCdcXQV3bYh';
+
+
+// =============================
+// KPI 1
+// Países con planes vigentes (development_planning)
+// =============================
+loadKPIPaisesVigentes();
+
+function loadKPIPaisesVigentes() {
+
+  let query = '&query={"theme":"development_planning","effective_today":"yes","_validation_status.label":"Approved"}&fields=["country"]';
+
+  fetch(API_BASE + query)
+    .then(response => response.json())
+    .then(json => {
+
+        let paises = json.results
+          .map(x => x.country)
+          .filter(x => x);
+
+        let total = [...new Set(paises)].length;
+
+        if (document.getElementById('data_key_type_paises_vigentes')) {
+          document.getElementById('data_key_type_paises_vigentes').innerHTML = total;
+        }
+
+    })
+    .catch((error) => {
+        console.error('Error KPI países vigentes', error);
+    });
+}
+
+
+
+// =============================
+// KPI 2
+// Países con planes vigentes de largo plazo
+// =============================
+loadKPIPaisesVigentesLargo();
+
+function loadKPIPaisesVigentesLargo() {
+
+  let query = '&query={"theme":"development_planning","effective_today":"yes","temporality":"long_term","_validation_status.label":"Approved"}&fields=["country"]';
+
+  fetch(API_BASE + query)
+    .then(response => response.json())
+    .then(json => {
+
+        let paises = json.results
+          .map(x => x.country)
+          .filter(x => x);
+
+        let total = [...new Set(paises)].length;
+
+        if (document.getElementById('data_key_type_long_term')) {
+          document.getElementById('data_key_type_long_term').innerHTML = total;
+        }
+
+    })
+    .catch((error) => {
+        console.error('Error KPI países largo plazo', error);
+    });
+}
+
+
+
+// =============================
+// KPI 3
+// Planes con participación (IPD)
+// =============================
+loadKPIPlanesParticipacion();
+
+function loadKPIPlanesParticipacion() {
+
+  let query = '&query={"theme":"development_planning","effective_today":"yes","ipd/ipd_participation":"yes","_validation_status.label":"Approved"}';
+
+  fetch(API_BASE + query)
+    .then(response => response.json())
+    .then(json => {
+
+        let total = json.count;
+
+        if (document.getElementById('data_key_type_partipation')) {
+          document.getElementById('data_key_type_partipation').innerHTML = total;
+        }
+
+    })
+    .catch((error) => {
+        console.error('Error KPI participación', error);
+    });
+}
+
+
+
+// =============================
+// KPI 4
+// Planes con seguimiento (IPD tracking)
+// =============================
+loadKPIPlanesTracking();
+
+function loadKPIPlanesTracking() {
+
+  let query = '&query={"theme":"development_planning","effective_today":"yes","ipd/ipd_tracking":"yes","_validation_status.label":"Approved"}';
+
+  fetch(API_BASE + query)
+    .then(response => response.json())
+    .then(json => {
+
+        let total = json.count;
+
+        if (document.getElementById('data_key_type_instruments')) {
+          document.getElementById('data_key_type_instruments').innerHTML = total;
+        }
+
+    })
+    .catch((error) => {
+        console.error('Error KPI tracking', error);
+    });
+}

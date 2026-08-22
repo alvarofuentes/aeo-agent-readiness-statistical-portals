@@ -1,0 +1,432 @@
+[
+  {
+    "requested_url": "https://observatorioplanificacion.cepal.org/include/header.html?lang=es",
+    "redirect_chain": [],
+    "status": 200,
+    "final_url": "https://observatorioplanificacion.cepal.org/include/header.html?lang=es",
+    "content_type": "text/html",
+    "headers": {
+      "connection": "close",
+      "content-length": "3840",
+      "server": "nginx/1.29.8",
+      "content-type": "text/html",
+      "last-modified": "Mon, 17 Aug 2026 19:35:07 GMT",
+      "etag": "\"6a83626b-f00\"",
+      "accept-ranges": "bytes",
+      "age": "0",
+      "date": "Thu, 20 Aug 2026 15:52:44 GMT",
+      "via": "1.1 varnish",
+      "x-served-by": "cache-scl2220052-SCL",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "x-timer": "S1787241165.593870,VS0,VE14",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=300"
+    },
+    "bytes": 3840,
+    "sha256": "43e05ae17f10216b351c0fabe77384258ed2ea952de8724127afdb5156fe53e0",
+    "error": null,
+    "body_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\includes\\https_observatorioplanificacion.cepal.org_include_header.html.body",
+    "headers_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\includes\\https_observatorioplanificacion.cepal.org_include_header.html.headers.json",
+    "html": {
+      "title": "",
+      "meta": {},
+      "canonical": [],
+      "alternates": [],
+      "headings": [],
+      "text_length": 2611,
+      "links_count": 1,
+      "links": [
+        {
+          "href": "https://www.cepal.org/es",
+          "text": ""
+        }
+      ],
+      "forms": 0,
+      "tables": 0,
+      "iframes": 0,
+      "canvas": 0,
+      "svg": 0,
+      "noscript": 0,
+      "jsonld": [],
+      "microdata_items": [],
+      "rdfa_markers": [],
+      "script_count": 0,
+      "external_scripts": [],
+      "framework_markers": {
+        "next_data": false,
+        "react": false,
+        "angular": false,
+        "vue": false,
+        "drupal": false
+      }
+    }
+  },
+  {
+    "requested_url": "https://observatorioplanificacion.cepal.org/include/menu.html?lang=es",
+    "redirect_chain": [],
+    "status": 200,
+    "final_url": "https://observatorioplanificacion.cepal.org/include/menu.html?lang=es",
+    "content_type": "text/html",
+    "headers": {
+      "connection": "close",
+      "content-length": "17934",
+      "server": "nginx/1.29.8",
+      "content-type": "text/html",
+      "last-modified": "Mon, 17 Aug 2026 19:35:07 GMT",
+      "etag": "\"6a83626b-460e\"",
+      "accept-ranges": "bytes",
+      "age": "0",
+      "date": "Thu, 20 Aug 2026 15:52:44 GMT",
+      "via": "1.1 varnish",
+      "x-served-by": "cache-scl2220034-SCL",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "x-timer": "S1787241165.640813,VS0,VE28",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=300"
+    },
+    "bytes": 17934,
+    "sha256": "402ea04b7a09e372f2aa1de92b785ac5dbe18b78f6793e1a4b62da65c8afd5ff",
+    "error": null,
+    "body_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\includes\\https_observatorioplanificacion.cepal.org_include_menu.html.body",
+    "headers_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\includes\\https_observatorioplanificacion.cepal.org_include_menu.html.headers.json",
+    "html": {
+      "title": "",
+      "meta": {},
+      "canonical": [],
+      "alternates": [],
+      "headings": [],
+      "text_length": 6063,
+      "links_count": 33,
+      "links": [
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/menu.html?lang=es",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/planificacion-para-el-desarrollo",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/inversion-publica",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/gobierno-abierto",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/menu.html?lang=es",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/desarrollo-y-ordenamiento-territorial",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/desarrollo-urbano",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/movilidad-urbana",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/areas/?theme=8&lang=es",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/menu.html?lang=es",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/planes-programas-e-instrumentos",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/marcos-normativos",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/metodologias",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/menu.html?lang=es",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/instituciones",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/sistemas-nacionales-de-planificacion",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/sistemas-nacionales-de-inversion-publica",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/mecanismos-de-articulacion-institucional",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/foros-multiactor-de-gobierno-abierto",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/paises",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/geoportal",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/menu.html?lang=es",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/preguntas-frecuentes/?type=faq",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/glosario",
+          "text": ""
+        },
+        {
+          "href": "https://www.cepal.org/es/listado/cepal_news?title=&sort_bef_combine=date_DESC&date_from=&date_to=&news_type=2&topic=All&work_area=8190&subsidiary_body=All&country=All&related_project=All®ional_office=All",
+          "text": ""
+        },
+        {
+          "href": "https://www.cepal.org/es/list/cepal_note?work_area=8190",
+          "text": ""
+        },
+        {
+          "href": "https://www.cepal.org/es/listado-actividades/cepal_course?title=&sort_bef_combine=event_date_DESC&event_date_from=&event_date_to=&course_type=All&event_type=All&course_method=All&topic=All&work_area=8190&subsidiary_body=All&country=All®ional_office=All&related_project=All",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/menu.html?lang=es",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/paises",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/es/geoportal",
+          "text": ""
+        },
+        {
+          "href": "https://www.cepal.org/es/listado/cepal_news?title=&sort_bef_combine=date_DESC&date_from=&date_to=&news_type=2&topic=All&work_area=8190&subsidiary_body=All&country=All&related_project=All®ional_office=All",
+          "text": ""
+        },
+        {
+          "href": "https://www.cepal.org/es/listado-actividades/cepal_course?title=&sort_bef_combine=event_date_DESC&event_date_from=&event_date_to=&course_type=All&event_type=All&course_method=All&topic=All&work_area=8190&subsidiary_body=All&country=All®ional_office=All&related_project=All",
+          "text": ""
+        }
+      ],
+      "forms": 0,
+      "tables": 21,
+      "iframes": 0,
+      "canvas": 0,
+      "svg": 0,
+      "noscript": 0,
+      "jsonld": [],
+      "microdata_items": [],
+      "rdfa_markers": [],
+      "script_count": 1,
+      "external_scripts": [],
+      "framework_markers": {
+        "next_data": false,
+        "react": false,
+        "angular": false,
+        "vue": false,
+        "drupal": false
+      }
+    }
+  },
+  {
+    "requested_url": "https://observatorioplanificacion.cepal.org/include/content/homepage.html?lang=es",
+    "redirect_chain": [],
+    "status": 200,
+    "final_url": "https://observatorioplanificacion.cepal.org/include/content/homepage.html?lang=es",
+    "content_type": "text/html",
+    "headers": {
+      "connection": "close",
+      "content-length": "46084",
+      "server": "nginx/1.29.8",
+      "content-type": "text/html",
+      "last-modified": "Mon, 17 Aug 2026 19:35:07 GMT",
+      "etag": "\"6a83626b-b404\"",
+      "accept-ranges": "bytes",
+      "age": "0",
+      "date": "Thu, 20 Aug 2026 15:52:44 GMT",
+      "via": "1.1 varnish",
+      "x-served-by": "cache-scl2220065-SCL",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "x-timer": "S1787241165.726640,VS0,VE11",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=300"
+    },
+    "bytes": 46084,
+    "sha256": "edabae893e104cc12f5d91e89f507c571ad89a37ccfe9a54cfafc09e701aaab9",
+    "error": null,
+    "body_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\includes\\https_observatorioplanificacion.cepal.org_include_content_homepage.html.body",
+    "headers_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\includes\\https_observatorioplanificacion.cepal.org_include_content_homepage.html.headers.json",
+    "html": {
+      "title": "",
+      "meta": {},
+      "canonical": [],
+      "alternates": [],
+      "headings": [],
+      "text_length": 34667,
+      "links_count": 4,
+      "links": [
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/content/es/acerca-de/",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/content/es/geoportal/?lang=es",
+          "text": ""
+        },
+        {
+          "href": "https://www.cepal.org/es/listado/cepal_publication?title=&sort_bef_combine=date_DESC&date_from=&date_to=&publication_doc_type=All&publication_type=All&publication_biblevel=All&topic=All&work_area=8190&subsidiary_body=All&country=All&related_project=All®ional_office=All",
+          "text": ""
+        },
+        {
+          "href": "https://observatorioplanificacion.cepal.org/include/content/es/recursos-externos",
+          "text": ""
+        }
+      ],
+      "forms": 0,
+      "tables": 0,
+      "iframes": 0,
+      "canvas": 0,
+      "svg": 0,
+      "noscript": 0,
+      "jsonld": [],
+      "microdata_items": [],
+      "rdfa_markers": [],
+      "script_count": 3,
+      "external_scripts": [
+        "https://observatorioplanificacion.cepal.org/include/content/assets/dashboard_svg_icons.js?v=6",
+        "https://observatorioplanificacion.cepal.org/include/content/include/content/homepage_data_keys.js?v=5"
+      ],
+      "framework_markers": {
+        "next_data": false,
+        "react": false,
+        "angular": false,
+        "vue": false,
+        "drupal": false
+      }
+    }
+  },
+  {
+    "requested_url": "https://observatorioplanificacion.cepal.org/include/footer.html?lang=es",
+    "redirect_chain": [],
+    "status": 200,
+    "final_url": "https://observatorioplanificacion.cepal.org/include/footer.html?lang=es",
+    "content_type": "text/html",
+    "headers": {
+      "connection": "close",
+      "content-length": "12310",
+      "server": "nginx/1.29.8",
+      "content-type": "text/html",
+      "last-modified": "Mon, 17 Aug 2026 19:35:07 GMT",
+      "etag": "\"6a83626b-3016\"",
+      "accept-ranges": "bytes",
+      "age": "0",
+      "date": "Thu, 20 Aug 2026 15:52:44 GMT",
+      "via": "1.1 varnish",
+      "x-served-by": "cache-scl2220056-SCL",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "x-timer": "S1787241165.789686,VS0,VE19",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=300"
+    },
+    "bytes": 12310,
+    "sha256": "2ab4913507eb59127a3f838767d3e6584beebad309220ecbd47764c3beab8aeb",
+    "error": null,
+    "body_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\includes\\https_observatorioplanificacion.cepal.org_include_footer.html.body",
+    "headers_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\includes\\https_observatorioplanificacion.cepal.org_include_footer.html.headers.json",
+    "html": {
+      "title": "",
+      "meta": {},
+      "canonical": [],
+      "alternates": [],
+      "headings": [],
+      "text_length": 8417,
+      "links_count": 1,
+      "links": [
+        {
+          "href": "https://www.cooperacionespanola.es/",
+          "text": ""
+        }
+      ],
+      "forms": 0,
+      "tables": 0,
+      "iframes": 0,
+      "canvas": 0,
+      "svg": 0,
+      "noscript": 0,
+      "jsonld": [],
+      "microdata_items": [],
+      "rdfa_markers": [],
+      "script_count": 7,
+      "external_scripts": [
+        "https://statistics.cepal.org/assets/bootstrap-4.3.1.min.js",
+        "https://www.googletagmanager.com/gtag/js?id=G-VHK9G7P13B",
+        "https://www.googletagmanager.com/gtag/js?id=G-KNSPKTQK47"
+      ],
+      "framework_markers": {
+        "next_data": false,
+        "react": false,
+        "angular": false,
+        "vue": false,
+        "drupal": false
+      }
+    }
+  },
+  {
+    "requested_url": "https://observatorioplanificacion.cepal.org/assets/portal-actions.js?v=1",
+    "redirect_chain": [],
+    "status": 200,
+    "final_url": "https://observatorioplanificacion.cepal.org/assets/portal-actions.js?v=1",
+    "content_type": "application/javascript",
+    "headers": {
+      "connection": "close",
+      "content-length": "1419",
+      "server": "nginx/1.29.8",
+      "content-type": "application/javascript",
+      "last-modified": "Mon, 17 Aug 2026 19:35:07 GMT",
+      "etag": "\"6a83626b-58b\"",
+      "accept-ranges": "bytes",
+      "age": "0",
+      "date": "Thu, 20 Aug 2026 15:52:44 GMT",
+      "via": "1.1 varnish",
+      "x-served-by": "cache-scl2220022-SCL",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "x-timer": "S1787241165.858475,VS0,VE13",
+      "vary": "Accept-Encoding",
+      "strict-transport-security": "max-age=300"
+    },
+    "bytes": 1419,
+    "sha256": "d4def9348c084695760231f48f7a8224b04d8ca407810c2d5fae8d9182e14096",
+    "error": null,
+    "body_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\includes\\https_observatorioplanificacion.cepal.org_assets_portal-actions.js.body",
+    "headers_path": "C:\\Users\\afuentes\\Documents\\Codex\\2026-08-20\\audit_evidence\\observatorioplanificacion_2026-08-20\\includes\\https_observatorioplanificacion.cepal.org_assets_portal-actions.js.headers.json",
+    "body_excerpt": "\nfunction getQueryVariable(variable) {\n    var query = window.location.search.substring(1);\n    var vars = query.split(\"&\");\n    for (var i=0; i < vars.length; i++) {\n        var pair = vars[i].split(\"=\");\n        if (pair[0] == variable) {\n            return pair[1];\n        }\n    }\n    return false;\n}\n\n\n\nfunction scrollTopPage (){\n  $(\"body\").append(\"<span class='ir-arriba icon-arrow-up2'><img src='images/icon-top.png' width='55px' /></span>\");\n\t$('.ir-arriba').click(function(){\n\t\t$('body, html').animate({\n\t\t\tscrollTop: '0px'\n\t\t}, 300);\n\t});\n\n\t$(window).scroll(function(){\n\t\tif($(this).scrollTop()>0){\n\t\t\t$('.ir-arriba').slideDown(300);\n\t\t} else {\n\t\t\t$('.ir-arriba').fadeOut(300);\n\t\t}\n\t});\n}\n\n\nconst d = new Date();\nlet time = d.getTime();\nif(!Number(time)) { time=Math.floor(Math.random() * 100000000000) + 1; };\n\n$(document).ready(function () {\n//$(\"section\").first().addClass(\"container\");\n//$(\"section\").first().attr( 'id', 'web-content' );\n});\n\nvar lang = getQueryVariable(\"lang\");\nvar theme = getQueryVariable(\"theme\");\n//var plan_id_number = getQueryVariable(\"plan_id\");\nvar id = getQueryVariable(\"id\");\nvar miembros = getQueryVariable(\"miembros\");\nvar country = getQueryVariable(\"country\");\n//var program = getQueryVariable(\"program\");\n\nif(!lang) {\n  //infiere desde URL\n  const langURL = window.location.href;\n  if (langURL.includes(\"en/\")) {\n    var lang = \"en\";\n  } else {\n    var lang = \"es\";\n  }\n}\n"
+  }
+]

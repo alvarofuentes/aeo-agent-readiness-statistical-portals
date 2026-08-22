@@ -1,0 +1,121 @@
+console.log("data key loading - development planning KPIs");
+
+function loadDataMembers() {}
+
+var hexDate = new Date().getTime();
+
+const API_PLANES = 'https://api-kobo.cepal.org/api-kobo/data?dataset=aPJUaqc6gbHKCdcXQV3bYh';
+const API_ACTORES = 'https://api-kobo.cepal.org/api-kobo/data?dataset=aMXsEC6SyQngvcTa3fSC93';
+
+
+// =============================
+// KPI 1
+// Países con planes vigentes (development_planning)
+// =============================
+loadKPIPaises();
+
+function loadKPIPaises() {
+
+  let query = '&query={"territorial_scale":"national","open_gov_responsible/r_og_membership":"active","_validation_status.label":"Approved"}&fields=["country"]';
+
+  fetch(API_ACTORES + query)
+    .then(response => response.json())
+    .then(json => {
+
+        let paises = json.results
+          .map(x => x.country)
+          .filter(x => x);
+
+        let total = [...new Set(paises)].length;
+
+        if (document.getElementById('data_key_type_countries')) {
+          document.getElementById('data_key_type_countries').innerHTML = total;
+        }
+
+    })
+    .catch((error) => {
+        console.error('Error KPI países vigentes', error);
+    });
+}
+
+
+
+// =============================
+// KPI 2
+// Planes de acción nacionales
+// =============================
+loadKPIPlanesNacionales();
+
+function loadKPIPlanesNacionales() {
+
+  let query = '&query={"theme":"open_government","territorial_scale":"national","_validation_status.label":"Approved"}&fields=["country"]';
+
+  fetch(API_PLANES + query)
+    .then(response => response.json())
+    .then(json => {
+
+        let total = json.count;
+
+        if (document.getElementById('data_key_type_nacplans')) {
+          document.getElementById('data_key_type_nacplans').innerHTML = total;
+        }
+
+    })
+    .catch((error) => {
+        console.error('Error KPI países largo plazo', error);
+    });
+}
+
+// =============================
+// KPI 3
+// Planes de acción subnacionales
+// =============================
+loadKPIPlanesSubnacionales();
+
+function loadKPIPlanesSubnacionales() {
+
+  let query = '&query={"open_gov_responsible/r_og_membership":"active","territorial_scale":"subnational","_validation_status.label":"Approved"}&fields=["country"]';
+
+  fetch(API_ACTORES + query)
+    .then(response => response.json())
+    .then(json => {
+
+        let total = json.count;
+
+        if (document.getElementById('data_key_type_localplans')) {
+          document.getElementById('data_key_type_localplans').innerHTML = total;
+        }
+
+    })
+    .catch((error) => {
+        console.error('Error KPI países largo plazo', error);
+    });
+}
+
+
+
+// =============================
+// KPI 1
+// Países con planes vigentes (development_planning)
+// =============================
+loadKPIPaisesVigentes();
+
+function loadKPIPaisesVigentes() {
+
+  let query = '&query={"theme":"open_government","territorial_scale":"subnational","_validation_status.label":"Approved"}&fields=["country"]';
+
+  fetch(API_PLANES + query)
+    .then(response => response.json())
+    .then(json => {
+
+        let total = json.count;
+
+        if (document.getElementById('data_key_type_actionplans')) {
+          document.getElementById('data_key_type_actionplans').innerHTML = total;
+        }
+
+    })
+    .catch((error) => {
+        console.error('Error KPI países vigentes', error);
+    });
+}

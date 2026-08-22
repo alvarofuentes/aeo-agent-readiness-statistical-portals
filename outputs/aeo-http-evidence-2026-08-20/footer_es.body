@@ -1,0 +1,435 @@
+
+
+
+
+
+
+
+<div id="footer_html">
+
+<p>&nbsp;</p>
+<div class="footer-color footer-color-1 footer-line-1">
+  <div class="container">
+    <div class="row ">
+      <div class="col-xs-12 col-sm-12 col-lg-6" style="margin-top:12px;" id="footer_news">
+
+      </div>
+      <div class="col-xs-12 col-sm-12 col-lg-6" align="right" >
+        &nbsp;
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer-color" style="background-color:#ffffff;">
+  <div class="container">
+    <div class="row" style="text-align:center; padding:15px 0;">
+      
+      <div class="col-xs-12">
+        <div id="socios_titulo" style="color:#274d5e; margin-bottom:10px; font-size:22px; font-weight:bold;">
+          Socios estratégicos
+        </div>
+        <a href="https://www.cooperacionespanola.es/" target="_blank"></a>
+        <img src="images/aecid_color2.png" alt="Socios estratégicos" style="max-height:80px;">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="footer-color" >
+  <div class="container">
+    <div class="row footer-line-2 footer-line-3">
+      <div class="col-xs-12 col-sm-12 col-lg-12" align="center" id="footer_text" >
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+
+
+
+
+
+
+  $(document).ready(function () {
+
+        var query = window.location;
+
+        var query = query.toString();
+        //let page0 = query.search("index");
+        let page0=0;
+        let page1 = query.search("/es/index");
+
+        let urls_areas = [
+          "planificacion-para-el-desarrollo",
+          "inversion-publica",
+          "gobierno-abierto",
+          "desarrollo-y-ordenamiento-territorial",
+          "desarrollo-urbano",
+          "movilidad-urbana"
+        ];
+
+        let page2a = urls_areas.some(palabra => query.includes(palabra));
+
+
+
+        let page3a = query.search("planes");
+        let page3b = query.search("marcos-normativos");
+        let page3c = query.search("metodologias");
+
+        let page4a = query.search("instituciones");
+        let page4b = query.search("sistemas-nacionales-de-planificacion");
+        let page4c = query.search("sistemas-nacionales-de-inversion-publica");
+        let page4d = query.search("mecanismos-de-articulacion-institucional");
+        let page4e = query.search("foros-multiactor-de-gobierno-abierto");
+
+        let page5 = query.search("paises");
+        let page6 = query.search("geoportal");
+        let page0m1 = query.search("acerca-de");
+
+
+
+        if(lang=="en") {
+
+          let urls_areas_en = [
+            "planning-for-development",
+            "public-investment",
+            "open-government",
+            "land-use-planning",
+            "urban-development",
+            "urban-mobility"
+          ];
+
+          page2a = urls_areas_en.some(palabra => query.includes(palabra));
+
+
+          page3a = query.search("plans");
+          page3b = query.search("regulatory-frame");
+          page3c = query.search("methodolo");
+          page4a = query.search("institution");
+          page4b = query.search("national-planning-systems");
+          page4c = query.search("national-public-investment-systems");
+          page4d = query.search("institutional-coordination-mechanisms");
+          page4e = query.search("multi-stakeholder-open-government-forums");
+          page5 = query.search("countries");
+          page0m1 = query.search("about");
+
+          let titulo = document.getElementById("socios_titulo");
+          if(titulo){
+         titulo.innerText = "Strategic Partners";
+        }
+}
+
+
+
+
+
+        let c = `index.html?lang=`;
+        let themeGeoportal = theme < 4 ? theme : theme -1;
+
+        if(page0>0) {
+          $('#ppal_menu_1').attr('style', 'background-color:#C4E1EC; ');
+          c = `index.html?lang=`;
+
+
+        } else if(page4d>0) {
+          //mecanismos
+          $('#ppal_menu_4').attr('style', 'background-color:#C4E1EC; ');
+          applyCustomLeftBar('ppal_menu_4_4');
+
+          if(lang=="en") {
+            $('#link_view_map').attr('href', 'en/geoportal/?menu=s3');
+          } else {
+            $('#link_view_map').attr('href', 'es/geoportal/?menu=s3');
+          };
+
+        } else if(page4a>0) {
+          //institutions
+          $('#ppal_menu_4').attr('style', 'background-color:#C4E1EC; ');
+          applyCustomLeftBar('ppal_menu_4_1');
+
+        } else if(page4b>0) {
+          //snp
+          $('#ppal_menu_4').attr('style', 'background-color:#C4E1EC; ');
+          applyCustomLeftBar('ppal_menu_4_2');
+
+          if(lang=="en") {
+            $('#link_view_map').attr('href', 'en/geoportal/?menu=s1');
+          } else {
+            $('#link_view_map').attr('href', 'es/geoportal/?menu=s1');
+          };
+
+        } else if(page4c>0) {
+          //snip
+          $('#ppal_menu_4').attr('style', 'background-color:#C4E1EC; ');
+          applyCustomLeftBar('ppal_menu_4_3');
+
+          if(lang=="en") {
+            $('#link_view_map').attr('href', 'en/geoportal/?menu=s2');
+          } else {
+            $('#link_view_map').attr('href', 'es/geoportal/?menu=s2');
+          };
+
+        } else if(page4e>0) {
+          //foros
+          $('#ppal_menu_4').attr('style', 'background-color:#C4E1EC; ');
+          applyCustomLeftBar('ppal_menu_4_5');
+
+          if(lang=="en") {
+            $('#link_view_map').attr('href', 'en/geoportal/?menu=s4');
+          } else {
+            $('#link_view_map').attr('href', 'es/geoportal/?menu=s4');
+          };
+
+
+
+        } else if(page2a>0) {
+          //areas
+          $('#ppal_menu_2').attr('style', 'background-color:#C4E1EC; ');
+          applyCustomLeftBar('ppal_menu_2_'+theme);
+
+        } else if(page3a>0) {
+          //planes
+          if(theme>0) {
+            $('#ppal_menu_2').attr('style', 'background-color:#C4E1EC; ');
+            applyCustomLeftBar('ppal_menu_2_'+theme);
+          } else {
+            $('#ppal_menu_3').attr('style', 'background-color:#C4E1EC; ');
+            applyCustomLeftBar('ppal_menu_3_1');
+          }
+
+          if(theme>0) {
+            let themeGeoportal = theme < 4? theme : theme -1;
+            if(lang=="en") {
+              $('#link_view_map').attr('href', 'en/geoportal/?menu=1&theme='+themeGeoportal);
+            } else {
+              $('#link_view_map').attr('href', 'es/geoportal/?menu=1&theme='+themeGeoportal);
+            };
+          } else {
+            if(lang=="en") {
+              $('#link_view_map').attr('href', 'en/geoportal/?menu=1');
+            } else {
+              $('#link_view_map').attr('href', 'es/geoportal/?menu=1');
+            };
+          }
+
+
+        } else if(page3b>0) {
+          //normativas
+          if(theme>0) {
+            $('#ppal_menu_2').attr('style', 'background-color:#C4E1EC; ');
+            applyCustomLeftBar('ppal_menu_2_'+theme);
+          } else {
+            $('#ppal_menu_3').attr('style', 'background-color:#C4E1EC; ');
+            applyCustomLeftBar('ppal_menu_3_2');
+          }
+
+          if(theme>0) {
+            if(lang=="en") {
+              $('#link_view_map').attr('href', 'en/geoportal/?menu=2&theme='+themeGeoportal);
+            } else {
+              $('#link_view_map').attr('href', 'es/geoportal/?menu=2&theme='+themeGeoportal);
+            }
+          } else {
+            if(lang=="en") {
+              $('#link_view_map').attr('href', 'en/geoportal/?menu=2');
+            } else {
+              $('#link_view_map').attr('href', 'es/geoportal/?menu=2');
+            }
+          }
+
+
+        } else if(page3c>0) {
+          //metodologias
+          if(theme>0) {
+            $('#ppal_menu_2').attr('style', 'background-color:#C4E1EC; ');
+            applyCustomLeftBar('ppal_menu_2_'+theme);
+          } else {
+            $('#ppal_menu_3').attr('style', 'background-color:#C4E1EC; ');
+            applyCustomLeftBar('ppal_menu_3_3');
+          }
+
+          if(theme>0) {
+            if(lang=="en") {
+              $('#link_view_map').attr('href', 'en/geoportal/?menu=3&theme='+themeGeoportal);
+            } else {
+              $('#link_view_map').attr('href', 'es/geoportal/?menu=3&theme='+themeGeoportal);
+            }
+          } else {
+            if(lang=="en") {
+              $('#link_view_map').attr('href', 'en/geoportal/?menu=3');
+            } else {
+              $('#link_view_map').attr('href', 'es/geoportal/?menu=3');
+            }
+          }
+
+        } else if(page5>0) {
+          //countries
+          $('#ppal_menu_5').attr('style', 'background-color:#C4E1EC; ');
+
+        } else if(page6>0) {
+          //geoportal
+          $('#ppal_menu_6').attr('style', 'background-color:#C4E1EC; ');
+
+        } else {
+
+        if(page1>0) {
+          $('#ppal_menu_1').attr('style', 'background-color:#C4E1EC; ');
+         }
+
+        }
+
+
+
+
+
+
+        let lang2,langt2;
+        if(lang=="es") {
+          lang2="en";
+          langt2="English";
+        } else if(lang=="en") {
+          lang2="es";
+          langt2="Español";
+        } else {
+          lang2="en";
+          langt2="English";
+        }
+
+
+
+
+
+    });
+
+    function muestraMenu() {
+      $('#menu_total_web').show();
+    }
+
+
+    function applyCustomLeftBar__v1(tdId, color = '#FC9303', width = '6px', heightPercent = 95) {
+      const td = $('#' + tdId);
+      const content = td.text().trim();
+
+      td.css('position', 'relative').html(`
+        <div style="position:absolute; left:0; top:${(100 - heightPercent) / 2}%; height:${heightPercent}%; width:${width}; background-color:${color};"></div>
+        <div style="padding-left:7px;">${content}</div>
+      `);
+    }
+
+
+    function applyCustomLeftBar(tdId, color = '#FC9303', width = '6px', heightPercent = 95) {
+      return false;
+      /*
+      const tdElement = document.getElementById(tdId);
+      const anchorElement = tdElement.closest("a");
+      if (anchorElement) {
+        anchorElement.style.backgroundColor = "#D2E8F0";
+      }
+      */
+    }
+
+
+
+
+</script>
+
+
+
+<script type="text/javascript">
+
+  var scriptElm = document.createElement('script');
+  scriptElm.src = `include/text.js?v=${time}`;
+  document.body.appendChild(scriptElm);
+
+
+  //if(lang=="en") { c = 'es'; } else { c = 'en'; };
+
+
+  var scriptElm = document.createElement('script');
+  scriptElm.src = `include/tag_title.js?v=${time}&x=2`;
+  document.body.appendChild(scriptElm);
+
+
+  if(lang=="en") {
+    $("body").append("<span class='ir_arriba_obs'><a href='https://ee-surveystat.cepal.org/x/f6AtOvCC/?lang=en' target='_blank'><img id='hover' src='images/observacion_edit.png' width='50px' /></a> <div id='txt_inf_obs'>Report updates</a></div></span>");
+
+  } else {
+    $("body").append("<span class='ir_arriba_obs'><a href='https://ee-surveystat.cepal.org/x/f6AtOvCC' target='_blank'><img id='hover' src='images/observacion_edit.png' width='50px' /></a> <div id='txt_inf_obs'>Informar actualizaciones</a></div></span>");
+  }
+
+
+
+  const hover = document.getElementById("hover");
+  const target = document.getElementById("txt_inf_obs");
+
+  hover.addEventListener("mouseenter", () => {
+    target.style.display = "block";
+  });
+
+  hover.addEventListener("mouseleave", () => {
+    target.style.display = "none";
+  });
+
+</script>
+
+
+
+<style>
+
+  .ir_arriba_obs {
+  		padding:0px;	font-size:18px;	color:#fff;
+  		position: fixed;	bottom:20px;	right:5px;
+  	border-radius:30px;	letter-spacing:1px;	opacity:0.9;
+  	filter:alpha(opacity=70); /* IE < 9.0 */
+  }
+
+
+  #hover { opacity:1; }
+  #hover:hover { opacity:1; }
+
+  #txt_inf_obs { display:none; background-color:#EFECB4; padding:2px 20px; color:#000; position:absolute; top:10px; right:55px; width:285px; border-radius:8px 8px 0px 8px; text-align:center; }
+
+
+
+  @media (min-width: 1920px) {
+      .container {
+          width: 1600px !important;
+          max-width: 1600px !important;
+      }
+  }
+</style>
+
+
+
+<script src="https://statistics.cepal.org/assets/bootstrap-4.3.1.min.js" ></script>
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VHK9G7P13B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VHK9G7P13B');
+</script>
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KNSPKTQK47"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KNSPKTQK47');
+</script>

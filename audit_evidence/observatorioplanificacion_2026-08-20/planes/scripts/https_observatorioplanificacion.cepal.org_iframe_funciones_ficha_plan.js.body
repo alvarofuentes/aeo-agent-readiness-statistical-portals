@@ -1,0 +1,58 @@
+function validaIconoActivacion (x) {
+  let active=0;
+  if(!x) {
+    active=0;
+  } else {
+    if(x=='yes') {
+      active=1;
+    } else if(x=='no') {
+      active=0;
+    } else {
+      active=0;
+    }
+  }
+  return active;
+}
+
+
+
+
+
+
+// Función para obtener el año final
+function obtenerAnoFinal(frase) {
+    const regex = /\((\d{4})-(\d{4})\)/;
+    const match = frase.match(regex);
+    if (match) {
+        return parseInt(match[2]);
+    } else {
+        return undefined;
+    }
+}
+
+
+
+
+
+
+
+
+
+function formatosTexto(texto) {
+  //Texto saltos linea
+  texto = texto.replace(/\n/g, "<br/>");
+  texto = texto.replace(/\n\n/g, "<br/>");
+  // Texto negrita: reemplaza *palabra o frase* por <b>palabra o frase</b>
+  texto = texto.replace(/\*(.*?)\*/g, '<b>$1</b>');
+  return texto;
+}
+
+
+
+
+function detectaEsBitstream(valor) {
+  const uuidRegex =
+    /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+  return uuidRegex.test(valor);
+}
