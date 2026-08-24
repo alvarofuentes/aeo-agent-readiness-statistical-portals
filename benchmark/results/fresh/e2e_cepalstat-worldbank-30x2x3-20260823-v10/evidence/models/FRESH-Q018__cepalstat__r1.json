@@ -1,0 +1,179 @@
+{
+  "query": "Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.",
+  "portal": "cepalstat",
+  "repeat": 1,
+  "endpoint": "http://127.0.0.1:11436",
+  "selection": {
+    "ok": true,
+    "data": {
+      "candidate_id": "2207",
+      "query_rewrite": "Compara el crecimiento del PIB total anual a precios constantes de Costa Rica y Ecuador en 2024.",
+      "reason": "El candidato 2207 coincide exactamente con los requisitos: scope country_aggregate (no subnational), frequency annual, unit_class percent, price_base constant, y concept gdp_growth. Es la primera opción válida en la lista.",
+      "model_raw": "{\n  \"candidate_id\": \"2207\",\n  \"query_rewrite\": \"Compara el crecimiento del PIB total anual a precios constantes de Costa Rica y Ecuador en 2024.\",\n  \"reason\": \"El candidato 2207 coincide exactamente con los requisitos: scope country_aggregate (no subnational), frequency annual, unit_class percent, price_base constant, y concept gdp_growth. Es la primera opción válida en la lista.\"\n}"
+    }
+  },
+  "selection_mode": "model",
+  "selection_status": "PASS",
+  "selection_failure_class": null,
+  "selection_error": null,
+  "model_candidate_rejected": null,
+  "candidate_count": 12,
+  "candidates": [
+    {
+      "id": "2207",
+      "name": "Tasa de crecimiento del producto interno bruto (PIB) total anual a precios constantes",
+      "indicator_id": 2207,
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "percent",
+        "price_base": "constant",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "2222",
+      "name": "Tasa de crecimiento del producto interno bruto (PIB) total anual por habitante a precios constantes",
+      "indicator_id": 2222,
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "per_capita",
+        "price_base": "constant",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "2210",
+      "name": "Tasa de crecimiento del producto interno bruto (PIB) anual por objeto del gasto a precios constantes",
+      "indicator_id": 2210,
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "percent",
+        "price_base": "constant",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "2217",
+      "name": "Tasa de crecimiento del producto interno bruto (PIB) anual por actividad económica a precios constantes",
+      "indicator_id": 2217,
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "percent",
+        "price_base": "constant",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "2517",
+      "name": "Contribución a la tasa de crecimiento del producto interno bruto (PIB) anual por objeto del gasto a precios constantes",
+      "indicator_id": 2517,
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "percent",
+        "price_base": "constant",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "2518",
+      "name": "Contribución a la tasa de crecimiento del producto interno bruto (PIB) anual por actividad económica a precios constantes",
+      "indicator_id": 2518,
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "percent",
+        "price_base": "constant",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "3886",
+      "name": "Tasa de crecimiento anual del PIB real por persona empleada (en porcentajes) SL_EMP_PCAP",
+      "indicator_id": 3886,
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "3894",
+      "name": "Tasa de crecimiento anual del PIB real per cápita (en porcentajes) NY_GDP_PCAP",
+      "indicator_id": 3894,
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "per_capita",
+        "price_base": "unspecified",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "4543",
+      "name": "Crecimiento del PIB anual (%) NY_GDP_MKTP_KD_ZG",
+      "indicator_id": 4543,
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "2203",
+      "name": "Producto interno bruto (PIB) total anual a precios corrientes en dólares",
+      "indicator_id": 2203,
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "currency_usd",
+        "price_base": "current",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "2205",
+      "name": "Producto interno bruto (PIB) total anual por habitante a precios corrientes en dólares",
+      "indicator_id": 2205,
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "per_capita",
+        "price_base": "current",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "4873",
+      "name": "CHILE Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4873,
+      "selection_metadata": {
+        "scope": "subnational",
+        "country_scope": "country_specific",
+        "frequency": "annual",
+        "unit_class": "currency_usd",
+        "price_base": "current",
+        "source_catalog": "CEPALSTAT"
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "source": "benchmark/gold_standards_final_2026-08-23.json",
+  "source_sha256": "b08a4c7e27033ef5c969355c350aa647526b581a1fa03d74ede9803d108c6eac",
+  "declared_metadata": {
+    "source": "auditoría AEO.pdf",
+    "validated_at": null,
+    "n": 600,
+    "n_query_ids": 120,
+    "n_query_families": 24,
+    "query_family_note": null
+  },
+  "shape": {
+    "n": 600,
+    "unique_pairs": 600,
+    "n_templates": 120,
+    "n_families": 24,
+    "missing_template_family_ids": 0,
+    "portal_counts": {
+      "cepalstat": 120,
+      "sdg": 120,
+      "undata": 120,
+      "who": 120,
+      "worldbank": 120
+    },
+    "stratum_counts": {
+      "citation": 25,
+      "comparison": 75,
+      "dimensions": 75,
+      "discovery": 100,
+      "exact_indicator": 100,
+      "metadata": 50,
+      "semantic_disambiguation": 125,
+      "temporal": 50
+    },
+    "country_code_invalid": 0,
+    "status": "PASS"
+  },
+  "gold_status_counts": {
+    "validated_contract": 550,
+    "validated_value": 30,
+    "validated_not_applicable": 20
+  },
+  "target_available_counts": {
+    "not_required": 550,
+    "validated_value": 30,
+    "not_applicable": 20
+  },
+  "validation_status_counts": {
+    "validated_contract": 550,
+    "validated_value": 30,
+    "validated_not_applicable": 20
+  },
+  "target_payload_rows": 30,
+  "numeric_target_expected_rows": 200,
+  "row_evidence_pointer_rows": 540,
+  "findings_by_code": {},
+  "findings": 0,
+  "decision": "PASS",
+  "policy": "No numeric target is promoted unless query intent is numeric, measure is explicit, official URL passes allowlist, and row-level raw evidence hash/path is present."
+}

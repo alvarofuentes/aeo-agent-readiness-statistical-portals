@@ -1,0 +1,102 @@
+{
+  "query": "Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.",
+  "portal": "who",
+  "repeat": 1,
+  "endpoint": "http://127.0.0.1:11436",
+  "selection": {
+    "ok": true,
+    "data": {
+      "candidate_id": null,
+      "query_rewrite": "Encuentra una página o API oficial con datos de PIB (GDP) para Mexico y cita la fuente.",
+      "reason": "La consulta solicita explícitamente 'gdp_total' (PIB), pero ninguno de los candidatos disponibles en el portal WHO contiene esta medida. Los candidatos listados son indicadores de gasto de salud, I+D o asequibilidad expresados como porcentaje del PIB, no el valor absoluto del PIB. Por lo tanto, no hay candidato válido.",
+      "model_raw": "{\n  \"candidate_id\": null,\n  \"query_rewrite\": \"Encuentra una página o API oficial con datos de PIB (GDP) para Mexico y cita la fuente.\",\n  \"reason\": \"La consulta solicita explícitamente 'gdp_total' (PIB), pero ninguno de los candidatos disponibles en el portal WHO contiene esta medida. Los candidatos listados son indicadores de gasto de salud, I+D o asequibilidad expresados como porcentaje del PIB, no el valor absoluto del PIB. Por lo tanto, no hay candidato válido.\"\n}",
+      "model_attempts": 1
+    }
+  },
+  "selection_mode": "ranked_fallback",
+  "selection_status": "FAIL",
+  "selection_failure_class": "MODEL_RESPONSE_ERROR",
+  "selection_error": {
+    "failure_class": "MODEL_RESPONSE_ERROR",
+    "note": "The model did not return a usable candidate; ranked fallback is preserved for diagnosis."
+  },
+  "model_candidate_rejected": null,
+  "candidate_count": 5,
+  "candidates": [
+    {
+      "id": "GHED_CHEGDP_SHA2011",
+      "name": "Current health expenditure (CHE) as percentage of gross domestic product (GDP) (%)",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "current",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    {
+      "id": "GB_XPD_RSDV",
+      "name": "Research and development (R&amp;D) expenditure as a proportion of GDP",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    {
+      "id": "GHED_GGHE-DGDP_SHA2011",
+      "name": "Domestic general government health expenditure (GGHE-D) as percentage of gross domestic product (GDP) (%)",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    {
+      "id": "R_afford_gdp",
+      "name": "Affordability - percentage of GDP per capita required to purchase 2000 cigarettes of the most sold brand",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "unspecified",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    {
+      "id": "TAXBEV_AFFORD_GDP",
+      "name": "GDP per capita to purchase a volume of beverage (%)",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "unspecified",
+        "source_catalog": "WHO GHO"
+      }
+    }
+  ]
+}

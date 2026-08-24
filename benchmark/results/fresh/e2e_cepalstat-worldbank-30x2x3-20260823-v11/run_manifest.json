@@ -1,0 +1,31 @@
+{
+  "run_id": "e2e_cepalstat-worldbank-30x2x3-20260823-v11",
+  "created_at": "2026-08-23T20:54:52.281106+00:00",
+  "status": "PAUSED_FOR_REVIEW",
+  "portals": [
+    "cepalstat",
+    "worldbank"
+  ],
+  "template_count": 30,
+  "repeat_count": 3,
+  "expected_executions": 180,
+  "completed_executions": 0,
+  "evidence_policy": "live_portal_fetch_per_repeat_no_cache",
+  "model": "qwen3.5:9b-mlx",
+  "model_endpoints": [
+    "http://127.0.0.1:11436"
+  ],
+  "source_bank": "benchmark/query-bank-120.csv",
+  "editorial_status": "pending",
+  "selection_policy": "preserve_model_selection_and_continue; classify semantic mismatch as MODEL_SELECTION_ERROR",
+  "diagnostic_classes": [
+    "MODEL_SELECTION_ERROR"
+  ],
+  "stop_conditions": [
+    "any_e2e_retrieval_status_not_verified",
+    "zero_observations_after_two_attempts"
+  ],
+  "stop_action": "write_review_alert_pause_and_relaunch_from_clean_run",
+  "pause_reason": "technical_not_verified",
+  "review_alert": "review_alert.json"
+}

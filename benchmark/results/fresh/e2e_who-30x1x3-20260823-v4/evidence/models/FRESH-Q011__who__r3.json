@@ -1,0 +1,128 @@
+{
+  "query": "Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?",
+  "portal": "who",
+  "repeat": 3,
+  "endpoint": "http://127.0.0.1:11436",
+  "selection": {
+    "ok": true,
+    "data": {
+      "candidate_id": "GHED_CHEGDP_SHA2011",
+      "query_rewrite": "Obtener el gasto de salud actual como porcentaje del PIB (gdp) para Chile en 2024.",
+      "reason": "La consulta solicita explícitamente el 'tamaño de la economía' y ofrece una elección entre 'PIB total' o 'PIB per cápita'. El candidato GHED_CHEGDP_SHA2011 mide el gasto de salud como porcentaje del PIB, lo cual es un indicador macroeconómico relativo al tamaño total de la economía (PIB), alineándose mejor con la intención de medir la magnitud económica que los indicadores per cápita. Se selecciona este ID sin inventar uno nuevo.",
+      "model_raw": "{\n  \"candidate_id\": \"GHED_CHEGDP_SHA2011\",\n  \"query_rewrite\": \"Obtener el gasto de salud actual como porcentaje del PIB (gdp) para Chile en 2024.\",\n  \"reason\": \"La consulta solicita explícitamente el 'tamaño de la economía' y ofrece una elección entre 'PIB total' o 'PIB per cápita'. El candidato GHED_CHEGDP_SHA2011 mide el gasto de salud como porcentaje del PIB, lo cual es un indicador macroeconómico relativo al tamaño total de la economía (PIB), alineándose mejor con la intención de medir la magnitud económica que los indicadores per cápita. Se selecciona este ID sin inventar uno nuevo.\"\n}",
+      "model_attempts": 1
+    }
+  },
+  "selection_mode": "model",
+  "selection_status": "FAIL",
+  "selection_failure_class": "MODEL_SELECTION_ERROR",
+  "selection_error": {
+    "failure_class": "MODEL_SELECTION_ERROR",
+    "selected_candidate": {
+      "id": "GHED_CHEGDP_SHA2011",
+      "name": "Current health expenditure (CHE) as percentage of gross domestic product (GDP) (%)",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "current",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    "expected": {
+      "scope": "country_aggregate",
+      "frequency": "unspecified",
+      "unit_class": "per_capita",
+      "price_base": "unspecified",
+      "concept": "gdp_per_capita"
+    },
+    "mismatches": [
+      "unit_expected:per_capita;observed:percent",
+      "measure_expected:gdp_per_capita;observed:not_per_capita"
+    ],
+    "note": "The model's original candidate is retained and tested; no deterministic re-selection was applied."
+  },
+  "model_candidate_rejected": null,
+  "candidate_count": 5,
+  "candidates": [
+    {
+      "id": "R_afford_gdp",
+      "name": "Affordability - percentage of GDP per capita required to purchase 2000 cigarettes of the most sold brand",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "unspecified",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    {
+      "id": "TAXBEV_AFFORD_GDP",
+      "name": "GDP per capita to purchase a volume of beverage (%)",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "unspecified",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    {
+      "id": "GHED_CHEGDP_SHA2011",
+      "name": "Current health expenditure (CHE) as percentage of gross domestic product (GDP) (%)",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "current",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    {
+      "id": "GB_XPD_RSDV",
+      "name": "Research and development (R&amp;D) expenditure as a proportion of GDP",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    {
+      "id": "GHED_GGHE-DGDP_SHA2011",
+      "name": "Domestic general government health expenditure (GGHE-D) as percentage of gross domestic product (GDP) (%)",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "WHO GHO"
+      }
+    }
+  ]
+}

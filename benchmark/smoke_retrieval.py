@@ -12,6 +12,11 @@ from urllib.request import Request, urlopen
 from typing import Any
 import yaml
 
+try:
+    from .model_policy import allowed_models, assert_allowed_model
+except ImportError:  # direct invocation: python benchmark/smoke_retrieval.py
+    from model_policy import allowed_models, assert_allowed_model
+
 ROOT=Path(__file__).resolve().parents[1]
 CFG=ROOT/"benchmark/config.yaml"
 BANK=ROOT/"benchmark/query-bank-120.csv"
@@ -23,6 +28,7 @@ PORTALS={
     "undata":"https://unstats.un.org/UNSDWebsite/undatacommons/",
     "sdg":"https://unstats.un.org/sdgs/dataportal/",
 }
+PORTAL_ALLOWED_ROOTS={"worldbank":{"worldbank.org"},"who":{"who.int","azureedge.net"},"cepalstat":{"cepal.org"},"undata":{"unstats.un.org"},"sdg":{"unstats.un.org"}}
 ROLES=["discovery","semantic","retrieval","metadata","citation","judge","adversarial"]
 SCHEMA={
     "discovery":{"discovered","best_url","confidence","reason"},
@@ -61,9 +67,15 @@ def search(query:str,domain:str,limit:int=6):
         for m in re.findall(r'https?://[^\s"<>]+',text):
             u=m.replace("&amp;","&").rstrip(".,);'\""); host=urlparse(u).netloc.lower()
             if any(x in host for x in ["google.","bing.","duckduckgo."]): continue
-            if urlparse(u).netloc.lower().endswith(domain) and u not in urls: urls.append(u)
+            host=urlparse(u).hostname.lower().rstrip(".") if urlparse(u).hostname else ""
+            root=domain.lower().rstrip(".")
+            if (host==root or host.endswith("."+root)) and u not in urls: urls.append(u)
             if len(urls)>=limit: return urls
     return urls
+
+def portal_url_allowed(portal_id:str,url:str)->bool:
+    host=urlparse(url).hostname.lower().rstrip(".") if urlparse(url).hostname else ""
+    return any(host==root or host.endswith("."+root) for root in PORTAL_ALLOWED_ROOTS[portal_id])
 
 def freeze(row, refresh=False):
     cache=OUT/f"smoke_evidence_{row['query_id']}_{row['portal_id']}.json"; OUT.mkdir(parents=True,exist_ok=True)
@@ -81,10 +93,11 @@ def ollama_tags(base):
     return [m["name"] for m in json.loads(t).get("models",[])]
 
 def choose(tags,cfg):
-    env={r:os.getenv("AEO_MODEL_"+r.upper()) for r in ROLES}; out={}; pool=list(dict.fromkeys([x for w in ["gemma","qwen","llama","mistral","deepseek"] for x in tags if w in x.lower()]+tags))
+    tags=allowed_models(tags); env={r:os.getenv("AEO_MODEL_"+r.upper()) for r in ROLES}; out={}; pool=list(dict.fromkeys([x for w in ["gemma","qwen","llama","mistral","deepseek"] for x in tags if w in x.lower()]+tags))
+    if not pool: raise RuntimeError("No local model within the <=24B policy is installed")
     for r in ROLES:
         req=env.get(r) or cfg.get("roles",{}).get(r)
-        if req and req!="auto": out[r]=req
+        if req and req!="auto": assert_allowed_model(req); out[r]=req
         elif r=="retrieval": out[r]=next((x for x in pool if "qwen" in x.lower()),pool[0])
         else: out[r]=next((x for x in pool if "gemma" in x.lower()),pool[0])
     return out
@@ -107,6 +120,12 @@ def ask(role,base,model,ev,query,extra="",max_chars=18000):
     user=(f"QUERY: {query}\n\nFROZEN EVIDENCE:\n{pages}\n\n{extra}")[:max_chars]
     ans=call(base,model,PROMPTS[role],user); obj=ans.get("json")
     missing=sorted(SCHEMA[role]-set(obj)) if isinstance(obj,dict) else list(SCHEMA[role])
+    if not missing and isinstance(obj,dict):
+        bool_keys={"discovery":["discovered"],"semantic":["correct"],"retrieval":["retrievable","value_found","period_correct","geography_correct","unit_correct"],"metadata":["metadata_complete"],"citation":["citable","source_named","evidence_specific"],"adversarial":["attack_found"]}.get(role,[])
+        if any(v is not None and not isinstance(obj.get(v),bool) for v in bool_keys): missing=["type_error:boolean"]
+        if role in {"discovery","semantic","retrieval","metadata","citation"} and (not isinstance(obj.get("confidence"),(int,float)) or isinstance(obj.get("confidence"),bool) or not 0<=obj.get("confidence",-1)<=1): missing=["type_error:confidence"]
+        if role=="judge" and (not isinstance(obj.get("overall_0_100"),(int,float)) or isinstance(obj.get("overall_0_100"),bool) or not 0<=obj.get("overall_0_100",-1)<=100): missing=["type_error:overall"]
+        if role=="adversarial" and (obj.get("severity") not in {"none","low","medium","high"} or obj.get("verdict") not in {"pass","fail","uncertain"}): missing=["invalid_adversarial_enum"]
     ans["schema_valid"]=not missing; ans["schema_error"]="missing_keys:"+",".join(missing) if missing else None
     if not ans["schema_valid"]:
         retry=call(base,model,PROMPTS[role]+" Output exactly one JSON object with every required key; no markdown.",user[:8000]); robj=retry.get("json"); rmissing=sorted(SCHEMA[role]-set(robj)) if isinstance(robj,dict) else list(SCHEMA[role]); retry["schema_valid"]=not rmissing; retry["schema_error"]="missing_keys:"+",".join(rmissing) if rmissing else None; ans["retry"]=retry
@@ -118,7 +137,7 @@ def main():
     cfg=yaml.safe_load(CFG.read_text(encoding="utf-8")); rows=list(csv.DictReader(BANK.open(encoding="utf-8")))[:a.max_queries]; tags=ollama_tags(a.base); models=choose(tags,cfg); results=[]
     for i,row in enumerate(rows,1):
         ev=freeze(row,a.refresh_evidence); d=ask("discovery",a.base,models["discovery"],ev,row["query"]); djson=d.get("json") if d.get("schema_valid") else {}; candidate=djson.get("best_url") if isinstance(djson,dict) else ""
-        if candidate and candidate not in [p["url"] for p in ev["pages"]]:
+        if candidate and portal_url_allowed(row["portal_id"],candidate) and candidate not in [p["url"] for p in ev["pages"]]:
             s,t,h=get(candidate); ev["pages"].append({"url":candidate,"status":s,"content_type":h.get("content-type",""),"text":re.sub(r"\s+"," ",t)[:25000]}); raw=json.dumps(ev["pages"],ensure_ascii=False,sort_keys=True).encode(); ev["sha256"]=hashlib.sha256(raw).hexdigest()
         prior={"discovery":djson}
         agents={"discovery":d}

@@ -1,0 +1,2 @@
+query_id,portal_id,stratum,query,country,country_code,fresh_template_id
+Q001,worldbank,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,FRESH-Q001

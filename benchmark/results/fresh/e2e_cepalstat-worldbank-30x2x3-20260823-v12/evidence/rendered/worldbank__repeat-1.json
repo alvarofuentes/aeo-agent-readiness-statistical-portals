@@ -1,0 +1,11 @@
+{
+  "repeat": 1,
+  "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+  "title": "GDP (current US$) | Data",
+  "readyState": "complete",
+  "htmlChars": 1399365,
+  "bodyChars": 8450,
+  "jsonld": 1,
+  "microdata": 0,
+  "captured_at": "2026-08-23T20:50:23.523Z"
+}

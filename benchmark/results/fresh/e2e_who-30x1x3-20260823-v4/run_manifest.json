@@ -1,0 +1,33 @@
+{
+  "run_id": "e2e_who-30x1x3-20260823-v4",
+  "created_at": "2026-08-23T22:59:36.502499+00:00",
+  "status": "COMPLETE",
+  "portals": [
+    "who"
+  ],
+  "template_count": 30,
+  "repeat_count": 3,
+  "expected_executions": 90,
+  "completed_executions": 90,
+  "evidence_policy": "live_portal_fetch_per_repeat_no_cache",
+  "model": "qwen3.5:9b-mlx",
+  "model_endpoints": [
+    "http://127.0.0.1:11436"
+  ],
+  "source_bank": "benchmark/query-bank-120.csv",
+  "editorial_status": "COMPLETE",
+  "selection_policy": "preserve_model_selection_and_continue; classify semantic mismatch as MODEL_SELECTION_ERROR",
+  "diagnostic_classes": [
+    "MODEL_SELECTION_ERROR"
+  ],
+  "stop_conditions": [
+    "any_e2e_retrieval_status_not_verified",
+    "zero_observations_after_two_attempts"
+  ],
+  "stop_action": "write_review_alert_pause_and_relaunch_from_clean_run",
+  "last_update": "2026-08-23T23:12:46.384956+00:00",
+  "last_execution_id": "FRESH-Q030__who__r3",
+  "completed_at": "2026-08-23T23:12:46.392167+00:00",
+  "editorial_completed_at": "2026-08-24T00:43:47.858304+00:00",
+  "editorial_dir": "editorial"
+}

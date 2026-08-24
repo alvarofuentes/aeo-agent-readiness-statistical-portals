@@ -1,0 +1,1094 @@
+{
+  "url": "https://api.worldbank.org/v2/country/CRI/indicator/NY.GDP.MKTP.KD.ZG?date=1960:2026&format=json&per_page=100",
+  "status": 200,
+  "headers": {
+    "Date": "Sun, 23 Aug 2026 21:22:03 GMT",
+    "Content-Type": "application/json;charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "set-cookie": "_cfuvid=A2Ghr.Th2.To6j6R5H3DChHuXB.AgobJpp4eCVUWlfY-1787520123.539902-1.0.1.1-4VmH07C2l_TXeP.LfC_zYPZAW9buy5bA7E6nNgQtjn8; HttpOnly; SameSite=None; Secure; Path=/; Domain=worldbank.org",
+    "CF-Ray": "a2fd2ba41843b422-SCL",
+    "CF-Cache-Status": "HIT",
+    "Access-Control-Allow-Origin": "*",
+    "Age": "8291",
+    "Cache-Control": "public, max-age=86400",
+    "Expires": "Mon, 24 Aug 2026 21:22:03 GMT",
+    "Last-Modified": "Sun, 23 Aug 2026 19:03:51 GMT",
+    "Server": "cloudflare",
+    "Vary": "accept-encoding",
+    "Access-Control-Allow-Headers": "X-Requested-With",
+    "Access-Control-Allow-Methods": "GET",
+    "Request-Context": "appId=cid-v1:da002513-bd8b-4441-9f30-737944134422",
+    "X-Powered-By": "ASP.NET"
+  },
+  "payload": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": 100,
+      "total": 66,
+      "sourceid": "2",
+      "lastupdated": "2026-07-13"
+    },
+    [
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2025",
+        "value": 4.56033547844829,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2024",
+        "value": 4.08292444182048,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2023",
+        "value": 4.79187732359398,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2022",
+        "value": 5.46119455235068,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2021",
+        "value": 8.21817953969082,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2020",
+        "value": -4.14159340574358,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2019",
+        "value": 2.70813912948329,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2018",
+        "value": 2.85285959760458,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2017",
+        "value": 4.15769914676933,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2016",
+        "value": 4.20432320775184,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2015",
+        "value": 3.65208093006359,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2014",
+        "value": 3.54210997703849,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2013",
+        "value": 2.49476596233289,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2012",
+        "value": 4.88259252932575,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2011",
+        "value": 4.40315921836142,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2010",
+        "value": 5.36034347722267,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2009",
+        "value": -0.87345608994562,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2008",
+        "value": 4.73817511214847,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2007",
+        "value": 8.21513209207497,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2006",
+        "value": 7.3266951372695,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2005",
+        "value": 3.97666631433462,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2004",
+        "value": 4.42459978667458,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2003",
+        "value": 4.31718000096654,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2002",
+        "value": 3.41687615891895,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2001",
+        "value": 3.49117013515725,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2000",
+        "value": 3.80207210664838,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1999",
+        "value": 4.147800457203,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1998",
+        "value": 7.08853729218445,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1997",
+        "value": 5.47616597492105,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1996",
+        "value": 1.35045951266757,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1995",
+        "value": 4.15395329584814,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1994",
+        "value": 4.51902842051615,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1993",
+        "value": 7.09719089594824,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1992",
+        "value": 9.20110358278828,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1991",
+        "value": 2.26565496296189,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1990",
+        "value": 3.55306336572279,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1989",
+        "value": 5.66597554871322,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1988",
+        "value": 3.43214737968852,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1987",
+        "value": 4.76453327969504,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1986",
+        "value": 5.53625084315684,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1985",
+        "value": 0.72160172926823,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1984",
+        "value": 8.02410790730326,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1983",
+        "value": 2.86299270239465,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1982",
+        "value": -7.28556884666179,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1981",
+        "value": -2.26165550729671,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1980",
+        "value": 0.751895403326387,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1979",
+        "value": 4.93912395498315,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1978",
+        "value": 6.26768682442558,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1977",
+        "value": 8.90447443155162,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1976",
+        "value": 5.51756440295593,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1975",
+        "value": 2.10007104948495,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1974",
+        "value": 5.54489999097116,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1973",
+        "value": 7.70891581191245,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1972",
+        "value": 8.17804513351513,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1971",
+        "value": 6.77850542642196,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1970",
+        "value": 7.5031343433506,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1969",
+        "value": 5.4917999425584,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1968",
+        "value": 8.47330434699469,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1967",
+        "value": 5.65012592038399,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1966",
+        "value": 6.96931903096751,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1965",
+        "value": 8.1905275942481,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1964",
+        "value": 3.65904831413995,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1963",
+        "value": 6.89892344200919,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1962",
+        "value": 5.44239137528257,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1961",
+        "value": 1.8792765563641,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD.ZG",
+          "value": "GDP growth (annual %)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1960",
+        "value": null,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      }
+    ]
+  ],
+  "elapsed_seconds": 0.102,
+  "error": null
+}

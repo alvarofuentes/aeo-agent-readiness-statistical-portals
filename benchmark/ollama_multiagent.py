@@ -28,6 +28,11 @@ try:
 except ImportError as exc:
     raise SystemExit("PyYAML is required: python -m pip install pyyaml") from exc
 
+try:
+    from .model_policy import allowed_models, assert_allowed_model
+except ImportError:  # direct invocation: python benchmark/ollama_multiagent.py
+    from model_policy import allowed_models, assert_allowed_model
+
 ROOT = Path(__file__).resolve().parents[1]
 CFG_PATH = ROOT / "benchmark" / "config.yaml"
 BANK = ROOT / "benchmark" / "query-bank-120.csv"
@@ -39,6 +44,13 @@ PORTALS = {
     "cepalstat": ("CEPALSTAT", "https://statistics.cepal.org/portal/cepalstat/"),
     "undata": ("UN Data Commons", "https://unstats.un.org/UNSDWebsite/undatacommons/"),
     "sdg": ("UN SDG Indicators", "https://unstats.un.org/sdgs/dataportal/"),
+}
+PORTAL_ALLOWED_ROOTS = {
+    "worldbank": {"worldbank.org"},
+    "who": {"who.int", "azureedge.net"},
+    "cepalstat": {"cepal.org"},
+    "undata": {"unstats.un.org"},
+    "sdg": {"unstats.un.org"},
 }
 
 ROLE_PROMPTS = {
@@ -111,7 +123,13 @@ def http_get(url: str, timeout: float = 25, max_bytes: int = 120000) -> tuple[in
         return 0, f"FETCH_ERROR: {type(exc).__name__}: {exc}", {}
 
 
-def search_web(query: str, limit: int = 5) -> list[str]:
+def portal_url_allowed(portal_id: str, url: str) -> bool:
+    host = (urlparse(url).hostname or "").lower().rstrip(".")
+    roots = PORTAL_ALLOWED_ROOTS[portal_id]
+    return bool(host and any(host == root or host.endswith("." + root) for root in roots))
+
+
+def search_web(query: str, portal_id: str, limit: int = 5) -> list[str]:
     urls: list[str] = []
     q = quote_plus(query)
     for engine in [f"https://www.google.com/search?q={q}", f"https://www.bing.com/search?q={q}"]:
@@ -120,6 +138,8 @@ def search_web(query: str, limit: int = 5) -> list[str]:
             u = match.replace("&amp;", "&").rstrip(".,);'\"")
             host = urlparse(u).netloc.lower()
             if host in {"www.google.com", "google.com", "www.bing.com", "bing.com"}:
+                continue
+            if not portal_url_allowed(portal_id, u):
                 continue
             if u not in urls:
                 urls.append(u)
@@ -135,7 +155,7 @@ def evidence_for(row: dict[str, str], refresh: bool = False) -> Evidence:
         return Evidence(**json.loads(cache.read_text(encoding="utf-8")))
     _, home = PORTALS[row["portal_id"]]
     urls = [home]
-    for url in search_web(f"site:{urlparse(home).netloc} {row['query']}", limit=6):
+    for url in search_web(f"site:{urlparse(home).netloc} {row['query']}", row["portal_id"], limit=6):
         if url not in urls:
             urls.append(url)
     pages: list[dict[str, Any]] = []
@@ -162,6 +182,7 @@ def ollama_tags(base: str) -> list[str]:
 
 
 def choose_models(tags: list[str], cfg: dict[str, Any]) -> dict[str, str]:
+    tags = allowed_models(tags)
     if not tags:
         raise RuntimeError("No Ollama models installed")
     explicit = (cfg.get("roles") or {})
@@ -175,6 +196,7 @@ def choose_models(tags: list[str], cfg: dict[str, Any]) -> dict[str, str]:
     for role in ROLE_PROMPTS:
         requested = env.get(role) or explicit.get(role)
         if requested and requested != "auto":
+            assert_allowed_model(requested)
             if requested not in tags:
                 raise RuntimeError(f"Configured model '{requested}' for role '{role}' is not installed")
             chosen[role] = requested
@@ -188,15 +210,11 @@ def choose_models(tags: list[str], cfg: dict[str, Any]) -> dict[str, str]:
 
 
 def repeat_model_map(tags: list[str], primary: dict[str, str], repeat: int) -> dict[str, str]:
-    families = list(dict.fromkeys(tags))
-    if len(families) < 2:
-        return primary
-    alt = families[(repeat - 1) % len(families)]
-    out = dict(primary)
-    if repeat > 1:
-        for role in ["semantic", "judge", "adversarial"]:
-            out[role] = alt
-    return out
+    # A repeat is a repeated measurement under the same declared configuration.
+    # Changing models by repeat creates experimental arms, not repetitions.
+    for model in primary.values():
+        assert_allowed_model(model)
+    return dict(primary)
 
 
 def ollama_chat(base: str, model: str, system: str, user: str, timeout: float, temperature: float) -> dict[str, Any]:
@@ -246,7 +264,39 @@ def validate_agent_json(role: str, value: Any) -> tuple[bool, str | None]:
         "adversarial": {"attack_found", "severity", "alternative_interpretation", "verdict", "reason"},
     }[role]
     missing = sorted(required - value.keys())
-    return (True, None) if not missing else (False, "missing_keys:" + ",".join(missing))
+    if missing:
+        return False, "missing_keys:" + ",".join(missing)
+    scalar_bool = {
+        "discovery": ["discovered"],
+        "semantic": ["correct"],
+        "retrieval": ["retrievable", "value_found", "period_correct", "geography_correct", "unit_correct"],
+        "metadata": ["metadata_complete"],
+        "citation": ["source_named", "evidence_specific", "citable"],
+        "adversarial": ["attack_found"],
+    }.get(role, [])
+    for key in scalar_bool:
+        if value[key] is not None and not isinstance(value[key], bool):
+            return False, f"{key}_not_boolean"
+    if role in {"discovery", "semantic", "retrieval", "metadata", "citation"}:
+        confidence = value["confidence"]
+        if not isinstance(confidence, (int, float)) or isinstance(confidence, bool) or not 0 <= confidence <= 1:
+            return False, "confidence_out_of_range"
+    if role == "judge":
+        for key in ["discovery_success", "retrieval_success", "temporal_geographic_correctness", "semantic_correctness", "metadata_correctness", "citation_correctness"]:
+            if not isinstance(value[key], (int, float)) or isinstance(value[key], bool) or not 0 <= value[key] <= 1:
+                return False, f"{key}_out_of_range"
+        if not isinstance(value["overall_0_100"], (int, float)) or isinstance(value["overall_0_100"], bool) or not 0 <= value["overall_0_100"] <= 100:
+            return False, "overall_out_of_range"
+    if role == "adversarial":
+        if value["severity"] not in {"none", "low", "medium", "high"}:
+            return False, "invalid_severity"
+        if value["verdict"] not in {"pass", "fail", "uncertain"}:
+            return False, "invalid_verdict"
+    array_fields = {"semantic": ["ambiguity_flags"], "metadata": ["fields_missing"]}.get(role, [])
+    for key in array_fields:
+        if not isinstance(value[key], list):
+            return False, f"{key}_not_array"
+    return True, None
 
 
 def run_one(base: str, row: dict[str, str], ev: Evidence, models: dict[str, str], cfg: dict[str, Any]) -> dict[str, Any]:

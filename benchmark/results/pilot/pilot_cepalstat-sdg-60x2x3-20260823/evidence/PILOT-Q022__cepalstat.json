@@ -1,0 +1,109 @@
+{
+  "capture_version": 2,
+  "case_id": "PILOT-Q022__cepalstat",
+  "template_id": "PILOT-Q022",
+  "portal_id": "cepalstat",
+  "query": "¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.",
+  "captured_at": "2026-08-23T04:14:44Z",
+  "allowlist_roots": [
+    "cepal.org"
+  ],
+  "serp": {
+    "urls": [],
+    "rejected": [
+      {
+        "url": "http://www.w3.org/1999/xhtml",
+        "reason": "outside_portal_allowlist"
+      },
+      {
+        "url": "http://schemas.live.com/Web/",
+        "reason": "outside_portal_allowlist"
+      }
+    ],
+    "captures": [
+      {
+        "requested_url": "https://www.google.com/search?q=site%3Astatistics.cepal.org+%C2%BFCu%C3%A1l+es+el+%C3%BAltimo+a%C3%B1o+disponible+para+el+PIB+de+Bolivia%3F+Indica+fecha+de+actualizaci%C3%B3n+si+existe.",
+        "captured_at": "2026-08-23T04:14:43Z",
+        "status": 429,
+        "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Astatistics.cepal.org%2B%25C2%25BFCu%25C3%25A1l%2Bes%2Bel%2B%25C3%25BAltimo%2Ba%25C3%25B1o%2Bdisponible%2Bpara%2Bel%2BPIB%2Bde%2BBolivia%253F%2BIndica%2Bfecha%2Bde%2Bactualizaci%25C3%25B3n%2Bsi%2Bexiste.&q=EgTJvJPCGLTnqdQGIjBogu_KksEv664oiG4YGatLWQHGGt9g7nJNhinF9_GnEl0yvgkOcp65fIqa9sbcykEyAnJSWgFD",
+        "headers": {
+          "date": "Sun, 23 Aug 2026 04:14:44 GMT",
+          "pragma": "no-cache",
+          "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+          "cache-control": "no-store, no-cache, must-revalidate",
+          "content-type": "text/html",
+          "server": "scaffolding on HTTPServer2",
+          "content-length": "3647",
+          "x-xss-protection": "0",
+          "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+          "connection": "close"
+        },
+        "error": "HTTPError",
+        "elapsed_seconds": 0.492,
+        "byte_length": 3647,
+        "body_sha256": "d4efa6b8b77ba78813a990caa1e44ef4f22c2be078dac02c42335c9602c16036",
+        "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q022__cepalstat/serp_google.body",
+        "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q022__cepalstat/serp_google.headers.json"
+      },
+      {
+        "requested_url": "https://www.bing.com/search?q=site%3Astatistics.cepal.org+%C2%BFCu%C3%A1l+es+el+%C3%BAltimo+a%C3%B1o+disponible+para+el+PIB+de+Bolivia%3F+Indica+fecha+de+actualizaci%C3%B3n+si+existe.",
+        "captured_at": "2026-08-23T04:14:44Z",
+        "status": 200,
+        "final_url": "https://www.bing.com/search?q=site%3Astatistics.cepal.org+%C2%BFCu%C3%A1l+es+el+%C3%BAltimo+a%C3%B1o+disponible+para+el+PIB+de+Bolivia%3F+Indica+fecha+de+actualizaci%C3%B3n+si+existe.",
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "private, max-age=0",
+          "expires": "Sun, 23 Aug 2026 04:13:44 GMT",
+          "vary": "Accept-Encoding",
+          "x-eventid": "6a8a73b48dda4e48bd514d61adffe24c",
+          "useragentreductionoptout": "A7kgTC5xdZ2WIVGZEfb1hUoNuvjzOZX3VIV/BA6C18kQOOF50Q0D3oWoAm49k3BQImkujKILc7JmPysWk3CSjwUAAACMeyJvcmlnaW4iOiJodHRwczovL3d3dy5iaW5nLmNvbTo0NDMiLCJmZWF0dXJlIjoiU2VuZEZ1bGxVc2VyQWdlbnRBZnRlclJlZHVjdGlvbiIsImV4cGlyeSI6MTY4NDg4NjM5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=",
+          "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+          "permissions-policy": "unload=()",
+          "content-security-policy": "script-src https: 'strict-dynamic' 'report-sample' 'wasm-unsafe-eval' 'nonce-EAZNhwOIpkSkssmN0j9U5fckTxFHwAk/P8ZidjMe1rk='; base-uri 'self';",
+          "p3p": "CP=\"NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND\"",
+          "x-display-context": "full",
+          "date": "Sun, 23 Aug 2026 04:14:44 GMT",
+          "transfer-encoding": "chunked",
+          "connection": "Transfer-Encoding",
+          "set-cookie": "_SS=SID=14E11609E03F6A31053A01B7E17E6BE3; domain=.bing.com; path=/",
+          "alt-svc": "h3=\":443\"; ma=93600",
+          "x-cdn-traceid": "0.e9ba1402.1787458484.ccdde4f"
+        },
+        "elapsed_seconds": 0.304,
+        "byte_length": 116652,
+        "body_sha256": "025c05b363390da041659a05a66182a7f6b46ff70847a0f4c89ebd64cd2bb91f",
+        "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q022__cepalstat/serp_bing.body",
+        "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q022__cepalstat/serp_bing.headers.json"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "requested_url": "https://statistics.cepal.org/portal/cepalstat/",
+      "captured_at": "2026-08-23T04:14:44Z",
+      "status": 200,
+      "final_url": "https://statistics.cepal.org/portal/cepalstat/",
+      "headers": {
+        "server": "nginx",
+        "date": "Sun, 23 Aug 2026 04:14:44 GMT",
+        "content-type": "text/html",
+        "content-length": "1529",
+        "connection": "close",
+        "last-modified": "Fri, 14 Aug 2026 14:29:26 GMT",
+        "etag": "\"6a7f2646-5f9\"",
+        "accept-ranges": "bytes"
+      },
+      "elapsed_seconds": 0.065,
+      "byte_length": 1529,
+      "body_sha256": "36a9b33eb322bb98e6c19d6218cd577992fb1f0905aeb4c42d98003a1d5adb17",
+      "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q022__cepalstat/page_00.body",
+      "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q022__cepalstat/page_00.headers.json",
+      "text_excerpt": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>CEPALSTAT Portal de Datos y Publicaciones Estadísticas</title>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <link rel=\"shortcut icon\" href=\"images/favicon_un.png\" type=\"image/png\" />\n    <link rel=\"stylesheet\" href=\"../../assets/bootstrap-4.3.1.min.css\" >\n    <script src=\"../../assets/jquery.min.js\"></script>\n    <script src=\"../../assets/bootstrap-4.3.1.min.js\" ></script>\n    <script src=\"assets/portal-actions.js\"></script>\n    <script src=\"configuration.js\"></script>\n    <link rel=\"stylesheet\" href=\"assets/style-5column-boxes.css?v=20250312\" >\n\n    <script>\n        $(document).ready(function () {\n          var idioma = getQueryVariable(\"lang\");\n          if(idioma==\"en\") {\n            $(document).attr(\"title\", \"CEPALSTAT Statistical Data Portal and Publications\");\n            $(\"#menu-cabecera\").load(\"header-en.html?v=20260703\");\n            $(\"#modulos\").load(\"en/module-home.html?v=20260703\");\n            $(\"#footer-content\").load(\"footer-en.html?v=20260703\");\n          } else {\n            $(\"#menu-cabecera\").load(\"header-es.html?v=20260703\");\n            $(\"#modulos\").load(\"es/modulo-inicio.html?v=20260703\");\n            $(\"#footer-content\").load(\"footer-es.html?v=20260703\");\n          }\n            scrollTopPage();\n        });\n    </script>    \n  </head>\n  <body>\n    <div id=\"menu-cabecera\"></div>\n    <div id=\"modulos\"></div>\n    <div id=\"footer-content\"></div>\n  </body>\n</html>\n",
+      "allowlist_valid": true,
+      "evidence_use": true
+    }
+  ],
+  "sha256": "341c3cd1d3b39a9bae8464a28c4fc0b423e2e91a3d21c19e76762e7ecfb73ca1",
+  "candidate_url": null,
+  "candidate_allowed": false
+}

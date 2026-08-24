@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-08-22T22:03:41Z",
+  "base": "http://localhost:11434",
+  "model": "qwen3.5:9b-mlx",
+  "purpose": "isolated inference and schema-contract diagnosis",
+  "attempts": [
+    {
+      "endpoint": "/api/chat",
+      "request": {
+        "model": "qwen3.5:9b-mlx",
+        "stream": false,
+        "messages": [
+          {
+            "role": "user",
+            "content": "Say hello in one word."
+          }
+        ]
+      },
+      "http_status": 500,
+      "response_raw": "{\"error\":\"mlx runner exited unexpectedly: signal: broken pipe\"}",
+      "error": "HTTPError",
+      "elapsed_seconds": 0.11
+    },
+    {
+      "endpoint": "/api/chat",
+      "request": {
+        "model": "qwen3.5:9b-mlx",
+        "stream": false,
+        "format": "json",
+        "options": {
+          "temperature": 0
+        },
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only JSON {\"ok\":true}."
+          }
+        ]
+      },
+      "http_status": 500,
+      "response_raw": "{\"error\":\"mlx runner exited unexpectedly: signal: broken pipe\"}",
+      "error": "HTTPError",
+      "elapsed_seconds": 0.052
+    },
+    {
+      "endpoint": "/api/generate",
+      "request": {
+        "model": "qwen3.5:9b-mlx",
+        "stream": false,
+        "prompt": "Say hello in one word."
+      },
+      "http_status": 500,
+      "response_raw": "{\"error\":\"mlx runner exited unexpectedly: signal: broken pipe\"}",
+      "error": "HTTPError",
+      "elapsed_seconds": 0.049
+    }
+  ],
+  "conclusion": "model visible in /api/tags but every inference endpoint returns HTTP 500: mlx runner exited unexpectedly: signal: broken pipe"
+}

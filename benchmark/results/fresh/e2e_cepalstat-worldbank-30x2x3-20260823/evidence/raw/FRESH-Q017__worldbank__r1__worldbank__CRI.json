@@ -1,0 +1,1093 @@
+{
+  "url": "https://api.worldbank.org/v2/country/CRI/indicator/NY.GDP.MKTP.KD?date=1960:2026&format=json&per_page=100",
+  "status": 200,
+  "headers": {
+    "Date": "Sun, 23 Aug 2026 19:03:34 GMT",
+    "Content-Type": "application/json;charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "set-cookie": "_cfuvid=M_PMXjw3vPLWj5L6aDz7hzxOjAdGXq7f__hnBxQVNBM-1787511814.5902073-1.0.1.1-QDD2Ad8p9.SSYzgj_w43REJvzgdii_uhsncQRMiRFBc; HttpOnly; SameSite=None; Secure; Path=/; Domain=worldbank.org",
+    "CF-Ray": "a2fc60c92c78e9a2-SCL",
+    "CF-Cache-Status": "MISS",
+    "Access-Control-Allow-Origin": "*",
+    "Cache-Control": "public, max-age=86400",
+    "Expires": "Mon, 24 Aug 2026 19:03:34 GMT",
+    "Last-Modified": "Sun, 23 Aug 2026 19:03:34 GMT",
+    "Server": "cloudflare",
+    "Vary": "accept-encoding",
+    "Access-Control-Allow-Headers": "X-Requested-With",
+    "Access-Control-Allow-Methods": "GET",
+    "Request-Context": "appId=cid-v1:da002513-bd8b-4441-9f30-737944134422",
+    "X-Powered-By": "ASP.NET"
+  },
+  "payload": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": 100,
+      "total": 66,
+      "sourceid": "2",
+      "lastupdated": "2026-07-13"
+    },
+    [
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2025",
+        "value": 80741594727.0308,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2024",
+        "value": 77220099149.044,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2023",
+        "value": 74190939160.446,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2022",
+        "value": 70798368208.7751,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2021",
+        "value": 67132150844.0064,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2020",
+        "value": 62034078866.9288,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2019",
+        "value": 64714281272.693,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2018",
+        "value": 63007938631.9211,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2017",
+        "value": 61260269163.5698,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2016",
+        "value": 58814921667.238,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2015",
+        "value": 56441920888.425,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2014",
+        "value": 54453244336.2209,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2013",
+        "value": 52590433349.5778,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2012",
+        "value": 51310359954.2877,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2011",
+        "value": 48921712094.3507,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2010",
+        "value": 46858459514.6492,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2009",
+        "value": 44474474900.3019,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2008",
+        "value": 44866362879.2074,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2007",
+        "value": 42836685698.5686,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2006",
+        "value": 39584746486.398,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2005",
+        "value": 36882479643.8292,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2004",
+        "value": 35471881289.5277,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2003",
+        "value": 33968893691.7087,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2002",
+        "value": 32563086628.1028,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2001",
+        "value": 31487207733.9328,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "2000",
+        "value": 30425018571.9334,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1999",
+        "value": 29310608116.4489,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1998",
+        "value": 28143280979.3168,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1997",
+        "value": 26280386016.0398,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1996",
+        "value": 24915947383.1164,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1995",
+        "value": 24583951077.2047,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1994",
+        "value": 23603473799.3807,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1993",
+        "value": 22582944135.6992,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1992",
+        "value": 21086401937.1339,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1991",
+        "value": 19309696738.6852,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1990",
+        "value": 18881898077.7844,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1989",
+        "value": 18234031388.4278,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1988",
+        "value": 17256293990.3221,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1987",
+        "value": 16683685321.7173,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1986",
+        "value": 15924936425.9334,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1985",
+        "value": 15089541554.3995,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1984",
+        "value": 14981435258.5049,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1983",
+        "value": 13868603544.8315,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1982",
+        "value": 13482597755.0123,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1981",
+        "value": 14542070298.3269,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1980",
+        "value": 14878572349.2713,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1979",
+        "value": 14767535925.4632,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1978",
+        "value": 14072478756.1578,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1977",
+        "value": 13242481488.6657,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1976",
+        "value": 12159722139.7812,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1975",
+        "value": 11523884396.4831,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1974",
+        "value": 11286852475.2522,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1973",
+        "value": 10693887128.8122,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1972",
+        "value": 9928506891.19044,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1971",
+        "value": 9177931509.98109,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1970",
+        "value": 8595298719.83958,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1969",
+        "value": 7995393596.97863,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1968",
+        "value": 7579161225.16842,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1967",
+        "value": 6987121182.2989,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1966",
+        "value": 6613452772.94252,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1965",
+        "value": 6182569761.92205,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1964",
+        "value": 5714520392.31089,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1963",
+        "value": 5512804222.35111,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1962",
+        "value": 5157025014.70159,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1961",
+        "value": 4890846032.07366,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "CR",
+          "value": "Costa Rica"
+        },
+        "countryiso3code": "CRI",
+        "date": "1960",
+        "value": 4800628937.88594,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  ],
+  "elapsed_seconds": 0.37,
+  "error": null
+}

@@ -1,0 +1,1093 @@
+{
+  "url": "https://api.worldbank.org/v2/country/URY/indicator/NY.GDP.MKTP.KD?date=1960:2026&format=json&per_page=100",
+  "status": 200,
+  "headers": {
+    "Date": "Sun, 23 Aug 2026 19:03:35 GMT",
+    "Content-Type": "application/json;charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "set-cookie": "_cfuvid=i8AV_NOsxO0tGcPc7kB049f2CT7cw5jiRbA4nQ4OmEM-1787511814.9635563-1.0.1.1-mjeglfrIDIpVEJ_C5_WpeGvg1vdZ5HRe3UX2gLxwnHc; HttpOnly; SameSite=None; Secure; Path=/; Domain=worldbank.org",
+    "CF-Ray": "a2fc60cb8e87b273-SCL",
+    "CF-Cache-Status": "MISS",
+    "Access-Control-Allow-Origin": "*",
+    "Cache-Control": "public, max-age=86400",
+    "Expires": "Mon, 24 Aug 2026 19:03:35 GMT",
+    "Last-Modified": "Sun, 23 Aug 2026 19:03:35 GMT",
+    "Server": "cloudflare",
+    "Vary": "accept-encoding",
+    "Access-Control-Allow-Headers": "X-Requested-With",
+    "Access-Control-Allow-Methods": "GET",
+    "Request-Context": "appId=cid-v1:da002513-bd8b-4441-9f30-737944134422",
+    "X-Powered-By": "ASP.NET"
+  },
+  "payload": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": 100,
+      "total": 66,
+      "sourceid": "2",
+      "lastupdated": "2026-07-13"
+    },
+    [
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2025",
+        "value": 65576691278.1303,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2024",
+        "value": 64426857947.3311,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2023",
+        "value": 62353142656.5034,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2022",
+        "value": 61881758828.1137,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2021",
+        "value": 59156857887.5914,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2020",
+        "value": 55890466315.3236,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2019",
+        "value": 60329073575.9906,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2018",
+        "value": 59774159551.5863,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2017",
+        "value": 59675827150.5481,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2016",
+        "value": 58655009160.0858,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2015",
+        "value": 57680327998.6689,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2014",
+        "value": 57467273107.5946,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2013",
+        "value": 55664418793.7377,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2012",
+        "value": 53197370201.0395,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2011",
+        "value": 51379472633.5779,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2010",
+        "value": 48857389210.184,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2009",
+        "value": 45320819970.7986,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2008",
+        "value": 43475921755.0631,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2007",
+        "value": 40564924117.3376,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2006",
+        "value": 38074290288.9132,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2005",
+        "value": 36575226344.6127,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2004",
+        "value": 34036089123.994,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2003",
+        "value": 32414038652.1022,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2002",
+        "value": 32155098813.2195,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2001",
+        "value": 34849678466.8177,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "2000",
+        "value": 36242902749.5716,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1999",
+        "value": 36956130432.4805,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1998",
+        "value": 37526894198.668,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1997",
+        "value": 35904413225.1269,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1996",
+        "value": 33077088488.9395,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1995",
+        "value": 31329539981.1782,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1994",
+        "value": 31789727752.3514,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1993",
+        "value": 29632112135.1097,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1992",
+        "value": 28865011154.8822,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1991",
+        "value": 26743802791.2413,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1990",
+        "value": 25829737832.144,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1989",
+        "value": 25753161224.7828,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1988",
+        "value": 25471975822.888,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1987",
+        "value": 25100256718.148,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1986",
+        "value": 23242455370.5452,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1985",
+        "value": 21360625236.6484,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1984",
+        "value": 21051891660.6852,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1983",
+        "value": 21295214497.4957,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1982",
+        "value": 23733710676.1581,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1981",
+        "value": 26300034208.3807,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1980",
+        "value": 25896167975.2906,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1979",
+        "value": 24466492719.2575,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1978",
+        "value": 23038320347.7266,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1977",
+        "value": 21863385229.0134,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1976",
+        "value": 21549737170.4348,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1975",
+        "value": 20733765993.5299,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1974",
+        "value": 19542289356.6581,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1973",
+        "value": 18992394099.987,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1972",
+        "value": 18940270547.9015,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1971",
+        "value": 19193542753.4569,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1970",
+        "value": 19241977028.4357,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1969",
+        "value": 18803256921.9176,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1968",
+        "value": 17761585972.3144,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1967",
+        "value": 17432305113.646,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1966",
+        "value": 18093971640.9766,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1965",
+        "value": 17556249025.7395,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1964",
+        "value": 17374579715.8112,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1963",
+        "value": 16960651491.9083,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1962",
+        "value": 16931789756.8334,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1961",
+        "value": 17202653946.7252,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.KD",
+          "value": "GDP (constant 2015 US$)"
+        },
+        "country": {
+          "id": "UY",
+          "value": "Uruguay"
+        },
+        "countryiso3code": "URY",
+        "date": "1960",
+        "value": 16784217051.3852,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  ],
+  "elapsed_seconds": 0.529,
+  "error": null
+}

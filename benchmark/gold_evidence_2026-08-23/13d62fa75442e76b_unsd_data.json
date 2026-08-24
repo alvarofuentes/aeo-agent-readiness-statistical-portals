@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "url": "https://unstats.un.org/unsd/amaapi/api/Data/limited/32/2",
+    "status": 200,
+    "headers": {
+      "transfer-encoding": "chunked",
+      "content-type": "application/json; charset=utf-8",
+      "referrer-policy": "no-referrer-when-downgrade",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-content-type-options": "nosniff",
+      "content-security-policy": "object-src 'none' ; img-src 'self' https://*.datatables.net/ https://*.twimg.com/ https://*.un.org/ https://*.twitter.com/ data:; frame-src 'self' https://whova.com https://d1keuthy5s86c8.cloudfront.net https://unb2c.b2clogin.com/ https://*.arcgis.com https://www.youtube.com https://youtube.com https://*.twitter.com https://fonts.googleapis.com https://maxcdn.bootstrapcdn.com https://flickrembed.com/ https://public.tableau.com https://unb2c.b2clogin.com/unb2c.onmicrosoft.com https://login.microsoftonline.com/* https://aadcdn.msauth.net/* https://login.microsoftonline.com/ https://www.podbean.com/  https://*.un.org/ https://simplebooklet.com/ https://www.kaltura.com https://app.powerbi.com/",
+      "feature-policy": "vibrate 'none'; geolocation 'none'; midi 'none'; notifications 'none'; push 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; vibrate 'none'; fullscreen 'none'; payment 'none'",
+      "set-cookie": "NSC_EFTB_votubut2_mcwt=ffffffff098a6e3e45525d5f4f58455e445a4a423660;Version=1;Max-Age=120;path=/;secure;httponly",
+      "permissions-policy": "geolocation=(), microphone=(),vibrate=(), midi=(),notifications=(),push=(),sync-xhr=(),camera=(),magnetometer=(),gyroscope=(),speaker=(),fullscreen=(),payment=()",
+      "x-frame-options": "ALLOW-FROM https://worlds-women-2020-data-undesa.hub.arcgis.com/",
+      "date": "Sun, 23 Aug 2026 02:16:02 GMT"
+    },
+    "captured_at": "2026-08-23T02:16:03Z"
+  },
+  "payload": [
+    {
+      "countryCode": 32,
+      "serieCode": 2,
+      "serieName": "GDP, at current prices - US Dollars",
+      "countryName": "Argentina",
+      "fiscalYear": 2020,
+      "itemId": 9,
+      "itemName": "Gross Domestic Product (GDP)",
+      "observationValue": 385740510259.615,
+      "observationNote": null,
+      "unit": "US$"
+    },
+    {
+      "countryCode": 32,
+      "serieCode": 2,
+      "serieName": "GDP, at current prices - US Dollars",
+      "countryName": "Argentina",
+      "fiscalYear": 2021,
+      "itemId": 9,
+      "itemName": "Gross Domestic Product (GDP)",
+      "observationValue": 486564087187.4868,
+      "observationNote": null,
+      "unit": "US$"
+    },
+    {
+      "countryCode": 32,
+      "serieCode": 2,
+      "serieName": "GDP, at current prices - US Dollars",
+      "countryName": "Argentina",
+      "fiscalYear": 2022,
+      "itemId": 9,
+      "itemName": "Gross Domestic Product (GDP)",
+      "observationValue": 633993513608.0918,
+      "observationNote": null,
+      "unit": "US$"
+    },
+    {
+      "countryCode": 32,
+      "serieCode": 2,
+      "serieName": "GDP, at current prices - US Dollars",
+      "countryName": "Argentina",
+      "fiscalYear": 2023,
+      "itemId": 9,
+      "itemName": "Gross Domestic Product (GDP)",
+      "observationValue": 649461688689.854,
+      "observationNote": null,
+      "unit": "US$"
+    },
+    {
+      "countryCode": 32,
+      "serieCode": 2,
+      "serieName": "GDP, at current prices - US Dollars",
+      "countryName": "Argentina",
+      "fiscalYear": 2024,
+      "itemId": 9,
+      "itemName": "Gross Domestic Product (GDP)",
+      "observationValue": 638365455107.4565,
+      "observationNote": null,
+      "unit": "US$"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "portal_id": "worldbank",
+  "repeat": 1,
+  "captured_at": "2026-08-23T20:03:13.242821+00:00",
+  "catalog_url": "https://api.worldbank.org/v2/indicator?format=json&per_page=30000",
+  "catalog_status": 200,
+  "root": {
+    "url": "https://data.worldbank.org/",
+    "status": 200,
+    "bytes": 212262,
+    "elapsed_seconds": 0.092,
+    "error": null
+  },
+  "sample_page": {
+    "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+    "status": 200,
+    "bytes": 1273889,
+    "elapsed_seconds": 0.108,
+    "error": null
+  },
+  "well_known": {
+    "https://data.worldbank.org/robots.txt": {
+      "status": 200,
+      "bytes": 23,
+      "elapsed_seconds": 0.053,
+      "error": null
+    },
+    "https://data.worldbank.org/sitemap.xml": {
+      "status": 200,
+      "bytes": 1981,
+      "elapsed_seconds": 0.05,
+      "error": null
+    },
+    "https://data.worldbank.org/llms.txt": {
+      "status": 0,
+      "bytes": 0,
+      "elapsed_seconds": 30.065,
+      "error": "TimeoutError: The read operation timed out"
+    }
+  },
+  "json_ld_count": 0,
+  "jsonld_initial_status": "ABSENT",
+  "jsonld_rendered_status": "NOT_VERIFIED",
+  "api_route_declared": "https://api.worldbank.org/v2/indicator?format=json&per_page=30000",
+  "api_direct_http_status": "NOT_VERIFIED",
+  "api_direct_verified": "NOT_VERIFIED",
+  "unverified_checks": [
+    {
+      "check_id": "jsonld_rendered_dom",
+      "status": "NOT_VERIFIED",
+      "evidence_state": "rendered_dom_not_captured",
+      "observed_evidence": "Only the origin HTML response was captured by the fresh runner.",
+      "verification_gap": "The DOM after JavaScript hydration was not captured.",
+      "next_verification_action": "Open the same representative page in an instrumented browser and save the settled DOM before classifying JSON-LD/microdata as absent."
+    },
+    {
+      "check_id": "api_direct_representative_record",
+      "status": "NOT_VERIFIED",
+      "evidence_state": "route_declared_only",
+      "observed_evidence": "The portal API route https://api.worldbank.org/v2/indicator?format=json&per_page=30000 was requested for its live catalogue.",
+      "verification_gap": "A representative indicator/record request is validated only when the E2E retrieval row is completed.",
+      "next_verification_action": "Issue one isolated GET for the selected indicator, then validate status, content type, dimensions, value and provenance."
+    }
+  ],
+  "dimensions": {
+    "discovery": "PASS",
+    "retrieval": "NOT_VERIFIED",
+    "rendering": "PASS",
+    "structured_data": "NOT_VERIFIED",
+    "authority_citation": "PASS",
+    "accessibility": "PASS"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "query": "Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",
+  "portal": "cepalstat",
+  "repeat": 1,
+  "endpoint": "http://127.0.0.1:11434",
+  "selection": {
+    "ok": true,
+    "data": {
+      "candidate_id": null,
+      "query_rewrite": "Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",
+      "reason": "La consulta solicita una explicación conceptual sobre la diferencia entre dos indicadores (PIB nivel vs. crecimiento), no un valor numérico específico para el año 2024. Por lo tanto, ninguna serie temporal de candidatos en la lista coincide con esta solicitud de análisis comparativo.",
+      "model_raw": "{\n  \"candidate_id\": null,\n  \"query_rewrite\": \"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.\",\n  \"reason\": \"La consulta solicita una explicación conceptual sobre la diferencia entre dos indicadores (PIB nivel vs. crecimiento), no un valor numérico específico para el año 2024. Por lo tanto, ninguna serie temporal de candidatos en la lista coincide con esta solicitud de análisis comparativo.\"\n}"
+    }
+  },
+  "selection_mode": "ranked_fallback",
+  "candidate_count": 12,
+  "candidates": [
+    {
+      "id": "2207",
+      "name": "Tasa de crecimiento del producto interno bruto (PIB) total anual a precios constantes",
+      "indicator_id": 2207
+    },
+    {
+      "id": "2222",
+      "name": "Tasa de crecimiento del producto interno bruto (PIB) total anual por habitante a precios constantes",
+      "indicator_id": 2222
+    },
+    {
+      "id": "2210",
+      "name": "Tasa de crecimiento del producto interno bruto (PIB) anual por objeto del gasto a precios constantes",
+      "indicator_id": 2210
+    },
+    {
+      "id": "2217",
+      "name": "Tasa de crecimiento del producto interno bruto (PIB) anual por actividad económica a precios constantes",
+      "indicator_id": 2217
+    },
+    {
+      "id": "2517",
+      "name": "Contribución a la tasa de crecimiento del producto interno bruto (PIB) anual por objeto del gasto a precios constantes",
+      "indicator_id": 2517
+    },
+    {
+      "id": "2518",
+      "name": "Contribución a la tasa de crecimiento del producto interno bruto (PIB) anual por actividad económica a precios constantes",
+      "indicator_id": 2518
+    },
+    {
+      "id": "3886",
+      "name": "Tasa de crecimiento anual del PIB real por persona empleada (en porcentajes) SL_EMP_PCAP",
+      "indicator_id": 3886
+    },
+    {
+      "id": "3894",
+      "name": "Tasa de crecimiento anual del PIB real per cápita (en porcentajes) NY_GDP_PCAP",
+      "indicator_id": 3894
+    },
+    {
+      "id": "4543",
+      "name": "Crecimiento del PIB anual (%) NY_GDP_MKTP_KD_ZG",
+      "indicator_id": 4543
+    },
+    {
+      "id": "2203",
+      "name": "Producto interno bruto (PIB) total anual a precios corrientes en dólares",
+      "indicator_id": 2203
+    },
+    {
+      "id": "2205",
+      "name": "Producto interno bruto (PIB) total anual por habitante a precios corrientes en dólares",
+      "indicator_id": 2205
+    },
+    {
+      "id": "4873",
+      "name": "CHILE Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4873
+    }
+  ]
+}

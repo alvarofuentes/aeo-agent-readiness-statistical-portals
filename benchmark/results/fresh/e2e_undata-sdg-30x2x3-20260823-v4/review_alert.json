@@ -1,0 +1,167 @@
+{
+  "alert_type": "not_verified_query",
+  "execution_id": "FRESH-Q026__sdg__r3",
+  "message": "A query remained NOT_VERIFIED; stop, inspect the live request/model route, resolve it, and relaunch.",
+  "created_at": "2026-08-23T23:46:13.674849+00:00",
+  "row": {
+    "execution_id": "FRESH-Q026__sdg__r3",
+    "fresh_template_id": "FRESH-Q026",
+    "source_template_id": "Q050",
+    "portal_id": "sdg",
+    "repeat": 3,
+    "stratum": "discovery",
+    "query": "¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?",
+    "decomposition": {
+      "countries": [
+        [
+          "Argentina",
+          "ARG"
+        ]
+      ],
+      "years": [
+        2024
+      ],
+      "concept": "gdp_total",
+      "requested_scope": "country_aggregate",
+      "requested_frequency": "unspecified",
+      "requested_unit": "unspecified",
+      "requested_price_base": "unspecified",
+      "excluded_measures": [],
+      "dimension_to_verify": null
+    },
+    "candidate": {
+      "id": "BX_TRF_PWKR",
+      "name": "Volume of remittances (in United States dollars) as a proportion of total GDP (%)",
+      "unit": "percent",
+      "sourceNote": "Volume of remittances (in United States dollars) as a proportion of total GDP",
+      "sourceOrganization": "United Nations Statistics Division",
+      "indicator_code": "17.3.2",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "UN SDG Indicators"
+      }
+    },
+    "candidate_count": 12,
+    "near_matches": [
+      {
+        "id": "ER_FFS_CMPT_GDP",
+        "name": "Fossil-fuel subsidies (consumption and production) as a proportion of total GDP (%)",
+        "unit": "percent",
+        "sourceNote": "Amount of fossil-fuel subsidies (production and consumption) per unit of GDP",
+        "sourceOrganization": "United Nations Statistics Division",
+        "indicator_code": "12.c.1",
+        "selection_metadata": {
+          "scope": "country_aggregate",
+          "country_scope": "all_countries",
+          "frequency": "unspecified",
+          "unit_class": "percent",
+          "price_base": "unspecified",
+          "source_catalog": "UN SDG Indicators"
+        }
+      },
+      {
+        "id": "GR_G14_GDP",
+        "name": "Total government revenue (budgetary central government) as a proportion of GDP (%)",
+        "unit": "percent",
+        "sourceNote": "Total government revenue as a proportion of GDP, by source",
+        "sourceOrganization": "United Nations Statistics Division",
+        "indicator_code": "17.1.1",
+        "selection_metadata": {
+          "scope": "country_aggregate",
+          "country_scope": "all_countries",
+          "frequency": "unspecified",
+          "unit_class": "percent",
+          "price_base": "unspecified",
+          "source_catalog": "UN SDG Indicators"
+        }
+      },
+      {
+        "id": "NV_IND_MANF_CD",
+        "name": "Manufacturing value added (current United States dollars) as a proportion of GDP (%)",
+        "unit": "percent",
+        "sourceNote": "Manufacturing value added as a proportion of GDP and per capita",
+        "sourceOrganization": "United Nations Statistics Division",
+        "indicator_code": "9.2.1",
+        "selection_metadata": {
+          "scope": "country_aggregate",
+          "country_scope": "all_countries",
+          "frequency": "unspecified",
+          "unit_class": "per_capita",
+          "price_base": "current",
+          "source_catalog": "UN SDG Indicators"
+        }
+      },
+      {
+        "id": "ST_GDP_ZS",
+        "name": "Tourism direct GDP as a proportion of total GDP (%)",
+        "unit": "percent",
+        "sourceNote": "Tourism direct GDP as a proportion of total GDP and in growth rate",
+        "sourceOrganization": "United Nations Statistics Division",
+        "indicator_code": "8.9.1",
+        "selection_metadata": {
+          "scope": "country_aggregate",
+          "country_scope": "all_countries",
+          "frequency": "unspecified",
+          "unit_class": "percent",
+          "price_base": "unspecified",
+          "source_catalog": "UN SDG Indicators"
+        }
+      },
+      {
+        "id": "BN_CAB_XOKA_GD_ZS",
+        "name": "Current account balance as a proportion of GDP (%)",
+        "unit": "percent",
+        "sourceNote": "Macroeconomic Dashboard",
+        "sourceOrganization": "United Nations Statistics Division",
+        "indicator_code": "17.13.1",
+        "selection_metadata": {
+          "scope": "country_aggregate",
+          "country_scope": "all_countries",
+          "frequency": "unspecified",
+          "unit_class": "percent",
+          "price_base": "current",
+          "source_catalog": "UN SDG Indicators"
+        }
+      }
+    ],
+    "selection_mode": "ranked_fallback",
+    "selection_status": "FAIL",
+    "selection_failure_class": "MODEL_RESPONSE_ERROR",
+    "selection_error": {
+      "failure_class": "MODEL_RESPONSE_ERROR",
+      "note": "The model did not return a usable candidate; ranked fallback is preserved for diagnosis."
+    },
+    "model_candidate_rejected": null,
+    "e2e_status": "FAIL",
+    "model": "qwen3.5:9b-mlx",
+    "model_endpoint": "http://127.0.0.1:11436",
+    "model_ok": true,
+    "retrieval_status": "NOT_VERIFIED",
+    "value_found": false,
+    "values": [],
+    "rows_returned": 0,
+    "metadata": {
+      "indicator_name": "Volume of remittances (in United States dollars) as a proportion of total GDP (%)",
+      "unit": "percent",
+      "definition": "Volume of remittances (in United States dollars) as a proportion of total GDP",
+      "source": "United Nations Statistics Division SDG API",
+      "missing": []
+    },
+    "citation_url": "https://unstats.un.org/SDGAPI/v1/sdg/Series/Data?seriesCode=BX_TRF_PWKR",
+    "calls": [
+      {
+        "url": "https://unstats.un.org/SDGAPI/v1/sdg/Series/Data?seriesCode=BX_TRF_PWKR&areaCode=032",
+        "status": 0,
+        "raw_path": "evidence/raw/FRESH-Q026__sdg__r3__sdg__ARG.json",
+        "elapsed_seconds": 0.483,
+        "error": "URLError: <urlopen error [Errno 54] Connection reset by peer>"
+      }
+    ],
+    "elapsed_seconds": 12.104,
+    "evidence_policy": "live_portal_fetch_per_repeat_no_cache"
+  }
+}

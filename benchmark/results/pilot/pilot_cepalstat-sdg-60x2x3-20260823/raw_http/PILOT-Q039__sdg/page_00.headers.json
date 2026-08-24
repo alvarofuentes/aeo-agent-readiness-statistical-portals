@@ -1,0 +1,17 @@
+{
+  "content-length": "1366",
+  "content-type": "text/html",
+  "last-modified": "Thu, 16 Jul 2026 20:16:58 GMT",
+  "accept-ranges": "bytes",
+  "etag": "\"1dd15600d969c56\"",
+  "referrer-policy": "no-referrer-when-downgrade",
+  "strict-transport-security": "max-age=31536000; includeSubDomains",
+  "x-content-type-options": "nosniff",
+  "content-security-policy": "object-src 'none' ; img-src 'self' https://*.datatables.net https://*.twimg.com/ https://*.un.org/ https://*.twitter.com data: https://services.arcgisonline.com  https://*.arcgisonline.com; frame-src 'self' https://whova.com https://d1keuthy5s86c8.cloudfront.net https://unb2c.b2clogin.com https://*.arcgis.com https://www.youtube.com https://youtube.com https://*.twitter.com https://fonts.googleapis.com https://maxcdn.bootstrapcdn.com https://flickrembed.com/ https://public.tableau.com https://unb2c.b2clogin.com/unb2c.onmicrosoft.com https://login.microsoftonline.com/* https://aadcdn.msauth.net https://login.microsoftonline.com/ https://www.podbean.com/  https://*.un.org/ https://simplebooklet.com/ https://www.kaltura.com https://app.powerbi.com/ https://services.arcgisonline.com https://*.arcgisonline.com; connect-src 'self' https://services.arcgisonline.com https://*.arcgisonline.com https://registry.sdmx.org",
+  "feature-policy": "vibrate 'none'; geolocation 'none'; midi 'none'; notifications 'none'; push 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; vibrate 'none'; fullscreen 'none'; payment 'none'",
+  "set-cookie": "NSC_EFTB_votubut2_mcwt=ffffffff098a6e3e45525d5f4f58455e445a4a423660;Version=1;Max-Age=120;path=/;secure;httponly",
+  "permissions-policy": "geolocation=(), microphone=(),vibrate=(), midi=(),notifications=(),push=(),sync-xhr=(),camera=(),magnetometer=(),gyroscope=(),speaker=(),fullscreen=(),payment=()",
+  "x-frame-options": "ALLOW-FROM https://worlds-women-2020-data-undesa.hub.arcgis.com/",
+  "x-ua-compatible": "IE=edge",
+  "date": "Sun, 23 Aug 2026 10:04:39 GMT"
+}

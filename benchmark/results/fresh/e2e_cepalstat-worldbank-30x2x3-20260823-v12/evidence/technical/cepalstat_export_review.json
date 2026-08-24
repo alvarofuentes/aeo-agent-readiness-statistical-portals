@@ -1,0 +1,202 @@
+{
+  "portal_id": "cepalstat",
+  "review_type": "machine_readable_data_export",
+  "captured_at": "2026-08-24T02:11:21.782145+00:00",
+  "protocol_note": "This evidence is separate from embedded HTML JSON-LD/microdata. It tests the API's Excel export and selected dimensions.",
+  "status": "PASS",
+  "observations": [
+    {
+      "requested_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data?lang=es&format=excel&in=1&path=1&members=224%2C29194",
+      "captured_at": "2026-08-24T02:11:18.610059+00:00",
+      "http_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "content_disposition": "attachment; filename=data_1787537475.xlsx",
+      "bytes": 8821,
+      "elapsed_seconds": 0.348,
+      "sha256": "d84e424e67d541339ef181f4f0f14e80435400a2b28bbffbeccefc912fb1abca",
+      "artifact_path": "evidence/exports/indicator_2203_CHL_2024.xlsx",
+      "artifact_type": "xlsx",
+      "sheet_names": [
+        "datos",
+        "metadatos",
+        "fuentes",
+        "notas",
+        "creditos"
+      ],
+      "first_sheet_rows": [
+        [
+          "indicator",
+          "País__ESTANDAR",
+          "Años__ESTANDAR",
+          "value",
+          "unit",
+          "notes_ids",
+          "source_id"
+        ],
+        [
+          "Producto interno bruto (PIB) total anual a precios corrientes en dólares",
+          "Chile",
+          "2024",
+          "329112.9885639927",
+          "Millones de dólares",
+          "",
+          "1753"
+        ]
+      ],
+      "selection_preserved_in_first_row": true,
+      "content_type_ok": true,
+      "http_ok": true,
+      "workbook_ok": true
+    },
+    {
+      "requested_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2800/data?lang=es&format=excel&in=1&path=1",
+      "captured_at": "2026-08-24T02:11:21.250640+00:00",
+      "http_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "content_disposition": "attachment; filename=data_1787537478.xlsx",
+      "bytes": 129046,
+      "elapsed_seconds": 2.641,
+      "sha256": "759d71df9a548dee189431ed77f3079c0b98d38a54814486df358ad10362803a",
+      "artifact_path": "evidence/exports/indicator_2800_default.xlsx",
+      "artifact_type": "xlsx",
+      "sheet_names": [
+        "datos",
+        "metadatos",
+        "fuentes",
+        "notas",
+        "creditos"
+      ],
+      "first_sheet_rows": [
+        [
+          "indicator",
+          "País__ESTANDAR",
+          "Valor agregado por producto",
+          "Años__ESTANDAR",
+          "value",
+          "unit",
+          "notes_ids",
+          "source_id"
+        ],
+        [
+          "Valor agregado de producción agropecuaria, pesquera y silvícola",
+          "Costa Rica",
+          "Valor agregado de la producción agrícola",
+          "1991",
+          "76011.36877",
+          "Millones de moneda nacional",
+          "7269",
+          "1398"
+        ],
+        [
+          "Valor agregado de producción agropecuaria, pesquera y silvícola",
+          "Costa Rica",
+          "Valor agregado de la producción agrícola",
+          "1992",
+          "80804.25156999999",
+          "Millones de moneda nacional",
+          "7269",
+          "1398"
+        ],
+        [
+          "Valor agregado de producción agropecuaria, pesquera y silvícola",
+          "Costa Rica",
+          "Valor agregado de la producción agrícola",
+          "1993",
+          "82463.95152",
+          "Millones de moneda nacional",
+          "7269",
+          "1398"
+        ],
+        [
+          "Valor agregado de producción agropecuaria, pesquera y silvícola",
+          "Costa Rica",
+          "Valor agregado de la producción agrícola",
+          "1994",
+          "82205.09688",
+          "Millones de moneda nacional",
+          "7269",
+          "1398"
+        ]
+      ],
+      "selection_preserved_in_first_row": true,
+      "content_type_ok": true,
+      "http_ok": true,
+      "workbook_ok": true
+    },
+    {
+      "requested_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/4271/data?lang=es&format=excel&in=1&path=1",
+      "captured_at": "2026-08-24T02:11:21.781898+00:00",
+      "http_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "content_disposition": "attachment; filename=data_1787537482.xlsx",
+      "bytes": 13922,
+      "elapsed_seconds": 0.531,
+      "sha256": "74a082a9087804845fb5b47176156ad90cbb44ab00dc13322551a571c0602747",
+      "artifact_path": "evidence/exports/indicator_4271_default.xlsx",
+      "artifact_type": "xlsx",
+      "sheet_names": [
+        "datos",
+        "metadatos",
+        "fuentes",
+        "notas",
+        "creditos"
+      ],
+      "first_sheet_rows": [
+        [
+          "indicator",
+          "País__ESTANDAR",
+          "Años__ESTANDAR",
+          "Quintil",
+          "value",
+          "unit",
+          "notes_ids",
+          "source_id"
+        ],
+        [
+          "Participación del gasto en servicio de transporte de pasajeros en el gasto total de los hogares,  por quintiles",
+          "Argentina",
+          "2017",
+          "Quintil 1",
+          "3.890852451324463",
+          "Porcentaje",
+          "",
+          "26"
+        ],
+        [
+          "Participación del gasto en servicio de transporte de pasajeros en el gasto total de los hogares,  por quintiles",
+          "Argentina",
+          "2017",
+          "Quintil 2",
+          "3.705676078796387",
+          "Porcentaje",
+          "",
+          "26"
+        ],
+        [
+          "Participación del gasto en servicio de transporte de pasajeros en el gasto total de los hogares,  por quintiles",
+          "Argentina",
+          "2017",
+          "Quintil 3",
+          "3.104546308517456",
+          "Porcentaje",
+          "",
+          "26"
+        ],
+        [
+          "Participación del gasto en servicio de transporte de pasajeros en el gasto total de los hogares,  por quintiles",
+          "Argentina",
+          "2017",
+          "Quintil 4",
+          "2.433153867721558",
+          "Porcentaje",
+          "",
+          "26"
+        ]
+      ],
+      "selection_preserved_in_first_row": true,
+      "content_type_ok": true,
+      "http_ok": true,
+      "workbook_ok": true
+    }
+  ]
+}

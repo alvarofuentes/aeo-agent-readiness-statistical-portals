@@ -1,0 +1,50 @@
+{
+  "url": "https://ghoapi.azureedge.net/api/Indicator?$filter=contains(IndicatorName,%20%27GDP%27)",
+  "status": 200,
+  "headers": {
+    "Date": "Sun, 23 Aug 2026 22:37:58 GMT",
+    "Content-Type": "application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Strict-Transport-Security": "max-age=31536000; preload",
+    "OData-Version": "4.0",
+    "x-azure-ref": "20260823T223758Z-r156846b4bfjsc4khC1SCL3sq800000006m0000000001cve",
+    "x-fd-int-roxy-purgeid": "0",
+    "X-Cache-Info": "L2_T2",
+    "X-Cache": "TCP_REMOTE_HIT",
+    "Cache-Control": "public, max-age=3600"
+  },
+  "payload": {
+    "@odata.context": "https://ghoapi.azureedge.net/api/$metadata#Indicator",
+    "value": [
+      {
+        "IndicatorCode": "GB_XPD_RSDV",
+        "IndicatorName": "Research and development (R&amp;D) expenditure as a proportion of GDP",
+        "Language": "EN"
+      },
+      {
+        "IndicatorCode": "R_afford_gdp",
+        "IndicatorName": "Affordability - percentage of GDP per capita required to purchase 2000 cigarettes of the most sold brand",
+        "Language": "EN"
+      },
+      {
+        "IndicatorCode": "GHED_GGHE-DGDP_SHA2011",
+        "IndicatorName": "Domestic general government health expenditure (GGHE-D) as percentage of gross domestic product (GDP) (%)",
+        "Language": "EN"
+      },
+      {
+        "IndicatorCode": "GHED_CHEGDP_SHA2011",
+        "IndicatorName": "Current health expenditure (CHE) as percentage of gross domestic product (GDP) (%)",
+        "Language": "EN"
+      },
+      {
+        "IndicatorCode": "TAXBEV_AFFORD_GDP",
+        "IndicatorName": "GDP per capita to purchase a volume of beverage (%)",
+        "Language": "EN"
+      }
+    ]
+  },
+  "attempts": 1,
+  "elapsed_seconds": 0.191,
+  "error": null
+}

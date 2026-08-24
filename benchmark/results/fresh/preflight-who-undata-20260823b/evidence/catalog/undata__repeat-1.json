@@ -1,0 +1,210 @@
+{
+  "url": "https://unstats.un.org/unsd/amaapi/api/Series",
+  "status": 200,
+  "headers": {
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "application/json; charset=utf-8",
+    "Referrer-Policy": "no-referrer-when-downgrade",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "X-Content-Type-Options": "nosniff",
+    "Content-Security-Policy": "object-src 'none' ; img-src 'self' https://*.datatables.net/ https://*.twimg.com/ https://*.un.org/ https://*.twitter.com/ data:; frame-src 'self' https://whova.com https://d1keuthy5s86c8.cloudfront.net https://unb2c.b2clogin.com/ https://*.arcgis.com https://www.youtube.com https://youtube.com https://*.twitter.com https://fonts.googleapis.com https://maxcdn.bootstrapcdn.com https://flickrembed.com/ https://public.tableau.com https://unb2c.b2clogin.com/unb2c.onmicrosoft.com https://login.microsoftonline.com/* https://aadcdn.msauth.net/* https://login.microsoftonline.com/ https://www.podbean.com/  https://*.un.org/ https://simplebooklet.com/ https://www.kaltura.com https://app.powerbi.com/",
+    "Feature-Policy": "vibrate 'none'; geolocation 'none'; midi 'none'; notifications 'none'; push 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; vibrate 'none'; fullscreen 'none'; payment 'none'",
+    "Set-Cookie": "NSC_EFTB_votubut2_mcwt=ffffffff098a6e3e45525d5f4f58455e445a4a423660;Version=1;Max-Age=120;path=/;secure;httponly",
+    "Permissions-Policy": "geolocation=(), microphone=(),vibrate=(), midi=(),notifications=(),push=(),sync-xhr=(),camera=(),magnetometer=(),gyroscope=(),speaker=(),fullscreen=(),payment=()",
+    "X-Frame-Options": "ALLOW-FROM https://worlds-women-2020-data-undesa.hub.arcgis.com/",
+    "Date": "Sun, 23 Aug 2026 22:02:56 GMT"
+  },
+  "payload": [
+    {
+      "serieCode": 1.0,
+      "serieLevel": 0.0,
+      "serieName": "GDP, at current prices - National currency",
+      "groupId": 101,
+      "unitMeasureType": "Domestic currency"
+    },
+    {
+      "serieCode": 2.0,
+      "serieLevel": 0.0,
+      "serieName": "GDP, at current prices - US Dollars",
+      "groupId": 101,
+      "unitMeasureType": "US$"
+    },
+    {
+      "serieCode": 3.0,
+      "serieLevel": 0.0,
+      "serieName": "GDP, at constant 2020 prices - National currency",
+      "groupId": 102,
+      "unitMeasureType": "Domestic currency"
+    },
+    {
+      "serieCode": 4.0,
+      "serieLevel": 0.0,
+      "serieName": "GDP, at constant 2020 prices - US Dollars",
+      "groupId": 102,
+      "unitMeasureType": "US$"
+    },
+    {
+      "serieCode": 5.0,
+      "serieLevel": 0.0,
+      "serieName": "GDP, Per Capita GDP - US Dollars",
+      "groupId": 101,
+      "unitMeasureType": "US$"
+    },
+    {
+      "serieCode": 6.0,
+      "serieLevel": 0.0,
+      "serieName": "GDP, Implicit Price Deflators - National currency",
+      "groupId": 101,
+      "unitMeasureType": "Domestic currency"
+    },
+    {
+      "serieCode": 7.0,
+      "serieLevel": 0.0,
+      "serieName": "GDP, Implicit Price Deflators - US Dollars",
+      "groupId": 101,
+      "unitMeasureType": "US$"
+    },
+    {
+      "serieCode": 8.0,
+      "serieLevel": 0.0,
+      "serieName": "GDP, Annual Rate of Growth - Percentage",
+      "groupId": 102,
+      "unitMeasureType": "Percentage"
+    },
+    {
+      "serieCode": 43.0,
+      "serieLevel": 0.0,
+      "serieName": "GDP, Per Capita GDP at constant 2020 prices - US Dollars",
+      "groupId": 102,
+      "unitMeasureType": "US$"
+    },
+    {
+      "serieCode": 44.0,
+      "serieLevel": 0.0,
+      "serieName": "GDP, Annual Rate of Growth Per Capita at constant 2020 prices - US Dollars",
+      "groupId": 102,
+      "unitMeasureType": "US$"
+    },
+    {
+      "serieCode": 11.0,
+      "serieLevel": 1.0,
+      "serieName": "GDP by Expenditure, at current prices - National currency",
+      "groupId": 101,
+      "unitMeasureType": "Domestic currency"
+    },
+    {
+      "serieCode": 12.0,
+      "serieLevel": 1.0,
+      "serieName": "GDP by Expenditure, at current prices - US Dollars",
+      "groupId": 101,
+      "unitMeasureType": "US$"
+    },
+    {
+      "serieCode": 13.0,
+      "serieLevel": 1.0,
+      "serieName": "GDP by Expenditure, at constant 2020 prices - National currency",
+      "groupId": 102,
+      "unitMeasureType": "Domestic currency"
+    },
+    {
+      "serieCode": 14.0,
+      "serieLevel": 1.0,
+      "serieName": "GDP by Expenditure, at constant 2020 prices - US Dollars",
+      "groupId": 102,
+      "unitMeasureType": "US$"
+    },
+    {
+      "serieCode": 15.0,
+      "serieLevel": 1.0,
+      "serieName": "GDP by Expenditure, Annual Rate of Growth - Percentage",
+      "groupId": 102,
+      "unitMeasureType": "Percentage"
+    },
+    {
+      "serieCode": 16.0,
+      "serieLevel": 1.0,
+      "serieName": "GDP by Expenditure, Percentage Distribution (Shares)",
+      "groupId": 101,
+      "unitMeasureType": "US$"
+    },
+    {
+      "serieCode": 21.0,
+      "serieLevel": 2.0,
+      "serieName": "Value Added by Economic Activity, at current prices - National currency",
+      "groupId": 201,
+      "unitMeasureType": "Domestic currency"
+    },
+    {
+      "serieCode": 22.0,
+      "serieLevel": 2.0,
+      "serieName": "Value Added by Economic Activity, at current prices - US Dollars",
+      "groupId": 201,
+      "unitMeasureType": "US$"
+    },
+    {
+      "serieCode": 23.0,
+      "serieLevel": 2.0,
+      "serieName": "Value Added by Economic Activity, at constant 2020 prices - National currency",
+      "groupId": 202,
+      "unitMeasureType": "Domestic currency"
+    },
+    {
+      "serieCode": 24.0,
+      "serieLevel": 2.0,
+      "serieName": "Value Added by Economic Activity, at constant 2020 prices - US Dollars",
+      "groupId": 202,
+      "unitMeasureType": "US$"
+    },
+    {
+      "serieCode": 25.0,
+      "serieLevel": 2.0,
+      "serieName": "Value Added by Economic Activity, Annual Rate of Growth - Percentage",
+      "groupId": 202,
+      "unitMeasureType": "Percentage"
+    },
+    {
+      "serieCode": 26.0,
+      "serieLevel": 2.0,
+      "serieName": "Value Added by Economic Activity, Percentage Distribution (Shares)",
+      "groupId": 201,
+      "unitMeasureType": "US$"
+    },
+    {
+      "serieCode": 31.0,
+      "serieLevel": 3.0,
+      "serieName": "GNI - National currency",
+      "groupId": 103,
+      "unitMeasureType": "Domestic currency"
+    },
+    {
+      "serieCode": 32.0,
+      "serieLevel": 3.0,
+      "serieName": "GNI - US Dollars",
+      "groupId": 103,
+      "unitMeasureType": "US$"
+    },
+    {
+      "serieCode": 33.0,
+      "serieLevel": 3.0,
+      "serieName": "GNI, Per Capita GNI - US Dollars",
+      "groupId": 103,
+      "unitMeasureType": "US$"
+    },
+    {
+      "serieCode": 41.0,
+      "serieLevel": 4.0,
+      "serieName": "Exchange rates",
+      "groupId": 101,
+      "unitMeasureType": "Domestic currency"
+    },
+    {
+      "serieCode": 42.0,
+      "serieLevel": 4.0,
+      "serieName": "Population",
+      "groupId": 101,
+      "unitMeasureType": "Persons"
+    }
+  ],
+  "elapsed_seconds": 1.172,
+  "error": null
+}

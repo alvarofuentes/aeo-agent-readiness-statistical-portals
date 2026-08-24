@@ -1,0 +1,15 @@
+{
+  "captured_at": "2026-08-23T20:50:47.359Z",
+  "capture_method": "in-app-browser_rendered_dom_after_javascript_settled",
+  "policy": "fresh_live_probe_same_evaluation_cycle; not a frozen portal capture",
+  "cepalstat": [
+    {"repeat": 1, "url": "https://statistics.cepal.org/portal/cepalstat/technical-sheet.html?indicator_id=2203&lang=es", "title": "Ficha técnica - CEPALSTAT Portal de Datos y Publicaciones Estadísticas", "readyState": "complete", "htmlChars": 49039, "bodyChars": 4503, "jsonld": 0, "microdata": 0, "captured_at": "2026-08-23T20:50:16.927Z"},
+    {"repeat": 2, "url": "https://statistics.cepal.org/portal/cepalstat/technical-sheet.html?indicator_id=2203&lang=es", "title": "Ficha técnica - CEPALSTAT Portal de Datos y Publicaciones Estadísticas", "readyState": "complete", "htmlChars": 45028, "bodyChars": 3814, "jsonld": 0, "microdata": 0, "captured_at": "2026-08-23T20:50:29.393Z"},
+    {"repeat": 3, "url": "https://statistics.cepal.org/portal/cepalstat/technical-sheet.html?indicator_id=2203&lang=es", "title": "Ficha técnica - CEPALSTAT Portal de Datos y Publicaciones Estadísticas", "readyState": "complete", "htmlChars": 49039, "bodyChars": 4503, "jsonld": 0, "microdata": 0, "captured_at": "2026-08-23T20:50:40.851Z"}
+  ],
+  "worldbank": [
+    {"repeat": 1, "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD", "title": "GDP (current US$) | Data", "readyState": "complete", "htmlChars": 1399365, "bodyChars": 8450, "jsonld": 1, "microdata": 0, "captured_at": "2026-08-23T20:50:23.523Z"},
+    {"repeat": 2, "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD", "title": "GDP (current US$) | Data", "readyState": "complete", "htmlChars": 1399358, "bodyChars": 8450, "jsonld": 1, "microdata": 0, "captured_at": "2026-08-23T20:50:35.017Z"},
+    {"repeat": 3, "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD", "title": "GDP (current US$) | Data", "readyState": "complete", "htmlChars": 1399050, "bodyChars": 8450, "jsonld": 1, "microdata": 0, "captured_at": "2026-08-23T20:50:47.359Z"}
+  ]
+}

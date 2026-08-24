@@ -1,0 +1,59 @@
+project: aeo-agent-readiness-statistical-portals
+version: 1.0-pilot-extremes-recovery
+ollama:
+  base_url: http://127.0.0.1:11435
+  model_endpoints:
+    qwen3.5:9b-mlx: http://127.0.0.1:11435
+    llama3.2:latest: http://127.0.0.1:11436
+    mistral:latest: http://127.0.0.1:11437
+  model_endpoint_pools:
+    qwen3.5:9b-mlx:
+      - http://127.0.0.1:11435
+      - http://127.0.0.1:11438
+  temperature: 0.0
+  timeout_seconds: 180
+  max_context_chars: 3000
+  retry_context_chars: 1800
+  num_predict: 128
+  natural_num_predict: 64
+  role_num_predict:
+    judge: 384
+    adversarial: 128
+  parallel_workers: 1
+  parallel_role_workers: 1
+  repeat_runs: 3
+model_policy:
+  max_parameter_b: 40
+  exclude_cloud: true
+  excluded_models:
+    - glm-5:cloud
+    - glm-4.6:cloud
+benchmark:
+  capture_natural: true
+  natural_capture_smoke_only: false
+  total_templates: 60
+  template_bank: benchmark/query-bank-pilot-60.csv
+  template_count: 60
+  portals:
+    - cepalstat
+    - sdg
+  strata_targets:
+    discovery: 10
+    exact_indicator: 10
+    semantic_disambiguation: 15
+    dimensions: 5
+    comparison: 5
+    temporal: 5
+    metadata: 5
+    citation: 5
+  gold_standard: benchmark/gold_pilot_cepalstat_sdg_60.json
+  results_root: benchmark/results/pilot
+roles:
+  orchestrator: deterministic-python
+  discovery: qwen3.5:9b-mlx
+  semantic: qwen3.5:9b-mlx
+  retrieval: qwen3.5:9b-mlx
+  metadata: qwen3.5:9b-mlx
+  citation: qwen3.5:9b-mlx
+  judge: mistral:latest
+  adversarial: llama3.2:latest

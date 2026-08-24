@@ -1,0 +1,215 @@
+{
+  "generated_at": "2026-08-22T22:08:30Z",
+  "model": "gemma4:latest",
+  "base": "http://127.0.0.1:11434",
+  "items": [
+    {
+      "query_id": "Q049",
+      "portal_id": "cepalstat",
+      "query": "Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.",
+      "evidence_sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+      "free_form": {
+        "ok": true,
+        "text": "Based on the frozen evidence provided, the specific indicator (PIB de Chile) and its corresponding series URL are not available.\n\n*   **Exact Indicator/Value Available:** No.\n*   **Most Specific Official URL:** The general portal URL is available: `https://statistics.cepal.org/portal/cepalstat/`. However, a direct URL for the GDP series is not present in the evidence.\n*   **Missing Metadata:** Specific data, units, periods, and geography (Chile's GDP figures) are missing. The evidence only provides the structure of the CEPALSTAT portal.",
+        "json": null,
+        "parse_error": "Expecting value: line 1 column 1 (char 0)",
+        "elapsed_seconds": 16.912
+      },
+      "structured": {
+        "ok": true,
+        "text": "{\"available\": false, \"best_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"indicator\": null, \"value\": null, \"unit\": \"Missing\", \"period\": \"Missing\", \"geography\": \"Missing\", \"source\": \"CEPALSTAT\", \"missing_fields\": [\"indicator\", \"value\", \"unit\", \"period\", \"geography\"], \"reason\": \"The provided evidence is the main portal page and does not contain the specific data series or URL for Chile's GDP.\"}",
+        "json": {
+          "available": false,
+          "best_url": "https://statistics.cepal.org/portal/cepalstat/",
+          "indicator": null,
+          "value": null,
+          "unit": "Missing",
+          "period": "Missing",
+          "geography": "Missing",
+          "source": "CEPALSTAT",
+          "missing_fields": [
+            "indicator",
+            "value",
+            "unit",
+            "period",
+            "geography"
+          ],
+          "reason": "The provided evidence is the main portal page and does not contain the specific data series or URL for Chile's GDP."
+        },
+        "parse_error": null,
+        "elapsed_seconds": 26.143
+      },
+      "diagnostic_signals": {
+        "free_form_contains_url": true,
+        "free_form_contains_indicator_language": true,
+        "free_form_is_json": false,
+        "structured_schema_key_count": 10
+      }
+    },
+    {
+      "query_id": "Q050",
+      "portal_id": "cepalstat",
+      "query": "¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?",
+      "evidence_sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+      "free_form": {
+        "ok": true,
+        "text": "The exact indicator/value (PIB de Argentina para 2024) is not available in the provided evidence.\n\n**Official URL:**\nhttps://statistics.cepal.org/portal/cepalstat/\n\n**Missing Metadata:**\nThe specific data point, unit, and period for the GDP of Argentina for 2024 are missing. The evidence points to the general CEPALSTAT Statistical Data Portal, which is the official place to search for this information.",
+        "json": null,
+        "parse_error": "Expecting value: line 1 column 1 (char 0)",
+        "elapsed_seconds": 17.376
+      },
+      "structured": {
+        "ok": true,
+        "text": "{\"available\": false, \"best_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"indicator\": \"PIB\", \"value\": null, \"unit\": null, \"period\": null, \"geography\": null, \"source\": \"CEPALSTAT\", \"missing_fields\": [\"unit\", \"period\", \"geography\", \"value\"], \"reason\": \"The evidence provides the general statistical data portal (CEPALSTAT) but does not contain the specific GDP value for Argentina for 2024.\"}",
+        "json": {
+          "available": false,
+          "best_url": "https://statistics.cepal.org/portal/cepalstat/",
+          "indicator": "PIB",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "geography": null,
+          "source": "CEPALSTAT",
+          "missing_fields": [
+            "unit",
+            "period",
+            "geography",
+            "value"
+          ],
+          "reason": "The evidence provides the general statistical data portal (CEPALSTAT) but does not contain the specific GDP value for Argentina for 2024."
+        },
+        "parse_error": null,
+        "elapsed_seconds": 43.132
+      },
+      "diagnostic_signals": {
+        "free_form_contains_url": true,
+        "free_form_contains_indicator_language": true,
+        "free_form_is_json": false,
+        "structured_schema_key_count": 10
+      }
+    },
+    {
+      "query_id": "Q051",
+      "portal_id": "cepalstat",
+      "query": "Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.",
+      "evidence_sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+      "free_form": {
+        "ok": true,
+        "text": "**Indicador/Valor Específico:**\nNo se puede determinar el indicador oficial de PIB de Brasil. El texto proporcionado es la página de inicio del portal estadístico (CEPALSTAT) y no contiene datos específicos.\n\n**URL Oficial:**\nEl URL disponible es el portal general: `https://statistics.cepal.org/portal/cepalstat/`.\n\n**Explicación de Adecuación:**\nLa página es el \"CEPALSTAT Portal de Datos y Publicaciones Estadísticas,\" lo que indica que es un repositorio de datos estadísticos. Sin embargo, el contenido visible es la estructura de navegación del portal y no la información específica requerida.\n\n**Metadata Faltante:**\n*   **Unidad:** Desconocida.\n*   **Periodo:** Desconocido.\n*   **Geografía:** Aunque el portal cubre datos estadísticos, no se puede confirmar la disponibilidad o el valor específico para Brasil.\n*   **Metadata:** No se proporciona ningún dato estadístico específico.",
+        "json": null,
+        "parse_error": "Expecting value: line 1 column 1 (char 0)",
+        "elapsed_seconds": 38.081
+      },
+      "structured": {
+        "ok": true,
+        "text": "{\n  \"available\": false,\n  \"best_url\": \"https://statistics.cepal.org/portal/cepalstat/\",\n  \"indicator\": \"PIB (Producto Interno Bruto)\",\n  \"value\": null,\n  \"unit\": \"Missing\",\n  \"period\": \"Missing\",\n  \"geography\": \"Missing\",\n  \"source\": \"CEPALSTAT (Comisión Económica para América Latina y el Caribe)\",\n  \"missing_fields\": [\n    \"unit\",\n    \"period\",\n    \"geography\",\n    \"value\"\n  ],\n  \"reason\": \"La evidencia proporcionada es la página de inicio del portal estadístico de CEPALSTAT. Aunque CEPAL es una fuente altamente adecuada para datos económicos de la región (incluyendo Brasil), la página en sí no muestra el indicador específico del PIB de Brasil ni ningún valor asociado. Solo proporciona el acceso al repositorio de datos.\"\n}",
+        "json": {
+          "available": false,
+          "best_url": "https://statistics.cepal.org/portal/cepalstat/",
+          "indicator": "PIB (Producto Interno Bruto)",
+          "value": null,
+          "unit": "Missing",
+          "period": "Missing",
+          "geography": "Missing",
+          "source": "CEPALSTAT (Comisión Económica para América Latina y el Caribe)",
+          "missing_fields": [
+            "unit",
+            "period",
+            "geography",
+            "value"
+          ],
+          "reason": "La evidencia proporcionada es la página de inicio del portal estadístico de CEPALSTAT. Aunque CEPAL es una fuente altamente adecuada para datos económicos de la región (incluyendo Brasil), la página en sí no muestra el indicador específico del PIB de Brasil ni ningún valor asociado. Solo proporciona el acceso al repositorio de datos."
+        },
+        "parse_error": null,
+        "elapsed_seconds": 43.238
+      },
+      "diagnostic_signals": {
+        "free_form_contains_url": true,
+        "free_form_contains_indicator_language": true,
+        "free_form_is_json": false,
+        "structured_schema_key_count": 10
+      }
+    },
+    {
+      "query_id": "Q052",
+      "portal_id": "cepalstat",
+      "query": "Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.",
+      "evidence_sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+      "free_form": {
+        "ok": true,
+        "text": "**Exact Indicator/Value:** No.\n**Most Specific Official URL:** `https://statistics.cepal.org/portal/cepalstat/`\n**Missing Metadata:** The evidence provides a general statistical data portal (CEPALSTAT) but does not confirm the availability of the specific indicator (PIB/GDP) for Mexico, nor does it provide the necessary unit, period, or geography details.",
+        "json": null,
+        "parse_error": "Expecting value: line 1 column 1 (char 0)",
+        "elapsed_seconds": 19.46
+      },
+      "structured": {
+        "ok": true,
+        "text": "{\"available\": false, \"best_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"indicator\": \"PIB\", \"value\": null, \"unit\": \"missing\", \"period\": \"missing\", \"geography\": \"missing\", \"source\": \"CEPALSTAT\", \"missing_fields\": [\"unit\", \"period\", \"geography\", \"value\"], \"reason\": \"The evidence provided is the landing page of the CEPALSTAT portal and does not contain specific GDP data or a direct API endpoint for retrieval.\"}",
+        "json": {
+          "available": false,
+          "best_url": "https://statistics.cepal.org/portal/cepalstat/",
+          "indicator": "PIB",
+          "value": null,
+          "unit": "missing",
+          "period": "missing",
+          "geography": "missing",
+          "source": "CEPALSTAT",
+          "missing_fields": [
+            "unit",
+            "period",
+            "geography",
+            "value"
+          ],
+          "reason": "The evidence provided is the landing page of the CEPALSTAT portal and does not contain specific GDP data or a direct API endpoint for retrieval."
+        },
+        "parse_error": null,
+        "elapsed_seconds": 27.458
+      },
+      "diagnostic_signals": {
+        "free_form_contains_url": true,
+        "free_form_contains_indicator_language": true,
+        "free_form_is_json": false,
+        "structured_schema_key_count": 10
+      }
+    },
+    {
+      "query_id": "Q053",
+      "portal_id": "cepalstat",
+      "query": "¿Cuál fue el PIB total de Colombia en 2024?",
+      "evidence_sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+      "free_form": {
+        "ok": true,
+        "text": "The exact indicator/value (PIB total de Colombia en 2024) is not available in the provided evidence.\n\n**Official URL:** The evidence provides the general portal URL (`https://statistics.cepal.org/portal/cepalstat/`), but no specific URL containing the requested data point.\n\n**Missing Metadata:**\n*   Value\n*   Period (2024)\n*   Geography (Colombia)\n*   Indicator (PIB total)",
+        "json": null,
+        "parse_error": "Expecting value: line 1 column 1 (char 0)",
+        "elapsed_seconds": 12.508
+      },
+      "structured": {
+        "ok": true,
+        "text": "{\"available\": false, \"best_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"indicator\": \"PIB total\", \"value\": null, \"unit\": null, \"period\": \"2024\", \"geography\": \"Colombia\", \"source\": \"CEPALSTAT\", \"missing_fields\": [\"value\"], \"reason\": \"The provided evidence is the homepage structure of the CEPALSTAT portal and does not contain the specific statistical data for the GDP of Colombia in 2024.\"}",
+        "json": {
+          "available": false,
+          "best_url": "https://statistics.cepal.org/portal/cepalstat/",
+          "indicator": "PIB total",
+          "value": null,
+          "unit": null,
+          "period": "2024",
+          "geography": "Colombia",
+          "source": "CEPALSTAT",
+          "missing_fields": [
+            "value"
+          ],
+          "reason": "The provided evidence is the homepage structure of the CEPALSTAT portal and does not contain the specific statistical data for the GDP of Colombia in 2024."
+        },
+        "parse_error": null,
+        "elapsed_seconds": 29.839
+      },
+      "diagnostic_signals": {
+        "free_form_contains_url": true,
+        "free_form_contains_indicator_language": true,
+        "free_form_is_json": false,
+        "structured_schema_key_count": 10
+      }
+    }
+  ]
+}

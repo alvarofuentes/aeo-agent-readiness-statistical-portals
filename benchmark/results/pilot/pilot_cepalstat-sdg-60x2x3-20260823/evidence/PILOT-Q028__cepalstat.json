@@ -1,0 +1,109 @@
+{
+  "capture_version": 2,
+  "case_id": "PILOT-Q028__cepalstat",
+  "template_id": "PILOT-Q028",
+  "portal_id": "cepalstat",
+  "query": "Dame el valor de PIB total de Peru para 2023 y 2024.",
+  "captured_at": "2026-08-23T04:14:50Z",
+  "allowlist_roots": [
+    "cepal.org"
+  ],
+  "serp": {
+    "urls": [],
+    "rejected": [
+      {
+        "url": "http://www.w3.org/1999/xhtml",
+        "reason": "outside_portal_allowlist"
+      },
+      {
+        "url": "http://schemas.live.com/Web/",
+        "reason": "outside_portal_allowlist"
+      }
+    ],
+    "captures": [
+      {
+        "requested_url": "https://www.google.com/search?q=site%3Astatistics.cepal.org+Dame+el+valor+de+PIB+total+de+Peru+para+2023+y+2024.",
+        "captured_at": "2026-08-23T04:14:49Z",
+        "status": 429,
+        "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Astatistics.cepal.org%2BDame%2Bel%2Bvalor%2Bde%2BPIB%2Btotal%2Bde%2BPeru%2Bpara%2B2023%2By%2B2024.&q=EgTJvJPCGLnnqdQGIjDBGcsCP-yhccj71RStG03MuRNXCY29LksT6LExDt9aA8O9oPKnXTjc8gSo18Vj8PwyAnJSWgFD",
+        "headers": {
+          "date": "Sun, 23 Aug 2026 04:14:49 GMT",
+          "pragma": "no-cache",
+          "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+          "cache-control": "no-store, no-cache, must-revalidate",
+          "content-type": "text/html",
+          "server": "scaffolding on HTTPServer2",
+          "content-length": "3428",
+          "x-xss-protection": "0",
+          "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+          "connection": "close"
+        },
+        "error": "HTTPError",
+        "elapsed_seconds": 0.437,
+        "byte_length": 3428,
+        "body_sha256": "d6ad397ef4773045bf0629fc296eef25651e4646ecac89d87174878fdc1c9fd3",
+        "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q028__cepalstat/serp_google.body",
+        "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q028__cepalstat/serp_google.headers.json"
+      },
+      {
+        "requested_url": "https://www.bing.com/search?q=site%3Astatistics.cepal.org+Dame+el+valor+de+PIB+total+de+Peru+para+2023+y+2024.",
+        "captured_at": "2026-08-23T04:14:49Z",
+        "status": 200,
+        "final_url": "https://www.bing.com/search?q=site%3Astatistics.cepal.org+Dame+el+valor+de+PIB+total+de+Peru+para+2023+y+2024.",
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "private, max-age=0",
+          "expires": "Sun, 23 Aug 2026 04:13:49 GMT",
+          "vary": "Accept-Encoding",
+          "x-eventid": "6a8a73b984f84eafa897ef9906e6b8ec",
+          "useragentreductionoptout": "A7kgTC5xdZ2WIVGZEfb1hUoNuvjzOZX3VIV/BA6C18kQOOF50Q0D3oWoAm49k3BQImkujKILc7JmPysWk3CSjwUAAACMeyJvcmlnaW4iOiJodHRwczovL3d3dy5iaW5nLmNvbTo0NDMiLCJmZWF0dXJlIjoiU2VuZEZ1bGxVc2VyQWdlbnRBZnRlclJlZHVjdGlvbiIsImV4cGlyeSI6MTY4NDg4NjM5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=",
+          "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+          "permissions-policy": "unload=()",
+          "content-security-policy": "script-src https: 'strict-dynamic' 'report-sample' 'wasm-unsafe-eval' 'nonce-LcC6FT/pagVyQfm/utgpLZypNMWVG/33/A8hywnb2gc='; base-uri 'self';",
+          "p3p": "CP=\"NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND\"",
+          "x-display-context": "full",
+          "date": "Sun, 23 Aug 2026 04:14:49 GMT",
+          "transfer-encoding": "chunked",
+          "connection": "Transfer-Encoding",
+          "set-cookie": "_SS=SID=396B5730CB646D823580408ECAD26C4F; domain=.bing.com; path=/",
+          "alt-svc": "h3=\":443\"; ma=93600",
+          "x-cdn-traceid": "0.e5ba1402.1787458489.3b4b735d"
+        },
+        "elapsed_seconds": 0.303,
+        "byte_length": 116573,
+        "body_sha256": "335055e86bd7ffb606280cf8accabe169355398675952cba2b9097a656f22070",
+        "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q028__cepalstat/serp_bing.body",
+        "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q028__cepalstat/serp_bing.headers.json"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "requested_url": "https://statistics.cepal.org/portal/cepalstat/",
+      "captured_at": "2026-08-23T04:14:49Z",
+      "status": 200,
+      "final_url": "https://statistics.cepal.org/portal/cepalstat/",
+      "headers": {
+        "server": "nginx",
+        "date": "Sun, 23 Aug 2026 04:14:50 GMT",
+        "content-type": "text/html",
+        "content-length": "1529",
+        "connection": "close",
+        "last-modified": "Fri, 14 Aug 2026 14:29:26 GMT",
+        "etag": "\"6a7f2646-5f9\"",
+        "accept-ranges": "bytes"
+      },
+      "elapsed_seconds": 0.145,
+      "byte_length": 1529,
+      "body_sha256": "36a9b33eb322bb98e6c19d6218cd577992fb1f0905aeb4c42d98003a1d5adb17",
+      "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q028__cepalstat/page_00.body",
+      "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q028__cepalstat/page_00.headers.json",
+      "text_excerpt": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>CEPALSTAT Portal de Datos y Publicaciones Estadísticas</title>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <link rel=\"shortcut icon\" href=\"images/favicon_un.png\" type=\"image/png\" />\n    <link rel=\"stylesheet\" href=\"../../assets/bootstrap-4.3.1.min.css\" >\n    <script src=\"../../assets/jquery.min.js\"></script>\n    <script src=\"../../assets/bootstrap-4.3.1.min.js\" ></script>\n    <script src=\"assets/portal-actions.js\"></script>\n    <script src=\"configuration.js\"></script>\n    <link rel=\"stylesheet\" href=\"assets/style-5column-boxes.css?v=20250312\" >\n\n    <script>\n        $(document).ready(function () {\n          var idioma = getQueryVariable(\"lang\");\n          if(idioma==\"en\") {\n            $(document).attr(\"title\", \"CEPALSTAT Statistical Data Portal and Publications\");\n            $(\"#menu-cabecera\").load(\"header-en.html?v=20260703\");\n            $(\"#modulos\").load(\"en/module-home.html?v=20260703\");\n            $(\"#footer-content\").load(\"footer-en.html?v=20260703\");\n          } else {\n            $(\"#menu-cabecera\").load(\"header-es.html?v=20260703\");\n            $(\"#modulos\").load(\"es/modulo-inicio.html?v=20260703\");\n            $(\"#footer-content\").load(\"footer-es.html?v=20260703\");\n          }\n            scrollTopPage();\n        });\n    </script>    \n  </head>\n  <body>\n    <div id=\"menu-cabecera\"></div>\n    <div id=\"modulos\"></div>\n    <div id=\"footer-content\"></div>\n  </body>\n</html>\n",
+      "allowlist_valid": true,
+      "evidence_use": true
+    }
+  ],
+  "sha256": "e4dc761403d43e91f089b3d5514d9f567d3e7c1898b141f2a17ab9ef3abc5ee6",
+  "candidate_url": null,
+  "candidate_allowed": false
+}

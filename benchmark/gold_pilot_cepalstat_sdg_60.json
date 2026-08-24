@@ -1,0 +1,4413 @@
+{
+  "source": "gold_standards_final_2026-08-23.json",
+  "source_sha256": "b08a4c7e27033ef5c969355c350aa647526b581a1fa03d74ede9803d108c6eac",
+  "scope": "pilot_extremes",
+  "template_count": 60,
+  "portals": [
+    "cepalstat",
+    "sdg"
+  ],
+  "n": 120,
+  "items": [
+    {
+      "template_id": "PILOT-Q001",
+      "portal_id": "cepalstat",
+      "template_family_id": "F9eb353f637",
+      "stratum": "discovery",
+      "query": "Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q001",
+      "portal_id": "sdg",
+      "template_family_id": "F9eb353f637",
+      "stratum": "discovery",
+      "query": "Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q002",
+      "portal_id": "cepalstat",
+      "template_family_id": "F2af5980a8d",
+      "stratum": "discovery",
+      "query": "¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q002",
+      "portal_id": "sdg",
+      "template_family_id": "F2af5980a8d",
+      "stratum": "discovery",
+      "query": "¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q003",
+      "portal_id": "cepalstat",
+      "template_family_id": "Fb9a604da64",
+      "stratum": "exact_indicator",
+      "query": "¿Cuál fue el PIB total de Colombia en 2024?",
+      "expected_country": "Colombia",
+      "expected_country_code": "COL",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q003",
+      "portal_id": "sdg",
+      "template_family_id": "Fb9a604da64",
+      "stratum": "exact_indicator",
+      "query": "¿Cuál fue el PIB total de Colombia en 2024?",
+      "expected_country": "Colombia",
+      "expected_country_code": "COL",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q004",
+      "portal_id": "cepalstat",
+      "template_family_id": "F7a7602df35",
+      "stratum": "exact_indicator",
+      "query": "Dame el valor de PIB total de Peru para 2023 y 2024.",
+      "expected_country": "Peru",
+      "expected_country_code": "PER",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q004",
+      "portal_id": "sdg",
+      "template_family_id": "F7a7602df35",
+      "stratum": "exact_indicator",
+      "query": "Dame el valor de PIB total de Peru para 2023 y 2024.",
+      "expected_country": "Peru",
+      "expected_country_code": "PER",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q005",
+      "portal_id": "cepalstat",
+      "template_family_id": "F0557e0e8f2",
+      "stratum": "semantic_disambiguation",
+      "query": "Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",
+      "expected_country": "Ecuador",
+      "expected_country_code": "ECU",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [
+        "crecimiento"
+      ],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2207/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/edca7c427ae7c2be_cepal_2207.json",
+      "evidence_sha256": "5c11f374a15e7d18008b2c87dbb43ce525d2395618acfc36c306093a8f539030",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2207/data",
+      "evidence_captured_at": "2026-08-23T02:15:56Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q005",
+      "portal_id": "sdg",
+      "template_family_id": "F0557e0e8f2",
+      "stratum": "semantic_disambiguation",
+      "query": "Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",
+      "expected_country": "Ecuador",
+      "expected_country_code": "ECU",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [
+        "crecimiento"
+      ],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q006",
+      "portal_id": "cepalstat",
+      "template_family_id": "Feb14b1d72d",
+      "stratum": "semantic_disambiguation",
+      "query": "Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q006",
+      "portal_id": "sdg",
+      "template_family_id": "Feb14b1d72d",
+      "stratum": "semantic_disambiguation",
+      "query": "Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q007",
+      "portal_id": "cepalstat",
+      "template_family_id": "F5c41ca8642",
+      "stratum": "semantic_disambiguation",
+      "query": "Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2205/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/789568ee1003fb0d_cepal_2205.json",
+      "evidence_sha256": "b9e97510f7dacad8fbf089ace578cdfca2896aa2b2d896ecac151aa53f20bbb8",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2205/data",
+      "evidence_captured_at": "2026-08-23T02:15:55Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q007",
+      "portal_id": "sdg",
+      "template_family_id": "F5c41ca8642",
+      "stratum": "semantic_disambiguation",
+      "query": "Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q008",
+      "portal_id": "cepalstat",
+      "template_family_id": "F664b2ae888",
+      "stratum": "dimensions",
+      "query": "Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q008",
+      "portal_id": "sdg",
+      "template_family_id": "F664b2ae888",
+      "stratum": "dimensions",
+      "query": "Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q009",
+      "portal_id": "cepalstat",
+      "template_family_id": "Fc2153170ac",
+      "stratum": "comparison",
+      "query": "Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.",
+      "expected_country": "Uruguay",
+      "expected_country_code": "URY",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q009",
+      "portal_id": "sdg",
+      "template_family_id": "Fc2153170ac",
+      "stratum": "comparison",
+      "query": "Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.",
+      "expected_country": "Uruguay",
+      "expected_country_code": "URY",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q010",
+      "portal_id": "cepalstat",
+      "template_family_id": "F1ac132896a",
+      "stratum": "temporal",
+      "query": "¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q010",
+      "portal_id": "sdg",
+      "template_family_id": "F1ac132896a",
+      "stratum": "temporal",
+      "query": "¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q011",
+      "portal_id": "cepalstat",
+      "template_family_id": "F1d2c85b312",
+      "stratum": "metadata",
+      "query": "¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q011",
+      "portal_id": "sdg",
+      "template_family_id": "F1d2c85b312",
+      "stratum": "metadata",
+      "query": "¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q012",
+      "portal_id": "cepalstat",
+      "template_family_id": "F565ceb6059",
+      "stratum": "citation",
+      "query": "Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q012",
+      "portal_id": "sdg",
+      "template_family_id": "F565ceb6059",
+      "stratum": "citation",
+      "query": "Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q013",
+      "portal_id": "cepalstat",
+      "template_family_id": "F9eb353f637",
+      "stratum": "discovery",
+      "query": "Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q013",
+      "portal_id": "sdg",
+      "template_family_id": "F9eb353f637",
+      "stratum": "discovery",
+      "query": "Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q014",
+      "portal_id": "cepalstat",
+      "template_family_id": "F2af5980a8d",
+      "stratum": "discovery",
+      "query": "¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q014",
+      "portal_id": "sdg",
+      "template_family_id": "F2af5980a8d",
+      "stratum": "discovery",
+      "query": "¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q015",
+      "portal_id": "cepalstat",
+      "template_family_id": "Fb9a604da64",
+      "stratum": "exact_indicator",
+      "query": "¿Cuál fue el PIB total de Colombia en 2024?",
+      "expected_country": "Colombia",
+      "expected_country_code": "COL",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q015",
+      "portal_id": "sdg",
+      "template_family_id": "Fb9a604da64",
+      "stratum": "exact_indicator",
+      "query": "¿Cuál fue el PIB total de Colombia en 2024?",
+      "expected_country": "Colombia",
+      "expected_country_code": "COL",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q016",
+      "portal_id": "cepalstat",
+      "template_family_id": "F7a7602df35",
+      "stratum": "exact_indicator",
+      "query": "Dame el valor de PIB total de Peru para 2023 y 2024.",
+      "expected_country": "Peru",
+      "expected_country_code": "PER",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q016",
+      "portal_id": "sdg",
+      "template_family_id": "F7a7602df35",
+      "stratum": "exact_indicator",
+      "query": "Dame el valor de PIB total de Peru para 2023 y 2024.",
+      "expected_country": "Peru",
+      "expected_country_code": "PER",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q017",
+      "portal_id": "cepalstat",
+      "template_family_id": "F0557e0e8f2",
+      "stratum": "semantic_disambiguation",
+      "query": "Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",
+      "expected_country": "Ecuador",
+      "expected_country_code": "ECU",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [
+        "crecimiento"
+      ],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2207/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/edca7c427ae7c2be_cepal_2207.json",
+      "evidence_sha256": "5c11f374a15e7d18008b2c87dbb43ce525d2395618acfc36c306093a8f539030",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2207/data",
+      "evidence_captured_at": "2026-08-23T02:15:56Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q017",
+      "portal_id": "sdg",
+      "template_family_id": "F0557e0e8f2",
+      "stratum": "semantic_disambiguation",
+      "query": "Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",
+      "expected_country": "Ecuador",
+      "expected_country_code": "ECU",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [
+        "crecimiento"
+      ],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q018",
+      "portal_id": "cepalstat",
+      "template_family_id": "Feb14b1d72d",
+      "stratum": "semantic_disambiguation",
+      "query": "Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q018",
+      "portal_id": "sdg",
+      "template_family_id": "Feb14b1d72d",
+      "stratum": "semantic_disambiguation",
+      "query": "Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q019",
+      "portal_id": "cepalstat",
+      "template_family_id": "F5c41ca8642",
+      "stratum": "semantic_disambiguation",
+      "query": "Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2205/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/789568ee1003fb0d_cepal_2205.json",
+      "evidence_sha256": "b9e97510f7dacad8fbf089ace578cdfca2896aa2b2d896ecac151aa53f20bbb8",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2205/data",
+      "evidence_captured_at": "2026-08-23T02:15:55Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q019",
+      "portal_id": "sdg",
+      "template_family_id": "F5c41ca8642",
+      "stratum": "semantic_disambiguation",
+      "query": "Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q020",
+      "portal_id": "cepalstat",
+      "template_family_id": "F664b2ae888",
+      "stratum": "dimensions",
+      "query": "Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q020",
+      "portal_id": "sdg",
+      "template_family_id": "F664b2ae888",
+      "stratum": "dimensions",
+      "query": "Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q021",
+      "portal_id": "cepalstat",
+      "template_family_id": "Fc2153170ac",
+      "stratum": "comparison",
+      "query": "Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.",
+      "expected_country": "Uruguay",
+      "expected_country_code": "URY",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q021",
+      "portal_id": "sdg",
+      "template_family_id": "Fc2153170ac",
+      "stratum": "comparison",
+      "query": "Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.",
+      "expected_country": "Uruguay",
+      "expected_country_code": "URY",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q022",
+      "portal_id": "cepalstat",
+      "template_family_id": "F1ac132896a",
+      "stratum": "temporal",
+      "query": "¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q022",
+      "portal_id": "sdg",
+      "template_family_id": "F1ac132896a",
+      "stratum": "temporal",
+      "query": "¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q023",
+      "portal_id": "cepalstat",
+      "template_family_id": "F1d2c85b312",
+      "stratum": "metadata",
+      "query": "¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q023",
+      "portal_id": "sdg",
+      "template_family_id": "F1d2c85b312",
+      "stratum": "metadata",
+      "query": "¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q024",
+      "portal_id": "cepalstat",
+      "template_family_id": "F565ceb6059",
+      "stratum": "citation",
+      "query": "Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q024",
+      "portal_id": "sdg",
+      "template_family_id": "F565ceb6059",
+      "stratum": "citation",
+      "query": "Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q025",
+      "portal_id": "cepalstat",
+      "template_family_id": "F9eb353f637",
+      "stratum": "discovery",
+      "query": "Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q025",
+      "portal_id": "sdg",
+      "template_family_id": "F9eb353f637",
+      "stratum": "discovery",
+      "query": "Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q026",
+      "portal_id": "cepalstat",
+      "template_family_id": "F2af5980a8d",
+      "stratum": "discovery",
+      "query": "¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q026",
+      "portal_id": "sdg",
+      "template_family_id": "F2af5980a8d",
+      "stratum": "discovery",
+      "query": "¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q027",
+      "portal_id": "cepalstat",
+      "template_family_id": "Fb9a604da64",
+      "stratum": "exact_indicator",
+      "query": "¿Cuál fue el PIB total de Colombia en 2024?",
+      "expected_country": "Colombia",
+      "expected_country_code": "COL",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q027",
+      "portal_id": "sdg",
+      "template_family_id": "Fb9a604da64",
+      "stratum": "exact_indicator",
+      "query": "¿Cuál fue el PIB total de Colombia en 2024?",
+      "expected_country": "Colombia",
+      "expected_country_code": "COL",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q028",
+      "portal_id": "cepalstat",
+      "template_family_id": "F7a7602df35",
+      "stratum": "exact_indicator",
+      "query": "Dame el valor de PIB total de Peru para 2023 y 2024.",
+      "expected_country": "Peru",
+      "expected_country_code": "PER",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q028",
+      "portal_id": "sdg",
+      "template_family_id": "F7a7602df35",
+      "stratum": "exact_indicator",
+      "query": "Dame el valor de PIB total de Peru para 2023 y 2024.",
+      "expected_country": "Peru",
+      "expected_country_code": "PER",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q029",
+      "portal_id": "cepalstat",
+      "template_family_id": "F0557e0e8f2",
+      "stratum": "semantic_disambiguation",
+      "query": "Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",
+      "expected_country": "Ecuador",
+      "expected_country_code": "ECU",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [
+        "crecimiento"
+      ],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2207/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/edca7c427ae7c2be_cepal_2207.json",
+      "evidence_sha256": "5c11f374a15e7d18008b2c87dbb43ce525d2395618acfc36c306093a8f539030",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2207/data",
+      "evidence_captured_at": "2026-08-23T02:15:56Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q029",
+      "portal_id": "sdg",
+      "template_family_id": "F0557e0e8f2",
+      "stratum": "semantic_disambiguation",
+      "query": "Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",
+      "expected_country": "Ecuador",
+      "expected_country_code": "ECU",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [
+        "crecimiento"
+      ],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q030",
+      "portal_id": "cepalstat",
+      "template_family_id": "Feb14b1d72d",
+      "stratum": "semantic_disambiguation",
+      "query": "Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q030",
+      "portal_id": "sdg",
+      "template_family_id": "Feb14b1d72d",
+      "stratum": "semantic_disambiguation",
+      "query": "Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q031",
+      "portal_id": "cepalstat",
+      "template_family_id": "F5c41ca8642",
+      "stratum": "semantic_disambiguation",
+      "query": "Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2205/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/789568ee1003fb0d_cepal_2205.json",
+      "evidence_sha256": "b9e97510f7dacad8fbf089ace578cdfca2896aa2b2d896ecac151aa53f20bbb8",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2205/data",
+      "evidence_captured_at": "2026-08-23T02:15:55Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q031",
+      "portal_id": "sdg",
+      "template_family_id": "F5c41ca8642",
+      "stratum": "semantic_disambiguation",
+      "query": "Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q032",
+      "portal_id": "cepalstat",
+      "template_family_id": "F664b2ae888",
+      "stratum": "dimensions",
+      "query": "Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q032",
+      "portal_id": "sdg",
+      "template_family_id": "F664b2ae888",
+      "stratum": "dimensions",
+      "query": "Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q033",
+      "portal_id": "cepalstat",
+      "template_family_id": "Fc2153170ac",
+      "stratum": "comparison",
+      "query": "Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.",
+      "expected_country": "Uruguay",
+      "expected_country_code": "URY",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q033",
+      "portal_id": "sdg",
+      "template_family_id": "Fc2153170ac",
+      "stratum": "comparison",
+      "query": "Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.",
+      "expected_country": "Uruguay",
+      "expected_country_code": "URY",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q034",
+      "portal_id": "cepalstat",
+      "template_family_id": "F1ac132896a",
+      "stratum": "temporal",
+      "query": "¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q034",
+      "portal_id": "sdg",
+      "template_family_id": "F1ac132896a",
+      "stratum": "temporal",
+      "query": "¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q035",
+      "portal_id": "cepalstat",
+      "template_family_id": "F1d2c85b312",
+      "stratum": "metadata",
+      "query": "¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q035",
+      "portal_id": "sdg",
+      "template_family_id": "F1d2c85b312",
+      "stratum": "metadata",
+      "query": "¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q036",
+      "portal_id": "cepalstat",
+      "template_family_id": "F565ceb6059",
+      "stratum": "citation",
+      "query": "Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q036",
+      "portal_id": "sdg",
+      "template_family_id": "F565ceb6059",
+      "stratum": "citation",
+      "query": "Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q037",
+      "portal_id": "cepalstat",
+      "template_family_id": "F9eb353f637",
+      "stratum": "discovery",
+      "query": "Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q037",
+      "portal_id": "sdg",
+      "template_family_id": "F9eb353f637",
+      "stratum": "discovery",
+      "query": "Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q038",
+      "portal_id": "cepalstat",
+      "template_family_id": "F2af5980a8d",
+      "stratum": "discovery",
+      "query": "¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q038",
+      "portal_id": "sdg",
+      "template_family_id": "F2af5980a8d",
+      "stratum": "discovery",
+      "query": "¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q039",
+      "portal_id": "cepalstat",
+      "template_family_id": "Fb9a604da64",
+      "stratum": "exact_indicator",
+      "query": "¿Cuál fue el PIB total de Colombia en 2024?",
+      "expected_country": "Colombia",
+      "expected_country_code": "COL",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q039",
+      "portal_id": "sdg",
+      "template_family_id": "Fb9a604da64",
+      "stratum": "exact_indicator",
+      "query": "¿Cuál fue el PIB total de Colombia en 2024?",
+      "expected_country": "Colombia",
+      "expected_country_code": "COL",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q040",
+      "portal_id": "cepalstat",
+      "template_family_id": "F7a7602df35",
+      "stratum": "exact_indicator",
+      "query": "Dame el valor de PIB total de Peru para 2023 y 2024.",
+      "expected_country": "Peru",
+      "expected_country_code": "PER",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q040",
+      "portal_id": "sdg",
+      "template_family_id": "F7a7602df35",
+      "stratum": "exact_indicator",
+      "query": "Dame el valor de PIB total de Peru para 2023 y 2024.",
+      "expected_country": "Peru",
+      "expected_country_code": "PER",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q041",
+      "portal_id": "cepalstat",
+      "template_family_id": "F0557e0e8f2",
+      "stratum": "semantic_disambiguation",
+      "query": "Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",
+      "expected_country": "Ecuador",
+      "expected_country_code": "ECU",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [
+        "crecimiento"
+      ],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2207/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/edca7c427ae7c2be_cepal_2207.json",
+      "evidence_sha256": "5c11f374a15e7d18008b2c87dbb43ce525d2395618acfc36c306093a8f539030",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2207/data",
+      "evidence_captured_at": "2026-08-23T02:15:56Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q041",
+      "portal_id": "sdg",
+      "template_family_id": "F0557e0e8f2",
+      "stratum": "semantic_disambiguation",
+      "query": "Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",
+      "expected_country": "Ecuador",
+      "expected_country_code": "ECU",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [
+        "crecimiento"
+      ],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q042",
+      "portal_id": "cepalstat",
+      "template_family_id": "Feb14b1d72d",
+      "stratum": "semantic_disambiguation",
+      "query": "Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q042",
+      "portal_id": "sdg",
+      "template_family_id": "Feb14b1d72d",
+      "stratum": "semantic_disambiguation",
+      "query": "Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q043",
+      "portal_id": "cepalstat",
+      "template_family_id": "F5c41ca8642",
+      "stratum": "semantic_disambiguation",
+      "query": "Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2205/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/789568ee1003fb0d_cepal_2205.json",
+      "evidence_sha256": "b9e97510f7dacad8fbf089ace578cdfca2896aa2b2d896ecac151aa53f20bbb8",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2205/data",
+      "evidence_captured_at": "2026-08-23T02:15:55Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q043",
+      "portal_id": "sdg",
+      "template_family_id": "F5c41ca8642",
+      "stratum": "semantic_disambiguation",
+      "query": "Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q044",
+      "portal_id": "cepalstat",
+      "template_family_id": "F664b2ae888",
+      "stratum": "dimensions",
+      "query": "Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q044",
+      "portal_id": "sdg",
+      "template_family_id": "F664b2ae888",
+      "stratum": "dimensions",
+      "query": "Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q045",
+      "portal_id": "cepalstat",
+      "template_family_id": "Fc2153170ac",
+      "stratum": "comparison",
+      "query": "Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.",
+      "expected_country": "Uruguay",
+      "expected_country_code": "URY",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q045",
+      "portal_id": "sdg",
+      "template_family_id": "Fc2153170ac",
+      "stratum": "comparison",
+      "query": "Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.",
+      "expected_country": "Uruguay",
+      "expected_country_code": "URY",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q046",
+      "portal_id": "cepalstat",
+      "template_family_id": "F1ac132896a",
+      "stratum": "temporal",
+      "query": "¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q046",
+      "portal_id": "sdg",
+      "template_family_id": "F1ac132896a",
+      "stratum": "temporal",
+      "query": "¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q047",
+      "portal_id": "cepalstat",
+      "template_family_id": "F1d2c85b312",
+      "stratum": "metadata",
+      "query": "¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q047",
+      "portal_id": "sdg",
+      "template_family_id": "F1d2c85b312",
+      "stratum": "metadata",
+      "query": "¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q048",
+      "portal_id": "cepalstat",
+      "template_family_id": "F565ceb6059",
+      "stratum": "citation",
+      "query": "Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q048",
+      "portal_id": "sdg",
+      "template_family_id": "F565ceb6059",
+      "stratum": "citation",
+      "query": "Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q049",
+      "portal_id": "cepalstat",
+      "template_family_id": "F9eb353f637",
+      "stratum": "discovery",
+      "query": "Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q049",
+      "portal_id": "sdg",
+      "template_family_id": "F9eb353f637",
+      "stratum": "discovery",
+      "query": "Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q050",
+      "portal_id": "cepalstat",
+      "template_family_id": "F2af5980a8d",
+      "stratum": "discovery",
+      "query": "¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q050",
+      "portal_id": "sdg",
+      "template_family_id": "F2af5980a8d",
+      "stratum": "discovery",
+      "query": "¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q051",
+      "portal_id": "cepalstat",
+      "template_family_id": "Fb9a604da64",
+      "stratum": "exact_indicator",
+      "query": "¿Cuál fue el PIB total de Colombia en 2024?",
+      "expected_country": "Colombia",
+      "expected_country_code": "COL",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q051",
+      "portal_id": "sdg",
+      "template_family_id": "Fb9a604da64",
+      "stratum": "exact_indicator",
+      "query": "¿Cuál fue el PIB total de Colombia en 2024?",
+      "expected_country": "Colombia",
+      "expected_country_code": "COL",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q052",
+      "portal_id": "cepalstat",
+      "template_family_id": "F7a7602df35",
+      "stratum": "exact_indicator",
+      "query": "Dame el valor de PIB total de Peru para 2023 y 2024.",
+      "expected_country": "Peru",
+      "expected_country_code": "PER",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q052",
+      "portal_id": "sdg",
+      "template_family_id": "F7a7602df35",
+      "stratum": "exact_indicator",
+      "query": "Dame el valor de PIB total de Peru para 2023 y 2024.",
+      "expected_country": "Peru",
+      "expected_country_code": "PER",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q053",
+      "portal_id": "cepalstat",
+      "template_family_id": "F0557e0e8f2",
+      "stratum": "semantic_disambiguation",
+      "query": "Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",
+      "expected_country": "Ecuador",
+      "expected_country_code": "ECU",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [
+        "crecimiento"
+      ],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2207/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/edca7c427ae7c2be_cepal_2207.json",
+      "evidence_sha256": "5c11f374a15e7d18008b2c87dbb43ce525d2395618acfc36c306093a8f539030",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2207/data",
+      "evidence_captured_at": "2026-08-23T02:15:56Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q053",
+      "portal_id": "sdg",
+      "template_family_id": "F0557e0e8f2",
+      "stratum": "semantic_disambiguation",
+      "query": "Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",
+      "expected_country": "Ecuador",
+      "expected_country_code": "ECU",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [
+        "crecimiento"
+      ],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q054",
+      "portal_id": "cepalstat",
+      "template_family_id": "Feb14b1d72d",
+      "stratum": "semantic_disambiguation",
+      "query": "Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q054",
+      "portal_id": "sdg",
+      "template_family_id": "Feb14b1d72d",
+      "stratum": "semantic_disambiguation",
+      "query": "Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q055",
+      "portal_id": "cepalstat",
+      "template_family_id": "F5c41ca8642",
+      "stratum": "semantic_disambiguation",
+      "query": "Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2205/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/789568ee1003fb0d_cepal_2205.json",
+      "evidence_sha256": "b9e97510f7dacad8fbf089ace578cdfca2896aa2b2d896ecac151aa53f20bbb8",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2205/data",
+      "evidence_captured_at": "2026-08-23T02:15:55Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q055",
+      "portal_id": "sdg",
+      "template_family_id": "F5c41ca8642",
+      "stratum": "semantic_disambiguation",
+      "query": "Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?",
+      "expected_country": "Chile",
+      "expected_country_code": "CHL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q056",
+      "portal_id": "cepalstat",
+      "template_family_id": "F664b2ae888",
+      "stratum": "dimensions",
+      "query": "Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q056",
+      "portal_id": "sdg",
+      "template_family_id": "F664b2ae888",
+      "stratum": "dimensions",
+      "query": "Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2023",
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q057",
+      "portal_id": "cepalstat",
+      "template_family_id": "Fc2153170ac",
+      "stratum": "comparison",
+      "query": "Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.",
+      "expected_country": "Uruguay",
+      "expected_country_code": "URY",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q057",
+      "portal_id": "sdg",
+      "template_family_id": "Fc2153170ac",
+      "stratum": "comparison",
+      "query": "Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.",
+      "expected_country": "Uruguay",
+      "expected_country_code": "URY",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q058",
+      "portal_id": "cepalstat",
+      "template_family_id": "F1ac132896a",
+      "stratum": "temporal",
+      "query": "¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q058",
+      "portal_id": "sdg",
+      "template_family_id": "F1ac132896a",
+      "stratum": "temporal",
+      "query": "¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.",
+      "expected_country": "Bolivia",
+      "expected_country_code": "BOL",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "retrieval_success",
+        "temporal_geographic_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q059",
+      "portal_id": "cepalstat",
+      "template_family_id": "F1d2c85b312",
+      "stratum": "metadata",
+      "query": "¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q059",
+      "portal_id": "sdg",
+      "template_family_id": "F1d2c85b312",
+      "stratum": "metadata",
+      "query": "¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.",
+      "expected_country": "Argentina",
+      "expected_country_code": "ARG",
+      "expected_periods": [],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness",
+        "metadata_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q060",
+      "portal_id": "cepalstat",
+      "template_family_id": "F565ceb6059",
+      "stratum": "citation",
+      "query": "Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "cepal.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/9e4f009917fa35e9_cepal_2203.json",
+      "evidence_sha256": "ae2f0db8d59eae671f4c1f3fc2cdcaa300bb6743e5f797ef89e0a9a43a21c100",
+      "evidence_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data",
+      "evidence_captured_at": "2026-08-23T02:15:54Z",
+      "evidence_http_status": 200
+    },
+    {
+      "template_id": "PILOT-Q060",
+      "portal_id": "sdg",
+      "template_family_id": "F565ceb6059",
+      "stratum": "citation",
+      "query": "Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.",
+      "expected_country": "Mexico",
+      "expected_country_code": "MEX",
+      "expected_periods": [
+        "2024"
+      ],
+      "expected_host_root": "unstats.un.org",
+      "expected_concepts": [
+        "PIB",
+        "GDP",
+        "producto interno bruto"
+      ],
+      "expected_unit_hints": [],
+      "target_available": "not_required",
+      "applicable_dimensions": [
+        "discovery_success",
+        "semantic_correctness",
+        "citation_correctness"
+      ],
+      "gold_status": "validated_contract",
+      "validation_status": "validated_contract",
+      "validation_reason": "Contract validated; no numeric target promoted because query intent is discovery/semantic/metadata or measure is underspecified.",
+      "acceptable_urls": [
+        "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List"
+      ],
+      "evidence_path": "benchmark/gold_evidence_2026-08-23/fc5caaf0b2d86f10_sdg_indicator_catalog.json",
+      "evidence_sha256": "d6ba2981f6977c8c1b52ae6f64d1b26db344ae577b133e0c34f39480554ee6cf",
+      "evidence_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+      "evidence_captured_at": "2026-08-23T02:16:01Z",
+      "evidence_http_status": 200
+    }
+  ]
+}

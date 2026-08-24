@@ -1,0 +1,123 @@
+{
+  "runner": "production_runner.py",
+  "run_id": "optimized-smoke-20260823b",
+  "started_at": "2026-08-23T01:39:19Z",
+  "configured_base": "http://127.0.0.1:11434",
+  "effective_base": "http://localhost:11434",
+  "models": {
+    "discovery": "gemma4:latest",
+    "semantic": "gemma4:latest",
+    "retrieval": "llama3.2:latest",
+    "metadata": "llama3.2:latest",
+    "citation": "llama3.2:latest",
+    "judge": "mistral:latest",
+    "adversarial": "llama3.2:latest"
+  },
+  "model_inventory": {
+    "ok": true,
+    "http_status": 200,
+    "elapsed_seconds": 0.07,
+    "models": [
+      {
+        "name": "muse-glimmer:30b-mlx",
+        "size_parameter_b": 30.0,
+        "size_bytes": 21232871036,
+        "digest": "ef32a55b4976faa955cbab0462d09bd081351ef5b87d73d8fcd299bf17c111d7",
+        "allowed": false
+      },
+      {
+        "name": "qwen3.5:9b-mlx",
+        "size_parameter_b": 9.0,
+        "size_bytes": 8903014758,
+        "digest": "203e30078279db51132b9e026ceb7bb21330e5b1af67ef190671b375c9770404",
+        "allowed": true
+      },
+      {
+        "name": "deepseek-coder-v2:16b",
+        "size_parameter_b": 15.7,
+        "size_bytes": 8905126121,
+        "digest": "63fb193b3a9b4322a18e8c6b250ca2e70a5ff531e962dbf95ba089b2566f2fa5",
+        "allowed": true
+      },
+      {
+        "name": "qwen3:30b-a3b",
+        "size_parameter_b": 30.0,
+        "size_bytes": 18556699314,
+        "digest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
+        "allowed": false
+      },
+      {
+        "name": "devstral-small-2:24b",
+        "size_parameter_b": 24.0,
+        "size_bytes": 15177374099,
+        "digest": "24277f07f62db8f9cb68e9dfc679ea1818a7fbac47a50eff0a701d3f645b63c8",
+        "allowed": true
+      },
+      {
+        "name": "qwen3-coder:30b-a3b-q4_K_M",
+        "size_parameter_b": 30.0,
+        "size_bytes": 18556700761,
+        "digest": "06c1097efce0431c2045fe7b2e5108366e43bee1b4603a7aded8f21689e90bca",
+        "allowed": false
+      },
+      {
+        "name": "gemma4:latest",
+        "size_parameter_b": 8.0,
+        "size_bytes": 9608350718,
+        "digest": "c6eb396dbd5992bbe3f5cdb947e8bbc0ee413d7c17e2beaae69f5d569cf982eb",
+        "allowed": true
+      },
+      {
+        "name": "glm-5:cloud",
+        "size_parameter_b": null,
+        "size_bytes": 323,
+        "digest": "c313cd06593533865448bd609a95c40c6e13d87ddf2daeb3b8f342e1a6c34794",
+        "allowed": false
+      },
+      {
+        "name": "glm-4.6:cloud",
+        "size_parameter_b": null,
+        "size_bytes": 366,
+        "digest": "05277b76269f8831b289e8f11f1f46136f9214d9c0a6399f1b580003e74f887c",
+        "allowed": false
+      },
+      {
+        "name": "mistral:latest",
+        "size_parameter_b": 7.2,
+        "size_bytes": 4372824384,
+        "digest": "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+        "allowed": true
+      },
+      {
+        "name": "llama3.2:latest",
+        "size_parameter_b": 3.2,
+        "size_bytes": 2019393189,
+        "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+        "allowed": true
+      }
+    ],
+    "raw_sha256": "dfc402cd03afb2c82c6074e10b98715a0409aeb8aae61c715b358c2ef732fd93"
+  },
+  "bank_sha256": "bd7c17091dd6716bf9c78c3b44af62df3316b47a455e090a132c4eee934b962e",
+  "expected": {
+    "templates": 120,
+    "portals": 5,
+    "pairs": 600,
+    "repeats": 3,
+    "executions": 1800,
+    "passes": 5,
+    "executions_per_pass": 360
+  },
+  "evidence_policy": "frozen_once_per_query_portal; candidate fetch appended and rehashed",
+  "natural_capture": false,
+  "gold_status": {
+    "status": "CONTRACT_ONLY",
+    "gold_cases": 600,
+    "covered_pairs": 600,
+    "expected_pairs": 600,
+    "reason": "pair-level contract present; target values/API validation pending"
+  },
+  "status": "PARTIAL",
+  "completed_executions": 1,
+  "finished_at": "2026-08-23T01:40:40Z"
+}

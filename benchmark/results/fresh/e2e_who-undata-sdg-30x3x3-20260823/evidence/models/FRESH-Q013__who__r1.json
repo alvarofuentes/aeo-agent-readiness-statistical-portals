@@ -1,0 +1,97 @@
+{
+  "query": "Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?",
+  "portal": "who",
+  "repeat": 1,
+  "endpoint": "http://127.0.0.1:11435",
+  "selection": {
+    "ok": false,
+    "data": {},
+    "error": "HTTPError: HTTP Error 500: Internal Server Error"
+  },
+  "selection_mode": "ranked_fallback",
+  "selection_status": "FAIL",
+  "selection_failure_class": "MODEL_RESPONSE_ERROR",
+  "selection_error": {
+    "failure_class": "MODEL_RESPONSE_ERROR",
+    "note": "The model did not return a usable candidate; ranked fallback is preserved for diagnosis."
+  },
+  "model_candidate_rejected": null,
+  "candidate_count": 5,
+  "candidates": [
+    {
+      "id": "GHED_CHEGDP_SHA2011",
+      "name": "Current health expenditure (CHE) as percentage of gross domestic product (GDP) (%)",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "current",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    {
+      "id": "GB_XPD_RSDV",
+      "name": "Research and development (R&amp;D) expenditure as a proportion of GDP",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    {
+      "id": "GHED_GGHE-DGDP_SHA2011",
+      "name": "Domestic general government health expenditure (GGHE-D) as percentage of gross domestic product (GDP) (%)",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    {
+      "id": "R_afford_gdp",
+      "name": "Affordability - percentage of GDP per capita required to purchase 2000 cigarettes of the most sold brand",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "unspecified",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    {
+      "id": "TAXBEV_AFFORD_GDP",
+      "name": "GDP per capita to purchase a volume of beverage (%)",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "unspecified",
+        "source_catalog": "WHO GHO"
+      }
+    }
+  ]
+}

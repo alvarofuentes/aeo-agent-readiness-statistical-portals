@@ -1,0 +1,952 @@
+{
+  "url": "https://unstats.un.org/SDGAPI/v1/sdg/Series/Data?seriesCode=NY_GDP_MKTP_KD_ZG&areaCode=218",
+  "status": 200,
+  "headers": {
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "application/json; charset=utf-8",
+    "Referrer-Policy": "no-referrer-when-downgrade",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "X-Content-Type-Options": "nosniff",
+    "Content-Security-Policy": "object-src 'none' ; img-src 'self' https://*.datatables.net/ https://*.twimg.com/ https://*.un.org/ https://*.twitter.com/ data:; frame-src 'self' https://whova.com https://d1keuthy5s86c8.cloudfront.net https://unb2c.b2clogin.com/ https://*.arcgis.com https://www.youtube.com https://youtube.com https://*.twitter.com https://fonts.googleapis.com https://maxcdn.bootstrapcdn.com https://flickrembed.com/ https://public.tableau.com https://unb2c.b2clogin.com/unb2c.onmicrosoft.com https://login.microsoftonline.com/* https://aadcdn.msauth.net/* https://login.microsoftonline.com/ https://www.podbean.com/  https://*.un.org/ https://simplebooklet.com/ https://www.kaltura.com https://app.powerbi.com/",
+    "Feature-Policy": "vibrate 'none'; geolocation 'none'; midi 'none'; notifications 'none'; push 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; vibrate 'none'; fullscreen 'none'; payment 'none'",
+    "Set-Cookie": "NSC_EFTB_votubut2_mcwt=ffffffff098a6e3e45525d5f4f58455e445a4a423660;Version=1;Max-Age=120;path=/;secure;httponly",
+    "Permissions-Policy": "geolocation=(), microphone=(),vibrate=(), midi=(),notifications=(),push=(),sync-xhr=(),camera=(),magnetometer=(),gyroscope=(),speaker=(),fullscreen=(),payment=()",
+    "X-Frame-Options": "ALLOW-FROM https://worlds-women-2020-data-undesa.hub.arcgis.com/",
+    "Date": "Sun, 23 Aug 2026 23:16:28 GMT"
+  },
+  "payload": {
+    "size": 25,
+    "totalElements": 25,
+    "totalPages": 1,
+    "pageNumber": 1,
+    "attributes": [
+      {
+        "id": "Nature",
+        "codes": [
+          {
+            "code": "C",
+            "description": "Country data",
+            "sdmx": "C"
+          },
+          {
+            "code": "CA",
+            "description": "Country adjusted data",
+            "sdmx": "CA"
+          },
+          {
+            "code": "E",
+            "description": "Estimated data",
+            "sdmx": "E"
+          },
+          {
+            "code": "G",
+            "description": "Global monitoring data",
+            "sdmx": "G"
+          },
+          {
+            "code": "M",
+            "description": "Modeled data",
+            "sdmx": "M"
+          },
+          {
+            "code": "N",
+            "description": "Non-relevant",
+            "sdmx": "N"
+          },
+          {
+            "code": "NA",
+            "description": "Data nature not available",
+            "sdmx": "_X"
+          }
+        ]
+      },
+      {
+        "id": "Units",
+        "codes": [
+          {
+            "code": "PERCENT",
+            "description": "Percentage",
+            "sdmx": "PT"
+          }
+        ]
+      }
+    ],
+    "dimensions": [
+      {
+        "id": "Reporting Type",
+        "codes": [
+          {
+            "code": "N",
+            "description": "National",
+            "sdmx": "N"
+          },
+          {
+            "code": "G",
+            "description": "Global",
+            "sdmx": "G"
+          },
+          {
+            "code": "R",
+            "description": "Regional",
+            "sdmx": "R"
+          }
+        ]
+      }
+    ],
+    "data": [
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2000.0,
+        "value": "1.091801647",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2001.0,
+        "value": "4.206271857",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2002.0,
+        "value": "4.928095496",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2003.0,
+        "value": "2.884500365",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2004.0,
+        "value": "6.832397366",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2005.0,
+        "value": "5.39862244",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2006.0,
+        "value": "4.341131986",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2007.0,
+        "value": "1.902428597",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2008.0,
+        "value": "6.564920682",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2009.0,
+        "value": "1.09101297",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2010.0,
+        "value": "4.02913788",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2011.0,
+        "value": "8.481476563",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2012.0,
+        "value": "5.783212336",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2013.0,
+        "value": "7.211236537",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2014.0,
+        "value": "4.226065204",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2015.0,
+        "value": "0.119692109",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2016.0,
+        "value": "-0.687954246",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2017.0,
+        "value": "5.97039881",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2018.0,
+        "value": "1.044294607",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2019.0,
+        "value": "0.165404465",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2020.0,
+        "value": "-9.245096192",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2021.0,
+        "value": "9.42189269",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2022.0,
+        "value": "5.868423549",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2023.0,
+        "value": "1.98823814",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "218",
+        "geoAreaName": "Ecuador",
+        "timePeriodStart": 2024.0,
+        "value": "-2.001254763",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      }
+    ]
+  },
+  "attempts": 1,
+  "elapsed_seconds": 2.088,
+  "error": null
+}

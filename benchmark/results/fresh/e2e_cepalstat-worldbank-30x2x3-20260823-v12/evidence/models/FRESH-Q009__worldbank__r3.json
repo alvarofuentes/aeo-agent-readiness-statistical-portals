@@ -1,0 +1,203 @@
+{
+  "query": "Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",
+  "portal": "worldbank",
+  "repeat": 3,
+  "endpoint": "http://127.0.0.1:11436",
+  "selection": {
+    "ok": true,
+    "data": {
+      "candidate_id": "NY.GDP.MKTP.KD.ZG",
+      "query_rewrite": "Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística entre el valor nominal y la tasa de cambio anual a precios constantes (base 2015).",
+      "reason": "El candidato NY.GDP.MKTP.KD.ZG es el indicador estándar del Banco Mundial para el 'crecimiento del PIB' (NY.GDP.MKTP.KD), que corresponde exactamente al concepto solicitado 'gdp_growth'. La consulta distingue entre nivel y crecimiento; este ID representa la tasa de cambio anual a precios constantes, permitiendo analizar la evolución real de la economía. Se selecciona porque su scope es country_aggregate (compatible con la solicitud para un país), frequency es annual (adecuado para 2024), unit_class es percent y price_base es constant, alineándose con la necesidad de comparar el crecimiento real frente al nivel nominal.",
+      "model_raw": "{\n  \"candidate_id\": \"NY.GDP.MKTP.KD.ZG\",\n  \"query_rewrite\": \"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística entre el valor nominal y la tasa de cambio anual a precios constantes (base 2015).\",\n  \"reason\": \"El candidato NY.GDP.MKTP.KD.ZG es el indicador estándar del Banco Mundial para el 'crecimiento del PIB' (NY.GDP.MKTP.KD), que corresponde exactamente al concepto solicitado 'gdp_growth'. La consulta distingue entre nivel y crecimiento; este ID representa la tasa de cambio anual a precios constantes, permitiendo analizar la evolución real de la economía. Se selecciona porque su scope es country_aggregate (compatible con la solicitud para un país), frequency es annual (adecuado para 2024), unit_class es percent y price_base es constant, alineándose con la necesidad de comparar el crecimiento real frente al nivel nominal.\"\n}"
+    }
+  },
+  "selection_mode": "model",
+  "selection_status": "PASS",
+  "selection_failure_class": null,
+  "selection_error": null,
+  "model_candidate_rejected": null,
+  "candidate_count": 12,
+  "candidates": [
+    {
+      "id": "NY.GDP.MKTP.KD.ZG",
+      "name": "GDP growth (annual %)",
+      "unit": "",
+      "sourceNote": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. This indicator denotes the percentage change over each previous year of the constant price (base year 2015) series in United States dollars.",
+      "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "percent",
+        "price_base": "constant",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "NE.CON.TOTL.ZG",
+      "name": "Total consumption: contribution to growth of GDP (%)",
+      "unit": "",
+      "sourceNote": "",
+      "sourceOrganization": "",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "6.0.GDP_growth",
+      "name": "GDP growth (annual %)",
+      "unit": "",
+      "sourceNote": "Annual percentage growth rate of GDP at market prices based on constant local currency. Aggregates are based on constant 2011 U.S. dollars. GDP is the sum of gross value added by all resident producers in the economy plus any product taxes and minus any subsidies not included in the value of the products. It is calculated without making deductions for depreciation of fabricated assets or for depletion and degradation of natural resources.",
+      "sourceOrganization": "World Development Indicators (World Bank)",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "percent",
+        "price_base": "constant",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "CC.GHG.MEMG.EI",
+      "name": "Macro drivers of GHG emissions growth in the period 2012-2018 - Emission Intensity of GDP",
+      "unit": "",
+      "sourceNote": "Data reflects the impact of the emissions intensity of GDP (as a macro-driver) to total emission growth (excluding LUCF) across the period 2012-2018. This data has been calculated by World Bank staff using greenhouse gas emissions data from the World Resource Institute's Climate Watch. Climate Watch Historical Emission data contains sector-level greenhouse gas (GHG) emissions data for 194 countries and the European Union (EU) for the period 1990-2018, including emissions of the six major GHGs from most major sources and sinks. Non-CO2 emissions are expressed in CO2 equivalents using 100-year global warming potential values from IPCC Fourth Assessment Report. Climate Watch Historical GHG Emissions data (previously published through CAIT Climate Data Explorer) are derived from several sources. Any use of the Land-Use Change and Forestry or Agriculture indicator should be cited as FAO 2020, FAOSTAT Emissions Database. Any use of CO2 emissions from fuel combustion data should be cited as CO2 Emissions from Fuel Combustion, OECD/IEA, 2020.",
+      "sourceOrganization": "Climate Watch. 2020. Washington, DC: World Resources Institute. Available online at: https://www.climatewatchdata.org.",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "CC.GHG.MEMG.GC",
+      "name": "Macro drivers of GHG emissions growth in the period 2012-2018 - GDP per capita",
+      "unit": "",
+      "sourceNote": "Data reflects the impact of GDP-per capita (as a macro-driver) to total emission growth (excluding LUCF) across the period 2012-2018. This data has been calculated by World Bank staff using greenhouse gas emissions data from the World Resource Institute's Climate Watch. Climate Watch Historical Emission data contains sector-level greenhouse gas (GHG) emissions data for 194 countries and the European Union (EU) for the period 1990-2018, including emissions of the six major GHGs from most major sources and sinks. Non-CO2 emissions are expressed in CO2 equivalents using 100-year global warming potential values from IPCC Fourth Assessment Report. Climate Watch Historical GHG Emissions data (previously published through CAIT Climate Data Explorer) are derived from several sources. Any use of the Land-Use Change and Forestry or Agriculture indicator should be cited as FAO 2020, FAOSTAT Emissions Database. Any use of CO2 emissions from fuel combustion data should be cited as CO2 Emissions from Fuel Combustion, OECD/IEA, 2020.",
+      "sourceOrganization": "Climate Watch. 2020. Washington, DC: World Resources Institute. Available online at: https://www.climatewatchdata.org.",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "unspecified",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "IC.FRM.PROD.GROW.PEFT3",
+      "name": "Real annual labor productivity growth (%)",
+      "unit": "",
+      "sourceNote": "Annual labor productivity growth is measured by a percentage change in labor productivity between the last completed fiscal year and a previous period, where labor productivity is sales divided by the number of full- time permanent workers. All sales values are deflated to 2009 using each country's GDP deflators.",
+      "sourceOrganization": "World Bank, Enterprise Surveys (http://www.enterprisesurveys.org/).",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "IC.FRM.SLS.GROW.PEFT1",
+      "name": "Real annual sales growth (%)",
+      "unit": "",
+      "sourceNote": "Real annual sales growth is measured as a percentage change in sales between the last completed fiscal year and a previous period. All sales values are deflated to 2009 using each country's GDP deflators.",
+      "sourceOrganization": "World Bank, Enterprise Surveys (http://www.enterprisesurveys.org/).",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "IN.EC.GSDP.PERCAP.REAL.INR.GRWTHRAT",
+      "name": "Real GSDP Per Capita (INR) Growth Rate",
+      "unit": "",
+      "sourceNote": "Real Gross state domestic product (GSDP) [per capita, or gross regional product (GRP) per capita, is a measurement of the per capita growth rate of economic output in real terms of a state or province (i.e., of a subnational entity). It is the sum of all value added by industries and services within the state and serves as a counterpart to the gross domestic product (GDP). \nState Domestic Product (SDP) in common parlance known as “State Income” is a measure in monetary terms of the volume of all goods and services produced during a given period of time within the geographical boundaries of the state, accounted for\nwithout duplication.\n",
+      "sourceOrganization": "Source : Central Statistics Office (CSO), Ministry of Statistics and Prgramme Implementation, Gov't of India website as on 01.08.13",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "unspecified",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "IN.EC.GSDP.PERCAP.REAL.USD.GRWTHRAT",
+      "name": "Real GSDP Per Capita (USD) Growth Rate",
+      "unit": "",
+      "sourceNote": "Gross state domestic product (GSDP), or gross regional product (GRP), is a measurement of the per capita growth rate  of the economic output in real terms of a state or province (i.e., of a subnational entity). It is the sum of all value added by industries and services within the state and serves as a counterpart to the gross domestic product (GDP). \nState Domestic Product (SDP) in common parlance known as “State Income” is a measure in monetary terms of the volume of all goods and services produced during a given period of time within the geographical boundaries of the state, accounted for\nwithout duplication.\n",
+      "sourceOrganization": "Source : Central Statistics Office (CSO), Ministry of Statistics and Prgramme Implementation, Gov't of India website as on 01.08.13",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "unspecified",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "NE.GDI.TOTL.ZG",
+      "name": "Gross domestic investment: contr. to growth of GDP(%)",
+      "unit": "",
+      "sourceNote": "",
+      "sourceOrganization": "",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "NE.RSB.GNFS.ZG",
+      "name": "Resource balance: contribution to growth of GDP (%)",
+      "unit": "",
+      "sourceNote": "",
+      "sourceOrganization": "",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "NP.AGR.TOTL.ZG",
+      "name": "Agriculture: contribution to growth of GDP (%)",
+      "unit": "",
+      "sourceNote": "",
+      "sourceOrganization": "",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "World Bank"
+      }
+    }
+  ]
+}

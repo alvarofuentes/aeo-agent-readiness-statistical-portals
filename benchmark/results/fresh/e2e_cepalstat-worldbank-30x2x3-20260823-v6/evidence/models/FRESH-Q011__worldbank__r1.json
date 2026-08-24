@@ -1,0 +1,202 @@
+{
+  "query": "Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?",
+  "portal": "worldbank",
+  "repeat": 1,
+  "endpoint": "http://127.0.0.1:11435",
+  "selection": {
+    "ok": false,
+    "data": {},
+    "error": "TimeoutError: timed out"
+  },
+  "selection_mode": "ranked_fallback",
+  "selection_status": "FAIL",
+  "selection_failure_class": "MODEL_RESPONSE_ERROR",
+  "selection_error": {
+    "failure_class": "MODEL_RESPONSE_ERROR",
+    "note": "The model did not return a usable candidate; ranked fallback is preserved for diagnosis."
+  },
+  "model_candidate_rejected": null,
+  "candidate_count": 12,
+  "candidates": [
+    {
+      "id": "NY.GDP.PCAP.CD",
+      "name": "GDP per capita (current US$)",
+      "unit": "",
+      "sourceNote": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. The core indicator has been divided by the general population to achieve a per capita estimate.This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. This indicator is expressed in United States dollars.",
+      "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "current",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "NW.NCA.MINR.PC",
+      "name": "Nonrenewable natural capital per capita, metals and minerals, sub-index, total (real chained 2019 US$)",
+      "unit": "",
+      "sourceNote": "Natural capital includes the valuation of renewable and nonrenewable natural capital. Renewable natural capital includes agricultural land (cropland and pastureland), forests (timber, and three ecosystem services: water, recretion and non-wood forest products), protected areas, mangroves and fisheries. Nonrenewable natural capital includes fossil fuel energy (oil, gas, hard and soft coal) and minerals (bauxite, copper, gold, iron ore, lead, nickel, phosphate, silver, tin, and zinc),Values are measured at market exchange rates in constant 2018 US dollars, using a country-specific GDP deflator.",
+      "sourceOrganization": "World Bank. 2021. The Changing Wealth of Nations 2021: Managing Assets for the Future. Washington, DC: World Bank. doi:10.1596/978-1-4648-1590-4.",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "constant",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "NW.NCA.SSOI.PC",
+      "name": "Nonrenewable natural capital per capita, total (real chained 2019 US$)",
+      "unit": "",
+      "sourceNote": "Natural capital includes the valuation of renewable and nonrenewable natural capital. Renewable natural capital includes agricultural land (cropland and pastureland), forests (timber, and three ecosystem services: water, recretion and non-wood forest products), protected areas, mangroves and fisheries. Nonrenewable natural capital includes fossil fuel energy (oil, gas, hard and soft coal) and minerals (bauxite, copper, gold, iron ore, lead, nickel, phosphate, silver, tin, and zinc),Values are measured at market exchange rates in constant 2018 US dollars, using a country-specific GDP deflator.",
+      "sourceOrganization": "World Bank. 2021. The Changing Wealth of Nations 2021: Managing Assets for the Future. Washington, DC: World Bank. doi:10.1596/978-1-4648-1590-4.",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "constant",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "NE.CON.PCAP.PP.CD",
+      "name": "Households and NPISHs Final consumption expenditure per capita, PPP (current international $)",
+      "unit": "",
+      "sourceNote": "This indicator provides values for final consumption expenditure per person expressed in current international dollars, converted by purchasing power parities (PPPs). PPPs account for the different price levels across countries and thus PPP-based comparisons of economic output are more appropriate for comparing the output of economies and the average material well-being of their inhabitants than exchange-rate based comparisons.\nHouseholds and NPISHs final consumption expenditure includes expenditure on goods and services by the Household and NPISH sector for the direct satisfaction of human needs or wants, whether individual or collective. This series has been linked to produce a consistent time series to counteract breaks in series over time due to changes in base years, source data and methodologies. Thus, it may not be comparable with other national accounts series in the database for historical years. The core indicator has been divided by the general population to achieve a per capita estimate. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. The PPP conversion factor is a currency conversion factor and a spatial price deflator. PPPs convert different currencies to a common currency and, in the process of conversion, equalize their purchasing power by eliminating the differences in price levels between countries, thereby allowing volume or output comparisons of GDP and its expenditure components.",
+      "sourceOrganization": "International Comparison Program (ICP), World Bank (WB), note: This information is for PPP conversion factors., publisher: International Comparison Program (ICP), date published: May 30, 2024;\nThe Eurostat PPP Programme, Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/databrowser/explore/all/all_themes, note: This information is for PPP conversion factors., publisher: Eurostat;\nThe OECD PPP Programme, Organisation for Economic Co-operation and Development (OECD), uri: https://data-explorer.oecd.org/, publisher: OECD;\nStaff estimates, World Bank (WB), note: This information is for households and NPISHs Final consumption expenditure per capita.;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD), note: This information is for households and NPISHs Final consumption expenditure per capita.;\nWorld Economic Outlook database, International Monetary Fund (IMF), note: This information is for households and NPISHs Final consumption expenditure per capita.",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "current",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "NY.GDP.PCAP.CN",
+      "name": "GDP per capita (current LCU)",
+      "unit": "",
+      "sourceNote": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. The core indicator has been divided by the general population to achieve a per capita estimate.This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. This series is expressed in local currency units.",
+      "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "current",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "NY.GDP.PCAP.PP.CD",
+      "name": "GDP per capita, PPP (current international $)",
+      "unit": "",
+      "sourceNote": "This indicator provides values for gross domestic product (GDP) per person expressed in current international dollars, converted by purchasing power parities (PPPs). PPPs account for the different price levels across countries and thus PPP-based comparisons of economic output are more appropriate for comparing the output of economies and the average material well-being of their inhabitants than exchange-rate based comparisons.  \n\nGross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. This series has been linked to produce a consistent time series to counteract breaks in series over time due to changes in base years, source data and methodologies. Thus, it may not be comparable with other national accounts series in the database for historical years. The core indicator has been divided by the general population to achieve a per capita estimate. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. The PPP conversion factor is a currency conversion factor and a spatial price deflator. PPPs convert different currencies to a common currency and, in the process of conversion, equalize their purchasing power by eliminating the differences in price levels between countries, thereby allowing volume or output comparisons of GDP and its expenditure components.",
+      "sourceOrganization": "International Comparison Program (ICP), World Bank (WB), uri: https://www.worldbank.org/en/programs/icp/data, note: This information is for ICP’s PPPs utilized in WDI, publisher: International Comparison Program (ICP), date accessed: May 30, 2024, date published: May 30, 2024;\nThe Eurostat PPP Programme, Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/databrowser/explore/all/all_themes, publisher: Eurostat;\nThe OECD PPP Programme, Organisation for Economic Co-operation and Development (OECD), uri: https://data-explorer.oecd.org/, publisher: OECD;\nStaff estimates, World Bank (WB);\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nWorld Economic Outlook database, International Monetary Fund (IMF)",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "current",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "NY.GNP.PCAP.CD",
+      "name": "GNI per capita, Atlas method (current US$)",
+      "unit": "",
+      "sourceNote": "Gross national income is the total income earned by all residents within an economic territory during an accounting period. It is equal to gross domestic product plus earned income receivable from abroad minus earned income payable abroad. This figure is converted to U.S. dollars using the World Bank Atlas method, and divided by the midyear population. GNI, calculated in national currency, is usually converted to U.S. dollars at official exchange rates for comparisons across economies, although an alternative rate is used when the official exchange rate is judged to diverge by an exceptionally large margin from the rate actually applied in international transactions. To smooth fluctuations in prices and exchange rates, a special Atlas method of conversion is used by the World Bank. This applies a conversion factor that averages the exchange rate for a given year and the two preceding years, adjusted for differences in rates of inflation between the country, and through 2000, the G-5 countries (France, Germany, Japan, the United Kingdom, and the United States). From 2001, these countries include the Euro area, Japan, the United Kingdom, and the United States. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. This indicator is expressed in United States dollars.",
+      "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "current",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "NY.GNP.PCAP.CN",
+      "name": "GNI per capita (current LCU)",
+      "unit": "",
+      "sourceNote": "Gross national income is the total income earned by all residents within an economic territory during an accounting period. It is equal to gross domestic product plus earned income receivable from abroad minus earned income payable abroad. The core indicator has been divided by the general population to achieve a per capita estimate.This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. This series is expressed in local currency units.",
+      "sourceOrganization": "Country official statistics, National Statistical Offices (NSOs);\nNational Accounts data files, Central Banks;\nStaff estimates, World Bank (WB)",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "current",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "NY.GNP.PCAP.PP.CD",
+      "name": "GNI per capita, PPP (current international $)",
+      "unit": "",
+      "sourceNote": "This indicator provides values for gross national income (GNI) per person expressed in current international dollars, converted by purchasing power parities (PPPs). PPPs account for the different price levels across countries and thus PPP-based comparisons of economic output are more appropriate for comparing the output of economies and the average material well-being of their inhabitants than exchange-rate based comparisons. \n\nGross national income is the total income earned by all residents within an economic territory during an accounting period. It is equal to gross domestic product plus earned income receivable from abroad minus earned income payable abroad. The core indicator has been divided by the general population to achieve a per capita estimate. This series has been linked to produce a consistent time series to counteract breaks in series over time due to changes in base years, source data and methodologies. Thus, it may not be comparable with other national accounts series in the database for historical years. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. The PPP conversion factor is a currency conversion factor and a spatial price deflator. PPPs convert different currencies to a common currency and, in the process of conversion, equalize their purchasing power by eliminating the differences in price levels between countries, thereby allowing volume or output comparisons of GDP and its expenditure components.",
+      "sourceOrganization": "International Comparison Program (ICP), World Bank (WB), uri: https://www.worldbank.org/en/programs/icp/data, note: This information is for ICP’s PPPs utilized in WDI, publisher: International Comparison Program (ICP), date accessed: May 30, 2024, date published: May 30, 2024;\nThe Eurostat PPP Programme, Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/databrowser/explore/all/all_themes, publisher: Eurostat;\nThe OECD PPP Programme, Organisation for Economic Co-operation and Development (OECD), uri: https://data-explorer.oecd.org/, publisher: OECD;\nStaff estimates, World Bank (WB);\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nWorld Economic Outlook database, International Monetary Fund (IMF)",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "current",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "6.0.GDPpc_constant",
+      "name": "GDP per capita, PPP (constant 2011 international $) ",
+      "unit": "",
+      "sourceNote": "GDP per capita based on purchasing power parity (PPP). PPP GDP is gross domestic product converted to international dollars using purchasing power parity rates. An international dollar has the same purchasing power over GDP as the U.S. dollar has in the United States. GDP is the sum of gross value added by all resident producers in the economy plus any product taxes and minus any subsidies not included in the value of the products. It is calculated without making deductions for depreciation of fabricated assets or for depletion and degradation of natural resources. Data are in constant 2011 international dollars. ",
+      "sourceOrganization": "World Development Indicators (World Bank)",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "constant",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "CC.GHG.MEMG.GC",
+      "name": "Macro drivers of GHG emissions growth in the period 2012-2018 - GDP per capita",
+      "unit": "",
+      "sourceNote": "Data reflects the impact of GDP-per capita (as a macro-driver) to total emission growth (excluding LUCF) across the period 2012-2018. This data has been calculated by World Bank staff using greenhouse gas emissions data from the World Resource Institute's Climate Watch. Climate Watch Historical Emission data contains sector-level greenhouse gas (GHG) emissions data for 194 countries and the European Union (EU) for the period 1990-2018, including emissions of the six major GHGs from most major sources and sinks. Non-CO2 emissions are expressed in CO2 equivalents using 100-year global warming potential values from IPCC Fourth Assessment Report. Climate Watch Historical GHG Emissions data (previously published through CAIT Climate Data Explorer) are derived from several sources. Any use of the Land-Use Change and Forestry or Agriculture indicator should be cited as FAO 2020, FAOSTAT Emissions Database. Any use of CO2 emissions from fuel combustion data should be cited as CO2 Emissions from Fuel Combustion, OECD/IEA, 2020.",
+      "sourceOrganization": "Climate Watch. 2020. Washington, DC: World Resources Institute. Available online at: https://www.climatewatchdata.org.",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "unspecified",
+        "source_catalog": "World Bank"
+      }
+    },
+    {
+      "id": "FB.DPT.INSU.PC.ZS",
+      "name": "Deposit insurance coverage (% of GDP per capita)",
+      "unit": "",
+      "sourceNote": "",
+      "sourceOrganization": "",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "unspecified",
+        "source_catalog": "World Bank"
+      }
+    }
+  ]
+}

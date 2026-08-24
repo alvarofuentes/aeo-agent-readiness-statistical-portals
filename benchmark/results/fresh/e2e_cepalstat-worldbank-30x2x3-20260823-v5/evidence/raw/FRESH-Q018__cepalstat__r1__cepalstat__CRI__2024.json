@@ -1,0 +1,143 @@
+{
+  "url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/4543/data?lang=es&format=json&in=1&path=1&members=226%2C29194",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Sun, 23 Aug 2026 19:34:40 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "2823",
+    "Connection": "close",
+    "Access-Control-Allow-Methods": "GET",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Origin": "*"
+  },
+  "payload": {
+    "header": {
+      "name": "uneclac cepalstat api",
+      "version": "1.9.13",
+      "success": true,
+      "machine": "03",
+      "context": "public",
+      "code": 200,
+      "message": "",
+      "timestamp": 1787513677
+    },
+    "body": {
+      "metadata": {
+        "indicator_id": 4543,
+        "indicator_name": "Crecimiento del PIB anual (%) NY_GDP_MKTP_KD_ZG",
+        "theme": "Objetivos de Desarrollo Sostenible\r\n",
+        "area": "INDICADOR 17.13.1 Tablero macroeconómico",
+        "note": "",
+        "unit": "Porcentaje",
+        "data_features": "",
+        "definition": "Objetivo: A fin de proporcionar un instrumento normalizado para supervisar la estabilidad macroeconómica de los países, el Banco Mundial ha diseñado un cuadro de mando macroeconómico que incluye importantes indicadores macroeconómicos que abarcan los sectores externo, financiero, fiscal y real. La selección de indicadores se basa en los marcos de supervisión macroeconómica existentes elaborados y utilizados por organismos internacionales y regionales, como el FMI, el Banco Mundial, el BCE y la OCDE. El cuadro de mando macroeconómico ha seleccionado indicadores que abarcan los temas mencionados, datos anuales de los diez años más recientes y se mantendrá para todos los países. El panel se actualizará trimestralmente y se publicará en el sitio de datos del Banco Mundial (Data.WorldBank.org), así como en el sitio web de los ODS de las Naciones Unidas.",
+        "calculation_methodology": "https://unstats.un.org/sdgs/metadata/files/Metadata-17-13-01.pdf",
+        "comments": "",
+        "decimals": 5,
+        "last_update": "Jun  1 2026  6:06PM"
+      },
+      "data": [
+        {
+          "value": "4.321224296",
+          "source_id": 6404,
+          "notes_ids": "",
+          "iso3": "CRI",
+          "dim_208": 226,
+          "dim_29117": 29194,
+          "dim_74389": 74391
+        }
+      ],
+      "dimensions": [
+        {
+          "id": 208,
+          "name": "País__ESTANDAR",
+          "order": 0,
+          "position": 2,
+          "members": [
+            {
+              "name": "Costa Rica",
+              "id": 226,
+              "in": 1,
+              "order": 130,
+              "parent": 208,
+              "selected": 1,
+              "path": "Costa Rica"
+            }
+          ]
+        },
+        {
+          "id": 29117,
+          "name": "Años__ESTANDAR",
+          "order": 0,
+          "position": 3,
+          "members": [
+            {
+              "name": "2024",
+              "id": 29194,
+              "in": 1,
+              "order": 2024,
+              "parent": 29117,
+              "selected": 0,
+              "path": "2024"
+            }
+          ]
+        },
+        {
+          "id": 74389,
+          "name": "Tipo de informe",
+          "order": 0,
+          "position": 1,
+          "members": [
+            {
+              "name": "Global",
+              "id": 74391,
+              "in": 1,
+              "order": 20,
+              "parent": 74389,
+              "selected": 1,
+              "path": "Global"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": 6404,
+          "description": "World Bank national accounts data, and OECD National Accounts data files.",
+          "publication_url": null,
+          "organization_acronym": "ODS",
+          "organization_name": "Base de datos ODS de Naciones Unidas",
+          "organization_url": "https://unstats.un.org/sdgs/indicators/database/"
+        }
+      ],
+      "footnotes": [],
+      "credits": [
+        {
+          "id": 0,
+          "description": "2026-08-23"
+        },
+        {
+          "id": 1,
+          "description": "CEPALSTAT"
+        },
+        {
+          "id": 2,
+          "description": "Comisión Económica para América Latina y el Caribe – CEPAL"
+        },
+        {
+          "id": 3,
+          "description": "Naciones Unidas"
+        }
+      ]
+    },
+    "footer": {
+      "records": 1,
+      "elapsed_time": "0.20191",
+      "ip": "201.188.147.194",
+      "query": "http://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/4543/data?lang=es&format=json&in=1&path=1&members=226,29194"
+    }
+  },
+  "elapsed_seconds": 0.277,
+  "error": null
+}

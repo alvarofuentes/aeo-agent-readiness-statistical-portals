@@ -1,0 +1,216 @@
+{
+  "query": "Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?",
+  "portal": "sdg",
+  "repeat": 1,
+  "endpoint": "http://127.0.0.1:11436",
+  "selection": {
+    "ok": true,
+    "data": {
+      "candidate_id": "NY_GDP_MKTP_KD_ZG",
+      "query_rewrite": "Annual GDP growth rate for Brazil in 2024 (percent)",
+      "reason": "El usuario solicita una comparación internacional del PIB de Brasil, lo que implica un nivel absoluto o total por país para evitar mezclar niveles con tasas de crecimiento. El candidato NY_GDP_MKTP_KD_ZG ('Annual GDP growth (%)') es la medida correcta ya que representa el crecimiento anual del PIB en porcentaje a nivel agregado del país (scope: country_aggregate), permitiendo comparar la tasa de cambio entre países sin distorsionar los niveles absolutos. Se selecciona explícitamente scope=country_aggregate, geography=Brazil, frequency=annual, unit_class=percent y price_base=unspecified.",
+      "model_raw": "{\n  \"candidate_id\": \"NY_GDP_MKTP_KD_ZG\",\n  \"query_rewrite\": \"Annual GDP growth rate for Brazil in 2024 (percent)\",\n  \"reason\": \"El usuario solicita una comparación internacional del PIB de Brasil, lo que implica un nivel absoluto o total por país para evitar mezclar niveles con tasas de crecimiento. El candidato NY_GDP_MKTP_KD_ZG ('Annual GDP growth (%)') es la medida correcta ya que representa el crecimiento anual del PIB en porcentaje a nivel agregado del país (scope: country_aggregate), permitiendo comparar la tasa de cambio entre países sin distorsionar los niveles absolutos. Se selecciona explícitamente scope=country_aggregate, geography=Brazil, frequency=annual, unit_class=percent y price_base=unspecified.\"\n}",
+      "model_attempts": 1
+    }
+  },
+  "selection_mode": "model",
+  "selection_status": "PASS",
+  "selection_failure_class": null,
+  "selection_error": null,
+  "model_candidate_rejected": null,
+  "candidate_count": 12,
+  "candidates": [
+    {
+      "id": "NY_GDP_MKTP_KD_ZG",
+      "name": "Annual GDP growth (%)",
+      "unit": "percent",
+      "sourceNote": "Macroeconomic Dashboard",
+      "sourceOrganization": "United Nations Statistics Division",
+      "indicator_code": "17.13.1",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "UN SDG Indicators"
+      }
+    },
+    {
+      "id": "NY_GDP_PCAP",
+      "name": "Annual growth rate of real GDP per capita (%)",
+      "unit": "percent",
+      "sourceNote": "Annual growth rate of real GDP per capita",
+      "sourceOrganization": "United Nations Statistics Division",
+      "indicator_code": "8.1.1",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "per_capita",
+        "price_base": "unspecified",
+        "source_catalog": "UN SDG Indicators"
+      }
+    },
+    {
+      "id": "SL_EMP_PCAP",
+      "name": "Annual growth rate of real GDP per employed person (%)",
+      "unit": "percent",
+      "sourceNote": "Annual growth rate of real GDP per employed person",
+      "sourceOrganization": "United Nations Statistics Division",
+      "indicator_code": "8.2.1",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "UN SDG Indicators"
+      }
+    },
+    {
+      "id": "BX_TRF_PWKR",
+      "name": "Volume of remittances (in United States dollars) as a proportion of total GDP (%)",
+      "unit": "percent",
+      "sourceNote": "Volume of remittances (in United States dollars) as a proportion of total GDP",
+      "sourceOrganization": "United Nations Statistics Division",
+      "indicator_code": "17.3.2",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "UN SDG Indicators"
+      }
+    },
+    {
+      "id": "ER_FFS_CMPT_GDP",
+      "name": "Fossil-fuel subsidies (consumption and production) as a proportion of total GDP (%)",
+      "unit": "percent",
+      "sourceNote": "Amount of fossil-fuel subsidies (production and consumption) per unit of GDP",
+      "sourceOrganization": "United Nations Statistics Division",
+      "indicator_code": "12.c.1",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "UN SDG Indicators"
+      }
+    },
+    {
+      "id": "GR_G14_GDP",
+      "name": "Total government revenue (budgetary central government) as a proportion of GDP (%)",
+      "unit": "percent",
+      "sourceNote": "Total government revenue as a proportion of GDP, by source",
+      "sourceOrganization": "United Nations Statistics Division",
+      "indicator_code": "17.1.1",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "UN SDG Indicators"
+      }
+    },
+    {
+      "id": "NV_IND_MANF_CD",
+      "name": "Manufacturing value added (current United States dollars) as a proportion of GDP (%)",
+      "unit": "percent",
+      "sourceNote": "Manufacturing value added as a proportion of GDP and per capita",
+      "sourceOrganization": "United Nations Statistics Division",
+      "indicator_code": "9.2.1",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "current",
+        "source_catalog": "UN SDG Indicators"
+      }
+    },
+    {
+      "id": "ST_GDP_ZS",
+      "name": "Tourism direct GDP as a proportion of total GDP (%)",
+      "unit": "percent",
+      "sourceNote": "Tourism direct GDP as a proportion of total GDP and in growth rate",
+      "sourceOrganization": "United Nations Statistics Division",
+      "indicator_code": "8.9.1",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "UN SDG Indicators"
+      }
+    },
+    {
+      "id": "BN_CAB_XOKA_GD_ZS",
+      "name": "Current account balance as a proportion of GDP (%)",
+      "unit": "percent",
+      "sourceNote": "Macroeconomic Dashboard",
+      "sourceOrganization": "United Nations Statistics Division",
+      "indicator_code": "17.13.1",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "current",
+        "source_catalog": "UN SDG Indicators"
+      }
+    },
+    {
+      "id": "EN_ATM_CO2GDP",
+      "name": "Carbon dioxide emissions per unit of GDP PPP (kilogrammes of CO2 per constant 2021 United States dollars)",
+      "unit": null,
+      "sourceNote": "CO2 emission per unit of value added",
+      "sourceOrganization": "United Nations Statistics Division",
+      "indicator_code": "9.4.1",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "currency_usd",
+        "price_base": "constant",
+        "source_catalog": "UN SDG Indicators"
+      }
+    },
+    {
+      "id": "EN_HAZ_GENGDP",
+      "name": "Hazardous waste generated, per unit of GDP (kilograms per constant 2015 United States dollars)",
+      "unit": "percent",
+      "sourceNote": "(a) Hazardous waste generated per capita; and (b) proportion of hazardous waste treated, by type of treatment",
+      "sourceOrganization": "United Nations Statistics Division",
+      "indicator_code": "12.4.2",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "constant",
+        "source_catalog": "UN SDG Indicators"
+      }
+    },
+    {
+      "id": "EN_MAT_DOMCMPG",
+      "name": "Domestic material consumption per unit of GDP, by type of raw material (kilograms per constant 2020 United States dollars)",
+      "unit": null,
+      "sourceNote": "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP",
+      "sourceOrganization": "United Nations Statistics Division",
+      "indicator_code": "8.4.2",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "constant",
+        "source_catalog": "UN SDG Indicators"
+      }
+    }
+  ]
+}

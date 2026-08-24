@@ -1,0 +1,73 @@
+{
+  "portal_id": "cepalstat",
+  "repeat": 2,
+  "captured_at": "2026-08-23T19:39:50.424467+00:00",
+  "catalog_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/thematic-tree?lang=es&format=json",
+  "catalog_status": 200,
+  "root": {
+    "url": "https://statistics.cepal.org/portal/cepalstat/index.html?lang=es",
+    "status": 200,
+    "bytes": 1529,
+    "elapsed_seconds": 0.052,
+    "error": null
+  },
+  "sample_page": {
+    "url": "https://statistics.cepal.org/portal/cepalstat/technical-sheet.html?indicator_id=2203&lang=es",
+    "status": 200,
+    "bytes": 1660,
+    "elapsed_seconds": 0.058,
+    "error": null
+  },
+  "well_known": {
+    "https://statistics.cepal.org/robots.txt": {
+      "status": 0,
+      "bytes": 0,
+      "elapsed_seconds": 0.05,
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    "https://statistics.cepal.org/sitemap.xml": {
+      "status": 0,
+      "bytes": 0,
+      "elapsed_seconds": 0.063,
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    "https://statistics.cepal.org/llms.txt": {
+      "status": 0,
+      "bytes": 0,
+      "elapsed_seconds": 0.06,
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    }
+  },
+  "json_ld_count": 0,
+  "jsonld_initial_status": "ABSENT",
+  "jsonld_rendered_status": "NOT_VERIFIED",
+  "api_route_declared": "https://api-cepalstat.cepal.org/cepalstat/api/v1/thematic-tree?lang=es&format=json",
+  "api_direct_http_status": "NOT_VERIFIED",
+  "api_direct_verified": "NOT_VERIFIED",
+  "unverified_checks": [
+    {
+      "check_id": "jsonld_rendered_dom",
+      "status": "NOT_VERIFIED",
+      "evidence_state": "rendered_dom_not_captured",
+      "observed_evidence": "Only the origin HTML response was captured by the fresh runner.",
+      "verification_gap": "The DOM after JavaScript hydration was not captured.",
+      "next_verification_action": "Open the same representative page in an instrumented browser and save the settled DOM before classifying JSON-LD/microdata as absent."
+    },
+    {
+      "check_id": "api_direct_representative_record",
+      "status": "NOT_VERIFIED",
+      "evidence_state": "route_declared_only",
+      "observed_evidence": "The portal API route https://api-cepalstat.cepal.org/cepalstat/api/v1/thematic-tree?lang=es&format=json was requested for its live catalogue.",
+      "verification_gap": "A representative indicator/record request is validated only when the E2E retrieval row is completed.",
+      "next_verification_action": "Issue one isolated GET for the selected indicator, then validate status, content type, dimensions, value and provenance."
+    }
+  ],
+  "dimensions": {
+    "discovery": "PASS",
+    "retrieval": "NOT_VERIFIED",
+    "rendering": "PASS",
+    "structured_data": "NOT_VERIFIED",
+    "authority_citation": "PASS",
+    "accessibility": "NOT_VERIFIED"
+  }
+}

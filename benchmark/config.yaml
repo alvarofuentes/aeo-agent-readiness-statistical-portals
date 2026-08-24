@@ -1,20 +1,75 @@
 project: aeo-agent-readiness-statistical-portals
-version: 1.0
+version: 2.0
 ollama:
-  base_url: http://127.0.0.1:11434
+  base_url: http://127.0.0.1:11435
+  model_endpoints:
+    qwen3.5:9b-mlx: http://127.0.0.1:11435
+    llama3.2:latest: http://127.0.0.1:11436
+    mistral:latest: http://127.0.0.1:11437
+  model_endpoint_pools:
+    qwen3.5:9b-mlx:
+      - http://127.0.0.1:11435
+      - http://127.0.0.1:11438
   temperature: 0.0
   timeout_seconds: 180
-  max_context_chars: 18000
+  max_context_chars: 3000
+  retry_context_chars: 1800
+  num_predict: 128
+  natural_num_predict: 64
+  role_num_predict:
+    judge: 384
+    adversarial: 128
+  parallel_workers: 1
+  parallel_role_workers: 4
   repeat_runs: 3
+model_policy:
+  max_parameter_b: 40
+  exclude_cloud: true
+  excluded_models:
+    - glm-5:cloud
+    - glm-4.6:cloud
+benchmark:
+  capture_natural: true
+  natural_capture_smoke_only: false
+  total_templates: 120
+  strata:
+    discovery: 20
+    exact_indicator: 20
+    semantic_disambiguation: 25
+    dimensions: 15
+    comparison: 15
+    temporal: 10
+    metadata: 10
+    citation: 5
+  gold_standard: benchmark/gold_standards_final_2026-08-23.json
+fresh_e2e:
+  model: qwen3.5:9b-mlx
+  endpoint: http://127.0.0.1:11436
+  portals:
+    - cepalstat
+    - worldbank
+    - who
+    - undata
+    - sdg
+  templates_per_portal: 30
+  repeats: 3
+  workers: 1
+  evidence_policy: live_portal_fetch_per_repeat_no_cache
+  selection_policy: preserve_model_selection_and_continue
+  diagnostic_class: MODEL_SELECTION_ERROR
+  stop_conditions:
+    - any_clean_retrieval_not_verified
+    - zero_observations_after_two_attempts
+  stop_action: review_alert_and_clean_relaunch
 roles:
-  orchestrator: auto
-  discovery: auto
-  semantic: auto
-  retrieval: auto
-  metadata: auto
-  citation: auto
-  judge: auto
-  adversarial: auto
+  orchestrator: deterministic-python
+  discovery: qwen3.5:9b-mlx
+  semantic: qwen3.5:9b-mlx
+  retrieval: qwen3.5:9b-mlx
+  metadata: qwen3.5:9b-mlx
+  citation: qwen3.5:9b-mlx
+  judge: mistral:latest
+  adversarial: llama3.2:latest
 portals:
   - id: worldbank
     name: World Bank Open Data
@@ -36,18 +91,6 @@ portals:
     name: UN SDG Indicators
     home: https://unstats.un.org/sdgs/dataportal/
     search_hint: site:unstats.un.org/sdgs GDP Chile
-benchmark:
-  total_templates: 120
-  strata:
-    discovery: 20
-    exact_indicator: 20
-    semantic_disambiguation: 25
-    dimensions: 15
-    comparison: 15
-    temporal: 10
-    metadata: 10
-    citation: 5
-  gold_standard: benchmark/gold_standards.json
 output:
   dir: benchmark/results
   runs_manifest: benchmark/results/run_manifest.json

@@ -1,0 +1,53 @@
+{
+  "url": "https://api.worldbank.org/v2/country/CHL/indicator/NY.GDP.MKTP.CD?date=2024:2024&format=json&per_page=100",
+  "status": 200,
+  "headers": {
+    "Date": "Sun, 23 Aug 2026 20:56:07 GMT",
+    "Content-Type": "application/json;charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "set-cookie": "_cfuvid=kzUyC86.Mhu0h_rmmlz8TYCuQB.pA5n8HBgzvEL5AYw-1787518554.492925-1.0.1.1-D4F5lREqvoC53aWTVJ5l4SiVJP7kmS5e61OD3japPtE; HttpOnly; SameSite=None; Secure; Path=/; Domain=worldbank.org",
+    "CF-Ray": "a2fd05559c29e7a4-SCL",
+    "CF-Cache-Status": "MISS",
+    "Access-Control-Allow-Origin": "*",
+    "Cache-Control": "public, max-age=86400",
+    "Expires": "Mon, 24 Aug 2026 20:56:07 GMT",
+    "Last-Modified": "Sun, 23 Aug 2026 20:56:07 GMT",
+    "Server": "cloudflare",
+    "Vary": "accept-encoding",
+    "Access-Control-Allow-Headers": "X-Requested-With",
+    "Access-Control-Allow-Methods": "GET",
+    "Request-Context": "appId=cid-v1:da002513-bd8b-4441-9f30-737944134422",
+    "X-Powered-By": "ASP.NET"
+  },
+  "payload": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": 100,
+      "total": 1,
+      "sourceid": "2",
+      "lastupdated": "2026-07-13"
+    },
+    [
+      {
+        "indicator": {
+          "id": "NY.GDP.MKTP.CD",
+          "value": "GDP (current US$)"
+        },
+        "country": {
+          "id": "CL",
+          "value": "Chile"
+        },
+        "countryiso3code": "CHL",
+        "date": "2024",
+        "value": 329260633698.726,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  ],
+  "elapsed_seconds": 13.008,
+  "error": null
+}

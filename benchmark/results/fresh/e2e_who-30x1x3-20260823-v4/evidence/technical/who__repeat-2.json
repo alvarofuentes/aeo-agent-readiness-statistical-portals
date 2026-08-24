@@ -1,0 +1,63 @@
+{
+  "portal_id": "who",
+  "repeat": 2,
+  "captured_at": "2026-08-23T23:05:01.617679+00:00",
+  "catalog_url": "https://ghoapi.azureedge.net/api/Indicator?$filter=contains(IndicatorName,%20%27GDP%27)",
+  "catalog_status": 200,
+  "root": {
+    "url": "https://data.who.int/",
+    "status": 200,
+    "bytes": 69375,
+    "elapsed_seconds": 0.347,
+    "error": null
+  },
+  "sample_page": {
+    "url": "https://data.who.int/indicators",
+    "status": 200,
+    "bytes": 28328,
+    "elapsed_seconds": 0.058,
+    "error": null
+  },
+  "well_known": {
+    "https://data.who.int/robots.txt": {
+      "status": 200,
+      "bytes": 19138,
+      "elapsed_seconds": 0.064,
+      "error": null
+    },
+    "https://data.who.int/sitemap.xml": {
+      "status": 404,
+      "bytes": 103,
+      "elapsed_seconds": 0.06,
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    "https://data.who.int/llms.txt": {
+      "status": 404,
+      "bytes": 103,
+      "elapsed_seconds": 0.071,
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    }
+  },
+  "json_ld_count": 0,
+  "jsonld_initial_status": "ABSENT",
+  "jsonld_rendered_status": "ABSENT",
+  "api_route_declared": "https://ghoapi.azureedge.net/api/Indicator?$filter=contains(IndicatorName,%20%27GDP%27)",
+  "api_direct_http_status": 200,
+  "api_direct_verified": "PASS",
+  "api_direct_url": "https://ghoapi.azureedge.net/api/GHED_GGHE-DGDP_SHA2011?$top=1",
+  "api_direct_raw_path": "evidence/raw/technical__who__repeat-2__direct.json",
+  "unverified_checks": [],
+  "dimensions": {
+    "discovery": "PASS",
+    "retrieval": "PASS",
+    "rendering": "PASS",
+    "structured_data": "ABSENT",
+    "authority_citation": "PASS",
+    "accessibility": "PASS"
+  },
+  "e2e_representative_execution_id": "FRESH-Q001__who__r1",
+  "e2e_representative_raw_paths": [
+    "evidence/raw/FRESH-Q001__who__r1__who__CHL.json"
+  ],
+  "e2e_representative_verified": true
+}

@@ -1,0 +1,23 @@
+{
+  "date": "Sun, 23 Aug 2026 02:14:54 GMT",
+  "content-type": "application/json;charset=utf-8",
+  "transfer-encoding": "chunked",
+  "connection": "close",
+  "set-cookie": "_cfuvid=HysAKuMtyTfb.iQdQJWkzGTMJiLNBIq0mbDNIBJnWyM-1787451294.8023102-1.0.1.1-Le60cGzFGvzn64aG8RH4CafIvDYhDtQEgPYC3E4qB.U; HttpOnly; SameSite=None; Secure; Path=/; Domain=worldbank.org",
+  "cf-ray": "a2f69b408850e79b-SCL",
+  "cf-cache-status": "HIT",
+  "access-control-allow-origin": "*",
+  "age": "8479",
+  "cache-control": "public, max-age=47480",
+  "content-security-policy-report-only": "script-src 'unsafe-inline' 'unsafe-eval'; connect-src 'none'; report-uri https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=ujnxW0SK.Pq3FGJ1Ne4NcpHUjwKWqdjrrEfu8qctFbQ-1787451294.8023102-1.0.1.1-8lURy5U0f1SmRcJ_tPF18z8iyXhCe6T1.oGC04YsVkpUFx2YCbGdddcwt0ZcPPPF0M14_p6bZAtoPLjU_vzY53Abzdgizpho8faAzuyUm7XxRrqyezVMYgFBHeBIZL0uRAdLRNV3pBxYA6ZcZwUpGpL32bFsKnBBmABOaSgOD7lkV5xR0zBWEbgU8.NVdJQm; report-to cf-csp-endpoint",
+  "expires": "Sun, 23 Aug 2026 15:26:14 GMT",
+  "last-modified": "Sat, 22 Aug 2026 13:04:55 GMT",
+  "server": "cloudflare",
+  "vary": "accept-encoding",
+  "access-control-allow-headers": "X-Requested-With",
+  "access-control-allow-methods": "GET",
+  "request-context": "appId=cid-v1:da002513-bd8b-4441-9f30-737944134422",
+  "x-powered-by": "ASP.NET",
+  "report-to": "{\"group\":\"cf-csp-endpoint\",\"max_age\":86400,\"endpoints\":[{\"url\":\"https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=ujnxW0SK.Pq3FGJ1Ne4NcpHUjwKWqdjrrEfu8qctFbQ-1787451294.8023102-1.0.1.1-8lURy5U0f1SmRcJ_tPF18z8iyXhCe6T1.oGC04YsVkpUFx2YCbGdddcwt0ZcPPPF0M14_p6bZAtoPLjU_vzY53Abzdgizpho8faAzuyUm7XxRrqyezVMYgFBHeBIZL0uRAdLRNV3pBxYA6ZcZwUpGpL32bFsKnBBmABOaSgOD7lkV5xR0zBWEbgU8.NVdJQm\"}]}",
+  "reporting-endpoints": "cf-csp-endpoint=\"https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=ujnxW0SK.Pq3FGJ1Ne4NcpHUjwKWqdjrrEfu8qctFbQ-1787451294.8023102-1.0.1.1-8lURy5U0f1SmRcJ_tPF18z8iyXhCe6T1.oGC04YsVkpUFx2YCbGdddcwt0ZcPPPF0M14_p6bZAtoPLjU_vzY53Abzdgizpho8faAzuyUm7XxRrqyezVMYgFBHeBIZL0uRAdLRNV3pBxYA6ZcZwUpGpL32bFsKnBBmABOaSgOD7lkV5xR0zBWEbgU8.NVdJQm\""
+}

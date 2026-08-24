@@ -1,0 +1,203 @@
+{
+  "query": "Dame el valor de PIB total de Peru para 2023 y 2024.",
+  "portal": "undata",
+  "repeat": 2,
+  "endpoint": "http://127.0.0.1:11436",
+  "selection": {
+    "ok": false,
+    "data": {},
+    "error": "ValueError: model_response_has_no_json_object",
+    "attempts": 2
+  },
+  "selection_mode": "ranked_fallback",
+  "selection_status": "FAIL",
+  "selection_failure_class": "MODEL_RESPONSE_ERROR",
+  "selection_error": {
+    "failure_class": "MODEL_RESPONSE_ERROR",
+    "note": "The model did not return a usable candidate; ranked fallback is preserved for diagnosis."
+  },
+  "model_candidate_rejected": null,
+  "candidate_count": 12,
+  "candidates": [
+    {
+      "id": "12",
+      "name": "GDP by Expenditure, at current prices - US Dollars",
+      "unit": "US$",
+      "sourceNote": "UNSD AMA / Data Commons series catalogue",
+      "sourceOrganization": "United Nations Statistics Division",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "currency_usd",
+        "price_base": "current",
+        "source_catalog": "UNSD AMA"
+      }
+    },
+    {
+      "id": "2",
+      "name": "GDP, at current prices - US Dollars",
+      "unit": "US$",
+      "sourceNote": "UNSD AMA / Data Commons series catalogue",
+      "sourceOrganization": "United Nations Statistics Division",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "currency_usd",
+        "price_base": "current",
+        "source_catalog": "UNSD AMA"
+      }
+    },
+    {
+      "id": "1",
+      "name": "GDP, at current prices - National currency",
+      "unit": "Domestic currency",
+      "sourceNote": "UNSD AMA / Data Commons series catalogue",
+      "sourceOrganization": "United Nations Statistics Division",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "currency_national",
+        "price_base": "current",
+        "source_catalog": "UNSD AMA"
+      }
+    },
+    {
+      "id": "11",
+      "name": "GDP by Expenditure, at current prices - National currency",
+      "unit": "Domestic currency",
+      "sourceNote": "UNSD AMA / Data Commons series catalogue",
+      "sourceOrganization": "United Nations Statistics Division",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "currency_national",
+        "price_base": "current",
+        "source_catalog": "UNSD AMA"
+      }
+    },
+    {
+      "id": "14",
+      "name": "GDP by Expenditure, at constant 2020 prices - US Dollars",
+      "unit": "US$",
+      "sourceNote": "UNSD AMA / Data Commons series catalogue",
+      "sourceOrganization": "United Nations Statistics Division",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "currency_usd",
+        "price_base": "constant",
+        "source_catalog": "UNSD AMA"
+      }
+    },
+    {
+      "id": "4",
+      "name": "GDP, at constant 2020 prices - US Dollars",
+      "unit": "US$",
+      "sourceNote": "UNSD AMA / Data Commons series catalogue",
+      "sourceOrganization": "United Nations Statistics Division",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "currency_usd",
+        "price_base": "constant",
+        "source_catalog": "UNSD AMA"
+      }
+    },
+    {
+      "id": "43",
+      "name": "GDP, Per Capita GDP at constant 2020 prices - US Dollars",
+      "unit": "US$",
+      "sourceNote": "UNSD AMA / Data Commons series catalogue",
+      "sourceOrganization": "United Nations Statistics Division",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "constant",
+        "source_catalog": "UNSD AMA"
+      }
+    },
+    {
+      "id": "44",
+      "name": "GDP, Annual Rate of Growth Per Capita at constant 2020 prices - US Dollars",
+      "unit": "US$",
+      "sourceNote": "UNSD AMA / Data Commons series catalogue",
+      "sourceOrganization": "United Nations Statistics Division",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "per_capita",
+        "price_base": "constant",
+        "source_catalog": "UNSD AMA"
+      }
+    },
+    {
+      "id": "5",
+      "name": "GDP, Per Capita GDP - US Dollars",
+      "unit": "US$",
+      "sourceNote": "UNSD AMA / Data Commons series catalogue",
+      "sourceOrganization": "United Nations Statistics Division",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "unspecified",
+        "source_catalog": "UNSD AMA"
+      }
+    },
+    {
+      "id": "7",
+      "name": "GDP, Implicit Price Deflators - US Dollars",
+      "unit": "US$",
+      "sourceNote": "UNSD AMA / Data Commons series catalogue",
+      "sourceOrganization": "United Nations Statistics Division",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "currency_usd",
+        "price_base": "unspecified",
+        "source_catalog": "UNSD AMA"
+      }
+    },
+    {
+      "id": "13",
+      "name": "GDP by Expenditure, at constant 2020 prices - National currency",
+      "unit": "Domestic currency",
+      "sourceNote": "UNSD AMA / Data Commons series catalogue",
+      "sourceOrganization": "United Nations Statistics Division",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "currency_national",
+        "price_base": "constant",
+        "source_catalog": "UNSD AMA"
+      }
+    },
+    {
+      "id": "15",
+      "name": "GDP by Expenditure, Annual Rate of Growth - Percentage",
+      "unit": "Percentage",
+      "sourceNote": "UNSD AMA / Data Commons series catalogue",
+      "sourceOrganization": "United Nations Statistics Division",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "UNSD AMA"
+      }
+    }
+  ]
+}

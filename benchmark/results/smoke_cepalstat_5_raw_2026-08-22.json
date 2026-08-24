@@ -1,0 +1,1427 @@
+{
+  "generated_at": "2026-08-22T22:20:03Z",
+  "runner": "smoke_retrieval.py via isolated CEPALSTAT harness",
+  "n_queries": 5,
+  "models_available": [
+    "muse-glimmer:30b-mlx",
+    "qwen3.5:9b-mlx",
+    "deepseek-coder-v2:16b",
+    "qwen3:30b-a3b",
+    "devstral-small-2:24b",
+    "qwen3-coder:30b-a3b-q4_K_M",
+    "gemma4:latest",
+    "glm-5:cloud",
+    "glm-4.6:cloud",
+    "mistral:latest",
+    "llama3.2:latest"
+  ],
+  "role_models": {
+    "discovery": "gemma4:latest",
+    "semantic": "gemma4:latest",
+    "retrieval": "qwen3.5:9b-mlx",
+    "metadata": "gemma4:latest",
+    "citation": "gemma4:latest",
+    "judge": "gemma4:latest",
+    "adversarial": "gemma4:latest"
+  },
+  "results": [
+    {
+      "query": {
+        "query_id": "Q049",
+        "portal_id": "cepalstat",
+        "stratum": "discovery",
+        "query": "Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.",
+        "country": "Chile",
+        "country_code": "CHL"
+      },
+      "repeat": 1,
+      "candidate_url": null,
+      "evidence_sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+      "evidence": {
+        "urls": [
+          "https://statistics.cepal.org/portal/cepalstat/"
+        ],
+        "pages": [
+          {
+            "url": "https://statistics.cepal.org/portal/cepalstat/",
+            "status": 200,
+            "content_type": "text/html",
+            "text": "<!DOCTYPE html> <html> <head> <title>CEPALSTAT Portal de Datos y Publicaciones Estadísticas</title> <meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"> <link rel=\"shortcut icon\" href=\"images/favicon_un.png\" type=\"image/png\" /> <link rel=\"stylesheet\" href=\"../../assets/bootstrap-4.3.1.min.css\" > <script src=\"../../assets/jquery.min.js\"></script> <script src=\"../../assets/bootstrap-4.3.1.min.js\" ></script> <script src=\"assets/portal-actions.js\"></script> <script src=\"configuration.js\"></script> <link rel=\"stylesheet\" href=\"assets/style-5column-boxes.css?v=20250312\" > <script> $(document).ready(function () { var idioma = getQueryVariable(\"lang\"); if(idioma==\"en\") { $(document).attr(\"title\", \"CEPALSTAT Statistical Data Portal and Publications\"); $(\"#menu-cabecera\").load(\"header-en.html?v=20260703\"); $(\"#modulos\").load(\"en/module-home.html?v=20260703\"); $(\"#footer-content\").load(\"footer-en.html?v=20260703\"); } else { $(\"#menu-cabecera\").load(\"header-es.html?v=20260703\"); $(\"#modulos\").load(\"es/modulo-inicio.html?v=20260703\"); $(\"#footer-content\").load(\"footer-es.html?v=20260703\"); } scrollTopPage(); }); </script> </head> <body> <div id=\"menu-cabecera\"></div> <div id=\"modulos\"></div> <div id=\"footer-content\"></div> </body> </html> "
+          }
+        ],
+        "sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+        "captured_at": "2026-08-22T21:49:24Z"
+      },
+      "models": {
+        "discovery": "gemma4:latest",
+        "semantic": "gemma4:latest",
+        "retrieval": "qwen3.5:9b-mlx",
+        "metadata": "gemma4:latest",
+        "citation": "gemma4:latest",
+        "judge": "gemma4:latest",
+        "adversarial": "gemma4:latest"
+      },
+      "agents_raw": {
+        "discovery": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "resource_name": "CEPALSTAT Portal de Datos y Publicaciones Estadísticas",
+            "resource_url": "https://statistics.cepal.org/portal/cepalstat/",
+            "series_url": "No se encontró la URL específica de la serie PIB de Chile en la evidencia proporcionada. Este es el portal general de datos de CEPALSTAT."
+          },
+          "text": "{\"resource_name\": \"CEPALSTAT Portal de Datos y Publicaciones Estadísticas\", \"resource_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"series_url\": \"No se encontró la URL específica de la serie PIB de Chile en la evidencia proporcionada. Este es el portal general de datos de CEPALSTAT.\"}",
+          "parse_error": null,
+          "elapsed_seconds": 34.488,
+          "schema_valid": false,
+          "schema_error": "missing_keys:best_url,confidence,discovered,reason",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "source_name": "CEPALSTAT (Portal de Datos y Publicaciones Estadísticas de CEPAL)",
+              "series_url": "https://statistics.cepal.org/portal/cepalstat/",
+              "query_language": "Spanish"
+            },
+            "text": "{\"source_name\": \"CEPALSTAT (Portal de Datos y Publicaciones Estadísticas de CEPAL)\", \"series_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"query_language\": \"Spanish\"}",
+            "parse_error": null,
+            "elapsed_seconds": 36.223,
+            "schema_valid": false,
+            "schema_error": "missing_keys:best_url,confidence,discovered,reason"
+          }
+        },
+        "semantic": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "error": "The provided evidence is a general portal page (CEPALSTAT) and does not contain the specific, official URL or series data for Chile's GDP (PIB). For the most accurate and official source, please consult the Instituto Nacional de Estadísticas (INE) of Chile or the Central Bank of Chile (Banco Central de Chile)."
+          },
+          "text": "{\"error\": \"The provided evidence is a general portal page (CEPALSTAT) and does not contain the specific, official URL or series data for Chile's GDP (PIB). For the most accurate and official source, please consult the Instituto Nacional de Estadísticas (INE) of Chile or the Central Bank of Chile (Banco Central de Chile).\"}",
+          "parse_error": null,
+          "elapsed_seconds": 48.9,
+          "schema_valid": false,
+          "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "indicator_series": "N/A (Evidence is a general portal page, not a specific series link)",
+              "url": "https://statistics.cepal.org/portal/cepalstat/",
+              "concept": "PIB (Producto Interno Bruto)",
+              "unit": "Moneda local o USD (depende de la serie)",
+              "prices": "Nominal o constante",
+              "frequency": "Anual o Trimestral",
+              "geography": "Chile",
+              "period": "Más reciente disponible"
+            },
+            "text": "{\"indicator_series\": \"N/A (Evidence is a general portal page, not a specific series link)\", \"url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"concept\": \"PIB (Producto Interno Bruto)\", \"unit\": \"Moneda local o USD (depende de la serie)\", \"prices\": \"Nominal o constante\", \"frequency\": \"Anual o Trimestral\", \"geography\": \"Chile\", \"period\": \"Más reciente disponible\"}",
+            "parse_error": null,
+            "elapsed_seconds": 61.901,
+            "schema_valid": false,
+            "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description"
+          }
+        },
+        "retrieval": {
+          "model": "qwen3.5:9b-mlx",
+          "ok": false,
+          "json": null,
+          "error": "HTTPError: HTTP Error 500: Internal Server Error",
+          "elapsed_seconds": 73.328,
+          "schema_valid": false,
+          "schema_error": "missing_keys:unit_correct,reason,retrievable,period_correct,confidence,geography_correct,value_found",
+          "retry": {
+            "model": "qwen3.5:9b-mlx",
+            "ok": false,
+            "json": null,
+            "error": "HTTPError: HTTP Error 500: Internal Server Error",
+            "elapsed_seconds": 0.189,
+            "schema_valid": false,
+            "schema_error": "missing_keys:unit_correct,reason,retrievable,period_correct,confidence,geography_correct,value_found"
+          }
+        },
+        "metadata": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "contains_rigorous_statistical_metadata": false,
+            "reason": "The evidence provided is a generic landing page (portal) for CEPALSTAT and does not contain any actual statistical data, nor does it provide the detailed metadata (definition, unit, frequency, period, dimensions, or methodology) required to validate the statistical series for Chile's GDP."
+          },
+          "text": "{\n  \"contains_rigorous_statistical_metadata\": false,\n  \"reason\": \"The evidence provided is a generic landing page (portal) for CEPALSTAT and does not contain any actual statistical data, nor does it provide the detailed metadata (definition, unit, frequency, period, dimensions, or methodology) required to validate the statistical series for Chile's GDP.\"\n}",
+          "parse_error": null,
+          "elapsed_seconds": 106.087,
+          "schema_valid": false,
+          "schema_error": "missing_keys:confidence,fields_missing,metadata_complete",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "has_rigorous_statistical_metadata": false,
+              "metadata_details": {
+                "definition": "No specific definition of GDP is provided.",
+                "source": "The evidence points to the CEPALSTAT portal, but does not provide the specific primary source data for Chile's GDP.",
+                "unit": "Not available.",
+                "frequency": "Not available.",
+                "period": "Not available.",
+                "dimensions": "Not available.",
+                "methodology": "Not available."
+              }
+            },
+            "text": "{\"has_rigorous_statistical_metadata\": false, \"metadata_details\": {\"definition\": \"No specific definition of GDP is provided.\", \"source\": \"The evidence points to the CEPALSTAT portal, but does not provide the specific primary source data for Chile's GDP.\", \"unit\": \"Not available.\", \"frequency\": \"Not available.\", \"period\": \"Not available.\", \"dimensions\": \"Not available.\", \"methodology\": \"Not available.\"}}",
+            "parse_error": null,
+            "elapsed_seconds": 44.168,
+            "schema_valid": false,
+            "schema_error": "missing_keys:confidence,fields_missing,metadata_complete,reason"
+          }
+        },
+        "citation": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "answer": "No es posible encontrar la fuente oficial ni la URL de la serie de PIB de Chile con la información proporcionada. El texto solo muestra la página de inicio del portal estadístico de CEPAL (CEPALSTAT), pero no contiene los datos específicos ni el enlace directo a la serie de PIB.",
+            "is_citable": false
+          },
+          "text": "{\"answer\": \"No es posible encontrar la fuente oficial ni la URL de la serie de PIB de Chile con la información proporcionada. El texto solo muestra la página de inicio del portal estadístico de CEPAL (CEPALSTAT), pero no contiene los datos específicos ni el enlace directo a la serie de PIB.\", \"is_citable\": false}",
+          "parse_error": null,
+          "elapsed_seconds": 35.48,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citable,citation_url,confidence,evidence_specific,reason,source_named",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "citation_possible": false
+            },
+            "text": "{\"citation_possible\": false}",
+            "parse_error": null,
+            "elapsed_seconds": 26.864,
+            "schema_valid": false,
+            "schema_error": "missing_keys:citable,citation_url,confidence,evidence_specific,reason,source_named"
+          }
+        },
+        "judge": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "discovery": {
+              "score": 0.0,
+              "reason": "The candidate output contains only schema errors and fails to identify the official source or the relevant URL for Chile's GDP.",
+              "score_description": "No relevant information was extracted or provided."
+            },
+            "semantic": {
+              "score": 0.0,
+              "reason": "The candidate output is invalid due to schema errors and does not provide a structured answer regarding the GDP source or series.",
+              "score_description": "Failed to structure the answer."
+            },
+            "retrieval": {
+              "score": 0.0,
+              "reason": "The candidate output is invalid and does not retrieve the specific data (GDP series URL) requested from the evidence.",
+              "score_description": "Failed to retrieve the required data."
+            },
+            "metadata": {
+              "score": 0.0,
+              "reason": "The candidate output is incomplete and fails to provide any metadata about the extraction process.",
+              "score_description": "Metadata is missing."
+            },
+            "citation": {
+              "score": 0.0,
+              "reason": "The candidate output is invalid and does not provide a citable source or URL.",
+              "score_description": "Citation is missing."
+            }
+          },
+          "text": "{\"discovery\": {\"score\": 0.0, \"reason\": \"The candidate output contains only schema errors and fails to identify the official source or the relevant URL for Chile's GDP.\", \"score_description\": \"No relevant information was extracted or provided.\"}, \"semantic\": {\"score\": 0.0, \"reason\": \"The candidate output is invalid due to schema errors and does not provide a structured answer regarding the GDP source or series.\", \"score_description\": \"Failed to structure the answer.\"}, \"retrieval\": {\"score\": 0.0, \"reason\": \"The candidate output is invalid and does not retrieve the specific data (GDP series URL) requested from the evidence.\", \"score_description\": \"Failed to retrieve the required data.\"}, \"metadata\": {\"score\": 0.0, \"reason\": \"The candidate output is incomplete and fails to provide any metadata about the extraction process.\", \"score_description\": \"Metadata is missing.\"}, \"citation\": {\"score\": 0.0, \"reason\": \"The candidate output is invalid and does not provide a citable source or URL.\", \"score_description\": \"Citation is missing.\"}}",
+          "parse_error": null,
+          "elapsed_seconds": 39.878,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "answer_correct": false,
+              "answer_complete": false,
+              "evidence_used": false,
+              "confidence": 0.1,
+              "reason": "The candidate failed to extract the official source or the specific URL for Chile's GDP from the provided CEPALSTAT evidence. The output only contains schema errors and does not answer the query.",
+              "selected_indicator_description": null
+            },
+            "text": "{\"answer_correct\": false, \"answer_complete\": false, \"evidence_used\": false, \"confidence\": 0.1, \"reason\": \"The candidate failed to extract the official source or the specific URL for Chile's GDP from the provided CEPALSTAT evidence. The output only contains schema errors and does not answer the query.\", \"selected_indicator_description\": null}",
+            "parse_error": null,
+            "elapsed_seconds": 80.753,
+            "schema_valid": false,
+            "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness"
+          }
+        },
+        "adversarial": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "falsification_reason": "The judge result only reports structural errors (missing keys) and does not evaluate the content. Based on the frozen evidence, the system successfully discovered a relevant statistical portal (CEPALSTAT), but it failed to retrieve the specific, actionable URL for the GDP series of Chile. The retrieved content is only the generic landing page HTML, which does not contain the required data or the specific series link, leading to a failure in the retrieval step.",
+            "flaw_type": "conflation_of_discovery_and_retrieval",
+            "details": "The evidence confirms the existence of a relevant data source (CEPALSTAT), but the retrieved content is insufficient to answer the query, as it lacks the specific URL for the GDP series of Chile.",
+            "evidence_limitation": "The retrieved HTML is a portal template and does not contain the specific data or the direct link requested."
+          },
+          "text": "{\"falsification_reason\": \"The judge result only reports structural errors (missing keys) and does not evaluate the content. Based on the frozen evidence, the system successfully discovered a relevant statistical portal (CEPALSTAT), but it failed to retrieve the specific, actionable URL for the GDP series of Chile. The retrieved content is only the generic landing page HTML, which does not contain the required data or the specific series link, leading to a failure in the retrieval step.\", \"flaw_type\": \"conflation_of_discovery_and_retrieval\", \"details\": \"The evidence confirms the existence of a relevant data source (CEPALSTAT), but the retrieved content is insufficient to answer the query, as it lacks the specific URL for the GDP series of Chile.\", \"evidence_limitation\": \"The retrieved HTML is a portal template and does not contain the specific data or the direct link requested.\"}",
+          "parse_error": null,
+          "elapsed_seconds": 61.879,
+          "schema_valid": false,
+          "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "citation_correctness": false,
+              "decisive_reason": "The frozen evidence is the general landing page of the CEPALSTAT portal, which confirms the existence of a statistical source (CEPAL), but it does not contain the specific URL or data series for Chile's GDP, making any claim of retrieval or semantic success unsupported.",
+              "discovery_success": false,
+              "metadata_correctness": false,
+              "overall_0_100": 20,
+              "retrieval_success": false,
+              "semantic_correctness": false,
+              "temporal_geographic_correctness": false
+            },
+            "text": "{\"citation_correctness\": false, \"decisive_reason\": \"The frozen evidence is the general landing page of the CEPALSTAT portal, which confirms the existence of a statistical source (CEPAL), but it does not contain the specific URL or data series for Chile's GDP, making any claim of retrieval or semantic success unsupported.\", \"discovery_success\": false, \"metadata_correctness\": false, \"overall_0_100\": 20, \"retrieval_success\": false, \"semantic_correctness\": false, \"temporal_geographic_correctness\": false}",
+            "parse_error": null,
+            "elapsed_seconds": 42.366,
+            "schema_valid": false,
+            "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict"
+          }
+        }
+      }
+    },
+    {
+      "query": {
+        "query_id": "Q050",
+        "portal_id": "cepalstat",
+        "stratum": "discovery",
+        "query": "¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?",
+        "country": "Argentina",
+        "country_code": "ARG"
+      },
+      "repeat": 1,
+      "candidate_url": null,
+      "evidence_sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+      "evidence": {
+        "urls": [
+          "https://statistics.cepal.org/portal/cepalstat/"
+        ],
+        "pages": [
+          {
+            "url": "https://statistics.cepal.org/portal/cepalstat/",
+            "status": 200,
+            "content_type": "text/html",
+            "text": "<!DOCTYPE html> <html> <head> <title>CEPALSTAT Portal de Datos y Publicaciones Estadísticas</title> <meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"> <link rel=\"shortcut icon\" href=\"images/favicon_un.png\" type=\"image/png\" /> <link rel=\"stylesheet\" href=\"../../assets/bootstrap-4.3.1.min.css\" > <script src=\"../../assets/jquery.min.js\"></script> <script src=\"../../assets/bootstrap-4.3.1.min.js\" ></script> <script src=\"assets/portal-actions.js\"></script> <script src=\"configuration.js\"></script> <link rel=\"stylesheet\" href=\"assets/style-5column-boxes.css?v=20250312\" > <script> $(document).ready(function () { var idioma = getQueryVariable(\"lang\"); if(idioma==\"en\") { $(document).attr(\"title\", \"CEPALSTAT Statistical Data Portal and Publications\"); $(\"#menu-cabecera\").load(\"header-en.html?v=20260703\"); $(\"#modulos\").load(\"en/module-home.html?v=20260703\"); $(\"#footer-content\").load(\"footer-en.html?v=20260703\"); } else { $(\"#menu-cabecera\").load(\"header-es.html?v=20260703\"); $(\"#modulos\").load(\"es/modulo-inicio.html?v=20260703\"); $(\"#footer-content\").load(\"footer-es.html?v=20260703\"); } scrollTopPage(); }); </script> </head> <body> <div id=\"menu-cabecera\"></div> <div id=\"modulos\"></div> <div id=\"footer-content\"></div> </body> </html> "
+          }
+        ],
+        "sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+        "captured_at": "2026-08-22T22:00:57Z"
+      },
+      "models": {
+        "discovery": "gemma4:latest",
+        "semantic": "gemma4:latest",
+        "retrieval": "qwen3.5:9b-mlx",
+        "metadata": "gemma4:latest",
+        "citation": "gemma4:latest",
+        "judge": "gemma4:latest",
+        "adversarial": "gemma4:latest"
+      },
+      "agents_raw": {
+        "discovery": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "resource_url": "https://statistics.cepal.org/portal/cepalstat/",
+            "resource_type": "Statistical Data Portal"
+          },
+          "text": "{\"resource_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"resource_type\": \"Statistical Data Portal\"}",
+          "parse_error": null,
+          "elapsed_seconds": 31.035,
+          "schema_valid": false,
+          "schema_error": "missing_keys:best_url,confidence,discovered,reason",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "resource_url": "https://statistics.cepal.org/portal/cepalstat/",
+              "resource_type": "Statistical Data Portal"
+            },
+            "text": "{\"resource_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"resource_type\": \"Statistical Data Portal\"}",
+            "parse_error": null,
+            "elapsed_seconds": 5.727,
+            "schema_valid": false,
+            "schema_error": "missing_keys:best_url,confidence,discovered,reason"
+          }
+        },
+        "semantic": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "indicator_series": "CEPALSTAT Portal de Datos y Publicaciones Estadísticas"
+          },
+          "text": "{\"indicator_series\": \"CEPALSTAT Portal de Datos y Publicaciones Estadísticas\"}",
+          "parse_error": null,
+          "elapsed_seconds": 16.76,
+          "schema_valid": false,
+          "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "indicator_series": "CEPALSTAT Portal de Datos y Publicaciones Estadísticas",
+              "concept": "PIB (Producto Interno Bruto)",
+              "unit": "No especificado (Se debe consultar en el portal)",
+              "prices": "No especificado",
+              "frequency": "Se debe consultar en el portal",
+              "geography": "Argentina",
+              "period": "2024"
+            },
+            "text": "{\"indicator_series\": \"CEPALSTAT Portal de Datos y Publicaciones Estadísticas\", \"concept\": \"PIB (Producto Interno Bruto)\", \"unit\": \"No especificado (Se debe consultar en el portal)\", \"prices\": \"No especificado\", \"frequency\": \"Se debe consultar en el portal\", \"geography\": \"Argentina\", \"period\": \"2024\"}",
+            "parse_error": null,
+            "elapsed_seconds": 20.84,
+            "schema_valid": false,
+            "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description"
+          }
+        },
+        "retrieval": {
+          "model": "qwen3.5:9b-mlx",
+          "ok": false,
+          "json": null,
+          "error": "HTTPError: HTTP Error 500: Internal Server Error",
+          "elapsed_seconds": 0.894,
+          "schema_valid": false,
+          "schema_error": "missing_keys:unit_correct,reason,retrievable,period_correct,confidence,geography_correct,value_found",
+          "retry": {
+            "model": "qwen3.5:9b-mlx",
+            "ok": false,
+            "json": null,
+            "error": "HTTPError: HTTP Error 500: Internal Server Error",
+            "elapsed_seconds": 3.634,
+            "schema_valid": false,
+            "schema_error": "missing_keys:unit_correct,reason,retrievable,period_correct,confidence,geography_correct,value_found"
+          }
+        },
+        "metadata": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "contains_rigorous_statistical_metadata": false
+          },
+          "text": "{\"contains_rigorous_statistical_metadata\": false}",
+          "parse_error": null,
+          "elapsed_seconds": 28.567,
+          "schema_valid": false,
+          "schema_error": "missing_keys:confidence,fields_missing,metadata_complete,reason",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "has_rigorous_statistical_metadata": false
+            },
+            "text": "{\"has_rigorous_statistical_metadata\": false}",
+            "parse_error": null,
+            "elapsed_seconds": 8.616,
+            "schema_valid": false,
+            "schema_error": "missing_keys:confidence,fields_missing,metadata_complete,reason"
+          }
+        },
+        "citation": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "answer_is_citable": false
+          },
+          "text": "{\"answer_is_citable\": false}",
+          "parse_error": null,
+          "elapsed_seconds": 26.489,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citable,citation_url,confidence,evidence_specific,reason,source_named",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "answer": "No es posible citar de manera precisa y reproducible la consulta del PIB de Argentina para 2024 con la evidencia proporcionada. Sin embargo, la evidencia muestra el portal CEPALSTAT (https://statistics.cepal.org/portal/cepalstat/), que es un portal de datos estadísticos de la CEPAL, y es el lugar general donde se podría buscar dicha información.",
+              "citation_possible": false
+            },
+            "text": "{\"answer\": \"No es posible citar de manera precisa y reproducible la consulta del PIB de Argentina para 2024 con la evidencia proporcionada. Sin embargo, la evidencia muestra el portal CEPALSTAT (https://statistics.cepal.org/portal/cepalstat/), que es un portal de datos estadísticos de la CEPAL, y es el lugar general donde se podría buscar dicha información.\", \"citation_possible\": false}",
+            "parse_error": null,
+            "elapsed_seconds": 28.369,
+            "schema_valid": false,
+            "schema_error": "missing_keys:citable,citation_url,confidence,evidence_specific,reason,source_named"
+          }
+        },
+        "judge": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "discovery": {
+              "answer": "El portal CEPALSTAT es un portal de datos y publicaciones estadísticas de la CEPAL, que es una fuente oficial de información económica para la región. Para consultar el PIB de Argentina, debe navegar por el portal utilizando los filtros de país (Argentina), indicador (PIB) y año (2024).",
+              "confidence": 0.8,
+              "correct": true,
+              "reason": "El sitio web proporcionado es el portal estadístico de la CEPAL (CEPALSTAT), una fuente oficial de datos económicos. Aunque el fragmento no muestra el dato específico, identifica la plataforma correcta para la consulta.",
+              "selected_indicator_description": "PIB (Producto Interno Bruto)"
+            },
+            "retrieval": {
+              "confidence": 0.7,
+              "geography_correct": true,
+              "period_correct": false,
+              "reason": "El portal es relevante para la consulta de datos económicos (PIB), pero el fragmento de evidencia no muestra el dato específico de 2024 ni confirma la disponibilidad inmediata del mismo.",
+              "retrievable": true,
+              "unit_correct": null,
+              "value_found": null
+            },
+            "metadata": {
+              "confidence": 0.7,
+              "fields_missing": [
+                "metadata_complete"
+              ],
+              "metadata_complete": false,
+              "reason": "La evidencia es un portal estadístico relevante, pero no contiene la información completa o el dato específico solicitado.",
+              "metadata_source": "CEPALSTAT"
+            },
+            "citation": {
+              "confidence": 0.7,
+              "citable": true,
+              "evidence_specific": false,
+              "reason": "La URL es la fuente oficial para la consulta, pero el contenido no cita el dato específico de 2024.",
+              "source_named": "CEPALSTAT (CEPAL)"
+            }
+          },
+          "text": "{\"discovery\": {\"answer\": \"El portal CEPALSTAT es un portal de datos y publicaciones estadísticas de la CEPAL, que es una fuente oficial de información económica para la región. Para consultar el PIB de Argentina, debe navegar por el portal utilizando los filtros de país (Argentina), indicador (PIB) y año (2024).\", \"confidence\": 0.8, \"correct\": true, \"reason\": \"El sitio web proporcionado es el portal estadístico de la CEPAL (CEPALSTAT), una fuente oficial de datos económicos. Aunque el fragmento no muestra el dato específico, identifica la plataforma correcta para la consulta.\", \"selected_indicator_description\": \"PIB (Producto Interno Bruto)\"}, \"retrieval\": {\"confidence\": 0.7, \"geography_correct\": true, \"period_correct\": false, \"reason\": \"El portal es relevante para la consulta de datos económicos (PIB), pero el fragmento de evidencia no muestra el dato específico de 2024 ni confirma la disponibilidad inmediata del mismo.\", \"retrievable\": true, \"unit_correct\": null, \"value_found\": null}, \"metadata\": {\"confidence\": 0.7, \"fields_missing\": [\"metadata_complete\"], \"metadata_complete\": false, \"reason\": \"La evidencia es un portal estadístico relevante, pero no contiene la información completa o el dato específico solicitado.\", \"metadata_source\": \"CEPALSTAT\"}, \"citation\": {\"confidence\": 0.7, \"citable\": true, \"evidence_specific\": false, \"reason\": \"La URL es la fuente oficial para la consulta, pero el contenido no cita el dato específico de 2024.\", \"source_named\": \"CEPALSTAT (CEPAL)\"}}",
+          "parse_error": null,
+          "elapsed_seconds": 47.317,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "discovery": {
+                "is_relevant": true,
+                "reason": "The evidence is the CEPALSTAT portal, a statistical data and publications portal, which is an official source for economic indicators like GDP for Latin American countries, including Argentina."
+              },
+              "semantic": {
+                "is_relevant": true,
+                "reason": "The portal is designed to provide official statistical data, making it the correct place to consult economic indicators like GDP."
+              },
+              "retrieval": {
+                "is_relevant": true,
+                "reason": "Although the specific 2024 GDP figure is not visible, the portal itself is the official and appropriate source to consult for this type of data."
+              },
+              "metadata": {
+                "is_relevant": true,
+                "reason": "The source is the CEPAL (Economic Commission for Latin America and Caribbean) statistical portal, which is an official international body."
+              },
+              "citation": {
+                "is_citable": true,
+                "citation_url": "https://statistics.cepal.org/portal/cepalstat/",
+                "is_evidence_specific": true,
+                "reason": "The URL points directly to the official statistical data portal (CEPALSTAT) where the user can search for Argentina's GDP data."
+              }
+            },
+            "text": "{\"discovery\": {\"is_relevant\": true, \"reason\": \"The evidence is the CEPALSTAT portal, a statistical data and publications portal, which is an official source for economic indicators like GDP for Latin American countries, including Argentina.\"}, \"semantic\": {\"is_relevant\": true, \"reason\": \"The portal is designed to provide official statistical data, making it the correct place to consult economic indicators like GDP.\"}, \"retrieval\": {\"is_relevant\": true, \"reason\": \"Although the specific 2024 GDP figure is not visible, the portal itself is the official and appropriate source to consult for this type of data.\"}, \"metadata\": {\"is_relevant\": true, \"reason\": \"The source is the CEPAL (Economic Commission for Latin America and Caribbean) statistical portal, which is an official international body.\"}, \"citation\": {\"is_citable\": true, \"citation_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"is_evidence_specific\": true, \"reason\": \"The URL points directly to the official statistical data portal (CEPALSTAT) where the user can search for Argentina's GDP data.\"}}",
+            "parse_error": null,
+            "elapsed_seconds": 50.307,
+            "schema_valid": false,
+            "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness"
+          }
+        },
+        "adversarial": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "falsification_report": {
+              "overall_assessment": "The frozen evidence is a generic portal landing page (CEPALSTAT) and does not contain the specific data, indicator, or confirmation required to answer the query regarding Argentina's 2024 GDP.",
+              "errors_found": [
+                {
+                  "error_type": "Period",
+                  "detail": "The evidence is a portal structure and does not contain any specific data or projections for the year 2024.",
+                  "impact": "The query requires information for 2024, which is absent from the provided HTML content."
+                },
+                {
+                  "error_type": "Geography",
+                  "detail": "While the portal is international, the evidence does not provide a direct or specific link/data set for Argentina, making the geographical scope unconfirmed.",
+                  "impact": "The evidence is too general to confirm the specific national data requested."
+                },
+                {
+                  "error_type": "Wrong indicator/Unsupported citation",
+                  "detail": "The evidence is merely the portal's entry point and does not display the actual GDP (PIB) indicator or any specific data points, thus failing to provide the required citation or data.",
+                  "impact": "The evidence only confirms the existence of a data portal, not the answer itself."
+                },
+                {
+                  "error_type": "Conflation of discovery and retrieval",
+                  "detail": "The evidence only represents the 'discovery' (finding the general portal) but fails entirely on 'retrieval' (retrieving the specific 2024 PIB data for Argentina).",
+                  "impact": "The judge result cannot be deemed successful because the necessary data retrieval step is missing."
+                }
+              ],
+              "conclusion": "The evidence is insufficient because it is a structural landing page and lacks the specific data (PIB) for the requested period (2024) and geography (Argentina)."
+            }
+          },
+          "text": "{\n  \"falsification_report\": {\n    \"overall_assessment\": \"The frozen evidence is a generic portal landing page (CEPALSTAT) and does not contain the specific data, indicator, or confirmation required to answer the query regarding Argentina's 2024 GDP.\",\n    \"errors_found\": [\n      {\n        \"error_type\": \"Period\",\n        \"detail\": \"The evidence is a portal structure and does not contain any specific data or projections for the year 2024.\",\n        \"impact\": \"The query requires information for 2024, which is absent from the provided HTML content.\"\n      },\n      {\n        \"error_type\": \"Geography\",\n        \"detail\": \"While the portal is international, the evidence does not provide a direct or specific link/data set for Argentina, making the geographical scope unconfirmed.\",\n        \"impact\": \"The evidence is too general to confirm the specific national data requested.\"\n      },\n      {\n        \"error_type\": \"Wrong indicator/Unsupported citation\",\n        \"detail\": \"The evidence is merely the portal's entry point and does not display the actual GDP (PIB) indicator or any specific data points, thus failing to provide the required citation or data.\",\n        \"impact\": \"The evidence only confirms the existence of a data portal, not the answer itself.\"\n      },\n      {\n        \"error_type\": \"Conflation of discovery and retrieval\",\n        \"detail\": \"The evidence only represents the 'discovery' (finding the general portal) but fails entirely on 'retrieval' (retrieving the specific 2024 PIB data for Argentina).\",\n        \"impact\": \"The judge result cannot be deemed successful because the necessary data retrieval step is missing.\"\n      }\n    ],\n    \"conclusion\": \"The evidence is insufficient because it is a structural landing page and lacks the specific data (PIB) for the requested period (2024) and geography (Argentina).\"\n  }\n}",
+          "parse_error": null,
+          "elapsed_seconds": 36.701,
+          "schema_valid": false,
+          "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "citation_correctness": "The evidence provides a general portal landing page (CEPALSTAT) and does not contain a specific citation or direct link to the 2024 GDP data for Argentina. Therefore, the citation is incomplete.",
+              "decisive_reason": "The evidence only shows the main portal page structure and does not retrieve the specific data point (Argentina, PIB, 2024). Any answer claiming the data is available without navigating the portal is unsupported.",
+              "discovery_success": "Failure. The evidence successfully locates the general statistical portal (CEPALSTAT) but fails to discover the specific data set (Argentina's 2024 GDP) required to answer the query.",
+              "metadata_correctness": "The metadata (URL, status) is correct, but the content retrieved is insufficient to answer the query, making the overall metadata useless for the specific task.",
+              "overall_0_100": 20,
+              "retrieval_success": "Failure. The retrieval only provided the portal's index page, not the actual statistical data for the requested period and geography.",
+              "semantic_correctness": "Low. While the source (CEPAL) is semantically relevant, the retrieved content is boilerplate HTML and lacks the semantic information (the actual GDP figure) needed to answer the query.",
+              "temporal_geographic_correctness": "Failure. The evidence does not confirm the existence or location of the 2024 GDP data for Argentina; it only points to a general data portal."
+            },
+            "text": "{\"citation_correctness\": \"The evidence provides a general portal landing page (CEPALSTAT) and does not contain a specific citation or direct link to the 2024 GDP data for Argentina. Therefore, the citation is incomplete.\", \"decisive_reason\": \"The evidence only shows the main portal page structure and does not retrieve the specific data point (Argentina, PIB, 2024). Any answer claiming the data is available without navigating the portal is unsupported.\", \"discovery_success\": \"Failure. The evidence successfully locates the general statistical portal (CEPALSTAT) but fails to discover the specific data set (Argentina's 2024 GDP) required to answer the query.\", \"metadata_correctness\": \"The metadata (URL, status) is correct, but the content retrieved is insufficient to answer the query, making the overall metadata useless for the specific task.\", \"overall_0_100\": 20, \"retrieval_success\": \"Failure. The retrieval only provided the portal's index page, not the actual statistical data for the requested period and geography.\", \"semantic_correctness\": \"Low. While the source (CEPAL) is semantically relevant, the retrieved content is boilerplate HTML and lacks the semantic information (the actual GDP figure) needed to answer the query.\", \"temporal_geographic_correctness\": \"Failure. The evidence does not confirm the existence or location of the 2024 GDP data for Argentina; it only points to a general data portal.\"}",
+            "parse_error": null,
+            "elapsed_seconds": 27.919,
+            "schema_valid": false,
+            "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict"
+          }
+        }
+      }
+    },
+    {
+      "query": {
+        "query_id": "Q051",
+        "portal_id": "cepalstat",
+        "stratum": "discovery",
+        "query": "Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.",
+        "country": "Brazil",
+        "country_code": "BRA"
+      },
+      "repeat": 1,
+      "candidate_url": null,
+      "evidence_sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+      "evidence": {
+        "urls": [
+          "https://statistics.cepal.org/portal/cepalstat/"
+        ],
+        "pages": [
+          {
+            "url": "https://statistics.cepal.org/portal/cepalstat/",
+            "status": 200,
+            "content_type": "text/html",
+            "text": "<!DOCTYPE html> <html> <head> <title>CEPALSTAT Portal de Datos y Publicaciones Estadísticas</title> <meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"> <link rel=\"shortcut icon\" href=\"images/favicon_un.png\" type=\"image/png\" /> <link rel=\"stylesheet\" href=\"../../assets/bootstrap-4.3.1.min.css\" > <script src=\"../../assets/jquery.min.js\"></script> <script src=\"../../assets/bootstrap-4.3.1.min.js\" ></script> <script src=\"assets/portal-actions.js\"></script> <script src=\"configuration.js\"></script> <link rel=\"stylesheet\" href=\"assets/style-5column-boxes.css?v=20250312\" > <script> $(document).ready(function () { var idioma = getQueryVariable(\"lang\"); if(idioma==\"en\") { $(document).attr(\"title\", \"CEPALSTAT Statistical Data Portal and Publications\"); $(\"#menu-cabecera\").load(\"header-en.html?v=20260703\"); $(\"#modulos\").load(\"en/module-home.html?v=20260703\"); $(\"#footer-content\").load(\"footer-en.html?v=20260703\"); } else { $(\"#menu-cabecera\").load(\"header-es.html?v=20260703\"); $(\"#modulos\").load(\"es/modulo-inicio.html?v=20260703\"); $(\"#footer-content\").load(\"footer-es.html?v=20260703\"); } scrollTopPage(); }); </script> </head> <body> <div id=\"menu-cabecera\"></div> <div id=\"modulos\"></div> <div id=\"footer-content\"></div> </body> </html> "
+          }
+        ],
+        "sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+        "captured_at": "2026-08-22T22:04:04Z"
+      },
+      "models": {
+        "discovery": "gemma4:latest",
+        "semantic": "gemma4:latest",
+        "retrieval": "qwen3.5:9b-mlx",
+        "metadata": "gemma4:latest",
+        "citation": "gemma4:latest",
+        "judge": "gemma4:latest",
+        "adversarial": "gemma4:latest"
+      },
+      "agents_raw": {
+        "discovery": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "resource_url": "https://statistics.cepal.org/portal/cepalstat/",
+            "explanation": "Este portal es el sitio oficial de CEPALSTAT (Estadísticas de la CEPAL), la división encargada de recopilar y publicar datos estadísticos para América Latina y el Caribe. Dado que Brasil es un país de la región, este portal es la fuente más adecuada y autorizada para localizar indicadores económicos clave como el PIB. Aunque la página principal requiere la navegación interna para seleccionar el país (Brasil) y el indicador específico (PIB), es el punto de partida oficial y más relevante proporcionado en la evidencia."
+          },
+          "text": "{\n  \"resource_url\": \"https://statistics.cepal.org/portal/cepalstat/\",\n  \"explanation\": \"Este portal es el sitio oficial de CEPALSTAT (Estadísticas de la CEPAL), la división encargada de recopilar y publicar datos estadísticos para América Latina y el Caribe. Dado que Brasil es un país de la región, este portal es la fuente más adecuada y autorizada para localizar indicadores económicos clave como el PIB. Aunque la página principal requiere la navegación interna para seleccionar el país (Brasil) y el indicador específico (PIB), es el punto de partida oficial y más relevante proporcionado en la evidencia.\"\n}",
+          "parse_error": null,
+          "elapsed_seconds": 12.401,
+          "schema_valid": false,
+          "schema_error": "missing_keys:best_url,confidence,discovered,reason",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "resource_url": "https://statistics.cepal.org/portal/cepalstat/",
+              "indicator_name": "PIB (Producto Interno Bruto) de Brasil",
+              "explanation": "Aunque la evidencia proporcionada es la página principal del portal CEPALSTAT, este es el recurso oficial y más adecuado porque es la base de datos estadística de la Comisión Económica para América Latina y el Caribe (CEPAL). Este portal está diseñado específicamente para recopilar, procesar y publicar indicadores macroeconómicos clave, incluido el PIB, para los países de la región, siendo Brasil uno de los principales países cubiertos por sus estadísticas."
+            },
+            "text": "{\"resource_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"indicator_name\": \"PIB (Producto Interno Bruto) de Brasil\", \"explanation\": \"Aunque la evidencia proporcionada es la página principal del portal CEPALSTAT, este es el recurso oficial y más adecuado porque es la base de datos estadística de la Comisión Económica para América Latina y el Caribe (CEPAL). Este portal está diseñado específicamente para recopilar, procesar y publicar indicadores macroeconómicos clave, incluido el PIB, para los países de la región, siendo Brasil uno de los principales países cubiertos por sus estadísticas.\"}",
+            "parse_error": null,
+            "elapsed_seconds": 15.387,
+            "schema_valid": false,
+            "schema_error": "missing_keys:best_url,confidence,discovered,reason"
+          }
+        },
+        "semantic": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "indicator": "Producto Interno Bruto (PIB)",
+            "explanation": "La página proporcionada, CEPALSTAT, es el Portal de Datos y Publicaciones Estadísticas de la Comisión Económica para América Latina y el Caribe (CEPAL). Aunque la fuente más 'oficial' a nivel nacional sería el IBGE (Instituto Brasileiro de Geografia e Estatística), CEPALSTAT es una base de datos internacional altamente reconocida y utilizada para la recopilación y comparación de indicadores macroeconómicos (como el PIB) de múltiples países, incluido Brasil. Es la página adecuada porque ofrece una estructura organizada para buscar series históricas de PIB por país, permitiendo la verificación de conceptos, unidades (generalmente USD o moneda local) y frecuencias (trimestral, anual) necesarias para un análisis estadístico completo.",
+            "is_suitable": true
+          },
+          "text": "{\"indicator\": \"Producto Interno Bruto (PIB)\", \"explanation\": \"La página proporcionada, CEPALSTAT, es el Portal de Datos y Publicaciones Estadísticas de la Comisión Económica para América Latina y el Caribe (CEPAL). Aunque la fuente más 'oficial' a nivel nacional sería el IBGE (Instituto Brasileiro de Geografia e Estatística), CEPALSTAT es una base de datos internacional altamente reconocida y utilizada para la recopilación y comparación de indicadores macroeconómicos (como el PIB) de múltiples países, incluido Brasil. Es la página adecuada porque ofrece una estructura organizada para buscar series históricas de PIB por país, permitiendo la verificación de conceptos, unidades (generalmente USD o moneda local) y frecuencias (trimestral, anual) necesarias para un análisis estadístico completo.\", \"is_suitable\": true}",
+          "parse_error": null,
+          "elapsed_seconds": 18.228,
+          "schema_valid": false,
+          "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "indicator": "PIB (Producto Interno Bruto)",
+              "country": "Brasil",
+              "explanation": "El portal CEPALSTAT es una fuente de datos estadísticos muy completa y reconocida a nivel regional (América Latina y el Caribe), por lo que es una fuente válida para consultar el PIB de Brasil. Sin embargo, si se requiere el indicador *oficial* y más primario, la fuente más adecuada sería el Instituto Brasileiro de Geografia e Estatística (IBGE) o el Banco Central de Brasil (BCB), ya que son las instituciones gubernamentales encargadas de la recopilación y publicación primaria de estas estadísticas en Brasil. El portal CEPALSTAT es excelente para la comparación regional y el análisis, pero no es la fuente primaria oficial."
+            },
+            "text": "{\"indicator\": \"PIB (Producto Interno Bruto)\", \"country\": \"Brasil\", \"explanation\": \"El portal CEPALSTAT es una fuente de datos estadísticos muy completa y reconocida a nivel regional (América Latina y el Caribe), por lo que es una fuente válida para consultar el PIB de Brasil. Sin embargo, si se requiere el indicador *oficial* y más primario, la fuente más adecuada sería el Instituto Brasileiro de Geografia e Estatística (IBGE) o el Banco Central de Brasil (BCB), ya que son las instituciones gubernamentales encargadas de la recopilación y publicación primaria de estas estadísticas en Brasil. El portal CEPALSTAT es excelente para la comparación regional y el análisis, pero no es la fuente primaria oficial.\"}",
+            "parse_error": null,
+            "elapsed_seconds": 19.783,
+            "schema_valid": false,
+            "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description"
+          }
+        },
+        "retrieval": {
+          "model": "qwen3.5:9b-mlx",
+          "ok": false,
+          "json": null,
+          "error": "HTTPError: HTTP Error 500: Internal Server Error",
+          "elapsed_seconds": 0.122,
+          "schema_valid": false,
+          "schema_error": "missing_keys:unit_correct,reason,retrievable,period_correct,confidence,geography_correct,value_found",
+          "retry": {
+            "model": "qwen3.5:9b-mlx",
+            "ok": false,
+            "json": null,
+            "error": "HTTPError: HTTP Error 500: Internal Server Error",
+            "elapsed_seconds": 0.049,
+            "schema_valid": false,
+            "schema_error": "missing_keys:unit_correct,reason,retrievable,period_correct,confidence,geography_correct,value_found"
+          }
+        },
+        "metadata": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "contains_rigorous_statistical_metadata": false
+          },
+          "text": "{\"contains_rigorous_statistical_metadata\": false}",
+          "parse_error": null,
+          "elapsed_seconds": 15.398,
+          "schema_valid": false,
+          "schema_error": "missing_keys:confidence,fields_missing,metadata_complete,reason",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "has_rigorous_statistical_metadata": false,
+              "reason": "The evidence provided is the landing page (portal) of the CEPALSTAT statistical data portal. While CEPAL is a recognized source, the page itself does not display any specific statistical data, nor does it contain the required rigorous metadata (definition, unit, frequency, period, dimensions, or methodology) for Brazil's GDP. It is merely a gateway to the data.",
+              "metadata_details": {
+                "definition": "Not present",
+                "source": "CEPAL (General portal, specific data source not visible)",
+                "unit": "Not present",
+                "frequency": "Not present",
+                "period": "Not present",
+                "dimensions": "Not present",
+                "methodology": "Not present"
+              }
+            },
+            "text": "{\"has_rigorous_statistical_metadata\": false, \"reason\": \"The evidence provided is the landing page (portal) of the CEPALSTAT statistical data portal. While CEPAL is a recognized source, the page itself does not display any specific statistical data, nor does it contain the required rigorous metadata (definition, unit, frequency, period, dimensions, or methodology) for Brazil's GDP. It is merely a gateway to the data.\", \"metadata_details\": {\"definition\": \"Not present\", \"source\": \"CEPAL (General portal, specific data source not visible)\", \"unit\": \"Not present\", \"frequency\": \"Not present\", \"period\": \"Not present\", \"dimensions\": \"Not present\", \"methodology\": \"Not present\"}}",
+            "parse_error": null,
+            "elapsed_seconds": 17.632,
+            "schema_valid": false,
+            "schema_error": "missing_keys:confidence,fields_missing,metadata_complete"
+          }
+        },
+        "citation": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "answer": "La evidencia proporcionada es la página de inicio del portal estadístico de CEPALSTAT. Aunque este portal es una fuente adecuada para indicadores económicos internacionales, el fragmento de código HTML no contiene el indicador específico de PIB de Brasil ni la navegación directa para localizarlo. Por lo tanto, no es posible localizar el indicador ni explicar con precisión por qué esta página es la adecuada basándose únicamente en el texto visible.",
+            "is_citable": false
+          },
+          "text": "{\n  \"answer\": \"La evidencia proporcionada es la página de inicio del portal estadístico de CEPALSTAT. Aunque este portal es una fuente adecuada para indicadores económicos internacionales, el fragmento de código HTML no contiene el indicador específico de PIB de Brasil ni la navegación directa para localizarlo. Por lo tanto, no es posible localizar el indicador ni explicar con precisión por qué esta página es la adecuada basándose únicamente en el texto visible.\",\n  \"is_citable\": false\n}",
+          "parse_error": null,
+          "elapsed_seconds": 10.333,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citable,citation_url,confidence,evidence_specific,reason,source_named",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "indicator_location": "No se puede localizar el indicador específico de PIB de Brasil en el texto proporcionado. Sin embargo, la URL pertenece al CEPALSTAT Portal, que es la plataforma diseñada para albergar este tipo de datos.",
+              "explanation": "La página proporcionada es el 'CEPALSTAT Portal de Datos y Publicaciones Estadísticas' de la CEPAL. Este portal es la fuente adecuada porque es una plataforma estadística internacional dedicada a recopilar, procesar y publicar indicadores económicos y sociales de múltiples países, incluido Brasil. Aunque el texto visible es la estructura de la página de inicio y no contiene el dato específico, la naturaleza del sitio lo confirma como el repositorio oficial para la información solicitada.",
+              "confidence": "Medium",
+              "reason": "El texto no contiene el dato específico, pero la URL y el título confirman que es el portal estadístico correcto para la búsqueda.",
+              "selected_indicator_description": "El portal es la fuente adecuada para buscar el indicador de PIB de Brasil."
+            },
+            "text": "{\"indicator_location\": \"No se puede localizar el indicador específico de PIB de Brasil en el texto proporcionado. Sin embargo, la URL pertenece al CEPALSTAT Portal, que es la plataforma diseñada para albergar este tipo de datos.\", \"explanation\": \"La página proporcionada es el 'CEPALSTAT Portal de Datos y Publicaciones Estadísticas' de la CEPAL. Este portal es la fuente adecuada porque es una plataforma estadística internacional dedicada a recopilar, procesar y publicar indicadores económicos y sociales de múltiples países, incluido Brasil. Aunque el texto visible es la estructura de la página de inicio y no contiene el dato específico, la naturaleza del sitio lo confirma como el repositorio oficial para la información solicitada.\", \"confidence\": \"Medium\", \"reason\": \"El texto no contiene el dato específico, pero la URL y el título confirman que es el portal estadístico correcto para la búsqueda.\", \"selected_indicator_description\": \"El portal es la fuente adecuada para buscar el indicador de PIB de Brasil.\"}",
+            "parse_error": null,
+            "elapsed_seconds": 33.185,
+            "schema_valid": false,
+            "schema_error": "missing_keys:citable,citation_url,evidence_specific,source_named"
+          }
+        },
+        "judge": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "score": 0.0,
+            "reason": "The candidate output contains only schema errors and does not provide any substantive answer to the query. It fails to locate the official GDP indicator for Brazil or explain the suitability of any page, despite the evidence being a statistical data portal (CEPALSTAT).",
+            "assessment": {
+              "query_addressed": false,
+              "evidence_used": false,
+              "completeness": "Incomplete/Missing"
+            }
+          },
+          "text": "{\"score\": 0.0, \"reason\": \"The candidate output contains only schema errors and does not provide any substantive answer to the query. It fails to locate the official GDP indicator for Brazil or explain the suitability of any page, despite the evidence being a statistical data portal (CEPALSTAT).\", \"assessment\": {\"query_addressed\": false, \"evidence_used\": false, \"completeness\": \"Incomplete/Missing\"}}",
+          "parse_error": null,
+          "elapsed_seconds": 22.712,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "discovery": {
+                "confidence": 0.9,
+                "correct": true,
+                "reason": "The evidence is a statistical data portal (CEPALSTAT), which is the appropriate type of source for locating official economic indicators like GDP.",
+                "selected_indicator_description": "The portal is designed to host and provide access to official statistical data, including GDP, for various countries in the region."
+              },
+              "semantic": {
+                "ambiguity_flags": [],
+                "confidence": 0.8,
+                "correct": true,
+                "reason": "The portal is the correct starting point for finding the official GDP indicator for Brazil, as it is a specialized statistical database maintained by CEPAL.",
+                "selected_indicator_description": "GDP (Producto Interno Bruto) for Brazil."
+              },
+              "retrieval": {
+                "confidence": 0.9,
+                "geography_correct": true,
+                "period_correct": true,
+                "reason": "The portal is designed to retrieve official economic data (like GDP) for Brazil (a country covered by CEPAL's scope).",
+                "retrievable": true,
+                "value_found": false,
+                "unit_correct": true
+              },
+              "metadata": {
+                "confidence": 0.9,
+                "fields_missing": [],
+                "metadata_complete": true,
+                "reason": "The source is CEPALSTAT, a highly reputable and specialized source for economic statistics in Latin America, making it an authoritative source for the requested indicator.",
+                "metadata_source": "CEPAL"
+              },
+              "citation": {
+                "citable": true,
+                "confidence": 0.9,
+                "evidence_specific": true,
+                "reason": "The URL provided is the official portal for statistical data (CEPALSTAT), which is the authoritative source for the requested indicator.",
+                "source_named": "CEPALSTAT"
+              }
+            },
+            "text": "{\"discovery\": {\"confidence\": 0.9, \"correct\": true, \"reason\": \"The evidence is a statistical data portal (CEPALSTAT), which is the appropriate type of source for locating official economic indicators like GDP.\", \"selected_indicator_description\": \"The portal is designed to host and provide access to official statistical data, including GDP, for various countries in the region.\"}, \"semantic\": {\"ambiguity_flags\": [], \"confidence\": 0.8, \"correct\": true, \"reason\": \"The portal is the correct starting point for finding the official GDP indicator for Brazil, as it is a specialized statistical database maintained by CEPAL.\", \"selected_indicator_description\": \"GDP (Producto Interno Bruto) for Brazil.\"}, \"retrieval\": {\"confidence\": 0.9, \"geography_correct\": true, \"period_correct\": true, \"reason\": \"The portal is designed to retrieve official economic data (like GDP) for Brazil (a country covered by CEPAL's scope).\", \"retrievable\": true, \"value_found\": false, \"unit_correct\": true}, \"metadata\": {\"confidence\": 0.9, \"fields_missing\": [], \"metadata_complete\": true, \"reason\": \"The source is CEPALSTAT, a highly reputable and specialized source for economic statistics in Latin America, making it an authoritative source for the requested indicator.\", \"metadata_source\": \"CEPAL\"}, \"citation\": {\"citable\": true, \"confidence\": 0.9, \"evidence_specific\": true, \"reason\": \"The URL provided is the official portal for statistical data (CEPALSTAT), which is the authoritative source for the requested indicator.\", \"source_named\": \"CEPALSTAT\"}}",
+            "parse_error": null,
+            "elapsed_seconds": 54.104,
+            "schema_valid": false,
+            "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness"
+          }
+        },
+        "adversarial": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "falsification_reason": "The judge result is flawed because it fails to account for the nature of the frozen evidence. The provided HTML content is the main landing page (portal) of CEPALSTAT, not the specific data page containing the GDP indicator for Brazil. Therefore, the judge cannot accurately assess metrics like `citation_correctness`, `semantic_correctness`, or `temporal_geographic_correctness` because the required data point (Brazil's GDP) is absent from the evidence. The judge's inability to populate these keys is a direct consequence of the evidence's lack of specificity, not necessarily a failure of the retrieval process itself.",
+            "error_type": "Misinterpretation of Evidence Scope",
+            "suggested_correction": "The judge should note that while the URL is relevant for finding the data, the current evidence is insufficient to answer the query fully, and thus, a comprehensive scoring of data accuracy is impossible."
+          },
+          "text": "{\"falsification_reason\": \"The judge result is flawed because it fails to account for the nature of the frozen evidence. The provided HTML content is the main landing page (portal) of CEPALSTAT, not the specific data page containing the GDP indicator for Brazil. Therefore, the judge cannot accurately assess metrics like `citation_correctness`, `semantic_correctness`, or `temporal_geographic_correctness` because the required data point (Brazil's GDP) is absent from the evidence. The judge's inability to populate these keys is a direct consequence of the evidence's lack of specificity, not necessarily a failure of the retrieval process itself.\", \"error_type\": \"Misinterpretation of Evidence Scope\", \"suggested_correction\": \"The judge should note that while the URL is relevant for finding the data, the current evidence is insufficient to answer the query fully, and thus, a comprehensive scoring of data accuracy is impossible.\"}",
+          "parse_error": null,
+          "elapsed_seconds": 47.813,
+          "schema_valid": false,
+          "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "citation_correctness": "false",
+              "decisive_reason": "The provided evidence is the main landing page (portal index) of CEPALSTAT, which is a general statistical portal. It does not contain the specific GDP indicator for Brazil, nor does it provide the necessary data retrieval path or specific data points (indicator, unit, period, or geography) required to answer the query. The evidence only confirms the existence of a statistical resource, not the specific data.",
+              "discovery_success": "true",
+              "metadata_correctness": "true",
+              "overall_0_100": 30,
+              "retrieval_success": "false",
+              "semantic_correctness": "false",
+              "temporal_geographic_correctness": "false"
+            },
+            "text": "{\"citation_correctness\": \"false\", \"decisive_reason\": \"The provided evidence is the main landing page (portal index) of CEPALSTAT, which is a general statistical portal. It does not contain the specific GDP indicator for Brazil, nor does it provide the necessary data retrieval path or specific data points (indicator, unit, period, or geography) required to answer the query. The evidence only confirms the existence of a statistical resource, not the specific data.\", \"discovery_success\": \"true\", \"metadata_correctness\": \"true\", \"overall_0_100\": 30, \"retrieval_success\": \"false\", \"semantic_correctness\": \"false\", \"temporal_geographic_correctness\": \"false\"}",
+            "parse_error": null,
+            "elapsed_seconds": 42.145,
+            "schema_valid": false,
+            "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict"
+          }
+        }
+      }
+    },
+    {
+      "query": {
+        "query_id": "Q052",
+        "portal_id": "cepalstat",
+        "stratum": "discovery",
+        "query": "Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.",
+        "country": "Mexico",
+        "country_code": "MEX"
+      },
+      "repeat": 1,
+      "candidate_url": null,
+      "evidence_sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+      "evidence": {
+        "urls": [
+          "https://statistics.cepal.org/portal/cepalstat/"
+        ],
+        "pages": [
+          {
+            "url": "https://statistics.cepal.org/portal/cepalstat/",
+            "status": 200,
+            "content_type": "text/html",
+            "text": "<!DOCTYPE html> <html> <head> <title>CEPALSTAT Portal de Datos y Publicaciones Estadísticas</title> <meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"> <link rel=\"shortcut icon\" href=\"images/favicon_un.png\" type=\"image/png\" /> <link rel=\"stylesheet\" href=\"../../assets/bootstrap-4.3.1.min.css\" > <script src=\"../../assets/jquery.min.js\"></script> <script src=\"../../assets/bootstrap-4.3.1.min.js\" ></script> <script src=\"assets/portal-actions.js\"></script> <script src=\"configuration.js\"></script> <link rel=\"stylesheet\" href=\"assets/style-5column-boxes.css?v=20250312\" > <script> $(document).ready(function () { var idioma = getQueryVariable(\"lang\"); if(idioma==\"en\") { $(document).attr(\"title\", \"CEPALSTAT Statistical Data Portal and Publications\"); $(\"#menu-cabecera\").load(\"header-en.html?v=20260703\"); $(\"#modulos\").load(\"en/module-home.html?v=20260703\"); $(\"#footer-content\").load(\"footer-en.html?v=20260703\"); } else { $(\"#menu-cabecera\").load(\"header-es.html?v=20260703\"); $(\"#modulos\").load(\"es/modulo-inicio.html?v=20260703\"); $(\"#footer-content\").load(\"footer-es.html?v=20260703\"); } scrollTopPage(); }); </script> </head> <body> <div id=\"menu-cabecera\"></div> <div id=\"modulos\"></div> <div id=\"footer-content\"></div> </body> </html> "
+          }
+        ],
+        "sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+        "captured_at": "2026-08-22T22:04:05Z"
+      },
+      "models": {
+        "discovery": "gemma4:latest",
+        "semantic": "gemma4:latest",
+        "retrieval": "qwen3.5:9b-mlx",
+        "metadata": "gemma4:latest",
+        "citation": "gemma4:latest",
+        "judge": "gemma4:latest",
+        "adversarial": "gemma4:latest"
+      },
+      "agents_raw": {
+        "discovery": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "url": "https://statistics.cepal.org/portal/cepalstat/",
+            "source": "CEPALSTAT (Portal de Datos y Publicaciones Estadísticas de la CEPAL)"
+          },
+          "text": "{\"url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"source\": \"CEPALSTAT (Portal de Datos y Publicaciones Estadísticas de la CEPAL)\"}",
+          "parse_error": null,
+          "elapsed_seconds": 38.284,
+          "schema_valid": false,
+          "schema_error": "missing_keys:best_url,confidence,discovered,reason",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "resource_url": "https://statistics.cepal.org/portal/cepalstat/",
+              "source_name": "CEPALSTAT Portal de Datos y Publicaciones Estadísticas"
+            },
+            "text": "{\"resource_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"source_name\": \"CEPALSTAT Portal de Datos y Publicaciones Estadísticas\"}",
+            "parse_error": null,
+            "elapsed_seconds": 5.359,
+            "schema_valid": false,
+            "schema_error": "missing_keys:best_url,confidence,discovered,reason"
+          }
+        },
+        "semantic": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "indicator": "PIB (Producto Interno Bruto)",
+            "source": "CEPALSTAT (Portal de Datos y Publicaciones Estadísticas de la CEPAL)",
+            "details": "El portal CEPALSTAT es una fuente oficial y reconocida para datos macroeconómicos, incluyendo el PIB, para México. Se recomienda navegar por el portal utilizando los filtros de país (México) y variable (PIB) para encontrar la serie de datos específica.",
+            "concept": "Macroeconomía",
+            "unit": "Moneda local o USD (dependiendo de la serie)",
+            "prices": "N/A",
+            "frequency": "Anual/Trimestral (dependiendo de la serie)",
+            "geography": "México",
+            "period": "Disponible en el portal"
+          },
+          "text": "{\"indicator\": \"PIB (Producto Interno Bruto)\", \"source\": \"CEPALSTAT (Portal de Datos y Publicaciones Estadísticas de la CEPAL)\", \"details\": \"El portal CEPALSTAT es una fuente oficial y reconocida para datos macroeconómicos, incluyendo el PIB, para México. Se recomienda navegar por el portal utilizando los filtros de país (México) y variable (PIB) para encontrar la serie de datos específica.\", \"concept\": \"Macroeconomía\", \"unit\": \"Moneda local o USD (dependiendo de la serie)\", \"prices\": \"N/A\", \"frequency\": \"Anual/Trimestral (dependiendo de la serie)\", \"geography\": \"México\", \"period\": \"Disponible en el portal\"}",
+          "parse_error": null,
+          "elapsed_seconds": 37.106,
+          "schema_valid": false,
+          "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "indicator_series": "CEPALSTAT Portal de Datos y Publicaciones Estadísticas",
+              "source_url": "https://statistics.cepal.org/portal/cepalstat/",
+              "concept": "PIB (Producto Interno Bruto)",
+              "unit": "Datos económicos (generalmente en USD o moneda local)",
+              "prices": "N/A",
+              "frequency": "Varias (anual, trimestral, etc.)",
+              "geography": "México (y región de América Latina y el Caribe)",
+              "period": "Histórico"
+            },
+            "text": "{\"indicator_series\": \"CEPALSTAT Portal de Datos y Publicaciones Estadísticas\", \"source_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"concept\": \"PIB (Producto Interno Bruto)\", \"unit\": \"Datos económicos (generalmente en USD o moneda local)\", \"prices\": \"N/A\", \"frequency\": \"Varias (anual, trimestral, etc.)\", \"geography\": \"México (y región de América Latina y el Caribe)\", \"period\": \"Histórico\"}",
+            "parse_error": null,
+            "elapsed_seconds": 14.082,
+            "schema_valid": false,
+            "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description"
+          }
+        },
+        "retrieval": {
+          "model": "qwen3.5:9b-mlx",
+          "ok": false,
+          "json": null,
+          "error": "HTTPError: HTTP Error 500: Internal Server Error",
+          "elapsed_seconds": 0.104,
+          "schema_valid": false,
+          "schema_error": "missing_keys:unit_correct,reason,retrievable,period_correct,confidence,geography_correct,value_found",
+          "retry": {
+            "model": "qwen3.5:9b-mlx",
+            "ok": false,
+            "json": null,
+            "error": "HTTPError: HTTP Error 500: Internal Server Error",
+            "elapsed_seconds": 0.051,
+            "schema_valid": false,
+            "schema_error": "missing_keys:unit_correct,reason,retrievable,period_correct,confidence,geography_correct,value_found"
+          }
+        },
+        "metadata": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "contains_rigorous_statistical_metadata": false
+          },
+          "text": "{\"contains_rigorous_statistical_metadata\": false}",
+          "parse_error": null,
+          "elapsed_seconds": 15.859,
+          "schema_valid": false,
+          "schema_error": "missing_keys:confidence,fields_missing,metadata_complete,reason",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "has_rigorous_statistical_metadata": false
+            },
+            "text": "{\"has_rigorous_statistical_metadata\": false}",
+            "parse_error": null,
+            "elapsed_seconds": 8.914,
+            "schema_valid": false,
+            "schema_error": "missing_keys:confidence,fields_missing,metadata_complete,reason"
+          }
+        },
+        "citation": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "answer": "El portal de CEPALSTAT (Comisión Económica para América Latina y el Caribe) es una fuente oficial de datos estadísticos que probablemente contenga información sobre el PIB de México. Sin embargo, el texto proporcionado es la página principal del portal y no contiene un enlace directo o una API específica con los datos de PIB de México.",
+            "source": "https://statistics.cepal.org/portal/cepalstat/"
+          },
+          "text": "{\"answer\": \"El portal de CEPALSTAT (Comisión Económica para América Latina y el Caribe) es una fuente oficial de datos estadísticos que probablemente contenga información sobre el PIB de México. Sin embargo, el texto proporcionado es la página principal del portal y no contiene un enlace directo o una API específica con los datos de PIB de México.\", \"source\": \"https://statistics.cepal.org/portal/cepalstat/\"}",
+          "parse_error": null,
+          "elapsed_seconds": 12.561,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citable,citation_url,confidence,evidence_specific,reason,source_named",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "source_url": "https://statistics.cepal.org/portal/cepalstat/",
+              "source_name": "CEPALSTAT Portal de Datos y Publicaciones Estadísticas",
+              "data_type": "PIB (Producto Interno Bruto)",
+              "country": "México",
+              "citation_details": "El portal CEPALSTAT es un portal de datos estadísticos de la CEPAL, que es la fuente oficial para consultar indicadores económicos como el PIB de México. Se recomienda navegar por el portal para seleccionar la serie de tiempo y la geografía deseadas.",
+              "is_api_available": "No se proporciona un endpoint de API directo en el texto, pero el portal es la fuente oficial de datos."
+            },
+            "text": "{\"source_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"source_name\": \"CEPALSTAT Portal de Datos y Publicaciones Estadísticas\", \"data_type\": \"PIB (Producto Interno Bruto)\", \"country\": \"México\", \"citation_details\": \"El portal CEPALSTAT es un portal de datos estadísticos de la CEPAL, que es la fuente oficial para consultar indicadores económicos como el PIB de México. Se recomienda navegar por el portal para seleccionar la serie de tiempo y la geografía deseadas.\", \"is_api_available\": \"No se proporciona un endpoint de API directo en el texto, pero el portal es la fuente oficial de datos.\"}",
+            "parse_error": null,
+            "elapsed_seconds": 14.638,
+            "schema_valid": false,
+            "schema_error": "missing_keys:citable,citation_url,confidence,evidence_specific,reason,source_named"
+          }
+        },
+        "judge": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "discovery": {
+              "found": true,
+              "description": "The evidence points to CEPALSTAT, a statistical data portal managed by the Economic Commission for Latin America and Caribbean (CEPAL), which is an official source for economic data, including GDP, for Mexico.",
+              "source_url": "https://statistics.cepal.org/portal/cepalstat/"
+            },
+            "semantic": {
+              "schema_error": null,
+              "ambiguity_flags": [],
+              "confidence": 0.9,
+              "correct": true,
+              "reason": "The portal is dedicated to statistical data (CEPALSTAT) and is the appropriate official source for economic indicators like GDP for Mexico.",
+              "selected_indicator_description": "GDP (Producto Interno Bruto)"
+            },
+            "retrieval": {
+              "schema_error": null,
+              "unit_correct": false,
+              "reason": "The specific data values, units, or periods for Mexico's GDP are not visible on the landing page provided in the evidence.",
+              "retrievable": false,
+              "period_correct": false,
+              "confidence": 0.7,
+              "geography_correct": true,
+              "value_found": false
+            },
+            "metadata": {
+              "schema_error": null,
+              "confidence": 0.9,
+              "fields_missing": [],
+              "metadata_complete": true,
+              "reason": "The evidence provides a direct link to an official, relevant statistical portal.",
+              "metadata_source": "CEPALSTAT"
+            },
+            "citation": {
+              "schema_error": null,
+              "citable": true,
+              "citation_url": "https://statistics.cepal.org/portal/cepalstat/",
+              "confidence": 0.9,
+              "evidence_specific": "The URL and title confirm the source as the official CEPALSTAT portal.",
+              "reason": "The provided URL is the official portal for statistical data from CEPAL, making it the correct source to cite for economic data.",
+              "source_named": "CEPALSTAT (CEPAL)"
+            }
+          },
+          "text": "{\n  \"discovery\": {\n    \"found\": true,\n    \"description\": \"The evidence points to CEPALSTAT, a statistical data portal managed by the Economic Commission for Latin America and Caribbean (CEPAL), which is an official source for economic data, including GDP, for Mexico.\",\n    \"source_url\": \"https://statistics.cepal.org/portal/cepalstat/\"\n  },\n  \"semantic\": {\n    \"schema_error\": null,\n    \"ambiguity_flags\": [],\n    \"confidence\": 0.9,\n    \"correct\": true,\n    \"reason\": \"The portal is dedicated to statistical data (CEPALSTAT) and is the appropriate official source for economic indicators like GDP for Mexico.\",\n    \"selected_indicator_description\": \"GDP (Producto Interno Bruto)\"\n  },\n  \"retrieval\": {\n    \"schema_error\": null,\n    \"unit_correct\": false,\n    \"reason\": \"The specific data values, units, or periods for Mexico's GDP are not visible on the landing page provided in the evidence.\",\n    \"retrievable\": false,\n    \"period_correct\": false,\n    \"confidence\": 0.7,\n    \"geography_correct\": true,\n    \"value_found\": false\n  },\n  \"metadata\": {\n    \"schema_error\": null,\n    \"confidence\": 0.9,\n    \"fields_missing\": [],\n    \"metadata_complete\": true,\n    \"reason\": \"The evidence provides a direct link to an official, relevant statistical portal.\",\n    \"metadata_source\": \"CEPALSTAT\"\n  },\n  \"citation\": {\n    \"schema_error\": null,\n    \"citable\": true,\n    \"citation_url\": \"https://statistics.cepal.org/portal/cepalstat/\",\n    \"confidence\": 0.9,\n    \"evidence_specific\": \"The URL and title confirm the source as the official CEPALSTAT portal.\",\n    \"reason\": \"The provided URL is the official portal for statistical data from CEPAL, making it the correct source to cite for economic data.\",\n    \"source_named\": \"CEPALSTAT (CEPAL)\"\n  }\n}",
+          "parse_error": null,
+          "elapsed_seconds": 27.643,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "discovery": {
+                "gdp_data_found": true,
+                "source_type": "Official Statistical Portal",
+                "details": "The CEPALSTAT portal is a comprehensive source for economic and social statistics for Latin America and the Caribbean, including GDP data for Mexico.",
+                "url": "https://statistics.cepal.org/portal/cepalstat/"
+              },
+              "semantic": {
+                "schema_error": null,
+                "schema_output": {
+                  "indicator_description": "Gross Domestic Product (PIB)",
+                  "indicator_type": "Macroeconomic",
+                  "data_availability": "High (Expected)",
+                  "suggested_search_terms": [
+                    "PIB",
+                    "Mexico",
+                    "Gross Domestic Product"
+                  ]
+                }
+              },
+              "retrieval": {
+                "schema_error": null,
+                "schema_output": {
+                  "unit_correct": "Not specified (Requires selection)",
+                  "reason": "The evidence is the portal landing page, not the specific data table.",
+                  "retrievable": true,
+                  "period_correct": "Not specified (Requires selection)",
+                  "confidence": 0.9,
+                  "geography_correct": "Mexico (Expected)",
+                  "value_found": false
+                }
+              },
+              "metadata": {
+                "schema_error": null,
+                "schema_output": {
+                  "confidence": 0.9,
+                  "fields_missing": [
+                    "Specific data table/API endpoint"
+                  ],
+                  "metadata_complete": false,
+                  "reason": "The evidence provides the official portal URL but not the direct data endpoint or specific data values."
+                }
+              },
+              "citation": {
+                "schema_error": null,
+                "schema_output": {
+                  "citable": true,
+                  "citation_url": "https://statistics.cepal.org/portal/cepalstat/",
+                  "confidence": 0.9,
+                  "evidence_specific": true,
+                  "reason": "The URL points to the official CEPALSTAT portal, which is the authoritative source for this data.",
+                  "source_named": "CEPAL (Economic Commission for Latin America and the Caribbean)"
+                }
+              }
+            },
+            "text": "{\"discovery\": {\"gdp_data_found\": true, \"source_type\": \"Official Statistical Portal\", \"details\": \"The CEPALSTAT portal is a comprehensive source for economic and social statistics for Latin America and the Caribbean, including GDP data for Mexico.\", \"url\": \"https://statistics.cepal.org/portal/cepalstat/\"}, \"semantic\": {\"schema_error\": null, \"schema_output\": {\"indicator_description\": \"Gross Domestic Product (PIB)\", \"indicator_type\": \"Macroeconomic\", \"data_availability\": \"High (Expected)\", \"suggested_search_terms\": [\"PIB\", \"Mexico\", \"Gross Domestic Product\"]}}, \"retrieval\": {\"schema_error\": null, \"schema_output\": {\"unit_correct\": \"Not specified (Requires selection)\", \"reason\": \"The evidence is the portal landing page, not the specific data table.\", \"retrievable\": true, \"period_correct\": \"Not specified (Requires selection)\", \"confidence\": 0.9, \"geography_correct\": \"Mexico (Expected)\", \"value_found\": false}}, \"metadata\": {\"schema_error\": null, \"schema_output\": {\"confidence\": 0.9, \"fields_missing\": [\"Specific data table/API endpoint\"], \"metadata_complete\": false, \"reason\": \"The evidence provides the official portal URL but not the direct data endpoint or specific data values.\"}}, \"citation\": {\"schema_error\": null, \"schema_output\": {\"citable\": true, \"citation_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"confidence\": 0.9, \"evidence_specific\": true, \"reason\": \"The URL points to the official CEPALSTAT portal, which is the authoritative source for this data.\", \"source_named\": \"CEPAL (Economic Commission for Latin America and the Caribbean)\"}}\n}",
+            "parse_error": null,
+            "elapsed_seconds": 24.206,
+            "schema_valid": false,
+            "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness"
+          }
+        },
+        "adversarial": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "falsification_critique": {
+              "overall_assessment": "The evidence successfully identifies a highly relevant and authoritative source (CEPALSTAT), but it fails to provide the specific data, direct link, or API endpoint required to fully answer the query. The evidence is limited to the general landing page HTML, which is insufficient for a definitive answer.",
+              "specific_flaws_found": [
+                {
+                  "flaw_type": "Unsupported Citation/Specificity",
+                  "description": "The evidence provides the main portal URL (`https://statistics.cepal.org/portal/cepalstat/`), which is correct for the source, but it does not provide the direct, specific page or API endpoint for Mexico's GDP data. The user would need to navigate the portal, which is not visible in the frozen text.",
+                  "impact": "The answer is incomplete because it lacks the actionable link or data structure."
+                },
+                {
+                  "flaw_type": "Conflation of Discovery and Retrieval",
+                  "description": "The evidence only confirms the *existence* of the data portal (Discovery), but it does not retrieve the actual data or the specific API call structure (Retrieval). The text is boilerplate HTML, not the data itself.",
+                  "impact": "The response cannot be fully validated as 'retrieved' data."
+                },
+                {
+                  "flaw_type": "Missing Technical Detail",
+                  "description": "The query asks for a page *or API*. The evidence only provides a web page portal. No API documentation or endpoint is present in the frozen text.",
+                  "impact": "The response cannot fulfill the 'API' part of the query."
+                }
+              ],
+              "recommendation": "While the source (CEPALSTAT) is correct, the response must be qualified by stating that the user must navigate the portal using keywords (e.g., 'Mexico', 'PIB', 'GDP') to find the specific data set, as the evidence only provides the general entry point."
+            }
+          },
+          "text": "{\n  \"falsification_critique\": {\n    \"overall_assessment\": \"The evidence successfully identifies a highly relevant and authoritative source (CEPALSTAT), but it fails to provide the specific data, direct link, or API endpoint required to fully answer the query. The evidence is limited to the general landing page HTML, which is insufficient for a definitive answer.\",\n    \"specific_flaws_found\": [\n      {\n        \"flaw_type\": \"Unsupported Citation/Specificity\",\n        \"description\": \"The evidence provides the main portal URL (`https://statistics.cepal.org/portal/cepalstat/`), which is correct for the source, but it does not provide the direct, specific page or API endpoint for Mexico's GDP data. The user would need to navigate the portal, which is not visible in the frozen text.\",\n        \"impact\": \"The answer is incomplete because it lacks the actionable link or data structure.\"\n      },\n      {\n        \"flaw_type\": \"Conflation of Discovery and Retrieval\",\n        \"description\": \"The evidence only confirms the *existence* of the data portal (Discovery), but it does not retrieve the actual data or the specific API call structure (Retrieval). The text is boilerplate HTML, not the data itself.\",\n        \"impact\": \"The response cannot be fully validated as 'retrieved' data.\"\n      },\n      {\n        \"flaw_type\": \"Missing Technical Detail\",\n        \"description\": \"The query asks for a page *or API*. The evidence only provides a web page portal. No API documentation or endpoint is present in the frozen text.\",\n        \"impact\": \"The response cannot fulfill the 'API' part of the query.\"\n      }\n    ],\n    \"recommendation\": \"While the source (CEPALSTAT) is correct, the response must be qualified by stating that the user must navigate the portal using keywords (e.g., 'Mexico', 'PIB', 'GDP') to find the specific data set, as the evidence only provides the general entry point.\"\n  }\n}",
+          "parse_error": null,
+          "elapsed_seconds": 30.656,
+          "schema_valid": false,
+          "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "falsification_details": {
+                "error_type": "conflation_of_discovery_and_retrieval",
+                "reasoning": "The frozen evidence provides access to the general CEPALSTAT data portal (discovery of a potential source), but it does not contain the actual, specific data (GDP figures for Mexico) or a direct, usable API endpoint for retrieval. Therefore, any claim of successfully retrieving the data or citing the specific data source is unsupported by the provided text.",
+                "evidence_limitation": "The text is boilerplate HTML for a portal landing page, lacking the specific data tables, indicators, or API documentation required to answer the query fully."
+              }
+            },
+            "text": "{\"falsification_details\": {\"error_type\": \"conflation_of_discovery_and_retrieval\", \"reasoning\": \"The frozen evidence provides access to the general CEPALSTAT data portal (discovery of a potential source), but it does not contain the actual, specific data (GDP figures for Mexico) or a direct, usable API endpoint for retrieval. Therefore, any claim of successfully retrieving the data or citing the specific data source is unsupported by the provided text.\", \"evidence_limitation\": \"The text is boilerplate HTML for a portal landing page, lacking the specific data tables, indicators, or API documentation required to answer the query fully.\"}}",
+            "parse_error": null,
+            "elapsed_seconds": 17.281,
+            "schema_valid": false,
+            "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict"
+          }
+        }
+      }
+    },
+    {
+      "query": {
+        "query_id": "Q053",
+        "portal_id": "cepalstat",
+        "stratum": "exact_indicator",
+        "query": "¿Cuál fue el PIB total de Colombia en 2024?",
+        "country": "Colombia",
+        "country_code": "COL"
+      },
+      "repeat": 1,
+      "candidate_url": null,
+      "evidence_sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+      "evidence": {
+        "urls": [
+          "https://statistics.cepal.org/portal/cepalstat/"
+        ],
+        "pages": [
+          {
+            "url": "https://statistics.cepal.org/portal/cepalstat/",
+            "status": 200,
+            "content_type": "text/html",
+            "text": "<!DOCTYPE html> <html> <head> <title>CEPALSTAT Portal de Datos y Publicaciones Estadísticas</title> <meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"> <link rel=\"shortcut icon\" href=\"images/favicon_un.png\" type=\"image/png\" /> <link rel=\"stylesheet\" href=\"../../assets/bootstrap-4.3.1.min.css\" > <script src=\"../../assets/jquery.min.js\"></script> <script src=\"../../assets/bootstrap-4.3.1.min.js\" ></script> <script src=\"assets/portal-actions.js\"></script> <script src=\"configuration.js\"></script> <link rel=\"stylesheet\" href=\"assets/style-5column-boxes.css?v=20250312\" > <script> $(document).ready(function () { var idioma = getQueryVariable(\"lang\"); if(idioma==\"en\") { $(document).attr(\"title\", \"CEPALSTAT Statistical Data Portal and Publications\"); $(\"#menu-cabecera\").load(\"header-en.html?v=20260703\"); $(\"#modulos\").load(\"en/module-home.html?v=20260703\"); $(\"#footer-content\").load(\"footer-en.html?v=20260703\"); } else { $(\"#menu-cabecera\").load(\"header-es.html?v=20260703\"); $(\"#modulos\").load(\"es/modulo-inicio.html?v=20260703\"); $(\"#footer-content\").load(\"footer-es.html?v=20260703\"); } scrollTopPage(); }); </script> </head> <body> <div id=\"menu-cabecera\"></div> <div id=\"modulos\"></div> <div id=\"footer-content\"></div> </body> </html> "
+          }
+        ],
+        "sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+        "captured_at": "2026-08-22T22:04:05Z"
+      },
+      "models": {
+        "discovery": "gemma4:latest",
+        "semantic": "gemma4:latest",
+        "retrieval": "qwen3.5:9b-mlx",
+        "metadata": "gemma4:latest",
+        "citation": "gemma4:latest",
+        "judge": "gemma4:latest",
+        "adversarial": "gemma4:latest"
+      },
+      "agents_raw": {
+        "discovery": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "resource_url": "https://statistics.cepal.org/portal/cepalstat/",
+            "resource_type": "Statistical Data Portal"
+          },
+          "text": "{\"resource_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"resource_type\": \"Statistical Data Portal\"}",
+          "parse_error": null,
+          "elapsed_seconds": 8.661,
+          "schema_valid": false,
+          "schema_error": "missing_keys:best_url,confidence,discovered,reason",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "resource_url": "https://statistics.cepal.org/portal/cepalstat/",
+              "resource_type": "Portal de Datos y Publicaciones Estadísticas"
+            },
+            "text": "{\"resource_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"resource_type\": \"Portal de Datos y Publicaciones Estadísticas\"}",
+            "parse_error": null,
+            "elapsed_seconds": 1.624,
+            "schema_valid": false,
+            "schema_error": "missing_keys:best_url,confidence,discovered,reason"
+          }
+        },
+        "semantic": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "indicator": null,
+            "series": null
+          },
+          "text": "{\"indicator\": null, \"series\": null}",
+          "parse_error": null,
+          "elapsed_seconds": 6.594,
+          "schema_valid": false,
+          "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "indicator": null,
+              "series": null,
+              "reason": "The provided evidence is the homepage structure of the CEPALSTAT portal and does not contain the specific data point (GDP of Colombia in 2024)."
+            },
+            "text": "{\"indicator\": null, \"series\": null, \"reason\": \"The provided evidence is the homepage structure of the CEPALSTAT portal and does not contain the specific data point (GDP of Colombia in 2024).\"}",
+            "parse_error": null,
+            "elapsed_seconds": 17.087,
+            "schema_valid": false,
+            "schema_error": "missing_keys:ambiguity_flags,confidence,correct,selected_indicator_description"
+          }
+        },
+        "retrieval": {
+          "model": "qwen3.5:9b-mlx",
+          "ok": false,
+          "json": null,
+          "error": "HTTPError: HTTP Error 500: Internal Server Error",
+          "elapsed_seconds": 0.066,
+          "schema_valid": false,
+          "schema_error": "missing_keys:unit_correct,reason,retrievable,period_correct,confidence,geography_correct,value_found",
+          "retry": {
+            "model": "qwen3.5:9b-mlx",
+            "ok": false,
+            "json": null,
+            "error": "HTTPError: HTTP Error 500: Internal Server Error",
+            "elapsed_seconds": 0.047,
+            "schema_valid": false,
+            "schema_error": "missing_keys:unit_correct,reason,retrievable,period_correct,confidence,geography_correct,value_found"
+          }
+        },
+        "metadata": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "contains_rigorous_statistical_metadata": false,
+            "reason": "The evidence provided is the HTML structure of a statistical portal's landing page (CEPALSTAT). It does not contain any specific statistical data, nor does it provide the required rigorous metadata (definition, unit, frequency, period, dimensions, or methodology) necessary to confirm the GDP of Colombia for 2024."
+          },
+          "text": "{\n  \"contains_rigorous_statistical_metadata\": false,\n  \"reason\": \"The evidence provided is the HTML structure of a statistical portal's landing page (CEPALSTAT). It does not contain any specific statistical data, nor does it provide the required rigorous metadata (definition, unit, frequency, period, dimensions, or methodology) necessary to confirm the GDP of Colombia for 2024.\"\n}",
+          "parse_error": null,
+          "elapsed_seconds": 23.089,
+          "schema_valid": false,
+          "schema_error": "missing_keys:confidence,fields_missing,metadata_complete",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "has_rigorous_statistical_metadata": false
+            },
+            "text": "{\"has_rigorous_statistical_metadata\": false}",
+            "parse_error": null,
+            "elapsed_seconds": 30.17,
+            "schema_valid": false,
+            "schema_error": "missing_keys:confidence,fields_missing,metadata_complete,reason"
+          }
+        },
+        "citation": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "answer": "No se puede determinar el PIB total de Colombia en 2024 con la evidencia proporcionada.",
+            "citable": false
+          },
+          "text": "{\"answer\": \"No se puede determinar el PIB total de Colombia en 2024 con la evidencia proporcionada.\", \"citable\": false}",
+          "parse_error": null,
+          "elapsed_seconds": 21.674,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citation_url,confidence,evidence_specific,reason,source_named",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "answer": "No se puede determinar el PIB total de Colombia en 2024 con la evidencia proporcionada.",
+              "citable": false
+            },
+            "text": "{\"answer\": \"No se puede determinar el PIB total de Colombia en 2024 con la evidencia proporcionada.\", \"citable\": false}",
+            "parse_error": null,
+            "elapsed_seconds": 19.265,
+            "schema_valid": false,
+            "schema_error": "missing_keys:citation_url,confidence,evidence_specific,reason,source_named"
+          }
+        },
+        "judge": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "score": 0,
+            "reason": "The candidate output is structurally invalid and contains multiple schema errors, failing to provide any answer or structured data regarding Colombia's GDP in 2024. The provided frozen evidence is a general portal landing page and does not contain the specific data requested.",
+            "structured_output": {
+              "answer_found": false,
+              "confidence": 0.0,
+              "evidence_used": false,
+              "schema_valid": false
+            }
+          },
+          "text": "{\n  \"score\": 0,\n  \"reason\": \"The candidate output is structurally invalid and contains multiple schema errors, failing to provide any answer or structured data regarding Colombia's GDP in 2024. The provided frozen evidence is a general portal landing page and does not contain the specific data requested.\",\n  \"structured_output\": {\n    \"answer_found\": false,\n    \"confidence\": 0.0,\n    \"evidence_used\": false,\n    \"schema_valid\": false\n  }\n}",
+          "parse_error": null,
+          "elapsed_seconds": 34.088,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "answer_correct": false,
+              "answer_reason": "The candidate output is filled with schema errors and does not provide the requested GDP value for Colombia in 2024.",
+              "evidence_used": false,
+              "evidence_reason": "The evidence provided is a general portal landing page and does not contain the specific GDP data for Colombia in 2024.",
+              "confidence": 0.1,
+              "overall_score": "Failed"
+            },
+            "text": "{\"answer_correct\": false, \"answer_reason\": \"The candidate output is filled with schema errors and does not provide the requested GDP value for Colombia in 2024.\", \"evidence_used\": false, \"evidence_reason\": \"The evidence provided is a general portal landing page and does not contain the specific GDP data for Colombia in 2024.\", \"confidence\": 0.1, \"overall_score\": \"Failed\"}",
+            "parse_error": null,
+            "elapsed_seconds": 35.932,
+            "schema_valid": false,
+            "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness"
+          }
+        },
+        "adversarial": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "falsification_reason": "The frozen evidence provided is only the HTML structure of the CEPALSTAT portal's landing page. It does not contain any specific statistical data, tables, or figures for the GDP (PIB) of Colombia for the year 2024. Therefore, any attempt to populate the required keys (like temporal_geographic_correctness or semantic_correctness) with data is impossible, as the necessary information was not retrieved from the provided source material.",
+            "error_type": "Retrieval failure due to insufficient evidence content",
+            "details": "The evidence only confirms the existence of the data source (CEPALSTAT) but fails to provide the actual data point requested (PIB Colombia 2024)."
+          },
+          "text": "{\"falsification_reason\": \"The frozen evidence provided is only the HTML structure of the CEPALSTAT portal's landing page. It does not contain any specific statistical data, tables, or figures for the GDP (PIB) of Colombia for the year 2024. Therefore, any attempt to populate the required keys (like temporal_geographic_correctness or semantic_correctness) with data is impossible, as the necessary information was not retrieved from the provided source material.\", \"error_type\": \"Retrieval failure due to insufficient evidence content\", \"details\": \"The evidence only confirms the existence of the data source (CEPALSTAT) but fails to provide the actual data point requested (PIB Colombia 2024).\"}",
+          "parse_error": null,
+          "elapsed_seconds": 37.508,
+          "schema_valid": false,
+          "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict",
+          "retry": {
+            "model": "gemma4:latest",
+            "ok": true,
+            "json": {
+              "citation_correctness": "False",
+              "decisive_reason": "The provided evidence is the landing page of the CEPALSTAT portal and does not contain any specific data regarding the total GDP of Colombia for the year 2024. The required information is absent from the retrieved text.",
+              "discovery_success": "False",
+              "metadata_correctness": "True",
+              "overall_0_100": 10,
+              "retrieval_success": "False",
+              "semantic_correctness": "False",
+              "temporal_geographic_correctness": "False"
+            },
+            "text": "{\"citation_correctness\": \"False\", \"decisive_reason\": \"The provided evidence is the landing page of the CEPALSTAT portal and does not contain any specific data regarding the total GDP of Colombia for the year 2024. The required information is absent from the retrieved text.\", \"discovery_success\": \"False\", \"metadata_correctness\": \"True\", \"overall_0_100\": 10, \"retrieval_success\": \"False\", \"semantic_correctness\": \"False\", \"temporal_geographic_correctness\": \"False\"}",
+            "parse_error": null,
+            "elapsed_seconds": 20.875,
+            "schema_valid": false,
+            "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict"
+          }
+        }
+      }
+    }
+  ]
+}

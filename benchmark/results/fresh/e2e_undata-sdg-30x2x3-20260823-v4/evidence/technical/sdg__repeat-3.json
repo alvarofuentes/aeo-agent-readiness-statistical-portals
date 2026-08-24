@@ -1,0 +1,58 @@
+{
+  "portal_id": "sdg",
+  "repeat": 3,
+  "captured_at": "2026-08-23T23:36:28.250942+00:00",
+  "catalog_url": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+  "catalog_status": 200,
+  "root": {
+    "url": "https://unstats.un.org/sdgs/dataportal/",
+    "status": 200,
+    "bytes": 1366,
+    "elapsed_seconds": 1.095,
+    "error": null
+  },
+  "sample_page": {
+    "url": "https://unstats.un.org/sdgs/dataportal/database",
+    "status": 200,
+    "bytes": 1366,
+    "elapsed_seconds": 0.998,
+    "error": null
+  },
+  "well_known": {
+    "https://unstats.un.org/robots.txt": {
+      "status": 200,
+      "bytes": 79,
+      "elapsed_seconds": 1.105,
+      "error": null
+    },
+    "https://unstats.un.org/sitemap.xml": {
+      "status": 404,
+      "bytes": 1245,
+      "elapsed_seconds": 1.072,
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    "https://unstats.un.org/llms.txt": {
+      "status": 404,
+      "bytes": 1245,
+      "elapsed_seconds": 1.043,
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    }
+  },
+  "json_ld_count": 0,
+  "jsonld_initial_status": "ABSENT",
+  "jsonld_rendered_status": "ABSENT",
+  "api_route_declared": "https://unstats.un.org/SDGAPI/v1/sdg/Indicator/List",
+  "api_direct_http_status": 200,
+  "api_direct_verified": "PASS",
+  "api_direct_url": "https://unstats.un.org/SDGAPI/v1/sdg/Series/Data?seriesCode=NY_GDP_PCAP&areaCode=152&timePeriod=2024",
+  "api_direct_raw_path": "evidence/raw/technical__sdg__repeat-3__direct.json",
+  "unverified_checks": [],
+  "dimensions": {
+    "discovery": "PASS",
+    "retrieval": "PENDING_E2E",
+    "rendering": "PASS",
+    "structured_data": "ABSENT",
+    "authority_citation": "PASS",
+    "accessibility": "PASS"
+  }
+}

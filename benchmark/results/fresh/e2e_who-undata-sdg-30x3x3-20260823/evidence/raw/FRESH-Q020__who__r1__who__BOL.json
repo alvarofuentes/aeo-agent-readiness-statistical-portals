@@ -1,0 +1,8 @@
+{
+  "url": "https://ghoapi.azureedge.net/api/GHED_CHEGDP_SHA2011?%24filter=SpatialDim+eq+%27BOL%27&%24top=1000",
+  "status": 0,
+  "headers": {},
+  "payload": null,
+  "elapsed_seconds": 61.19,
+  "error": "HTTPError: HTTP Error 504: Gateway Time-out"
+}

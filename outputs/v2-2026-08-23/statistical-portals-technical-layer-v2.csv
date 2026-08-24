@@ -1,0 +1,7 @@
+portal_id,portal,evidence_date,technical_score,technical_confidence,e2e_queries,e2e_passes,e2e_pass_rate,candidate_count_mean,specific_url_rate,metadata_complete_rate,citation_reproducible_rate,robots_status,sitemap_status,llms_status,jsonld_rendered,api_direct_verified,source_evidence_path,status,notes
+planning,Observatorio Regional de Planificación,2026-08-23,40,media,1,1,1.0,2,1.0,1.0,1.0,404,404,404,0,false,outputs/v2-2026-08-23/evidence/planning-e2e-2026-08-23.json,verified_one_case,"Gate E2E PASS en una consulta; el score técnico no incluye API HTTP independiente ni HTML inicial no capturado."
+worldbank,World Bank Open Data,2026-08-23,,,,,,,,,,,,,,,,not_rebuilt,"Rehacer con flujo E2E dirigido al portal + auditoría técnica v2; no reutilizar resultados congelados."
+who,WHO Data,2026-08-23,,,,,,,,,,,,,,,,not_rebuilt,"Rehacer con flujo E2E dirigido al portal + auditoría técnica v2; no reutilizar resultados congelados."
+cepalstat,CEPALSTAT,2026-08-23,,,,,,,,,,,,,,,,not_rebuilt,"Rehacer con flujo E2E dirigido al portal + auditoría técnica v2; no reutilizar resultados congelados."
+undata,UN Data Commons (UNSD),2026-08-23,,,,,,,,,,,,,,,,not_rebuilt,"Rehacer con flujo E2E dirigido al portal + auditoría técnica v2; no reutilizar resultados congelados."
+sdg,UN SDG Indicators,2026-08-23,,,,,,,,,,,,,,,,not_rebuilt,"Rehacer con flujo E2E dirigido al portal + auditoría técnica v2; no reutilizar resultados congelados."

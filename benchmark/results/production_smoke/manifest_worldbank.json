@@ -1,0 +1,46 @@
+{
+  "started_at": "2026-08-23T01:03:37Z",
+  "source_bank": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/query-bank-120.csv",
+  "portal": "worldbank",
+  "n_templates": 1,
+  "n_portals": 5,
+  "n_query_portal_pairs": 5,
+  "repeats": 1,
+  "expected_executions": 1,
+  "models_available": [
+    "muse-glimmer:30b-mlx",
+    "qwen3.5:9b-mlx",
+    "deepseek-coder-v2:16b",
+    "qwen3:30b-a3b",
+    "devstral-small-2:24b",
+    "qwen3-coder:30b-a3b-q4_K_M",
+    "gemma4:latest",
+    "glm-5:cloud",
+    "glm-4.6:cloud",
+    "mistral:latest",
+    "llama3.2:latest"
+  ],
+  "selected_role_models": {
+    "discovery": "gemma4:latest",
+    "semantic": "gemma4:latest",
+    "retrieval": "gemma4:latest",
+    "metadata": "gemma4:latest",
+    "citation": "gemma4:latest",
+    "judge": "mistral:latest",
+    "adversarial": "llama3.2:latest"
+  },
+  "model_policy": {
+    "max_parameter_b": 24,
+    "exclude_cloud": true,
+    "excluded_models": [
+      "muse-glimmer:30b-mlx",
+      "qwen3:30b-a3b",
+      "qwen3-coder:30b-a3b-q4_K_M",
+      "glm-5:cloud",
+      "glm-4.6:cloud"
+    ]
+  },
+  "orchestrator": "deterministic-python",
+  "adversarial_role": "required",
+  "resume_existing": 0
+}

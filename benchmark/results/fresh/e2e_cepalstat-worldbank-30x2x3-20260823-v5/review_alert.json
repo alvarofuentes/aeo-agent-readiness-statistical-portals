@@ -1,0 +1,351 @@
+{
+  "alert_type": "zero_observations_after_attempts",
+  "execution_id": "FRESH-Q010__cepalstat__r2",
+  "attempts": 2,
+  "message": "Zero observations after two attempts; stop, inspect the route/selection/dimensions, resolve it, and relaunch.",
+  "created_at": "2026-08-23T19:42:24.359076+00:00",
+  "attempt_rows": [
+    {
+      "execution_id": "FRESH-Q010__cepalstat__r1",
+      "fresh_template_id": "FRESH-Q010",
+      "source_template_id": "Q010",
+      "portal_id": "cepalstat",
+      "repeat": 1,
+      "stratum": "semantic_disambiguation",
+      "query": "Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.",
+      "decomposition": {
+        "countries": [
+          [
+            "Bolivia",
+            "BOL"
+          ]
+        ],
+        "years": [
+          2024
+        ],
+        "concept": "gdp_total",
+        "requested_scope": "country_aggregate",
+        "requested_frequency": "unspecified",
+        "requested_unit": "unspecified",
+        "requested_price_base": "unspecified"
+      },
+      "candidate": {
+        "id": "5005",
+        "name": "BOLIVIA Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+        "indicator_id": 5005,
+        "selection_metadata": {
+          "scope": "subnational",
+          "country_scope": "country_specific",
+          "frequency": "annual",
+          "unit_class": "currency_usd",
+          "price_base": "current",
+          "source_catalog": "CEPALSTAT"
+        }
+      },
+      "candidate_count": 12,
+      "near_matches": [
+        {
+          "id": "2205",
+          "name": "Producto interno bruto (PIB) total anual por habitante a precios corrientes en dólares",
+          "indicator_id": 2205,
+          "selection_metadata": {
+            "scope": "country_aggregate",
+            "country_scope": "all_countries",
+            "frequency": "annual",
+            "unit_class": "per_capita",
+            "price_base": "current",
+            "source_catalog": "CEPALSTAT"
+          }
+        },
+        {
+          "id": "4873",
+          "name": "CHILE Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+          "indicator_id": 4873,
+          "selection_metadata": {
+            "scope": "subnational",
+            "country_scope": "country_specific",
+            "frequency": "annual",
+            "unit_class": "currency_usd",
+            "price_base": "current",
+            "source_catalog": "CEPALSTAT"
+          }
+        },
+        {
+          "id": "4876",
+          "name": "CHILE Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+          "indicator_id": 4876,
+          "selection_metadata": {
+            "scope": "subnational",
+            "country_scope": "country_specific",
+            "frequency": "annual",
+            "unit_class": "per_capita",
+            "price_base": "current",
+            "source_catalog": "CEPALSTAT"
+          }
+        },
+        {
+          "id": "4949",
+          "name": "ECUADOR Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+          "indicator_id": 4949,
+          "selection_metadata": {
+            "scope": "subnational",
+            "country_scope": "country_specific",
+            "frequency": "annual",
+            "unit_class": "currency_usd",
+            "price_base": "current",
+            "source_catalog": "CEPALSTAT"
+          }
+        },
+        {
+          "id": "4952",
+          "name": "ECUADOR Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+          "indicator_id": 4952,
+          "selection_metadata": {
+            "scope": "subnational",
+            "country_scope": "country_specific",
+            "frequency": "annual",
+            "unit_class": "per_capita",
+            "price_base": "current",
+            "source_catalog": "CEPALSTAT"
+          }
+        }
+      ],
+      "selection_mode": "model",
+      "selection_status": "FAIL",
+      "selection_failure_class": "MODEL_SELECTION_ERROR",
+      "selection_error": {
+        "failure_class": "MODEL_SELECTION_ERROR",
+        "selected_candidate": {
+          "id": "5005",
+          "name": "BOLIVIA Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+          "indicator_id": 5005,
+          "selection_metadata": {
+            "scope": "subnational",
+            "country_scope": "country_specific",
+            "frequency": "annual",
+            "unit_class": "currency_usd",
+            "price_base": "current",
+            "source_catalog": "CEPALSTAT"
+          }
+        },
+        "expected": {
+          "scope": "country_aggregate",
+          "frequency": "unspecified",
+          "unit_class": "unspecified",
+          "price_base": "unspecified",
+          "concept": "gdp_total"
+        },
+        "mismatches": [
+          "scope_expected:country_aggregate;observed:subnational",
+          "measure_expected:gdp_total;observed:activity_breakdown"
+        ],
+        "note": "The model's original candidate is retained and tested; no deterministic re-selection was applied."
+      },
+      "model_candidate_rejected": null,
+      "e2e_status": "FAIL",
+      "model": "qwen3.5:9b-mlx",
+      "model_endpoint": "http://127.0.0.1:11434",
+      "model_ok": true,
+      "retrieval_status": "NOT_VERIFIED",
+      "value_found": false,
+      "values": [],
+      "rows_returned": 0,
+      "metadata": {
+        "indicator_name": "BOLIVIA Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+        "unit": "Miles de dólares",
+        "definition": "El producto interno bruto (PIB) es el valor del flujo de bienes y servicios producidos en un país a precios de mercado para cada año durante un período de referencia determinado. Las cifras se expresan en dólares de Estados Unidos, según el tipo de cambio rf provisto por el Fondo Monetario Internacional (FMI).",
+        "methodology": "La metodología adoptada para elaborar las cuentas nacionales de la región a precios corrientes consiste en transformar las series en moneda nacional en dólares corrientes de cada año utilizando el tipo de cambio rf publicado por el Fondo Monetario Internacional.",
+        "last_update": "Aug 26 2025 10:22AM",
+        "source": {
+          "id": 8072,
+          "description": "Estadisticas económicas. Cuentas Nacionales",
+          "publication_url": "https://www.ine.gob.bo/",
+          "organization_acronym": "INE",
+          "organization_name": "Instituto Nacional de Estadística de Bolivia",
+          "organization_url": "https://www.ine.gob.bo/"
+        },
+        "missing": []
+      },
+      "citation_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/5005/data",
+      "calls": [
+        {
+          "status": 0,
+          "error": "country_not_in_live_dimensions:Bolivia"
+        }
+      ],
+      "elapsed_seconds": 110.435,
+      "evidence_policy": "live_portal_fetch_per_repeat_no_cache"
+    },
+    {
+      "execution_id": "FRESH-Q010__cepalstat__r2",
+      "fresh_template_id": "FRESH-Q010",
+      "source_template_id": "Q010",
+      "portal_id": "cepalstat",
+      "repeat": 2,
+      "stratum": "semantic_disambiguation",
+      "query": "Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.",
+      "decomposition": {
+        "countries": [
+          [
+            "Bolivia",
+            "BOL"
+          ]
+        ],
+        "years": [
+          2024
+        ],
+        "concept": "gdp_total",
+        "requested_scope": "country_aggregate",
+        "requested_frequency": "unspecified",
+        "requested_unit": "unspecified",
+        "requested_price_base": "unspecified"
+      },
+      "candidate": {
+        "id": "5005",
+        "name": "BOLIVIA Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+        "indicator_id": 5005,
+        "selection_metadata": {
+          "scope": "subnational",
+          "country_scope": "country_specific",
+          "frequency": "annual",
+          "unit_class": "currency_usd",
+          "price_base": "current",
+          "source_catalog": "CEPALSTAT"
+        }
+      },
+      "candidate_count": 12,
+      "near_matches": [
+        {
+          "id": "2205",
+          "name": "Producto interno bruto (PIB) total anual por habitante a precios corrientes en dólares",
+          "indicator_id": 2205,
+          "selection_metadata": {
+            "scope": "country_aggregate",
+            "country_scope": "all_countries",
+            "frequency": "annual",
+            "unit_class": "per_capita",
+            "price_base": "current",
+            "source_catalog": "CEPALSTAT"
+          }
+        },
+        {
+          "id": "4873",
+          "name": "CHILE Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+          "indicator_id": 4873,
+          "selection_metadata": {
+            "scope": "subnational",
+            "country_scope": "country_specific",
+            "frequency": "annual",
+            "unit_class": "currency_usd",
+            "price_base": "current",
+            "source_catalog": "CEPALSTAT"
+          }
+        },
+        {
+          "id": "4876",
+          "name": "CHILE Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+          "indicator_id": 4876,
+          "selection_metadata": {
+            "scope": "subnational",
+            "country_scope": "country_specific",
+            "frequency": "annual",
+            "unit_class": "per_capita",
+            "price_base": "current",
+            "source_catalog": "CEPALSTAT"
+          }
+        },
+        {
+          "id": "4949",
+          "name": "ECUADOR Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+          "indicator_id": 4949,
+          "selection_metadata": {
+            "scope": "subnational",
+            "country_scope": "country_specific",
+            "frequency": "annual",
+            "unit_class": "currency_usd",
+            "price_base": "current",
+            "source_catalog": "CEPALSTAT"
+          }
+        },
+        {
+          "id": "4952",
+          "name": "ECUADOR Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+          "indicator_id": 4952,
+          "selection_metadata": {
+            "scope": "subnational",
+            "country_scope": "country_specific",
+            "frequency": "annual",
+            "unit_class": "per_capita",
+            "price_base": "current",
+            "source_catalog": "CEPALSTAT"
+          }
+        }
+      ],
+      "selection_mode": "model",
+      "selection_status": "FAIL",
+      "selection_failure_class": "MODEL_SELECTION_ERROR",
+      "selection_error": {
+        "failure_class": "MODEL_SELECTION_ERROR",
+        "selected_candidate": {
+          "id": "5005",
+          "name": "BOLIVIA Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+          "indicator_id": 5005,
+          "selection_metadata": {
+            "scope": "subnational",
+            "country_scope": "country_specific",
+            "frequency": "annual",
+            "unit_class": "currency_usd",
+            "price_base": "current",
+            "source_catalog": "CEPALSTAT"
+          }
+        },
+        "expected": {
+          "scope": "country_aggregate",
+          "frequency": "unspecified",
+          "unit_class": "unspecified",
+          "price_base": "unspecified",
+          "concept": "gdp_total"
+        },
+        "mismatches": [
+          "scope_expected:country_aggregate;observed:subnational",
+          "measure_expected:gdp_total;observed:activity_breakdown"
+        ],
+        "note": "The model's original candidate is retained and tested; no deterministic re-selection was applied."
+      },
+      "model_candidate_rejected": null,
+      "e2e_status": "FAIL",
+      "model": "qwen3.5:9b-mlx",
+      "model_endpoint": "http://127.0.0.1:11434",
+      "model_ok": true,
+      "retrieval_status": "NOT_VERIFIED",
+      "value_found": false,
+      "values": [],
+      "rows_returned": 0,
+      "metadata": {
+        "indicator_name": "BOLIVIA Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+        "unit": "Miles de dólares",
+        "definition": "El producto interno bruto (PIB) es el valor del flujo de bienes y servicios producidos en un país a precios de mercado para cada año durante un período de referencia determinado. Las cifras se expresan en dólares de Estados Unidos, según el tipo de cambio rf provisto por el Fondo Monetario Internacional (FMI).",
+        "methodology": "La metodología adoptada para elaborar las cuentas nacionales de la región a precios corrientes consiste en transformar las series en moneda nacional en dólares corrientes de cada año utilizando el tipo de cambio rf publicado por el Fondo Monetario Internacional.",
+        "last_update": "Aug 26 2025 10:22AM",
+        "source": {
+          "id": 8072,
+          "description": "Estadisticas económicas. Cuentas Nacionales",
+          "publication_url": "https://www.ine.gob.bo/",
+          "organization_acronym": "INE",
+          "organization_name": "Instituto Nacional de Estadística de Bolivia",
+          "organization_url": "https://www.ine.gob.bo/"
+        },
+        "missing": []
+      },
+      "citation_url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/5005/data",
+      "calls": [
+        {
+          "status": 0,
+          "error": "country_not_in_live_dimensions:Bolivia"
+        }
+      ],
+      "elapsed_seconds": 19.152,
+      "evidence_policy": "live_portal_fetch_per_repeat_no_cache"
+    }
+  ]
+}

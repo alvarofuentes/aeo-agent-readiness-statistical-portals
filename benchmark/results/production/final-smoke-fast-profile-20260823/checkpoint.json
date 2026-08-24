@@ -1,0 +1,10 @@
+{
+  "updated_at": "2026-08-23T03:03:20Z",
+  "completed": [
+    "pass1__Q001__worldbank__repeat1",
+    "pass1__Q001__worldbank__repeat2",
+    "pass1__Q001__worldbank__repeat3"
+  ],
+  "count": 3,
+  "expected": 1800
+}
