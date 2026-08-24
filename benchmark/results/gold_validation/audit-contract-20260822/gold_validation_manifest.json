@@ -1,0 +1,158 @@
+{
+  "source": "auditoría AEO.pdf",
+  "generated_at": "2026-08-23T02:14:14Z",
+  "run_id": "audit-contract-20260822",
+  "validator": "benchmark/validate_gold_standards.py",
+  "mode": "offline_dry_run",
+  "scope_portals": [
+    "worldbank",
+    "who",
+    "cepalstat",
+    "undata",
+    "sdg"
+  ],
+  "n_selected": 600,
+  "n_contract_items": 600,
+  "contract_audit": {
+    "n_items": 600,
+    "unique_template_portal_pairs": 600,
+    "n_templates": 120,
+    "n_template_families": 24,
+    "by_portal": {
+      "cepalstat": 120,
+      "sdg": 120,
+      "undata": 120,
+      "who": 120,
+      "worldbank": 120
+    },
+    "by_stratum": {
+      "citation": 25,
+      "comparison": 75,
+      "dimensions": 75,
+      "discovery": 100,
+      "exact_indicator": 100,
+      "metadata": 50,
+      "semantic_disambiguation": 125,
+      "temporal": 50
+    },
+    "target_available_counts": {
+      "to_validate": 600
+    },
+    "target_value_present": 0,
+    "acceptable_url_present": 0,
+    "expected_periods_missing": 300,
+    "status": "PASS"
+  },
+  "portal_registry": {
+    "worldbank": {
+      "adapter": "world_bank_v2",
+      "official_api_root": "https://api.worldbank.org/v2",
+      "allowed_hosts": [
+        "api.worldbank.org"
+      ],
+      "status": "IMPLEMENTED"
+    },
+    "who": {
+      "adapter": null,
+      "official_api_root": "https://data.who.int/",
+      "allowed_hosts": [
+        "who.int"
+      ],
+      "status": "ADAPTER_PENDING",
+      "next_step": "Freeze an exact WHO series/dimension contract before requesting values."
+    },
+    "cepalstat": {
+      "adapter": null,
+      "official_api_root": "https://statistics.cepal.org/portal/cepalstat/",
+      "allowed_hosts": [
+        "cepal.org"
+      ],
+      "status": "ADAPTER_PENDING",
+      "next_step": "Freeze a CEPALSTAT series/API contract and dimension mapping."
+    },
+    "undata": {
+      "adapter": null,
+      "official_api_root": "https://unstats.un.org/UNSDWebsite/undatacommons/",
+      "allowed_hosts": [
+        "unstats.un.org"
+      ],
+      "status": "ADAPTER_PENDING",
+      "next_step": "Freeze an UN Data Commons series/API contract and dimension mapping."
+    },
+    "sdg": {
+      "adapter": null,
+      "official_api_root": "https://unstats.un.org/sdgs/dataportal/",
+      "allowed_hosts": [
+        "unstats.un.org"
+      ],
+      "status": "ADAPTER_PENDING",
+      "next_step": "Freeze an SDG indicator/series contract; GDP is not assumed to be an SDG indicator."
+    }
+  },
+  "summary": {
+    "ADAPTER_PENDING": 480,
+    "API_VERIFIED": 25,
+    "REVIEW_REQUIRED": 80,
+    "TRANSPORT_OR_HTTP_ERROR": 15
+  },
+  "summary_by_portal": {
+    "cepalstat": {
+      "ADAPTER_PENDING": 120
+    },
+    "sdg": {
+      "ADAPTER_PENDING": 120
+    },
+    "undata": {
+      "ADAPTER_PENDING": 120
+    },
+    "who": {
+      "ADAPTER_PENDING": 120
+    },
+    "worldbank": {
+      "API_VERIFIED": 25,
+      "REVIEW_REQUIRED": 80,
+      "TRANSPORT_OR_HTTP_ERROR": 15
+    }
+  },
+  "summary_by_stratum": {
+    "citation": {
+      "ADAPTER_PENDING": 20,
+      "REVIEW_REQUIRED": 5
+    },
+    "comparison": {
+      "ADAPTER_PENDING": 60,
+      "REVIEW_REQUIRED": 10,
+      "TRANSPORT_OR_HTTP_ERROR": 5
+    },
+    "dimensions": {
+      "ADAPTER_PENDING": 60,
+      "API_VERIFIED": 5,
+      "REVIEW_REQUIRED": 10
+    },
+    "discovery": {
+      "ADAPTER_PENDING": 80,
+      "REVIEW_REQUIRED": 20
+    },
+    "exact_indicator": {
+      "ADAPTER_PENDING": 80,
+      "REVIEW_REQUIRED": 10,
+      "TRANSPORT_OR_HTTP_ERROR": 10
+    },
+    "metadata": {
+      "ADAPTER_PENDING": 40,
+      "REVIEW_REQUIRED": 10
+    },
+    "semantic_disambiguation": {
+      "ADAPTER_PENDING": 100,
+      "API_VERIFIED": 20,
+      "REVIEW_REQUIRED": 5
+    },
+    "temporal": {
+      "ADAPTER_PENDING": 40,
+      "REVIEW_REQUIRED": 10
+    }
+  },
+  "promotable_verified_value_rows": 0,
+  "promotion_policy": "Only VERIFIED_VALUE rows with explicit mapping and complete official country/period observations may be promoted; all other statuses remain pending/review.",
+  "evidence_dir": "benchmark/results/gold_validation/audit-contract-20260822"
+}

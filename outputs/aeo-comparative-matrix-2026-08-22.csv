@@ -1,5 +1,0 @@
-portal,full_score,coverage,common_core_score,common_core_denominator,bots,discovery,rendering,structured_data,api,citability,top_strength,top_pain
-World Bank,77,0.75,90.9,55,7,12,13,7,24,14,public API v2 with JSON/JSON-stat/CSV/XML/Excel,indicator values not fully visible in static HTML and bot policy not directly verified
-WHO Data,77,0.85,83.6,55,7,12,16,8,21,13,rich indicator metadata and citation fields,indicator-to-API mapping and sitemap/AI crawler policy need clarification
-Statista,60,0.75,65.5,55,4,10,13,7,14,12,public statistical pages expose source/date/period/citation context,paywall/registration and authorized API access reduce agent reach
-CEPALSTAT,45,0.65,58.2,55,3,2,8,2,21,9,public REST/OpenAPI and rich metadata,series values depend on controls and discovery/structured data are weak

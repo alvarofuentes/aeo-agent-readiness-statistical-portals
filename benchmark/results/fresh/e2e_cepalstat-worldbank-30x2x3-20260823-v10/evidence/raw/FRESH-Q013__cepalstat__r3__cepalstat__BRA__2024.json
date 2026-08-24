@@ -1,0 +1,125 @@
+{
+  "url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2207/data?lang=es&format=json&in=1&path=1&members=222%2C29194",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Sun, 23 Aug 2026 20:41:24 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "3117",
+    "Connection": "close",
+    "Access-Control-Allow-Methods": "GET",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Origin": "*"
+  },
+  "payload": {
+    "header": {
+      "name": "uneclac cepalstat api",
+      "version": "1.9.13",
+      "success": true,
+      "machine": "01",
+      "context": "public",
+      "code": 200,
+      "message": "",
+      "timestamp": 1787514199
+    },
+    "body": {
+      "metadata": {
+        "indicator_id": 2207,
+        "indicator_name": "Tasa de crecimiento del producto interno bruto (PIB) total anual a precios constantes",
+        "theme": "Estadísticas e Indicadores Económicos",
+        "area": "Cuentas nacionales anuales en dólares",
+        "note": "",
+        "unit": "Porcentaje",
+        "data_features": "",
+        "definition": "The growth rate of annual total gross domestic product (GDP) at constant prices measures the percentage change in the volume of GDP between one year and the previous year. By using values at constant 2018 prices, the indicator reflects changes in the level of economic activity, excluding the effect of price changes.\r\n\r\nTotales regionales y subregionales en base a los datos disponibles de los países de la región.\r\n",
+        "calculation_methodology": "Para elaborar las series de cuentas nacionales de la región a precios constantes de 2018, la CEPAL utiliza como referencia los valores corrientes del PIB correspondientes a 2018 y los retropola y extrapola mediante los respectivos índices de volumen obtenidos de las series oficiales de cuentas nacionales de cada país. Este procedimiento permite construir series armonizadas a precios constantes de 2018, preservando las tasas de crecimiento en volumen reportadas oficialmente por cada país.\r\n\r\nLa tasa de crecimiento anual para el año se calcula como:\r\n\r\nTasa de crecimientot=((PIBt/PIBt-1)&#8722;1) × 100\r\n\r\ndonde PIBt corresponde al PIB a precios constantes del año y PIBt-1 al del año inmediatamente anterior.\r\n\r\nPara los agregados regionales y subregionales, la tasa de crecimiento se calcula a partir de la variación de los niveles agregados del PIB a precios constantes de los países con información disponible en ambos años considerados. \r\n\r\n\r\n\r\n",
+        "comments": "",
+        "decimals": 3,
+        "last_update": "Apr 24 2026  1:22PM"
+      },
+      "data": [
+        {
+          "value": "3.395866455643359",
+          "source_id": 1753,
+          "notes_ids": "",
+          "iso3": "BRA",
+          "dim_208": 222,
+          "dim_29117": 29194
+        }
+      ],
+      "dimensions": [
+        {
+          "id": 208,
+          "name": "País__ESTANDAR",
+          "order": 0,
+          "position": 2,
+          "members": [
+            {
+              "name": "Brasil",
+              "id": 222,
+              "in": 1,
+              "order": 100,
+              "parent": 208,
+              "selected": 1,
+              "path": "Brasil"
+            }
+          ]
+        },
+        {
+          "id": 29117,
+          "name": "Años__ESTANDAR",
+          "order": 1,
+          "position": 3,
+          "members": [
+            {
+              "name": "2024",
+              "id": 29194,
+              "in": 1,
+              "order": 2024,
+              "parent": 29117,
+              "selected": 1,
+              "path": "2024"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": 1753,
+          "description": "Estimaciones propias con base en fuentes oficiales",
+          "publication_url": "",
+          "organization_acronym": "CEPAL",
+          "organization_name": "Comisión Económica para América Latina y el Caribe",
+          "organization_url": "http://www.cepal.org"
+        }
+      ],
+      "footnotes": [],
+      "credits": [
+        {
+          "id": 0,
+          "description": "2026-08-23"
+        },
+        {
+          "id": 1,
+          "description": "CEPALSTAT"
+        },
+        {
+          "id": 2,
+          "description": "Comisión Económica para América Latina y el Caribe – CEPAL"
+        },
+        {
+          "id": 3,
+          "description": "Naciones Unidas"
+        }
+      ]
+    },
+    "footer": {
+      "records": 1,
+      "elapsed_time": "0.16317",
+      "ip": "201.188.147.194",
+      "query": "http://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2207/data?lang=es&format=json&in=1&path=1&members=222,29194"
+    }
+  },
+  "elapsed_seconds": 0.182,
+  "error": null
+}

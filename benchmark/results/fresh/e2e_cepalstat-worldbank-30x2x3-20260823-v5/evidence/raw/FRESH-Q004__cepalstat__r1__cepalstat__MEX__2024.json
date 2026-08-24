@@ -1,0 +1,125 @@
+{
+  "url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data?lang=es&format=json&in=1&path=1&members=233%2C29194",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Sun, 23 Aug 2026 19:24:01 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "3687",
+    "Connection": "close",
+    "Access-Control-Allow-Methods": "GET",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Origin": "*"
+  },
+  "payload": {
+    "header": {
+      "name": "uneclac cepalstat api",
+      "version": "1.9.13",
+      "success": true,
+      "machine": "01",
+      "context": "public",
+      "code": 200,
+      "message": "",
+      "timestamp": 1787511729
+    },
+    "body": {
+      "metadata": {
+        "indicator_id": 2203,
+        "indicator_name": "Producto interno bruto (PIB) total anual a precios corrientes en dólares",
+        "theme": "Estadísticas e Indicadores Económicos",
+        "area": "Cuentas nacionales anuales en dólares",
+        "note": "",
+        "unit": "Millones de dólares",
+        "data_features": "",
+        "definition": "El producto interno bruto (PIB) es el valor del flujo de bienes y servicios producidos en un país a precios de mercado para cada año durante un período de referencia determinado. Las cifras se expresan en dólares de Estados Unidos.\r\nTotales regionales y subregionales en base a los datos disponibles de los países de la región.",
+        "calculation_methodology": "Las cuentas nacionales de los países de la región, expresadas a precios corrientes en dólares, se obtienen mediante la conversión de las series originalmente compiladas en moneda nacional utilizando el tipo de cambio nominal promedio anual correspondiente a cada año, de acuerdo con la información publicada por el Fondo Monetario Internacional (Estadísticas FMI).\r\n\r\nLa utilización del tipo de cambio promedio anual, en lugar del tipo de cambio de fin de período, responde a la naturaleza de las principales variables de las cuentas nacionales —como el PIB, el consumo y la formación bruta de capital—, que corresponden a flujos económicos generados a lo largo del año. Por esta razón, el promedio anual representa de manera más adecuada las condiciones cambiarias prevalecientes durante el período en que se realizaron dichas transacciones. El uso de un tipo de cambio puntual, como el observado al cierre del año, podría introducir distorsiones significativas, especialmente en economías que registran fuertes depreciaciones, devaluaciones o una elevada volatilidad cambiaria.\r\n\r\nEsta conversión permite expresar los agregados de cuentas nacionales de los distintos países en una unidad monetaria común, facilitando su agregación y comparación a nivel regional. Sin embargo, debe tenerse presente que las variaciones de las series expresadas en dólares corrientes reflejan tanto cambios en los valores nominales medidos en moneda nacional como fluctuaciones del tipo de cambio. En consecuencia, su evolución no debe interpretarse exclusivamente como resultado de cambios en el nivel de actividad económica.\r\n",
+        "comments": "",
+        "decimals": 0,
+        "last_update": "May  8 2026 10:48AM"
+      },
+      "data": [
+        {
+          "value": "1835909.527491542",
+          "source_id": 1753,
+          "notes_ids": "",
+          "iso3": "MEX",
+          "dim_208": 233,
+          "dim_29117": 29194
+        }
+      ],
+      "dimensions": [
+        {
+          "id": 208,
+          "name": "País__ESTANDAR",
+          "order": 1,
+          "position": 3,
+          "members": [
+            {
+              "name": "México",
+              "id": 233,
+              "in": 1,
+              "order": 265,
+              "parent": 208,
+              "selected": 1,
+              "path": "México"
+            }
+          ]
+        },
+        {
+          "id": 29117,
+          "name": "Años__ESTANDAR",
+          "order": 0,
+          "position": 2,
+          "members": [
+            {
+              "name": "2024",
+              "id": 29194,
+              "in": 1,
+              "order": 2024,
+              "parent": 29117,
+              "selected": 1,
+              "path": "2024"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": 1753,
+          "description": "Estimaciones propias con base en fuentes oficiales",
+          "publication_url": "",
+          "organization_acronym": "CEPAL",
+          "organization_name": "Comisión Económica para América Latina y el Caribe",
+          "organization_url": "http://www.cepal.org"
+        }
+      ],
+      "footnotes": [],
+      "credits": [
+        {
+          "id": 0,
+          "description": "2026-08-23"
+        },
+        {
+          "id": 1,
+          "description": "CEPALSTAT"
+        },
+        {
+          "id": 2,
+          "description": "Comisión Económica para América Latina y el Caribe – CEPAL"
+        },
+        {
+          "id": 3,
+          "description": "Naciones Unidas"
+        }
+      ]
+    },
+    "footer": {
+      "records": 1,
+      "elapsed_time": "0.15279",
+      "ip": "201.188.147.194",
+      "query": "http://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/data?lang=es&format=json&in=1&path=1&members=233,29194"
+    }
+  },
+  "elapsed_seconds": 0.108,
+  "error": null
+}

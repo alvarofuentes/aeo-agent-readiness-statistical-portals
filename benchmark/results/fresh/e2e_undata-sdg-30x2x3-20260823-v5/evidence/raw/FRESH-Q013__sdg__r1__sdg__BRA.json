@@ -1,0 +1,952 @@
+{
+  "url": "https://unstats.un.org/SDGAPI/v1/sdg/Series/Data?seriesCode=NY_GDP_MKTP_KD_ZG&areaCode=076",
+  "status": 200,
+  "headers": {
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "application/json; charset=utf-8",
+    "Referrer-Policy": "no-referrer-when-downgrade",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "X-Content-Type-Options": "nosniff",
+    "Content-Security-Policy": "object-src 'none' ; img-src 'self' https://*.datatables.net/ https://*.twimg.com/ https://*.un.org/ https://*.twitter.com/ data:; frame-src 'self' https://whova.com https://d1keuthy5s86c8.cloudfront.net https://unb2c.b2clogin.com/ https://*.arcgis.com https://www.youtube.com https://youtube.com https://*.twitter.com https://fonts.googleapis.com https://maxcdn.bootstrapcdn.com https://flickrembed.com/ https://public.tableau.com https://unb2c.b2clogin.com/unb2c.onmicrosoft.com https://login.microsoftonline.com/* https://aadcdn.msauth.net/* https://login.microsoftonline.com/ https://www.podbean.com/  https://*.un.org/ https://simplebooklet.com/ https://www.kaltura.com https://app.powerbi.com/",
+    "Feature-Policy": "vibrate 'none'; geolocation 'none'; midi 'none'; notifications 'none'; push 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; vibrate 'none'; fullscreen 'none'; payment 'none'",
+    "Set-Cookie": "NSC_EFTB_votubut2_mcwt=ffffffff098a6e3e45525d5f4f58455e445a4a423660;Version=1;Max-Age=120;path=/;secure;httponly",
+    "Permissions-Policy": "geolocation=(), microphone=(),vibrate=(), midi=(),notifications=(),push=(),sync-xhr=(),camera=(),magnetometer=(),gyroscope=(),speaker=(),fullscreen=(),payment=()",
+    "X-Frame-Options": "ALLOW-FROM https://worlds-women-2020-data-undesa.hub.arcgis.com/",
+    "Date": "Sun, 23 Aug 2026 23:52:41 GMT"
+  },
+  "payload": {
+    "size": 25,
+    "totalElements": 25,
+    "totalPages": 1,
+    "pageNumber": 1,
+    "attributes": [
+      {
+        "id": "Nature",
+        "codes": [
+          {
+            "code": "C",
+            "description": "Country data",
+            "sdmx": "C"
+          },
+          {
+            "code": "CA",
+            "description": "Country adjusted data",
+            "sdmx": "CA"
+          },
+          {
+            "code": "E",
+            "description": "Estimated data",
+            "sdmx": "E"
+          },
+          {
+            "code": "G",
+            "description": "Global monitoring data",
+            "sdmx": "G"
+          },
+          {
+            "code": "M",
+            "description": "Modeled data",
+            "sdmx": "M"
+          },
+          {
+            "code": "N",
+            "description": "Non-relevant",
+            "sdmx": "N"
+          },
+          {
+            "code": "NA",
+            "description": "Data nature not available",
+            "sdmx": "_X"
+          }
+        ]
+      },
+      {
+        "id": "Units",
+        "codes": [
+          {
+            "code": "PERCENT",
+            "description": "Percentage",
+            "sdmx": "PT"
+          }
+        ]
+      }
+    ],
+    "dimensions": [
+      {
+        "id": "Reporting Type",
+        "codes": [
+          {
+            "code": "N",
+            "description": "National",
+            "sdmx": "N"
+          },
+          {
+            "code": "G",
+            "description": "Global",
+            "sdmx": "G"
+          },
+          {
+            "code": "R",
+            "description": "Regional",
+            "sdmx": "R"
+          }
+        ]
+      }
+    ],
+    "data": [
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2000.0,
+        "value": "4.387949444",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2001.0,
+        "value": "1.389896404",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2002.0,
+        "value": "3.053461857",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2003.0,
+        "value": "1.140828999",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2004.0,
+        "value": "5.759964637",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2005.0,
+        "value": "3.202132062",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2006.0,
+        "value": "3.961988709",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2007.0,
+        "value": "6.069870607",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2008.0,
+        "value": "5.094195448",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2009.0,
+        "value": "-0.125812003",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2010.0,
+        "value": "7.528225818",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2011.0,
+        "value": "3.974423079",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2012.0,
+        "value": "1.921175985",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2013.0,
+        "value": "3.00482267",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2014.0,
+        "value": "0.50395574",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2015.0,
+        "value": "-3.545763393",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2016.0,
+        "value": "-3.275916906",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2017.0,
+        "value": "1.322869054",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2018.0,
+        "value": "1.783666761",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2019.0,
+        "value": "1.220777823",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2020.0,
+        "value": "-3.276758796",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2021.0,
+        "value": "4.76260438",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2022.0,
+        "value": "3.016694354",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2023.0,
+        "value": "3.241655328",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      },
+      {
+        "goal": [
+          "17"
+        ],
+        "target": [
+          "17.13"
+        ],
+        "indicator": [
+          "17.13.1"
+        ],
+        "series": "NY_GDP_MKTP_KD_ZG",
+        "seriesDescription": "Annual GDP growth (%)",
+        "seriesCount": "6105",
+        "geoAreaCode": "76",
+        "geoAreaName": "Brazil",
+        "timePeriodStart": 2024.0,
+        "value": "3.419315166",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": null,
+        "source": "World Bank national accounts data, and OECD National Accounts data files.",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "G",
+          "Units": "PERCENT"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      }
+    ]
+  },
+  "attempts": 1,
+  "elapsed_seconds": 1.654,
+  "error": null
+}

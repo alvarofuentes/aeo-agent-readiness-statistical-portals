@@ -1,0 +1,109 @@
+{
+  "capture_version": 2,
+  "case_id": "PILOT-Q006__cepalstat",
+  "template_id": "PILOT-Q006",
+  "portal_id": "cepalstat",
+  "query": "Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.",
+  "captured_at": "2026-08-23T04:14:29Z",
+  "allowlist_roots": [
+    "cepal.org"
+  ],
+  "serp": {
+    "urls": [],
+    "rejected": [
+      {
+        "url": "http://www.w3.org/1999/xhtml",
+        "reason": "outside_portal_allowlist"
+      },
+      {
+        "url": "http://schemas.live.com/Web/",
+        "reason": "outside_portal_allowlist"
+      }
+    ],
+    "captures": [
+      {
+        "requested_url": "https://www.google.com/search?q=site%3Astatistics.cepal.org+Distingue+correctamente+entre+PIB+total+y+PIB+por+actividad+econ%C3%B3mica+para+responder+una+consulta+sobre+Bolivia.",
+        "captured_at": "2026-08-23T04:14:29Z",
+        "status": 429,
+        "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Astatistics.cepal.org%2BDistingue%2Bcorrectamente%2Bentre%2BPIB%2Btotal%2By%2BPIB%2Bpor%2Bactividad%2Becon%25C3%25B3mica%2Bpara%2Bresponder%2Buna%2Bconsulta%2Bsobre%2BBolivia.&q=EgTJvJPCGKXnqdQGIjCoHEWz7DBrjk9vKYw-2YA866g5PAyd0TeTbNFl_nE7dvdPMoFPqjYAGxiW7YuZCskyAnJSWgFD",
+        "headers": {
+          "date": "Sun, 23 Aug 2026 04:14:29 GMT",
+          "pragma": "no-cache",
+          "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+          "cache-control": "no-store, no-cache, must-revalidate",
+          "content-type": "text/html",
+          "server": "scaffolding on HTTPServer2",
+          "content-length": "3623",
+          "x-xss-protection": "0",
+          "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+          "connection": "close"
+        },
+        "error": "HTTPError",
+        "elapsed_seconds": 0.389,
+        "byte_length": 3623,
+        "body_sha256": "cd91958b7f60b39b41eba1e77399776190f3127cf179c1b950b93de61571f915",
+        "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q006__cepalstat/serp_google.body",
+        "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q006__cepalstat/serp_google.headers.json"
+      },
+      {
+        "requested_url": "https://www.bing.com/search?q=site%3Astatistics.cepal.org+Distingue+correctamente+entre+PIB+total+y+PIB+por+actividad+econ%C3%B3mica+para+responder+una+consulta+sobre+Bolivia.",
+        "captured_at": "2026-08-23T04:14:29Z",
+        "status": 200,
+        "final_url": "https://www.bing.com/search?q=site%3Astatistics.cepal.org+Distingue+correctamente+entre+PIB+total+y+PIB+por+actividad+econ%C3%B3mica+para+responder+una+consulta+sobre+Bolivia.",
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "private, max-age=0",
+          "expires": "Sun, 23 Aug 2026 04:13:29 GMT",
+          "vary": "Accept-Encoding",
+          "x-eventid": "6a8a73a567c844eea4f2d29d471eb3a9",
+          "useragentreductionoptout": "A7kgTC5xdZ2WIVGZEfb1hUoNuvjzOZX3VIV/BA6C18kQOOF50Q0D3oWoAm49k3BQImkujKILc7JmPysWk3CSjwUAAACMeyJvcmlnaW4iOiJodHRwczovL3d3dy5iaW5nLmNvbTo0NDMiLCJmZWF0dXJlIjoiU2VuZEZ1bGxVc2VyQWdlbnRBZnRlclJlZHVjdGlvbiIsImV4cGlyeSI6MTY4NDg4NjM5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=",
+          "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+          "permissions-policy": "unload=()",
+          "content-security-policy": "script-src https: 'strict-dynamic' 'report-sample' 'wasm-unsafe-eval' 'nonce-ZcCEoYbccqvemUekYJEEVPh4qYYmMbpZr3NGFlH5IC8='; base-uri 'self';",
+          "p3p": "CP=\"NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND\"",
+          "x-display-context": "full",
+          "date": "Sun, 23 Aug 2026 04:14:29 GMT",
+          "transfer-encoding": "chunked",
+          "connection": "Transfer-Encoding",
+          "set-cookie": "_SS=SID=1B837A47C7C26A1237B86DF9C6E26BD0; domain=.bing.com; path=/",
+          "alt-svc": "h3=\":443\"; ma=93600",
+          "x-cdn-traceid": "0.e2ba1402.1787458469.49ce9"
+        },
+        "elapsed_seconds": 0.292,
+        "byte_length": 123144,
+        "body_sha256": "4a01c102ae22875057fa463f86d3cc0f9a2dc92cf9ce64fbe8db76d43f583356",
+        "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q006__cepalstat/serp_bing.body",
+        "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q006__cepalstat/serp_bing.headers.json"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "requested_url": "https://statistics.cepal.org/portal/cepalstat/",
+      "captured_at": "2026-08-23T04:14:29Z",
+      "status": 200,
+      "final_url": "https://statistics.cepal.org/portal/cepalstat/",
+      "headers": {
+        "server": "nginx",
+        "date": "Sun, 23 Aug 2026 04:14:30 GMT",
+        "content-type": "text/html",
+        "content-length": "1529",
+        "connection": "close",
+        "last-modified": "Fri, 14 Aug 2026 14:29:26 GMT",
+        "etag": "\"6a7f2646-5f9\"",
+        "accept-ranges": "bytes"
+      },
+      "elapsed_seconds": 0.065,
+      "byte_length": 1529,
+      "body_sha256": "36a9b33eb322bb98e6c19d6218cd577992fb1f0905aeb4c42d98003a1d5adb17",
+      "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q006__cepalstat/page_00.body",
+      "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q006__cepalstat/page_00.headers.json",
+      "text_excerpt": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>CEPALSTAT Portal de Datos y Publicaciones Estadísticas</title>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <link rel=\"shortcut icon\" href=\"images/favicon_un.png\" type=\"image/png\" />\n    <link rel=\"stylesheet\" href=\"../../assets/bootstrap-4.3.1.min.css\" >\n    <script src=\"../../assets/jquery.min.js\"></script>\n    <script src=\"../../assets/bootstrap-4.3.1.min.js\" ></script>\n    <script src=\"assets/portal-actions.js\"></script>\n    <script src=\"configuration.js\"></script>\n    <link rel=\"stylesheet\" href=\"assets/style-5column-boxes.css?v=20250312\" >\n\n    <script>\n        $(document).ready(function () {\n          var idioma = getQueryVariable(\"lang\");\n          if(idioma==\"en\") {\n            $(document).attr(\"title\", \"CEPALSTAT Statistical Data Portal and Publications\");\n            $(\"#menu-cabecera\").load(\"header-en.html?v=20260703\");\n            $(\"#modulos\").load(\"en/module-home.html?v=20260703\");\n            $(\"#footer-content\").load(\"footer-en.html?v=20260703\");\n          } else {\n            $(\"#menu-cabecera\").load(\"header-es.html?v=20260703\");\n            $(\"#modulos\").load(\"es/modulo-inicio.html?v=20260703\");\n            $(\"#footer-content\").load(\"footer-es.html?v=20260703\");\n          }\n            scrollTopPage();\n        });\n    </script>    \n  </head>\n  <body>\n    <div id=\"menu-cabecera\"></div>\n    <div id=\"modulos\"></div>\n    <div id=\"footer-content\"></div>\n  </body>\n</html>\n",
+      "allowlist_valid": true,
+      "evidence_use": true
+    }
+  ],
+  "sha256": "1ada88f03e75075c2b27baa9b94de555c524d7520de43f06cc53d6e86de84c5d",
+  "candidate_url": null,
+  "candidate_allowed": false
+}

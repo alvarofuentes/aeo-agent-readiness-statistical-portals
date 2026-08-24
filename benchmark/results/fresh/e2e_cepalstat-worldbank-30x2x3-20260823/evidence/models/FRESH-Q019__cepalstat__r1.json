@@ -1,0 +1,79 @@
+{
+  "query": "¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",
+  "portal": "cepalstat",
+  "repeat": 1,
+  "endpoint": "http://127.0.0.1:11434",
+  "selection": {
+    "ok": true,
+    "data": {
+      "candidate_id": "2203",
+      "query_rewrite": "Comparar el Producto interno bruto (PIB) total anual a precios corrientes en dólares entre Ecuador y Bolivia en 2024",
+      "reason": "El usuario pregunta qué economía es mayor, lo que implica comparar la magnitud total del PIB. El candidato '2203' corresponde al 'Producto interno bruto (PIB) total anual a precios corrientes en dólares', que es la medida estándar para comparar el tamaño de las economías nacionales sin ajustar por población.",
+      "model_raw": "{\n  \"candidate_id\": \"2203\",\n  \"query_rewrite\": \"Comparar el Producto interno bruto (PIB) total anual a precios corrientes en dólares entre Ecuador y Bolivia en 2024\",\n  \"reason\": \"El usuario pregunta qué economía es mayor, lo que implica comparar la magnitud total del PIB. El candidato '2203' corresponde al 'Producto interno bruto (PIB) total anual a precios corrientes en dólares', que es la medida estándar para comparar el tamaño de las economías nacionales sin ajustar por población.\"\n}"
+    }
+  },
+  "selection_mode": "model",
+  "candidate_count": 12,
+  "candidates": [
+    {
+      "id": "2203",
+      "name": "Producto interno bruto (PIB) total anual a precios corrientes en dólares",
+      "indicator_id": 2203
+    },
+    {
+      "id": "2205",
+      "name": "Producto interno bruto (PIB) total anual por habitante a precios corrientes en dólares",
+      "indicator_id": 2205
+    },
+    {
+      "id": "4873",
+      "name": "CHILE Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4873
+    },
+    {
+      "id": "4876",
+      "name": "CHILE Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4876
+    },
+    {
+      "id": "4949",
+      "name": "ECUADOR Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4949
+    },
+    {
+      "id": "4952",
+      "name": "ECUADOR Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4952
+    },
+    {
+      "id": "4959",
+      "name": "MÉXICO Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4959
+    },
+    {
+      "id": "4962",
+      "name": "MÉXICO Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4962
+    },
+    {
+      "id": "4997",
+      "name": "COLOMBIA Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4997
+    },
+    {
+      "id": "5000",
+      "name": "COLOMBIA Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 5000
+    },
+    {
+      "id": "5005",
+      "name": "BOLIVIA Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 5005
+    },
+    {
+      "id": "5008",
+      "name": "BOLIVIA Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 5008
+    }
+  ]
+}

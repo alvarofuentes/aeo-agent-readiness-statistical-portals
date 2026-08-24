@@ -1,0 +1,37 @@
+[
+  {
+    "portal_id": "who",
+    "evidence_date": "2026-08-24",
+    "technical_score": 85,
+    "technical_score_unallocated_weight": 0,
+    "technical_confidence": "high",
+    "technical_dimensions": {
+      "discovery": "PASS",
+      "retrieval": "PASS",
+      "rendering": "PASS",
+      "structured_data": "ABSENT",
+      "authority_citation": "PASS",
+      "accessibility": "PASS"
+    },
+    "e2e_queries": 90,
+    "e2e_passes": 0,
+    "e2e_pass_rate": 0.0,
+    "selection_error_count": 8,
+    "selection_error_rate": 0.0889,
+    "selection_status_pass_rate": 0.0,
+    "candidate_count_mean": 5,
+    "specific_url_rate": 1.0,
+    "metadata_complete_rate": 1.0,
+    "citation_reproducible_rate": 1.0,
+    "robots_status": 200,
+    "sitemap_status": 404,
+    "llms_status": 404,
+    "jsonld_initial_status": "ABSENT",
+    "jsonld_rendered_status": "ABSENT",
+    "jsonld_rendered": "ABSENT",
+    "api_direct_verified": "PASS",
+    "unverified_count": 0,
+    "status": "verified_sample",
+    "source_evidence_path": "evidence/technical/ and evidence/raw/"
+  }
+]

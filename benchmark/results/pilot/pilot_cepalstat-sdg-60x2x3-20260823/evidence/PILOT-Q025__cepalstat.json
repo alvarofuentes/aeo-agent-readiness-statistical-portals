@@ -1,0 +1,109 @@
+{
+  "capture_version": 2,
+  "case_id": "PILOT-Q025__cepalstat",
+  "template_id": "PILOT-Q025",
+  "portal_id": "cepalstat",
+  "query": "Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.",
+  "captured_at": "2026-08-23T04:14:47Z",
+  "allowlist_roots": [
+    "cepal.org"
+  ],
+  "serp": {
+    "urls": [],
+    "rejected": [
+      {
+        "url": "http://www.w3.org/1999/xhtml",
+        "reason": "outside_portal_allowlist"
+      },
+      {
+        "url": "http://schemas.live.com/Web/",
+        "reason": "outside_portal_allowlist"
+      }
+    ],
+    "captures": [
+      {
+        "requested_url": "https://www.google.com/search?q=site%3Astatistics.cepal.org+Encuentra+la+fuente+oficial+para+el+PIB+de+Chile+y+dame+la+URL+de+la+serie+m%C3%A1s+pertinente.",
+        "captured_at": "2026-08-23T04:14:46Z",
+        "status": 429,
+        "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Astatistics.cepal.org%2BEncuentra%2Bla%2Bfuente%2Boficial%2Bpara%2Bel%2BPIB%2Bde%2BChile%2By%2Bdame%2Bla%2BURL%2Bde%2Bla%2Bserie%2Bm%25C3%25A1s%2Bpertinente.&q=EgTJvJPCGLbnqdQGIjDxK7nhF-2T5dDZUnHkfydJOe53Gu7Eqtg1QuUlDMJO8IcBRo4VrEK4rdZZFFy8u9oyAnJSWgFD",
+        "headers": {
+          "date": "Sun, 23 Aug 2026 04:14:47 GMT",
+          "pragma": "no-cache",
+          "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+          "cache-control": "no-store, no-cache, must-revalidate",
+          "content-type": "text/html",
+          "server": "scaffolding on HTTPServer2",
+          "content-length": "3557",
+          "x-xss-protection": "0",
+          "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+          "connection": "close"
+        },
+        "error": "HTTPError",
+        "elapsed_seconds": 0.496,
+        "byte_length": 3557,
+        "body_sha256": "378d1a1fb1372bb6bdcf0f15b38441192601ad07254cf2012fbb9f1fbde766b1",
+        "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q025__cepalstat/serp_google.body",
+        "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q025__cepalstat/serp_google.headers.json"
+      },
+      {
+        "requested_url": "https://www.bing.com/search?q=site%3Astatistics.cepal.org+Encuentra+la+fuente+oficial+para+el+PIB+de+Chile+y+dame+la+URL+de+la+serie+m%C3%A1s+pertinente.",
+        "captured_at": "2026-08-23T04:14:46Z",
+        "status": 200,
+        "final_url": "https://www.bing.com/search?q=site%3Astatistics.cepal.org+Encuentra+la+fuente+oficial+para+el+PIB+de+Chile+y+dame+la+URL+de+la+serie+m%C3%A1s+pertinente.",
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "private, max-age=0",
+          "expires": "Sun, 23 Aug 2026 04:13:47 GMT",
+          "vary": "Accept-Encoding",
+          "x-eventid": "6a8a73b7882a40cd9b57a218e661db21",
+          "useragentreductionoptout": "A7kgTC5xdZ2WIVGZEfb1hUoNuvjzOZX3VIV/BA6C18kQOOF50Q0D3oWoAm49k3BQImkujKILc7JmPysWk3CSjwUAAACMeyJvcmlnaW4iOiJodHRwczovL3d3dy5iaW5nLmNvbTo0NDMiLCJmZWF0dXJlIjoiU2VuZEZ1bGxVc2VyQWdlbnRBZnRlclJlZHVjdGlvbiIsImV4cGlyeSI6MTY4NDg4NjM5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=",
+          "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+          "permissions-policy": "unload=()",
+          "content-security-policy": "script-src https: 'strict-dynamic' 'report-sample' 'wasm-unsafe-eval' 'nonce-kwC7rEgN4KkGmtX+J0G3uLvSsn6yraKLat3U5HTxQT0='; base-uri 'self';",
+          "p3p": "CP=\"NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND\"",
+          "x-display-context": "full",
+          "date": "Sun, 23 Aug 2026 04:14:47 GMT",
+          "transfer-encoding": "chunked",
+          "connection": "Transfer-Encoding",
+          "set-cookie": "_SS=SID=3F53988CB2446F7B021D8F32B3E56EE2; domain=.bing.com; path=/",
+          "alt-svc": "h3=\":443\"; ma=93600",
+          "x-cdn-traceid": "0.e2ba1402.1787458487.5e97e"
+        },
+        "elapsed_seconds": 0.279,
+        "byte_length": 123567,
+        "body_sha256": "5a9e17a2edbf9e5e0710fc743841294a52756510ff2fe26179d5cc3b7b9ce4e2",
+        "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q025__cepalstat/serp_bing.body",
+        "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q025__cepalstat/serp_bing.headers.json"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "requested_url": "https://statistics.cepal.org/portal/cepalstat/",
+      "captured_at": "2026-08-23T04:14:47Z",
+      "status": 200,
+      "final_url": "https://statistics.cepal.org/portal/cepalstat/",
+      "headers": {
+        "server": "nginx",
+        "date": "Sun, 23 Aug 2026 04:14:47 GMT",
+        "content-type": "text/html",
+        "content-length": "1529",
+        "connection": "close",
+        "last-modified": "Fri, 14 Aug 2026 14:29:26 GMT",
+        "etag": "\"6a7f2646-5f9\"",
+        "accept-ranges": "bytes"
+      },
+      "elapsed_seconds": 0.067,
+      "byte_length": 1529,
+      "body_sha256": "36a9b33eb322bb98e6c19d6218cd577992fb1f0905aeb4c42d98003a1d5adb17",
+      "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q025__cepalstat/page_00.body",
+      "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q025__cepalstat/page_00.headers.json",
+      "text_excerpt": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>CEPALSTAT Portal de Datos y Publicaciones Estadísticas</title>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <link rel=\"shortcut icon\" href=\"images/favicon_un.png\" type=\"image/png\" />\n    <link rel=\"stylesheet\" href=\"../../assets/bootstrap-4.3.1.min.css\" >\n    <script src=\"../../assets/jquery.min.js\"></script>\n    <script src=\"../../assets/bootstrap-4.3.1.min.js\" ></script>\n    <script src=\"assets/portal-actions.js\"></script>\n    <script src=\"configuration.js\"></script>\n    <link rel=\"stylesheet\" href=\"assets/style-5column-boxes.css?v=20250312\" >\n\n    <script>\n        $(document).ready(function () {\n          var idioma = getQueryVariable(\"lang\");\n          if(idioma==\"en\") {\n            $(document).attr(\"title\", \"CEPALSTAT Statistical Data Portal and Publications\");\n            $(\"#menu-cabecera\").load(\"header-en.html?v=20260703\");\n            $(\"#modulos\").load(\"en/module-home.html?v=20260703\");\n            $(\"#footer-content\").load(\"footer-en.html?v=20260703\");\n          } else {\n            $(\"#menu-cabecera\").load(\"header-es.html?v=20260703\");\n            $(\"#modulos\").load(\"es/modulo-inicio.html?v=20260703\");\n            $(\"#footer-content\").load(\"footer-es.html?v=20260703\");\n          }\n            scrollTopPage();\n        });\n    </script>    \n  </head>\n  <body>\n    <div id=\"menu-cabecera\"></div>\n    <div id=\"modulos\"></div>\n    <div id=\"footer-content\"></div>\n  </body>\n</html>\n",
+      "allowlist_valid": true,
+      "evidence_use": true
+    }
+  ],
+  "sha256": "c7cdf8f347a5c8b06cb0e69f2758c3ae2c54231fe749d706a39825aa834db326",
+  "candidate_url": null,
+  "candidate_allowed": false
+}

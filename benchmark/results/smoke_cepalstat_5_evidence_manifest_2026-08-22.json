@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-08-22T22:04:05Z",
+  "scope": "CEPALSTAT Q049-Q053",
+  "status": "evidence_frozen_model_stage_blocked",
+  "reason": "Qwen 9B MLX inference fails with HTTP 500 broken pipe; full role smoke deferred",
+  "items": [
+    {
+      "query_id": "Q049",
+      "portal_id": "cepalstat",
+      "query": "Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.",
+      "evidence_sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+      "evidence_file": "benchmark/results/smoke_evidence_Q049_cepalstat.json",
+      "n_pages": 1,
+      "statuses": [
+        200
+      ]
+    },
+    {
+      "query_id": "Q050",
+      "portal_id": "cepalstat",
+      "query": "¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?",
+      "evidence_sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+      "evidence_file": "benchmark/results/smoke_evidence_Q050_cepalstat.json",
+      "n_pages": 1,
+      "statuses": [
+        200
+      ]
+    },
+    {
+      "query_id": "Q051",
+      "portal_id": "cepalstat",
+      "query": "Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.",
+      "evidence_sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+      "evidence_file": "benchmark/results/smoke_evidence_Q051_cepalstat.json",
+      "n_pages": 1,
+      "statuses": [
+        200
+      ]
+    },
+    {
+      "query_id": "Q052",
+      "portal_id": "cepalstat",
+      "query": "Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.",
+      "evidence_sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+      "evidence_file": "benchmark/results/smoke_evidence_Q052_cepalstat.json",
+      "n_pages": 1,
+      "statuses": [
+        200
+      ]
+    },
+    {
+      "query_id": "Q053",
+      "portal_id": "cepalstat",
+      "query": "¿Cuál fue el PIB total de Colombia en 2024?",
+      "evidence_sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+      "evidence_file": "benchmark/results/smoke_evidence_Q053_cepalstat.json",
+      "n_pages": 1,
+      "statuses": [
+        200
+      ]
+    }
+  ]
+}

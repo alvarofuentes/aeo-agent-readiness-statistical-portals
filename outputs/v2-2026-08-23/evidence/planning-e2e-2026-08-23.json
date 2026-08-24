@@ -1,0 +1,92 @@
+{
+  "portal": "observatorioplanificacion.cepal.org",
+  "observed_at_utc": "2026-08-23T18:05:09Z",
+  "method": "browser-visible portal search followed by a specific record route",
+  "query": "Plan Nacional de Desarrollo 2025-2029 Ecuador",
+  "decomposition": {
+    "entity": "Plan Nacional de Desarrollo",
+    "country": "Ecuador",
+    "period": "2025-2029",
+    "content_type": "plan"
+  },
+  "search": {
+    "url": "https://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos/",
+    "input_label": "Buscar por palabra",
+    "result_count": 2,
+    "candidates": [
+      {
+        "id": 50678,
+        "name": "Plan Nacional de Desarrollo 2025-2029. Ecuador no se detiene",
+        "theme": "Planificación para el Desarrollo",
+        "selected": true
+      },
+      {
+        "id": 50679,
+        "name": "Plan Plurianual de Inversiones 2025-2029 - Plan Nacional de Desarrollo 2025-2029. Ecuador no se detiene",
+        "theme": "Inversión Pública",
+        "selected": false
+      }
+    ],
+    "selection_rule": "exact plan type and planning theme; the investment-plan result is retained as a near-match, not silently discarded"
+  },
+  "record": {
+    "id": 50678,
+    "url": "https://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos/?id=50678",
+    "name": "Plan Nacional de Desarrollo 2025-2029. Ecuador no se detiene",
+    "country": "Ecuador",
+    "theme": "Planificación para el Desarrollo",
+    "period": "2025-2029",
+    "status": "vigente",
+    "territorial_scale": "Nacional",
+    "temporality": "Mediano Plazo",
+    "responsible_institution": "Secretaría Nacional de Planificación de Ecuador, ex Secretaría Nacional de Planificación y Desarrollo de Ecuador (SENPLADES)",
+    "description_present": true,
+    "dimensions_present": [
+      "Marco regulatorio",
+      "Participación",
+      "Seguimiento",
+      "Indicadores",
+      "Plan de acción",
+      "Presupuesto",
+      "Mecanismos de inversión",
+      "Otros instrumentos de planificación"
+    ],
+    "official_external_pdf": "https://www.planificacion.gob.ec/wp-content/uploads/2025/08/PlanNacionalDeDesarrollo25-29_EcuadorNoSeDetiene.pdf",
+    "cepal_download": "https://documentosexternos.cepal.org/bitstreams/de1a1790-d5c7-4b31-8be2-cc217a2a41cc/download",
+    "related_links": [
+      "https://observatorioplanificacion.cepal.org/es/marcos-normativos/?id=49388",
+      "https://observatorioplanificacion.cepal.org/es/sistemas-nacionales-de-planificacion/?id=37668",
+      "https://observatorioplanificacion.cepal.org/es/planes-programas-e-instrumentos/?id=46350"
+    ]
+  },
+  "technical_snapshot": {
+    "homepage_url": "https://observatorioplanificacion.cepal.org/es/",
+    "homepage_loaded": true,
+    "homepage_counts_visible": [360, 392, 276, 372],
+    "homepage_link_count": 86,
+    "record_link_count": 62,
+    "html_lang": null,
+    "canonical": null,
+    "meta_description": null,
+    "json_ld_blocks": 0,
+    "microdata_items": 0,
+    "main_elements": 0,
+    "technical_files": {
+      "robots.txt": {"url": "https://observatorioplanificacion.cepal.org/robots.txt", "status_observed": 404, "title": "404 Not Found"},
+      "sitemap.xml": {"url": "https://observatorioplanificacion.cepal.org/sitemap.xml", "status_observed": 404, "title": "404 Not Found"},
+      "sitemap_index.xml": {"url": "https://observatorioplanificacion.cepal.org/sitemap_index.xml", "status_observed": 404, "title": "404 Not Found"},
+      "llms.txt": {"url": "https://observatorioplanificacion.cepal.org/llms.txt", "status_observed": 404, "title": "404 Not Found"}
+    },
+    "client_data_route_declared": "https://api-kobo.cepal.org/api-kobo/data?dataset=<portal-dataset>&query=<json-filter>",
+    "direct_api_request_in_this_run": false,
+    "confidence_note": "La página cargó registros y la ficha completa en navegador; la respuesta HTTP independiente de la API se reserva para la siguiente pasada."
+  },
+  "gates": {
+    "query_decomposed": true,
+    "candidates_found_inside_portal": true,
+    "specific_record_selected": true,
+    "value_and_context_visible": true,
+    "official_source_links_present": true,
+    "e2e_pass": true
+  }
+}

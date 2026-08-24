@@ -1,0 +1,109 @@
+{
+  "capture_version": 2,
+  "case_id": "PILOT-Q032__cepalstat",
+  "template_id": "PILOT-Q032",
+  "portal_id": "cepalstat",
+  "query": "Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.",
+  "captured_at": "2026-08-23T04:14:54Z",
+  "allowlist_roots": [
+    "cepal.org"
+  ],
+  "serp": {
+    "urls": [],
+    "rejected": [
+      {
+        "url": "http://www.w3.org/1999/xhtml",
+        "reason": "outside_portal_allowlist"
+      },
+      {
+        "url": "http://schemas.live.com/Web/",
+        "reason": "outside_portal_allowlist"
+      }
+    ],
+    "captures": [
+      {
+        "requested_url": "https://www.google.com/search?q=site%3Astatistics.cepal.org+Compara+el+PIB+de+Mexico+entre+2023+y+2024+y+conserva+la+misma+unidad+y+frecuencia.",
+        "captured_at": "2026-08-23T04:14:53Z",
+        "status": 429,
+        "final_url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Astatistics.cepal.org%2BCompara%2Bel%2BPIB%2Bde%2BMexico%2Bentre%2B2023%2By%2B2024%2By%2Bconserva%2Bla%2Bmisma%2Bunidad%2By%2Bfrecuencia.&q=EgTJvJPCGL3nqdQGIjA5qAZF5U8aDioZcavc-U6AAFwlqLbSGGr2fXJBTCpW-RGO7pr_ZZMZ2BRPaX_OFnIyAnJSWgFD",
+        "headers": {
+          "date": "Sun, 23 Aug 2026 04:14:53 GMT",
+          "pragma": "no-cache",
+          "expires": "Fri, 01 Jan 1990 00:00:00 GMT",
+          "cache-control": "no-store, no-cache, must-revalidate",
+          "content-type": "text/html",
+          "server": "scaffolding on HTTPServer2",
+          "content-length": "3521",
+          "x-xss-protection": "0",
+          "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+          "connection": "close"
+        },
+        "error": "HTTPError",
+        "elapsed_seconds": 0.482,
+        "byte_length": 3521,
+        "body_sha256": "a8fc56443aef213cc3f396b25e96c4e5884b2cd39029c5008b60e63ec1bf6a30",
+        "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q032__cepalstat/serp_google.body",
+        "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q032__cepalstat/serp_google.headers.json"
+      },
+      {
+        "requested_url": "https://www.bing.com/search?q=site%3Astatistics.cepal.org+Compara+el+PIB+de+Mexico+entre+2023+y+2024+y+conserva+la+misma+unidad+y+frecuencia.",
+        "captured_at": "2026-08-23T04:14:53Z",
+        "status": 200,
+        "final_url": "https://www.bing.com/search?q=site%3Astatistics.cepal.org+Compara+el+PIB+de+Mexico+entre+2023+y+2024+y+conserva+la+misma+unidad+y+frecuencia.",
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "private, max-age=0",
+          "expires": "Sun, 23 Aug 2026 04:13:54 GMT",
+          "vary": "Accept-Encoding",
+          "x-eventid": "6a8a73be071f417aa79d4f854ca191b7",
+          "useragentreductionoptout": "A7kgTC5xdZ2WIVGZEfb1hUoNuvjzOZX3VIV/BA6C18kQOOF50Q0D3oWoAm49k3BQImkujKILc7JmPysWk3CSjwUAAACMeyJvcmlnaW4iOiJodHRwczovL3d3dy5iaW5nLmNvbTo0NDMiLCJmZWF0dXJlIjoiU2VuZEZ1bGxVc2VyQWdlbnRBZnRlclJlZHVjdGlvbiIsImV4cGlyeSI6MTY4NDg4NjM5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=",
+          "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+          "permissions-policy": "unload=()",
+          "content-security-policy": "script-src https: 'strict-dynamic' 'report-sample' 'wasm-unsafe-eval' 'nonce-YiZfGjye26GBnsEDvhQfFXIM3SNKp7lWLZsgVKUrZck='; base-uri 'self';",
+          "p3p": "CP=\"NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND\"",
+          "x-display-context": "full",
+          "date": "Sun, 23 Aug 2026 04:14:54 GMT",
+          "transfer-encoding": "chunked",
+          "connection": "Transfer-Encoding",
+          "set-cookie": "_SS=SID=004D1FA70DC36378336C08190CA16233; domain=.bing.com; path=/",
+          "alt-svc": "h3=\":443\"; ma=93600",
+          "x-cdn-traceid": "0.eaba1402.1787458493.432af518"
+        },
+        "elapsed_seconds": 0.301,
+        "byte_length": 121606,
+        "body_sha256": "1930823e27896348d2e764fd028a39e2cfe3cf628f87a6fb24362e2820db0c3e",
+        "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q032__cepalstat/serp_bing.body",
+        "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q032__cepalstat/serp_bing.headers.json"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "requested_url": "https://statistics.cepal.org/portal/cepalstat/",
+      "captured_at": "2026-08-23T04:14:54Z",
+      "status": 200,
+      "final_url": "https://statistics.cepal.org/portal/cepalstat/",
+      "headers": {
+        "server": "nginx",
+        "date": "Sun, 23 Aug 2026 04:14:54 GMT",
+        "content-type": "text/html",
+        "content-length": "1529",
+        "connection": "close",
+        "last-modified": "Fri, 14 Aug 2026 14:29:26 GMT",
+        "etag": "\"6a7f2646-5f9\"",
+        "accept-ranges": "bytes"
+      },
+      "elapsed_seconds": 0.06,
+      "byte_length": 1529,
+      "body_sha256": "36a9b33eb322bb98e6c19d6218cd577992fb1f0905aeb4c42d98003a1d5adb17",
+      "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q032__cepalstat/page_00.body",
+      "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q032__cepalstat/page_00.headers.json",
+      "text_excerpt": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>CEPALSTAT Portal de Datos y Publicaciones Estadísticas</title>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <link rel=\"shortcut icon\" href=\"images/favicon_un.png\" type=\"image/png\" />\n    <link rel=\"stylesheet\" href=\"../../assets/bootstrap-4.3.1.min.css\" >\n    <script src=\"../../assets/jquery.min.js\"></script>\n    <script src=\"../../assets/bootstrap-4.3.1.min.js\" ></script>\n    <script src=\"assets/portal-actions.js\"></script>\n    <script src=\"configuration.js\"></script>\n    <link rel=\"stylesheet\" href=\"assets/style-5column-boxes.css?v=20250312\" >\n\n    <script>\n        $(document).ready(function () {\n          var idioma = getQueryVariable(\"lang\");\n          if(idioma==\"en\") {\n            $(document).attr(\"title\", \"CEPALSTAT Statistical Data Portal and Publications\");\n            $(\"#menu-cabecera\").load(\"header-en.html?v=20260703\");\n            $(\"#modulos\").load(\"en/module-home.html?v=20260703\");\n            $(\"#footer-content\").load(\"footer-en.html?v=20260703\");\n          } else {\n            $(\"#menu-cabecera\").load(\"header-es.html?v=20260703\");\n            $(\"#modulos\").load(\"es/modulo-inicio.html?v=20260703\");\n            $(\"#footer-content\").load(\"footer-es.html?v=20260703\");\n          }\n            scrollTopPage();\n        });\n    </script>    \n  </head>\n  <body>\n    <div id=\"menu-cabecera\"></div>\n    <div id=\"modulos\"></div>\n    <div id=\"footer-content\"></div>\n  </body>\n</html>\n",
+      "allowlist_valid": true,
+      "evidence_use": true
+    }
+  ],
+  "sha256": "fb95295500e517879f427c3947e2526e932f525c5b60a6ba28123d43e762dc0e",
+  "candidate_url": null,
+  "candidate_allowed": false
+}

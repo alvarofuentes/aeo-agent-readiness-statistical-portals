@@ -1,0 +1,103 @@
+{
+  "query": "Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.",
+  "portal": "worldbank",
+  "repeat": 1,
+  "endpoint": "http://127.0.0.1:11435",
+  "selection": {
+    "ok": true,
+    "data": {
+      "candidate_id": "NY.GDP.MKTP.CD",
+      "query_rewrite": "Gross domestic product Mexico current US dollars World Bank",
+      "reason": "El código NY.GDP.MKTP.CD corresponde a 'GDP (current US$)', que es la métrica estándar para el PIB total expresado en dólares estadounidenses actuales, coincidiendo con la solicitud de datos de PIB para México.",
+      "model_raw": "{\n  \"candidate_id\": \"NY.GDP.MKTP.CD\",\n  \"query_rewrite\": \"Gross domestic product Mexico current US dollars World Bank\",\n  \"reason\": \"El código NY.GDP.MKTP.CD corresponde a 'GDP (current US$)', que es la métrica estándar para el PIB total expresado en dólares estadounidenses actuales, coincidiendo con la solicitud de datos de PIB para México.\"\n}"
+    }
+  },
+  "selection_mode": "model",
+  "candidate_count": 12,
+  "candidates": [
+    {
+      "id": "NY.GDP.MKTP.CD",
+      "name": "GDP (current US$)",
+      "unit": "",
+      "sourceNote": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. This indicator is expressed in United States dollars.",
+      "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)"
+    },
+    {
+      "id": "NY.GDP.PCAP.CD",
+      "name": "GDP per capita (current US$)",
+      "unit": "",
+      "sourceNote": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. The core indicator has been divided by the general population to achieve a per capita estimate.This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. This indicator is expressed in United States dollars.",
+      "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)"
+    },
+    {
+      "id": "NY.GDP.MKTP.KD",
+      "name": "GDP (constant 2015 US$)",
+      "unit": "",
+      "sourceNote": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. This indicator is expressed in constant prices, meaning the series has been adjusted to account for price changes over time. The reference year for this adjustment is 2015. This indicator is expressed in United States dollars.",
+      "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)"
+    },
+    {
+      "id": "NY.GDP.MKTP.KD.ZG",
+      "name": "GDP growth (annual %)",
+      "unit": "",
+      "sourceNote": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. This indicator denotes the percentage change over each previous year of the constant price (base year 2015) series in United States dollars.",
+      "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)"
+    },
+    {
+      "id": "NA.GDP.EXC.OG.CR",
+      "name": "Total GDP excluding Oil and Gas (in IDR Million), Current Price",
+      "unit": "",
+      "sourceNote": "",
+      "sourceOrganization": "BADAN PUSAT STATISTIK - Statistics Indonesia"
+    },
+    {
+      "id": "NA.GDP.INC.OG.CR",
+      "name": "Total GDP including Oil and Gas (in IDR Million), Current Price",
+      "unit": "",
+      "sourceNote": "",
+      "sourceOrganization": "BADAN PUSAT STATISTIK - Statistics Indonesia"
+    },
+    {
+      "id": "NA.GDP.INC.OG.SNA08.CR",
+      "name": "Total GDP including Oil and Gas (in IDR Million), SNA 2008, Current Price",
+      "unit": "",
+      "sourceNote": "",
+      "sourceOrganization": ""
+    },
+    {
+      "id": "NE.GDI.TOTL.SNA08.CR",
+      "name": "Total GDP based on expenditure (in IDR Million), SNA 2008, Current Price",
+      "unit": "",
+      "sourceNote": "",
+      "sourceOrganization": ""
+    },
+    {
+      "id": "BN.KLT.PRVT.GD.ZS",
+      "name": "Private capital flows, total (% of GDP)",
+      "unit": "",
+      "sourceNote": "Private capital flows consist of net foreign direct investment and portfolio investment. Foreign direct investment is net inflows of investment to acquire a lasting management interest (10 percent or more of voting stock) in an enterprise operating in an economy other than that of the investor. It is the sum of equity capital, reinvestment of earnings, other long-term capital, and short-term capital as shown in the balance of payments. The FDI included here is total net, that is, net FDI in the reporting economy from foreign sources less net FDI by the reporting economy to the rest of the world. Portfolio investment covers transactions in equity securities and debt securities.",
+      "sourceOrganization": "International Monetary Fund, Balance of Payments Statistics Yearbook and data files, and World Bank and OECD GDP estimates."
+    },
+    {
+      "id": "CC.ENTX.ENE.ZS",
+      "name": "Total energy tax revenue (% of GDP)",
+      "unit": "",
+      "sourceNote": "Revenues from taxes raised on energy products (fossil fuels and electricity) including those used in transportation (petrol and diesel). This includes all CO2-related taxes.",
+      "sourceOrganization": "Policy Instrument for the Environment Data Base, OECD. Available at: https://www.oecd.org/env/indicators-modelling-outlooks/policy-instrument-database/"
+    },
+    {
+      "id": "CC.ENTX.ENV.ZS",
+      "name": "Total environmental tax revenue (% of GDP)",
+      "unit": "",
+      "sourceNote": "",
+      "sourceOrganization": ""
+    },
+    {
+      "id": "CM.MKT.TRAD.GD.ZS",
+      "name": "Stocks traded, total value (% of GDP)",
+      "unit": "",
+      "sourceNote": "The value of shares traded is the total number of shares traded, both domestic and foreign, multiplied by their respective matching prices. Figures are single counted (only one side of the transaction is considered). Companies admitted to listing and admitted to trading are included in the data. Data are end of year values.",
+      "sourceOrganization": "World Federation of Exchanges database, World Federation of Exchanges (WFE)"
+    }
+  ]
+}

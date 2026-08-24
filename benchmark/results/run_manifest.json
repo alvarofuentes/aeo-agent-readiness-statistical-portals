@@ -1,0 +1,31 @@
+{
+  "started_at": "2026-08-22T18:35:30Z",
+  "ollama": "http://127.0.0.1:11434",
+  "models_available": [
+    "muse-glimmer:30b-mlx",
+    "qwen3.5:9b-mlx",
+    "deepseek-coder-v2:16b",
+    "qwen3:30b-a3b",
+    "devstral-small-2:24b",
+    "qwen3-coder:30b-a3b-q4_K_M",
+    "gemma4:latest",
+    "glm-5:cloud",
+    "glm-4.6:cloud",
+    "mistral:latest",
+    "llama3.2:latest"
+  ],
+  "primary_role_models": {
+    "discovery": "gemma4:latest",
+    "semantic": "gemma4:latest",
+    "retrieval": "qwen3.5:9b-mlx",
+    "metadata": "gemma4:latest",
+    "citation": "gemma4:latest",
+    "judge": "gemma4:latest",
+    "adversarial": "gemma4:latest"
+  },
+  "repeats": 1,
+  "n_queries": 5,
+  "n_executions": 5,
+  "evidence_policy": "frozen_per_query_portal",
+  "temperature": 0.0
+}

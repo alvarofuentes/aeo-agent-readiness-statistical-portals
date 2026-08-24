@@ -1,0 +1,44 @@
+# Active fresh E2E contract (2026-08-23)
+# No frozen evidence, prior gold file, or pilot result is an input.
+run:
+  mode: fresh_portal_directed_e2e
+  portals: [cepalstat, worldbank]
+  query_templates: 30
+  repeat_runs: 3
+  expected_executions: 180
+  evidence_policy: live_portal_fetch_per_repeat_no_cache
+  require_complete_manifest_for_editorial: true
+  unresolved_evidence_policy: explicit_not_verified_ledger
+  selection_policy: preserve_model_selection_and_continue
+  diagnostic_classes:
+    - MODEL_SELECTION_ERROR
+  stop_conditions:
+    - any_e2e_retrieval_status_not_verified
+    - zero_observations_after_two_attempts
+  stop_action: write_review_alert_pause_and_relaunch_from_clean_run
+
+query_bank: benchmark/query-bank-120.csv
+
+ollama:
+  model: qwen3.5:9b-mlx
+  endpoints:
+    - http://127.0.0.1:11436
+  workers: 1
+  temperature: 0
+  structured_tokens: 220
+
+technical_layer:
+  dimensions:
+    - bot_access_governance
+    - technical_discovery
+    - rendering_interaction
+    - structured_data
+    - api_code_agent
+    - authority_citability
+  required_unverified_fields:
+    - check_id
+    - status
+    - evidence_state
+    - observed_evidence
+    - verification_gap
+    - next_verification_action

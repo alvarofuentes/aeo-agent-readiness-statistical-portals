@@ -1,0 +1,12 @@
+{
+  "source_of_truth": "auditoría AEO.pdf",
+  "template_file": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/query-templates-120.csv",
+  "n_templates": 120,
+  "n_portals": 5,
+  "n_query_portal_pairs": 600,
+  "repeats": 3,
+  "expected_executions": 1800,
+  "unique_template_families": 24,
+  "duplicate_family_note": "The source CSV contains 120 IDs but 24 repeated text families; retain family_id for clustered sensitivity analysis.",
+  "status": "READY_WITH_CLUSTERED_FAMILY_WARNING"
+}

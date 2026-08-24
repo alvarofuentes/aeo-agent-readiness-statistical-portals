@@ -1,0 +1,79 @@
+{
+  "query": "¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",
+  "portal": "cepalstat",
+  "repeat": 1,
+  "endpoint": "http://127.0.0.1:11435",
+  "selection": {
+    "ok": true,
+    "data": {
+      "candidate_id": "5048",
+      "query_rewrite": "PIB de Peru expresado en moneda nacional, USD o USD por habitante unidad",
+      "reason": "La consulta solicita datos del PIB per cápita (USD por habitante) para Perú. El candidato con id '5048' corresponde a 'PERÚ Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares', que coincide exactamente con la unidad de medida y el país solicitado.",
+      "model_raw": "{\n  \"candidate_id\": \"5048\",\n  \"query_rewrite\": \"PIB de Peru expresado en moneda nacional, USD o USD por habitante unidad\",\n  \"reason\": \"La consulta solicita datos del PIB per cápita (USD por habitante) para Perú. El candidato con id '5048' corresponde a 'PERÚ Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares', que coincide exactamente con la unidad de medida y el país solicitado.\"\n}"
+    }
+  },
+  "selection_mode": "model",
+  "candidate_count": 12,
+  "candidates": [
+    {
+      "id": "2205",
+      "name": "Producto interno bruto (PIB) total anual por habitante a precios corrientes en dólares",
+      "indicator_id": 2205
+    },
+    {
+      "id": "4876",
+      "name": "CHILE Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4876
+    },
+    {
+      "id": "4952",
+      "name": "ECUADOR Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4952
+    },
+    {
+      "id": "4962",
+      "name": "MÉXICO Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4962
+    },
+    {
+      "id": "5000",
+      "name": "COLOMBIA Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 5000
+    },
+    {
+      "id": "5008",
+      "name": "BOLIVIA Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 5008
+    },
+    {
+      "id": "5016",
+      "name": "ARGENTINA Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional[",
+      "indicator_id": 5016
+    },
+    {
+      "id": "5024",
+      "name": "URUGUAY Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 5024
+    },
+    {
+      "id": "5032",
+      "name": "BRASIL Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 5032
+    },
+    {
+      "id": "5040",
+      "name": "PANAMÁ Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 5040
+    },
+    {
+      "id": "5048",
+      "name": "PERÚ Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacionaL",
+      "indicator_id": 5048
+    },
+    {
+      "id": "5677",
+      "name": "GUATEMALA Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 5677
+    }
+  ]
+}

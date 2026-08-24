@@ -1,0 +1,125 @@
+{
+  "url": "https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2205/data?lang=es&format=json&in=1&path=1&members=244%2C29194",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Sun, 23 Aug 2026 19:22:58 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "3589",
+    "Connection": "close",
+    "Access-Control-Allow-Methods": "GET",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Origin": "*"
+  },
+  "payload": {
+    "header": {
+      "name": "uneclac cepalstat api",
+      "version": "1.9.13",
+      "success": true,
+      "machine": "01",
+      "context": "public",
+      "code": 200,
+      "message": "",
+      "timestamp": 1787512979
+    },
+    "body": {
+      "metadata": {
+        "indicator_id": 2205,
+        "indicator_name": "Producto interno bruto (PIB) total anual por habitante a precios corrientes en dólares",
+        "theme": "Estadísticas e Indicadores Económicos",
+        "area": "Cuentas nacionales anuales en dólares",
+        "note": "",
+        "unit": "Dólares por habitante a precios corrientes",
+        "data_features": "",
+        "definition": "Relación entre el producto interno bruto (PIB) anual a precios corrientes de un país y su población en el mismo año. El indicador se expresa en dólares de los Estados Unidos, convirtiendo el PIB en moneda nacional mediante el tipo de cambio nominal aplicado por la CEPAL.\r\n\r\nTotales regionales y subregionales están en base a los datos disponibles de los países de la región.\r\n",
+        "calculation_methodology": "El producto interno bruto (PIB) total anual por habitante a precios corrientes corresponde al PIB valorado a los precios vigentes de cada año, dividido entre la población total estimada para el mismo período. El indicador refleja, por tanto, tanto la evolución del nivel de producción como las variaciones de precios.\r\n\r\nEl dato de población utilizado corresponde a las estimaciones y proyecciones oficiales elaboradas por el CELADE-División de Población de la CEPAL y publicadas en CEPALSTAT. Estas estimaciones armonizan la información demográfica de los países bajo una metodología común, favoreciendo la comparabilidad regional.\r\n\r\nPara expresar el PIB en dólares de los Estados Unidos, las series a precios corrientes en moneda nacional se convierten utilizando, para cada año, el tipo de cambio nominal de referencia adoptado por la CEPAL, basado en información publicada por el Fondo Monetario Internacional (FMI). En consecuencia, la evolución del indicador expresado en dólares también puede verse afectada por las variaciones del tipo de cambio.\r\n\r\nLos agregados regionales y subregionales se calculan a partir de los datos disponibles de los países que integran cada agrupación, por lo que su cobertura puede variar entre períodos según la disponibilidad de información nacional. El PIB por habitante representa un promedio de la producción por persona y no refleja la distribución del ingreso dentro de cada país.",
+        "comments": "",
+        "decimals": 0,
+        "last_update": "May  8 2026 10:51AM"
+      },
+      "data": [
+        {
+          "value": "8415.424524318725",
+          "source_id": 1753,
+          "notes_ids": "",
+          "iso3": "PER",
+          "dim_208": 244,
+          "dim_29117": 29194
+        }
+      ],
+      "dimensions": [
+        {
+          "id": 208,
+          "name": "País__ESTANDAR",
+          "order": 0,
+          "position": 2,
+          "members": [
+            {
+              "name": "Perú",
+              "id": 244,
+              "in": 1,
+              "order": 310,
+              "parent": 208,
+              "selected": 1,
+              "path": "Perú"
+            }
+          ]
+        },
+        {
+          "id": 29117,
+          "name": "Años__ESTANDAR",
+          "order": 1,
+          "position": 3,
+          "members": [
+            {
+              "name": "2024",
+              "id": 29194,
+              "in": 1,
+              "order": 2024,
+              "parent": 29117,
+              "selected": 1,
+              "path": "2024"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": 1753,
+          "description": "Estimaciones propias con base en fuentes oficiales",
+          "publication_url": "",
+          "organization_acronym": "CEPAL",
+          "organization_name": "Comisión Económica para América Latina y el Caribe",
+          "organization_url": "http://www.cepal.org"
+        }
+      ],
+      "footnotes": [],
+      "credits": [
+        {
+          "id": 0,
+          "description": "2026-08-23"
+        },
+        {
+          "id": 1,
+          "description": "CEPALSTAT"
+        },
+        {
+          "id": 2,
+          "description": "Comisión Económica para América Latina y el Caribe – CEPAL"
+        },
+        {
+          "id": 3,
+          "description": "Naciones Unidas"
+        }
+      ]
+    },
+    "footer": {
+      "records": 1,
+      "elapsed_time": "0.16231",
+      "ip": "201.188.147.194",
+      "query": "http://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2205/data?lang=es&format=json&in=1&path=1&members=244,29194"
+    }
+  },
+  "elapsed_seconds": 0.272,
+  "error": null
+}

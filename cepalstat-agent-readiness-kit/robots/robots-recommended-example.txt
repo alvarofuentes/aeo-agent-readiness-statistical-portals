@@ -1,0 +1,19 @@
+# Recommended starting point for a public statistical portal.
+# Keep public statistical pages, indicator metadata and API documentation crawlable.
+# Block administrative/private/session paths.
+
+User-agent: *
+Allow: /
+Allow: /portal/cepalstat/
+Allow: /portal/cepalstat/technical-sheet.html
+Allow: /portal/cepalstat/open-data.html
+Allow: /portal/cepalstat/indicator/
+Allow: /api/
+Disallow: /admin/
+Disallow: /login/
+Disallow: /account/
+Disallow: /session/
+Disallow: /internal/
+
+# Publish the canonical sitemap of public resources.
+Sitemap: https://statistics.cepal.org/sitemap.xml

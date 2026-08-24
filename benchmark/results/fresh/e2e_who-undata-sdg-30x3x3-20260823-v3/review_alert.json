@@ -1,0 +1,147 @@
+{
+  "alert_type": "not_verified_query",
+  "execution_id": "FRESH-Q006__who__r2",
+  "message": "A query remained NOT_VERIFIED; stop, inspect the live request/model route, resolve it, and relaunch.",
+  "created_at": "2026-08-23T22:57:33.083407+00:00",
+  "row": {
+    "execution_id": "FRESH-Q006__who__r2",
+    "fresh_template_id": "FRESH-Q006",
+    "source_template_id": "Q006",
+    "portal_id": "who",
+    "repeat": 2,
+    "stratum": "exact_indicator",
+    "query": "Dame el valor de PIB total de Peru para 2023 y 2024.",
+    "decomposition": {
+      "countries": [
+        [
+          "Peru",
+          "PER"
+        ]
+      ],
+      "years": [
+        2023,
+        2024
+      ],
+      "concept": "gdp_total",
+      "requested_scope": "country_aggregate",
+      "requested_frequency": "unspecified",
+      "requested_unit": "unspecified",
+      "requested_price_base": "unspecified",
+      "excluded_measures": [],
+      "dimension_to_verify": null
+    },
+    "candidate": {
+      "id": "GHED_CHEGDP_SHA2011",
+      "name": "Current health expenditure (CHE) as percentage of gross domestic product (GDP) (%)",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "current",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    "candidate_count": 5,
+    "near_matches": [
+      {
+        "id": "GB_XPD_RSDV",
+        "name": "Research and development (R&amp;D) expenditure as a proportion of GDP",
+        "unit": "percent",
+        "sourceNote": "WHO Global Health Observatory indicator catalogue",
+        "sourceOrganization": "WHO",
+        "selection_metadata": {
+          "scope": "country_aggregate",
+          "country_scope": "all_countries",
+          "frequency": "unspecified",
+          "unit_class": "percent",
+          "price_base": "unspecified",
+          "source_catalog": "WHO GHO"
+        }
+      },
+      {
+        "id": "GHED_GGHE-DGDP_SHA2011",
+        "name": "Domestic general government health expenditure (GGHE-D) as percentage of gross domestic product (GDP) (%)",
+        "unit": "percent",
+        "sourceNote": "WHO Global Health Observatory indicator catalogue",
+        "sourceOrganization": "WHO",
+        "selection_metadata": {
+          "scope": "country_aggregate",
+          "country_scope": "all_countries",
+          "frequency": "unspecified",
+          "unit_class": "percent",
+          "price_base": "unspecified",
+          "source_catalog": "WHO GHO"
+        }
+      },
+      {
+        "id": "R_afford_gdp",
+        "name": "Affordability - percentage of GDP per capita required to purchase 2000 cigarettes of the most sold brand",
+        "unit": "percent",
+        "sourceNote": "WHO Global Health Observatory indicator catalogue",
+        "sourceOrganization": "WHO",
+        "selection_metadata": {
+          "scope": "country_aggregate",
+          "country_scope": "all_countries",
+          "frequency": "unspecified",
+          "unit_class": "per_capita",
+          "price_base": "unspecified",
+          "source_catalog": "WHO GHO"
+        }
+      },
+      {
+        "id": "TAXBEV_AFFORD_GDP",
+        "name": "GDP per capita to purchase a volume of beverage (%)",
+        "unit": "percent",
+        "sourceNote": "WHO Global Health Observatory indicator catalogue",
+        "sourceOrganization": "WHO",
+        "selection_metadata": {
+          "scope": "country_aggregate",
+          "country_scope": "all_countries",
+          "frequency": "unspecified",
+          "unit_class": "per_capita",
+          "price_base": "unspecified",
+          "source_catalog": "WHO GHO"
+        }
+      }
+    ],
+    "selection_mode": "ranked_fallback",
+    "selection_status": "FAIL",
+    "selection_failure_class": "MODEL_RESPONSE_ERROR",
+    "selection_error": {
+      "failure_class": "MODEL_RESPONSE_ERROR",
+      "note": "The model did not return a usable candidate; ranked fallback is preserved for diagnosis."
+    },
+    "model_candidate_rejected": null,
+    "e2e_status": "FAIL",
+    "model": "qwen3.5:9b-mlx",
+    "model_endpoint": "http://127.0.0.1:11436",
+    "model_ok": true,
+    "retrieval_status": "NOT_VERIFIED",
+    "value_found": false,
+    "values": [],
+    "rows_returned": 0,
+    "metadata": {
+      "indicator_name": "Current health expenditure (CHE) as percentage of gross domestic product (GDP) (%)",
+      "unit": "percent",
+      "definition": "WHO Global Health Observatory indicator catalogue",
+      "source": "WHO Global Health Observatory",
+      "missing": []
+    },
+    "citation_url": "https://ghoapi.azureedge.net/api/GHED_CHEGDP_SHA2011",
+    "calls": [
+      {
+        "url": "https://ghoapi.azureedge.net/api/GHED_CHEGDP_SHA2011?%24filter=SpatialDim+eq+%27PER%27&%24top=1000",
+        "status": 0,
+        "raw_path": "evidence/raw/FRESH-Q006__who__r2__who__PER.json",
+        "elapsed_seconds": 91.081,
+        "error": "URLError: <urlopen error _ssl.c:983: The handshake operation timed out>"
+      }
+    ],
+    "elapsed_seconds": 98.483,
+    "evidence_policy": "live_portal_fetch_per_repeat_no_cache"
+  }
+}

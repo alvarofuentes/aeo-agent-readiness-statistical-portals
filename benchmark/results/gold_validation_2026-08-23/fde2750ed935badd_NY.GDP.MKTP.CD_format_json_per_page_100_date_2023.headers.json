@@ -1,0 +1,19 @@
+{
+  "date": "Sun, 23 Aug 2026 02:08:00 GMT",
+  "content-type": "application/json;charset=utf-8",
+  "transfer-encoding": "chunked",
+  "connection": "close",
+  "set-cookie": "_cfuvid=7uaRy6vSCOweEKMwRY7nwOB3Y2GPR_kaCPeO2OOceuA-1787450880.0944154-1.0.1.1-heHG12uUOwKgkuq4RE_3qDYjXnk8hXFqIMJPDWaIx30; HttpOnly; SameSite=None; Secure; Path=/; Domain=worldbank.org",
+  "cf-ray": "a2f691209888b86f-SCL",
+  "cf-cache-status": "MISS",
+  "access-control-allow-origin": "*",
+  "cache-control": "public, max-age=86400",
+  "expires": "Mon, 24 Aug 2026 02:08:00 GMT",
+  "last-modified": "Sun, 23 Aug 2026 02:08:00 GMT",
+  "server": "cloudflare",
+  "vary": "accept-encoding",
+  "access-control-allow-headers": "X-Requested-With",
+  "access-control-allow-methods": "GET",
+  "request-context": "appId=cid-v1:da002513-bd8b-4441-9f30-737944134422",
+  "x-powered-by": "ASP.NET"
+}

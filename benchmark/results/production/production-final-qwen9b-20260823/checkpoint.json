@@ -1,0 +1,24 @@
+{
+  "updated_at": "2026-08-23T04:07:22Z",
+  "completed": [
+    "pass1__Q001__worldbank__repeat1",
+    "pass1__Q001__worldbank__repeat2",
+    "pass1__Q001__worldbank__repeat3",
+    "pass1__Q002__worldbank__repeat1",
+    "pass1__Q002__worldbank__repeat2",
+    "pass1__Q002__worldbank__repeat3",
+    "pass1__Q003__worldbank__repeat1",
+    "pass1__Q003__worldbank__repeat2",
+    "pass1__Q003__worldbank__repeat3",
+    "pass1__Q004__worldbank__repeat1",
+    "pass1__Q004__worldbank__repeat2",
+    "pass1__Q006__worldbank__repeat1",
+    "pass1__Q006__worldbank__repeat2",
+    "pass1__Q006__worldbank__repeat3",
+    "pass1__Q007__worldbank__repeat1",
+    "pass1__Q007__worldbank__repeat2",
+    "pass1__Q007__worldbank__repeat3"
+  ],
+  "count": 17,
+  "expected": 1800
+}

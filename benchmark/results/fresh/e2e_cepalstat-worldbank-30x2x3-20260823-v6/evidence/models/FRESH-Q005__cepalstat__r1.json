@@ -1,0 +1,179 @@
+{
+  "query": "¿Cuál fue el PIB total de Colombia en 2024?",
+  "portal": "cepalstat",
+  "repeat": 1,
+  "endpoint": "http://127.0.0.1:11434",
+  "selection": {
+    "ok": true,
+    "data": {
+      "candidate_id": "2203",
+      "query_rewrite": "PIB total de Colombia en 2024 a precios corrientes en dólares",
+      "reason": "El candidato 2203 coincide con el concepto 'gdp_total', la frecuencia anual, el país Colombia y el scope country_aggregate solicitado. Se descartan los candidatos 4997 y 5000 por tener scope=subnational a pesar de ser para Colombia, y se descarta 2205 por ser per cápita en lugar de total.",
+      "model_raw": "{\n  \"candidate_id\": \"2203\",\n  \"query_rewrite\": \"PIB total de Colombia en 2024 a precios corrientes en dólares\",\n  \"reason\": \"El candidato 2203 coincide con el concepto 'gdp_total', la frecuencia anual, el país Colombia y el scope country_aggregate solicitado. Se descartan los candidatos 4997 y 5000 por tener scope=subnational a pesar de ser para Colombia, y se descarta 2205 por ser per cápita en lugar de total.\"\n}"
+    }
+  },
+  "selection_mode": "model",
+  "selection_status": "PASS",
+  "selection_failure_class": null,
+  "selection_error": null,
+  "model_candidate_rejected": null,
+  "candidate_count": 12,
+  "candidates": [
+    {
+      "id": "2203",
+      "name": "Producto interno bruto (PIB) total anual a precios corrientes en dólares",
+      "indicator_id": 2203,
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "currency_usd",
+        "price_base": "current",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "2205",
+      "name": "Producto interno bruto (PIB) total anual por habitante a precios corrientes en dólares",
+      "indicator_id": 2205,
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "annual",
+        "unit_class": "per_capita",
+        "price_base": "current",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "4873",
+      "name": "CHILE Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4873,
+      "selection_metadata": {
+        "scope": "subnational",
+        "country_scope": "country_specific",
+        "frequency": "annual",
+        "unit_class": "currency_usd",
+        "price_base": "current",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "4876",
+      "name": "CHILE Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4876,
+      "selection_metadata": {
+        "scope": "subnational",
+        "country_scope": "country_specific",
+        "frequency": "annual",
+        "unit_class": "per_capita",
+        "price_base": "current",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "4949",
+      "name": "ECUADOR Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4949,
+      "selection_metadata": {
+        "scope": "subnational",
+        "country_scope": "country_specific",
+        "frequency": "annual",
+        "unit_class": "currency_usd",
+        "price_base": "current",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "4952",
+      "name": "ECUADOR Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4952,
+      "selection_metadata": {
+        "scope": "subnational",
+        "country_scope": "country_specific",
+        "frequency": "annual",
+        "unit_class": "per_capita",
+        "price_base": "current",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "4959",
+      "name": "MÉXICO Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4959,
+      "selection_metadata": {
+        "scope": "subnational",
+        "country_scope": "country_specific",
+        "frequency": "annual",
+        "unit_class": "currency_usd",
+        "price_base": "current",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "4962",
+      "name": "MÉXICO Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4962,
+      "selection_metadata": {
+        "scope": "subnational",
+        "country_scope": "country_specific",
+        "frequency": "annual",
+        "unit_class": "per_capita",
+        "price_base": "current",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "4997",
+      "name": "COLOMBIA Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4997,
+      "selection_metadata": {
+        "scope": "subnational",
+        "country_scope": "country_specific",
+        "frequency": "annual",
+        "unit_class": "currency_usd",
+        "price_base": "current",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "5000",
+      "name": "COLOMBIA Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 5000,
+      "selection_metadata": {
+        "scope": "subnational",
+        "country_scope": "country_specific",
+        "frequency": "annual",
+        "unit_class": "per_capita",
+        "price_base": "current",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "5005",
+      "name": "BOLIVIA Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 5005,
+      "selection_metadata": {
+        "scope": "subnational",
+        "country_scope": "country_specific",
+        "frequency": "annual",
+        "unit_class": "currency_usd",
+        "price_base": "current",
+        "source_catalog": "CEPALSTAT"
+      }
+    },
+    {
+      "id": "5008",
+      "name": "BOLIVIA Producto interno bruto (PIB) total anual por actividad económica por habitante a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 5008,
+      "selection_metadata": {
+        "scope": "subnational",
+        "country_scope": "country_specific",
+        "frequency": "annual",
+        "unit_class": "per_capita",
+        "price_base": "current",
+        "source_catalog": "CEPALSTAT"
+      }
+    }
+  ]
+}

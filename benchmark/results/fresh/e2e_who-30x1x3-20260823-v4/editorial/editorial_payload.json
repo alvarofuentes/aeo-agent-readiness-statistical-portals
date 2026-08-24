@@ -1,0 +1,122 @@
+{
+  "run_id": "e2e_who-30x1x3-20260823-v4",
+  "source_runs": [
+    "e2e_who-30x1x3-20260823-v4"
+  ],
+  "manifest": {
+    "run_id": "e2e_who-30x1x3-20260823-v4",
+    "created_at": "2026-08-23T22:59:36.502499+00:00",
+    "status": "COMPLETE",
+    "portals": [
+      "who"
+    ],
+    "template_count": 30,
+    "repeat_count": 3,
+    "expected_executions": 90,
+    "completed_executions": 90,
+    "evidence_policy": "live_portal_fetch_per_repeat_no_cache",
+    "model": "qwen3.5:9b-mlx",
+    "model_endpoints": [
+      "http://127.0.0.1:11436"
+    ],
+    "source_bank": "benchmark/query-bank-120.csv",
+    "editorial_status": "pending",
+    "selection_policy": "preserve_model_selection_and_continue; classify semantic mismatch as MODEL_SELECTION_ERROR",
+    "diagnostic_classes": [
+      "MODEL_SELECTION_ERROR"
+    ],
+    "stop_conditions": [
+      "any_e2e_retrieval_status_not_verified",
+      "zero_observations_after_two_attempts"
+    ],
+    "stop_action": "write_review_alert_pause_and_relaunch_from_clean_run",
+    "last_update": "2026-08-23T23:12:46.384956+00:00",
+    "last_execution_id": "FRESH-Q030__who__r3",
+    "completed_at": "2026-08-23T23:12:46.392167+00:00"
+  },
+  "portal_summary": [
+    {
+      "portal_id": "who",
+      "evidence_date": "2026-08-24",
+      "technical_score": 85,
+      "technical_score_unallocated_weight": 0,
+      "technical_confidence": "high",
+      "technical_dimensions": {
+        "discovery": "PASS",
+        "retrieval": "PASS",
+        "rendering": "PASS",
+        "structured_data": "ABSENT",
+        "authority_citation": "PASS",
+        "accessibility": "PASS"
+      },
+      "e2e_queries": 90,
+      "e2e_passes": 0,
+      "e2e_pass_rate": 0.0,
+      "selection_error_count": 8,
+      "selection_error_rate": 0.0889,
+      "selection_status_pass_rate": 0.0,
+      "candidate_count_mean": 5,
+      "specific_url_rate": 1.0,
+      "metadata_complete_rate": 1.0,
+      "citation_reproducible_rate": 1.0,
+      "robots_status": 200,
+      "sitemap_status": 404,
+      "llms_status": 404,
+      "jsonld_initial_status": "ABSENT",
+      "jsonld_rendered_status": "ABSENT",
+      "jsonld_rendered": "ABSENT",
+      "api_direct_verified": "PASS",
+      "unverified_count": 0,
+      "status": "verified_sample",
+      "source_evidence_path": "evidence/technical/ and evidence/raw/"
+    }
+  ],
+  "technical_layer": [
+    {
+      "portal_id": "who",
+      "evidence_date": "2026-08-24",
+      "technical_score": 85,
+      "technical_score_unallocated_weight": 0,
+      "technical_confidence": "high",
+      "technical_dimensions": {
+        "discovery": "PASS",
+        "retrieval": "PASS",
+        "rendering": "PASS",
+        "structured_data": "ABSENT",
+        "authority_citation": "PASS",
+        "accessibility": "PASS"
+      },
+      "e2e_queries": 90,
+      "e2e_passes": 0,
+      "e2e_pass_rate": 0.0,
+      "selection_error_count": 8,
+      "selection_error_rate": 0.0889,
+      "selection_status_pass_rate": 0.0,
+      "candidate_count_mean": 5,
+      "specific_url_rate": 1.0,
+      "metadata_complete_rate": 1.0,
+      "citation_reproducible_rate": 1.0,
+      "robots_status": 200,
+      "sitemap_status": 404,
+      "llms_status": 404,
+      "jsonld_initial_status": "ABSENT",
+      "jsonld_rendered_status": "ABSENT",
+      "jsonld_rendered": "ABSENT",
+      "api_direct_verified": "PASS",
+      "unverified_count": 0,
+      "status": "verified_sample",
+      "source_evidence_path": "evidence/technical/ and evidence/raw/"
+    }
+  ],
+  "unverified_ledger": [],
+  "editorial_files": [
+    "editorial/comparative_report.md",
+    "editorial/execution_matrix_90.csv",
+    "editorial/portal_summary.csv",
+    "editorial/recommendations-and-best-practices.md",
+    "editorial/report-who-30x2x3.md",
+    "editorial/technical_layer.csv",
+    "editorial/technical_layer.json",
+    "editorial/unverified_ledger.csv"
+  ]
+}

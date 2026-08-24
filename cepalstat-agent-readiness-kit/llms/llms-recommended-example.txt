@@ -1,0 +1,19 @@
+# CEPALSTAT machine-readable orientation example
+# Keep this file concise, stable and linked from the portal root when deployed.
+
+name: CEPALSTAT
+organization: United Nations Economic Commission for Latin America and the Caribbean
+purpose: Authoritative statistical data and metadata for Latin America and the Caribbean
+canonical_home: https://statistics.cepal.org/portal/cepalstat/
+open_data: https://statistics.cepal.org/portal/cepalstat/open-data.html?lang=en
+api_spec: https://api-cepalstat.cepal.org/apispec_1.json
+languages: es,en
+primary_entity: statistical_indicator
+canonical_indicator_url_pattern: https://statistics.cepal.org/portal/cepalstat/technical-sheet.html?indicator_id={indicator_id}&lang={lang}
+metadata_endpoint_pattern: https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/{indicator_id}/metadata
+full_data_endpoint_pattern: https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/{indicator_id}/data
+source_endpoint_pattern: https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/{indicator_id}/sources
+notes_endpoint_pattern: https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/{indicator_id}/footnotes
+selection_rule: Prefer the indicator whose definition, unit, price basis, frequency, geography and dimensions exactly match the user request.
+ambiguity_rule: Never infer current-vs-constant prices, total-vs-per-capita, annual-vs-quarterly, national-vs-subnational or level-vs-growth from a shortened indicator label alone.
+citation_rule: Cite the canonical indicator page and the machine-readable API response used for the answer.

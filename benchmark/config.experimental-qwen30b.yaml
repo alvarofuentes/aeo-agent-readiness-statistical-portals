@@ -1,0 +1,28 @@
+# Experimental arm requested by the user. Do not mix its outputs with the
+# canonical run until the real-context smoke passes within the declared
+# timeout. The canonical config remains the reproducible stable arm.
+project: aeo-agent-readiness-statistical-portals
+version: 1.0-qwen-experimental
+ollama:
+  base_url: http://127.0.0.1:11434
+  temperature: 0.0
+  timeout_seconds: 180
+  max_context_chars: 8000
+  retry_context_chars: 4000
+  num_predict: 160
+  repeat_runs: 3
+model_policy:
+  max_parameter_b: 40
+  exclude_cloud: true
+benchmark:
+  capture_natural: false
+  natural_capture_smoke_only: true
+roles:
+  orchestrator: deterministic-python
+  discovery: qwen3-coder:30b-a3b-q4_K_M
+  semantic: qwen3-coder:30b-a3b-q4_K_M
+  retrieval: qwen3-coder:30b-a3b-q4_K_M
+  metadata: llama3.2:latest
+  citation: llama3.2:latest
+  judge: mistral:latest
+  adversarial: llama3.2:latest

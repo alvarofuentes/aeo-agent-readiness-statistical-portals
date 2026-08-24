@@ -1,0 +1,13 @@
+{
+  "model": "qwen3.5:9b-mlx",
+  "endpoints": [
+    "http://127.0.0.1:11436"
+  ],
+  "workers": 1,
+  "repeats": 1,
+  "templates": 1,
+  "portals": [
+    "sdg"
+  ],
+  "expected_rows": 1
+}

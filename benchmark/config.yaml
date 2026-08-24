@@ -1,0 +1,98 @@
+project: aeo-agent-readiness-statistical-portals
+version: 2.0
+ollama:
+  base_url: http://127.0.0.1:11435
+  model_endpoints:
+    qwen3.5:9b-mlx: http://127.0.0.1:11435
+    llama3.2:latest: http://127.0.0.1:11436
+    mistral:latest: http://127.0.0.1:11437
+  model_endpoint_pools:
+    qwen3.5:9b-mlx:
+      - http://127.0.0.1:11435
+      - http://127.0.0.1:11438
+  temperature: 0.0
+  timeout_seconds: 180
+  max_context_chars: 3000
+  retry_context_chars: 1800
+  num_predict: 128
+  natural_num_predict: 64
+  role_num_predict:
+    judge: 384
+    adversarial: 128
+  parallel_workers: 1
+  parallel_role_workers: 4
+  repeat_runs: 3
+model_policy:
+  max_parameter_b: 40
+  exclude_cloud: true
+  excluded_models:
+    - glm-5:cloud
+    - glm-4.6:cloud
+benchmark:
+  capture_natural: true
+  natural_capture_smoke_only: false
+  total_templates: 120
+  strata:
+    discovery: 20
+    exact_indicator: 20
+    semantic_disambiguation: 25
+    dimensions: 15
+    comparison: 15
+    temporal: 10
+    metadata: 10
+    citation: 5
+  gold_standard: benchmark/gold_standards_final_2026-08-23.json
+fresh_e2e:
+  model: qwen3.5:9b-mlx
+  endpoint: http://127.0.0.1:11436
+  portals:
+    - cepalstat
+    - worldbank
+    - who
+    - undata
+    - sdg
+  templates_per_portal: 30
+  repeats: 3
+  workers: 1
+  evidence_policy: live_portal_fetch_per_repeat_no_cache
+  selection_policy: preserve_model_selection_and_continue
+  diagnostic_class: MODEL_SELECTION_ERROR
+  stop_conditions:
+    - any_clean_retrieval_not_verified
+    - zero_observations_after_two_attempts
+  stop_action: review_alert_and_clean_relaunch
+roles:
+  orchestrator: deterministic-python
+  discovery: qwen3.5:9b-mlx
+  semantic: qwen3.5:9b-mlx
+  retrieval: qwen3.5:9b-mlx
+  metadata: qwen3.5:9b-mlx
+  citation: qwen3.5:9b-mlx
+  judge: mistral:latest
+  adversarial: llama3.2:latest
+portals:
+  - id: worldbank
+    name: World Bank Open Data
+    home: https://data.worldbank.org/
+    search_hint: site:data.worldbank.org GDP Chile
+  - id: who
+    name: WHO Data
+    home: https://data.who.int/
+    search_hint: site:data.who.int GDP Chile
+  - id: cepalstat
+    name: CEPALSTAT
+    home: https://statistics.cepal.org/portal/cepalstat/
+    search_hint: site:statistics.cepal.org/portal/cepalstat PIB Chile
+  - id: undata
+    name: UN Data Commons
+    home: https://unstats.un.org/UNSDWebsite/undatacommons/
+    search_hint: site:unstats.un.org/UNSDWebsite/undatacommons GDP Chile
+  - id: sdg
+    name: UN SDG Indicators
+    home: https://unstats.un.org/sdgs/dataportal/
+    search_hint: site:unstats.un.org/sdgs GDP Chile
+output:
+  dir: benchmark/results
+  runs_manifest: benchmark/results/run_manifest.json
+  row_file: benchmark/results/results.jsonl
+  flat_csv: benchmark/results/results.csv

@@ -1,0 +1,53 @@
+{
+  "runner": "runner_reentrant",
+  "orchestrator": "deterministic-python",
+  "adversarial_required": true,
+  "started_at": "2026-08-23T01:02:14Z",
+  "ollama": "http://127.0.0.1:11434",
+  "models_available": [
+    "muse-glimmer:30b-mlx",
+    "qwen3.5:9b-mlx",
+    "deepseek-coder-v2:16b",
+    "qwen3:30b-a3b",
+    "devstral-small-2:24b",
+    "qwen3-coder:30b-a3b-q4_K_M",
+    "gemma4:latest",
+    "glm-5:cloud",
+    "glm-4.6:cloud",
+    "mistral:latest",
+    "llama3.2:latest"
+  ],
+  "excluded_models": [
+    "glm-4.6:cloud",
+    "glm-5:cloud",
+    "muse-glimmer:30b-mlx",
+    "qwen3-coder:30b-a3b-q4_K_M",
+    "qwen3:30b-a3b"
+  ],
+  "role_models": {
+    "discovery": "gemma4:latest",
+    "semantic": "gemma4:latest",
+    "retrieval": "gemma4:latest",
+    "metadata": "gemma4:latest",
+    "citation": "gemma4:latest",
+    "judge": "mistral:latest",
+    "adversarial": "llama3.2:latest"
+  },
+  "contract": {
+    "query_instances": 120,
+    "portals": 5,
+    "query_portal_pairs": 600,
+    "repeats": 3,
+    "expected_executions": 1800,
+    "executions_per_portal_pass": 360
+  },
+  "selected_portals": [
+    "worldbank"
+  ],
+  "selected_rows": 1,
+  "selected_executions": 3,
+  "evidence_policy": "frozen_per_query_portal_reused_across_repeats",
+  "status": "hold",
+  "completed_executions": 0,
+  "stop_reason": "Ollama /api/chat did not return within the smoke gate timeout; run interrupted by operator."
+}

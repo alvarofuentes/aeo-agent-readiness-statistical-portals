@@ -1,0 +1,19 @@
+{
+  "content-type": "text/html; charset=ISO-8859-1",
+  "content-security-policy": "object-src 'none';base-uri 'self';script-src 'nonce-edlaVC27poh_Wr3p3QCw1A' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/xsrp",
+  "accept-ch": "Sec-CH-Prefers-Color-Scheme",
+  "x-content-type-options": "nosniff",
+  "p3p": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+  "date": "Sun, 23 Aug 2026 02:53:02 GMT",
+  "server": "gws",
+  "x-xss-protection": "0",
+  "x-frame-options": "SAMEORIGIN",
+  "expires": "Sun, 23 Aug 2026 02:53:02 GMT",
+  "cache-control": "private",
+  "set-cookie": "NID=534=OEJ1QW2dPMEEKHlfceyW5el3qiB9WHxF7FC-sMrTH5maRJJPnpt0Vf7XThFyYSSkli2Pq7UpXu8_Hf7yTLZcUEZHA4ouaDlpymTf675VdGJeOY_IEOxffSFLkgmf0GB6lizWg5I_n5rQeRvKhd-OsBc2TDCHwUscU1aPvNpQM8twKBTRfot6HJmnhx5od6W5myuni6xKMzmOcpT0W5EI4DA; expires=Mon, 22-Feb-2027 02:53:02 GMT; path=/; domain=.google.com; HttpOnly",
+  "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+  "accept-ranges": "none",
+  "vary": "Accept-Encoding",
+  "connection": "close",
+  "transfer-encoding": "chunked"
+}

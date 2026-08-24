@@ -1,0 +1,15 @@
+{
+  "model": "qwen3.5:9b-mlx",
+  "endpoints": [
+    "http://127.0.0.1:11434",
+    "http://127.0.0.1:11435"
+  ],
+  "workers": 2,
+  "repeats": 1,
+  "templates": 1,
+  "portals": [
+    "cepalstat",
+    "worldbank"
+  ],
+  "expected_rows": 2
+}

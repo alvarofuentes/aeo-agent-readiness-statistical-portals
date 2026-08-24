@@ -1,0 +1,23 @@
+{
+  "date": "Sun, 23 Aug 2026 02:14:55 GMT",
+  "content-type": "application/json;charset=utf-8",
+  "transfer-encoding": "chunked",
+  "connection": "close",
+  "set-cookie": "_cfuvid=gP_HZLP41eVRizDGXQE5RBay3zFqzRP36_tL6rsV9GQ-1787451295.4021664-1.0.1.1-zcMs8KuPy3m5dx5sCb2T1QTmWOv6Lr4r7siwvqoLWHQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=worldbank.org",
+  "cf-ray": "a2f69b444876b424-SCL",
+  "cf-cache-status": "HIT",
+  "access-control-allow-origin": "*",
+  "age": "411",
+  "cache-control": "public, max-age=86400",
+  "content-security-policy-report-only": "script-src 'unsafe-inline' 'unsafe-eval'; report-uri https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=S1f_OnTtDWCAkKciGx8O6mzcm84qpAXM3CAsLMIiaSw-1787451295.4021664-1.0.1.1-1A1Hotdlawu5FC6WVhaZCs5d_Awgb7.PNvfcVS4X2IaRvoirugDPvDMnPtRb8dI0yce.XUw1pGrtHgjpdkCxRoGnnyWhHv7TVwSoSCAWS112x5SNkjGTrWgW6bRnXGJWBiM7GtpGCe2aUEWxliPkKMzCMamro.GIeYJCy6NZLDwjweGtDKe2APjrtvAhH8Mv; report-to cf-csp-endpoint",
+  "expires": "Mon, 24 Aug 2026 02:14:55 GMT",
+  "last-modified": "Sun, 23 Aug 2026 02:08:04 GMT",
+  "server": "cloudflare",
+  "vary": "accept-encoding",
+  "access-control-allow-headers": "X-Requested-With",
+  "access-control-allow-methods": "GET",
+  "request-context": "appId=cid-v1:da002513-bd8b-4441-9f30-737944134422",
+  "x-powered-by": "ASP.NET",
+  "report-to": "{\"group\":\"cf-csp-endpoint\",\"max_age\":86400,\"endpoints\":[{\"url\":\"https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=S1f_OnTtDWCAkKciGx8O6mzcm84qpAXM3CAsLMIiaSw-1787451295.4021664-1.0.1.1-1A1Hotdlawu5FC6WVhaZCs5d_Awgb7.PNvfcVS4X2IaRvoirugDPvDMnPtRb8dI0yce.XUw1pGrtHgjpdkCxRoGnnyWhHv7TVwSoSCAWS112x5SNkjGTrWgW6bRnXGJWBiM7GtpGCe2aUEWxliPkKMzCMamro.GIeYJCy6NZLDwjweGtDKe2APjrtvAhH8Mv\"}]}",
+  "reporting-endpoints": "cf-csp-endpoint=\"https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=S1f_OnTtDWCAkKciGx8O6mzcm84qpAXM3CAsLMIiaSw-1787451295.4021664-1.0.1.1-1A1Hotdlawu5FC6WVhaZCs5d_Awgb7.PNvfcVS4X2IaRvoirugDPvDMnPtRb8dI0yce.XUw1pGrtHgjpdkCxRoGnnyWhHv7TVwSoSCAWS112x5SNkjGTrWgW6bRnXGJWBiM7GtpGCe2aUEWxliPkKMzCMamro.GIeYJCy6NZLDwjweGtDKe2APjrtvAhH8Mv\""
+}

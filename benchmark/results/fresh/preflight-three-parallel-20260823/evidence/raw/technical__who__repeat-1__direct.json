@@ -1,0 +1,51 @@
+{
+  "url": "https://ghoapi.azureedge.net/api/GHED_GGHE-DGDP_SHA2011?$top=1",
+  "status": 200,
+  "headers": {
+    "Date": "Sun, 23 Aug 2026 22:03:49 GMT",
+    "Content-Type": "application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Strict-Transport-Security": "max-age=31536000; preload",
+    "OData-Version": "4.0",
+    "x-azure-ref": "20260823T220349Z-174bf9d464dvsnk2hC1CPQdsyn00000011ng0000000008u7",
+    "x-fd-int-roxy-purgeid": "0",
+    "X-Cache-Info": "L2_T2",
+    "X-Cache": "TCP_REMOTE_HIT",
+    "Cache-Control": "public, max-age=3600"
+  },
+  "payload": {
+    "@odata.context": "https://ghoapi.azureedge.net/api/$metadata#GHED_GGHE-DGDP_SHA2011",
+    "value": [
+      {
+        "Id": 2016,
+        "IndicatorCode": "GHED_GGHE-DGDP_SHA2011",
+        "SpatialDimType": "COUNTRY",
+        "SpatialDim": "JOR",
+        "ParentLocationCode": "EMR",
+        "TimeDimType": "YEAR",
+        "ParentLocation": "Eastern Mediterranean",
+        "Dim1Type": null,
+        "TimeDim": 2010,
+        "Dim1": null,
+        "Dim2Type": null,
+        "Dim2": null,
+        "Dim3Type": null,
+        "Dim3": null,
+        "DataSourceDimType": null,
+        "DataSourceDim": null,
+        "Value": "5.45",
+        "NumericValue": 5.45029831,
+        "Low": null,
+        "High": null,
+        "Comments": null,
+        "Date": "2025-12-05T13:23:08.677+01:00",
+        "TimeDimensionValue": "2010",
+        "TimeDimensionBegin": "2010-01-01T00:00:00+01:00",
+        "TimeDimensionEnd": "2010-12-31T00:00:00+01:00"
+      }
+    ]
+  },
+  "elapsed_seconds": 0.385,
+  "error": null
+}

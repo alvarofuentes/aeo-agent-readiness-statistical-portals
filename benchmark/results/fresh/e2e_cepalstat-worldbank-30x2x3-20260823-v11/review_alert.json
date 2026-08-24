@@ -1,0 +1,13 @@
+{
+  "alert_type": "technical_not_verified",
+  "portal_id": "cepalstat",
+  "repeat": 1,
+  "message": "A technical probe is NOT_VERIFIED; stop, inspect the live evidence, resolve it, and relaunch from a clean run.",
+  "created_at": "2026-08-23T20:54:52.928258+00:00",
+  "checks": [
+    {
+      "check_id": "accessibility",
+      "status": "NOT_VERIFIED"
+    }
+  ]
+}

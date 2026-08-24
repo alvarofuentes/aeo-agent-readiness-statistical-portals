@@ -1,0 +1,116 @@
+{
+  "url": "https://unstats.un.org/SDGAPI/v1/sdg/Series/Data?seriesCode=NY_GDP_PCAP&areaCode=152&timePeriod=2024",
+  "status": 200,
+  "headers": {
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "application/json; charset=utf-8",
+    "Referrer-Policy": "no-referrer-when-downgrade",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "X-Content-Type-Options": "nosniff",
+    "Content-Security-Policy": "object-src 'none' ; img-src 'self' https://*.datatables.net/ https://*.twimg.com/ https://*.un.org/ https://*.twitter.com/ data:; frame-src 'self' https://whova.com https://d1keuthy5s86c8.cloudfront.net https://unb2c.b2clogin.com/ https://*.arcgis.com https://www.youtube.com https://youtube.com https://*.twitter.com https://fonts.googleapis.com https://maxcdn.bootstrapcdn.com https://flickrembed.com/ https://public.tableau.com https://unb2c.b2clogin.com/unb2c.onmicrosoft.com https://login.microsoftonline.com/* https://aadcdn.msauth.net/* https://login.microsoftonline.com/ https://www.podbean.com/  https://*.un.org/ https://simplebooklet.com/ https://www.kaltura.com https://app.powerbi.com/",
+    "Feature-Policy": "vibrate 'none'; geolocation 'none'; midi 'none'; notifications 'none'; push 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; vibrate 'none'; fullscreen 'none'; payment 'none'",
+    "Set-Cookie": "NSC_EFTB_votubut2_mcwt=ffffffff098a6e3e45525d5f4f58455e445a4a423660;Version=1;Max-Age=120;path=/;secure;httponly",
+    "Permissions-Policy": "geolocation=(), microphone=(),vibrate=(), midi=(),notifications=(),push=(),sync-xhr=(),camera=(),magnetometer=(),gyroscope=(),speaker=(),fullscreen=(),payment=()",
+    "X-Frame-Options": "ALLOW-FROM https://worlds-women-2020-data-undesa.hub.arcgis.com/",
+    "Date": "Sun, 23 Aug 2026 22:04:11 GMT"
+  },
+  "payload": {
+    "size": 25,
+    "totalElements": 1,
+    "totalPages": 1,
+    "pageNumber": 1,
+    "attributes": [
+      {
+        "id": "Nature",
+        "codes": [
+          {
+            "code": "CA",
+            "description": "Country adjusted data",
+            "sdmx": "CA"
+          },
+          {
+            "code": "N",
+            "description": "Non-relevant",
+            "sdmx": "N"
+          }
+        ]
+      },
+      {
+        "id": "Observation Status",
+        "codes": [
+          {
+            "code": "A",
+            "description": "Normal value",
+            "sdmx": "A"
+          }
+        ]
+      },
+      {
+        "id": "Units",
+        "codes": [
+          {
+            "code": "PERCENT",
+            "description": "Percentage",
+            "sdmx": "PT"
+          }
+        ]
+      }
+    ],
+    "dimensions": [
+      {
+        "id": "Reporting Type",
+        "codes": [
+          {
+            "code": "N",
+            "description": "National",
+            "sdmx": "N"
+          },
+          {
+            "code": "G",
+            "description": "Global",
+            "sdmx": "G"
+          }
+        ]
+      }
+    ],
+    "data": [
+      {
+        "goal": [
+          "8"
+        ],
+        "target": [
+          "8.1"
+        ],
+        "indicator": [
+          "8.1.1"
+        ],
+        "series": "NY_GDP_PCAP",
+        "seriesDescription": "Annual growth rate of real GDP per capita (%)",
+        "seriesCount": "6178",
+        "geoAreaCode": "152",
+        "geoAreaName": "Chile",
+        "timePeriodStart": 2024.0,
+        "value": "2.1",
+        "valueType": "Float",
+        "time_detail": null,
+        "timeCoverage": null,
+        "upperBound": null,
+        "lowerBound": null,
+        "basePeriod": "2020",
+        "source": "United Nations, Department of Economic and Social Affairs, Statistics Division (AMA)",
+        "geoInfoUrl": null,
+        "footnotes": [],
+        "attributes": {
+          "Nature": "CA",
+          "Units": "PERCENT",
+          "Observation Status": "A"
+        },
+        "dimensions": {
+          "Reporting Type": "G"
+        }
+      }
+    ]
+  },
+  "elapsed_seconds": 1.982,
+  "error": null
+}

@@ -1,0 +1,127 @@
+{
+  "query": "¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.",
+  "portal": "who",
+  "repeat": 2,
+  "endpoint": "http://127.0.0.1:11436",
+  "selection": {
+    "ok": true,
+    "data": {
+      "candidate_id": "GHED_GGHE-DGDP_SHA2011",
+      "query_rewrite": "Define the indicator 'Domestic general government health expenditure (GGHE-D) as percentage of gross domestic product (GDP) (%)' for Argentina in 2024.",
+      "reason": "The user asks for the definition of a GDP-related indicator found for Argentina. Among the candidates, GHED_GGHE-DGDP_SHA2011 is the only one where 'gross domestic product (GDP)' is explicitly part of the indicator name and calculation method ('as percentage of gross domestic product'), making it the correct match to define. Other candidates use GDP as a denominator for different numerators (health expenditure, R&D) or are unrelated affordability metrics.",
+      "model_raw": "{\n  \"candidate_id\": \"GHED_GGHE-DGDP_SHA2011\",\n  \"query_rewrite\": \"Define the indicator 'Domestic general government health expenditure (GGHE-D) as percentage of gross domestic product (GDP) (%)' for Argentina in 2024.\",\n  \"reason\": \"The user asks for the definition of a GDP-related indicator found for Argentina. Among the candidates, GHED_GGHE-DGDP_SHA2011 is the only one where 'gross domestic product (GDP)' is explicitly part of the indicator name and calculation method ('as percentage of gross domestic product'), making it the correct match to define. Other candidates use GDP as a denominator for different numerators (health expenditure, R&D) or are unrelated affordability metrics.\"\n}",
+      "model_attempts": 1
+    }
+  },
+  "selection_mode": "model",
+  "selection_status": "FAIL",
+  "selection_failure_class": "MODEL_SELECTION_ERROR",
+  "selection_error": {
+    "failure_class": "MODEL_SELECTION_ERROR",
+    "selected_candidate": {
+      "id": "GHED_GGHE-DGDP_SHA2011",
+      "name": "Domestic general government health expenditure (GGHE-D) as percentage of gross domestic product (GDP) (%)",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    "expected": {
+      "scope": "country_aggregate",
+      "frequency": "unspecified",
+      "unit_class": "unspecified",
+      "price_base": "unspecified",
+      "concept": "gdp_total"
+    },
+    "mismatches": [
+      "measure_expected:gdp_total;observed:derived_or_rate_measure"
+    ],
+    "note": "The model's original candidate is retained and tested; no deterministic re-selection was applied."
+  },
+  "model_candidate_rejected": null,
+  "candidate_count": 5,
+  "candidates": [
+    {
+      "id": "GHED_CHEGDP_SHA2011",
+      "name": "Current health expenditure (CHE) as percentage of gross domestic product (GDP) (%)",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "current",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    {
+      "id": "GB_XPD_RSDV",
+      "name": "Research and development (R&amp;D) expenditure as a proportion of GDP",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    {
+      "id": "GHED_GGHE-DGDP_SHA2011",
+      "name": "Domestic general government health expenditure (GGHE-D) as percentage of gross domestic product (GDP) (%)",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "percent",
+        "price_base": "unspecified",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    {
+      "id": "R_afford_gdp",
+      "name": "Affordability - percentage of GDP per capita required to purchase 2000 cigarettes of the most sold brand",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "unspecified",
+        "source_catalog": "WHO GHO"
+      }
+    },
+    {
+      "id": "TAXBEV_AFFORD_GDP",
+      "name": "GDP per capita to purchase a volume of beverage (%)",
+      "unit": "percent",
+      "sourceNote": "WHO Global Health Observatory indicator catalogue",
+      "sourceOrganization": "WHO",
+      "selection_metadata": {
+        "scope": "country_aggregate",
+        "country_scope": "all_countries",
+        "frequency": "unspecified",
+        "unit_class": "per_capita",
+        "price_base": "unspecified",
+        "source_catalog": "WHO GHO"
+      }
+    }
+  ]
+}

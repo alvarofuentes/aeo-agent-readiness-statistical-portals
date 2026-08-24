@@ -1,0 +1,115 @@
+{
+  "capture_version": 2,
+  "case_id": "PILOT-Q021__cepalstat",
+  "template_id": "PILOT-Q021",
+  "portal_id": "cepalstat",
+  "query": "Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.",
+  "captured_at": "2026-08-23T04:14:43Z",
+  "allowlist_roots": [
+    "cepal.org"
+  ],
+  "serp": {
+    "urls": [],
+    "rejected": [
+      {
+        "url": "http://www.w3.org/1999/xhtml",
+        "reason": "outside_portal_allowlist"
+      },
+      {
+        "url": "http://schemas.live.com/Web/",
+        "reason": "outside_portal_allowlist"
+      }
+    ],
+    "captures": [
+      {
+        "requested_url": "https://www.google.com/search?q=site%3Astatistics.cepal.org+Compara+el+PIB+de+Uruguay+y+Costa+Rica+en+2024+usando+una+medida+estad%C3%ADsticamente+comparable.",
+        "captured_at": "2026-08-23T04:14:43Z",
+        "status": 200,
+        "final_url": "https://www.google.com/search?q=site%3Astatistics.cepal.org+Compara+el+PIB+de+Uruguay+y+Costa+Rica+en+2024+usando+una+medida+estad%C3%ADsticamente+comparable.",
+        "headers": {
+          "content-type": "text/html; charset=ISO-8859-1",
+          "content-security-policy": "object-src 'none';base-uri 'self';script-src 'nonce-0vj7g5vyBGoeV57kwFV0tQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/xsrp",
+          "accept-ch": "Sec-CH-Prefers-Color-Scheme",
+          "x-content-type-options": "nosniff",
+          "p3p": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+          "date": "Sun, 23 Aug 2026 04:14:43 GMT",
+          "server": "gws",
+          "x-xss-protection": "0",
+          "x-frame-options": "SAMEORIGIN",
+          "expires": "Sun, 23 Aug 2026 04:14:43 GMT",
+          "cache-control": "private",
+          "set-cookie": "NID=534=OAtjaPVhvffYDVV3BGXOdTQHZIS9MMgGDMxF8qf9E5BCPXher4n-7z-Vv-F-boYOzQ8Ey1LhoNL17Cd__26oE2s9jF8R234nUvj6J04LiZgphKebqi6Xeh_LzlrBfQ5ySRbf_pd3CK0mw5-wmQwnqk9rP5VPtin0s9AFw7JSNeyYZ1VZDs35VJk0Aym1ehErRLyiQw6q5ZjViyIC8e0AYg; expires=Mon, 22-Feb-2027 04:14:43 GMT; path=/; domain=.google.com; HttpOnly",
+          "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+          "accept-ranges": "none",
+          "vary": "Accept-Encoding",
+          "connection": "close",
+          "transfer-encoding": "chunked"
+        },
+        "elapsed_seconds": 0.117,
+        "byte_length": 91262,
+        "body_sha256": "a0b2faf59b11a2f4acde7af6e3cae72f2459a7ee375aa96da22b19a368bedbd5",
+        "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q021__cepalstat/serp_google.body",
+        "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q021__cepalstat/serp_google.headers.json"
+      },
+      {
+        "requested_url": "https://www.bing.com/search?q=site%3Astatistics.cepal.org+Compara+el+PIB+de+Uruguay+y+Costa+Rica+en+2024+usando+una+medida+estad%C3%ADsticamente+comparable.",
+        "captured_at": "2026-08-23T04:14:43Z",
+        "status": 200,
+        "final_url": "https://www.bing.com/search?q=site%3Astatistics.cepal.org+Compara+el+PIB+de+Uruguay+y+Costa+Rica+en+2024+usando+una+medida+estad%C3%ADsticamente+comparable.",
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "private, max-age=0",
+          "expires": "Sun, 23 Aug 2026 04:13:43 GMT",
+          "vary": "Accept-Encoding",
+          "x-eventid": "6a8a73b3363349699df13b1f4ef782c4",
+          "useragentreductionoptout": "A7kgTC5xdZ2WIVGZEfb1hUoNuvjzOZX3VIV/BA6C18kQOOF50Q0D3oWoAm49k3BQImkujKILc7JmPysWk3CSjwUAAACMeyJvcmlnaW4iOiJodHRwczovL3d3dy5iaW5nLmNvbTo0NDMiLCJmZWF0dXJlIjoiU2VuZEZ1bGxVc2VyQWdlbnRBZnRlclJlZHVjdGlvbiIsImV4cGlyeSI6MTY4NDg4NjM5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=",
+          "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+          "permissions-policy": "unload=()",
+          "content-security-policy": "script-src https: 'strict-dynamic' 'report-sample' 'wasm-unsafe-eval' 'nonce-2ya9w7CIMUlBVUU9gcisk9i2gqmsp5Dini7Cq78DcDU='; base-uri 'self';",
+          "p3p": "CP=\"NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND\"",
+          "x-display-context": "full",
+          "date": "Sun, 23 Aug 2026 04:14:43 GMT",
+          "transfer-encoding": "chunked",
+          "connection": "Transfer-Encoding",
+          "set-cookie": "_SS=SID=1E52214033F36CEE144936FE32ED6D85; domain=.bing.com; path=/",
+          "alt-svc": "h3=\":443\"; ma=93600",
+          "x-cdn-traceid": "0.e2ba1402.1787458483.5ac98"
+        },
+        "elapsed_seconds": 0.326,
+        "byte_length": 120102,
+        "body_sha256": "323007f939f9b969a51b7d5c246823db4876bc33013fdcc77273e25540b8178f",
+        "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q021__cepalstat/serp_bing.body",
+        "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q021__cepalstat/serp_bing.headers.json"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "requested_url": "https://statistics.cepal.org/portal/cepalstat/",
+      "captured_at": "2026-08-23T04:14:43Z",
+      "status": 200,
+      "final_url": "https://statistics.cepal.org/portal/cepalstat/",
+      "headers": {
+        "server": "nginx",
+        "date": "Sun, 23 Aug 2026 04:14:43 GMT",
+        "content-type": "text/html",
+        "content-length": "1529",
+        "connection": "close",
+        "last-modified": "Fri, 14 Aug 2026 14:29:26 GMT",
+        "etag": "\"6a7f2646-5f9\"",
+        "accept-ranges": "bytes"
+      },
+      "elapsed_seconds": 0.064,
+      "byte_length": 1529,
+      "body_sha256": "36a9b33eb322bb98e6c19d6218cd577992fb1f0905aeb4c42d98003a1d5adb17",
+      "body_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q021__cepalstat/page_00.body",
+      "headers_path": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/results/pilot/pilot_cepalstat-sdg-60x2x3-20260823/raw_http/PILOT-Q021__cepalstat/page_00.headers.json",
+      "text_excerpt": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>CEPALSTAT Portal de Datos y Publicaciones Estadísticas</title>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <link rel=\"shortcut icon\" href=\"images/favicon_un.png\" type=\"image/png\" />\n    <link rel=\"stylesheet\" href=\"../../assets/bootstrap-4.3.1.min.css\" >\n    <script src=\"../../assets/jquery.min.js\"></script>\n    <script src=\"../../assets/bootstrap-4.3.1.min.js\" ></script>\n    <script src=\"assets/portal-actions.js\"></script>\n    <script src=\"configuration.js\"></script>\n    <link rel=\"stylesheet\" href=\"assets/style-5column-boxes.css?v=20250312\" >\n\n    <script>\n        $(document).ready(function () {\n          var idioma = getQueryVariable(\"lang\");\n          if(idioma==\"en\") {\n            $(document).attr(\"title\", \"CEPALSTAT Statistical Data Portal and Publications\");\n            $(\"#menu-cabecera\").load(\"header-en.html?v=20260703\");\n            $(\"#modulos\").load(\"en/module-home.html?v=20260703\");\n            $(\"#footer-content\").load(\"footer-en.html?v=20260703\");\n          } else {\n            $(\"#menu-cabecera\").load(\"header-es.html?v=20260703\");\n            $(\"#modulos\").load(\"es/modulo-inicio.html?v=20260703\");\n            $(\"#footer-content\").load(\"footer-es.html?v=20260703\");\n          }\n            scrollTopPage();\n        });\n    </script>    \n  </head>\n  <body>\n    <div id=\"menu-cabecera\"></div>\n    <div id=\"modulos\"></div>\n    <div id=\"footer-content\"></div>\n  </body>\n</html>\n",
+      "allowlist_valid": true,
+      "evidence_use": true
+    }
+  ],
+  "sha256": "4365d04ff6fc1734bf6eb1fdd891d4db1fce088c75caacd6c81da39aca7525b0",
+  "candidate_url": null,
+  "candidate_allowed": false
+}

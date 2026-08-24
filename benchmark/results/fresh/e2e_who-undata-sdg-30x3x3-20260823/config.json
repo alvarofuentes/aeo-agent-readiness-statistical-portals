@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.5:9b-mlx",
+  "endpoints": [
+    "http://127.0.0.1:11435",
+    "http://127.0.0.1:11436",
+    "http://127.0.0.1:11438"
+  ],
+  "workers": 3,
+  "repeats": 3,
+  "templates": 30,
+  "portals": [
+    "who",
+    "undata",
+    "sdg"
+  ],
+  "expected_rows": 270
+}

@@ -1,0 +1,1046 @@
+[
+  {
+    "query": {
+      "query_id": "Q001",
+      "portal_id": "worldbank",
+      "stratum": "discovery",
+      "query": "Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.",
+      "country": "Chile",
+      "country_code": "CHL"
+    },
+    "repeat": 1,
+    "evidence_sha256": "23134b94add83a04d220b94fd22cb599d4b64094f984784d581c13f04656b851",
+    "candidate_url": null,
+    "agents": {
+      "discovery": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "official_resource": "https://data.worldbank.org/",
+          "series_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
+        },
+        "text": "{\"official_resource\": \"https://data.worldbank.org/\", \"series_url\": \"https://data.worldbank.org/indicator/NY.GDP.MKTP.CD\"}",
+        "parse_error": null,
+        "elapsed_seconds": 45.86,
+        "schema_valid": false,
+        "schema_error": "missing_keys:best_url,confidence,discovered,reason",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "official_resource": "World Bank Open Data",
+            "series_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
+          },
+          "text": "{\"official_resource\": \"World Bank Open Data\", \"series_url\": \"https://data.worldbank.org/indicator/NY.GDP.MKTP.CD\"}",
+          "parse_error": null,
+          "elapsed_seconds": 3.885,
+          "schema_valid": false,
+          "schema_error": "missing_keys:best_url,confidence,discovered,reason"
+        }
+      },
+      "semantic": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "indicator": "GDP (Producto Interno Bruto)",
+          "source": "World Bank (Banco Mundial)",
+          "url": "https://data.worldbank.org/",
+          "notes": "El World Bank es la fuente oficial. Una vez en la página, utilice la barra de búsqueda e ingrese 'GDP' y seleccione 'Chile' como país para encontrar la serie más pertinente."
+        },
+        "text": "{\n  \"indicator\": \"GDP (Producto Interno Bruto)\",\n  \"source\": \"World Bank (Banco Mundial)\",\n  \"url\": \"https://data.worldbank.org/\",\n  \"notes\": \"El World Bank es la fuente oficial. Una vez en la página, utilice la barra de búsqueda e ingrese 'GDP' y seleccione 'Chile' como país para encontrar la serie más pertinente.\"\n}",
+        "parse_error": null,
+        "elapsed_seconds": 25.641,
+        "schema_valid": false,
+        "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "indicator_name": "PIB (GDP)",
+            "country": "Chile",
+            "source_url": "https://data.worldbank.org/",
+            "confidence_score": 0.95
+          },
+          "text": "{\"indicator_name\": \"PIB (GDP)\", \"country\": \"Chile\", \"source_url\": \"https://data.worldbank.org/\", \"confidence_score\": 0.95}",
+          "parse_error": null,
+          "elapsed_seconds": 26.669,
+          "schema_valid": false,
+          "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description"
+        }
+      },
+      "retrieval": {
+        "model": "qwen3.5:9b-mlx",
+        "ok": false,
+        "json": null,
+        "error": "HTTPError: HTTP Error 500: Internal Server Error",
+        "elapsed_seconds": 0.713,
+        "schema_valid": false,
+        "schema_error": "missing_keys:retrievable,unit_correct,period_correct,confidence,geography_correct,reason,value_found",
+        "retry": {
+          "model": "qwen3.5:9b-mlx",
+          "ok": false,
+          "json": null,
+          "error": "HTTPError: HTTP Error 500: Internal Server Error",
+          "elapsed_seconds": 0.042,
+          "schema_valid": false,
+          "schema_error": "missing_keys:retrievable,unit_correct,period_correct,confidence,geography_correct,reason,value_found"
+        }
+      },
+      "metadata": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "contains_rigorous_statistical_metadata": false
+        },
+        "text": "{\"contains_rigorous_statistical_metadata\": false}",
+        "parse_error": null,
+        "elapsed_seconds": 19.826,
+        "schema_valid": false,
+        "schema_error": "missing_keys:confidence,fields_missing,metadata_complete,reason",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "has_rigorous_statistical_metadata": false,
+            "metadata_details": "The provided evidence is the World Bank Open Data homepage (HTML structure) and does not contain any specific data series, nor does it display the required statistical metadata (definition, source, unit, frequency, period, dimensions, or methodology) for Chile's GDP. This information would only be available on a specific data page after searching the portal.",
+            "source_identification": "World Bank (Banco Mundial)",
+            "suggested_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=CL"
+          },
+          "text": "{\"has_rigorous_statistical_metadata\": false, \"metadata_details\": \"The provided evidence is the World Bank Open Data homepage (HTML structure) and does not contain any specific data series, nor does it display the required statistical metadata (definition, source, unit, frequency, period, dimensions, or methodology) for Chile's GDP. This information would only be available on a specific data page after searching the portal.\", \"source_identification\": \"World Bank (Banco Mundial)\", \"suggested_url\": \"https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=CL\"}",
+          "parse_error": null,
+          "elapsed_seconds": 16.883,
+          "schema_valid": false,
+          "schema_error": "missing_keys:confidence,fields_missing,metadata_complete,reason"
+        }
+      },
+      "citation": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "answer": "La fuente oficial para el PIB de Chile es el Banco Mundial (World Bank). Sin embargo, la evidencia proporcionada es la página de inicio del portal de datos y no contiene la URL específica y reproducible de la serie de PIB de Chile.",
+          "citable": false
+        },
+        "text": "{\n  \"answer\": \"La fuente oficial para el PIB de Chile es el Banco Mundial (World Bank). Sin embargo, la evidencia proporcionada es la página de inicio del portal de datos y no contiene la URL específica y reproducible de la serie de PIB de Chile.\",\n  \"citable\": false\n}",
+        "parse_error": null,
+        "elapsed_seconds": 18.876,
+        "schema_valid": false,
+        "schema_error": "missing_keys:citation_url,confidence,evidence_specific,reason,source_named",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "source_found": true,
+            "source_name": "World Bank Open Data",
+            "source_url": "https://data.worldbank.org/",
+            "series_url": null,
+            "reasoning": "The evidence confirms that the World Bank Open Data is a source for global development data, including GDP. However, the provided evidence is only the homepage and does not contain the specific, reproducible URL for the GDP series of Chile. Therefore, the specific series URL cannot be cited."
+          },
+          "text": "{\"source_found\": true, \"source_name\": \"World Bank Open Data\", \"source_url\": \"https://data.worldbank.org/\", \"series_url\": null, \"reasoning\": \"The evidence confirms that the World Bank Open Data is a source for global development data, including GDP. However, the provided evidence is only the homepage and does not contain the specific, reproducible URL for the GDP series of Chile. Therefore, the specific series URL cannot be cited.\"}",
+          "parse_error": null,
+          "elapsed_seconds": 14.169,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citable,citation_url,confidence,evidence_specific,reason,source_named"
+        }
+      },
+      "judge": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "source": "Banco Mundial (World Bank)",
+          "url": "https://data.worldbank.org/",
+          "notes": "El Banco Mundial es una fuente oficial y reconocida para datos de PIB y desarrollo económico. Para encontrar la serie específica de PIB de Chile, se recomienda utilizar la barra de búsqueda del sitio web con los términos 'Chile' y 'GDP' (o 'PIB')."
+        },
+        "text": "{\n  \"source\": \"Banco Mundial (World Bank)\",\n  \"url\": \"https://data.worldbank.org/\",\n  \"notes\": \"El Banco Mundial es una fuente oficial y reconocida para datos de PIB y desarrollo económico. Para encontrar la serie específica de PIB de Chile, se recomienda utilizar la barra de búsqueda del sitio web con los términos 'Chile' y 'GDP' (o 'PIB').\"\n}",
+        "parse_error": null,
+        "elapsed_seconds": 20.063,
+        "schema_valid": false,
+        "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "source": "World Bank Open Data",
+            "url": "https://data.worldbank.org/",
+            "confidence": 0.9
+          },
+          "text": "{\"source\": \"World Bank Open Data\", \"url\": \"https://data.worldbank.org/\", \"confidence\": 0.9}",
+          "parse_error": null,
+          "elapsed_seconds": 13.13,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness"
+        }
+      },
+      "adversarial": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "falsification": "The frozen evidence is the general World Bank Open Data homepage, which confirms the World Bank as a source of global development data. However, it does not contain the specific, direct URL for Chile's GDP series. Therefore, the evidence cannot provide the precise, actionable URL requested for the specific country and indicator.",
+          "error_type": "Unsupported Citation/Lack of Specificity",
+          "details": "The evidence only provides the general portal URL (https://data.worldbank.org/) and general search functionality, but fails to retrieve or cite the specific data series URL for 'Chile GDP'."
+        },
+        "text": "{\n  \"falsification\": \"The frozen evidence is the general World Bank Open Data homepage, which confirms the World Bank as a source of global development data. However, it does not contain the specific, direct URL for Chile's GDP series. Therefore, the evidence cannot provide the precise, actionable URL requested for the specific country and indicator.\",\n  \"error_type\": \"Unsupported Citation/Lack of Specificity\",\n  \"details\": \"The evidence only provides the general portal URL (https://data.worldbank.org/) and general search functionality, but fails to retrieve or cite the specific data series URL for 'Chile GDP'.\"\n}",
+        "parse_error": null,
+        "elapsed_seconds": 23.434,
+        "schema_valid": false,
+        "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "falsification": "The provided evidence is the general homepage of the World Bank Open Data portal (https://data.worldbank.org/). While this site is a valid source for global data, the evidence does not contain the specific search results, the indicator code, or the direct URL for the GDP series of Chile. Therefore, it is impossible to provide the 'most pertinent series URL' based solely on this general landing page.",
+            "wrong_indicator": "N/A",
+            "wrong_unit": "N/A",
+            "wrong_period": "N/A",
+            "wrong_geography": "N/A",
+            "unsupported_citation": "The evidence only shows the search bar placeholder ('GDP, population, Indonesia') and the general portal URL, but does not provide the actual, specific data series URL for Chile's GDP.",
+            "conflation_of_discovery_and_retrieval": "The evidence conflates the general discovery tool (the search bar on the homepage) with the final retrieval result (the specific data series URL for Chile's GDP)."
+          },
+          "text": "{\"falsification\": \"The provided evidence is the general homepage of the World Bank Open Data portal (https://data.worldbank.org/). While this site is a valid source for global data, the evidence does not contain the specific search results, the indicator code, or the direct URL for the GDP series of Chile. Therefore, it is impossible to provide the 'most pertinent series URL' based solely on this general landing page.\", \"wrong_indicator\": \"N/A\", \"wrong_unit\": \"N/A\", \"wrong_period\": \"N/A\", \"wrong_geography\": \"N/A\", \"unsupported_citation\": \"The evidence only shows the search bar placeholder ('GDP, population, Indonesia') and the general portal URL, but does not provide the actual, specific data series URL for Chile's GDP.\", \"conflation_of_discovery_and_retrieval\": \"The evidence conflates the general discovery tool (the search bar on the homepage) with the final retrieval result (the specific data series URL for Chile's GDP).\"}",
+          "parse_error": null,
+          "elapsed_seconds": 22.507,
+          "schema_valid": false,
+          "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict"
+        }
+      }
+    }
+  },
+  {
+    "query": {
+      "query_id": "Q002",
+      "portal_id": "worldbank",
+      "stratum": "discovery",
+      "query": "¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?",
+      "country": "Argentina",
+      "country_code": "ARG"
+    },
+    "repeat": 1,
+    "evidence_sha256": "23134b94add83a04d220b94fd22cb599d4b64094f984784d581c13f04656b851",
+    "candidate_url": null,
+    "agents": {
+      "discovery": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "resource_url": "https://data.worldbank.org/",
+          "resource_description": "Portal oficial de datos de desarrollo global del Banco Mundial, donde se puede consultar el PIB (Producto Interno Bruto) de Argentina y otros indicadores económicos."
+        },
+        "text": "{\"resource_url\": \"https://data.worldbank.org/\", \"resource_description\": \"Portal oficial de datos de desarrollo global del Banco Mundial, donde se puede consultar el PIB (Producto Interno Bruto) de Argentina y otros indicadores económicos.\"}",
+        "parse_error": null,
+        "elapsed_seconds": 17.187,
+        "schema_valid": false,
+        "schema_error": "missing_keys:best_url,confidence,discovered,reason",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "resource_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+            "resource_name": "GDP (current US$)",
+            "resource_description": "The World Bank's data on Gross Domestic Product (GDP) is available through its open data portal. The specific indicator code for GDP (current US$) is NY.GDP.MKTP.CD."
+          },
+          "text": "{\"resource_url\": \"https://data.worldbank.org/indicator/NY.GDP.MKTP.CD\", \"resource_name\": \"GDP (current US$)\", \"resource_description\": \"The World Bank's data on Gross Domestic Product (GDP) is available through its open data portal. The specific indicator code for GDP (current US$) is NY.GDP.MKTP.CD.\"}",
+          "parse_error": null,
+          "elapsed_seconds": 4.97,
+          "schema_valid": false,
+          "schema_error": "missing_keys:best_url,confidence,discovered,reason"
+        }
+      },
+      "semantic": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "indicator_series": "World Bank Open Data (data.worldbank.org)",
+          "justification": "The World Bank is a globally recognized and authoritative source for economic data, including GDP (Gross Domestic Product). The provided evidence is the World Bank Open Data portal, which is the official platform to search for, verify, and consult economic indicators like GDP for specific countries (Argentina) and years (2024)."
+        },
+        "text": "{\"indicator_series\": \"World Bank Open Data (data.worldbank.org)\", \"justification\": \"The World Bank is a globally recognized and authoritative source for economic data, including GDP (Gross Domestic Product). The provided evidence is the World Bank Open Data portal, which is the official platform to search for, verify, and consult economic indicators like GDP for specific countries (Argentina) and years (2024).\"}",
+        "parse_error": null,
+        "elapsed_seconds": 19.681,
+        "schema_valid": false,
+        "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "indicator_series": "GDP (Gross Domestic Product)",
+            "source_url": "https://data.worldbank.org/",
+            "search_query": "Argentina GDP",
+            "concept_check": "Passed",
+            "unit_check": "Varies (Current USD, etc.)",
+            "prices_check": "N/A",
+            "frequency_check": "Annual/Quarterly (depending on data availability)",
+            "geography_check": "Argentina",
+            "period_check": "2024 (or latest available estimate)"
+          },
+          "text": "{\"indicator_series\": \"GDP (Gross Domestic Product)\", \"source_url\": \"https://data.worldbank.org/\", \"search_query\": \"Argentina GDP\", \"concept_check\": \"Passed\", \"unit_check\": \"Varies (Current USD, etc.)\", \"prices_check\": \"N/A\", \"frequency_check\": \"Annual/Quarterly (depending on data availability)\", \"geography_check\": \"Argentina\", \"period_check\": \"2024 (or latest available estimate)\"}",
+          "parse_error": null,
+          "elapsed_seconds": 16.059,
+          "schema_valid": false,
+          "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description"
+        }
+      },
+      "retrieval": {
+        "model": "qwen3.5:9b-mlx",
+        "ok": false,
+        "json": null,
+        "error": "HTTPError: HTTP Error 500: Internal Server Error",
+        "elapsed_seconds": 0.19,
+        "schema_valid": false,
+        "schema_error": "missing_keys:retrievable,unit_correct,period_correct,confidence,geography_correct,reason,value_found",
+        "retry": {
+          "model": "qwen3.5:9b-mlx",
+          "ok": false,
+          "json": null,
+          "error": "HTTPError: HTTP Error 500: Internal Server Error",
+          "elapsed_seconds": 0.052,
+          "schema_valid": false,
+          "schema_error": "missing_keys:retrievable,unit_correct,period_correct,confidence,geography_correct,reason,value_found"
+        }
+      },
+      "metadata": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "contains_rigorous_statistical_metadata": false,
+          "reasoning": "The evidence is the general landing page of the World Bank Open Data website. While the World Bank is a credible source (addressing the 'source' dimension), the provided text does not contain the specific, rigorous statistical metadata required for a data point (like Argentina's 2024 GDP). Specifically, the evidence lacks explicit details regarding the definition, unit, frequency, period, dimensions, and methodology for the requested indicator."
+        },
+        "text": "{\n  \"contains_rigorous_statistical_metadata\": false,\n  \"reasoning\": \"The evidence is the general landing page of the World Bank Open Data website. While the World Bank is a credible source (addressing the 'source' dimension), the provided text does not contain the specific, rigorous statistical metadata required for a data point (like Argentina's 2024 GDP). Specifically, the evidence lacks explicit details regarding the definition, unit, frequency, period, dimensions, and methodology for the requested indicator.\"\n}",
+        "parse_error": null,
+        "elapsed_seconds": 23.893,
+        "schema_valid": false,
+        "schema_error": "missing_keys:confidence,fields_missing,metadata_complete,reason",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "contains_rigorous_statistical_metadata": false
+          },
+          "text": "{\"contains_rigorous_statistical_metadata\": false}",
+          "parse_error": null,
+          "elapsed_seconds": 2.985,
+          "schema_valid": false,
+          "schema_error": "missing_keys:confidence,fields_missing,metadata_complete,reason"
+        }
+      },
+      "citation": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "is_answer_citable": true,
+          "citation": "The World Bank Open Data website (https://data.worldbank.org/) is presented as a source for global development data, and the site's search bar suggests searching for indicators like 'GDP' and countries like 'Argentina' to find the required information.",
+          "answer": "Puedes consultar el PIB de Argentina en el sitio web de World Bank Open Data (https://data.worldbank.org/). Puedes utilizar la barra de búsqueda del sitio e ingresar términos como 'GDP' y 'Argentina' para encontrar los datos más recientes."
+        },
+        "text": "{\"is_answer_citable\": true, \"citation\": \"The World Bank Open Data website (https://data.worldbank.org/) is presented as a source for global development data, and the site's search bar suggests searching for indicators like 'GDP' and countries like 'Argentina' to find the required information.\", \"answer\": \"Puedes consultar el PIB de Argentina en el sitio web de World Bank Open Data (https://data.worldbank.org/). Puedes utilizar la barra de búsqueda del sitio e ingresar términos como 'GDP' y 'Argentina' para encontrar los datos más recientes.\"}",
+        "parse_error": null,
+        "elapsed_seconds": 23.427,
+        "schema_valid": false,
+        "schema_error": "missing_keys:citable,citation_url,confidence,evidence_specific,reason,source_named",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "answer": "El sitio web proporcionado es el portal de datos abiertos del Banco Mundial (World Bank Open Data), que es una fuente oficial de datos de desarrollo global. Aunque la página no muestra directamente el PIB de Argentina para 2024, el portal está diseñado para que usted pueda buscar este tipo de información utilizando la barra de búsqueda o navegando por las categorías de datos (como 'ECONOMIES').",
+            "citation_available": false
+          },
+          "text": "{\"answer\": \"El sitio web proporcionado es el portal de datos abiertos del Banco Mundial (World Bank Open Data), que es una fuente oficial de datos de desarrollo global. Aunque la página no muestra directamente el PIB de Argentina para 2024, el portal está diseñado para que usted pueda buscar este tipo de información utilizando la barra de búsqueda o navegando por las categorías de datos (como 'ECONOMIES').\", \"citation_available\": false}",
+          "parse_error": null,
+          "elapsed_seconds": 18.61,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citable,citation_url,confidence,evidence_specific,reason,source_named"
+        }
+      },
+      "judge": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "score": 5,
+          "reasoning": "The provided evidence is from the World Bank Open Data website (data.worldbank.org). The World Bank is a highly reputable and official source for global economic indicators, including GDP (PIB). The site structure and content confirm its suitability for answering the query. The user should be directed to this platform and advised to use the search function to find 'Argentina' and 'GDP' data."
+        },
+        "text": "{\n  \"score\": 5,\n  \"reasoning\": \"The provided evidence is from the World Bank Open Data website (data.worldbank.org). The World Bank is a highly reputable and official source for global economic indicators, including GDP (PIB). The site structure and content confirm its suitability for answering the query. The user should be directed to this platform and advised to use the search function to find 'Argentina' and 'GDP' data.\"\n}",
+        "parse_error": null,
+        "elapsed_seconds": 19.538,
+        "schema_valid": false,
+        "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "answer": "Según la evidencia proporcionada, el World Bank Open Data (data.worldbank.org) es una fuente oficial de datos de desarrollo global, incluyendo indicadores como el PIB. Para consultar el PIB de Argentina, debe utilizar la plataforma de World Bank Open Data y buscar el indicador específico para Argentina.",
+            "source": [
+              "https://data.worldbank.org/"
+            ]
+          },
+          "text": "{\"answer\": \"Según la evidencia proporcionada, el World Bank Open Data (data.worldbank.org) es una fuente oficial de datos de desarrollo global, incluyendo indicadores como el PIB. Para consultar el PIB de Argentina, debe utilizar la plataforma de World Bank Open Data y buscar el indicador específico para Argentina.\", \"source\": [\"https://data.worldbank.org/\"]}",
+          "parse_error": null,
+          "elapsed_seconds": 15.031,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness"
+        }
+      },
+      "adversarial": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "falsification": {
+            "reason": "Period",
+            "explanation": "The frozen evidence, while pointing to the correct official source (World Bank Open Data), does not confirm the availability of the GDP data for the specific year 2024. The visible data links and indicators on the homepage (e.g., in the 'Data 360' section) show historical data ending in 2023, suggesting that the most readily accessible data in the provided snapshot is not for the requested year (2024).",
+            "evidence_detail": "The URLs for the featured indicators visible in the evidence contain 'end=2023', indicating the data cutoff for the displayed examples."
+          }
+        },
+        "text": "{\"falsification\": {\"reason\": \"Period\", \"explanation\": \"The frozen evidence, while pointing to the correct official source (World Bank Open Data), does not confirm the availability of the GDP data for the specific year 2024. The visible data links and indicators on the homepage (e.g., in the 'Data 360' section) show historical data ending in 2023, suggesting that the most readily accessible data in the provided snapshot is not for the requested year (2024).\", \"evidence_detail\": \"The URLs for the featured indicators visible in the evidence contain 'end=2023', indicating the data cutoff for the displayed examples.\"}}",
+        "parse_error": null,
+        "elapsed_seconds": 27.984,
+        "schema_valid": false,
+        "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "falsification_reason": "The evidence correctly identifies the World Bank as a reliable source, but it does not provide the specific data page or guarantee that the 2024 figure is the final, official national estimate. The World Bank data for current years (like 2024) is typically a projection or estimate, not the final official national count. The user should be advised to search specifically for 'Argentina' and 'GDP' within the World Bank portal and check the data source/date of the figure to confirm if it is a projection.",
+            "wrong_indicator": null,
+            "wrong_unit": null,
+            "wrong_period": "The evidence does not confirm the finality of the 2024 data; it is likely an estimate/projection.",
+            "wrong_geography": null,
+            "unsupported_citation": null,
+            "conflation_of_discovery_and_retrieval": null
+          },
+          "text": "{\"falsification_reason\": \"The evidence correctly identifies the World Bank as a reliable source, but it does not provide the specific data page or guarantee that the 2024 figure is the final, official national estimate. The World Bank data for current years (like 2024) is typically a projection or estimate, not the final official national count. The user should be advised to search specifically for 'Argentina' and 'GDP' within the World Bank portal and check the data source/date of the figure to confirm if it is a projection.\", \"wrong_indicator\": null, \"wrong_unit\": null, \"wrong_period\": \"The evidence does not confirm the finality of the 2024 data; it is likely an estimate/projection.\", \"wrong_geography\": null, \"unsupported_citation\": null, \"conflation_of_discovery_and_retrieval\": null}",
+          "parse_error": null,
+          "elapsed_seconds": 27.102,
+          "schema_valid": false,
+          "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict"
+        }
+      }
+    }
+  },
+  {
+    "query": {
+      "query_id": "Q003",
+      "portal_id": "worldbank",
+      "stratum": "discovery",
+      "query": "Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.",
+      "country": "Brazil",
+      "country_code": "BRA"
+    },
+    "repeat": 1,
+    "evidence_sha256": "23134b94add83a04d220b94fd22cb599d4b64094f984784d581c13f04656b851",
+    "candidate_url": null,
+    "agents": {
+      "discovery": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "resource_url": "https://data.worldbank.org/",
+          "explanation": "El World Bank Open Data es la fuente oficial y más reconocida a nivel global para indicadores de desarrollo, incluyendo el PIB (Producto Interno Bruto). Esta página es adecuada porque permite buscar indicadores específicos (como 'GDP') y filtrar por países (como 'Brazil'), proporcionando datos estandarizados, comparables e internacionalmente aceptados, lo cual es crucial para cualquier análisis económico."
+        },
+        "text": "{\"resource_url\": \"https://data.worldbank.org/\", \"explanation\": \"El World Bank Open Data es la fuente oficial y más reconocida a nivel global para indicadores de desarrollo, incluyendo el PIB (Producto Interno Bruto). Esta página es adecuada porque permite buscar indicadores específicos (como 'GDP') y filtrar por países (como 'Brazil'), proporcionando datos estandarizados, comparables e internacionalmente aceptados, lo cual es crucial para cualquier análisis económico.\"}",
+        "parse_error": null,
+        "elapsed_seconds": 20.171,
+        "schema_valid": false,
+        "schema_error": "missing_keys:best_url,confidence,discovered,reason",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "resource_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+            "explanation": "El World Bank Open Data es la fuente oficial y más completa para indicadores de desarrollo global, incluyendo el PIB. El enlace específico para el indicador de PIB (NY.GDP.MKTP.CD) permite acceder directamente a la serie de datos solicitada para Brasil, asegurando la precisión y la actualidad de la información."
+          },
+          "text": "{\"resource_url\": \"https://data.worldbank.org/indicator/NY.GDP.MKTP.CD\", \"explanation\": \"El World Bank Open Data es la fuente oficial y más completa para indicadores de desarrollo global, incluyendo el PIB. El enlace específico para el indicador de PIB (NY.GDP.MKTP.CD) permite acceder directamente a la serie de datos solicitada para Brasil, asegurando la precisión y la actualidad de la información.\"}",
+          "parse_error": null,
+          "elapsed_seconds": 5.274,
+          "schema_valid": false,
+          "schema_error": "missing_keys:best_url,confidence,discovered,reason"
+        }
+      },
+      "semantic": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "indicator_series": "Producto Interno Bruto (PIB) de Brasil, accesible mediante la búsqueda de 'GDP' y la selección de 'Brazil' en la plataforma World Bank Open Data.",
+          "explanation": "La página de World Bank Open Data es la fuente estadísticamente correcta y más adecuada porque el Banco Mundial es una institución global reconocida por recopilar, estandarizar y publicar indicadores económicos de alta calidad y comparables internacionalmente. Esta plataforma está diseñada específicamente para el acceso abierto a datos de desarrollo global. Para localizar el PIB de Brasil, se debe utilizar la función de búsqueda (visible en la página) e ingresar 'GDP' (o 'PIB') y seleccionar 'Brazil' como país. Esto garantiza que se obtienen datos oficiales, metodológicamente sólidos y actualizados sobre el Producto Interno Bruto de Brasil."
+        },
+        "text": "{\"indicator_series\": \"Producto Interno Bruto (PIB) de Brasil, accesible mediante la búsqueda de 'GDP' y la selección de 'Brazil' en la plataforma World Bank Open Data.\", \"explanation\": \"La página de World Bank Open Data es la fuente estadísticamente correcta y más adecuada porque el Banco Mundial es una institución global reconocida por recopilar, estandarizar y publicar indicadores económicos de alta calidad y comparables internacionalmente. Esta plataforma está diseñada específicamente para el acceso abierto a datos de desarrollo global. Para localizar el PIB de Brasil, se debe utilizar la función de búsqueda (visible en la página) e ingresar 'GDP' (o 'PIB') y seleccionar 'Brazil' como país. Esto garantiza que se obtienen datos oficiales, metodológicamente sólidos y actualizados sobre el Producto Interno Bruto de Brasil.\"}",
+        "parse_error": null,
+        "elapsed_seconds": 27.649,
+        "schema_valid": false,
+        "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "concept": "Producto Interno Bruto (PIB) / Gross Domestic Product (GDP)",
+            "geography": "Brasil",
+            "indicator_series": "PIB (GDP) de Brasil, proporcionado por el Banco Mundial (World Bank)",
+            "unit": "Generalmente en dólares estadounidenses (US$)",
+            "frequency": "Anual (aunque puede haber datos trimestrales disponibles)",
+            "period": "El período más reciente disponible en la base de datos del Banco Mundial",
+            "justification": "La página de World Bank Open Data (https://data.worldbank.org/) es la fuente más adecuada porque es una base de datos global reconocida internacionalmente, gestionada por el Banco Mundial. Esta institución es la autoridad estadística más citada para la recopilación y estandarización de indicadores macroeconómicos como el PIB a nivel nacional (Brasil), asegurando la comparabilidad y la oficialidad de los datos globales."
+          },
+          "text": "{\"concept\": \"Producto Interno Bruto (PIB) / Gross Domestic Product (GDP)\", \"geography\": \"Brasil\", \"indicator_series\": \"PIB (GDP) de Brasil, proporcionado por el Banco Mundial (World Bank)\", \"unit\": \"Generalmente en dólares estadounidenses (US$)\", \"frequency\": \"Anual (aunque puede haber datos trimestrales disponibles)\", \"period\": \"El período más reciente disponible en la base de datos del Banco Mundial\", \"justification\": \"La página de World Bank Open Data (https://data.worldbank.org/) es la fuente más adecuada porque es una base de datos global reconocida internacionalmente, gestionada por el Banco Mundial. Esta institución es la autoridad estadística más citada para la recopilación y estandarización de indicadores macroeconómicos como el PIB a nivel nacional (Brasil), asegurando la comparabilidad y la oficialidad de los datos globales.\"}",
+          "parse_error": null,
+          "elapsed_seconds": 19.424,
+          "schema_valid": false,
+          "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description"
+        }
+      },
+      "retrieval": {
+        "model": "qwen3.5:9b-mlx",
+        "ok": false,
+        "json": null,
+        "error": "HTTPError: HTTP Error 500: Internal Server Error",
+        "elapsed_seconds": 0.063,
+        "schema_valid": false,
+        "schema_error": "missing_keys:retrievable,unit_correct,period_correct,confidence,geography_correct,reason,value_found",
+        "retry": {
+          "model": "qwen3.5:9b-mlx",
+          "ok": false,
+          "json": null,
+          "error": "HTTPError: HTTP Error 500: Internal Server Error",
+          "elapsed_seconds": 0.045,
+          "schema_valid": false,
+          "schema_error": "missing_keys:retrievable,unit_correct,period_correct,confidence,geography_correct,reason,value_found"
+        }
+      },
+      "metadata": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "contains_rigorous_statistical_metadata": false,
+          "reasoning": "The evidence provided is the homepage of the World Bank Open Data portal. While the site is designed to host data that *must* include rigorous statistical metadata (Definition, Source, Unit, Frequency, Period, Dimensions, Methodology) for every indicator, the visible HTML content itself is a high-level portal page and does not contain the detailed, specific metadata for any single indicator. The metadata elements are implied and accessible via links, but they are not present in the static text/structure provided.",
+          "metadata_elements_assessment": {
+            "definition": "Implied (World Development Indicators are described as 'relevant, high-quality, and internationally comparable statistics').",
+            "source": "Present (The World Bank).",
+            "unit": "Not explicitly stated for a specific indicator on this page.",
+            "frequency": "Implied (Time-series data is handled, suggesting annual/quarterly data is available, but not stated).",
+            "period": "Present (The structure supports historical periods, e.g., start/end years).",
+            "dimensions": "Implied (Data is structured by country/economy and indicator).",
+            "methodology": "Implied (The site claims 'high-quality' and 'internationally comparable' data, suggesting methodologies exist, but they are not detailed in the evidence)."
+          }
+        },
+        "text": "{\n  \"contains_rigorous_statistical_metadata\": false,\n  \"reasoning\": \"The evidence provided is the homepage of the World Bank Open Data portal. While the site is designed to host data that *must* include rigorous statistical metadata (Definition, Source, Unit, Frequency, Period, Dimensions, Methodology) for every indicator, the visible HTML content itself is a high-level portal page and does not contain the detailed, specific metadata for any single indicator. The metadata elements are implied and accessible via links, but they are not present in the static text/structure provided.\",\n  \"metadata_elements_assessment\": {\n    \"definition\": \"Implied (World Development Indicators are described as 'relevant, high-quality, and internationally comparable statistics').\",\n    \"source\": \"Present (The World Bank).\",\n    \"unit\": \"Not explicitly stated for a specific indicator on this page.\",\n    \"frequency\": \"Implied (Time-series data is handled, suggesting annual/quarterly data is available, but not stated).\",\n    \"period\": \"Present (The structure supports historical periods, e.g., start/end years).\",\n    \"dimensions\": \"Implied (Data is structured by country/economy and indicator).\",\n    \"methodology\": \"Implied (The site claims 'high-quality' and 'internationally comparable' data, suggesting methodologies exist, but they are not detailed in the evidence).\"\n  }\n}",
+        "parse_error": null,
+        "elapsed_seconds": 30.996,
+        "schema_valid": false,
+        "schema_error": "missing_keys:confidence,fields_missing,metadata_complete,reason",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "contains_rigorous_statistical_metadata": false,
+            "definition": "Not present in the provided evidence.",
+            "source": "Not present in the provided evidence.",
+            "unit": "Not present in the provided evidence.",
+            "frequency": "Not present in the provided evidence.",
+            "period": "Not present in the provided evidence.",
+            "dimensions": "Not present in the provided evidence.",
+            "methodology": "Not present in the provided evidence."
+          },
+          "text": "{\"contains_rigorous_statistical_metadata\": false, \"definition\": \"Not present in the provided evidence.\", \"source\": \"Not present in the provided evidence.\", \"unit\": \"Not present in the provided evidence.\", \"frequency\": \"Not present in the provided evidence.\", \"period\": \"Not present in the provided evidence.\", \"dimensions\": \"Not present in the provided evidence.\", \"methodology\": \"Not present in the provided evidence.\"}",
+          "parse_error": null,
+          "elapsed_seconds": 13.249,
+          "schema_valid": false,
+          "schema_error": "missing_keys:confidence,fields_missing,metadata_complete,reason"
+        }
+      },
+      "citation": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "answer": "El indicador oficial de PIB para Brasil se puede localizar utilizando el portal de datos de la Banca Mundial (World Bank Open Data). Aunque la evidencia proporcionada es la página de inicio, esta página contiene una barra de búsqueda con el placeholder 'Search data e.g. GDP, population, Indonesia', lo que indica que el usuario debe buscar 'Brazil GDP' o navegar a la sección de indicadores para encontrar el dato específico.\n\n**Justificación de la página:**\nLa página es adecuada porque es el portal oficial de datos abiertos de la Banca Mundial (World Bank Open Data). El texto indica que ofrece \"Free and open access to global development data\" (Acceso libre y abierto a datos de desarrollo global), y la sección \"World Development Indicators: Countries and Economies\" confirma que es la fuente autorizada para estadísticas económicas globales, incluyendo el PIB de países como Brasil.",
+          "citation": {
+            "source": "World Bank Open Data",
+            "details": "El sitio web es el portal oficial de datos de la Banca Mundial, que se describe como fuente de \"Free and open access to global development data\" y contiene una funcionalidad de búsqueda que permite buscar indicadores como 'GDP' y países específicos."
+          }
+        },
+        "text": "{\"answer\": \"El indicador oficial de PIB para Brasil se puede localizar utilizando el portal de datos de la Banca Mundial (World Bank Open Data). Aunque la evidencia proporcionada es la página de inicio, esta página contiene una barra de búsqueda con el placeholder 'Search data e.g. GDP, population, Indonesia', lo que indica que el usuario debe buscar 'Brazil GDP' o navegar a la sección de indicadores para encontrar el dato específico.\\n\\n**Justificación de la página:**\\nLa página es adecuada porque es el portal oficial de datos abiertos de la Banca Mundial (World Bank Open Data). El texto indica que ofrece \\\"Free and open access to global development data\\\" (Acceso libre y abierto a datos de desarrollo global), y la sección \\\"World Development Indicators: Countries and Economies\\\" confirma que es la fuente autorizada para estadísticas económicas globales, incluyendo el PIB de países como Brasil.\", \"citation\": {\"source\": \"World Bank Open Data\", \"details\": \"El sitio web es el portal oficial de datos de la Banca Mundial, que se describe como fuente de \\\"Free and open access to global development data\\\" y contiene una funcionalidad de búsqueda que permite buscar indicadores como 'GDP' y países específicos.\"}}",
+        "parse_error": null,
+        "elapsed_seconds": 27.643,
+        "schema_valid": false,
+        "schema_error": "missing_keys:citable,citation_url,confidence,evidence_specific,reason,source_named",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "indicator_url": "https://data.worldbank.org/",
+            "explanation": "La página World Bank Open Data es la adecuada porque es un repositorio global y oficial de datos de desarrollo económico, recopilado por el Banco Mundial. El Banco Mundial es una fuente reconocida internacionalmente para indicadores macroeconómicos como el PIB. Además, la interfaz visible incluye una barra de búsqueda con ejemplos como 'GDP, population, Indonesia', lo que confirma que el usuario puede buscar indicadores específicos (como el PIB) para países concretos (como Brasil) de manera directa y confiable."
+          },
+          "text": "{\"indicator_url\": \"https://data.worldbank.org/\", \"explanation\": \"La página World Bank Open Data es la adecuada porque es un repositorio global y oficial de datos de desarrollo económico, recopilado por el Banco Mundial. El Banco Mundial es una fuente reconocida internacionalmente para indicadores macroeconómicos como el PIB. Además, la interfaz visible incluye una barra de búsqueda con ejemplos como 'GDP, population, Indonesia', lo que confirma que el usuario puede buscar indicadores específicos (como el PIB) para países concretos (como Brasil) de manera directa y confiable.\"}",
+          "parse_error": null,
+          "elapsed_seconds": 15.64,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citable,citation_url,confidence,evidence_specific,reason,source_named"
+        }
+      },
+      "judge": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "indicator_url": "https://data.worldbank.org/",
+          "indicator_name": "Producto Interno Bruto (PIB) de Brasil",
+          "explanation": "La página de World Bank Open Data (data.worldbank.org) es la fuente adecuada porque es el repositorio oficial de datos de desarrollo global proporcionado por el Banco Mundial. Aunque la evidencia proporcionada es la página de inicio, esta página incluye una barra de búsqueda (`<input type=\"text\" placeholder=\"Search data e.g. GDP, population, Indonesia\" ...>`) que permite buscar indicadores específicos como el PIB (GDP) y filtrar por países (como Brasil). La presencia de la sección 'World Development Indicators' (WDI) y la naturaleza del sitio confirman su autoridad y relevancia para datos económicos internacionales."
+        },
+        "text": "{\n  \"indicator_url\": \"https://data.worldbank.org/\",\n  \"indicator_name\": \"Producto Interno Bruto (PIB) de Brasil\",\n  \"explanation\": \"La página de World Bank Open Data (data.worldbank.org) es la fuente adecuada porque es el repositorio oficial de datos de desarrollo global proporcionado por el Banco Mundial. Aunque la evidencia proporcionada es la página de inicio, esta página incluye una barra de búsqueda (`<input type=\\\"text\\\" placeholder=\\\"Search data e.g. GDP, population, Indonesia\\\" ...>`) que permite buscar indicadores específicos como el PIB (GDP) y filtrar por países (como Brasil). La presencia de la sección 'World Development Indicators' (WDI) y la naturaleza del sitio confirman su autoridad y relevancia para datos económicos internacionales.\"\n}",
+        "parse_error": null,
+        "elapsed_seconds": 23.392,
+        "schema_valid": false,
+        "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "indicator_url": "https://data.worldbank.org/",
+            "explanation": "La página de World Bank Open Data (https://data.worldbank.org/) es la fuente adecuada porque es un repositorio global y reconocido de datos de desarrollo económico. Aunque la evidencia proporcionada es la página de inicio y no el indicador específico, esta plataforma está diseñada para buscar indicadores clave como el PIB (GDP) y permite filtrar por países. Para encontrar el PIB de Brasil, debe utilizar la barra de búsqueda visible en la página (con el placeholder 'GDP, population, Indonesia') e ingresar 'Brazil GDP' o 'Brasil' para acceder al indicador oficial y más actualizado.",
+            "confidence_score": 0.9
+          },
+          "text": "{\"indicator_url\": \"https://data.worldbank.org/\", \"explanation\": \"La página de World Bank Open Data (https://data.worldbank.org/) es la fuente adecuada porque es un repositorio global y reconocido de datos de desarrollo económico. Aunque la evidencia proporcionada es la página de inicio y no el indicador específico, esta plataforma está diseñada para buscar indicadores clave como el PIB (GDP) y permite filtrar por países. Para encontrar el PIB de Brasil, debe utilizar la barra de búsqueda visible en la página (con el placeholder 'GDP, population, Indonesia') e ingresar 'Brazil GDP' o 'Brasil' para acceder al indicador oficial y más actualizado.\", \"confidence_score\": 0.9}",
+          "parse_error": null,
+          "elapsed_seconds": 19.896,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness"
+        }
+      },
+      "adversarial": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {},
+        "text": "{}",
+        "parse_error": null,
+        "elapsed_seconds": 24.204,
+        "schema_valid": false,
+        "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "falsification_type": "conflation of discovery and retrieval",
+            "flaw_description": "The provided evidence is the World Bank Open Data homepage, which is an appropriate source for global indicators. However, the evidence only shows the search interface and the general structure of the site. It does not display the actual GDP indicator for Brazil. To locate the specific indicator, the user must perform a search (e.g., 'Brazil GDP') or navigate to Brazil's dedicated country page, which requires an action not captured in the static HTML evidence. Therefore, the evidence only supports the *potential* to find the data, not the successful retrieval of the specific indicator.",
+            "required_correction": "The user must perform a search query or navigate to the country profile for Brazil to retrieve the specific GDP indicator data."
+          },
+          "text": "{\"falsification_type\": \"conflation of discovery and retrieval\", \"flaw_description\": \"The provided evidence is the World Bank Open Data homepage, which is an appropriate source for global indicators. However, the evidence only shows the search interface and the general structure of the site. It does not display the actual GDP indicator for Brazil. To locate the specific indicator, the user must perform a search (e.g., 'Brazil GDP') or navigate to Brazil's dedicated country page, which requires an action not captured in the static HTML evidence. Therefore, the evidence only supports the *potential* to find the data, not the successful retrieval of the specific indicator.\", \"required_correction\": \"The user must perform a search query or navigate to the country profile for Brazil to retrieve the specific GDP indicator data.\"}",
+          "parse_error": null,
+          "elapsed_seconds": 22.569,
+          "schema_valid": false,
+          "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict"
+        }
+      }
+    }
+  },
+  {
+    "query": {
+      "query_id": "Q004",
+      "portal_id": "worldbank",
+      "stratum": "discovery",
+      "query": "Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.",
+      "country": "Mexico",
+      "country_code": "MEX"
+    },
+    "repeat": 1,
+    "evidence_sha256": "23134b94add83a04d220b94fd22cb599d4b64094f984784d581c13f04656b851",
+    "candidate_url": null,
+    "agents": {
+      "discovery": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "resource_url": "https://data.worldbank.org/",
+          "source": "World Bank Open Data (World Development Indicators)"
+        },
+        "text": "{\"resource_url\": \"https://data.worldbank.org/\", \"source\": \"World Bank Open Data (World Development Indicators)\"}",
+        "parse_error": null,
+        "elapsed_seconds": 17.015,
+        "schema_valid": false,
+        "schema_error": "missing_keys:best_url,confidence,discovered,reason",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "resource_url": "https://data.worldbank.org/",
+            "source_name": "World Bank Open Data"
+          },
+          "text": "{\"resource_url\": \"https://data.worldbank.org/\", \"source_name\": \"World Bank Open Data\"}",
+          "parse_error": null,
+          "elapsed_seconds": 3.432,
+          "schema_valid": false,
+          "schema_error": "missing_keys:best_url,confidence,discovered,reason"
+        }
+      },
+      "semantic": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "indicator": "GDP (Gross Domestic Product)",
+          "country": "Mexico",
+          "source": "World Bank Open Data",
+          "url": "https://data.worldbank.org/",
+          "notes": "The World Bank Open Data portal is the official source for global economic indicators, including GDP for Mexico. Users can search for 'GDP' and select 'Mexico' to access the data."
+        },
+        "text": "{\n  \"indicator\": \"GDP (Gross Domestic Product)\",\n  \"country\": \"Mexico\",\n  \"source\": \"World Bank Open Data\",\n  \"url\": \"https://data.worldbank.org/\",\n  \"notes\": \"The World Bank Open Data portal is the official source for global economic indicators, including GDP for Mexico. Users can search for 'GDP' and select 'Mexico' to access the data.\"\n}",
+        "parse_error": null,
+        "elapsed_seconds": 16.472,
+        "schema_valid": false,
+        "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "concept": "GDP (Gross Domestic Product)",
+            "unit": "Currency (typically USD)",
+            "prices": "N/A",
+            "frequency": "Annual",
+            "geography": "Mexico",
+            "period": "Historical",
+            "indicator_series": "World Bank Open Data (https://data.worldbank.org/)"
+          },
+          "text": "{\"concept\": \"GDP (Gross Domestic Product)\", \"unit\": \"Currency (typically USD)\", \"prices\": \"N/A\", \"frequency\": \"Annual\", \"geography\": \"Mexico\", \"period\": \"Historical\", \"indicator_series\": \"World Bank Open Data (https://data.worldbank.org/)\"}",
+          "parse_error": null,
+          "elapsed_seconds": 15.561,
+          "schema_valid": false,
+          "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description"
+        }
+      },
+      "retrieval": {
+        "model": "qwen3.5:9b-mlx",
+        "ok": false,
+        "json": null,
+        "error": "HTTPError: HTTP Error 500: Internal Server Error",
+        "elapsed_seconds": 0.314,
+        "schema_valid": false,
+        "schema_error": "missing_keys:retrievable,unit_correct,period_correct,confidence,geography_correct,reason,value_found",
+        "retry": {
+          "model": "qwen3.5:9b-mlx",
+          "ok": false,
+          "json": null,
+          "error": "HTTPError: HTTP Error 500: Internal Server Error",
+          "elapsed_seconds": 0.042,
+          "schema_valid": false,
+          "schema_error": "missing_keys:retrievable,unit_correct,period_correct,confidence,geography_correct,reason,value_found"
+        }
+      },
+      "metadata": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "contains_rigorous_statistical_metadata": false,
+          "reasoning": "The evidence is a portal page (World Bank Open Data) that confirms the source (The World Bank) and the general scope of the data (global development indicators). While the page implies the existence of detailed metadata (e.g., time series data, country/indicator dimensions), it does not contain the rigorous, explicit statistical metadata (specific definitions, units, frequencies, periods, dimensions, or methodologies) for a particular dataset (like Mexico's GDP) within the provided text snippet. The metadata is implied or linked to external resources, but not present in the evidence itself."
+        },
+        "text": "{\n  \"contains_rigorous_statistical_metadata\": false,\n  \"reasoning\": \"The evidence is a portal page (World Bank Open Data) that confirms the source (The World Bank) and the general scope of the data (global development indicators). While the page implies the existence of detailed metadata (e.g., time series data, country/indicator dimensions), it does not contain the rigorous, explicit statistical metadata (specific definitions, units, frequencies, periods, dimensions, or methodologies) for a particular dataset (like Mexico's GDP) within the provided text snippet. The metadata is implied or linked to external resources, but not present in the evidence itself.\"\n}",
+        "parse_error": null,
+        "elapsed_seconds": 27.81,
+        "schema_valid": false,
+        "schema_error": "missing_keys:confidence,fields_missing,metadata_complete,reason",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "contains_rigorous_statistical_metadata": false,
+            "definition": "No specific indicator definitions are visible; the page only describes the data as 'global development data'.",
+            "source": "The World Bank (World Bank Open Data).",
+            "unit": "Not present in the evidence.",
+            "frequency": "Not present in the evidence.",
+            "period": "Not present in the evidence.",
+            "dimensions": "Not present in the evidence.",
+            "methodology": "Not present in the evidence."
+          },
+          "text": "{\"contains_rigorous_statistical_metadata\": false, \"definition\": \"No specific indicator definitions are visible; the page only describes the data as 'global development data'.\", \"source\": \"The World Bank (World Bank Open Data).\", \"unit\": \"Not present in the evidence.\", \"frequency\": \"Not present in the evidence.\", \"period\": \"Not present in the evidence.\", \"dimensions\": \"Not present in the evidence.\", \"methodology\": \"Not present in the evidence.\"}",
+          "parse_error": null,
+          "elapsed_seconds": 15.001,
+          "schema_valid": false,
+          "schema_error": "missing_keys:confidence,fields_missing,metadata_complete,reason"
+        }
+      },
+      "citation": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "answer": "Sí, la página oficial es el portal de datos abiertos del Banco Mundial (World Bank Open Data). Este sitio proporciona indicadores de desarrollo global, incluyendo datos de PIB para México y otros países. \n\n**Fuente:** https://data.worldbank.org/",
+          "citation_reproducible": true
+        },
+        "text": "{\n  \"answer\": \"Sí, la página oficial es el portal de datos abiertos del Banco Mundial (World Bank Open Data). Este sitio proporciona indicadores de desarrollo global, incluyendo datos de PIB para México y otros países. \\n\\n**Fuente:** https://data.worldbank.org/\",\n  \"citation_reproducible\": true\n}",
+        "parse_error": null,
+        "elapsed_seconds": 17.671,
+        "schema_valid": false,
+        "schema_error": "missing_keys:citable,citation_url,confidence,evidence_specific,reason,source_named",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "source_url": "https://data.worldbank.org/",
+            "citation": "World Bank Open Data",
+            "data_availability": "Sí, el sitio web de World Bank Open Data es una fuente oficial de datos de desarrollo global, incluyendo indicadores de PIB (GDP). El texto de la evidencia menciona explícitamente la capacidad de buscar datos como 'GDP' y 'population'.",
+            "api_availability": "El sitio web proporciona acceso a datos, lo que implica la disponibilidad de APIs o herramientas de descarga de datos, aunque la evidencia solo muestra la interfaz web."
+          },
+          "text": "{\"source_url\": \"https://data.worldbank.org/\", \"citation\": \"World Bank Open Data\", \"data_availability\": \"Sí, el sitio web de World Bank Open Data es una fuente oficial de datos de desarrollo global, incluyendo indicadores de PIB (GDP). El texto de la evidencia menciona explícitamente la capacidad de buscar datos como 'GDP' y 'population'.\", \"api_availability\": \"El sitio web proporciona acceso a datos, lo que implica la disponibilidad de APIs o herramientas de descarga de datos, aunque la evidencia solo muestra la interfaz web.\"}",
+          "parse_error": null,
+          "elapsed_seconds": 15.835,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citable,citation_url,confidence,evidence_specific,reason,source_named"
+        }
+      },
+      "judge": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "source": "World Bank Open Data",
+          "url": "https://data.worldbank.org/",
+          "data_availability": {
+            "gdp_for_mexico": "Sí, el World Bank Open Data es una fuente oficial y reconocida globalmente para datos de PIB (Producto Interno Bruto) de México y otros países.",
+            "how_to_find": "Puede buscar directamente 'GDP' o 'Mexico' en la barra de búsqueda de la página. Alternativamente, puede navegar por los indicadores de desarrollo (World Development Indicators) para encontrar la serie de tiempo del PIB para México."
+          }
+        },
+        "text": "{\n  \"source\": \"World Bank Open Data\",\n  \"url\": \"https://data.worldbank.org/\",\n  \"data_availability\": {\n    \"gdp_for_mexico\": \"Sí, el World Bank Open Data es una fuente oficial y reconocida globalmente para datos de PIB (Producto Interno Bruto) de México y otros países.\",\n    \"how_to_find\": \"Puede buscar directamente 'GDP' o 'Mexico' en la barra de búsqueda de la página. Alternativamente, puede navegar por los indicadores de desarrollo (World Development Indicators) para encontrar la serie de tiempo del PIB para México.\"\n  }\n}",
+        "parse_error": null,
+        "elapsed_seconds": 19.445,
+        "schema_valid": false,
+        "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "source": "World Bank Open Data",
+            "url": "https://data.worldbank.org/",
+            "data_availability": "Sí, el World Bank Open Data es una fuente oficial y reconocida para datos de PIB (Producto Interno Bruto) de México. El sitio permite buscar indicadores específicos como 'GDP' (PIB) y filtrar por país (México).",
+            "citation": "World Bank Open Data (https://data.worldbank.org/)"
+          },
+          "text": "{\"source\": \"World Bank Open Data\", \"url\": \"https://data.worldbank.org/\", \"data_availability\": \"Sí, el World Bank Open Data es una fuente oficial y reconocida para datos de PIB (Producto Interno Bruto) de México. El sitio permite buscar indicadores específicos como 'GDP' (PIB) y filtrar por país (México).\", \"citation\": \"World Bank Open Data (https://data.worldbank.org/)\"}",
+          "parse_error": null,
+          "elapsed_seconds": 13.33,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness"
+        }
+      },
+      "adversarial": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "falsification": "The judge's result, if it merely cites the main World Bank Open Data URL (https://data.worldbank.org/), is insufficient because it only represents the *discovery* portal, not the direct *retrieval* of the specific data requested (GDP for Mexico). The evidence confirms that the user must utilize the search bar (placeholder: 'Search data e.g. GDP, population, Indonesia') or navigate through the 'Indicators' section to find the specific indicator code and then filter by 'Mexico' to retrieve the data. Citing the general homepage conflates the discovery process with the final data retrieval.",
+          "error_type": "Conflation of discovery and retrieval"
+        },
+        "text": "{\"falsification\": \"The judge's result, if it merely cites the main World Bank Open Data URL (https://data.worldbank.org/), is insufficient because it only represents the *discovery* portal, not the direct *retrieval* of the specific data requested (GDP for Mexico). The evidence confirms that the user must utilize the search bar (placeholder: 'Search data e.g. GDP, population, Indonesia') or navigate through the 'Indicators' section to find the specific indicator code and then filter by 'Mexico' to retrieve the data. Citing the general homepage conflates the discovery process with the final data retrieval.\", \"error_type\": \"Conflation of discovery and retrieval\"}",
+        "parse_error": null,
+        "elapsed_seconds": 33.363,
+        "schema_valid": false,
+        "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "falsification": "The judge may conflate the general availability of data (discovery) with the actual retrieval of specific data (retrieval). The provided evidence is the World Bank Open Data homepage, which confirms that the World Bank is an official source and that GDP data is searchable (as indicated by the placeholder text 'Search data e.g. GDP, population, Indonesia'). However, the evidence does not provide a direct API endpoint, nor does it display the specific GDP data for Mexico. Therefore, any claim of providing the final data or a functional API link for Mexico's GDP is unsupported by the static HTML content.",
+            "wrong_indicator": "N/A",
+            "wrong_unit": "N/A",
+            "wrong_period": "N/A",
+            "wrong_geography": "N/A",
+            "unsupported_citation": "Any specific data point or API endpoint for Mexico's GDP.",
+            "conflation_of_discovery_and_retrieval": "The evidence only shows the search interface (discovery) and not the actual data retrieval mechanism or the resulting data for Mexico."
+          },
+          "text": "{\"falsification\": \"The judge may conflate the general availability of data (discovery) with the actual retrieval of specific data (retrieval). The provided evidence is the World Bank Open Data homepage, which confirms that the World Bank is an official source and that GDP data is searchable (as indicated by the placeholder text 'Search data e.g. GDP, population, Indonesia'). However, the evidence does not provide a direct API endpoint, nor does it display the specific GDP data for Mexico. Therefore, any claim of providing the final data or a functional API link for Mexico's GDP is unsupported by the static HTML content.\", \"wrong_indicator\": \"N/A\", \"wrong_unit\": \"N/A\", \"wrong_period\": \"N/A\", \"wrong_geography\": \"N/A\", \"unsupported_citation\": \"Any specific data point or API endpoint for Mexico's GDP.\", \"conflation_of_discovery_and_retrieval\": \"The evidence only shows the search interface (discovery) and not the actual data retrieval mechanism or the resulting data for Mexico.\"}",
+          "parse_error": null,
+          "elapsed_seconds": 24.098,
+          "schema_valid": false,
+          "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict"
+        }
+      }
+    }
+  },
+  {
+    "query": {
+      "query_id": "Q005",
+      "portal_id": "worldbank",
+      "stratum": "exact_indicator",
+      "query": "¿Cuál fue el PIB total de Colombia en 2024?",
+      "country": "Colombia",
+      "country_code": "COL"
+    },
+    "repeat": 1,
+    "evidence_sha256": "23134b94add83a04d220b94fd22cb599d4b64094f984784d581c13f04656b851",
+    "candidate_url": null,
+    "agents": {
+      "discovery": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "resource_url": "https://data.worldbank.org/"
+        },
+        "text": "{\"resource_url\": \"https://data.worldbank.org/\"}",
+        "parse_error": null,
+        "elapsed_seconds": 21.506,
+        "schema_valid": false,
+        "schema_error": "missing_keys:best_url,confidence,discovered,reason",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "resource_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+            "indicator_name": "GDP (current US$)",
+            "query_details": "PIB total de Colombia en 2024"
+          },
+          "text": "{\"resource_url\": \"https://data.worldbank.org/indicator/NY.GDP.MKTP.CD\", \"indicator_name\": \"GDP (current US$)\", \"query_details\": \"PIB total de Colombia en 2024\"}",
+          "parse_error": null,
+          "elapsed_seconds": 4.165,
+          "schema_valid": false,
+          "schema_error": "missing_keys:best_url,confidence,discovered,reason"
+        }
+      },
+      "semantic": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "indicator": null,
+          "series": null
+        },
+        "text": "{\"indicator\": null, \"series\": null}",
+        "parse_error": null,
+        "elapsed_seconds": 21.44,
+        "schema_valid": false,
+        "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "indicator": null,
+            "unit": null,
+            "prices": null,
+            "frequency": null,
+            "geography": null,
+            "period": null,
+            "error": "The requested data (GDP of Colombia in 2024) is not present in the provided evidence, which is only the World Bank Open Data homepage."
+          },
+          "text": "{\"indicator\": null, \"unit\": null, \"prices\": null, \"frequency\": null, \"geography\": null, \"period\": null, \"error\": \"The requested data (GDP of Colombia in 2024) is not present in the provided evidence, which is only the World Bank Open Data homepage.\"}",
+          "parse_error": null,
+          "elapsed_seconds": 14.842,
+          "schema_valid": false,
+          "schema_error": "missing_keys:ambiguity_flags,confidence,correct,reason,selected_indicator_description"
+        }
+      },
+      "retrieval": {
+        "model": "qwen3.5:9b-mlx",
+        "ok": false,
+        "json": null,
+        "error": "HTTPError: HTTP Error 500: Internal Server Error",
+        "elapsed_seconds": 0.725,
+        "schema_valid": false,
+        "schema_error": "missing_keys:retrievable,unit_correct,period_correct,confidence,geography_correct,reason,value_found",
+        "retry": {
+          "model": "qwen3.5:9b-mlx",
+          "ok": false,
+          "json": null,
+          "error": "HTTPError: HTTP Error 500: Internal Server Error",
+          "elapsed_seconds": 0.042,
+          "schema_valid": false,
+          "schema_error": "missing_keys:retrievable,unit_correct,period_correct,confidence,geography_correct,reason,value_found"
+        }
+      },
+      "metadata": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "contains_rigorous_statistical_metadata": false,
+          "reasoning": "The provided evidence is the general homepage of the World Bank Open Data website. It does not contain the specific data point (Colombia's GDP for 2024) nor the detailed statistical metadata (definition, unit, frequency, period, dimensions, or methodology) required to validate the data for the specific query."
+        },
+        "text": "{\n\"contains_rigorous_statistical_metadata\": false,\n\"reasoning\": \"The provided evidence is the general homepage of the World Bank Open Data website. It does not contain the specific data point (Colombia's GDP for 2024) nor the detailed statistical metadata (definition, unit, frequency, period, dimensions, or methodology) required to validate the data for the specific query.\"\n}",
+        "parse_error": null,
+        "elapsed_seconds": 20.173,
+        "schema_valid": false,
+        "schema_error": "missing_keys:confidence,fields_missing,metadata_complete,reason",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "contains_rigorous_statistical_metadata": false
+          },
+          "text": "{\"contains_rigorous_statistical_metadata\": false}",
+          "parse_error": null,
+          "elapsed_seconds": 2.989,
+          "schema_valid": false,
+          "schema_error": "missing_keys:confidence,fields_missing,metadata_complete,reason"
+        }
+      },
+      "citation": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "is_answer_citable": false,
+          "citable_answer": null,
+          "explanation": "The provided evidence is a general landing page from the World Bank Open Data website. While the site allows searching for data like GDP and includes Colombia as a potential search term, the snippet does not contain the specific figure for Colombia's total GDP in 2024."
+        },
+        "text": "{\n\"is_answer_citable\": false,\n\"citable_answer\": null,\n\"explanation\": \"The provided evidence is a general landing page from the World Bank Open Data website. While the site allows searching for data like GDP and includes Colombia as a potential search term, the snippet does not contain the specific figure for Colombia's total GDP in 2024.\"\n}",
+        "parse_error": null,
+        "elapsed_seconds": 16.51,
+        "schema_valid": false,
+        "schema_error": "missing_keys:citable,citation_url,confidence,evidence_specific,reason,source_named",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "answer": "No se puede determinar el PIB total de Colombia en 2024 con la evidencia proporcionada. El texto es la página de inicio de World Bank Open Data y no contiene datos específicos de indicadores económicos para ese año.",
+            "confidence": 1.0,
+            "citable": false
+          },
+          "text": "{\"answer\": \"No se puede determinar el PIB total de Colombia en 2024 con la evidencia proporcionada. El texto es la página de inicio de World Bank Open Data y no contiene datos específicos de indicadores económicos para ese año.\", \"confidence\": 1.0, \"citable\": false}",
+          "parse_error": null,
+          "elapsed_seconds": 11.748,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citation_url,evidence_specific,reason,source_named"
+        }
+      },
+      "judge": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "query": "¿Cuál fue el PIB total de Colombia en 2024?",
+          "answer": "La información sobre el PIB total de Colombia en 2024 no se encuentra disponible en la evidencia proporcionada.",
+          "score": 0
+        },
+        "text": "{\n  \"query\": \"¿Cuál fue el PIB total de Colombia en 2024?\",\n  \"answer\": \"La información sobre el PIB total de Colombia en 2024 no se encuentra disponible en la evidencia proporcionada.\",\n  \"score\": 0\n}",
+        "parse_error": null,
+        "elapsed_seconds": 17.173,
+        "schema_valid": false,
+        "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "query_result": "No se encontró información sobre el PIB total de Colombia en 2024 en la evidencia proporcionada. La página es la página de inicio de World Bank Open Data y no muestra datos específicos.",
+            "score": 0.0
+          },
+          "text": "{\"query_result\": \"No se encontró información sobre el PIB total de Colombia en 2024 en la evidencia proporcionada. La página es la página de inicio de World Bank Open Data y no muestra datos específicos.\", \"score\": 0.0}",
+          "parse_error": null,
+          "elapsed_seconds": 10.953,
+          "schema_valid": false,
+          "schema_error": "missing_keys:citation_correctness,decisive_reason,discovery_success,metadata_correctness,overall_0_100,retrieval_success,semantic_correctness,temporal_geographic_correctness"
+        }
+      },
+      "adversarial": {
+        "model": "gemma4:latest",
+        "ok": true,
+        "json": {
+          "falsification": {
+            "error_type": "Period",
+            "explanation": "The frozen evidence is the general homepage of the World Bank Open Data portal. While the site allows searching for GDP and Colombia, the visible content and linked data examples (e.g., in the Data 360 cards) show data ending in 2023. The homepage does not provide the specific, finalized GDP figure for Colombia for the year 2024, as such data is typically released with a significant time lag.",
+            "suggested_correction": "The user must navigate to the specific indicator page (e.g., GDP) and select the country (Colombia) to retrieve the most current available data, which is unlikely to be the full year 2024."
+          }
+        },
+        "text": "{\n  \"falsification\": {\n    \"error_type\": \"Period\",\n    \"explanation\": \"The frozen evidence is the general homepage of the World Bank Open Data portal. While the site allows searching for GDP and Colombia, the visible content and linked data examples (e.g., in the Data 360 cards) show data ending in 2023. The homepage does not provide the specific, finalized GDP figure for Colombia for the year 2024, as such data is typically released with a significant time lag.\",\n    \"suggested_correction\": \"The user must navigate to the specific indicator page (e.g., GDP) and select the country (Colombia) to retrieve the most current available data, which is unlikely to be the full year 2024.\"\n  }\n}",
+        "parse_error": null,
+        "elapsed_seconds": 25.258,
+        "schema_valid": false,
+        "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict",
+        "retry": {
+          "model": "gemma4:latest",
+          "ok": true,
+          "json": {
+            "falsification": "The frozen evidence is the World Bank Open Data homepage, which is a general landing page and does not contain the specific data point for Colombia's total GDP in 2024. Therefore, the claim cannot be falsified or verified using the provided evidence.",
+            "wrong_indicator": null,
+            "wrong_unit": null,
+            "wrong_period": null,
+            "wrong_geography": null,
+            "unsupported_citation": null,
+            "conflation_of_discovery_and_retrieval": null
+          },
+          "text": "{\"falsification\": \"The frozen evidence is the World Bank Open Data homepage, which is a general landing page and does not contain the specific data point for Colombia's total GDP in 2024. Therefore, the claim cannot be falsified or verified using the provided evidence.\", \"wrong_indicator\": null, \"wrong_unit\": null, \"wrong_period\": null, \"wrong_geography\": null, \"unsupported_citation\": null, \"conflation_of_discovery_and_retrieval\": null}",
+          "parse_error": null,
+          "elapsed_seconds": 13.871,
+          "schema_valid": false,
+          "schema_error": "missing_keys:alternative_interpretation,attack_found,reason,severity,verdict"
+        }
+      }
+    }
+  }
+]

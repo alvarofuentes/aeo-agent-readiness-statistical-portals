@@ -1,0 +1,23 @@
+{
+  "date": "Sun, 23 Aug 2026 02:15:52 GMT",
+  "content-type": "application/json;charset=utf-8",
+  "transfer-encoding": "chunked",
+  "connection": "close",
+  "set-cookie": "_cfuvid=ToBQ.mFLHmVbvsIGd9bCWx6e.Z81f4RtASxOqm81_88-1787451352.8133605-1.0.1.1-__XnOS50e6eTBtxYYIp7lIO898G8dMVGTbNjs1wbxPY; HttpOnly; SameSite=None; Secure; Path=/; Domain=worldbank.org",
+  "cf-ray": "a2f69cab1dfcb447-SCL",
+  "cf-cache-status": "HIT",
+  "access-control-allow-origin": "*",
+  "age": "32642",
+  "cache-control": "public, max-age=75743",
+  "content-security-policy-report-only": "script-src 'unsafe-inline' 'unsafe-eval'; report-uri https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=R6Q.iNEybGqKbXJgLf16jmSVE7pEiSaR6wYzZ99iIZo-1787451352.8133605-1.0.1.1-8laabB_xC6IczeV7CsyqA485Afg3oJNOU2JMdpplZMnHGnXb3tjvNzg9FanVtceB.dLqQKsgtEvtNhVd1O9w74adj58lZ9s_GUpdqOaV9Be0GT4FN.jAF6qByw6YydzQp4IvOf1cZ_tFLTBauQYr9i.UMgKFEkgWUf0EEo8qHnD6SRr7i_14sFn3X2DamC2I; report-to cf-csp-endpoint",
+  "expires": "Sun, 23 Aug 2026 23:18:15 GMT",
+  "last-modified": "Sat, 22 Aug 2026 14:14:12 GMT",
+  "server": "cloudflare",
+  "vary": "accept-encoding",
+  "access-control-allow-headers": "X-Requested-With",
+  "access-control-allow-methods": "GET",
+  "request-context": "appId=cid-v1:da002513-bd8b-4441-9f30-737944134422",
+  "x-powered-by": "ASP.NET",
+  "report-to": "{\"group\":\"cf-csp-endpoint\",\"max_age\":86400,\"endpoints\":[{\"url\":\"https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=R6Q.iNEybGqKbXJgLf16jmSVE7pEiSaR6wYzZ99iIZo-1787451352.8133605-1.0.1.1-8laabB_xC6IczeV7CsyqA485Afg3oJNOU2JMdpplZMnHGnXb3tjvNzg9FanVtceB.dLqQKsgtEvtNhVd1O9w74adj58lZ9s_GUpdqOaV9Be0GT4FN.jAF6qByw6YydzQp4IvOf1cZ_tFLTBauQYr9i.UMgKFEkgWUf0EEo8qHnD6SRr7i_14sFn3X2DamC2I\"}]}",
+  "reporting-endpoints": "cf-csp-endpoint=\"https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=R6Q.iNEybGqKbXJgLf16jmSVE7pEiSaR6wYzZ99iIZo-1787451352.8133605-1.0.1.1-8laabB_xC6IczeV7CsyqA485Afg3oJNOU2JMdpplZMnHGnXb3tjvNzg9FanVtceB.dLqQKsgtEvtNhVd1O9w74adj58lZ9s_GUpdqOaV9Be0GT4FN.jAF6qByw6YydzQp4IvOf1cZ_tFLTBauQYr9i.UMgKFEkgWUf0EEo8qHnD6SRr7i_14sFn3X2DamC2I\""
+}

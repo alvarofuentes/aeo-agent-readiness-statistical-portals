@@ -1,0 +1,1094 @@
+{
+  "url": "https://api.worldbank.org/v2/country/PER/indicator/NY.GDP.PCAP.CN?date=1960:2026&format=json&per_page=100",
+  "status": 200,
+  "headers": {
+    "Date": "Sun, 23 Aug 2026 19:56:47 GMT",
+    "Content-Type": "application/json;charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "set-cookie": "_cfuvid=r4WtjTXW2fH5dA_sVzYoQFqOL6EsmkJOV1Vue3mc.3M-1787515007.341644-1.0.1.1-EX6tru7dfV9v3A0pjHCzRTOB5Vyx6MyCvkhRz_BK0v0; HttpOnly; SameSite=None; Secure; Path=/; Domain=worldbank.org",
+    "CF-Ray": "a2fcaebbe803e9b4-SCL",
+    "CF-Cache-Status": "HIT",
+    "Access-Control-Allow-Origin": "*",
+    "Age": "3215",
+    "Cache-Control": "public, max-age=86400",
+    "Expires": "Mon, 24 Aug 2026 19:56:47 GMT",
+    "Last-Modified": "Sun, 23 Aug 2026 19:03:11 GMT",
+    "Server": "cloudflare",
+    "Vary": "accept-encoding",
+    "Access-Control-Allow-Headers": "X-Requested-With",
+    "Access-Control-Allow-Methods": "GET",
+    "Request-Context": "appId=cid-v1:da002513-bd8b-4441-9f30-737944134422",
+    "X-Powered-By": "ASP.NET"
+  },
+  "payload": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": 100,
+      "total": 66,
+      "sourceid": "2",
+      "lastupdated": "2026-07-13"
+    },
+    [
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2025",
+        "value": 34544.9163474846,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2024",
+        "value": 32006.8053373783,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2023",
+        "value": 29647.5316139162,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2022",
+        "value": 28202.9468889996,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2021",
+        "value": 26498.4958023436,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2020",
+        "value": 21435.61084053,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2019",
+        "value": 23482.2917459891,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2018",
+        "value": 22935.5301642908,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2017",
+        "value": 21963.1914649163,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2016",
+        "value": 20982.8819560783,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2015",
+        "value": 19844.5051481404,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2014",
+        "value": 18928.2870740454,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2013",
+        "value": 18229.1728674962,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2012",
+        "value": 17195.4215389413,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2011",
+        "value": 16142.7658927837,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2010",
+        "value": 14329.3587204217,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2009",
+        "value": 12594.573152034,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2008",
+        "value": 12281.7123315503,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2007",
+        "value": 11205.2284453318,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2006",
+        "value": 10248.0570612902,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2005",
+        "value": 8923.07725156025,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2004",
+        "value": 8183.7370777666,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2003",
+        "value": 7408.75162116409,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2002",
+        "value": 7061.32613941028,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2001",
+        "value": 6769.13409547577,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "2000",
+        "value": 6789.29817062582,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1999",
+        "value": 6486.50923391683,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1998",
+        "value": 6316.93992892636,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1997",
+        "value": 6128.99022863165,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1996",
+        "value": 5465.52196186145,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1995",
+        "value": 4939.15150812239,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1994",
+        "value": 4127.84075099492,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1993",
+        "value": 2959.13243921326,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1992",
+        "value": 1959.88834820717,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1991",
+        "value": 1188.15574341942,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1990",
+        "value": 248.331000186193,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1989",
+        "value": 4.20052717655086,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1988",
+        "value": 0.183324946218664,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1987",
+        "value": 0.0301748759085467,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1986",
+        "value": 0.0151554809460319,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1985",
+        "value": 0.00842256473823256,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1984",
+        "value": 0.00318221252445147,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1983",
+        "value": 0.00151016513001714,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1982",
+        "value": 0.000833208608849597,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1981",
+        "value": 0.000513654192913513,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1980",
+        "value": 0.000301764669085774,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1979",
+        "value": 0.000211724972658643,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1978",
+        "value": 0.000118254019006592,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1977",
+        "value": 7.60523375203898e-05,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1976",
+        "value": 5.72285894045032e-05,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1975",
+        "value": 4.45759130262332e-05,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1974",
+        "value": 3.58586440825399e-05,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1973",
+        "value": 2.91768812902154e-05,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1972",
+        "value": 2.50265038729015e-05,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1971",
+        "value": 2.31829241461253e-05,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1970",
+        "value": 2.1303754384876e-05,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1969",
+        "value": 1.8872454328386e-05,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1968",
+        "value": 1.73372825508418e-05,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1967",
+        "value": 1.50511095683492e-05,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1966",
+        "value": 1.35394319394029e-05,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1965",
+        "value": 1.17737331742777e-05,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1964",
+        "value": 1.02174935688536e-05,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1963",
+        "value": 8.69256059300138e-06,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1962",
+        "value": 8.16770426557766e-06,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1961",
+        "value": 7.41860021328628e-06,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      },
+      {
+        "indicator": {
+          "id": "NY.GDP.PCAP.CN",
+          "value": "GDP per capita (current LCU)"
+        },
+        "country": {
+          "id": "PE",
+          "value": "Peru"
+        },
+        "countryiso3code": "PER",
+        "date": "1960",
+        "value": 6.90114150285327e-06,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 0
+      }
+    ]
+  ],
+  "elapsed_seconds": 0.066,
+  "error": null
+}

@@ -1,0 +1,61 @@
+query_id,portal_id,stratum,query,country,country_code
+PILOT-Q001,worldbank,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL
+PILOT-Q002,worldbank,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG
+PILOT-Q003,worldbank,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL
+PILOT-Q004,worldbank,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER
+PILOT-Q005,worldbank,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU
+PILOT-Q006,worldbank,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL
+PILOT-Q007,worldbank,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL
+PILOT-Q008,worldbank,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX
+PILOT-Q009,worldbank,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY
+PILOT-Q010,worldbank,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL
+PILOT-Q011,worldbank,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG
+PILOT-Q012,worldbank,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX
+PILOT-Q013,who,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL
+PILOT-Q014,who,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG
+PILOT-Q015,who,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL
+PILOT-Q016,who,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER
+PILOT-Q017,who,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU
+PILOT-Q018,who,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL
+PILOT-Q019,who,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL
+PILOT-Q020,who,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX
+PILOT-Q021,who,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY
+PILOT-Q022,who,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL
+PILOT-Q023,who,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG
+PILOT-Q024,who,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX
+PILOT-Q025,cepalstat,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL
+PILOT-Q026,cepalstat,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG
+PILOT-Q027,cepalstat,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL
+PILOT-Q028,cepalstat,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER
+PILOT-Q029,cepalstat,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU
+PILOT-Q030,cepalstat,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL
+PILOT-Q031,cepalstat,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL
+PILOT-Q032,cepalstat,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX
+PILOT-Q033,cepalstat,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY
+PILOT-Q034,cepalstat,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL
+PILOT-Q035,cepalstat,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG
+PILOT-Q036,cepalstat,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX
+PILOT-Q037,undata,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL
+PILOT-Q038,undata,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG
+PILOT-Q039,undata,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL
+PILOT-Q040,undata,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER
+PILOT-Q041,undata,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU
+PILOT-Q042,undata,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL
+PILOT-Q043,undata,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL
+PILOT-Q044,undata,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX
+PILOT-Q045,undata,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY
+PILOT-Q046,undata,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL
+PILOT-Q047,undata,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG
+PILOT-Q048,undata,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX
+PILOT-Q049,sdg,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL
+PILOT-Q050,sdg,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG
+PILOT-Q051,sdg,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL
+PILOT-Q052,sdg,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER
+PILOT-Q053,sdg,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU
+PILOT-Q054,sdg,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL
+PILOT-Q055,sdg,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL
+PILOT-Q056,sdg,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX
+PILOT-Q057,sdg,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY
+PILOT-Q058,sdg,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL
+PILOT-Q059,sdg,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG
+PILOT-Q060,sdg,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX

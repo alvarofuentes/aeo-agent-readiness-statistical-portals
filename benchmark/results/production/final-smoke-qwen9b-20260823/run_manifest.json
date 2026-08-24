@@ -1,0 +1,135 @@
+{
+  "runner": "production_runner.py",
+  "run_id": "final-smoke-qwen9b-20260823",
+  "started_at": "2026-08-23T02:46:00Z",
+  "configured_base": "http://127.0.0.1:11435",
+  "effective_base": "http://localhost:11435",
+  "models": {
+    "discovery": "qwen3.5:9b-mlx",
+    "semantic": "qwen3.5:9b-mlx",
+    "retrieval": "qwen3.5:9b-mlx",
+    "metadata": "qwen3.5:9b-mlx",
+    "citation": "qwen3.5:9b-mlx",
+    "judge": "mistral:latest",
+    "adversarial": "llama3.2:latest"
+  },
+  "model_endpoints": {
+    "qwen3.5:9b-mlx": "http://127.0.0.1:11435",
+    "llama3.2:latest": "http://127.0.0.1:11436",
+    "mistral:latest": "http://127.0.0.1:11437"
+  },
+  "model_inventory": {
+    "ok": true,
+    "http_status": 200,
+    "elapsed_seconds": 0.016,
+    "models": [
+      {
+        "name": "muse-glimmer:30b-mlx",
+        "size_parameter_b": 30.0,
+        "size_bytes": 21232871036,
+        "digest": "ef32a55b4976faa955cbab0462d09bd081351ef5b87d73d8fcd299bf17c111d7",
+        "allowed": true
+      },
+      {
+        "name": "qwen3.5:9b-mlx",
+        "size_parameter_b": 9.0,
+        "size_bytes": 8903014758,
+        "digest": "203e30078279db51132b9e026ceb7bb21330e5b1af67ef190671b375c9770404",
+        "allowed": true
+      },
+      {
+        "name": "deepseek-coder-v2:16b",
+        "size_parameter_b": 15.7,
+        "size_bytes": 8905126121,
+        "digest": "63fb193b3a9b4322a18e8c6b250ca2e70a5ff531e962dbf95ba089b2566f2fa5",
+        "allowed": true
+      },
+      {
+        "name": "qwen3:30b-a3b",
+        "size_parameter_b": 30.5,
+        "size_bytes": 18556699314,
+        "digest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
+        "allowed": true
+      },
+      {
+        "name": "devstral-small-2:24b",
+        "size_parameter_b": 24.0,
+        "size_bytes": 15177374099,
+        "digest": "24277f07f62db8f9cb68e9dfc679ea1818a7fbac47a50eff0a701d3f645b63c8",
+        "allowed": true
+      },
+      {
+        "name": "qwen3-coder:30b-a3b-q4_K_M",
+        "size_parameter_b": 30.5,
+        "size_bytes": 18556700761,
+        "digest": "06c1097efce0431c2045fe7b2e5108366e43bee1b4603a7aded8f21689e90bca",
+        "allowed": true
+      },
+      {
+        "name": "gemma4:latest",
+        "size_parameter_b": 8.0,
+        "size_bytes": 9608350718,
+        "digest": "c6eb396dbd5992bbe3f5cdb947e8bbc0ee413d7c17e2beaae69f5d569cf982eb",
+        "allowed": true
+      },
+      {
+        "name": "glm-5:cloud",
+        "size_parameter_b": null,
+        "size_bytes": 323,
+        "digest": "c313cd06593533865448bd609a95c40c6e13d87ddf2daeb3b8f342e1a6c34794",
+        "allowed": false
+      },
+      {
+        "name": "glm-4.6:cloud",
+        "size_parameter_b": null,
+        "size_bytes": 366,
+        "digest": "05277b76269f8831b289e8f11f1f46136f9214d9c0a6399f1b580003e74f887c",
+        "allowed": false
+      },
+      {
+        "name": "mistral:latest",
+        "size_parameter_b": 7.2,
+        "size_bytes": 4372824384,
+        "digest": "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+        "allowed": true
+      },
+      {
+        "name": "llama3.2:latest",
+        "size_parameter_b": 3.2,
+        "size_bytes": 2019393189,
+        "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+        "allowed": true
+      }
+    ],
+    "raw_sha256": "dfc402cd03afb2c82c6074e10b98715a0409aeb8aae61c715b358c2ef732fd93"
+  },
+  "bank_sha256": "7b88845b657c48da6a4bfe59df170dfa63b6916593869b7427b3d4de50b6a600",
+  "gold_file": "benchmark/gold_standards_final_2026-08-23.json",
+  "gold_sha256": "b08a4c7e27033ef5c969355c350aa647526b581a1fa03d74ede9803d108c6eac",
+  "aeo_matrix_file": "execution/expanded-audit-matrix-2026-08-22.csv",
+  "aeo_matrix_sha256": "b8153247bb219a572198d72c7a78e51d02d21d99a44776e1863fcf752dcfd7f1",
+  "skill_file": ".agents/skills/aeo-agent-readiness-auditor/SKILL.md",
+  "skill_sha256": "8797a64f7d78df63c6db6dd777cc908433bad2388480212bde7fdd63fbef9b1b",
+  "report_template_sha256": "b1ec98db539eec900f6991fea34b0d85ec410b3791e3c870ed197468f0cdde4f",
+  "expected": {
+    "templates": 120,
+    "portals": 5,
+    "pairs": 600,
+    "repeats": 3,
+    "executions": 1800,
+    "passes": 5,
+    "executions_per_pass": 360
+  },
+  "evidence_policy": "frozen_once_per_query_portal; candidate fetch appended and rehashed",
+  "natural_capture": true,
+  "gold_status": {
+    "status": "PASS",
+    "gold_cases": 600,
+    "covered_pairs": 600,
+    "expected_pairs": 600,
+    "reason": "complete"
+  },
+  "status": "PARTIAL",
+  "completed_executions": 1,
+  "finished_at": "2026-08-23T02:48:12Z"
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://ghoapi.azureedge.net/api/GHED_CHEGDP_SHA2011?%24filter=SpatialDim+eq+%27PER%27&%24top=1000",
+  "status": 0,
+  "headers": {},
+  "payload": null,
+  "attempts": 1,
+  "elapsed_seconds": 91.081,
+  "error": "URLError: <urlopen error _ssl.c:983: The handshake operation timed out>"
+}

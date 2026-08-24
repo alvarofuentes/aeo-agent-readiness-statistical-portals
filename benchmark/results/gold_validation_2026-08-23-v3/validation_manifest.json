@@ -1,0 +1,19 @@
+{
+  "validator": "validate_gold_standards.py",
+  "generated_at": "2026-08-23T02:11:30Z",
+  "source_contract": "/Users/alvarofuentes/aeo-agent-readiness-statistical-portals/benchmark/gold_standards_expanded.json",
+  "source_contract_sha256": "2d2c3d9d34a7000123edb0bccf274668b0404be103becbf68a3b831ffd00a6ef",
+  "scope_portal": "worldbank",
+  "limit": null,
+  "selected_items": 120,
+  "n_contract_items": 600,
+  "summary": {
+    "VERIFIED_CONTRACT": 85,
+    "NOT_SELECTED": 480,
+    "VERIFIED_VALUE": 35
+  },
+  "applied_versioned_output": "benchmark/gold_standards_validated_2026-08-23-v3.json",
+  "raw_evidence_dir": "benchmark/results/gold_validation_2026-08-23-v3",
+  "fail_closed": true,
+  "unresolved_are_not_targets": true
+}

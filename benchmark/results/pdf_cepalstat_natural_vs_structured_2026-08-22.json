@@ -1,0 +1,201 @@
+{
+  "generated_at": "2026-08-22T22:16:07Z",
+  "model": "gemma4:latest",
+  "evidence_sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+  "items": [
+    {
+      "case_id": "Q-CEPAL-01",
+      "query": "PIB total de Chile en 2024",
+      "free_form": {
+        "ok": true,
+        "text": "The exact value/series is not available in the provided evidence.\n\n**URL:** No specific data URL is present.\n\n**Missing Metadata:**\n*   Unit\n*   Period\n*   Geography\n*   Metadata\n*   Source",
+        "json": null,
+        "parse_error": "Expecting value: line 1 column 1 (char 0)",
+        "elapsed_seconds": 12.349
+      },
+      "structured": {
+        "ok": true,
+        "text": "{\"available\": false, \"best_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"indicator\": null, \"value\": null, \"unit\": \"Missing\", \"period\": \"Missing\", \"geography\": \"Missing\", \"source\": \"Missing\", \"missing_fields\": [\"unit\", \"period\", \"geography\", \"source\", \"value\"], \"reason\": \"The provided evidence is the HTML structure of the CEPALSTAT portal homepage and does not contain the specific data point for the total GDP (PIB) of Chile in 2024.\"}",
+        "json": {
+          "available": false,
+          "best_url": "https://statistics.cepal.org/portal/cepalstat/",
+          "indicator": null,
+          "value": null,
+          "unit": "Missing",
+          "period": "Missing",
+          "geography": "Missing",
+          "source": "Missing",
+          "missing_fields": [
+            "unit",
+            "period",
+            "geography",
+            "source",
+            "value"
+          ],
+          "reason": "The provided evidence is the HTML structure of the CEPALSTAT portal homepage and does not contain the specific data point for the total GDP (PIB) of Chile in 2024."
+        },
+        "parse_error": null,
+        "elapsed_seconds": 21.907
+      },
+      "diagnostic_signals": {
+        "free_form_contains_url": false,
+        "free_form_is_json": false,
+        "structured_key_count": 10
+      }
+    },
+    {
+      "case_id": "Q-CEPAL-02",
+      "query": "PIB de Chile en 2024 a precios constantes",
+      "free_form": {
+        "ok": true,
+        "text": "The exact value/series is not available in the provided evidence.\n\n**Most specific official URL:** https://statistics.cepal.org/portal/cepalstat/\n\n**Missing Metadata:**\n*   **Unit:** Missing\n*   **Period:** Missing (Specific data for 2024 is not present)\n*   **Geography:** Missing (Specific data for Chile is not present)\n*   **Metadata:** Missing\n*   **Source:** Missing",
+        "json": null,
+        "parse_error": "Expecting value: line 1 column 1 (char 0)",
+        "elapsed_seconds": 14.928
+      },
+      "structured": {
+        "ok": true,
+        "text": "{\"available\": false, \"best_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"indicator\": \"PIB\", \"value\": null, \"unit\": null, \"period\": \"2024\", \"geography\": \"Chile\", \"source\": null, \"missing_fields\": [\"value\", \"unit\", \"source\"], \"reason\": \"The provided evidence is the homepage structure of the CEPALSTAT portal and does not contain the specific data series requested.\"}",
+        "json": {
+          "available": false,
+          "best_url": "https://statistics.cepal.org/portal/cepalstat/",
+          "indicator": "PIB",
+          "value": null,
+          "unit": null,
+          "period": "2024",
+          "geography": "Chile",
+          "source": null,
+          "missing_fields": [
+            "value",
+            "unit",
+            "source"
+          ],
+          "reason": "The provided evidence is the homepage structure of the CEPALSTAT portal and does not contain the specific data series requested."
+        },
+        "parse_error": null,
+        "elapsed_seconds": 21.409
+      },
+      "diagnostic_signals": {
+        "free_form_contains_url": true,
+        "free_form_is_json": false,
+        "structured_key_count": 10
+      }
+    },
+    {
+      "case_id": "Q-CEPAL-03",
+      "query": "PIB por habitante de Chile en 2024",
+      "free_form": {
+        "ok": true,
+        "text": "The exact value/series is not available in the provided evidence.\n\n**Most specific official URL:** No specific URL for the data is present.\n\n**Missing Metadata:**\n*   **Unit:** Missing\n*   **Period:** Missing\n*   **Geography:** Missing\n*   **Metadata:** Missing\n*   **Source:** Missing",
+        "json": null,
+        "parse_error": "Expecting value: line 1 column 1 (char 0)",
+        "elapsed_seconds": 17.23
+      },
+      "structured": {
+        "ok": true,
+        "text": "{\"available\": false, \"best_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"indicator\": \"PIB por habitante\", \"value\": null, \"unit\": null, \"period\": \"2024\", \"geography\": \"Chile\", \"source\": null, \"missing_fields\": [\"value\", \"unit\", \"source\"], \"reason\": \"The provided evidence is the homepage structure of the CEPALSTAT portal and does not contain the specific data point for PIB per capita of Chile in 2024.\"}",
+        "json": {
+          "available": false,
+          "best_url": "https://statistics.cepal.org/portal/cepalstat/",
+          "indicator": "PIB por habitante",
+          "value": null,
+          "unit": null,
+          "period": "2024",
+          "geography": "Chile",
+          "source": null,
+          "missing_fields": [
+            "value",
+            "unit",
+            "source"
+          ],
+          "reason": "The provided evidence is the homepage structure of the CEPALSTAT portal and does not contain the specific data point for PIB per capita of Chile in 2024."
+        },
+        "parse_error": null,
+        "elapsed_seconds": 19.274
+      },
+      "diagnostic_signals": {
+        "free_form_contains_url": false,
+        "free_form_is_json": false,
+        "structured_key_count": 10
+      }
+    },
+    {
+      "case_id": "Q-CEPAL-04",
+      "query": "tasa de crecimiento del PIB de Chile en 2024",
+      "free_form": {
+        "ok": true,
+        "text": "The exact value/series is not available.\n\n**URL:** No specific URL for the data is present in the evidence.\n\n**Missing Metadata:**\n*   **Unit:** Missing\n*   **Period:** Missing\n*   **Geography:** Missing\n*   **Metadata:** Missing\n*   **Source:** Missing",
+        "json": null,
+        "parse_error": "Expecting value: line 1 column 1 (char 0)",
+        "elapsed_seconds": 11.879
+      },
+      "structured": {
+        "ok": true,
+        "text": "{\"available\": false, \"best_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"indicator\": \"tasa de crecimiento del PIB\", \"value\": null, \"unit\": null, \"period\": \"2024\", \"geography\": \"Chile\", \"source\": null, \"missing_fields\": [\"value\", \"unit\", \"source\"], \"reason\": \"The provided evidence is the homepage structure of the CEPALSTAT portal and does not contain the specific statistical data for the GDP growth rate of Chile in 2024.\"}",
+        "json": {
+          "available": false,
+          "best_url": "https://statistics.cepal.org/portal/cepalstat/",
+          "indicator": "tasa de crecimiento del PIB",
+          "value": null,
+          "unit": null,
+          "period": "2024",
+          "geography": "Chile",
+          "source": null,
+          "missing_fields": [
+            "value",
+            "unit",
+            "source"
+          ],
+          "reason": "The provided evidence is the homepage structure of the CEPALSTAT portal and does not contain the specific statistical data for the GDP growth rate of Chile in 2024."
+        },
+        "parse_error": null,
+        "elapsed_seconds": 27.1
+      },
+      "diagnostic_signals": {
+        "free_form_contains_url": false,
+        "free_form_is_json": false,
+        "structured_key_count": 10
+      }
+    },
+    {
+      "case_id": "Q-CEPAL-05",
+      "query": "comparar PIB total de Chile y Argentina en 2024",
+      "free_form": {
+        "ok": true,
+        "text": "**Availability of Data:**\nThe exact value/series (PIB total for Chile and Argentina in 2024) is not available in the provided evidence. The evidence is a general portal landing page structure and does not contain specific statistical data.\n\n**Official URL:**\nThe general portal URL is: `https://statistics.cepal.org/portal/cepalstat/`\n\n**Missing Metadata:**\n*   **Unit:** Missing\n*   **Period:** Missing (Specific data for 2024 is not present)\n*   **Geography:** Missing (Specific data for Chile and Argentina is not present)\n*   **Metadata:** Missing\n*   **Source:** Missing",
+        "json": null,
+        "parse_error": "Expecting value: line 1 column 1 (char 0)",
+        "elapsed_seconds": 28.974
+      },
+      "structured": {
+        "ok": true,
+        "text": "{\"available\": false, \"best_url\": \"https://statistics.cepal.org/portal/cepalstat/\", \"indicator\": null, \"value\": null, \"unit\": null, \"period\": null, \"geography\": null, \"source\": null, \"missing_fields\": [\"value\", \"unit\", \"period\", \"geography\", \"source\"], \"reason\": \"The provided evidence is the general homepage structure of the CEPALSTAT portal and does not contain the specific data for the total GDP (PIB total) of Chile and Argentina for the year 2024.\"}",
+        "json": {
+          "available": false,
+          "best_url": "https://statistics.cepal.org/portal/cepalstat/",
+          "indicator": null,
+          "value": null,
+          "unit": null,
+          "period": null,
+          "geography": null,
+          "source": null,
+          "missing_fields": [
+            "value",
+            "unit",
+            "period",
+            "geography",
+            "source"
+          ],
+          "reason": "The provided evidence is the general homepage structure of the CEPALSTAT portal and does not contain the specific data for the total GDP (PIB total) of Chile and Argentina for the year 2024."
+        },
+        "parse_error": null,
+        "elapsed_seconds": 35.525
+      },
+      "diagnostic_signals": {
+        "free_form_contains_url": true,
+        "free_form_is_json": false,
+        "structured_key_count": 10
+      }
+    }
+  ]
+}

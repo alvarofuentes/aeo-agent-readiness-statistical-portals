@@ -1,0 +1,79 @@
+{
+  "query": "Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.",
+  "portal": "cepalstat",
+  "repeat": 1,
+  "endpoint": "http://127.0.0.1:11435",
+  "selection": {
+    "ok": true,
+    "data": {
+      "candidate_id": null,
+      "query_rewrite": "Comparar la tasa de crecimiento del PIB real por habitante entre Costa Rica y Ecuador en el año 2024",
+      "reason": "La consulta original solicita una comparación de crecimiento del PIB para dos países (Costa Rica y Ecuador) en un año futuro (2024). Ningún candidato disponible cubre simultáneamente a ambos países ni especifica datos proyectados para 2024. El candidato más relevante es el ID 3894, que mide la 'Tasa de crecimiento anual del PIB real per cápita', pero su descripción solo menciona explícitamente a Chile en el nombre y no garantiza la disponibilidad de series históricas o proyecciones para Costa Rica y Ecuador en 2024. Por lo tanto, no existe un candidato único válido que responda directamente a la consulta sin ambigüedades geográficas o temporales.",
+      "model_raw": "{\n  \"candidate_id\": null,\n  \"query_rewrite\": \"Comparar la tasa de crecimiento del PIB real por habitante entre Costa Rica y Ecuador en el año 2024\",\n  \"reason\": \"La consulta original solicita una comparación de crecimiento del PIB para dos países (Costa Rica y Ecuador) en un año futuro (2024). Ningún candidato disponible cubre simultáneamente a ambos países ni especifica datos proyectados para 2024. El candidato más relevante es el ID 3894, que mide la 'Tasa de crecimiento anual del PIB real per cápita', pero su descripción solo menciona explícitamente a Chile en el nombre y no garantiza la disponibilidad de series históricas o proyecciones para Costa Rica y Ecuador en 2024. Por lo tanto, no existe un candidato único válido que responda directamente a la consulta sin ambigüedades geográficas o temporales.\"\n}"
+    }
+  },
+  "selection_mode": "ranked_fallback",
+  "candidate_count": 12,
+  "candidates": [
+    {
+      "id": "2207",
+      "name": "Tasa de crecimiento del producto interno bruto (PIB) total anual a precios constantes",
+      "indicator_id": 2207
+    },
+    {
+      "id": "2222",
+      "name": "Tasa de crecimiento del producto interno bruto (PIB) total anual por habitante a precios constantes",
+      "indicator_id": 2222
+    },
+    {
+      "id": "2210",
+      "name": "Tasa de crecimiento del producto interno bruto (PIB) anual por objeto del gasto a precios constantes",
+      "indicator_id": 2210
+    },
+    {
+      "id": "2217",
+      "name": "Tasa de crecimiento del producto interno bruto (PIB) anual por actividad económica a precios constantes",
+      "indicator_id": 2217
+    },
+    {
+      "id": "2517",
+      "name": "Contribución a la tasa de crecimiento del producto interno bruto (PIB) anual por objeto del gasto a precios constantes",
+      "indicator_id": 2517
+    },
+    {
+      "id": "2518",
+      "name": "Contribución a la tasa de crecimiento del producto interno bruto (PIB) anual por actividad económica a precios constantes",
+      "indicator_id": 2518
+    },
+    {
+      "id": "3886",
+      "name": "Tasa de crecimiento anual del PIB real por persona empleada (en porcentajes) SL_EMP_PCAP",
+      "indicator_id": 3886
+    },
+    {
+      "id": "3894",
+      "name": "Tasa de crecimiento anual del PIB real per cápita (en porcentajes) NY_GDP_PCAP",
+      "indicator_id": 3894
+    },
+    {
+      "id": "4543",
+      "name": "Crecimiento del PIB anual (%) NY_GDP_MKTP_KD_ZG",
+      "indicator_id": 4543
+    },
+    {
+      "id": "2203",
+      "name": "Producto interno bruto (PIB) total anual a precios corrientes en dólares",
+      "indicator_id": 2203
+    },
+    {
+      "id": "2205",
+      "name": "Producto interno bruto (PIB) total anual por habitante a precios corrientes en dólares",
+      "indicator_id": 2205
+    },
+    {
+      "id": "4873",
+      "name": "CHILE Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4873
+    }
+  ]
+}

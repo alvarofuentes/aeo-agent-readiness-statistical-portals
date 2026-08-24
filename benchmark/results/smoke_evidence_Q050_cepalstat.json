@@ -1,0 +1,15 @@
+{
+  "urls": [
+    "https://statistics.cepal.org/portal/cepalstat/"
+  ],
+  "pages": [
+    {
+      "url": "https://statistics.cepal.org/portal/cepalstat/",
+      "status": 200,
+      "content_type": "text/html",
+      "text": "<!DOCTYPE html> <html> <head> <title>CEPALSTAT Portal de Datos y Publicaciones Estadísticas</title> <meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"> <link rel=\"shortcut icon\" href=\"images/favicon_un.png\" type=\"image/png\" /> <link rel=\"stylesheet\" href=\"../../assets/bootstrap-4.3.1.min.css\" > <script src=\"../../assets/jquery.min.js\"></script> <script src=\"../../assets/bootstrap-4.3.1.min.js\" ></script> <script src=\"assets/portal-actions.js\"></script> <script src=\"configuration.js\"></script> <link rel=\"stylesheet\" href=\"assets/style-5column-boxes.css?v=20250312\" > <script> $(document).ready(function () { var idioma = getQueryVariable(\"lang\"); if(idioma==\"en\") { $(document).attr(\"title\", \"CEPALSTAT Statistical Data Portal and Publications\"); $(\"#menu-cabecera\").load(\"header-en.html?v=20260703\"); $(\"#modulos\").load(\"en/module-home.html?v=20260703\"); $(\"#footer-content\").load(\"footer-en.html?v=20260703\"); } else { $(\"#menu-cabecera\").load(\"header-es.html?v=20260703\"); $(\"#modulos\").load(\"es/modulo-inicio.html?v=20260703\"); $(\"#footer-content\").load(\"footer-es.html?v=20260703\"); } scrollTopPage(); }); </script> </head> <body> <div id=\"menu-cabecera\"></div> <div id=\"modulos\"></div> <div id=\"footer-content\"></div> </body> </html> "
+    }
+  ],
+  "sha256": "2172ce7311815d6ab1753e9098eb618b18e205a43ea6bf307a03d8f319496cb5",
+  "captured_at": "2026-08-22T22:00:57Z"
+}

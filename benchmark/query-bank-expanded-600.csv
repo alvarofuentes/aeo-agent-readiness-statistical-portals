@@ -1,0 +1,601 @@
+query_id,portal_id,stratum,query,country,country_code,source_portal_id
+Q001,worldbank,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,worldbank
+Q001,who,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,worldbank
+Q001,cepalstat,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,worldbank
+Q001,undata,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,worldbank
+Q001,sdg,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,worldbank
+Q002,worldbank,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,worldbank
+Q002,who,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,worldbank
+Q002,cepalstat,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,worldbank
+Q002,undata,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,worldbank
+Q002,sdg,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,worldbank
+Q003,worldbank,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,worldbank
+Q003,who,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,worldbank
+Q003,cepalstat,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,worldbank
+Q003,undata,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,worldbank
+Q003,sdg,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,worldbank
+Q004,worldbank,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,worldbank
+Q004,who,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,worldbank
+Q004,cepalstat,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,worldbank
+Q004,undata,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,worldbank
+Q004,sdg,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,worldbank
+Q005,worldbank,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,worldbank
+Q005,who,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,worldbank
+Q005,cepalstat,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,worldbank
+Q005,undata,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,worldbank
+Q005,sdg,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,worldbank
+Q006,worldbank,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,worldbank
+Q006,who,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,worldbank
+Q006,cepalstat,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,worldbank
+Q006,undata,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,worldbank
+Q006,sdg,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,worldbank
+Q007,worldbank,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,worldbank
+Q007,who,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,worldbank
+Q007,cepalstat,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,worldbank
+Q007,undata,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,worldbank
+Q007,sdg,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,worldbank
+Q008,worldbank,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,worldbank
+Q008,who,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,worldbank
+Q008,cepalstat,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,worldbank
+Q008,undata,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,worldbank
+Q008,sdg,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,worldbank
+Q009,worldbank,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,worldbank
+Q009,who,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,worldbank
+Q009,cepalstat,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,worldbank
+Q009,undata,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,worldbank
+Q009,sdg,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,worldbank
+Q010,worldbank,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,worldbank
+Q010,who,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,worldbank
+Q010,cepalstat,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,worldbank
+Q010,undata,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,worldbank
+Q010,sdg,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,worldbank
+Q011,worldbank,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,worldbank
+Q011,who,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,worldbank
+Q011,cepalstat,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,worldbank
+Q011,undata,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,worldbank
+Q011,sdg,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,worldbank
+Q012,worldbank,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,worldbank
+Q012,who,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,worldbank
+Q012,cepalstat,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,worldbank
+Q012,undata,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,worldbank
+Q012,sdg,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,worldbank
+Q013,worldbank,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,worldbank
+Q013,who,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,worldbank
+Q013,cepalstat,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,worldbank
+Q013,undata,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,worldbank
+Q013,sdg,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,worldbank
+Q014,worldbank,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,worldbank
+Q014,who,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,worldbank
+Q014,cepalstat,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,worldbank
+Q014,undata,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,worldbank
+Q014,sdg,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,worldbank
+Q015,worldbank,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,worldbank
+Q015,who,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,worldbank
+Q015,cepalstat,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,worldbank
+Q015,undata,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,worldbank
+Q015,sdg,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,worldbank
+Q016,worldbank,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,worldbank
+Q016,who,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,worldbank
+Q016,cepalstat,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,worldbank
+Q016,undata,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,worldbank
+Q016,sdg,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,worldbank
+Q017,worldbank,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,worldbank
+Q017,who,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,worldbank
+Q017,cepalstat,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,worldbank
+Q017,undata,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,worldbank
+Q017,sdg,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,worldbank
+Q018,worldbank,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,worldbank
+Q018,who,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,worldbank
+Q018,cepalstat,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,worldbank
+Q018,undata,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,worldbank
+Q018,sdg,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,worldbank
+Q019,worldbank,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,worldbank
+Q019,who,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,worldbank
+Q019,cepalstat,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,worldbank
+Q019,undata,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,worldbank
+Q019,sdg,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,worldbank
+Q020,worldbank,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,worldbank
+Q020,who,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,worldbank
+Q020,cepalstat,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,worldbank
+Q020,undata,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,worldbank
+Q020,sdg,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,worldbank
+Q021,worldbank,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,worldbank
+Q021,who,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,worldbank
+Q021,cepalstat,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,worldbank
+Q021,undata,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,worldbank
+Q021,sdg,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,worldbank
+Q022,worldbank,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,worldbank
+Q022,who,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,worldbank
+Q022,cepalstat,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,worldbank
+Q022,undata,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,worldbank
+Q022,sdg,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,worldbank
+Q023,worldbank,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,worldbank
+Q023,who,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,worldbank
+Q023,cepalstat,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,worldbank
+Q023,undata,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,worldbank
+Q023,sdg,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,worldbank
+Q024,worldbank,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,worldbank
+Q024,who,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,worldbank
+Q024,cepalstat,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,worldbank
+Q024,undata,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,worldbank
+Q024,sdg,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,worldbank
+Q025,worldbank,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,who
+Q025,who,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,who
+Q025,cepalstat,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,who
+Q025,undata,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,who
+Q025,sdg,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,who
+Q026,worldbank,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,who
+Q026,who,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,who
+Q026,cepalstat,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,who
+Q026,undata,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,who
+Q026,sdg,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,who
+Q027,worldbank,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,who
+Q027,who,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,who
+Q027,cepalstat,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,who
+Q027,undata,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,who
+Q027,sdg,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,who
+Q028,worldbank,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,who
+Q028,who,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,who
+Q028,cepalstat,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,who
+Q028,undata,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,who
+Q028,sdg,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,who
+Q029,worldbank,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,who
+Q029,who,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,who
+Q029,cepalstat,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,who
+Q029,undata,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,who
+Q029,sdg,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,who
+Q030,worldbank,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,who
+Q030,who,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,who
+Q030,cepalstat,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,who
+Q030,undata,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,who
+Q030,sdg,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,who
+Q031,worldbank,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,who
+Q031,who,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,who
+Q031,cepalstat,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,who
+Q031,undata,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,who
+Q031,sdg,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,who
+Q032,worldbank,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,who
+Q032,who,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,who
+Q032,cepalstat,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,who
+Q032,undata,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,who
+Q032,sdg,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,who
+Q033,worldbank,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,who
+Q033,who,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,who
+Q033,cepalstat,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,who
+Q033,undata,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,who
+Q033,sdg,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,who
+Q034,worldbank,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,who
+Q034,who,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,who
+Q034,cepalstat,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,who
+Q034,undata,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,who
+Q034,sdg,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,who
+Q035,worldbank,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,who
+Q035,who,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,who
+Q035,cepalstat,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,who
+Q035,undata,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,who
+Q035,sdg,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,who
+Q036,worldbank,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,who
+Q036,who,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,who
+Q036,cepalstat,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,who
+Q036,undata,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,who
+Q036,sdg,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,who
+Q037,worldbank,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,who
+Q037,who,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,who
+Q037,cepalstat,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,who
+Q037,undata,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,who
+Q037,sdg,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,who
+Q038,worldbank,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,who
+Q038,who,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,who
+Q038,cepalstat,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,who
+Q038,undata,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,who
+Q038,sdg,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,who
+Q039,worldbank,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,who
+Q039,who,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,who
+Q039,cepalstat,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,who
+Q039,undata,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,who
+Q039,sdg,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,who
+Q040,worldbank,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,who
+Q040,who,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,who
+Q040,cepalstat,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,who
+Q040,undata,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,who
+Q040,sdg,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,who
+Q041,worldbank,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,who
+Q041,who,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,who
+Q041,cepalstat,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,who
+Q041,undata,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,who
+Q041,sdg,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,who
+Q042,worldbank,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,who
+Q042,who,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,who
+Q042,cepalstat,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,who
+Q042,undata,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,who
+Q042,sdg,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,who
+Q043,worldbank,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,who
+Q043,who,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,who
+Q043,cepalstat,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,who
+Q043,undata,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,who
+Q043,sdg,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,who
+Q044,worldbank,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,who
+Q044,who,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,who
+Q044,cepalstat,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,who
+Q044,undata,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,who
+Q044,sdg,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,who
+Q045,worldbank,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,who
+Q045,who,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,who
+Q045,cepalstat,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,who
+Q045,undata,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,who
+Q045,sdg,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,who
+Q046,worldbank,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,who
+Q046,who,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,who
+Q046,cepalstat,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,who
+Q046,undata,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,who
+Q046,sdg,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,who
+Q047,worldbank,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,who
+Q047,who,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,who
+Q047,cepalstat,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,who
+Q047,undata,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,who
+Q047,sdg,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,who
+Q048,worldbank,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,who
+Q048,who,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,who
+Q048,cepalstat,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,who
+Q048,undata,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,who
+Q048,sdg,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,who
+Q049,worldbank,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,cepalstat
+Q049,who,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,cepalstat
+Q049,cepalstat,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,cepalstat
+Q049,undata,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,cepalstat
+Q049,sdg,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,cepalstat
+Q050,worldbank,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,cepalstat
+Q050,who,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,cepalstat
+Q050,cepalstat,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,cepalstat
+Q050,undata,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,cepalstat
+Q050,sdg,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,cepalstat
+Q051,worldbank,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,cepalstat
+Q051,who,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,cepalstat
+Q051,cepalstat,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,cepalstat
+Q051,undata,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,cepalstat
+Q051,sdg,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,cepalstat
+Q052,worldbank,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,cepalstat
+Q052,who,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,cepalstat
+Q052,cepalstat,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,cepalstat
+Q052,undata,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,cepalstat
+Q052,sdg,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,cepalstat
+Q053,worldbank,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,cepalstat
+Q053,who,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,cepalstat
+Q053,cepalstat,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,cepalstat
+Q053,undata,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,cepalstat
+Q053,sdg,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,cepalstat
+Q054,worldbank,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,cepalstat
+Q054,who,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,cepalstat
+Q054,cepalstat,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,cepalstat
+Q054,undata,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,cepalstat
+Q054,sdg,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,cepalstat
+Q055,worldbank,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,cepalstat
+Q055,who,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,cepalstat
+Q055,cepalstat,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,cepalstat
+Q055,undata,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,cepalstat
+Q055,sdg,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,cepalstat
+Q056,worldbank,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,cepalstat
+Q056,who,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,cepalstat
+Q056,cepalstat,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,cepalstat
+Q056,undata,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,cepalstat
+Q056,sdg,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,cepalstat
+Q057,worldbank,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,cepalstat
+Q057,who,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,cepalstat
+Q057,cepalstat,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,cepalstat
+Q057,undata,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,cepalstat
+Q057,sdg,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,cepalstat
+Q058,worldbank,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,cepalstat
+Q058,who,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,cepalstat
+Q058,cepalstat,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,cepalstat
+Q058,undata,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,cepalstat
+Q058,sdg,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,cepalstat
+Q059,worldbank,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,cepalstat
+Q059,who,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,cepalstat
+Q059,cepalstat,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,cepalstat
+Q059,undata,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,cepalstat
+Q059,sdg,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,cepalstat
+Q060,worldbank,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,cepalstat
+Q060,who,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,cepalstat
+Q060,cepalstat,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,cepalstat
+Q060,undata,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,cepalstat
+Q060,sdg,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,cepalstat
+Q061,worldbank,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,cepalstat
+Q061,who,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,cepalstat
+Q061,cepalstat,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,cepalstat
+Q061,undata,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,cepalstat
+Q061,sdg,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,cepalstat
+Q062,worldbank,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,cepalstat
+Q062,who,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,cepalstat
+Q062,cepalstat,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,cepalstat
+Q062,undata,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,cepalstat
+Q062,sdg,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,cepalstat
+Q063,worldbank,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,cepalstat
+Q063,who,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,cepalstat
+Q063,cepalstat,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,cepalstat
+Q063,undata,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,cepalstat
+Q063,sdg,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,cepalstat
+Q064,worldbank,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,cepalstat
+Q064,who,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,cepalstat
+Q064,cepalstat,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,cepalstat
+Q064,undata,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,cepalstat
+Q064,sdg,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,cepalstat
+Q065,worldbank,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,cepalstat
+Q065,who,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,cepalstat
+Q065,cepalstat,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,cepalstat
+Q065,undata,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,cepalstat
+Q065,sdg,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,cepalstat
+Q066,worldbank,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,cepalstat
+Q066,who,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,cepalstat
+Q066,cepalstat,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,cepalstat
+Q066,undata,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,cepalstat
+Q066,sdg,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,cepalstat
+Q067,worldbank,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,cepalstat
+Q067,who,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,cepalstat
+Q067,cepalstat,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,cepalstat
+Q067,undata,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,cepalstat
+Q067,sdg,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,cepalstat
+Q068,worldbank,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,cepalstat
+Q068,who,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,cepalstat
+Q068,cepalstat,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,cepalstat
+Q068,undata,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,cepalstat
+Q068,sdg,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,cepalstat
+Q069,worldbank,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,cepalstat
+Q069,who,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,cepalstat
+Q069,cepalstat,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,cepalstat
+Q069,undata,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,cepalstat
+Q069,sdg,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,cepalstat
+Q070,worldbank,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,cepalstat
+Q070,who,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,cepalstat
+Q070,cepalstat,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,cepalstat
+Q070,undata,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,cepalstat
+Q070,sdg,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,cepalstat
+Q071,worldbank,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,cepalstat
+Q071,who,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,cepalstat
+Q071,cepalstat,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,cepalstat
+Q071,undata,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,cepalstat
+Q071,sdg,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,cepalstat
+Q072,worldbank,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,cepalstat
+Q072,who,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,cepalstat
+Q072,cepalstat,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,cepalstat
+Q072,undata,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,cepalstat
+Q072,sdg,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,cepalstat
+Q073,worldbank,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,undata
+Q073,who,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,undata
+Q073,cepalstat,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,undata
+Q073,undata,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,undata
+Q073,sdg,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,undata
+Q074,worldbank,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,undata
+Q074,who,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,undata
+Q074,cepalstat,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,undata
+Q074,undata,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,undata
+Q074,sdg,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,undata
+Q075,worldbank,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,undata
+Q075,who,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,undata
+Q075,cepalstat,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,undata
+Q075,undata,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,undata
+Q075,sdg,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,undata
+Q076,worldbank,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,undata
+Q076,who,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,undata
+Q076,cepalstat,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,undata
+Q076,undata,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,undata
+Q076,sdg,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,undata
+Q077,worldbank,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,undata
+Q077,who,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,undata
+Q077,cepalstat,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,undata
+Q077,undata,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,undata
+Q077,sdg,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,undata
+Q078,worldbank,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,undata
+Q078,who,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,undata
+Q078,cepalstat,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,undata
+Q078,undata,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,undata
+Q078,sdg,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,undata
+Q079,worldbank,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,undata
+Q079,who,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,undata
+Q079,cepalstat,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,undata
+Q079,undata,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,undata
+Q079,sdg,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,undata
+Q080,worldbank,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,undata
+Q080,who,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,undata
+Q080,cepalstat,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,undata
+Q080,undata,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,undata
+Q080,sdg,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,undata
+Q081,worldbank,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,undata
+Q081,who,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,undata
+Q081,cepalstat,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,undata
+Q081,undata,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,undata
+Q081,sdg,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,undata
+Q082,worldbank,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,undata
+Q082,who,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,undata
+Q082,cepalstat,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,undata
+Q082,undata,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,undata
+Q082,sdg,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,undata
+Q083,worldbank,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,undata
+Q083,who,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,undata
+Q083,cepalstat,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,undata
+Q083,undata,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,undata
+Q083,sdg,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,undata
+Q084,worldbank,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,undata
+Q084,who,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,undata
+Q084,cepalstat,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,undata
+Q084,undata,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,undata
+Q084,sdg,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,undata
+Q085,worldbank,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,undata
+Q085,who,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,undata
+Q085,cepalstat,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,undata
+Q085,undata,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,undata
+Q085,sdg,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,undata
+Q086,worldbank,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,undata
+Q086,who,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,undata
+Q086,cepalstat,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,undata
+Q086,undata,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,undata
+Q086,sdg,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,undata
+Q087,worldbank,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,undata
+Q087,who,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,undata
+Q087,cepalstat,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,undata
+Q087,undata,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,undata
+Q087,sdg,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,undata
+Q088,worldbank,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,undata
+Q088,who,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,undata
+Q088,cepalstat,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,undata
+Q088,undata,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,undata
+Q088,sdg,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,undata
+Q089,worldbank,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,undata
+Q089,who,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,undata
+Q089,cepalstat,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,undata
+Q089,undata,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,undata
+Q089,sdg,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,undata
+Q090,worldbank,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,undata
+Q090,who,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,undata
+Q090,cepalstat,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,undata
+Q090,undata,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,undata
+Q090,sdg,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,undata
+Q091,worldbank,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,undata
+Q091,who,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,undata
+Q091,cepalstat,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,undata
+Q091,undata,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,undata
+Q091,sdg,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,undata
+Q092,worldbank,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,undata
+Q092,who,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,undata
+Q092,cepalstat,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,undata
+Q092,undata,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,undata
+Q092,sdg,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,undata
+Q093,worldbank,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,undata
+Q093,who,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,undata
+Q093,cepalstat,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,undata
+Q093,undata,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,undata
+Q093,sdg,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,undata
+Q094,worldbank,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,undata
+Q094,who,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,undata
+Q094,cepalstat,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,undata
+Q094,undata,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,undata
+Q094,sdg,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,undata
+Q095,worldbank,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,undata
+Q095,who,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,undata
+Q095,cepalstat,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,undata
+Q095,undata,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,undata
+Q095,sdg,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,undata
+Q096,worldbank,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,undata
+Q096,who,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,undata
+Q096,cepalstat,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,undata
+Q096,undata,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,undata
+Q096,sdg,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,undata
+Q097,worldbank,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,sdg
+Q097,who,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,sdg
+Q097,cepalstat,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,sdg
+Q097,undata,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,sdg
+Q097,sdg,discovery,Encuentra la fuente oficial para el PIB de Chile y dame la URL de la serie más pertinente.,Chile,CHL,sdg
+Q098,worldbank,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,sdg
+Q098,who,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,sdg
+Q098,cepalstat,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,sdg
+Q098,undata,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,sdg
+Q098,sdg,discovery,¿Dónde puedo consultar oficialmente el PIB de Argentina para 2024?,Argentina,ARG,sdg
+Q099,worldbank,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,sdg
+Q099,who,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,sdg
+Q099,cepalstat,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,sdg
+Q099,undata,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,sdg
+Q099,sdg,discovery,Localiza el indicador oficial de PIB de Brazil y explica por qué esa página es la adecuada.,Brazil,BRA,sdg
+Q100,worldbank,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,sdg
+Q100,who,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,sdg
+Q100,cepalstat,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,sdg
+Q100,undata,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,sdg
+Q100,sdg,discovery,Encuentra una página o API oficial con datos de PIB para Mexico y cita la fuente.,Mexico,MEX,sdg
+Q101,worldbank,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,sdg
+Q101,who,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,sdg
+Q101,cepalstat,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,sdg
+Q101,undata,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,sdg
+Q101,sdg,exact_indicator,¿Cuál fue el PIB total de Colombia en 2024?,Colombia,COL,sdg
+Q102,worldbank,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,sdg
+Q102,who,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,sdg
+Q102,cepalstat,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,sdg
+Q102,undata,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,sdg
+Q102,sdg,exact_indicator,Dame el valor de PIB total de Peru para 2023 y 2024.,Peru,PER,sdg
+Q103,worldbank,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,sdg
+Q103,who,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,sdg
+Q103,cepalstat,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,sdg
+Q103,undata,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,sdg
+Q103,sdg,exact_indicator,Busca la serie oficial de PIB a precios corrientes de Uruguay y devuelve el dato de 2024.,Uruguay,URY,sdg
+Q104,worldbank,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,sdg
+Q104,who,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,sdg
+Q104,cepalstat,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,sdg
+Q104,undata,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,sdg
+Q104,sdg,exact_indicator,¿Qué indicador usarías para responder: PIB en dólares corrientes de Costa Rica en 2024?,Costa Rica,CRI,sdg
+Q105,worldbank,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,sdg
+Q105,who,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,sdg
+Q105,cepalstat,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,sdg
+Q105,undata,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,sdg
+Q105,sdg,semantic_disambiguation,"Para Ecuador en 2024, ¿debo usar PIB nivel o crecimiento del PIB? Explica la diferencia estadística.",Ecuador,ECU,sdg
+Q106,worldbank,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,sdg
+Q106,who,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,sdg
+Q106,cepalstat,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,sdg
+Q106,undata,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,sdg
+Q106,sdg,semantic_disambiguation,Distingue correctamente entre PIB total y PIB por actividad económica para responder una consulta sobre Bolivia.,Bolivia,BOL,sdg
+Q107,worldbank,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,sdg
+Q107,who,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,sdg
+Q107,cepalstat,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,sdg
+Q107,undata,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,sdg
+Q107,sdg,semantic_disambiguation,Un usuario pide el tamaño de la economía de Chile. ¿Es mejor PIB total o PIB per cápita?,Chile,CHL,sdg
+Q108,worldbank,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,sdg
+Q108,who,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,sdg
+Q108,cepalstat,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,sdg
+Q108,undata,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,sdg
+Q108,sdg,semantic_disambiguation,Un usuario pide el crecimiento económico de Argentina. ¿Qué serie corresponde y qué series no deben usarse?,Argentina,ARG,sdg
+Q109,worldbank,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,sdg
+Q109,who,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,sdg
+Q109,cepalstat,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,sdg
+Q109,undata,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,sdg
+Q109,sdg,semantic_disambiguation,Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?,Brazil,BRA,sdg
+Q110,worldbank,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,sdg
+Q110,who,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,sdg
+Q110,cepalstat,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,sdg
+Q110,undata,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,sdg
+Q110,sdg,dimensions,Compara el PIB de Mexico entre 2023 y 2024 y conserva la misma unidad y frecuencia.,Mexico,MEX,sdg
+Q111,worldbank,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,sdg
+Q111,who,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,sdg
+Q111,cepalstat,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,sdg
+Q111,undata,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,sdg
+Q111,sdg,dimensions,¿El dato de PIB de Colombia es anual o trimestral? Verifica la frecuencia.,Colombia,COL,sdg
+Q112,worldbank,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,sdg
+Q112,who,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,sdg
+Q112,cepalstat,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,sdg
+Q112,undata,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,sdg
+Q112,sdg,dimensions,"¿El PIB de Peru está expresado en moneda nacional, USD o USD por habitante? Verifica la unidad.",Peru,PER,sdg
+Q113,worldbank,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,sdg
+Q113,who,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,sdg
+Q113,cepalstat,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,sdg
+Q113,undata,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,sdg
+Q113,sdg,comparison,Compara el PIB de Uruguay y Costa Rica en 2024 usando una medida estadísticamente comparable.,Uruguay,URY,sdg
+Q114,worldbank,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,sdg
+Q114,who,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,sdg
+Q114,cepalstat,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,sdg
+Q114,undata,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,sdg
+Q114,sdg,comparison,Compara el crecimiento del PIB de Costa Rica y Ecuador en 2024.,Costa Rica,CRI,sdg
+Q115,worldbank,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,sdg
+Q115,who,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,sdg
+Q115,cepalstat,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,sdg
+Q115,undata,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,sdg
+Q115,sdg,comparison,"¿Qué economía es mayor en 2024, Ecuador o Bolivia? Define la medida usada.",Ecuador,ECU,sdg
+Q116,worldbank,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,sdg
+Q116,who,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,sdg
+Q116,cepalstat,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,sdg
+Q116,undata,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,sdg
+Q116,sdg,temporal,¿Cuál es el último año disponible para el PIB de Bolivia? Indica fecha de actualización si existe.,Bolivia,BOL,sdg
+Q117,worldbank,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,sdg
+Q117,who,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,sdg
+Q117,cepalstat,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,sdg
+Q117,undata,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,sdg
+Q117,sdg,temporal,"Compara 2019, 2020 y 2024 para el PIB de Chile.",Chile,CHL,sdg
+Q118,worldbank,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,sdg
+Q118,who,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,sdg
+Q118,cepalstat,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,sdg
+Q118,undata,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,sdg
+Q118,sdg,metadata,¿Qué significa exactamente el indicador de PIB que encontraste para Argentina? Cita su definición.,Argentina,ARG,sdg
+Q119,worldbank,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,sdg
+Q119,who,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,sdg
+Q119,cepalstat,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,sdg
+Q119,undata,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,sdg
+Q119,sdg,metadata,"¿Quién produce el dato de PIB de Brazil, cuál es la fuente y qué metodología declara?",Brazil,BRA,sdg
+Q120,worldbank,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,sdg
+Q120,who,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,sdg
+Q120,cepalstat,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,sdg
+Q120,undata,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,sdg
+Q120,sdg,citation,Responde con el PIB de Mexico en 2024 y proporciona una cita o URL verificable de la evidencia.,Mexico,MEX,sdg

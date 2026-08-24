@@ -1,0 +1,51 @@
+[
+  {
+    "indicator_id":"2203",
+    "canonical_name":"Producto interno bruto (PIB) total anual a precios corrientes en dólares",
+    "unit":"millones de dólares",
+    "semantic_fingerprint":"GDP level; annual; total economy; current prices; USD; national/regional aggregates",
+    "do_not_confuse_with":["2205","2214","2196"],
+    "disambiguation_rules":["Use for total GDP level in current USD.","Do not use for GDP per capita.","Do not use for real/volume GDP or growth rate."],
+    "human_page_url":"https://statistics.cepal.org/portal/cepalstat/technical-sheet.html?indicator_id=2203&lang=es",
+    "api_metadata_pattern":"https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2203/metadata"
+  },
+  {
+    "indicator_id":"2205",
+    "canonical_name":"Producto interno bruto (PIB) total anual por habitante a precios corrientes en dólares",
+    "unit":"dólares por habitante a precios corrientes",
+    "semantic_fingerprint":"GDP per capita; annual; current prices; USD; total economy",
+    "do_not_confuse_with":["2203","2214"],
+    "disambiguation_rules":["Use only when the question asks per-capita GDP.","Current-price series can move because of both output/prices and exchange rates."],
+    "human_page_url":"https://statistics.cepal.org/portal/cepalstat/technical-sheet.html?indicator_id=2205&lang=es",
+    "api_metadata_pattern":"https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2205/metadata"
+  },
+  {
+    "indicator_id":"2214",
+    "canonical_name":"Producto interno bruto (PIB) anual por habitante por objeto del gasto a precios constantes en dólares",
+    "unit":"dólares por habitante",
+    "semantic_fingerprint":"GDP per capita; annual; constant/volume prices; 2018 reference; USD; expenditure dimension",
+    "do_not_confuse_with":["2205","2203"],
+    "disambiguation_rules":["Use for per-capita GDP at constant prices/volume.","The series has a reference year of 2018 and an expenditure dimension."],
+    "human_page_url":"https://statistics.cepal.org/portal/cepalstat/technical-sheet.html?indicator_id=2214&lang=es",
+    "api_metadata_pattern":"https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2214/metadata"
+  },
+  {
+    "indicator_id":"2196",
+    "canonical_name":"Producto interno bruto anual (PIB) por actividad económica a precios constantes en moneda nacional",
+    "unit":"Country-specific national currency at reference prices",
+    "semantic_fingerprint":"GDP level; annual; constant/volume prices; national currency; economic activity dimension",
+    "do_not_confuse_with":["2203","2205","2214"],
+    "disambiguation_rules":["Use when the requested output is constant-price GDP in national currency and the activity dimension is relevant.","Do not silently convert to USD or per capita."],
+    "human_page_url":"https://statistics.cepal.org/portal/cepalstat/technical-sheet.html?indicator_id=2196&lang=es",
+    "api_metadata_pattern":"https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/2196/metadata"
+  },
+  {
+    "example_question_to_indicator":[
+      {"question":"¿Cuál fue el PIB de Chile en 2024?","preferred_indicator":"2203","reason":"Ambiguous in natural language; default should be made explicit in the answer and ideally clarified as total/current USD only if that is the user's intended unit."},
+      {"question":"¿Cuál fue el PIB per cápita de Chile en 2024?","preferred_indicator":"2205","reason":"Per-capita dimension is explicit."},
+      {"question":"¿Cuánto creció el PIB real de Chile en 2024?","preferred_concept":"GDP growth/volume indicator","reason":"Do not answer with a GDP level such as 2203 or 2205."},
+      {"question":"Compara el tamaño económico de Chile y Argentina en 2024.","preferred_indicator":"2203","reason":"Total GDP level, same unit and price basis required."},
+      {"question":"Compara el PIB por habitante de Chile y Argentina en 2024.","preferred_indicator":"2205","reason":"Per-capita comparison required."}
+    ]
+  }
+]

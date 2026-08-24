@@ -1,0 +1,24 @@
+{
+  "run_id": "smoke-fresh-20260823",
+  "created_at": "2026-08-23T18:57:14.756631+00:00",
+  "status": "COMPLETE",
+  "portals": [
+    "cepalstat",
+    "worldbank"
+  ],
+  "template_count": 1,
+  "repeat_count": 1,
+  "expected_executions": 2,
+  "completed_executions": 2,
+  "evidence_policy": "live_portal_fetch_per_repeat_no_cache",
+  "model": "qwen3.5:9b-mlx",
+  "model_endpoints": [
+    "http://127.0.0.1:11434",
+    "http://127.0.0.1:11435"
+  ],
+  "source_bank": "benchmark/query-bank-120.csv",
+  "editorial_status": "pending",
+  "last_update": "2026-08-23T18:58:12.020305+00:00",
+  "last_execution_id": "FRESH-Q001__worldbank__r1",
+  "completed_at": "2026-08-23T18:58:12.020620+00:00"
+}

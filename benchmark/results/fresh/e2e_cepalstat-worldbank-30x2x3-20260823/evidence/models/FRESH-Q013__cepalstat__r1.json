@@ -1,0 +1,79 @@
+{
+  "query": "Un usuario pide una comparación internacional del PIB de Brazil. ¿Qué medida evitaría mezclar niveles con tasas de crecimiento?",
+  "portal": "cepalstat",
+  "repeat": 1,
+  "endpoint": "http://127.0.0.1:11434",
+  "selection": {
+    "ok": true,
+    "data": {
+      "candidate_id": "4543",
+      "query_rewrite": "Comparación internacional del PIB de Brasil: Tasa de crecimiento anual (%)",
+      "reason": "El usuario busca una comparación internacional del PIB de Brasil evitando mezclar niveles con tasas de crecimiento. El candidato '4543' (Crecimiento del PIB anual (%)) es la única opción que representa explícitamente una tasa de crecimiento, mientras que los candidatos '2207', '2222' y '2210' son medidas a precios constantes o por componentes específicos que no cumplen con la definición estándar de tasa de crecimiento nominal para comparación internacional directa sin especificar más detalles. El candidato '4543' es el único que responde directamente a la necesidad de medir la tasa de crecimiento.",
+      "model_raw": "{\n  \"candidate_id\": \"4543\",\n  \"query_rewrite\": \"Comparación internacional del PIB de Brasil: Tasa de crecimiento anual (%)\",\n  \"reason\": \"El usuario busca una comparación internacional del PIB de Brasil evitando mezclar niveles con tasas de crecimiento. El candidato '4543' (Crecimiento del PIB anual (%)) es la única opción que representa explícitamente una tasa de crecimiento, mientras que los candidatos '2207', '2222' y '2210' son medidas a precios constantes o por componentes específicos que no cumplen con la definición estándar de tasa de crecimiento nominal para comparación internacional directa sin especificar más detalles. El candidato '4543' es el único que responde directamente a la necesidad de medir la tasa de crecimiento.\"\n}"
+    }
+  },
+  "selection_mode": "model",
+  "candidate_count": 12,
+  "candidates": [
+    {
+      "id": "2207",
+      "name": "Tasa de crecimiento del producto interno bruto (PIB) total anual a precios constantes",
+      "indicator_id": 2207
+    },
+    {
+      "id": "2222",
+      "name": "Tasa de crecimiento del producto interno bruto (PIB) total anual por habitante a precios constantes",
+      "indicator_id": 2222
+    },
+    {
+      "id": "2210",
+      "name": "Tasa de crecimiento del producto interno bruto (PIB) anual por objeto del gasto a precios constantes",
+      "indicator_id": 2210
+    },
+    {
+      "id": "2217",
+      "name": "Tasa de crecimiento del producto interno bruto (PIB) anual por actividad económica a precios constantes",
+      "indicator_id": 2217
+    },
+    {
+      "id": "2517",
+      "name": "Contribución a la tasa de crecimiento del producto interno bruto (PIB) anual por objeto del gasto a precios constantes",
+      "indicator_id": 2517
+    },
+    {
+      "id": "2518",
+      "name": "Contribución a la tasa de crecimiento del producto interno bruto (PIB) anual por actividad económica a precios constantes",
+      "indicator_id": 2518
+    },
+    {
+      "id": "3886",
+      "name": "Tasa de crecimiento anual del PIB real por persona empleada (en porcentajes) SL_EMP_PCAP",
+      "indicator_id": 3886
+    },
+    {
+      "id": "3894",
+      "name": "Tasa de crecimiento anual del PIB real per cápita (en porcentajes) NY_GDP_PCAP",
+      "indicator_id": 3894
+    },
+    {
+      "id": "4543",
+      "name": "Crecimiento del PIB anual (%) NY_GDP_MKTP_KD_ZG",
+      "indicator_id": 4543
+    },
+    {
+      "id": "2203",
+      "name": "Producto interno bruto (PIB) total anual a precios corrientes en dólares",
+      "indicator_id": 2203
+    },
+    {
+      "id": "2205",
+      "name": "Producto interno bruto (PIB) total anual por habitante a precios corrientes en dólares",
+      "indicator_id": 2205
+    },
+    {
+      "id": "4873",
+      "name": "CHILE Producto interno bruto (PIB) total anual por actividad económica a precios corrientes en dólares por área sub nacional",
+      "indicator_id": 4873
+    }
+  ]
+}
